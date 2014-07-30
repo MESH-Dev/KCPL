@@ -43,7 +43,7 @@ body {
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
  }
-
+a{text-decoration:none;}
 
 /* #Buttons
 ================================================== */
@@ -62,7 +62,7 @@ input[type="submit"]{}
 
 /* #Images
 ================================================== */
-
+img{max-width:100%;height:auto;}
 
 
 /* WordPress Image Styles

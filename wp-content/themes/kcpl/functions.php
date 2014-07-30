@@ -3,6 +3,7 @@
   function KCPL_scripts() {
   	wp_enqueue_style( 'KCPL-style', get_stylesheet_uri() );
   	wp_enqueue_script( 'KCPL-script', get_template_directory_uri().'/assets/prod/KCPL.js', array('jquery'), '1.0.0', true );
+    wp_enqueue_script('typekit','//use.typekit.net/drm7klb.js');
     wp_localize_script( 'KCPL-script', 'KCPL',array(
       'ajaxurl' => admin_url('admin-ajax.php'),
       'curUser' => get_current_user_id()
@@ -28,7 +29,8 @@
 
   //menus
   register_nav_menus(array(
-  	'main_nav' => 'Header and breadcrumb trail heirarchy',
+  	'main_nav'   => 'Header and breadcrumb trail heirarchy',
+    'util_nav'   => 'Utility Nav in header',
   	'social_nav' => 'Social menu used throughout'
   ));
 

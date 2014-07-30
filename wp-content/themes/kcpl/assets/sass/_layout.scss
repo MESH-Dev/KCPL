@@ -2,6 +2,24 @@
 
 //header
 header{width:100%;float:left;}
-  header > *{width:100%;float:left;}
-  header #header-util{background:$s-grey;height:45px;}
-  header #header-nav{background:$blue;height:47px;}
+  header > *{width:100%;float:left;position:relative;}
+  #header-logo{position:absolute;top:0;}
+  header #header-util{background:$s-grey;height:45px;z-index:2;}
+    header #header-util .gutter{padding:0 0 0 228px;}
+    #header-util ul#util_nav{float:left;width:515px;}
+    #header-util ul#util_nav li{font:12px/12px minion;float:left;}
+    #header-util ul#util_nav li a{color: #353535;padding: 22px 10px 11px;float: left;letter-spacing: 0.085em;min-width: 33px;}
+    #header-util ul#util_nav ul{display:none;}
+
+    #header-util #header-extra{float:right;width:245px;}
+      #header-extra > *{float:left;color:#353535;font:11px/11px nimbus-sans;}
+      #header-extra #header-search{width:80px;}
+        #header-extra #header-search b{height: 17px;width: 19px;background: url(assets/img/utilSprites.png);display: block;float: left;margin: 19px 0 0 1px;}
+        #header-extra #header-search span{margin: 23px 0 0 7px;float: left;letter-spacing: 0.045em;}
+      #header-extra #header-newsletter{width:115px;}
+        #header-extra #header-newsletter b{height: 17px;width: 23px;background: url(assets/img/utilSprites.png) -20px 0px;display: block;float: left;margin:17px 0 0 10px;}
+        #header-extra #header-newsletter span{margin: 23px 0 0 8px;float: left;letter-spacing: 0.08em;}
+      #header-extra #header-login{}
+
+  header #header-nav{background:$blue;height:47px;z-index:1;}
+    header #header-nav .gutter{padding:0 0 0 194px;}
