@@ -5,7 +5,7 @@
   <title><?php wp_title(); ?></title>
   <?php wp_head(); ?>
 </head>
-<body>
+<body <?php if(wp_is_mobile()){$mobileClass="KCPLmobile";} body_class($mobileClass);?>>
 <header>
   <div id="header-util">
     <div class="container cf">
