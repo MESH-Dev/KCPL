@@ -1,0 +1,38 @@
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+button {
+    text-align: center;
+    padding: 3px 20px;
+    border: none;
+    color: #ffffff;
+    border-radius: .5em;
+    background: #137cc1;
+    font-size: 18px;
+    font-family: "Nimbus-Sans-Condensed";
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+}
+
+//Secondary Sidebar Menu - uses wp_nav_menu() for markup
+#secondary-sidebar-nav{display:block;}
+#secondary-sidebar-nav{
+  ul#main_nav_secondary{display:block;}
+  ul#main_nav_secondary{
+      > li{}
+      > li > a{background:$blue;color: #fff;font: bold 19px/19px "nimbus-sans-condensed";text-transform: uppercase;display: block;padding: 16px 20px 8px;}
+      > li:last-child > a{padding: 16px 20px 13px;}
+        a{text-decoration:none;}
+        a:hover, li.current-menu-item > a, .current-menu-ancestor > a{color:$d-grey;}
+
+      > li > ul{background:$m-grey;}
+      > li > ul > li{padding:0 0;}
+      > li > ul > li > a{color: #fff;font: bold 19px/19px "nimbus-sans-condensed";text-transform: uppercase;display: block;padding: 14px 0px 5px 20px;}
+
+      > li > ul > li > ul{padding:0 0;}
+      > li > ul > li > ul > li{padding:0 0;}
+      > li > ul > li > ul > li > a{color: #fff;font: 18px/18px "minion";display: block;padding: 4px 0px 0px 20px;letter-spacing: 0.03em;word-spacing: 0.09em;}
+      > li > ul > li > ul > li:last-child > a{padding: 4px 0px 16px 20px;}
+  }
+}

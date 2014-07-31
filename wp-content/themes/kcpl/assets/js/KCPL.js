@@ -7,6 +7,11 @@ jQuery(document).ready(function($){
 
   //header functions
 
+<<<<<<< HEAD
+=======
+  try{Typekit.load();}catch(e){}
+
+>>>>>>> elements
 
   //footer functions
 });
