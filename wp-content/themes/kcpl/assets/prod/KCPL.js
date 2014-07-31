@@ -3,7 +3,9 @@ jQuery(document).ready(function($){
   console.log(KCPL);
 
   //header functions
-  
+
+  try{Typekit.load();}catch(e){}
+
 
   //footer functions
 });

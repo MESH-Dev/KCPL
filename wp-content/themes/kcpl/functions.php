@@ -2,7 +2,8 @@
   //enqueue scripts and styles *use production assets. Dev assets are located in assets/css and assets/js
   function KCPL_scripts() {
   	wp_enqueue_style( 'KCPL-style', get_stylesheet_uri() );
-  	wp_enqueue_script( 'KCPL-script', get_template_directory_uri().'/assets/prod/KCPL.js', array('jquery'), '1.0.0', true );
+  	wp_enqueue_script( 'Typekit', "//use.typekit.net/drm7klb.js");
+    wp_enqueue_script( 'KCPL-script', get_template_directory_uri().'/assets/prod/KCPL.js', array('jquery'), '1.0.0', true );
     wp_localize_script( 'KCPL-script', 'KCPL',array(
       'ajaxurl' => admin_url('admin-ajax.php'),
       'curUser' => get_current_user_id()
