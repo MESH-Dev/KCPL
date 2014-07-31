@@ -7,6 +7,5 @@ jQuery(document).ready(function($){
 
   //header functions
 
-
   //footer functions
 });
