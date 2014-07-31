@@ -1216,6 +1216,22 @@ footer {
   width: 100%;
 }
 
+/* line 41, assets/sass/_layout.scss */
+footer {
+  /*
+    Footer Location Widget
+    ----------------------
+    <div class="footer-location-widget">
+      <span class="title">Main Library</span>
+      <div class="hour-cont">
+        <span class="hours">Hours</span> <span class="open">Open Now</span>
+      </div>
+      <span class="address">123 Capitol St.<br>
+      Charleston, WV 25301<br>
+      304-343-4646</span>
+    </div>
+  */
+}
 /* line 45, assets/sass/_layout.scss */
 footer .container > .gutter {
   padding: 30px 0px;
@@ -1227,23 +1243,27 @@ footer .title {
   color: #323333;
   display: block;
 }
-/* line 48, assets/sass/_layout.scss */
+/* line 47, assets/sass/_layout.scss */
+footer .columns {
+  min-height: 10px;
+}
+/* line 62, assets/sass/_layout.scss */
 footer .footer-location-widget {
   color: #7d7d7d;
   margin: 0 0 18px;
 }
-/* line 50, assets/sass/_layout.scss */
+/* line 64, assets/sass/_layout.scss */
 footer .footer-location-widget .hour-cont {
   display: block;
 }
-/* line 51, assets/sass/_layout.scss */
+/* line 65, assets/sass/_layout.scss */
 footer .footer-location-widget .hours {
   font: 13px/12px "minion";
   font-style: italic;
   color: #323333;
   letter-spacing: 0.035em;
 }
-/* line 52, assets/sass/_layout.scss */
+/* line 66, assets/sass/_layout.scss */
 footer .footer-location-widget .open, footer .footer-location-widget .closed {
   font: 13px/12px "nimbus-sans-condensed";
   color: #323333;
@@ -1251,11 +1271,11 @@ footer .footer-location-widget .open, footer .footer-location-widget .closed {
   margin: 0 0 0 -2px;
   word-spacing: 0.05em;
 }
-/* line 53, assets/sass/_layout.scss */
+/* line 67, assets/sass/_layout.scss */
 footer .footer-location-widget .open {
   color: #f65446;
 }
-/* line 54, assets/sass/_layout.scss */
+/* line 68, assets/sass/_layout.scss */
 footer .footer-location-widget .address {
   font: 12px/18px "minion";
   display: block;
@@ -1263,16 +1283,16 @@ footer .footer-location-widget .address {
   letter-spacing: 0.06em;
   word-spacing: 0.015em;
 }
-/* line 57, assets/sass/_layout.scss */
+/* line 71, assets/sass/_layout.scss */
 footer #social_navCont {
   display: block;
   margin: 15px 0 0;
 }
-/* line 59, assets/sass/_layout.scss */
+/* line 73, assets/sass/_layout.scss */
 footer #social_navCont ul {
   width: 170px;
 }
-/* line 60, assets/sass/_layout.scss */
+/* line 74, assets/sass/_layout.scss */
 footer #social_navCont ul li {
   color: #fff;
   overflow: hidden;
@@ -1281,37 +1301,40 @@ footer #social_navCont ul li {
   float: left;
   position: relative;
   margin: 0 20px 20px 0;
+  background: #137cc1;
 }
-/* line 61, assets/sass/_layout.scss */
+/* line 75, assets/sass/_layout.scss */
 footer #social_navCont ul li:before {
   position: absolute;
   top: 32%;
   left: 33%;
   font-size: 19px;
+  z-index: 1;
 }
-/* line 68, assets/sass/_layout.scss */
+/* line 82, assets/sass/_layout.scss */
 footer #social_navCont ul li a {
   color: transparent;
-  background: #137cc1;
   display: block;
-  height: 35px;
-  width: 35px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
 }
-/* line 69, assets/sass/_layout.scss */
+/* line 83, assets/sass/_layout.scss */
 footer #social_navCont ul ul {
   display: none;
 }
-/* line 72, assets/sass/_layout.scss */
+/* line 86, assets/sass/_layout.scss */
 footer #footer-donate {
   color: #323333;
   font: bold 12px/12px "minion";
 }
-/* line 74, assets/sass/_layout.scss */
+/* line 88, assets/sass/_layout.scss */
 footer #footer-donate span {
   margin: 3px 0 18px;
   display: block;
 }
-/* line 75, assets/sass/_layout.scss */
+/* line 89, assets/sass/_layout.scss */
 footer #footer-donate a {
   text-align: center;
   padding: 7px 10px 8px;

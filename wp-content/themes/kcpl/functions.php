@@ -37,14 +37,41 @@
 
   //widgets
   register_sidebar(array(
-	   'name'          => __( 'Footer - Left' ),
-	   'id'            => 'footer-left',
+	   'name'          => __( 'Footer - Column One' ),
+	   'id'            => 'footer-col1',
 	   'description'   => '',
-     'class'         => '',
+     'class'         => 'footer-location-widget',
 	   'before_widget' => '',
 	   'after_widget'  => '',
-	   'before_title'  => '<h2>',
-	   'after_title'   => '</h2>' ));
+	   'before_title'  => '<span class="title">',
+	   'after_title'   => '</span>' ));
+  register_sidebar(array(
+     'name'          => __( 'Footer - Column Two' ),
+     'id'            => 'footer-col2',
+     'description'   => '',
+     'class'         => 'footer-location-widget',
+     'before_widget' => '',
+     'after_widget'  => '',
+     'before_title'  => '<span class="title">',
+     'after_title'   => '</span>' ));
+  register_sidebar(array(
+     'name'          => __( 'Footer - Column Three' ),
+     'id'            => 'footer-col3',
+     'description'   => '',
+     'class'         => 'footer-location-widget',
+     'before_widget' => '',
+     'after_widget'  => '',
+     'before_title'  => '<span class="title">',
+     'after_title'   => '</span>' ));
+  register_sidebar(array(
+     'name'          => __( 'Footer - Column Four' ),
+     'id'            => 'footer-col4',
+     'description'   => '',
+     'class'         => 'footer-location-widget',
+     'before_widget' => '',
+     'after_widget'  => '',
+     'before_title'  => '<span class="title">',
+     'after_title'   => '</span>' ));
 
   //editor style
   add_editor_style('assets/css/wp-editor.css');
