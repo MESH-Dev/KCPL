@@ -8,11 +8,11 @@
 <body <?php if(wp_is_mobile()){$mobileClass="KCPLmobile";} body_class($mobileClass);?>>
 <header>
   <div id="header-util">
-    <div class="container cf">
+    <div class="container clearfix">
       <div id="header-logo">
         <a href="<?php echo home_url(); ?>"><img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" /></a>
       </div>
-      <div class="gutter cf">
+      <div class="gutter clearfix">
         <?php if(has_nav_menu('util_nav')){
             $defaults = array(
               'theme_location'  => 'util_nav',
@@ -50,8 +50,8 @@
     </div>
   </div>
   <div id="header-nav">
-    <div class="container cf">
-      <div class="gutter cf">
+    <div class="container clearfix">
+      <div class="gutter clearfix">
         <?php if(has_nav_menu('main_nav')){
             $defaults = array(
             	'theme_location'  => 'main_nav',

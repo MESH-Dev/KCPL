@@ -1,6 +1,7 @@
 <?php
   //enqueue scripts and styles *use production assets. Dev assets are located in assets/css and assets/js
   function KCPL_scripts() {
+    wp_enqueue_style('font-awesome','//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
   	wp_enqueue_style( 'KCPL-style', get_stylesheet_uri() );
   	wp_enqueue_script( 'KCPL-script', get_template_directory_uri().'/assets/prod/KCPL.js', array('jquery'), '1.0.0', true );
     wp_enqueue_script('typekit','//use.typekit.net/drm7klb.js');
