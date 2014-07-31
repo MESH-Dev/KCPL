@@ -1436,3 +1436,88 @@ button {
 #secondary-sidebar-nav ul#main_nav_secondary > li > ul > li > ul > li:last-child > a {
   padding: 4px 0px 16px 20px;
 }
+
+/* Forms */
+/* line 41, assets/sass/_elements.scss */
+form {
+  margin: 20px;
+  padding: 10px;
+}
+
+/* line 44, assets/sass/_elements.scss */
+fieldset {
+  margin-bottom: 20px;
+}
+
+/* line 51, assets/sass/_elements.scss */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+textarea,
+select {
+  border: 3px solid #fff;
+  padding: 6px 8px;
+  font: 18px/24px "Nimbus-Sans", Helvetica, Arial, sans-serif;
+  max-width: 100%;
+  display: block;
+  background: #e2e2e2;
+  color: #323333;
+  margin: 0px 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* line 66, assets/sass/_elements.scss */
+.form-row {
+  position: relative;
+}
+
+/* line 70, assets/sass/_elements.scss */
+.approved-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #02c253;
+}
+
+/* line 77, assets/sass/_elements.scss */
+.denied-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #ff0000;
+}
+
+/* line 84, assets/sass/_elements.scss */
+.approved-text {
+  color: #02c253 !important;
+}
+
+/* line 88, assets/sass/_elements.scss */
+.denied-text {
+  color: #ff0000 !important;
+}
+
+/* line 92, assets/sass/_elements.scss */
+::-webkit-input-placeholder {
+  color: #323333;
+}
+
+/* line 96, assets/sass/_elements.scss */
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #323333;
+}
+
+/* line 100, assets/sass/_elements.scss */
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #323333;
+}
+
+/* line 104, assets/sass/_elements.scss */
+:-ms-input-placeholder {
+  color: #323333;
+}

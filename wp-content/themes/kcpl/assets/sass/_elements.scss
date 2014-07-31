@@ -36,3 +36,71 @@ button {
       > li > ul > li > ul > li:last-child > a{padding: 4px 0px 16px 20px;}
   }
 }
+
+/* Forms */
+form {
+margin: 20px;
+   padding: 10px; }
+fieldset {
+margin-bottom: 20px; }
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+textarea,
+select {
+border: 3px solid #fff;
+padding: 6px 8px;
+font: 18px/24px "Nimbus-Sans", Helvetica, Arial, sans-serif;
+max-width: 100%;
+display: block;
+background: #e2e2e2;
+   color: #323333;
+   margin: 0px 20px;
+   overflow: hidden;
+   box-sizing:border-box;
+   width: 100%;
+}
+
+
+.form-row {
+   position: relative;
+}
+
+.approved-icon {
+   position: absolute;
+   top: 15px;
+   right: 15px;
+   color: #02c253;
+}
+
+.denied-icon {
+   position: absolute;
+   top: 15px;
+   right: 15px;
+   color: #ff0000;
+}
+
+.approved-text {
+   color: #02c253 !important;
+}
+
+.denied-text {
+   color: #ff0000 !important;
+}
+
+::-webkit-input-placeholder {
+  color: #323333;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: #323333;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: #323333;
+}
+
+:-ms-input-placeholder {
+  color: #323333;
+}

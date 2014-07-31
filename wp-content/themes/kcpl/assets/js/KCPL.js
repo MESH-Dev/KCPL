@@ -6,7 +6,6 @@ jQuery(document).ready(function($){
   try{Typekit.load();}catch(e){}
 
   //header functions
-  try{Typekit.load();}catch(e){}
 
   //footer functions
 });
