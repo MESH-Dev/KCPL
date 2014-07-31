@@ -1,7 +1,92 @@
-.container{position:relative;margin:0 auto;width:988px;border-left:1px solid #ccc;border-right:1px solid #ccc;}
+.container{position:relative;margin:0 auto;width:970px;border-left:1px solid #ccc;border-right:1px solid #ccc;}
 
-//header
+//header - no sass nesting here
 header{width:100%;float:left;}
-  header > *{width:100%;float:left;}
-  header #header-util{background:$s-grey;height:45px;}
-  header #header-nav{background:$blue;height:47px;}
+  header .container{width:988px;}
+  header > *{width:100%;float:left;position:relative;}
+  #header-logo{position:absolute;top:0;}
+  header #header-util{background:$s-grey;height:45px;z-index:2;}
+    header #header-util .gutter{padding:0 0 0 228px;}
+    #header-util ul#util_nav{float:left;width:515px;}
+    #header-util ul#util_nav li{font:12px/12px "minion";float:left;}
+    #header-util ul#util_nav li a{color: #353535;padding: 22px 10px 11px;float: left;letter-spacing: 0.085em;min-width: 33px;}
+    #header-util ul#util_nav ul{display:none;}
+
+    #header-util #header-extra{float:right;width:245px;}
+      #header-extra > *{float:left;color:#353535;font:11px/11px "nimbus-sans";}
+      #header-extra #header-search{width:80px;}
+        #header-extra #header-search b{height: 17px;width: 19px;background: url(assets/img/utilSprites.png);display: block;float: left;margin: 19px 0 0 1px;}
+        #header-extra #header-search span{margin: 23px 0 0 7px;float: left;letter-spacing: 0.045em;}
+      #header-extra #header-newsletter{width:115px;}
+        #header-extra #header-newsletter b{height: 17px;width: 23px;background: url(assets/img/utilSprites.png) -20px 0px;display: block;float: left;margin:17px 0 0 10px;}
+        #header-extra #header-newsletter span{margin: 23px 0 0 8px;float: left;letter-spacing: 0.08em;}
+      #header-extra #header-login{position:absolute;top:0;right:0;}
+
+  header #header-nav{background:$blue;height:47px;z-index:1;}
+    header #header-nav .gutter{padding:0 0 0 210px;}
+    header #header-nav ul#main_nav{float:left;width:744px;}
+    header #header-nav ul#main_nav > li{float:left;position:relative;}
+    header #header-nav ul#main_nav > li > a{color:#fff;font:bold 23px/23px "nimbus-sans-condensed";text-transform: uppercase;padding: 12px 28px 12px;float: left;letter-spacing: 0.05em;}
+      header #header-nav ul#main_nav > li:hover > a{color:#323333;}
+
+    header #header-nav ul#main_nav > li > ul{display:none;position:absolute;top:100%;left:9px;width:227px;background:$l-blue;padding: 5px 0;}
+    header #header-nav ul#main_nav > li:hover > ul{display:block;}
+      header #header-nav ul#main_nav > li > ul > li{}
+      header #header-nav ul#main_nav > li > ul > li > a{color: #fff;font: bold 17px/17px "nimbus-sans-condensed";text-transform: uppercase;float: left;letter-spacing: 0.05em;padding: 7px 20px;word-spacing:0.1em;}
+        header #header-nav ul#main_nav > li > ul > li:hover > a{color:#323333;}
+
+
+//footer - Used more sass nesting this time around
+footer{background:#c5c5c5;float:left;width:100%;}
+  footer{
+    $widget-d:#323333;
+    $widget-l:#7d7d7d;
+    $widget-r:#f65446;
+    .container > .gutter{padding:30px 0px;}
+    .title{font:bold 13px/18px "nimbus-sans";text-transform:uppercase;color:$widget-d;display:block;}
+    .columns{min-height:10px;}
+
+    /*
+      Footer Location Widget
+      ----------------------
+      <div class="footer-location-widget">
+        <span class="title">Main Library</span>
+        <div class="hour-cont">
+          <span class="hours">Hours</span> <span class="open">Open Now</span>
+        </div>
+        <span class="address">123 Capitol St.<br>
+        Charleston, WV 25301<br>
+        304-343-4646</span>
+      </div>
+    */
+    .footer-location-widget{color:$widget-l;margin:0 0 18px;}
+    .footer-location-widget{
+      .hour-cont{display:block;}
+      .hours{font:13px/12px "minion";font-style:italic;color:$widget-d;letter-spacing: 0.035em;}
+      .open,.closed{font:13px/12px "nimbus-sans-condensed";color:$widget-d;text-transform:uppercase;margin: 0 0 0 -2px;word-spacing: 0.05em;}
+      .open{color:$widget-r;}
+      .address{font: 12px/18px "minion";display: block;margin: 2px 0 0;letter-spacing: 0.06em;word-spacing: 0.015em;}
+    }
+
+    #social_navCont{display:block;margin:15px 0 0;}
+    #social_navCont{
+      ul{width:170px;}
+      ul li{color:#fff;overflow:hidden;height:35px;width:35px;float:left;position:relative;margin:0 20px 20px 0;background:$blue;}
+        ul li:before{position: absolute;top: 32%;left: 33%;font-size: 19px;z-index:1;}
+        ul li.facebook{}
+        ul li.twitter{}
+        ul li.tumblr{}
+        ul li.googleplus{}
+        ul li.pinterest{}
+        ul li.instagram{}
+      ul li a{color:transparent;display:block;height: 100%;width: 100%;position: absolute;z-index: 2;}
+      ul ul{display:none;}
+    }
+
+    #footer-donate{color:$widget-d;font:bold 12px/12px "minion";}
+    #footer-donate{
+      span{margin: 3px 0 18px;display: block;}
+      a{text-align: center;padding: 7px 10px 8px;border: none;color: #ffffff;border-radius: 10px;background: $blue;font-size: 17px;font-family: "Nimbus-Sans-Condensed";text-transform: uppercase;font-weight: 700;letter-spacing: 0.07em;display: block;width: 129px;}
+    }
+
+  }

@@ -75,12 +75,23 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+/* line 46, assets/sass/_base.scss */
+a {
+  text-decoration: none;
+}
+
 /* #Buttons
 ================================================== */
 /* #Forms
 ================================================== */
 /* #Images
 ================================================== */
+/* line 65, assets/sass/_base.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* WordPress Image Styles
    ========================================================================== */
 /* line 70, assets/sass/_base.scss */
@@ -996,7 +1007,7 @@ or wrap each row of columns in a <div class="row"> */
 .container {
   position: relative;
   margin: 0 auto;
-  width: 988px;
+  width: 970px;
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
 }
@@ -1008,19 +1019,334 @@ header {
 }
 
 /* line 5, assets/sass/_layout.scss */
-header > * {
-  width: 100%;
-  float: left;
+header .container {
+  width: 988px;
 }
 
 /* line 6, assets/sass/_layout.scss */
-header #header-util {
-  background: #e2e2e2;
-  height: 45px;
+header > * {
+  width: 100%;
+  float: left;
+  position: relative;
 }
 
 /* line 7, assets/sass/_layout.scss */
+#header-logo {
+  position: absolute;
+  top: 0;
+}
+
+/* line 8, assets/sass/_layout.scss */
+header #header-util {
+  background: #e2e2e2;
+  height: 45px;
+  z-index: 2;
+}
+
+/* line 9, assets/sass/_layout.scss */
+header #header-util .gutter {
+  padding: 0 0 0 228px;
+}
+
+/* line 10, assets/sass/_layout.scss */
+#header-util ul#util_nav {
+  float: left;
+  width: 515px;
+}
+
+/* line 11, assets/sass/_layout.scss */
+#header-util ul#util_nav li {
+  font: 12px/12px "minion";
+  float: left;
+}
+
+/* line 12, assets/sass/_layout.scss */
+#header-util ul#util_nav li a {
+  color: #353535;
+  padding: 22px 10px 11px;
+  float: left;
+  letter-spacing: 0.085em;
+  min-width: 33px;
+}
+
+/* line 13, assets/sass/_layout.scss */
+#header-util ul#util_nav ul {
+  display: none;
+}
+
+/* line 15, assets/sass/_layout.scss */
+#header-util #header-extra {
+  float: right;
+  width: 245px;
+}
+
+/* line 16, assets/sass/_layout.scss */
+#header-extra > * {
+  float: left;
+  color: #353535;
+  font: 11px/11px "nimbus-sans";
+}
+
+/* line 17, assets/sass/_layout.scss */
+#header-extra #header-search {
+  width: 80px;
+}
+
+/* line 18, assets/sass/_layout.scss */
+#header-extra #header-search b {
+  height: 17px;
+  width: 19px;
+  background: url(assets/img/utilSprites.png);
+  display: block;
+  float: left;
+  margin: 19px 0 0 1px;
+}
+
+/* line 19, assets/sass/_layout.scss */
+#header-extra #header-search span {
+  margin: 23px 0 0 7px;
+  float: left;
+  letter-spacing: 0.045em;
+}
+
+/* line 20, assets/sass/_layout.scss */
+#header-extra #header-newsletter {
+  width: 115px;
+}
+
+/* line 21, assets/sass/_layout.scss */
+#header-extra #header-newsletter b {
+  height: 17px;
+  width: 23px;
+  background: url(assets/img/utilSprites.png) -20px 0px;
+  display: block;
+  float: left;
+  margin: 17px 0 0 10px;
+}
+
+/* line 22, assets/sass/_layout.scss */
+#header-extra #header-newsletter span {
+  margin: 23px 0 0 8px;
+  float: left;
+  letter-spacing: 0.08em;
+}
+
+/* line 23, assets/sass/_layout.scss */
+#header-extra #header-login {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* line 25, assets/sass/_layout.scss */
 header #header-nav {
   background: #137cc1;
   height: 47px;
+  z-index: 1;
+}
+
+/* line 26, assets/sass/_layout.scss */
+header #header-nav .gutter {
+  padding: 0 0 0 210px;
+}
+
+/* line 27, assets/sass/_layout.scss */
+header #header-nav ul#main_nav {
+  float: left;
+  width: 744px;
+}
+
+/* line 28, assets/sass/_layout.scss */
+header #header-nav ul#main_nav > li {
+  float: left;
+  position: relative;
+}
+
+/* line 29, assets/sass/_layout.scss */
+header #header-nav ul#main_nav > li > a {
+  color: #fff;
+  font: bold 23px/23px "nimbus-sans-condensed";
+  text-transform: uppercase;
+  padding: 12px 28px 12px;
+  float: left;
+  letter-spacing: 0.05em;
+}
+
+/* line 30, assets/sass/_layout.scss */
+header #header-nav ul#main_nav > li:hover > a {
+  color: #323333;
+}
+
+/* line 32, assets/sass/_layout.scss */
+header #header-nav ul#main_nav > li > ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 9px;
+  width: 227px;
+  background: #61a2d7;
+  padding: 5px 0;
+}
+
+/* line 33, assets/sass/_layout.scss */
+header #header-nav ul#main_nav > li:hover > ul {
+  display: block;
+}
+
+/* line 35, assets/sass/_layout.scss */
+header #header-nav ul#main_nav > li > ul > li > a {
+  color: #fff;
+  font: bold 17px/17px "nimbus-sans-condensed";
+  text-transform: uppercase;
+  float: left;
+  letter-spacing: 0.05em;
+  padding: 7px 20px;
+  word-spacing: 0.1em;
+}
+
+/* line 36, assets/sass/_layout.scss */
+header #header-nav ul#main_nav > li > ul > li:hover > a {
+  color: #323333;
+}
+
+/* line 40, assets/sass/_layout.scss */
+footer {
+  background: #c5c5c5;
+  float: left;
+  width: 100%;
+}
+
+/* line 41, assets/sass/_layout.scss */
+footer {
+  /*
+    Footer Location Widget
+    ----------------------
+    <div class="footer-location-widget">
+      <span class="title">Main Library</span>
+      <div class="hour-cont">
+        <span class="hours">Hours</span> <span class="open">Open Now</span>
+      </div>
+      <span class="address">123 Capitol St.<br>
+      Charleston, WV 25301<br>
+      304-343-4646</span>
+    </div>
+  */
+}
+/* line 45, assets/sass/_layout.scss */
+footer .container > .gutter {
+  padding: 30px 0px;
+}
+/* line 46, assets/sass/_layout.scss */
+footer .title {
+  font: bold 13px/18px "nimbus-sans";
+  text-transform: uppercase;
+  color: #323333;
+  display: block;
+}
+/* line 47, assets/sass/_layout.scss */
+footer .columns {
+  min-height: 10px;
+}
+/* line 62, assets/sass/_layout.scss */
+footer .footer-location-widget {
+  color: #7d7d7d;
+  margin: 0 0 18px;
+}
+/* line 64, assets/sass/_layout.scss */
+footer .footer-location-widget .hour-cont {
+  display: block;
+}
+/* line 65, assets/sass/_layout.scss */
+footer .footer-location-widget .hours {
+  font: 13px/12px "minion";
+  font-style: italic;
+  color: #323333;
+  letter-spacing: 0.035em;
+}
+/* line 66, assets/sass/_layout.scss */
+footer .footer-location-widget .open, footer .footer-location-widget .closed {
+  font: 13px/12px "nimbus-sans-condensed";
+  color: #323333;
+  text-transform: uppercase;
+  margin: 0 0 0 -2px;
+  word-spacing: 0.05em;
+}
+/* line 67, assets/sass/_layout.scss */
+footer .footer-location-widget .open {
+  color: #f65446;
+}
+/* line 68, assets/sass/_layout.scss */
+footer .footer-location-widget .address {
+  font: 12px/18px "minion";
+  display: block;
+  margin: 2px 0 0;
+  letter-spacing: 0.06em;
+  word-spacing: 0.015em;
+}
+/* line 71, assets/sass/_layout.scss */
+footer #social_navCont {
+  display: block;
+  margin: 15px 0 0;
+}
+/* line 73, assets/sass/_layout.scss */
+footer #social_navCont ul {
+  width: 170px;
+}
+/* line 74, assets/sass/_layout.scss */
+footer #social_navCont ul li {
+  color: #fff;
+  overflow: hidden;
+  height: 35px;
+  width: 35px;
+  float: left;
+  position: relative;
+  margin: 0 20px 20px 0;
+  background: #137cc1;
+}
+/* line 75, assets/sass/_layout.scss */
+footer #social_navCont ul li:before {
+  position: absolute;
+  top: 32%;
+  left: 33%;
+  font-size: 19px;
+  z-index: 1;
+}
+/* line 82, assets/sass/_layout.scss */
+footer #social_navCont ul li a {
+  color: transparent;
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+}
+/* line 83, assets/sass/_layout.scss */
+footer #social_navCont ul ul {
+  display: none;
+}
+/* line 86, assets/sass/_layout.scss */
+footer #footer-donate {
+  color: #323333;
+  font: bold 12px/12px "minion";
+}
+/* line 88, assets/sass/_layout.scss */
+footer #footer-donate span {
+  margin: 3px 0 18px;
+  display: block;
+}
+/* line 89, assets/sass/_layout.scss */
+footer #footer-donate a {
+  text-align: center;
+  padding: 7px 10px 8px;
+  border: none;
+  color: #ffffff;
+  border-radius: 10px;
+  background: #137cc1;
+  font-size: 17px;
+  font-family: "Nimbus-Sans-Condensed";
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  display: block;
+  width: 129px;
 }
