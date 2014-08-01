@@ -288,6 +288,16 @@ a {
   text-decoration: none;
 }
 
+/* line 31, assets/sass/_typography.scss */
+ul {
+  list-style: disc;
+}
+
+/* line 33, assets/sass/_typography.scss */
+ol {
+  list-style: decimal;
+}
+
 /* Table of Contents
 ==================================================
     #Import Base Style
@@ -1151,6 +1161,7 @@ header #header-util .gutter {
 #header-util ul#util_nav {
   float: left;
   width: 515px;
+  list-style: none;
 }
 
 /* line 11, assets/sass/_layout.scss */
@@ -1171,6 +1182,7 @@ header #header-util .gutter {
 /* line 13, assets/sass/_layout.scss */
 #header-util ul#util_nav ul {
   display: none;
+  list-style: none;
 }
 
 /* line 15, assets/sass/_layout.scss */
@@ -1253,6 +1265,7 @@ header #header-nav .gutter {
 header #header-nav ul#main_nav {
   float: left;
   width: 744px;
+  list-style: none;
 }
 
 /* line 28, assets/sass/_layout.scss */
@@ -1285,6 +1298,7 @@ header #header-nav ul#main_nav > li > ul {
   width: 227px;
   background: #61a2d7;
   padding: 5px 0;
+  list-style: none;
 }
 
 /* line 33, assets/sass/_layout.scss */
@@ -1481,8 +1495,13 @@ button {
 /* line 21, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary {
   display: block;
+  list-style: none;
 }
-/* line 24, assets/sass/_elements.scss */
+/* line 23, assets/sass/_elements.scss */
+#secondary-sidebar-nav ul#main_nav_secondary ul {
+  list-style: none;
+}
+/* line 25, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li > a {
   background: #137cc1;
   color: #fff;
@@ -1491,27 +1510,27 @@ button {
   display: block;
   padding: 16px 20px 8px;
 }
-/* line 25, assets/sass/_elements.scss */
+/* line 26, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li:last-child > a {
   padding: 16px 20px 13px;
 }
-/* line 26, assets/sass/_elements.scss */
+/* line 27, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary a {
   text-decoration: none;
 }
-/* line 27, assets/sass/_elements.scss */
+/* line 28, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary a:hover, #secondary-sidebar-nav ul#main_nav_secondary li.current-menu-item > a, #secondary-sidebar-nav ul#main_nav_secondary .current-menu-ancestor > a {
   color: #323333;
 }
-/* line 29, assets/sass/_elements.scss */
+/* line 30, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li > ul {
   background: #7c7d7d;
 }
-/* line 30, assets/sass/_elements.scss */
+/* line 31, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li > ul > li {
   padding: 0 0;
 }
-/* line 31, assets/sass/_elements.scss */
+/* line 32, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li > ul > li > a {
   color: #fff;
   font: bold 19px/19px "nimbus-sans-condensed";
@@ -1519,15 +1538,15 @@ button {
   display: block;
   padding: 14px 0px 5px 20px;
 }
-/* line 33, assets/sass/_elements.scss */
+/* line 34, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li > ul > li > ul {
   padding: 0 0;
 }
-/* line 34, assets/sass/_elements.scss */
+/* line 35, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li > ul > li > ul > li {
   padding: 0 0;
 }
-/* line 35, assets/sass/_elements.scss */
+/* line 36, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li > ul > li > ul > li > a {
   color: #fff;
   font: 18px/18px "minion";
@@ -1536,24 +1555,24 @@ button {
   letter-spacing: 0.03em;
   word-spacing: 0.09em;
 }
-/* line 36, assets/sass/_elements.scss */
+/* line 37, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li > ul > li > ul > li:last-child > a {
   padding: 4px 0px 16px 20px;
 }
 
 /* Forms */
-/* line 41, assets/sass/_elements.scss */
+/* line 42, assets/sass/_elements.scss */
 form {
   margin: 20px;
   padding: 10px;
 }
 
-/* line 44, assets/sass/_elements.scss */
+/* line 45, assets/sass/_elements.scss */
 fieldset {
   margin-bottom: 20px;
 }
 
-/* line 51, assets/sass/_elements.scss */
+/* line 52, assets/sass/_elements.scss */
 input[type="text"],
 input[type="password"],
 input[type="email"],
@@ -1573,12 +1592,12 @@ select {
   width: 100%;
 }
 
-/* line 66, assets/sass/_elements.scss */
+/* line 67, assets/sass/_elements.scss */
 .form-row {
   position: relative;
 }
 
-/* line 70, assets/sass/_elements.scss */
+/* line 71, assets/sass/_elements.scss */
 .approved-icon {
   position: absolute;
   top: 15px;
@@ -1586,7 +1605,7 @@ select {
   color: #02c253;
 }
 
-/* line 77, assets/sass/_elements.scss */
+/* line 78, assets/sass/_elements.scss */
 .denied-icon {
   position: absolute;
   top: 15px;
@@ -1594,34 +1613,34 @@ select {
   color: #ff0000;
 }
 
-/* line 84, assets/sass/_elements.scss */
+/* line 85, assets/sass/_elements.scss */
 .approved-text {
   color: #02c253 !important;
 }
 
-/* line 88, assets/sass/_elements.scss */
+/* line 89, assets/sass/_elements.scss */
 .denied-text {
   color: #ff0000 !important;
 }
 
-/* line 92, assets/sass/_elements.scss */
+/* line 93, assets/sass/_elements.scss */
 ::-webkit-input-placeholder {
   color: #323333;
 }
 
-/* line 96, assets/sass/_elements.scss */
+/* line 97, assets/sass/_elements.scss */
 :-moz-placeholder {
   /* Firefox 18- */
   color: #323333;
 }
 
-/* line 100, assets/sass/_elements.scss */
+/* line 101, assets/sass/_elements.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #323333;
 }
 
-/* line 104, assets/sass/_elements.scss */
+/* line 105, assets/sass/_elements.scss */
 :-ms-input-placeholder {
   color: #323333;
 }

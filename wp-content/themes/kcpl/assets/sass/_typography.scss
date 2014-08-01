@@ -26,3 +26,9 @@ p{margin:0 0 .6em;}
 //anchors
 a{color:$blue;text-decoration:none;}
   a:hover{}
+
+//lists
+ul{list-style:disc;}
+  ul li{}
+ol{list-style:decimal;}
+  ol li{}

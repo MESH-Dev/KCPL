@@ -7,10 +7,10 @@ header{width:100%;float:left;}
   #header-logo{position:absolute;top:0;}
   header #header-util{background:$s-grey;height:45px;z-index:2;}
     header #header-util .gutter{padding:0 0 0 228px;}
-    #header-util ul#util_nav{float:left;width:515px;}
+    #header-util ul#util_nav{float:left;width:515px;list-style:none;}
     #header-util ul#util_nav li{font:12px/12px "minion";float:left;}
     #header-util ul#util_nav li a{color: #353535;padding: 22px 10px 11px;float: left;letter-spacing: 0.085em;min-width: 33px;}
-    #header-util ul#util_nav ul{display:none;}
+    #header-util ul#util_nav ul{display:none;list-style:none;}
 
     #header-util #header-extra{float:right;width:245px;}
       #header-extra > *{float:left;color:#353535;font:11px/11px "nimbus-sans";}
@@ -24,12 +24,12 @@ header{width:100%;float:left;}
 
   header #header-nav{background:$blue;height:47px;z-index:1;}
     header #header-nav .gutter{padding:0 0 0 210px;}
-    header #header-nav ul#main_nav{float:left;width:744px;}
+    header #header-nav ul#main_nav{float:left;width:744px;list-style:none;}
     header #header-nav ul#main_nav > li{float:left;position:relative;}
     header #header-nav ul#main_nav > li > a{color:#fff;font:bold 23px/23px "nimbus-sans-condensed";text-transform: uppercase;padding: 12px 28px 12px;float: left;letter-spacing: 0.05em;}
       header #header-nav ul#main_nav > li:hover > a{color:#323333;}
 
-    header #header-nav ul#main_nav > li > ul{display:none;position:absolute;top:100%;left:9px;width:227px;background:$l-blue;padding: 5px 0;}
+    header #header-nav ul#main_nav > li > ul{display:none;position:absolute;top:100%;left:9px;width:227px;background:$l-blue;padding: 5px 0;list-style:none;}
     header #header-nav ul#main_nav > li:hover > ul{display:block;}
       header #header-nav ul#main_nav > li > ul > li{}
       header #header-nav ul#main_nav > li > ul > li > a{color: #fff;font: bold 17px/17px "nimbus-sans-condensed";text-transform: uppercase;float: left;letter-spacing: 0.05em;padding: 7px 20px;word-spacing:0.1em;}

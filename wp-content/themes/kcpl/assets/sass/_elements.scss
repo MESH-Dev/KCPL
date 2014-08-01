@@ -18,8 +18,9 @@ button {
 //Secondary Sidebar Menu - uses wp_nav_menu() for markup
 #secondary-sidebar-nav{display:block;}
 #secondary-sidebar-nav{
-  ul#main_nav_secondary{display:block;}
+  ul#main_nav_secondary{display:block;list-style:none;}
   ul#main_nav_secondary{
+      ul{list-style:none;}
       > li{}
       > li > a{background:$blue;color: #fff;font: bold 19px/19px "nimbus-sans-condensed";text-transform: uppercase;display: block;padding: 16px 20px 8px;}
       > li:last-child > a{padding: 16px 20px 13px;}
