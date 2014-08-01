@@ -36,6 +36,8 @@ button {
       > li > ul > li > ul > li{padding:0 0;}
       > li > ul > li > ul > li > a{color: #fff;font: 18px/18px "minion";display: block;padding: 4px 0px 0px 20px;letter-spacing: 0.03em;word-spacing: 0.09em;}
       > li > ul > li > ul > li:last-child > a{padding: 4px 0px 16px 20px;}
+
+      > li > ul > li > ul ul{display:none;}
   }
 }
 
@@ -137,3 +139,46 @@ table{
 //images
 .wp-caption{border:none;padding:0;text-align:left;}
   .wp-caption p.wp-caption-text{font:12px/16px "minion";margin:0 0 .1em;padding:0;}
+
+//banners
+/*
+  <div id="banner" class="#{$namespace}background-COLORNAME menu">
+    <div class="container">
+      <div class="gutter">
+        <?php wp_nav_menu(); ?>
+      </div>
+    </div>
+  </div>
+
+  <div id="bannerHome" class="#{$namespace}background-COLORNAME">
+    <div class="container">
+      <div class="gutter">
+
+      </div>
+    </div>
+  </div>
+*/
+#banner{height:202px;float:left;width:100%;}
+  #banner{
+    ul{list-style:none;}
+    li{}
+    a{display:none;}
+      li.current-menu-ancestor > a, li.current-menu-item > a{display:block;}
+    .gutter{padding:20px;
+      > ul{display:block;margin:0 auto;}
+      > ul > li{}
+      > ul > li > a{}
+
+      > ul > li > ul{}
+      > ul > li > ul > li{}
+      > ul > li > ul > li > a{}
+
+      > ul > li > ul > li > ul{}
+      > ul > li > ul > li > ul > li{}
+      > ul > li > ul > li > ul > li > a{}
+
+      > ul > li > ul > li > ul > li > ul{}
+      > ul > li > ul > li > ul > li > ul > li{}
+      > ul > li > ul > li > ul > li > ul > li > a{}
+    }
+  }

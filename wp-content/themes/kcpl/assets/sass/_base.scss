@@ -39,7 +39,31 @@ $d-grey : #323333;
 $m-grey : #7c7d7d;
 $s-grey : #e2e2e2;
 
+//fonts
+$minion:"minion";
+$nimbus:"nimbus-sans";
+$nimbus-c:"nimbus-sans-condensed";
 
+
+// KCPL specific classes
+	//backgrounds
+	.#{$namespace}background-blue{background:$blue;}
+	.#{$namespace}background-green{background:$green;}
+	.#{$namespace}background-red{background:$red;}
+	.#{$namespace}background-grey{background:$grey;}
+	.#{$namespace}background-yellow{background:$yellow;}
+
+	//colors
+	.#{$namespace}color-blue{color:$blue;}
+	.#{$namespace}color-green{color:$green;}
+	.#{$namespace}color-red{color:$red;}
+	.#{$namespace}color-grey{color:$grey;}
+	.#{$namespace}color-yellow{color:$yellow;}
+
+	//fonts
+	.#{$namespace}font-minion{font-family:$minion;}
+	.#{$namespace}font-nimbus{font-family:$nimbus;}
+	.#{$namespace}font-nimbus-condensed{font-family:$nimbus-c;}
 
 
 /* #Basic Styles
@@ -49,6 +73,7 @@ body {
 	-webkit-text-size-adjust: 100%;
  }
 a{text-decoration:none;}
+
 
 /* #Buttons
 ================================================== */
