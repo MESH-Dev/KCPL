@@ -265,7 +265,7 @@ p {
 }
 
 /* line 22, assets/sass/_typography.scss */
-.KCPL_caption-minion {
+.KCPL_caption-minion, .wp-caption-text {
   font: 12px/16px "minion";
   margin: 0 0 .1em;
 }
@@ -286,6 +286,34 @@ p {
 a {
   color: #137cc1;
   text-decoration: none;
+}
+
+/* line 31, assets/sass/_typography.scss */
+ul {
+  list-style: disc inside;
+  margin: 0 0 .6em;
+}
+
+/* line 32, assets/sass/_typography.scss */
+ul li {
+  margin: 2px 0;
+}
+
+/* line 33, assets/sass/_typography.scss */
+ol {
+  list-style: decimal inside;
+  margin: 0 0 .6em;
+}
+
+/* line 34, assets/sass/_typography.scss */
+ol li {
+  margin: 2px 0;
+}
+
+/* line 37, assets/sass/_typography.scss */
+blockquote {
+  margin: 0 10%;
+  font: 20px/23px "nimbus-sans-condensed";
 }
 
 /* Table of Contents
@@ -1151,12 +1179,14 @@ header #header-util .gutter {
 #header-util ul#util_nav {
   float: left;
   width: 515px;
+  list-style: none;
 }
 
 /* line 11, assets/sass/_layout.scss */
 #header-util ul#util_nav li {
   font: 12px/12px "minion";
   float: left;
+  margin: 0;
 }
 
 /* line 12, assets/sass/_layout.scss */
@@ -1171,6 +1201,7 @@ header #header-util .gutter {
 /* line 13, assets/sass/_layout.scss */
 #header-util ul#util_nav ul {
   display: none;
+  list-style: none;
 }
 
 /* line 15, assets/sass/_layout.scss */
@@ -1253,15 +1284,21 @@ header #header-nav .gutter {
 header #header-nav ul#main_nav {
   float: left;
   width: 744px;
+  list-style: none;
 }
 
 /* line 28, assets/sass/_layout.scss */
+ul#main_nav li {
+  margin: 0;
+}
+
+/* line 29, assets/sass/_layout.scss */
 header #header-nav ul#main_nav > li {
   float: left;
   position: relative;
 }
 
-/* line 29, assets/sass/_layout.scss */
+/* line 30, assets/sass/_layout.scss */
 header #header-nav ul#main_nav > li > a {
   color: #fff;
   font: bold 23px/23px "nimbus-sans-condensed";
@@ -1271,12 +1308,12 @@ header #header-nav ul#main_nav > li > a {
   letter-spacing: 0.05em;
 }
 
-/* line 30, assets/sass/_layout.scss */
+/* line 31, assets/sass/_layout.scss */
 header #header-nav ul#main_nav > li:hover > a {
   color: #323333;
 }
 
-/* line 32, assets/sass/_layout.scss */
+/* line 33, assets/sass/_layout.scss */
 header #header-nav ul#main_nav > li > ul {
   display: none;
   position: absolute;
@@ -1285,14 +1322,15 @@ header #header-nav ul#main_nav > li > ul {
   width: 227px;
   background: #61a2d7;
   padding: 5px 0;
+  list-style: none;
 }
 
-/* line 33, assets/sass/_layout.scss */
+/* line 34, assets/sass/_layout.scss */
 header #header-nav ul#main_nav > li:hover > ul {
   display: block;
 }
 
-/* line 35, assets/sass/_layout.scss */
+/* line 36, assets/sass/_layout.scss */
 header #header-nav ul#main_nav > li > ul > li > a {
   color: #fff;
   font: bold 17px/17px "nimbus-sans-condensed";
@@ -1303,24 +1341,24 @@ header #header-nav ul#main_nav > li > ul > li > a {
   word-spacing: 0.1em;
 }
 
-/* line 36, assets/sass/_layout.scss */
+/* line 37, assets/sass/_layout.scss */
 header #header-nav ul#main_nav > li > ul > li:hover > a {
   color: #323333;
 }
 
-/* line 38, assets/sass/_layout.scss */
+/* line 39, assets/sass/_layout.scss */
 header #header-nav ul#main_nav > li > ul > li > ul {
   display: none;
 }
 
-/* line 42, assets/sass/_layout.scss */
+/* line 43, assets/sass/_layout.scss */
 footer {
   background: #c5c5c5;
   float: left;
   width: 100%;
 }
 
-/* line 43, assets/sass/_layout.scss */
+/* line 44, assets/sass/_layout.scss */
 footer {
   /*
     Footer Location Widget
@@ -1336,38 +1374,38 @@ footer {
     </div>
   */
 }
-/* line 47, assets/sass/_layout.scss */
+/* line 48, assets/sass/_layout.scss */
 footer .container > .gutter {
   padding: 30px 0px;
 }
-/* line 48, assets/sass/_layout.scss */
+/* line 49, assets/sass/_layout.scss */
 footer .title {
   font: bold 13px/18px "nimbus-sans";
   text-transform: uppercase;
   color: #323333;
   display: block;
 }
-/* line 49, assets/sass/_layout.scss */
+/* line 50, assets/sass/_layout.scss */
 footer .columns {
   min-height: 10px;
 }
-/* line 64, assets/sass/_layout.scss */
+/* line 65, assets/sass/_layout.scss */
 footer .footer-location-widget {
   color: #7d7d7d;
   margin: 0 0 18px;
 }
-/* line 66, assets/sass/_layout.scss */
+/* line 67, assets/sass/_layout.scss */
 footer .footer-location-widget .hour-cont {
   display: block;
 }
-/* line 67, assets/sass/_layout.scss */
+/* line 68, assets/sass/_layout.scss */
 footer .footer-location-widget .hours {
   font: 13px/12px "minion";
   font-style: italic;
   color: #323333;
   letter-spacing: 0.035em;
 }
-/* line 68, assets/sass/_layout.scss */
+/* line 69, assets/sass/_layout.scss */
 footer .footer-location-widget .open, footer .footer-location-widget .closed {
   font: 13px/12px "nimbus-sans-condensed";
   color: #323333;
@@ -1375,11 +1413,11 @@ footer .footer-location-widget .open, footer .footer-location-widget .closed {
   margin: 0 0 0 -2px;
   word-spacing: 0.05em;
 }
-/* line 69, assets/sass/_layout.scss */
+/* line 70, assets/sass/_layout.scss */
 footer .footer-location-widget .open {
   color: #f65446;
 }
-/* line 70, assets/sass/_layout.scss */
+/* line 71, assets/sass/_layout.scss */
 footer .footer-location-widget .address {
   font: 12px/18px "minion";
   display: block;
@@ -1387,16 +1425,16 @@ footer .footer-location-widget .address {
   letter-spacing: 0.06em;
   word-spacing: 0.015em;
 }
-/* line 73, assets/sass/_layout.scss */
+/* line 74, assets/sass/_layout.scss */
 footer #social_navCont {
   display: block;
   margin: 15px 0 0;
 }
-/* line 75, assets/sass/_layout.scss */
+/* line 76, assets/sass/_layout.scss */
 footer #social_navCont ul {
   width: 170px;
 }
-/* line 76, assets/sass/_layout.scss */
+/* line 77, assets/sass/_layout.scss */
 footer #social_navCont ul li {
   color: #fff;
   overflow: hidden;
@@ -1407,7 +1445,7 @@ footer #social_navCont ul li {
   margin: 0 20px 20px 0;
   background: #137cc1;
 }
-/* line 77, assets/sass/_layout.scss */
+/* line 78, assets/sass/_layout.scss */
 footer #social_navCont ul li:before {
   position: absolute;
   top: 32%;
@@ -1415,7 +1453,7 @@ footer #social_navCont ul li:before {
   font-size: 19px;
   z-index: 1;
 }
-/* line 84, assets/sass/_layout.scss */
+/* line 85, assets/sass/_layout.scss */
 footer #social_navCont ul li a {
   color: transparent;
   display: block;
@@ -1424,21 +1462,21 @@ footer #social_navCont ul li a {
   position: absolute;
   z-index: 2;
 }
-/* line 85, assets/sass/_layout.scss */
+/* line 86, assets/sass/_layout.scss */
 footer #social_navCont ul ul {
   display: none;
 }
-/* line 88, assets/sass/_layout.scss */
+/* line 89, assets/sass/_layout.scss */
 footer #footer-donate {
   color: #323333;
   font: bold 12px/12px "minion";
 }
-/* line 90, assets/sass/_layout.scss */
+/* line 91, assets/sass/_layout.scss */
 footer #footer-donate span {
   margin: 3px 0 18px;
   display: block;
 }
-/* line 91, assets/sass/_layout.scss */
+/* line 92, assets/sass/_layout.scss */
 footer #footer-donate a {
   text-align: center;
   padding: 7px 10px 8px;
@@ -1481,8 +1519,18 @@ button {
 /* line 21, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary {
   display: block;
+  list-style: none;
+}
+/* line 23, assets/sass/_elements.scss */
+#secondary-sidebar-nav ul#main_nav_secondary ul {
+  list-style: none;
+  margin: 0;
 }
 /* line 24, assets/sass/_elements.scss */
+#secondary-sidebar-nav ul#main_nav_secondary li {
+  margin: 0;
+}
+/* line 26, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li > a {
   background: #137cc1;
   color: #fff;
@@ -1491,27 +1539,27 @@ button {
   display: block;
   padding: 16px 20px 8px;
 }
-/* line 25, assets/sass/_elements.scss */
+/* line 27, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li:last-child > a {
   padding: 16px 20px 13px;
 }
-/* line 26, assets/sass/_elements.scss */
+/* line 28, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary a {
   text-decoration: none;
 }
-/* line 27, assets/sass/_elements.scss */
+/* line 29, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary a:hover, #secondary-sidebar-nav ul#main_nav_secondary li.current-menu-item > a, #secondary-sidebar-nav ul#main_nav_secondary .current-menu-ancestor > a {
   color: #323333;
 }
-/* line 29, assets/sass/_elements.scss */
+/* line 31, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li > ul {
   background: #7c7d7d;
 }
-/* line 30, assets/sass/_elements.scss */
+/* line 32, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li > ul > li {
   padding: 0 0;
 }
-/* line 31, assets/sass/_elements.scss */
+/* line 33, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li > ul > li > a {
   color: #fff;
   font: bold 19px/19px "nimbus-sans-condensed";
@@ -1519,15 +1567,15 @@ button {
   display: block;
   padding: 14px 0px 5px 20px;
 }
-/* line 33, assets/sass/_elements.scss */
+/* line 35, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li > ul > li > ul {
   padding: 0 0;
 }
-/* line 34, assets/sass/_elements.scss */
+/* line 36, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li > ul > li > ul > li {
   padding: 0 0;
 }
-/* line 35, assets/sass/_elements.scss */
+/* line 37, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li > ul > li > ul > li > a {
   color: #fff;
   font: 18px/18px "minion";
@@ -1536,24 +1584,24 @@ button {
   letter-spacing: 0.03em;
   word-spacing: 0.09em;
 }
-/* line 36, assets/sass/_elements.scss */
+/* line 38, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li > ul > li > ul > li:last-child > a {
   padding: 4px 0px 16px 20px;
 }
 
 /* Forms */
-/* line 41, assets/sass/_elements.scss */
+/* line 43, assets/sass/_elements.scss */
 form {
   margin: 20px;
   padding: 10px;
 }
 
-/* line 44, assets/sass/_elements.scss */
+/* line 46, assets/sass/_elements.scss */
 fieldset {
   margin-bottom: 20px;
 }
 
-/* line 51, assets/sass/_elements.scss */
+/* line 53, assets/sass/_elements.scss */
 input[type="text"],
 input[type="password"],
 input[type="email"],
@@ -1573,12 +1621,12 @@ select {
   width: 100%;
 }
 
-/* line 66, assets/sass/_elements.scss */
+/* line 68, assets/sass/_elements.scss */
 .form-row {
   position: relative;
 }
 
-/* line 70, assets/sass/_elements.scss */
+/* line 72, assets/sass/_elements.scss */
 .approved-icon {
   position: absolute;
   top: 15px;
@@ -1586,7 +1634,7 @@ select {
   color: #02c253;
 }
 
-/* line 77, assets/sass/_elements.scss */
+/* line 79, assets/sass/_elements.scss */
 .denied-icon {
   position: absolute;
   top: 15px;
@@ -1594,34 +1642,114 @@ select {
   color: #ff0000;
 }
 
-/* line 84, assets/sass/_elements.scss */
+/* line 86, assets/sass/_elements.scss */
 .approved-text {
   color: #02c253 !important;
 }
 
-/* line 88, assets/sass/_elements.scss */
+/* line 90, assets/sass/_elements.scss */
 .denied-text {
   color: #ff0000 !important;
 }
 
-/* line 92, assets/sass/_elements.scss */
+/* line 94, assets/sass/_elements.scss */
 ::-webkit-input-placeholder {
   color: #323333;
 }
 
-/* line 96, assets/sass/_elements.scss */
+/* line 98, assets/sass/_elements.scss */
 :-moz-placeholder {
   /* Firefox 18- */
   color: #323333;
 }
 
-/* line 100, assets/sass/_elements.scss */
+/* line 102, assets/sass/_elements.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #323333;
 }
 
-/* line 104, assets/sass/_elements.scss */
+/* line 106, assets/sass/_elements.scss */
 :-ms-input-placeholder {
   color: #323333;
+}
+
+/* line 112, assets/sass/_elements.scss */
+table {
+  background: #61a2d7;
+}
+
+/* line 115, assets/sass/_elements.scss */
+table thead th {
+  border-bottom: 2px solid #353535;
+  border-left: 2px solid #353535;
+  border-right: 2px solid #353535;
+  font: bold 19px/22px "nimbus-sans-condensed";
+  text-transform: uppercase;
+  padding: 16px 0px 15px;
+  text-align: center;
+}
+/* line 116, assets/sass/_elements.scss */
+table thead th:first-child {
+  border: none;
+  border-bottom: 2px solid #353535;
+  border-right: 2px solid #353535;
+}
+/* line 117, assets/sass/_elements.scss */
+table thead th:last-child {
+  border: none;
+  border-bottom: 2px solid #353535;
+  border-left: 2px solid #353535;
+}
+/* line 124, assets/sass/_elements.scss */
+table tr:last-child td {
+  border: none;
+  border-top: 2px solid #353535;
+  border-left: 2px solid #353535;
+  border-right: 2px solid #353535;
+}
+/* line 125, assets/sass/_elements.scss */
+table tr:last-child td:first-child {
+  border: none;
+  border-top: 2px solid #353535;
+  border-right: 2px solid #353535;
+}
+/* line 126, assets/sass/_elements.scss */
+table tr:last-child td:last-child {
+  border: none;
+  border-top: 2px solid #353535;
+  border-left: 2px solid #353535;
+}
+/* line 130, assets/sass/_elements.scss */
+table td {
+  border: 2px solid #353535;
+  padding: 10px 20px;
+}
+/* line 131, assets/sass/_elements.scss */
+table td:first-child {
+  border: none;
+  border-top: 2px solid #353535;
+  border-bottom: 2px solid #353535;
+  border-right: 2px solid #353535;
+}
+/* line 132, assets/sass/_elements.scss */
+table td:last-child {
+  border: none;
+  border-top: 2px solid #353535;
+  border-bottom: 2px solid #353535;
+  border-left: 2px solid #353535;
+}
+
+/* line 138, assets/sass/_elements.scss */
+.wp-caption {
+  border: none;
+  padding: 0;
+  text-align: left;
+}
+
+/* line 139, assets/sass/_elements.scss */
+.wp-caption p.wp-caption-text {
+  font: 12px/16px "minion";
+  margin: 0 0 .1em;
+  padding: 0;
 }

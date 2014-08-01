@@ -19,10 +19,19 @@ p{margin:0 0 .6em;}
 .#{$namespace}meta-small{font:bold 11px/18px "nimbus-sans";margin:0 0 .3em;}
 
 //captions
-.#{$namespace}caption-minion{font:12px/16px "minion";margin:0 0 .1em;}
+.#{$namespace}caption-minion, .wp-caption-text{font:12px/16px "minion";margin:0 0 .1em;}
 .#{$namespace}caption-minion-italicbold{font:italic bold 12px/18px "minion";margin:0 0 .1em;}
 .#{$namespace}caption-nimbus-condensed{font:12px/18px "nimbus-sans-condensed";margin:0 0 .1em;}
 
 //anchors
 a{color:$blue;text-decoration:none;}
   a:hover{}
+
+//lists
+ul{list-style:disc inside;margin:0 0 .6em;}
+  ul li{margin:2px 0;}
+ol{list-style:decimal inside;margin:0 0 .6em;}
+  ol li{margin:2px 0;}
+
+//blockquotes
+blockquote{margin: 0 10%;font: 20px/23px "nimbus-sans-condensed";}
