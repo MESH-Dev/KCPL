@@ -1,5 +1,7 @@
 <?php /* Template Name: Elements */ get_header(); ?>
 
+<?php if(have_posts()){while(have_posts()){the_post(); ?>
+
 <div id="content">
   <div class="container">
     <div class="columns four alpha" id="contentSecondary">
@@ -31,4 +33,7 @@
     </div>
   </div>
 </div>
+
+<?php } } ?>
+
 <?php get_footer(); ?>
