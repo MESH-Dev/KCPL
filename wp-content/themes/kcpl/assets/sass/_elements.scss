@@ -39,7 +39,6 @@ button {
   }
 }
 
-
 /* Forms */
 form {
 margin-bottom: 10px; }
@@ -63,7 +62,11 @@ select {
     width: 100%;
 }
 
-/* Position a search icon directly above the input box */
+/* <div class="form-row">
+    <i class="fa fa-search search-icon"></i>
+    <input type="search" placeholder="Search">
+    </div>
+*/
 
 input[type="search"]{
     border: 3px solid #fff;
@@ -125,4 +128,36 @@ input[type="search"]{
 
 :-ms-input-placeholder {
   color: #323333;
+}
+
+
+// Homepage Unique Callouts
+
+/*
+
+<ol class="homepage-callout-list">
+    <li>Learn</li>
+    <li>Play</li>
+    <li>Visit</li>
+    <li>Find</li>
+</ol>
+
+*/
+
+.homepage-callout-list { display: block; }
+ol.homepage-callout-list { display: block;
+    > li { font: normal 55px/51px "minion"; text-transform: uppercase; color: white; padding: 12px 20px; }
+    > li:nth-child(1) { background: $green; }
+    > li:nth-child(2) { background: $red; }
+    > li:nth-child(3) { background: $grey; }
+    > li:nth-child(4) { background: $yellow; }
+}
+
+.calendar-callout { display: block; background: $s-grey; padding:23px; }
+
+.calendar-callout {
+    span { display: block; font: normal 13px/28px "minion"; letter-spacing: 1px; padding-bottom: 5px; border-bottom: 1px solid #000; margin-bottom: 14px; }
+    table { margin-top: 10px; font-family: "nimbus-sans"; font-weight: 700; }
+    tr { padding-top: 10px; }
+    td { padding: 0px 21px 11px 0px; }
 }

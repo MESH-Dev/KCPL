@@ -11,15 +11,15 @@
 
         <div class="six columns">
 
-            <ol class="homepage-callout-list">
+            <!-- <ol class="homepage-callout-list">
                 <li>Learn</li>
                 <li>Play</li>
                 <li>Visit</li>
                 <li>Find</li>
-            </ol>
+            </ol> -->
 
         </div>
-        <div class="six columns">
+        <div class="four columns">
 
             <div class="calendar-callout">
                 <span>April 2014</span>

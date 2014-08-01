@@ -1542,17 +1542,17 @@ button {
 }
 
 /* Forms */
-/* line 44, assets/sass/_elements.scss */
+/* line 43, assets/sass/_elements.scss */
 form {
   margin-bottom: 10px;
 }
 
-/* line 46, assets/sass/_elements.scss */
+/* line 45, assets/sass/_elements.scss */
 fieldset {
   margin-bottom: 20px;
 }
 
-/* line 53, assets/sass/_elements.scss */
+/* line 52, assets/sass/_elements.scss */
 input[type="text"],
 input[type="password"],
 input[type="email"],
@@ -1571,8 +1571,12 @@ select {
   width: 100%;
 }
 
-/* Position a search icon directly above the input box */
-/* line 68, assets/sass/_elements.scss */
+/* <div class="form-row">
+    <i class="fa fa-search search-icon"></i>
+    <input type="search" placeholder="Search">
+    </div>
+*/
+/* line 71, assets/sass/_elements.scss */
 input[type="search"] {
   border: 3px solid #fff;
   padding: 6px 8px 6px 25px;
@@ -1586,7 +1590,7 @@ input[type="search"] {
   width: 100%;
 }
 
-/* line 81, assets/sass/_elements.scss */
+/* line 84, assets/sass/_elements.scss */
 .search-icon {
   position: absolute;
   top: 14px;
@@ -1594,12 +1598,12 @@ input[type="search"] {
   color: #323333;
 }
 
-/* line 88, assets/sass/_elements.scss */
+/* line 91, assets/sass/_elements.scss */
 .form-row {
   position: relative;
 }
 
-/* line 92, assets/sass/_elements.scss */
+/* line 95, assets/sass/_elements.scss */
 .approved-icon {
   position: absolute;
   top: 15px;
@@ -1607,7 +1611,7 @@ input[type="search"] {
   color: #02c253;
 }
 
-/* line 99, assets/sass/_elements.scss */
+/* line 102, assets/sass/_elements.scss */
 .denied-icon {
   position: absolute;
   top: 15px;
@@ -1615,34 +1619,108 @@ input[type="search"] {
   color: #ff0000;
 }
 
-/* line 106, assets/sass/_elements.scss */
+/* line 109, assets/sass/_elements.scss */
 .approved-text {
   color: #02c253 !important;
 }
 
-/* line 110, assets/sass/_elements.scss */
+/* line 113, assets/sass/_elements.scss */
 .denied-text {
   color: #ff0000 !important;
 }
 
-/* line 114, assets/sass/_elements.scss */
+/* line 117, assets/sass/_elements.scss */
 ::-webkit-input-placeholder {
   color: #323333;
 }
 
-/* line 118, assets/sass/_elements.scss */
+/* line 121, assets/sass/_elements.scss */
 :-moz-placeholder {
   /* Firefox 18- */
   color: #323333;
 }
 
-/* line 122, assets/sass/_elements.scss */
+/* line 125, assets/sass/_elements.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #323333;
 }
 
-/* line 126, assets/sass/_elements.scss */
+/* line 129, assets/sass/_elements.scss */
 :-ms-input-placeholder {
   color: #323333;
+}
+
+/*
+
+<ol class="homepage-callout-list">
+    <li>Learn</li>
+    <li>Play</li>
+    <li>Visit</li>
+    <li>Find</li>
+</ol>
+
+*/
+/* line 147, assets/sass/_elements.scss */
+.homepage-callout-list {
+  display: block;
+}
+
+/* line 148, assets/sass/_elements.scss */
+ol.homepage-callout-list {
+  display: block;
+}
+/* line 149, assets/sass/_elements.scss */
+ol.homepage-callout-list > li {
+  font: normal 55px/51px "minion";
+  text-transform: uppercase;
+  color: white;
+  padding: 12px 20px;
+}
+/* line 150, assets/sass/_elements.scss */
+ol.homepage-callout-list > li:nth-child(1) {
+  background: #65a893;
+}
+/* line 151, assets/sass/_elements.scss */
+ol.homepage-callout-list > li:nth-child(2) {
+  background: #f65446;
+}
+/* line 152, assets/sass/_elements.scss */
+ol.homepage-callout-list > li:nth-child(3) {
+  background: #76849a;
+}
+/* line 153, assets/sass/_elements.scss */
+ol.homepage-callout-list > li:nth-child(4) {
+  background: #ffa751;
+}
+
+/* line 156, assets/sass/_elements.scss */
+.calendar-callout {
+  display: block;
+  background: #e2e2e2;
+  padding: 23px;
+}
+
+/* line 159, assets/sass/_elements.scss */
+.calendar-callout span {
+  display: block;
+  font: normal 13px/28px "minion";
+  letter-spacing: 1px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #000;
+  margin-bottom: 14px;
+}
+/* line 160, assets/sass/_elements.scss */
+.calendar-callout table {
+  margin-top: 10px;
+  font-family: "nimbus-sans";
+  font-weight: 700;
+}
+/* line 161, assets/sass/_elements.scss */
+.calendar-callout tr {
+  padding-top: 10px;
+}
+/* line 162, assets/sass/_elements.scss */
+.calendar-callout td {
+  padding: 0px 21px 11px 0px;
 }
