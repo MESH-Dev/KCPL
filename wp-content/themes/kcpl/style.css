@@ -1841,54 +1841,55 @@ table td:last-child {
   <div id="bannerHome" class="KCPL_background-COLORNAME">
     <div class="container">
       <div class="gutter">
-
+        <h1>some stuff</h1>
+        <h2>some more stuff</h2>
       </div>
     </div>
   </div>
 */
-/* line 161, assets/sass/_elements.scss */
+/* line 162, assets/sass/_elements.scss */
 #banner {
   height: 202px;
   float: left;
   width: 100%;
   text-align: center;
 }
-/* line 162, assets/sass/_elements.scss */
+/* line 163, assets/sass/_elements.scss */
 #banner ul {
   list-style: none;
   margin: 0;
   vertical-align: bottom;
   display: table-cell;
 }
-/* line 163, assets/sass/_elements.scss */
+/* line 164, assets/sass/_elements.scss */
 #banner li {
   float: left;
   display: block;
   display: table;
 }
-/* line 165, assets/sass/_elements.scss */
+/* line 166, assets/sass/_elements.scss */
 #banner .container {
   height: 202px;
   display: table;
 }
-/* line 166, assets/sass/_elements.scss */
+/* line 167, assets/sass/_elements.scss */
 #banner .gutter {
   display: table;
   height: 100%;
   width: 100%;
   vertical-align: middle;
 }
-/* line 167, assets/sass/_elements.scss */
+/* line 168, assets/sass/_elements.scss */
 #banner a {
   display: none;
   color: #fff;
   float: left;
 }
-/* line 168, assets/sass/_elements.scss */
+/* line 169, assets/sass/_elements.scss */
 #banner li.current-menu-ancestor > a, #banner li.current-menu-item > a {
   display: block;
 }
-/* line 169, assets/sass/_elements.scss */
+/* line 170, assets/sass/_elements.scss */
 #banner #main_navBannerCont {
   text-align: center;
   display: table-cell;
@@ -1896,39 +1897,71 @@ table td:last-child {
   height: 100%;
   vertical-align: middle;
 }
-/* line 170, assets/sass/_elements.scss */
+/* line 171, assets/sass/_elements.scss */
 #banner #main_navBannerCont > ul {
   margin: 0 auto;
   display: inline-block;
 }
-/* line 171, assets/sass/_elements.scss */
+/* line 172, assets/sass/_elements.scss */
 #banner #main_navBannerCont > ul > li {
   display: table;
 }
-/* line 172, assets/sass/_elements.scss */
+/* line 173, assets/sass/_elements.scss */
 #banner #main_navBannerCont > ul > li ul {
   vertical-align: bottom;
   display: table-cell;
 }
-/* line 173, assets/sass/_elements.scss */
+/* line 174, assets/sass/_elements.scss */
 #banner #main_navBannerCont > ul > li > a {
   font: bold 41px/41px "nimbus-sans-condensed";
   text-transform: uppercase;
   margin: 0 25px 0 0;
 }
-/* line 177, assets/sass/_elements.scss */
+/* line 178, assets/sass/_elements.scss */
 #banner #main_navBannerCont > ul > li > ul > li > a {
   font: italic 25px/30px "minion";
   margin: 0 22px 0 0;
 }
-/* line 181, assets/sass/_elements.scss */
+/* line 182, assets/sass/_elements.scss */
 #banner #main_navBannerCont > ul > li > ul > li > ul > li > a {
   font: bold 19px/26px "nimbus-sans";
   margin: 0 20px 0 0;
   text-transform: uppercase;
 }
-/* line 185, assets/sass/_elements.scss */
+/* line 186, assets/sass/_elements.scss */
 #banner #main_navBannerCont > ul > li > ul > li > ul > li > ul > li > a {
   font: 18px/25px "minion";
   margin: 0;
+}
+
+/* line 190, assets/sass/_elements.scss */
+#bannerHome {
+  color: #fff;
+  height: 297px;
+  float: left;
+  width: 100%;
+}
+/* line 191, assets/sass/_elements.scss */
+#bannerHome .gutter {
+  padding: 0 0 0 11px;
+}
+/* line 192, assets/sass/_elements.scss */
+#bannerHome .container {
+  display: table;
+  height: 297px;
+}
+/* line 193, assets/sass/_elements.scss */
+#bannerHome .columns {
+  display: table-cell;
+  float: none;
+  margin: 0 0 0 13px;
+  vertical-align: middle;
+}
+/* line 194, assets/sass/_elements.scss */
+#bannerHome h1 {
+  margin: 0 0 0;
+}
+/* line 195, assets/sass/_elements.scss */
+#bannerHome h2 {
+  margin: 0 0 0;
 }

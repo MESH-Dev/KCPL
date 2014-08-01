@@ -153,7 +153,8 @@ table{
   <div id="bannerHome" class="#{$namespace}background-COLORNAME">
     <div class="container">
       <div class="gutter">
-
+        <h1>some stuff</h1>
+        <h2>some more stuff</h2>
       </div>
     </div>
   </div>
@@ -184,4 +185,12 @@ table{
     > ul > li > ul > li > ul > li > ul > li{}
     > ul > li > ul > li > ul > li > ul > li > a{font:18px/25px "minion";margin:0;}
   }
+}
+
+#bannerHome{ color:#fff;height:297px;float:left;width:100%;
+  .gutter{padding:0 0 0 11px;}
+  .container{display:table;height:297px;}
+  .columns{display:table-cell;float:none;margin:0 0 0 13px;vertical-align:middle;}
+  h1{margin:0 0 0;}
+  h2{margin:0 0 0;}
 }
