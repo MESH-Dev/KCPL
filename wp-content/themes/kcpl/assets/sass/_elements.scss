@@ -158,27 +158,28 @@ table{
     </div>
   </div>
 */
-#banner{height:202px;float:left;width:100%;}
-  #banner{
-    ul{list-style:none;}
-    li{}
-    a{display:none;}
-      li.current-menu-ancestor > a, li.current-menu-item > a{display:block;}
-    .gutter{padding:20px;
-      > ul{display:block;margin:0 auto;}
-      > ul > li{}
-      > ul > li > a{}
+#banner{height:202px;float:left;width:100%;text-align:center;
+  ul{list-style:none;margin:0;}
+  li{float:left;}
+    ul ul{bottom:0;}
+  a{display:none;color:#fff;float:left;}
+    li.current-menu-ancestor > a, li.current-menu-item > a{display:block;}
+  .gutter{padding:20px;
+    > ul{margin:0 auto;display:inline-block;}
+    > ul > li{position:relative;}
+    > ul > li ul{bottom:0;position:relative;}
+    > ul > li > a{font:bold 41px/42px "nimbus-sans-condensed";text-transform:uppercase;margin:0 25px 0 0;}
 
-      > ul > li > ul{}
-      > ul > li > ul > li{}
-      > ul > li > ul > li > a{}
+    > ul > li > ul{float:left;}
+    > ul > li > ul > li{}
+    > ul > li > ul > li > a{font:italic 25px/29px "minion";margin:0 22px 0 0;}
 
-      > ul > li > ul > li > ul{}
-      > ul > li > ul > li > ul > li{}
-      > ul > li > ul > li > ul > li > a{}
+    > ul > li > ul > li > ul{float:left;}
+    > ul > li > ul > li > ul > li{}
+    > ul > li > ul > li > ul > li > a{font:bold 19px/23px "nimbus-sans";margin:0 20px 0 0;text-transform:uppercase;}
 
-      > ul > li > ul > li > ul > li > ul{}
-      > ul > li > ul > li > ul > li > ul > li{}
-      > ul > li > ul > li > ul > li > ul > li > a{}
-    }
+    > ul > li > ul > li > ul > li > ul{float:left;}
+    > ul > li > ul > li > ul > li > ul > li{}
+    > ul > li > ul > li > ul > li > ul > li > a{font:18px/22px "minion";margin:0;}
   }
+}
