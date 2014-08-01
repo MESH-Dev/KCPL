@@ -1753,3 +1753,87 @@ table td:last-child {
   margin: 0 0 .1em;
   padding: 0;
 }
+
+/* line 145, assets/sass/_elements.scss */
+.KCPL_info-box {
+  display: block;
+}
+
+/* line 147, assets/sass/_elements.scss */
+.KCPL_info-box .KCPL_info-box-header {
+  background: #65a893;
+  padding: 15px;
+}
+/* line 149, assets/sass/_elements.scss */
+.KCPL_info-box .KCPL_info-box-header .KCPL_info-box-header-title {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Nimbus-Sans";
+  color: white;
+}
+/* line 151, assets/sass/_elements.scss */
+.KCPL_info-box .KCPL_info-box-body {
+  background: #e2e2e2;
+  padding: 11px 18px;
+}
+/* line 153, assets/sass/_elements.scss */
+.KCPL_info-box .KCPL_info-box-body .KCPL_info-box-body-title {
+  display: block;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Nimbus-Sans-Condensed";
+  color: #323333;
+  line-height: 23px;
+}
+/* line 154, assets/sass/_elements.scss */
+.KCPL_info-box .KCPL_info-box-body .KCPL_info-box-body-date {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Nimbus-Sans";
+  color: #323333;
+}
+/* line 155, assets/sass/_elements.scss */
+.KCPL_info-box .KCPL_info-box-body .KCPL_info-box-body-excerpt {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Minion";
+  color: #323333;
+  letter-spacing: .05em;
+  line-height: 18px;
+}
+/* line 156, assets/sass/_elements.scss */
+.KCPL_info-box .KCPL_info-box-body .KCPL_info-box-body-link {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Minion";
+  color: #323333;
+  margin-top: 17px;
+  font-style: italic;
+}
+
+/* line 160, assets/sass/_elements.scss */
+.KCPL_short-callout {
+  display: block;
+  border-radius: 10px;
+  background: #f65446;
+  padding: 79px 24px;
+}
+
+/* line 162, assets/sass/_elements.scss */
+.KCPL_short-callout span {
+  display: block;
+  font-family: "Nimbus-Sans-Condensed";
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 43px;
+  line-height: 46px;
+  color: white;
+}
