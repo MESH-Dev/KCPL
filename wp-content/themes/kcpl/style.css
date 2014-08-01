@@ -68,14 +68,14 @@ table {
 ================================================= */
 /* #Basic Styles
 ================================================== */
-/* line 42, assets/sass/_base.scss */
+/* line 47, assets/sass/_base.scss */
 body {
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
 }
 
-/* line 46, assets/sass/_base.scss */
+/* line 51, assets/sass/_base.scss */
 a {
   text-decoration: none;
 }
@@ -86,7 +86,7 @@ a {
 ================================================== */
 /* #Images
 ================================================== */
-/* line 65, assets/sass/_base.scss */
+/* line 70, assets/sass/_base.scss */
 img {
   max-width: 100%;
   height: auto;
@@ -94,60 +94,60 @@ img {
 
 /* WordPress Image Styles
    ========================================================================== */
-/* line 70, assets/sass/_base.scss */
+/* line 75, assets/sass/_base.scss */
 .alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 71, assets/sass/_base.scss */
+/* line 76, assets/sass/_base.scss */
 .aligncenter, div.aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 72, assets/sass/_base.scss */
+/* line 77, assets/sass/_base.scss */
 .alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 73, assets/sass/_base.scss */
+/* line 78, assets/sass/_base.scss */
 .alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 74, assets/sass/_base.scss */
+/* line 79, assets/sass/_base.scss */
 .aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 75, assets/sass/_base.scss */
+/* line 80, assets/sass/_base.scss */
 a img.alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 76, assets/sass/_base.scss */
+/* line 81, assets/sass/_base.scss */
 a img.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 77, assets/sass/_base.scss */
+/* line 82, assets/sass/_base.scss */
 a img.alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 78, assets/sass/_base.scss */
+/* line 83, assets/sass/_base.scss */
 a img.aligncenter {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 79, assets/sass/_base.scss */
+/* line 84, assets/sass/_base.scss */
 .wp-caption {
   background: #fff;
   border: 1px solid #f0f0f0;
@@ -156,22 +156,22 @@ a img.aligncenter {
   text-align: center;
 }
 
-/* line 80, assets/sass/_base.scss */
+/* line 85, assets/sass/_base.scss */
 .wp-caption.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 81, assets/sass/_base.scss */
+/* line 86, assets/sass/_base.scss */
 .wp-caption.alignleft {
   margin: 5px 20px 20px 0;
 }
 
-/* line 82, assets/sass/_base.scss */
+/* line 87, assets/sass/_base.scss */
 .wp-caption.alignright {
   margin: 5px 0 20px 20px;
 }
 
-/* line 83, assets/sass/_base.scss */
+/* line 88, assets/sass/_base.scss */
 .wp-caption img {
   border: 0 none;
   height: auto;
@@ -181,12 +181,111 @@ a img.aligncenter {
   width: auto;
 }
 
-/* line 84, assets/sass/_base.scss */
+/* line 89, assets/sass/_base.scss */
 .wp-caption p.wp-caption-text {
   font-size: 11px;
   line-height: 17px;
   margin: 0;
   padding: 0 4px 5px;
+}
+
+/* line 2, assets/sass/_typography.scss */
+html, body {
+  font: 14px/18px "minion";
+  color: #343131;
+}
+
+/* line 5, assets/sass/_typography.scss */
+h1 {
+  font: bold 40px/42px "nimbus-sans-condensed";
+  margin: 0 0 .66em;
+  text-transform: uppercase;
+}
+
+/* line 6, assets/sass/_typography.scss */
+h2 {
+  font: italic 25px/29px "minion";
+  margin: 0 0 .85em;
+}
+
+/* line 7, assets/sass/_typography.scss */
+h3 {
+  font: bold 23px/25px "nimbus-sans-condensed";
+  margin: 0 0 1.05em;
+  text-transform: uppercase;
+}
+
+/* line 8, assets/sass/_typography.scss */
+h4 {
+  font: bold 18px/23px "nimbus-sans";
+  margin: 0 0 1.3em;
+  text-transform: uppercase;
+}
+
+/* line 9, assets/sass/_typography.scss */
+h5 {
+  font: bold 18px/23px "nimbus-sans-condensed";
+  margin: 0 0 1.2em;
+  text-transform: uppercase;
+}
+
+/* line 10, assets/sass/_typography.scss */
+h6 {
+  font: 18px/22px "minion";
+  margin: 0 0 1.3em;
+}
+
+/* line 13, assets/sass/_typography.scss */
+p {
+  margin: 0 0 .6em;
+}
+
+/* line 16, assets/sass/_typography.scss */
+.KCPL_date-time {
+  font: bold 14px/18px "nimbus-sans";
+  margin: 0;
+}
+
+/* line 17, assets/sass/_typography.scss */
+.KCPL_subtitle {
+  font: 14px/18px "nimbus-sans";
+  margin: 0 0 1.25em;
+}
+
+/* line 18, assets/sass/_typography.scss */
+.KCPL_readmore {
+  font: italic bold 14px/18px "minion";
+  margin: 0 0 1.6em;
+}
+
+/* line 19, assets/sass/_typography.scss */
+.KCPL_meta-small {
+  font: bold 11px/18px "nimbus-sans";
+  margin: 0 0 .3em;
+}
+
+/* line 22, assets/sass/_typography.scss */
+.KCPL_caption-minion {
+  font: 12px/16px "minion";
+  margin: 0 0 .1em;
+}
+
+/* line 23, assets/sass/_typography.scss */
+.KCPL_caption-minion-italicbold {
+  font: italic bold 12px/18px "minion";
+  margin: 0 0 .1em;
+}
+
+/* line 24, assets/sass/_typography.scss */
+.KCPL_caption-nimbus-condensed {
+  font: 12px/18px "nimbus-sans-condensed";
+  margin: 0 0 .1em;
+}
+
+/* line 27, assets/sass/_typography.scss */
+a {
+  color: #137cc1;
+  text-decoration: none;
 }
 
 /* Table of Contents
