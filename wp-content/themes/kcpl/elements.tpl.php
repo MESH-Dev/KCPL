@@ -2,6 +2,17 @@
 
 <?php if(have_posts()){while(have_posts()){the_post(); ?>
 
+<div id="bannerHome" class="KCPL_background-yellow">
+  <div class="container">
+    <div class="columns seven">
+      <div class="gutter">
+        <h1>Your library is more than millions of resources at your fingertips, We are your community center.</h1>
+        <h2>Share your thoughts on our new site!</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div id="content">
   <div class="container">
     <div class="columns four alpha" id="contentSecondary">
@@ -12,7 +23,7 @@
             'container'       => 'div',
             'container_class' => '',
             'container_id'    => 'secondary-sidebar-nav',
-            'menu_class'      => 'menu',
+            'menu_class'      => 'menu clearfix',
             'menu_id'         => 'main_nav_secondary',
             'echo'            => true,
             'fallback_cb'     => 'wp_page_menu',

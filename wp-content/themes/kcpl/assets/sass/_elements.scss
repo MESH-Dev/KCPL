@@ -36,6 +36,8 @@ button {
       > li > ul > li > ul > li{padding:0 0;}
       > li > ul > li > ul > li > a{color: #fff;font: 18px/18px "minion";display: block;padding: 4px 0px 0px 20px;letter-spacing: 0.03em;word-spacing: 0.09em;}
       > li > ul > li > ul > li:last-child > a{padding: 4px 0px 16px 20px;}
+
+      > li > ul > li > ul ul{display:none;}
   }
 }
 
@@ -137,3 +139,58 @@ table{
 //images
 .wp-caption{border:none;padding:0;text-align:left;}
   .wp-caption p.wp-caption-text{font:12px/16px "minion";margin:0 0 .1em;padding:0;}
+
+//banners
+/*
+  <div id="banner" class="#{$namespace}background-COLORNAME menu">
+    <div class="container">
+      <div class="gutter">
+        <?php wp_nav_menu(); ?>
+      </div>
+    </div>
+  </div>
+
+  <div id="bannerHome" class="#{$namespace}background-COLORNAME">
+    <div class="container">
+      <div class="gutter">
+        <h1>some stuff</h1>
+        <h2>some more stuff</h2>
+      </div>
+    </div>
+  </div>
+*/
+#banner{height:202px;float:left;width:100%;text-align:center;
+  ul{list-style:none;margin:0;vertical-align:bottom;display:table-cell;}
+  li{float:left;display:block;display:table;}
+    ul ul{}
+  .container{height:202px;display:table;}
+  .gutter{display:table;height:100%;width:100%;vertical-align:middle;}
+  a{display:none;color:#fff;float:left;}
+    li.current-menu-ancestor > a, li.current-menu-item > a{display:block;}
+  #main_navBannerCont{text-align:center;display:table-cell;width:100%;height:100%;vertical-align:middle;
+    > ul{margin:0 auto;display:inline-block;}
+    > ul > li{display:table;}
+    > ul > li ul{vertical-align:bottom;display:table-cell;}
+    > ul > li > a{font:bold 41px/41px "nimbus-sans-condensed";text-transform:uppercase;margin:0 25px 0 0;}
+
+    > ul > li > ul{}
+    > ul > li > ul > li{}
+    > ul > li > ul > li > a{font:italic 25px/30px "minion";margin:0 22px 0 0;}
+
+    > ul > li > ul > li > ul{}
+    > ul > li > ul > li > ul > li{}
+    > ul > li > ul > li > ul > li > a{font:bold 19px/26px "nimbus-sans";margin:0 20px 0 0;text-transform:uppercase;}
+
+    > ul > li > ul > li > ul > li > ul{}
+    > ul > li > ul > li > ul > li > ul > li{}
+    > ul > li > ul > li > ul > li > ul > li > a{font:18px/25px "minion";margin:0;}
+  }
+}
+
+#bannerHome{ color:#fff;height:297px;float:left;width:100%;
+  .gutter{padding:0 0 0 11px;}
+  .container{display:table;height:297px;}
+  .columns{display:table-cell;float:none;margin:0 0 0 13px;vertical-align:middle;}
+  h1{margin:0 0 0;}
+  h2{margin:0 0 0;}
+}

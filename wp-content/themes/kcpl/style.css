@@ -66,16 +66,81 @@ table {
 ================================================= */
 /* VARIABLES
 ================================================= */
+/* line 50, assets/sass/_base.scss */
+.KCPL_background-blue {
+  background: #137cc1;
+}
+
+/* line 51, assets/sass/_base.scss */
+.KCPL_background-green {
+  background: #65a893;
+}
+
+/* line 52, assets/sass/_base.scss */
+.KCPL_background-red {
+  background: #f65446;
+}
+
+/* line 53, assets/sass/_base.scss */
+.KCPL_background-grey {
+  background: #76849a;
+}
+
+/* line 54, assets/sass/_base.scss */
+.KCPL_background-yellow {
+  background: #ffa751;
+}
+
+/* line 57, assets/sass/_base.scss */
+.KCPL_color-blue {
+  color: #137cc1;
+}
+
+/* line 58, assets/sass/_base.scss */
+.KCPL_color-green {
+  color: #65a893;
+}
+
+/* line 59, assets/sass/_base.scss */
+.KCPL_color-red {
+  color: #f65446;
+}
+
+/* line 60, assets/sass/_base.scss */
+.KCPL_color-grey {
+  color: #76849a;
+}
+
+/* line 61, assets/sass/_base.scss */
+.KCPL_color-yellow {
+  color: #ffa751;
+}
+
+/* line 64, assets/sass/_base.scss */
+.KCPL_font-minion {
+  font-family: "minion";
+}
+
+/* line 65, assets/sass/_base.scss */
+.KCPL_font-nimbus {
+  font-family: "nimbus-sans";
+}
+
+/* line 66, assets/sass/_base.scss */
+.KCPL_font-nimbus-condensed {
+  font-family: "nimbus-sans-condensed";
+}
+
 /* #Basic Styles
 ================================================== */
-/* line 47, assets/sass/_base.scss */
+/* line 71, assets/sass/_base.scss */
 body {
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
 }
 
-/* line 51, assets/sass/_base.scss */
+/* line 75, assets/sass/_base.scss */
 a {
   text-decoration: none;
 }
@@ -86,7 +151,7 @@ a {
 ================================================== */
 /* #Images
 ================================================== */
-/* line 70, assets/sass/_base.scss */
+/* line 95, assets/sass/_base.scss */
 img {
   max-width: 100%;
   height: auto;
@@ -94,60 +159,60 @@ img {
 
 /* WordPress Image Styles
    ========================================================================== */
-/* line 75, assets/sass/_base.scss */
+/* line 100, assets/sass/_base.scss */
 .alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 76, assets/sass/_base.scss */
+/* line 101, assets/sass/_base.scss */
 .aligncenter, div.aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 77, assets/sass/_base.scss */
+/* line 102, assets/sass/_base.scss */
 .alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 78, assets/sass/_base.scss */
+/* line 103, assets/sass/_base.scss */
 .alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 79, assets/sass/_base.scss */
+/* line 104, assets/sass/_base.scss */
 .aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 80, assets/sass/_base.scss */
+/* line 105, assets/sass/_base.scss */
 a img.alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 81, assets/sass/_base.scss */
+/* line 106, assets/sass/_base.scss */
 a img.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 82, assets/sass/_base.scss */
+/* line 107, assets/sass/_base.scss */
 a img.alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 83, assets/sass/_base.scss */
+/* line 108, assets/sass/_base.scss */
 a img.aligncenter {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 84, assets/sass/_base.scss */
+/* line 109, assets/sass/_base.scss */
 .wp-caption {
   background: #fff;
   border: 1px solid #f0f0f0;
@@ -156,22 +221,22 @@ a img.aligncenter {
   text-align: center;
 }
 
-/* line 85, assets/sass/_base.scss */
+/* line 110, assets/sass/_base.scss */
 .wp-caption.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 86, assets/sass/_base.scss */
+/* line 111, assets/sass/_base.scss */
 .wp-caption.alignleft {
   margin: 5px 20px 20px 0;
 }
 
-/* line 87, assets/sass/_base.scss */
+/* line 112, assets/sass/_base.scss */
 .wp-caption.alignright {
   margin: 5px 0 20px 20px;
 }
 
-/* line 88, assets/sass/_base.scss */
+/* line 113, assets/sass/_base.scss */
 .wp-caption img {
   border: 0 none;
   height: auto;
@@ -181,7 +246,7 @@ a img.aligncenter {
   width: auto;
 }
 
-/* line 89, assets/sass/_base.scss */
+/* line 114, assets/sass/_base.scss */
 .wp-caption p.wp-caption-text {
   font-size: 11px;
   line-height: 17px;
@@ -1352,13 +1417,19 @@ header #header-nav ul#main_nav > li > ul > li > ul {
 }
 
 /* line 43, assets/sass/_layout.scss */
+#content {
+  float: left;
+  width: 100%;
+}
+
+/* line 52, assets/sass/_layout.scss */
 footer {
   background: #c5c5c5;
   float: left;
   width: 100%;
 }
 
-/* line 44, assets/sass/_layout.scss */
+/* line 53, assets/sass/_layout.scss */
 footer {
   /*
     Footer Location Widget
@@ -1374,38 +1445,38 @@ footer {
     </div>
   */
 }
-/* line 48, assets/sass/_layout.scss */
+/* line 57, assets/sass/_layout.scss */
 footer .container > .gutter {
   padding: 30px 0px;
 }
-/* line 49, assets/sass/_layout.scss */
+/* line 58, assets/sass/_layout.scss */
 footer .title {
   font: bold 13px/18px "nimbus-sans";
   text-transform: uppercase;
   color: #323333;
   display: block;
 }
-/* line 50, assets/sass/_layout.scss */
+/* line 59, assets/sass/_layout.scss */
 footer .columns {
   min-height: 10px;
 }
-/* line 65, assets/sass/_layout.scss */
+/* line 74, assets/sass/_layout.scss */
 footer .footer-location-widget {
   color: #7d7d7d;
   margin: 0 0 18px;
 }
-/* line 67, assets/sass/_layout.scss */
+/* line 76, assets/sass/_layout.scss */
 footer .footer-location-widget .hour-cont {
   display: block;
 }
-/* line 68, assets/sass/_layout.scss */
+/* line 77, assets/sass/_layout.scss */
 footer .footer-location-widget .hours {
   font: 13px/12px "minion";
   font-style: italic;
   color: #323333;
   letter-spacing: 0.035em;
 }
-/* line 69, assets/sass/_layout.scss */
+/* line 78, assets/sass/_layout.scss */
 footer .footer-location-widget .open, footer .footer-location-widget .closed {
   font: 13px/12px "nimbus-sans-condensed";
   color: #323333;
@@ -1413,11 +1484,11 @@ footer .footer-location-widget .open, footer .footer-location-widget .closed {
   margin: 0 0 0 -2px;
   word-spacing: 0.05em;
 }
-/* line 70, assets/sass/_layout.scss */
+/* line 79, assets/sass/_layout.scss */
 footer .footer-location-widget .open {
   color: #f65446;
 }
-/* line 71, assets/sass/_layout.scss */
+/* line 80, assets/sass/_layout.scss */
 footer .footer-location-widget .address {
   font: 12px/18px "minion";
   display: block;
@@ -1425,16 +1496,16 @@ footer .footer-location-widget .address {
   letter-spacing: 0.06em;
   word-spacing: 0.015em;
 }
-/* line 74, assets/sass/_layout.scss */
+/* line 83, assets/sass/_layout.scss */
 footer #social_navCont {
   display: block;
   margin: 15px 0 0;
 }
-/* line 76, assets/sass/_layout.scss */
+/* line 85, assets/sass/_layout.scss */
 footer #social_navCont ul {
   width: 170px;
 }
-/* line 77, assets/sass/_layout.scss */
+/* line 86, assets/sass/_layout.scss */
 footer #social_navCont ul li {
   color: #fff;
   overflow: hidden;
@@ -1445,7 +1516,7 @@ footer #social_navCont ul li {
   margin: 0 20px 20px 0;
   background: #137cc1;
 }
-/* line 78, assets/sass/_layout.scss */
+/* line 87, assets/sass/_layout.scss */
 footer #social_navCont ul li:before {
   position: absolute;
   top: 32%;
@@ -1453,7 +1524,7 @@ footer #social_navCont ul li:before {
   font-size: 19px;
   z-index: 1;
 }
-/* line 85, assets/sass/_layout.scss */
+/* line 94, assets/sass/_layout.scss */
 footer #social_navCont ul li a {
   color: transparent;
   display: block;
@@ -1462,21 +1533,21 @@ footer #social_navCont ul li a {
   position: absolute;
   z-index: 2;
 }
-/* line 86, assets/sass/_layout.scss */
+/* line 95, assets/sass/_layout.scss */
 footer #social_navCont ul ul {
   display: none;
 }
-/* line 89, assets/sass/_layout.scss */
+/* line 98, assets/sass/_layout.scss */
 footer #footer-donate {
   color: #323333;
   font: bold 12px/12px "minion";
 }
-/* line 91, assets/sass/_layout.scss */
+/* line 100, assets/sass/_layout.scss */
 footer #footer-donate span {
   margin: 3px 0 18px;
   display: block;
 }
-/* line 92, assets/sass/_layout.scss */
+/* line 101, assets/sass/_layout.scss */
 footer #footer-donate a {
   text-align: center;
   padding: 7px 10px 8px;
@@ -1588,20 +1659,24 @@ button {
 #secondary-sidebar-nav ul#main_nav_secondary > li > ul > li > ul > li:last-child > a {
   padding: 4px 0px 16px 20px;
 }
+/* line 40, assets/sass/_elements.scss */
+#secondary-sidebar-nav ul#main_nav_secondary > li > ul > li > ul ul {
+  display: none;
+}
 
 /* Forms */
-/* line 43, assets/sass/_elements.scss */
+/* line 45, assets/sass/_elements.scss */
 form {
   margin: 20px;
   padding: 10px;
 }
 
-/* line 46, assets/sass/_elements.scss */
+/* line 48, assets/sass/_elements.scss */
 fieldset {
   margin-bottom: 20px;
 }
 
-/* line 53, assets/sass/_elements.scss */
+/* line 55, assets/sass/_elements.scss */
 input[type="text"],
 input[type="password"],
 input[type="email"],
@@ -1621,12 +1696,12 @@ select {
   width: 100%;
 }
 
-/* line 68, assets/sass/_elements.scss */
+/* line 70, assets/sass/_elements.scss */
 .form-row {
   position: relative;
 }
 
-/* line 72, assets/sass/_elements.scss */
+/* line 74, assets/sass/_elements.scss */
 .approved-icon {
   position: absolute;
   top: 15px;
@@ -1634,7 +1709,7 @@ select {
   color: #02c253;
 }
 
-/* line 79, assets/sass/_elements.scss */
+/* line 81, assets/sass/_elements.scss */
 .denied-icon {
   position: absolute;
   top: 15px;
@@ -1642,44 +1717,44 @@ select {
   color: #ff0000;
 }
 
-/* line 86, assets/sass/_elements.scss */
+/* line 88, assets/sass/_elements.scss */
 .approved-text {
   color: #02c253 !important;
 }
 
-/* line 90, assets/sass/_elements.scss */
+/* line 92, assets/sass/_elements.scss */
 .denied-text {
   color: #ff0000 !important;
 }
 
-/* line 94, assets/sass/_elements.scss */
+/* line 96, assets/sass/_elements.scss */
 ::-webkit-input-placeholder {
   color: #323333;
 }
 
-/* line 98, assets/sass/_elements.scss */
+/* line 100, assets/sass/_elements.scss */
 :-moz-placeholder {
   /* Firefox 18- */
   color: #323333;
 }
 
-/* line 102, assets/sass/_elements.scss */
+/* line 104, assets/sass/_elements.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #323333;
 }
 
-/* line 106, assets/sass/_elements.scss */
+/* line 108, assets/sass/_elements.scss */
 :-ms-input-placeholder {
   color: #323333;
 }
 
-/* line 112, assets/sass/_elements.scss */
+/* line 114, assets/sass/_elements.scss */
 table {
   background: #61a2d7;
 }
 
-/* line 115, assets/sass/_elements.scss */
+/* line 117, assets/sass/_elements.scss */
 table thead th {
   border-bottom: 2px solid #353535;
   border-left: 2px solid #353535;
@@ -1689,50 +1764,50 @@ table thead th {
   padding: 16px 0px 15px;
   text-align: center;
 }
-/* line 116, assets/sass/_elements.scss */
+/* line 118, assets/sass/_elements.scss */
 table thead th:first-child {
   border: none;
   border-bottom: 2px solid #353535;
   border-right: 2px solid #353535;
 }
-/* line 117, assets/sass/_elements.scss */
+/* line 119, assets/sass/_elements.scss */
 table thead th:last-child {
   border: none;
   border-bottom: 2px solid #353535;
   border-left: 2px solid #353535;
 }
-/* line 124, assets/sass/_elements.scss */
+/* line 126, assets/sass/_elements.scss */
 table tr:last-child td {
   border: none;
   border-top: 2px solid #353535;
   border-left: 2px solid #353535;
   border-right: 2px solid #353535;
 }
-/* line 125, assets/sass/_elements.scss */
+/* line 127, assets/sass/_elements.scss */
 table tr:last-child td:first-child {
   border: none;
   border-top: 2px solid #353535;
   border-right: 2px solid #353535;
 }
-/* line 126, assets/sass/_elements.scss */
+/* line 128, assets/sass/_elements.scss */
 table tr:last-child td:last-child {
   border: none;
   border-top: 2px solid #353535;
   border-left: 2px solid #353535;
 }
-/* line 130, assets/sass/_elements.scss */
+/* line 132, assets/sass/_elements.scss */
 table td {
   border: 2px solid #353535;
   padding: 10px 20px;
 }
-/* line 131, assets/sass/_elements.scss */
+/* line 133, assets/sass/_elements.scss */
 table td:first-child {
   border: none;
   border-top: 2px solid #353535;
   border-bottom: 2px solid #353535;
   border-right: 2px solid #353535;
 }
-/* line 132, assets/sass/_elements.scss */
+/* line 134, assets/sass/_elements.scss */
 table td:last-child {
   border: none;
   border-top: 2px solid #353535;
@@ -1740,16 +1815,153 @@ table td:last-child {
   border-left: 2px solid #353535;
 }
 
-/* line 138, assets/sass/_elements.scss */
+/* line 140, assets/sass/_elements.scss */
 .wp-caption {
   border: none;
   padding: 0;
   text-align: left;
 }
 
-/* line 139, assets/sass/_elements.scss */
+/* line 141, assets/sass/_elements.scss */
 .wp-caption p.wp-caption-text {
   font: 12px/16px "minion";
   margin: 0 0 .1em;
   padding: 0;
+}
+
+/*
+  <div id="banner" class="KCPL_background-COLORNAME menu">
+    <div class="container">
+      <div class="gutter">
+        <?php wp_nav_menu(); ?>
+      </div>
+    </div>
+  </div>
+
+  <div id="bannerHome" class="KCPL_background-COLORNAME">
+    <div class="container">
+      <div class="gutter">
+        <h1>some stuff</h1>
+        <h2>some more stuff</h2>
+      </div>
+    </div>
+  </div>
+*/
+/* line 162, assets/sass/_elements.scss */
+#banner {
+  height: 202px;
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+/* line 163, assets/sass/_elements.scss */
+#banner ul {
+  list-style: none;
+  margin: 0;
+  vertical-align: bottom;
+  display: table-cell;
+}
+/* line 164, assets/sass/_elements.scss */
+#banner li {
+  float: left;
+  display: block;
+  display: table;
+}
+/* line 166, assets/sass/_elements.scss */
+#banner .container {
+  height: 202px;
+  display: table;
+}
+/* line 167, assets/sass/_elements.scss */
+#banner .gutter {
+  display: table;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+}
+/* line 168, assets/sass/_elements.scss */
+#banner a {
+  display: none;
+  color: #fff;
+  float: left;
+}
+/* line 169, assets/sass/_elements.scss */
+#banner li.current-menu-ancestor > a, #banner li.current-menu-item > a {
+  display: block;
+}
+/* line 170, assets/sass/_elements.scss */
+#banner #main_navBannerCont {
+  text-align: center;
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+/* line 171, assets/sass/_elements.scss */
+#banner #main_navBannerCont > ul {
+  margin: 0 auto;
+  display: inline-block;
+}
+/* line 172, assets/sass/_elements.scss */
+#banner #main_navBannerCont > ul > li {
+  display: table;
+}
+/* line 173, assets/sass/_elements.scss */
+#banner #main_navBannerCont > ul > li ul {
+  vertical-align: bottom;
+  display: table-cell;
+}
+/* line 174, assets/sass/_elements.scss */
+#banner #main_navBannerCont > ul > li > a {
+  font: bold 41px/41px "nimbus-sans-condensed";
+  text-transform: uppercase;
+  margin: 0 25px 0 0;
+}
+/* line 178, assets/sass/_elements.scss */
+#banner #main_navBannerCont > ul > li > ul > li > a {
+  font: italic 25px/30px "minion";
+  margin: 0 22px 0 0;
+}
+/* line 182, assets/sass/_elements.scss */
+#banner #main_navBannerCont > ul > li > ul > li > ul > li > a {
+  font: bold 19px/26px "nimbus-sans";
+  margin: 0 20px 0 0;
+  text-transform: uppercase;
+}
+/* line 186, assets/sass/_elements.scss */
+#banner #main_navBannerCont > ul > li > ul > li > ul > li > ul > li > a {
+  font: 18px/25px "minion";
+  margin: 0;
+}
+
+/* line 190, assets/sass/_elements.scss */
+#bannerHome {
+  color: #fff;
+  height: 297px;
+  float: left;
+  width: 100%;
+}
+/* line 191, assets/sass/_elements.scss */
+#bannerHome .gutter {
+  padding: 0 0 0 11px;
+}
+/* line 192, assets/sass/_elements.scss */
+#bannerHome .container {
+  display: table;
+  height: 297px;
+}
+/* line 193, assets/sass/_elements.scss */
+#bannerHome .columns {
+  display: table-cell;
+  float: none;
+  margin: 0 0 0 13px;
+  vertical-align: middle;
+}
+/* line 194, assets/sass/_elements.scss */
+#bannerHome h1 {
+  margin: 0 0 0;
+}
+/* line 195, assets/sass/_elements.scss */
+#bannerHome h2 {
+  margin: 0 0 0;
 }
