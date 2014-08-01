@@ -1455,7 +1455,7 @@ footer #footer-donate a {
   width: 129px;
 }
 
-/* line 4, assets/sass/_elements.scss */
+/* line 6, assets/sass/_elements.scss */
 input[type="button"],
 input[type="reset"],
 input[type="submit"],
@@ -1473,16 +1473,16 @@ button {
   letter-spacing: 0.07em;
 }
 
-/* line 19, assets/sass/_elements.scss */
+/* line 21, assets/sass/_elements.scss */
 #secondary-sidebar-nav {
   display: block;
 }
 
-/* line 21, assets/sass/_elements.scss */
+/* line 23, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary {
   display: block;
 }
-/* line 24, assets/sass/_elements.scss */
+/* line 26, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li > a {
   background: #137cc1;
   color: #fff;
@@ -1491,27 +1491,27 @@ button {
   display: block;
   padding: 16px 20px 8px;
 }
-/* line 25, assets/sass/_elements.scss */
+/* line 27, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li:last-child > a {
   padding: 16px 20px 13px;
 }
-/* line 26, assets/sass/_elements.scss */
+/* line 28, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary a {
   text-decoration: none;
 }
-/* line 27, assets/sass/_elements.scss */
+/* line 29, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary a:hover, #secondary-sidebar-nav ul#main_nav_secondary li.current-menu-item > a, #secondary-sidebar-nav ul#main_nav_secondary .current-menu-ancestor > a {
   color: #323333;
 }
-/* line 29, assets/sass/_elements.scss */
+/* line 31, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li > ul {
   background: #7c7d7d;
 }
-/* line 30, assets/sass/_elements.scss */
+/* line 32, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li > ul > li {
   padding: 0 0;
 }
-/* line 31, assets/sass/_elements.scss */
+/* line 33, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li > ul > li > a {
   color: #fff;
   font: bold 19px/19px "nimbus-sans-condensed";
@@ -1519,15 +1519,15 @@ button {
   display: block;
   padding: 14px 0px 5px 20px;
 }
-/* line 33, assets/sass/_elements.scss */
+/* line 35, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li > ul > li > ul {
   padding: 0 0;
 }
-/* line 34, assets/sass/_elements.scss */
+/* line 36, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li > ul > li > ul > li {
   padding: 0 0;
 }
-/* line 35, assets/sass/_elements.scss */
+/* line 37, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li > ul > li > ul > li > a {
   color: #fff;
   font: 18px/18px "minion";
@@ -1536,24 +1536,23 @@ button {
   letter-spacing: 0.03em;
   word-spacing: 0.09em;
 }
-/* line 36, assets/sass/_elements.scss */
+/* line 38, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li > ul > li > ul > li:last-child > a {
   padding: 4px 0px 16px 20px;
 }
 
 /* Forms */
-/* line 41, assets/sass/_elements.scss */
+/* line 44, assets/sass/_elements.scss */
 form {
-  margin: 20px;
-  padding: 10px;
+  margin-bottom: 10px;
 }
 
-/* line 44, assets/sass/_elements.scss */
+/* line 46, assets/sass/_elements.scss */
 fieldset {
   margin-bottom: 20px;
 }
 
-/* line 51, assets/sass/_elements.scss */
+/* line 53, assets/sass/_elements.scss */
 input[type="text"],
 input[type="password"],
 input[type="email"],
@@ -1567,18 +1566,40 @@ select {
   display: block;
   background: #e2e2e2;
   color: #323333;
-  margin: 0px 20px;
   overflow: hidden;
   box-sizing: border-box;
   width: 100%;
 }
 
-/* line 66, assets/sass/_elements.scss */
+/* Position a search icon directly above the input box */
+/* line 68, assets/sass/_elements.scss */
+input[type="search"] {
+  border: 3px solid #fff;
+  padding: 6px 8px 6px 25px;
+  font: 18px/24px "Nimbus-Sans", Helvetica, Arial, sans-serif;
+  max-width: 100%;
+  display: block;
+  background: #e2e2e2;
+  color: #323333;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* line 81, assets/sass/_elements.scss */
+.search-icon {
+  position: absolute;
+  top: 14px;
+  left: 15px;
+  color: #323333;
+}
+
+/* line 88, assets/sass/_elements.scss */
 .form-row {
   position: relative;
 }
 
-/* line 70, assets/sass/_elements.scss */
+/* line 92, assets/sass/_elements.scss */
 .approved-icon {
   position: absolute;
   top: 15px;
@@ -1586,7 +1607,7 @@ select {
   color: #02c253;
 }
 
-/* line 77, assets/sass/_elements.scss */
+/* line 99, assets/sass/_elements.scss */
 .denied-icon {
   position: absolute;
   top: 15px;
@@ -1594,34 +1615,34 @@ select {
   color: #ff0000;
 }
 
-/* line 84, assets/sass/_elements.scss */
+/* line 106, assets/sass/_elements.scss */
 .approved-text {
   color: #02c253 !important;
 }
 
-/* line 88, assets/sass/_elements.scss */
+/* line 110, assets/sass/_elements.scss */
 .denied-text {
   color: #ff0000 !important;
 }
 
-/* line 92, assets/sass/_elements.scss */
+/* line 114, assets/sass/_elements.scss */
 ::-webkit-input-placeholder {
   color: #323333;
 }
 
-/* line 96, assets/sass/_elements.scss */
+/* line 118, assets/sass/_elements.scss */
 :-moz-placeholder {
   /* Firefox 18- */
   color: #323333;
 }
 
-/* line 100, assets/sass/_elements.scss */
+/* line 122, assets/sass/_elements.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #323333;
 }
 
-/* line 104, assets/sass/_elements.scss */
+/* line 126, assets/sass/_elements.scss */
 :-ms-input-placeholder {
   color: #323333;
 }
