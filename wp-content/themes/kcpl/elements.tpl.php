@@ -9,7 +9,7 @@
           $defaults = array(
             'theme_location'  => 'main_nav',
             'menu'            => 'main_nav',
-            'container'       => false,
+            'container'       => 'div',
             'container_class' => '',
             'container_id'    => 'main_navBannerCont',
             'menu_class'      => 'menu clearfix',
