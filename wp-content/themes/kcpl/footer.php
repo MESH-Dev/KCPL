@@ -6,13 +6,13 @@
           <?php dynamic_sidebar('footer-col1'); ?>
         </div>
         <div class="columns two">
-          <?php dynamic_sidebar('footer-col1'); ?>
+          <?php dynamic_sidebar('footer-col2'); ?>
         </div>
         <div class="columns two">
-          <?php dynamic_sidebar('footer-col1'); ?>
+          <?php dynamic_sidebar('footer-col3'); ?>
         </div>
         <div class="columns two">
-          <?php dynamic_sidebar('footer-col1'); ?>
+          <?php dynamic_sidebar('footer-col4'); ?>
         </div>
         <div class="columns three offset-by-one omega">
 

@@ -21,24 +21,25 @@ class KCPL_branch_info extends WP_Widget{
     $curTime = date('G:i');
     if($curTime > $open && $curTime < $close){
       $flag = 'Open Now';
+      $class='open';
     }else{
       $flag = 'Closed Now';
+      $class='closed';
     }
 
     //before widget
 		echo $args['before_widget'];
 
-    //title
-		if (!empty($title)){
-			echo $args['before_title'] . $title . $args['after_title'];
-		}
-
-    //content
-    echo $curTime.'<br>';
-    echo $flag.'<br>';
-		echo $open.'<br>';
-    echo $close.'<br>';
-    echo $address.'<br>';
+    //output
+    echo "<div class='footer-location-widget'>";
+    if (!empty($title)){
+      echo $args['before_title'] . $title . $args['after_title'];
+    }
+    echo   "<div class='hour-cont'>
+              <span class='hours'>Hours</span> <span class='$class'>$flag</span>
+            </div>
+            <span class='address'>$address</span>
+          </div>";
 
     //after widget
 		echo $args['after_widget'];
