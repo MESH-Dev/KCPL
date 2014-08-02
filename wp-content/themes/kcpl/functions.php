@@ -1,4 +1,6 @@
 <?php
+  include_once('functions/branch-hours.php');
+
   //enqueue scripts and styles *use production assets. Dev assets are located in assets/css and assets/js
   function KCPL_scripts() {
     wp_enqueue_style('font-awesome','//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
