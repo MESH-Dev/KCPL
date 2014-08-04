@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<div style="height: 100px;"></div>
+
 <div class="container">
 
     <div class="two columns">
@@ -26,6 +28,32 @@
 
         <div class="KCPL_short-callout">
             <span>Short Call Out</span>
+        </div>
+
+    </div>
+
+    <div class="two columns">
+
+        <div class="KCPL_social-callout">
+            <div class="KCPL_social-callout-header">
+                <span>Follow Us</span>
+            </div>
+            <div class="KCPL_social-callout-body">
+                <div class="KCPL_sprite-facebook"></div>
+                <div class="KCPL_sprite-instagram"></div>
+                <div class="KCPL_sprite-twitter"></div>
+                <div class="KCPL_sprite-twitter"></div>
+                <div class="KCPL_sprite-twitter"></div>
+                <div class="KCPL_sprite-twitter"></div>
+
+                <div class="clear"></div>
+
+                <div class="KCPL_social-callout-tweet">
+                    <span class="KCPL_social-callout-tweet-content">"All KCPL locations will be closed all day on Wednesday, February 12 for Staff Development Day. Find us online at kanawhalibrary.org."</span>
+                    <span class="KCPL_social-callout-tweet-date">Feb 11</span>
+                </div>
+                </div>
+            </div>
         </div>
 
     </div>

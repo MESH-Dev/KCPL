@@ -161,3 +161,19 @@ table{
 .#{$namespace}short-callout {
     span { display: block; font-family: "Nimbus-Sans-Condensed"; font-weight: 600; text-transform: uppercase; text-align: center; font-size: 43px; line-height: 46px; color: white; }
 }
+
+.#{$namespace}social-callout { display: block; }
+.#{$namespace}social-callout {
+    .#{$namespace}social-callout-header { background: $blue; padding: 10px; }
+    .#{$namespace}social-callout-header {
+        span { display: block; font-family: "Nimbus-Sans"; font-weight: 700; font-size: 19px; line-height: 27px; text-transform: uppercase; color: white; text-align: center; }
+    }
+    .#{$namespace}social-callout-body { background: $s-grey; padding: 10px; }
+    .#{$namespace}social-callout-body {
+        .#{$namespace}social-callout-tweet { background: $blue; padding: 10px; border-radius: 10px; font-size: 13px; line-height: 16px; };
+        .#{$namespace}social-callout-tweet {
+            .#{$namespace}social-callout-tweet-content { font-family: "Minion"; color: white; word-wrap: break-word; };
+            .#{$namespace}social-callout-tweet-date { font-family: "Nimbus-Sans"; font-size: 13px; line-height: 16px; color: white; font-weight: 700;  };
+        };
+    }
+}

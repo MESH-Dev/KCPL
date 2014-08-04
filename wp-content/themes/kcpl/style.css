@@ -1837,3 +1837,52 @@ table td:last-child {
   line-height: 46px;
   color: white;
 }
+
+/* line 165, assets/sass/_elements.scss */
+.KCPL_social-callout {
+  display: block;
+}
+
+/* line 167, assets/sass/_elements.scss */
+.KCPL_social-callout .KCPL_social-callout-header {
+  background: #137cc1;
+  padding: 10px;
+}
+/* line 169, assets/sass/_elements.scss */
+.KCPL_social-callout .KCPL_social-callout-header span {
+  display: block;
+  font-family: "Nimbus-Sans";
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+/* line 171, assets/sass/_elements.scss */
+.KCPL_social-callout .KCPL_social-callout-body {
+  background: #e2e2e2;
+  padding: 10px;
+}
+/* line 173, assets/sass/_elements.scss */
+.KCPL_social-callout .KCPL_social-callout-body .KCPL_social-callout-tweet {
+  background: #137cc1;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 13px;
+  line-height: 16px;
+}
+/* line 175, assets/sass/_elements.scss */
+.KCPL_social-callout .KCPL_social-callout-body .KCPL_social-callout-tweet .KCPL_social-callout-tweet-content {
+  font-family: "Minion";
+  color: white;
+  word-wrap: break-word;
+}
+/* line 176, assets/sass/_elements.scss */
+.KCPL_social-callout .KCPL_social-callout-body .KCPL_social-callout-tweet .KCPL_social-callout-tweet-date {
+  font-family: "Nimbus-Sans";
+  font-size: 13px;
+  line-height: 16px;
+  color: white;
+  font-weight: 700;
+}
