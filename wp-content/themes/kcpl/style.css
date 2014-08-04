@@ -131,16 +131,205 @@ table {
   font-family: "nimbus-sans-condensed";
 }
 
+/* line 69, assets/sass/_base.scss */
+.KCPL_sprite-book {
+  background: url(assets/img/sprites.png) 0 -8px no-repeat;
+  height: 31px;
+  width: 43px;
+}
+
+/* line 70, assets/sass/_base.scss */
+.KCPL_sprite-headphones {
+  background: url(assets/img/sprites.png) -53px -7px no-repeat;
+  height: 32px;
+  width: 34px;
+}
+
+/* line 71, assets/sass/_base.scss */
+.KCPL_sprite-document {
+  background: url(assets/img/sprites.png) -99px -5px no-repeat;
+  height: 37px;
+  width: 28px;
+}
+
+/* line 72, assets/sass/_base.scss */
+.KCPL_sprite-periodical {
+  background: url(assets/img/sprites.png) -140px -3px no-repeat;
+  height: 37px;
+  width: 28px;
+}
+
+/* line 73, assets/sass/_base.scss */
+.KCPL_sprite-video {
+  background: url(assets/img/sprites.png) -180px -8px no-repeat;
+  height: 29px;
+  width: 39px;
+}
+
+/* line 74, assets/sass/_base.scss */
+.KCPL_sprite-tablet {
+  background: url(assets/img/sprites.png) -230px -5px no-repeat;
+  height: 36px;
+  width: 29px;
+}
+
+/* line 75, assets/sass/_base.scss */
+.KCPL_sprite-audiobook {
+  background: url(assets/img/sprites.png) -270px -8px no-repeat;
+  height: 31px;
+  width: 37px;
+}
+
+/* line 76, assets/sass/_base.scss */
+.KCPL_sprite-download {
+  background: url(assets/img/sprites.png) -322px -8px no-repeat;
+  height: 32px;
+  width: 29px;
+}
+
+/* line 77, assets/sass/_base.scss */
+.KCPL_sprite-kids {
+  background: url(assets/img/sprites.png) -365px 0 no-repeat;
+  height: 40px;
+  width: 39px;
+}
+
+/* line 78, assets/sass/_base.scss */
+.KCPL_sprite-teens {
+  background: url(assets/img/sprites.png) -413px 0 no-repeat;
+  height: 40px;
+  width: 39px;
+}
+
+/* line 79, assets/sass/_base.scss */
+.KCPL_sprite-adult {
+  background: url(assets/img/sprites.png) -461px 0 no-repeat;
+  height: 40px;
+  width: 39px;
+}
+
+/* line 81, assets/sass/_base.scss */
+.KCPL_sprite-facebook {
+  background: url(assets/img/sprites.png) 0px -50px no-repeat;
+  height: 35px;
+  width: 35px;
+}
+
+/* line 82, assets/sass/_base.scss */
+.KCPL_sprite-pinterest {
+  background: url(assets/img/sprites.png) -41px -50px no-repeat;
+  height: 35px;
+  width: 35px;
+}
+
+/* line 83, assets/sass/_base.scss */
+.KCPL_sprite-tumblr {
+  background: url(assets/img/sprites.png) -82px -50px no-repeat;
+  height: 35px;
+  width: 35px;
+}
+
+/* line 84, assets/sass/_base.scss */
+.KCPL_sprite-instagram {
+  background: url(assets/img/sprites.png) -123px -50px no-repeat;
+  height: 35px;
+  width: 35px;
+}
+
+/* line 85, assets/sass/_base.scss */
+.KCPL_sprite-twitter {
+  background: url(assets/img/sprites.png) -164px -50px no-repeat;
+  height: 35px;
+  width: 35px;
+}
+
+/* line 86, assets/sass/_base.scss */
+.KCPL_sprite-googleplus {
+  background: url(assets/img/sprites.png) -205px -50px no-repeat;
+  height: 35px;
+  width: 35px;
+}
+
+/* line 87, assets/sass/_base.scss */
+.KCPL_sprite-mail {
+  background: url(assets/img/sprites.png) -247px -58px no-repeat;
+  height: 27px;
+  width: 33px;
+}
+
+/* line 88, assets/sass/_base.scss */
+.KCPL_sprite-search {
+  background: url(assets/img/sprites.png) -289px -58px no-repeat;
+  height: 25px;
+  width: 24px;
+}
+
+/* line 89, assets/sass/_base.scss */
+.KCPL_sprite-mute {
+  background: url(assets/img/sprites.png) -323px -56px no-repeat;
+  height: 28px;
+  width: 30px;
+}
+
+/* line 90, assets/sass/_base.scss */
+.KCPL_sprite-calendar {
+  background: url(assets/img/sprites.png) -364px -54px no-repeat;
+  height: 30px;
+  width: 26px;
+}
+
+/* line 91, assets/sass/_base.scss */
+.KCPL_sprite-learn {
+  background: url(assets/img/sprites.png) -400px -56px no-repeat;
+  height: 29px;
+  width: 32px;
+}
+
+/* line 92, assets/sass/_base.scss */
+.KCPL_sprite-thumbsup {
+  background: url(assets/img/sprites.png) -444px -54px no-repeat;
+  height: 27px;
+  width: 28px;
+}
+
+/* line 93, assets/sass/_base.scss */
+.KCPL_sprite-thumbsdown {
+  background: url(assets/img/sprites.png) -482px -54px no-repeat;
+  height: 27px;
+  width: 28px;
+}
+
+/* line 94, assets/sass/_base.scss */
+.KCPL_sprite-plus {
+  background: url(assets/img/sprites.png) -520px -61px no-repeat;
+  height: 12px;
+  width: 12px;
+}
+
+/* line 95, assets/sass/_base.scss */
+.KCPL_sprite-minus {
+  background: url(assets/img/sprites.png) -538px -66px no-repeat;
+  height: 4px;
+  width: 12px;
+}
+
+/* line 96, assets/sass/_base.scss */
+.KCPL_sprite-create {
+  background: url(assets/img/sprites.png) -564px -58px no-repeat;
+  height: 21px;
+  width: 21px;
+}
+
 /* #Basic Styles
 ================================================== */
-/* line 71, assets/sass/_base.scss */
+/* line 101, assets/sass/_base.scss */
 body {
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
 }
 
-/* line 75, assets/sass/_base.scss */
+/* line 105, assets/sass/_base.scss */
 a {
   text-decoration: none;
 }
@@ -151,7 +340,7 @@ a {
 ================================================== */
 /* #Images
 ================================================== */
-/* line 95, assets/sass/_base.scss */
+/* line 125, assets/sass/_base.scss */
 img {
   max-width: 100%;
   height: auto;
@@ -159,60 +348,60 @@ img {
 
 /* WordPress Image Styles
    ========================================================================== */
-/* line 100, assets/sass/_base.scss */
+/* line 130, assets/sass/_base.scss */
 .alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 101, assets/sass/_base.scss */
+/* line 131, assets/sass/_base.scss */
 .aligncenter, div.aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 102, assets/sass/_base.scss */
+/* line 132, assets/sass/_base.scss */
 .alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 103, assets/sass/_base.scss */
+/* line 133, assets/sass/_base.scss */
 .alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 104, assets/sass/_base.scss */
+/* line 134, assets/sass/_base.scss */
 .aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 105, assets/sass/_base.scss */
+/* line 135, assets/sass/_base.scss */
 a img.alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 106, assets/sass/_base.scss */
+/* line 136, assets/sass/_base.scss */
 a img.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 107, assets/sass/_base.scss */
+/* line 137, assets/sass/_base.scss */
 a img.alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 108, assets/sass/_base.scss */
+/* line 138, assets/sass/_base.scss */
 a img.aligncenter {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 109, assets/sass/_base.scss */
+/* line 139, assets/sass/_base.scss */
 .wp-caption {
   background: #fff;
   border: 1px solid #f0f0f0;
@@ -221,22 +410,22 @@ a img.aligncenter {
   text-align: center;
 }
 
-/* line 110, assets/sass/_base.scss */
+/* line 140, assets/sass/_base.scss */
 .wp-caption.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 111, assets/sass/_base.scss */
+/* line 141, assets/sass/_base.scss */
 .wp-caption.alignleft {
   margin: 5px 20px 20px 0;
 }
 
-/* line 112, assets/sass/_base.scss */
+/* line 142, assets/sass/_base.scss */
 .wp-caption.alignright {
   margin: 5px 0 20px 20px;
 }
 
-/* line 113, assets/sass/_base.scss */
+/* line 143, assets/sass/_base.scss */
 .wp-caption img {
   border: 0 none;
   height: auto;
@@ -246,7 +435,7 @@ a img.aligncenter {
   width: auto;
 }
 
-/* line 114, assets/sass/_base.scss */
+/* line 144, assets/sass/_base.scss */
 .wp-caption p.wp-caption-text {
   font-size: 11px;
   line-height: 17px;
