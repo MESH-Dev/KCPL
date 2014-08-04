@@ -1965,3 +1965,131 @@ table td:last-child {
 #bannerHome h2 {
   margin: 0 0 0;
 }
+
+/*
+
+<ol class="homepage-callout-list">
+    <li>Learn</li>
+    <li>Play</li>
+    <li>Visit</li>
+    <li>Find</li>
+</ol>
+
+*/
+/* line 210, assets/sass/_elements.scss */
+.homepage-callout-list {
+  display: block;
+}
+
+/* line 211, assets/sass/_elements.scss */
+ol.homepage-callout-list {
+  display: block;
+}
+/* line 212, assets/sass/_elements.scss */
+ol.homepage-callout-list > li {
+  font: normal 55px/51px "minion";
+  text-transform: uppercase;
+  color: white;
+  padding: 12px 20px;
+}
+/* line 213, assets/sass/_elements.scss */
+ol.homepage-callout-list > li:nth-child(1) {
+  background: #65a893;
+}
+/* line 214, assets/sass/_elements.scss */
+ol.homepage-callout-list > li:nth-child(2) {
+  background: #f65446;
+}
+/* line 215, assets/sass/_elements.scss */
+ol.homepage-callout-list > li:nth-child(3) {
+  background: #76849a;
+}
+/* line 216, assets/sass/_elements.scss */
+ol.homepage-callout-list > li:nth-child(4) {
+  background: #ffa751;
+}
+
+/*
+
+<div class="calendar-callout">
+    <span>April 2014</span>
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+        </tr>
+        <tr>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+
+*/
+/* line 274, assets/sass/_elements.scss */
+.calendar-callout {
+  display: block;
+  background: #e2e2e2;
+  padding: 23px;
+}
+
+/* line 277, assets/sass/_elements.scss */
+.calendar-callout span {
+  display: block;
+  font: normal 13px/28px "minion";
+  letter-spacing: 1px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #000;
+  margin-bottom: 14px;
+}
+/* line 278, assets/sass/_elements.scss */
+.calendar-callout table {
+  margin-top: 10px;
+  font-family: "nimbus-sans";
+  font-weight: 700;
+}
+/* line 279, assets/sass/_elements.scss */
+.calendar-callout tr {
+  padding-top: 10px;
+}
+/* line 280, assets/sass/_elements.scss */
+.calendar-callout td {
+  padding: 0px 21px 11px 0px;
+}
