@@ -318,3 +318,11 @@ ol.homepage-callout-list { display: block;
         };
     }
 }
+
+
+// Vertical callout graphics
+
+.#{$namespace}callout-graphic-1 { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/140x275.gif') }
+.#{$namespace}callout-graphic-2 { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/140x275.gif') }
+.#{$namespace}callout-graphic-3 { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/140x275.gif') }
+.#{$namespace}callout-graphic-4 { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/140x275.gif') }

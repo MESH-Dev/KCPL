@@ -2421,3 +2421,39 @@ ol.homepage-callout-list > li:nth-child(4) {
   color: white;
   font-weight: 700;
 }
+
+/* line 325, assets/sass/_elements.scss */
+.KCPL_callout-graphic-1 {
+  display: block;
+  width: 140px;
+  height: 275px;
+  border-radius: 10px;
+  background: url("./assets/img/140x275.gif");
+}
+
+/* line 326, assets/sass/_elements.scss */
+.KCPL_callout-graphic-2 {
+  display: block;
+  width: 140px;
+  height: 275px;
+  border-radius: 10px;
+  background: url("./assets/img/140x275.gif");
+}
+
+/* line 327, assets/sass/_elements.scss */
+.KCPL_callout-graphic-3 {
+  display: block;
+  width: 140px;
+  height: 275px;
+  border-radius: 10px;
+  background: url("./assets/img/140x275.gif");
+}
+
+/* line 328, assets/sass/_elements.scss */
+.KCPL_callout-graphic-4 {
+  display: block;
+  width: 140px;
+  height: 275px;
+  border-radius: 10px;
+  background: url("./assets/img/140x275.gif");
+}
