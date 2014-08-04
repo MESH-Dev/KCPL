@@ -1,77 +1,59 @@
 <?php get_header(); ?>
 
+<div style="height: 100px;"></div>
+
 <div class="container">
 
-    <div class="form-row">
-        <i class="fa fa-search search-icon"></i>
-        <input type="search" placeholder="Search">
-    </div>
+    <div class="two columns">
 
-    <div style="height: 500px;">
+        <div style="height: 500px;">
 
-        <div class="six columns">
-
-            <!-- <ol class="homepage-callout-list">
-                <li>Learn</li>
-                <li>Play</li>
-                <li>Visit</li>
-                <li>Find</li>
-            </ol> -->
-
-        </div>
-        <div class="four columns">
-
-            <div class="calendar-callout">
-                <span>April 2014</span>
-                <table>
-                    <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>7</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>9</td>
-                        <td>10</td>
-                        <td>11</td>
-                        <td>12</td>
-                        <td>13</td>
-                        <td>14</td>
-                    </tr>
-                    <tr>
-                        <td>15</td>
-                        <td>16</td>
-                        <td>17</td>
-                        <td>18</td>
-                        <td>19</td>
-                        <td>20</td>
-                        <td>21</td>
-                    </tr>
-                    <tr>
-                        <td>22</td>
-                        <td>23</td>
-                        <td>24</td>
-                        <td>25</td>
-                        <td>26</td>
-                        <td>27</td>
-                        <td>28</td>
-                    </tr>
-                    <tr>
-                        <td>29</td>
-                        <td>30</td>
-                        <td>31</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </table>
+            <div class="KCPL_info-box">
+                <div class="KCPL_info-box-header">
+                    <span class="KCPL_info-box-header-title">Info</span>
+                </div>
+                <div class="KCPL_info-box-body">
+                    <span class="KCPL_info-box-body-title">Title this is the title it's short</span>
+                    <span class="KCPL_info-box-body-date">Date 3, 2014</span>
+                    <span class="KCPL_info-box-body-excerpt">Learn how easy it is to make your own healthy smoothies.</span>
+                    <span class="KCPL_info-box-body-link">More &nbsp; ≈</span>
+                </div>
             </div>
 
+        </div>
+
+    </div>
+
+    <div class="two columns">
+
+        <div class="KCPL_short-callout">
+            <span>Short Call Out</span>
+        </div>
+
+    </div>
+
+    <div class="two columns">
+
+        <div class="KCPL_social-callout">
+            <div class="KCPL_social-callout-header">
+                <span>Follow Us</span>
+            </div>
+            <div class="KCPL_social-callout-body">
+                <div class="KCPL_sprite-facebook"></div>
+                <div class="KCPL_sprite-instagram"></div>
+                <div class="KCPL_sprite-twitter"></div>
+                <div class="KCPL_sprite-twitter"></div>
+                <div class="KCPL_sprite-twitter"></div>
+                <div class="KCPL_sprite-twitter"></div>
+
+                <div class="clear"></div>
+
+                <div class="KCPL_social-callout-tweet">
+                    <span class="KCPL_social-callout-tweet-content">"All KCPL locations will be closed all day on Wednesday, February 12 for Staff Development Day. Find us online at kanawhalibrary.org."</span>
+                    <span class="KCPL_social-callout-tweet-date">Feb 11</span>
+                </div>
+                </div>
+            </div>
         </div>
 
     </div>
