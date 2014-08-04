@@ -310,7 +310,8 @@ ol.homepage-callout-list { display: block;
     }
     .#{$namespace}social-callout-body { background: $s-grey; padding: 10px; }
     .#{$namespace}social-callout-body {
-        .#{$namespace}social-callout-tweet { background: $blue; padding: 10px; border-radius: 10px; font-size: 13px; line-height: 16px; };
+        .#{$namespace}social-callout-icon { margin: 4px 3px 7px 15px; float: left; };
+        .#{$namespace}social-callout-tweet { background: $blue;padding: 10px 8px; border-radius: 10px; font-size: 13px; line-height: 16px; margin-top: 12px; };
         .#{$namespace}social-callout-tweet {
             .#{$namespace}social-callout-tweet-content { font-family: "Minion"; color: white; word-wrap: break-word; };
             .#{$namespace}social-callout-tweet-date { font-family: "Nimbus-Sans"; font-size: 13px; line-height: 16px; color: white; font-weight: 700;  };

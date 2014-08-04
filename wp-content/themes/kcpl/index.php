@@ -39,12 +39,12 @@
                 <span>Follow Us</span>
             </div>
             <div class="KCPL_social-callout-body">
-                <div class="KCPL_sprite-facebook"></div>
-                <div class="KCPL_sprite-instagram"></div>
-                <div class="KCPL_sprite-twitter"></div>
-                <div class="KCPL_sprite-twitter"></div>
-                <div class="KCPL_sprite-twitter"></div>
-                <div class="KCPL_sprite-twitter"></div>
+                <div class="KCPL_sprite-facebook KCPL_social-callout-icon"></div>
+                <div class="KCPL_sprite-instagram KCPL_social-callout-icon"></div>
+                <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
+                <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
+                <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
+                <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
 
                 <div class="clear"></div>
 
