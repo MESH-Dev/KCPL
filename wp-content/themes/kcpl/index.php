@@ -22,12 +22,39 @@
 
   <div class="row">
     <div class="columns twelve alpha omega clearfix">
-      <div id="KCPL_search">
+      <div id="KCPL_search" class="extended">
         <div class="gutter clearfix">
           <form>
             <div id="searchField">
               <i class="fa fa-lg fa-search searchicon"></i>
               <input type="search" placeholder="Search the collection" />
+            </div>
+            <div id="exFields">
+              <div id="left">
+                <select id="search-topic">
+                  <option value="">Topic</option>
+                  <option value="option_1">Option 1</option>
+                  <option value="option_2">Option 2</option>
+                  <option value="option_3">Option 3</option>
+                </select>
+              </div>
+              <div id="right">
+                <select id="search-audience">
+                  <option value="">Audience</option>
+                  <option value="option_1">Option 1</option>
+                  <option value="option_2">Option 2</option>
+                  <option value="option_3">Option 3</option>
+                </select>
+                <div id="search-online">
+
+                </div>
+                <div id="search-libraryCard">
+
+                </div>
+                <div id="search-inLibrary">
+
+                </div>
+              </div>
             </div>
             <div id="search-params">
               <div id="type">
