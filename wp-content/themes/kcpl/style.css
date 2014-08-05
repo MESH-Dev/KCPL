@@ -1745,7 +1745,7 @@ footer #footer-donate a {
   border-radius: 10px;
   background: #137cc1;
   font-size: 17px;
-  font-family: "Nimbus-Sans-Condensed";
+  font-family: "nimbus-sans-condensed";
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.07em;
@@ -1765,32 +1765,37 @@ button {
   border-radius: .5em;
   background: #137cc1;
   font-size: 18px;
-  font-family: "Nimbus-Sans-Condensed";
+  font-family: "nimbus-sans-condensed";
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.07em;
 }
 
-/* line 19, assets/sass/_elements.scss */
+/* line 17, assets/sass/_elements.scss */
+textarea, input, select {
+  outline: none;
+}
+
+/* line 20, assets/sass/_elements.scss */
 #secondary-sidebar-nav {
   display: block;
 }
 
-/* line 21, assets/sass/_elements.scss */
+/* line 22, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary {
   display: block;
   list-style: none;
 }
-/* line 23, assets/sass/_elements.scss */
+/* line 24, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary ul {
   list-style: none;
   margin: 0;
 }
-/* line 24, assets/sass/_elements.scss */
+/* line 25, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary li {
   margin: 0;
 }
-/* line 26, assets/sass/_elements.scss */
+/* line 27, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li > a {
   background: #137cc1;
   color: #fff;
@@ -1799,27 +1804,27 @@ button {
   display: block;
   padding: 16px 20px 8px;
 }
-/* line 27, assets/sass/_elements.scss */
+/* line 28, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li:last-child > a {
   padding: 16px 20px 13px;
 }
-/* line 28, assets/sass/_elements.scss */
+/* line 29, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary a {
   text-decoration: none;
 }
-/* line 29, assets/sass/_elements.scss */
+/* line 30, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary a:hover, #secondary-sidebar-nav ul#main_nav_secondary li.current-menu-item > a, #secondary-sidebar-nav ul#main_nav_secondary .current-menu-ancestor > a {
   color: #323333;
 }
-/* line 31, assets/sass/_elements.scss */
+/* line 32, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li > ul {
   background: #7c7d7d;
 }
-/* line 32, assets/sass/_elements.scss */
+/* line 33, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li > ul > li {
   padding: 0 0;
 }
-/* line 33, assets/sass/_elements.scss */
+/* line 34, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li > ul > li > a {
   color: #fff;
   font: bold 19px/19px "nimbus-sans-condensed";
@@ -1827,15 +1832,15 @@ button {
   display: block;
   padding: 14px 0px 5px 20px;
 }
-/* line 35, assets/sass/_elements.scss */
+/* line 36, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li > ul > li > ul {
   padding: 0 0;
 }
-/* line 36, assets/sass/_elements.scss */
+/* line 37, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li > ul > li > ul > li {
   padding: 0 0;
 }
-/* line 37, assets/sass/_elements.scss */
+/* line 38, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li > ul > li > ul > li > a {
   color: #fff;
   font: 18px/18px "minion";
@@ -1844,28 +1849,28 @@ button {
   letter-spacing: 0.03em;
   word-spacing: 0.09em;
 }
-/* line 38, assets/sass/_elements.scss */
+/* line 39, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li > ul > li > ul > li:last-child > a {
   padding: 4px 0px 16px 20px;
 }
-/* line 40, assets/sass/_elements.scss */
+/* line 41, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li > ul > li > ul ul {
   display: none;
 }
 
 /* Forms */
-/* line 45, assets/sass/_elements.scss */
+/* line 46, assets/sass/_elements.scss */
 form {
   margin: 20px;
   padding: 10px;
 }
 
-/* line 48, assets/sass/_elements.scss */
+/* line 49, assets/sass/_elements.scss */
 fieldset {
   margin-bottom: 20px;
 }
 
-/* line 55, assets/sass/_elements.scss */
+/* line 56, assets/sass/_elements.scss */
 input[type="text"],
 input[type="password"],
 input[type="email"],
@@ -1874,7 +1879,7 @@ textarea,
 select {
   border: 3px solid #fff;
   padding: 6px 8px;
-  font: 18px/24px "Nimbus-Sans", Helvetica, Arial, sans-serif;
+  font: 18px/24px "nimbus-sans", Helvetica, Arial, sans-serif;
   max-width: 100%;
   display: block;
   background: #e2e2e2;
@@ -1885,12 +1890,12 @@ select {
   width: 100%;
 }
 
-/* line 70, assets/sass/_elements.scss */
+/* line 71, assets/sass/_elements.scss */
 .form-row {
   position: relative;
 }
 
-/* line 74, assets/sass/_elements.scss */
+/* line 75, assets/sass/_elements.scss */
 .approved-icon {
   position: absolute;
   top: 15px;
@@ -1898,7 +1903,7 @@ select {
   color: #02c253;
 }
 
-/* line 81, assets/sass/_elements.scss */
+/* line 82, assets/sass/_elements.scss */
 .denied-icon {
   position: absolute;
   top: 15px;
@@ -1906,44 +1911,44 @@ select {
   color: #ff0000;
 }
 
-/* line 88, assets/sass/_elements.scss */
+/* line 89, assets/sass/_elements.scss */
 .approved-text {
   color: #02c253 !important;
 }
 
-/* line 92, assets/sass/_elements.scss */
+/* line 93, assets/sass/_elements.scss */
 .denied-text {
   color: #ff0000 !important;
 }
 
-/* line 96, assets/sass/_elements.scss */
+/* line 97, assets/sass/_elements.scss */
 ::-webkit-input-placeholder {
   color: #323333;
 }
 
-/* line 100, assets/sass/_elements.scss */
+/* line 101, assets/sass/_elements.scss */
 :-moz-placeholder {
   /* Firefox 18- */
   color: #323333;
 }
 
-/* line 104, assets/sass/_elements.scss */
+/* line 105, assets/sass/_elements.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #323333;
 }
 
-/* line 108, assets/sass/_elements.scss */
+/* line 109, assets/sass/_elements.scss */
 :-ms-input-placeholder {
   color: #323333;
 }
 
-/* line 114, assets/sass/_elements.scss */
+/* line 115, assets/sass/_elements.scss */
 table {
   background: #61a2d7;
 }
 
-/* line 117, assets/sass/_elements.scss */
+/* line 118, assets/sass/_elements.scss */
 table thead th {
   border-bottom: 2px solid #353535;
   border-left: 2px solid #353535;
@@ -1953,50 +1958,50 @@ table thead th {
   padding: 16px 0px 15px;
   text-align: center;
 }
-/* line 118, assets/sass/_elements.scss */
+/* line 119, assets/sass/_elements.scss */
 table thead th:first-child {
   border: none;
   border-bottom: 2px solid #353535;
   border-right: 2px solid #353535;
 }
-/* line 119, assets/sass/_elements.scss */
+/* line 120, assets/sass/_elements.scss */
 table thead th:last-child {
   border: none;
   border-bottom: 2px solid #353535;
   border-left: 2px solid #353535;
 }
-/* line 126, assets/sass/_elements.scss */
+/* line 127, assets/sass/_elements.scss */
 table tr:last-child td {
   border: none;
   border-top: 2px solid #353535;
   border-left: 2px solid #353535;
   border-right: 2px solid #353535;
 }
-/* line 127, assets/sass/_elements.scss */
+/* line 128, assets/sass/_elements.scss */
 table tr:last-child td:first-child {
   border: none;
   border-top: 2px solid #353535;
   border-right: 2px solid #353535;
 }
-/* line 128, assets/sass/_elements.scss */
+/* line 129, assets/sass/_elements.scss */
 table tr:last-child td:last-child {
   border: none;
   border-top: 2px solid #353535;
   border-left: 2px solid #353535;
 }
-/* line 132, assets/sass/_elements.scss */
+/* line 133, assets/sass/_elements.scss */
 table td {
   border: 2px solid #353535;
   padding: 10px 20px;
 }
-/* line 133, assets/sass/_elements.scss */
+/* line 134, assets/sass/_elements.scss */
 table td:first-child {
   border: none;
   border-top: 2px solid #353535;
   border-bottom: 2px solid #353535;
   border-right: 2px solid #353535;
 }
-/* line 134, assets/sass/_elements.scss */
+/* line 135, assets/sass/_elements.scss */
 table td:last-child {
   border: none;
   border-top: 2px solid #353535;
@@ -2004,14 +2009,14 @@ table td:last-child {
   border-left: 2px solid #353535;
 }
 
-/* line 140, assets/sass/_elements.scss */
+/* line 141, assets/sass/_elements.scss */
 .wp-caption {
   border: none;
   padding: 0;
   text-align: left;
 }
 
-/* line 141, assets/sass/_elements.scss */
+/* line 142, assets/sass/_elements.scss */
 .wp-caption p.wp-caption-text {
   font: 12px/16px "minion";
   margin: 0 0 .1em;
@@ -2038,49 +2043,49 @@ table td:last-child {
     </div>
   </div>
 */
-/* line 164, assets/sass/_elements.scss */
+/* line 165, assets/sass/_elements.scss */
 #banner {
   height: 202px;
   float: left;
   width: 100%;
   text-align: center;
 }
-/* line 165, assets/sass/_elements.scss */
+/* line 166, assets/sass/_elements.scss */
 #banner ul {
   list-style: none;
   margin: 0;
   vertical-align: bottom;
   display: table-cell;
 }
-/* line 166, assets/sass/_elements.scss */
+/* line 167, assets/sass/_elements.scss */
 #banner li {
   float: left;
   display: block;
   display: table;
 }
-/* line 168, assets/sass/_elements.scss */
+/* line 169, assets/sass/_elements.scss */
 #banner .container {
   height: 202px;
   display: table;
 }
-/* line 169, assets/sass/_elements.scss */
+/* line 170, assets/sass/_elements.scss */
 #banner .gutter {
   display: table;
   height: 100%;
   width: 100%;
   vertical-align: middle;
 }
-/* line 170, assets/sass/_elements.scss */
+/* line 171, assets/sass/_elements.scss */
 #banner a {
   display: none;
   color: #fff;
   float: left;
 }
-/* line 171, assets/sass/_elements.scss */
+/* line 172, assets/sass/_elements.scss */
 #banner li.current-menu-ancestor > a, #banner li.current-menu-item > a {
   display: block;
 }
-/* line 172, assets/sass/_elements.scss */
+/* line 173, assets/sass/_elements.scss */
 #banner #main_navBannerCont {
   text-align: center;
   display: table-cell;
@@ -2088,71 +2093,71 @@ table td:last-child {
   height: 100%;
   vertical-align: middle;
 }
-/* line 173, assets/sass/_elements.scss */
+/* line 174, assets/sass/_elements.scss */
 #banner #main_navBannerCont > ul {
   margin: 0 auto;
   display: inline-block;
 }
-/* line 174, assets/sass/_elements.scss */
+/* line 175, assets/sass/_elements.scss */
 #banner #main_navBannerCont > ul > li {
   display: table;
 }
-/* line 175, assets/sass/_elements.scss */
+/* line 176, assets/sass/_elements.scss */
 #banner #main_navBannerCont > ul > li ul {
   vertical-align: bottom;
   display: table-cell;
 }
-/* line 176, assets/sass/_elements.scss */
+/* line 177, assets/sass/_elements.scss */
 #banner #main_navBannerCont > ul > li > a {
   font: bold 41px/41px "nimbus-sans-condensed";
   text-transform: uppercase;
   margin: 0 25px 0 0;
 }
-/* line 180, assets/sass/_elements.scss */
+/* line 181, assets/sass/_elements.scss */
 #banner #main_navBannerCont > ul > li > ul > li > a {
   font: italic 25px/30px "minion";
   margin: 0 22px 0 0;
 }
-/* line 184, assets/sass/_elements.scss */
+/* line 185, assets/sass/_elements.scss */
 #banner #main_navBannerCont > ul > li > ul > li > ul > li > a {
   font: bold 19px/26px "nimbus-sans";
   margin: 0 20px 0 0;
   text-transform: uppercase;
 }
-/* line 188, assets/sass/_elements.scss */
+/* line 189, assets/sass/_elements.scss */
 #banner #main_navBannerCont > ul > li > ul > li > ul > li > ul > li > a {
   font: 18px/25px "minion";
   margin: 0;
 }
 
-/* line 192, assets/sass/_elements.scss */
+/* line 193, assets/sass/_elements.scss */
 #bannerHome {
   color: #fff;
   height: 297px;
   float: left;
   width: 100%;
 }
-/* line 193, assets/sass/_elements.scss */
+/* line 194, assets/sass/_elements.scss */
 #bannerHome .gutter {
   padding: 0 0 0 11px;
 }
-/* line 194, assets/sass/_elements.scss */
+/* line 195, assets/sass/_elements.scss */
 #bannerHome .container {
   display: table;
   height: 297px;
 }
-/* line 195, assets/sass/_elements.scss */
+/* line 196, assets/sass/_elements.scss */
 #bannerHome .columns {
   display: table-cell;
   float: none;
   margin: 0 0 0 13px;
   vertical-align: middle;
 }
-/* line 196, assets/sass/_elements.scss */
+/* line 197, assets/sass/_elements.scss */
 #bannerHome h1 {
   margin: 0 0 0;
 }
-/* line 197, assets/sass/_elements.scss */
+/* line 198, assets/sass/_elements.scss */
 #bannerHome h2 {
   margin: 0 0 0;
 }
@@ -2167,35 +2172,35 @@ table td:last-child {
 </ol>
 
 */
-/* line 211, assets/sass/_elements.scss */
+/* line 212, assets/sass/_elements.scss */
 .homepage-callout-list {
   display: block;
 }
 
-/* line 212, assets/sass/_elements.scss */
+/* line 213, assets/sass/_elements.scss */
 ol.homepage-callout-list {
   display: block;
 }
-/* line 213, assets/sass/_elements.scss */
+/* line 214, assets/sass/_elements.scss */
 ol.homepage-callout-list > li {
   font: normal 55px/51px "minion";
   text-transform: uppercase;
   color: white;
   padding: 12px 20px;
 }
-/* line 214, assets/sass/_elements.scss */
+/* line 215, assets/sass/_elements.scss */
 ol.homepage-callout-list > li:nth-child(1) {
   background: #65a893;
 }
-/* line 215, assets/sass/_elements.scss */
+/* line 216, assets/sass/_elements.scss */
 ol.homepage-callout-list > li:nth-child(2) {
   background: #f65446;
 }
-/* line 216, assets/sass/_elements.scss */
+/* line 217, assets/sass/_elements.scss */
 ol.homepage-callout-list > li:nth-child(3) {
   background: #76849a;
 }
-/* line 217, assets/sass/_elements.scss */
+/* line 218, assets/sass/_elements.scss */
 ol.homepage-callout-list > li:nth-child(4) {
   background: #ffa751;
 }
@@ -2254,14 +2259,14 @@ ol.homepage-callout-list > li:nth-child(4) {
 </div>
 
 */
-/* line 274, assets/sass/_elements.scss */
+/* line 275, assets/sass/_elements.scss */
 .calendar-callout {
   display: block;
   background: #e2e2e2;
   padding: 23px;
 }
 
-/* line 276, assets/sass/_elements.scss */
+/* line 277, assets/sass/_elements.scss */
 .calendar-callout span {
   display: block;
   font: normal 13px/28px "minion";
@@ -2270,86 +2275,86 @@ ol.homepage-callout-list > li:nth-child(4) {
   border-bottom: 1px solid #000;
   margin-bottom: 14px;
 }
-/* line 277, assets/sass/_elements.scss */
+/* line 278, assets/sass/_elements.scss */
 .calendar-callout table {
   margin-top: 10px;
   font-family: "nimbus-sans";
   font-weight: 700;
 }
-/* line 278, assets/sass/_elements.scss */
+/* line 279, assets/sass/_elements.scss */
 .calendar-callout tr {
   padding-top: 10px;
 }
-/* line 279, assets/sass/_elements.scss */
+/* line 280, assets/sass/_elements.scss */
 .calendar-callout td {
   padding: 0px 21px 11px 0px;
 }
 
-/* line 283, assets/sass/_elements.scss */
+/* line 284, assets/sass/_elements.scss */
 .KCPL_info-box {
   display: block;
 }
 
-/* line 285, assets/sass/_elements.scss */
+/* line 286, assets/sass/_elements.scss */
 .KCPL_info-box .KCPL_info-box-header {
   background: #65a893;
   padding: 15px;
 }
-/* line 287, assets/sass/_elements.scss */
+/* line 288, assets/sass/_elements.scss */
 .KCPL_info-box .KCPL_info-box-header .KCPL_info-box-header-title {
   display: block;
   text-align: center;
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 600;
-  font-family: "Nimbus-Sans";
+  font-family: "nimbus-sans";
   color: white;
 }
-/* line 289, assets/sass/_elements.scss */
+/* line 290, assets/sass/_elements.scss */
 .KCPL_info-box .KCPL_info-box-body {
   background: #e2e2e2;
   padding: 11px 18px;
 }
-/* line 291, assets/sass/_elements.scss */
+/* line 292, assets/sass/_elements.scss */
 .KCPL_info-box .KCPL_info-box-body .KCPL_info-box-body-title {
   display: block;
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 600;
-  font-family: "Nimbus-Sans-Condensed";
+  font-family: "nimbus-sans-condensed";
   color: #323333;
   line-height: 23px;
 }
-/* line 292, assets/sass/_elements.scss */
+/* line 293, assets/sass/_elements.scss */
 .KCPL_info-box .KCPL_info-box-body .KCPL_info-box-body-date {
   display: block;
   font-size: 15px;
   font-weight: 600;
-  font-family: "Nimbus-Sans";
+  font-family: "nimbus-sans";
   color: #323333;
 }
-/* line 293, assets/sass/_elements.scss */
+/* line 294, assets/sass/_elements.scss */
 .KCPL_info-box .KCPL_info-box-body .KCPL_info-box-body-excerpt {
   display: block;
   font-size: 13px;
   font-weight: 400;
-  font-family: "Minion";
+  font-family: "minion";
   color: #323333;
   letter-spacing: .05em;
   line-height: 18px;
 }
-/* line 294, assets/sass/_elements.scss */
+/* line 295, assets/sass/_elements.scss */
 .KCPL_info-box .KCPL_info-box-body .KCPL_info-box-body-link {
   display: block;
   font-size: 14px;
   font-weight: 600;
-  font-family: "Minion";
+  font-family: "minion";
   color: #323333;
   margin-top: 17px;
   font-style: italic;
 }
 
-/* line 298, assets/sass/_elements.scss */
+/* line 299, assets/sass/_elements.scss */
 .KCPL_short-callout {
   display: block;
   border-radius: 10px;
@@ -2357,10 +2362,10 @@ ol.homepage-callout-list > li:nth-child(4) {
   padding: 79px 24px;
 }
 
-/* line 300, assets/sass/_elements.scss */
+/* line 301, assets/sass/_elements.scss */
 .KCPL_short-callout span {
   display: block;
-  font-family: "Nimbus-Sans-Condensed";
+  font-family: "nimbus-sans-condensed";
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
@@ -2369,20 +2374,20 @@ ol.homepage-callout-list > li:nth-child(4) {
   color: white;
 }
 
-/* line 303, assets/sass/_elements.scss */
+/* line 304, assets/sass/_elements.scss */
 .KCPL_social-callout {
   display: block;
 }
 
-/* line 305, assets/sass/_elements.scss */
+/* line 306, assets/sass/_elements.scss */
 .KCPL_social-callout .KCPL_social-callout-header {
   background: #137cc1;
   padding: 10px;
 }
-/* line 307, assets/sass/_elements.scss */
+/* line 308, assets/sass/_elements.scss */
 .KCPL_social-callout .KCPL_social-callout-header span {
   display: block;
-  font-family: "Nimbus-Sans";
+  font-family: "nimbus-sans";
   font-weight: 700;
   font-size: 19px;
   line-height: 27px;
@@ -2390,17 +2395,17 @@ ol.homepage-callout-list > li:nth-child(4) {
   color: white;
   text-align: center;
 }
-/* line 309, assets/sass/_elements.scss */
+/* line 310, assets/sass/_elements.scss */
 .KCPL_social-callout .KCPL_social-callout-body {
   background: #e2e2e2;
   padding: 10px;
 }
-/* line 311, assets/sass/_elements.scss */
+/* line 312, assets/sass/_elements.scss */
 .KCPL_social-callout .KCPL_social-callout-body .KCPL_social-callout-icon {
   margin: 4px 3px 7px 15px;
   float: left;
 }
-/* line 312, assets/sass/_elements.scss */
+/* line 313, assets/sass/_elements.scss */
 .KCPL_social-callout .KCPL_social-callout-body .KCPL_social-callout-tweet {
   background: #137cc1;
   padding: 10px 8px;
@@ -2409,22 +2414,22 @@ ol.homepage-callout-list > li:nth-child(4) {
   line-height: 16px;
   margin-top: 12px;
 }
-/* line 314, assets/sass/_elements.scss */
+/* line 315, assets/sass/_elements.scss */
 .KCPL_social-callout .KCPL_social-callout-body .KCPL_social-callout-tweet .KCPL_social-callout-tweet-content {
-  font-family: "Minion";
+  font-family: "minion";
   color: white;
   word-wrap: break-word;
 }
-/* line 315, assets/sass/_elements.scss */
+/* line 316, assets/sass/_elements.scss */
 .KCPL_social-callout .KCPL_social-callout-body .KCPL_social-callout-tweet .KCPL_social-callout-tweet-date {
-  font-family: "Nimbus-Sans";
+  font-family: "nimbus-sans";
   font-size: 13px;
   line-height: 16px;
   color: white;
   font-weight: 700;
 }
 
-/* line 322, assets/sass/_elements.scss */
+/* line 323, assets/sass/_elements.scss */
 .KCPL_callout-graphic-1 {
   display: block;
   width: 140px;
@@ -2433,7 +2438,7 @@ ol.homepage-callout-list > li:nth-child(4) {
   background: url("./assets/img/140x275.gif");
 }
 
-/* line 323, assets/sass/_elements.scss */
+/* line 324, assets/sass/_elements.scss */
 .KCPL_callout-graphic-2 {
   display: block;
   width: 140px;
@@ -2442,7 +2447,7 @@ ol.homepage-callout-list > li:nth-child(4) {
   background: url("./assets/img/140x275.gif");
 }
 
-/* line 324, assets/sass/_elements.scss */
+/* line 325, assets/sass/_elements.scss */
 .KCPL_callout-graphic-3 {
   display: block;
   width: 140px;
@@ -2451,7 +2456,7 @@ ol.homepage-callout-list > li:nth-child(4) {
   background: url("./assets/img/140x275.gif");
 }
 
-/* line 325, assets/sass/_elements.scss */
+/* line 326, assets/sass/_elements.scss */
 .KCPL_callout-graphic-4 {
   display: block;
   width: 140px;
@@ -2461,11 +2466,13 @@ ol.homepage-callout-list > li:nth-child(4) {
 }
 
 /*
+   //search field
   <div id="searchField">
     <i class="fa fa-lg fa-search searchicon"></i>
     <input type="search" placeholder="Search the collection" />
   </div>
 
+   //collections search
   <div id="KCPL_search">
     <div class="gutter clearfix">
       <form>
@@ -2570,14 +2577,158 @@ ol.homepage-callout-list > li:nth-child(4) {
       </form>
     </div>
   </div>
+
+  //collections search - extended
+  <div id="KCPL_search" class="extended">
+   <div class="gutter clearfix">
+      <form>
+        <div id="searchField">
+          <i class="fa fa-lg fa-search searchicon"></i>
+          <input type="search" placeholder="Search the collection" />
+        </div>
+        <div id="exFields">
+          <div id="left">
+           <select id="search-topic">
+              <option value="">Topic</option>
+              <option value="option_1">Option 1</option>
+              <option value="option_2">Option 2</option>
+              <option value="option_3">Option 3</option>
+           </select>
+          </div>
+          <div id="right">
+           <select id="search-audience">
+              <option value="">Audience</option>
+              <option value="option_1">Option 1</option>
+              <option value="option_2">Option 2</option>
+              <option value="option_3">Option 3</option>
+           </select>
+           <div id="search-online">
+               <input type="checkbox" name="checkboxNAME" value="checkboxVAL" id="checkboxONE"/><label class="KCPL_meta-small" for="checkboxONE">Online</label>
+           </div>
+           <div id="search-libraryCard">
+               <input type="checkbox" name="checkboxNAME" value="checkboxVAL" id="checkboxTWO"/><label class="KCPL_meta-small" for="checkboxTWO">With Library Card</label>
+           </div>
+           <div id="search-inLibrary">
+               <input type="checkbox" name="checkboxNAME" value="checkboxVAL" id="checkboxTHREE"/><label class="KCPL_meta-small" for="checkboxTHREE">In Library Only</label>
+           </div>
+          </div>
+        </div>
+        <div id="search-params">
+          <div id="type">
+           <span class="top">
+              Search or<br>Browse by
+           </span>
+           <span class="bottom">
+              <a class="media-active active">Media Type</a>
+              <a class="audience-active">Audience</a>
+           </span>
+          </div>
+          <div id="select" class="media-active clearfix">
+           <div class="media">
+              <div class="search-btn first books">
+                  <div class="iconCont">
+                    <div class="icon KCPL_sprite-book"></div>
+                  </div>
+
+                <hr>
+                <span class="KCPL_caption-minion-italicbold">Books</span>
+              </div>
+              <div class="search-btn music">
+                  <div class="iconCont">
+                    <div class="icon KCPL_sprite-headphones"></div>
+                  </div>
+
+                <hr>
+                <span class="KCPL_caption-minion-italicbold">Music</span>
+              </div>
+              <div class="search-btn research">
+                  <div class="iconCont">
+                    <div class="icon KCPL_sprite-document"></div>
+                  </div>
+
+                <hr>
+                <span class="KCPL_caption-minion-italicbold">Research Tools<br>and Resources</span>
+              </div>
+              <div class="search-btn magazines">
+                  <div class="iconCont">
+                    <div class="icon KCPL_sprite-periodical"></div>
+                  </div>
+
+                <hr>
+                <span class="KCPL_caption-minion-italicbold">Magazines</span>
+              </div>
+              <div class="search-btn video">
+                  <div class="iconCont">
+                    <div class="icon KCPL_sprite-video"></div>
+                  </div>
+
+                <hr>
+                <span class="KCPL_caption-minion-italicbold">Video</span>
+              </div>
+              <div class="search-btn ebooks">
+                  <div class="iconCont">
+                    <div class="icon KCPL_sprite-tablet"></div>
+                  </div>
+
+                <hr>
+                <span class="KCPL_caption-minion-italicbold">E-books</span>
+              </div>
+              <div class="search-btn audiobooks">
+                  <div class="iconCont">
+                    <div class="icon KCPL_sprite-audiobook"></div>
+                  </div>
+
+                <hr>
+                <span class="KCPL_caption-minion-italicbold">Audio Books</span>
+              </div>
+              <div class="search-btn last download">
+                  <div class="iconCont">
+                    <div class="icon KCPL_sprite-download"></div>
+                  </div>
+
+                <hr>
+                <span class="KCPL_caption-minion-italicbold">Downloadables</span>
+              </div>
+           </div>
+           <div class="audience">
+              <div class="search-btn first kids">
+                  <div class="iconCont">
+                    <div class="icon KCPL_sprite-kids"></div>
+                  </div>
+
+                <hr>
+                <span class="KCPL_caption-minion-italicbold">Kids</span>
+              </div>
+              <div class="search-btn teens">
+                  <div class="iconCont">
+                    <div class="icon KCPL_sprite-teens"></div>
+                  </div>
+
+                <hr>
+                <span class="KCPL_caption-minion-italicbold">Teens</span>
+              </div>
+              <div class="search-btn last adults">
+                  <div class="iconCont">
+                    <div class="icon KCPL_sprite-adult"></div>
+                  </div>
+
+                <hr>
+                <span class="KCPL_caption-minion-italicbold">Adults</span>
+              </div>
+           </div>
+          </div>
+        </div>
+      </form>
+   </div>
+  </div>
 */
-/* line 440, assets/sass/_elements.scss */
+/* line 587, assets/sass/_elements.scss */
 #searchField {
   position: relative;
   display: block;
   margin: 0 0 22px;
 }
-/* line 441, assets/sass/_elements.scss */
+/* line 588, assets/sass/_elements.scss */
 #searchField .searchicon {
   position: absolute;
   z-index: 2;
@@ -2586,7 +2737,7 @@ ol.homepage-callout-list > li:nth-child(4) {
   font-size: 17px;
   color: #323333;
 }
-/* line 442, assets/sass/_elements.scss */
+/* line 589, assets/sass/_elements.scss */
 #searchField input[type="search"] {
   -webkit-appearance: none;
   border-radius: 0px;
@@ -2600,27 +2751,27 @@ ol.homepage-callout-list > li:nth-child(4) {
   width: 100%;
 }
 
-/* line 445, assets/sass/_elements.scss */
+/* line 592, assets/sass/_elements.scss */
 #KCPL_search {
   background: #ffa751;
   display: block;
 }
-/* line 446, assets/sass/_elements.scss */
+/* line 593, assets/sass/_elements.scss */
 #KCPL_search > .gutter {
   padding: 8px 14px;
 }
-/* line 447, assets/sass/_elements.scss */
+/* line 594, assets/sass/_elements.scss */
 #KCPL_search form {
   padding: 0;
   margin: 0;
 }
-/* line 448, assets/sass/_elements.scss */
+/* line 595, assets/sass/_elements.scss */
 #KCPL_search #searchField {
   position: relative;
   display: block;
   margin: 0 0 22px;
 }
-/* line 449, assets/sass/_elements.scss */
+/* line 596, assets/sass/_elements.scss */
 #KCPL_search .searchicon {
   position: absolute;
   z-index: 2;
@@ -2629,7 +2780,7 @@ ol.homepage-callout-list > li:nth-child(4) {
   font-size: 17px;
   color: #323333;
 }
-/* line 450, assets/sass/_elements.scss */
+/* line 597, assets/sass/_elements.scss */
 #KCPL_search input[type="search"] {
   -webkit-appearance: none;
   border-radius: 0px;
@@ -2642,20 +2793,20 @@ ol.homepage-callout-list > li:nth-child(4) {
   box-sizing: border-box;
   width: 100%;
 }
-/* line 451, assets/sass/_elements.scss */
+/* line 598, assets/sass/_elements.scss */
 #KCPL_search #search-params {
   display: block;
   float: left;
   width: 100%;
 }
-/* line 452, assets/sass/_elements.scss */
+/* line 599, assets/sass/_elements.scss */
 #KCPL_search #type {
   float: left;
   width: 112px;
   border-right: 1px solid #323333;
   height: 99px;
 }
-/* line 453, assets/sass/_elements.scss */
+/* line 600, assets/sass/_elements.scss */
 #KCPL_search #type .top {
   font: bold 15px/18px "nimbus-sans";
   color: #323333;
@@ -2664,7 +2815,7 @@ ol.homepage-callout-list > li:nth-child(4) {
   letter-spacing: 0.01em;
   word-spacing: 0.065em;
 }
-/* line 454, assets/sass/_elements.scss */
+/* line 601, assets/sass/_elements.scss */
 #KCPL_search #type .bottom {
   font: bold 18px/22px "nimbus-sans-condensed";
   color: #323333;
@@ -2672,43 +2823,43 @@ ol.homepage-callout-list > li:nth-child(4) {
   text-transform: uppercase;
   padding: 1px 0 0;
 }
-/* line 455, assets/sass/_elements.scss */
+/* line 602, assets/sass/_elements.scss */
 #KCPL_search #type .bottom a {
   color: #323333;
   display: block;
   padding: 0 0 0 6px;
   letter-spacing: 0.06em;
 }
-/* line 456, assets/sass/_elements.scss */
+/* line 603, assets/sass/_elements.scss */
 #KCPL_search #type .bottom a:hover, #KCPL_search #type .bottom a.active {
   color: #fff;
   cursor: pointer;
 }
-/* line 458, assets/sass/_elements.scss */
+/* line 605, assets/sass/_elements.scss */
 #KCPL_search #select {
   float: right;
   width: 814px;
 }
-/* line 459, assets/sass/_elements.scss */
+/* line 606, assets/sass/_elements.scss */
 #KCPL_search #select.media-active .media {
   display: block;
 }
-/* line 460, assets/sass/_elements.scss */
+/* line 607, assets/sass/_elements.scss */
 #KCPL_search #select.audience-active .audience {
   display: block;
 }
-/* line 461, assets/sass/_elements.scss */
+/* line 608, assets/sass/_elements.scss */
 #KCPL_search .media, #KCPL_search .audience {
   display: none;
 }
-/* line 462, assets/sass/_elements.scss */
+/* line 609, assets/sass/_elements.scss */
 #KCPL_search .search-btn {
   float: left;
   width: 80px;
   padding: 19px 0 0;
   margin: 0 12px 0;
 }
-/* line 463, assets/sass/_elements.scss */
+/* line 610, assets/sass/_elements.scss */
 #KCPL_search .search-btn hr {
   border: none;
   border-top: 1px solid #323333;
@@ -2716,104 +2867,104 @@ ol.homepage-callout-list > li:nth-child(4) {
   padding: 0;
   width: 45px;
 }
-/* line 464, assets/sass/_elements.scss */
+/* line 611, assets/sass/_elements.scss */
 #KCPL_search .search-btn hr + span {
   display: block;
   text-align: center;
 }
-/* line 466, assets/sass/_elements.scss */
+/* line 613, assets/sass/_elements.scss */
 #KCPL_search .search-btn.first {
   margin-left: 0;
 }
-/* line 467, assets/sass/_elements.scss */
+/* line 614, assets/sass/_elements.scss */
 #KCPL_search .search-btn.last {
   margin-right: 0;
 }
-/* line 468, assets/sass/_elements.scss */
+/* line 615, assets/sass/_elements.scss */
 #KCPL_search .iconCont {
   height: 40px;
   width: 100%;
   position: relative;
 }
-/* line 469, assets/sass/_elements.scss */
+/* line 616, assets/sass/_elements.scss */
 #KCPL_search .iconCont .icon {
   margin: 0 auto;
   position: absolute;
 }
-/* line 471, assets/sass/_elements.scss */
+/* line 618, assets/sass/_elements.scss */
 #KCPL_search .books .icon {
   top: 0;
   left: 15px;
 }
-/* line 472, assets/sass/_elements.scss */
+/* line 619, assets/sass/_elements.scss */
 #KCPL_search .music .icon {
   top: 0;
   left: 23px;
 }
-/* line 473, assets/sass/_elements.scss */
+/* line 620, assets/sass/_elements.scss */
 #KCPL_search .research .icon {
   top: -3px;
   left: 25px;
 }
-/* line 474, assets/sass/_elements.scss */
+/* line 621, assets/sass/_elements.scss */
 #KCPL_search .magazines .icon {
   top: -5px;
   left: 25px;
 }
-/* line 475, assets/sass/_elements.scss */
+/* line 622, assets/sass/_elements.scss */
 #KCPL_search .video .icon {
   top: 2px;
   left: 20px;
 }
-/* line 476, assets/sass/_elements.scss */
+/* line 623, assets/sass/_elements.scss */
 #KCPL_search .ebooks .icon {
   top: -3px;
   left: 24px;
 }
-/* line 477, assets/sass/_elements.scss */
+/* line 624, assets/sass/_elements.scss */
 #KCPL_search .audiobooks .icon {
   top: 0;
   left: 20px;
 }
-/* line 478, assets/sass/_elements.scss */
+/* line 625, assets/sass/_elements.scss */
 #KCPL_search .download .icon {
   top: 1px;
   left: 24px;
 }
-/* line 479, assets/sass/_elements.scss */
+/* line 626, assets/sass/_elements.scss */
 #KCPL_search .kids .icon {
   top: -12px;
   left: 20px;
 }
-/* line 480, assets/sass/_elements.scss */
+/* line 627, assets/sass/_elements.scss */
 #KCPL_search .teens .icon {
   top: -12px;
   left: 20px;
 }
-/* line 481, assets/sass/_elements.scss */
+/* line 628, assets/sass/_elements.scss */
 #KCPL_search .adults .icon {
   top: -12px;
   left: 20px;
 }
-/* line 483, assets/sass/_elements.scss */
+/* line 630, assets/sass/_elements.scss */
 #KCPL_search #select:hover .search-btn {
   opacity: .7;
 }
-/* line 484, assets/sass/_elements.scss */
+/* line 631, assets/sass/_elements.scss */
 #KCPL_search #select:hover .search-btn:hover {
   opacity: 1;
   cursor: pointer;
 }
 
-/* line 488, assets/sass/_elements.scss */
+/* line 635, assets/sass/_elements.scss */
 #KCPL_search.extended #searchField {
   margin: 0 0 8px;
 }
-/* line 489, assets/sass/_elements.scss */
+/* line 636, assets/sass/_elements.scss */
 #KCPL_search.extended #exFields {
   display: block;
 }
-/* line 490, assets/sass/_elements.scss */
+/* line 637, assets/sass/_elements.scss */
 #KCPL_search.extended #exFields select {
   margin: 0;
   padding: 5px 0 3px 11px;
@@ -2822,14 +2973,58 @@ ol.homepage-callout-list > li:nth-child(4) {
   text-transform: uppercase;
   font: 14px/14px "nimbus-sans";
   letter-spacing: 0.095em;
+  margin: 0 0 22px;
 }
-/* line 491, assets/sass/_elements.scss */
+/* line 638, assets/sass/_elements.scss */
 #KCPL_search.extended #exFields #left {
   float: left;
   width: 467px;
 }
-/* line 492, assets/sass/_elements.scss */
+/* line 639, assets/sass/_elements.scss */
 #KCPL_search.extended #exFields #right {
   float: right;
   width: 458px;
+  margin: 0 0 11px;
+}
+/* line 640, assets/sass/_elements.scss */
+#KCPL_search.extended #exFields #right #search-online {
+  float: left;
+  width: 106px;
+}
+/* line 641, assets/sass/_elements.scss */
+#KCPL_search.extended #exFields #right #search-libraryCard {
+  float: left;
+  width: 189px;
+}
+/* line 642, assets/sass/_elements.scss */
+#KCPL_search.extended #exFields #right #search-inLibrary {
+  float: left;
+  width: 160px;
+}
+/* line 644, assets/sass/_elements.scss */
+#KCPL_search.extended #exFields #right input[type="checkbox"] {
+  -webkit-appearance: none;
+  background: transparent;
+  border: 1px solid #000;
+  padding: 4px 4px;
+  border-radius: 2px;
+  margin: 0 5px 0 29px;
+  position: relative;
+}
+/* line 645, assets/sass/_elements.scss */
+#KCPL_search.extended #exFields #right input[type="checkbox"]:checked:after {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  display: block;
+  border: 2px solid #000;
+  padding: 1px;
+  border-radius: 2px;
+  background: #000;
+}
+/* line 646, assets/sass/_elements.scss */
+#KCPL_search.extended #exFields #right label {
+  font-size: 14px;
+  letter-spacing: 0.075em;
 }

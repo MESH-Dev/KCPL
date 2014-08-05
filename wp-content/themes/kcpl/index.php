@@ -46,13 +46,13 @@
                   <option value="option_3">Option 3</option>
                 </select>
                 <div id="search-online">
-
+                   <input type="checkbox" name="checkboxNAME" value="checkboxVAL" id="checkboxONE"/><label class="KCPL_meta-small" for="checkboxONE">Online</label>
                 </div>
                 <div id="search-libraryCard">
-
+                   <input type="checkbox" name="checkboxNAME" value="checkboxVAL" id="checkboxTWO"/><label class="KCPL_meta-small" for="checkboxTWO">With Library Card</label>
                 </div>
                 <div id="search-inLibrary">
-
+                   <input type="checkbox" name="checkboxNAME" value="checkboxVAL" id="checkboxTHREE"/><label class="KCPL_meta-small" for="checkboxTHREE">In Library Only</label>
                 </div>
               </div>
             </div>
