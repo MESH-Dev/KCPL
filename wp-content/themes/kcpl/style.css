@@ -3172,3 +3172,97 @@ ol.homepage-callout-list > li:nth-child(4) {
   font-size: 14px;
   letter-spacing: 0.075em;
 }
+
+/*
+
+<div class="KCPL_listing-style-3">
+    <div class="KCPL_listing-style-3-header">
+        <span>Social Feed</span>
+    </div>
+    <div class="KCPL_listing-style-3-body">
+        <span class="KCPL_listing-style-3-body-title">Title this is the title it's short</span>
+        <span class="KCPL_listing-style-3-body-date">Date 3, 2014</span>
+        <span class="KCPL_listing-style-3-body-excerpt">Learn how easy it is to make your own healthy smoothies.</span>
+        <span class="KCPL_listing-style-3-body-link">More &nbsp; ≈</span>
+    </div>
+    <div class="KCPL_listing-style-3-body">
+        <span class="KCPL_listing-style-3-body-title">Title this is the title it's very long this is the title</span>
+        <span class="KCPL_listing-style-3-body-date">Date 3, 2014</span>
+        <span class="KCPL_listing-style-3-body-excerpt">Learn how easy it is to make your own healthy smoothies.</span>
+        <span class="KCPL_listing-style-3-body-link">More &nbsp; ≈</span>
+    </div>
+    <div class="KCPL_listing-style-3-body">
+        <span class="KCPL_listing-style-3-body-title">Title this is the title it's short</span>
+        <span class="KCPL_listing-style-3-body-date">Date 3, 2014</span>
+        <span class="KCPL_listing-style-3-body-excerpt">Learn how easy it is to make your own healthy smoothies.</span>
+        <span class="KCPL_listing-style-3-body-link">More &nbsp; ≈</span>
+    </div>
+    <div class="KCPL_listing-style-3-body">
+        <span class="KCPL_listing-style-3-body-link">Read all &nbsp; ≈</span>
+    </div>
+</div>
+
+*/
+/* line 785, assets/sass/_elements.scss */
+.KCPL_listing-style-3 {
+  display: block;
+}
+
+/* line 787, assets/sass/_elements.scss */
+.KCPL_listing-style-3 .KCPL_listing-style-3-header {
+  background: #ffa751;
+  padding: 15px;
+}
+/* line 789, assets/sass/_elements.scss */
+.KCPL_listing-style-3 .KCPL_listing-style-3-header span {
+  display: block;
+  font-family: "Nimbus-Sans";
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+/* line 791, assets/sass/_elements.scss */
+.KCPL_listing-style-3 .KCPL_listing-style-3-body {
+  background: #e2e2e2;
+  padding: 11px 18px;
+}
+/* line 793, assets/sass/_elements.scss */
+.KCPL_listing-style-3 .KCPL_listing-style-3-body .KCPL_listing-style-3-body-title {
+  display: block;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Nimbus-Sans-Condensed";
+  color: #323333;
+  line-height: 23px;
+}
+/* line 794, assets/sass/_elements.scss */
+.KCPL_listing-style-3 .KCPL_listing-style-3-body .KCPL_listing-style-3-body-date {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Nimbus-Sans";
+  color: #323333;
+}
+/* line 795, assets/sass/_elements.scss */
+.KCPL_listing-style-3 .KCPL_listing-style-3-body .KCPL_listing-style-3-body-excerpt {
+  display: inline;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Minion";
+  color: #323333;
+  letter-spacing: .05em;
+  line-height: 18px;
+}
+/* line 796, assets/sass/_elements.scss */
+.KCPL_listing-style-3 .KCPL_listing-style-3-body .KCPL_listing-style-3-body-link {
+  display: inline;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Minion";
+  color: #323333;
+  font-style: italic;
+}
