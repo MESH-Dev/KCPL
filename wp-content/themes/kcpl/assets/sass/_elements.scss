@@ -9,11 +9,12 @@ button {
     border-radius: .5em;
     background: #137cc1;
     font-size: 18px;
-    font-family: "Nimbus-Sans-Condensed";
+    font-family: $nimbus-c;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 0.07em;
 }
+textarea,input,select{outline: none;}
 
 //Secondary Sidebar Menu - uses wp_nav_menu() for markup
 #secondary-sidebar-nav{display:block;}
@@ -23,18 +24,18 @@ button {
       ul{list-style:none;margin:0;}
       li{margin:0;}
       > li{}
-      > li > a{background:$blue;color: #fff;font: bold 19px/19px "nimbus-sans-condensed";text-transform: uppercase;display: block;padding: 16px 20px 8px;}
+      > li > a{background:$blue;color: #fff;font: bold 19px/19px $nimbus-c;text-transform: uppercase;display: block;padding: 16px 20px 8px;}
       > li:last-child > a{padding: 16px 20px 13px;}
         a{text-decoration:none;}
         a:hover, li.current-menu-item > a, .current-menu-ancestor > a{color:$d-grey;}
 
       > li > ul{background:$m-grey;}
       > li > ul > li{padding:0 0;}
-      > li > ul > li > a{color: #fff;font: bold 19px/19px "nimbus-sans-condensed";text-transform: uppercase;display: block;padding: 14px 0px 5px 20px;}
+      > li > ul > li > a{color: #fff;font: bold 19px/19px $nimbus-c;text-transform: uppercase;display: block;padding: 14px 0px 5px 20px;}
 
       > li > ul > li > ul{padding:0 0;}
       > li > ul > li > ul > li{padding:0 0;}
-      > li > ul > li > ul > li > a{color: #fff;font: 18px/18px "minion";display: block;padding: 4px 0px 0px 20px;letter-spacing: 0.03em;word-spacing: 0.09em;}
+      > li > ul > li > ul > li > a{color: #fff;font: 18px/18px $minion;display: block;padding: 4px 0px 0px 20px;letter-spacing: 0.03em;word-spacing: 0.09em;}
       > li > ul > li > ul > li:last-child > a{padding: 4px 0px 16px 20px;}
 
       > li > ul > li > ul ul{display:none;}
@@ -55,7 +56,7 @@ textarea,
 select {
 border: 3px solid #fff;
 padding: 6px 8px;
-font: 18px/24px "Nimbus-Sans", Helvetica, Arial, sans-serif;
+font: 18px/24px $nimbus, Helvetica, Arial, sans-serif;
 max-width: 100%;
 display: block;
 background: #e2e2e2;
@@ -114,7 +115,7 @@ $border-grey: #353535;
 table{background:$l-blue;}
 table{
   thead{}
-    thead th{border-bottom:2px solid $border-grey;border-left:2px solid $border-grey;border-right:2px solid $border-grey;font: bold 19px/22px "nimbus-sans-condensed";text-transform: uppercase;padding: 16px 0px 15px;text-align: center;}
+    thead th{border-bottom:2px solid $border-grey;border-left:2px solid $border-grey;border-right:2px solid $border-grey;font: bold 19px/22px $nimbus-c;text-transform: uppercase;padding: 16px 0px 15px;text-align: center;}
     thead th:first-child{border:none;border-bottom:2px solid $border-grey;border-right:2px solid $border-grey;}
     thead th:last-child{border:none;border-bottom:2px solid $border-grey;border-left:2px solid $border-grey;}
   tr{}
@@ -138,7 +139,7 @@ table{
 
 //images
 .wp-caption{border:none;padding:0;text-align:left;}
-  .wp-caption p.wp-caption-text{font:12px/16px "minion";margin:0 0 .1em;padding:0;}
+  .wp-caption p.wp-caption-text{font:12px/16px $minion;margin:0 0 .1em;padding:0;}
 
 //banners
 /*
@@ -150,11 +151,13 @@ table{
     </div>
   </div>
 
-  <div id="bannerHome" class="#{$namespace}background-COLORNAME">
+  <div id="bannerHome" class="KCPL_background-yellow">
     <div class="container">
-      <div class="gutter">
-        <h1>some stuff</h1>
-        <h2>some more stuff</h2>
+      <div class="columns seven">
+        <div class="gutter">
+          <h1>top</h1>
+          <h2>bottom</h2>
+        </div>
       </div>
     </div>
   </div>
@@ -171,19 +174,19 @@ table{
     > ul{margin:0 auto;display:inline-block;}
     > ul > li{display:table;}
     > ul > li ul{vertical-align:bottom;display:table-cell;}
-    > ul > li > a{font:bold 41px/41px "nimbus-sans-condensed";text-transform:uppercase;margin:0 25px 0 0;}
+    > ul > li > a{font:bold 41px/41px $nimbus-c;text-transform:uppercase;margin:0 25px 0 0;}
 
     > ul > li > ul{}
     > ul > li > ul > li{}
-    > ul > li > ul > li > a{font:italic 25px/30px "minion";margin:0 22px 0 0;}
+    > ul > li > ul > li > a{font:italic 25px/30px $minion;margin:0 22px 0 0;}
 
     > ul > li > ul > li > ul{}
     > ul > li > ul > li > ul > li{}
-    > ul > li > ul > li > ul > li > a{font:bold 19px/26px "nimbus-sans";margin:0 20px 0 0;text-transform:uppercase;}
+    > ul > li > ul > li > ul > li > a{font:bold 19px/26px $nimbus;margin:0 20px 0 0;text-transform:uppercase;}
 
     > ul > li > ul > li > ul > li > ul{}
     > ul > li > ul > li > ul > li > ul > li{}
-    > ul > li > ul > li > ul > li > ul > li > a{font:18px/25px "minion";margin:0;}
+    > ul > li > ul > li > ul > li > ul > li > a{font:18px/25px $minion;margin:0;}
   }
 }
 
@@ -194,8 +197,8 @@ table{
   h1{margin:0 0 0;}
   h2{margin:0 0 0;}
 }
-// Homepage Unique Callouts
 
+// Homepage Unique Callouts
 /*
 
 <ol class="homepage-callout-list">
@@ -206,10 +209,9 @@ table{
 </ol>
 
 */
-
 .homepage-callout-list { display: block; }
 ol.homepage-callout-list { display: block;
-    > li { font: normal 55px/51px "minion"; text-transform: uppercase; color: white; padding: 12px 20px; }
+    > li { font: normal 55px/51px $minion; text-transform: uppercase; color: white; padding: 12px 20px; }
     > li:nth-child(1) { background: $green; }
     > li:nth-child(2) { background: $red; }
     > li:nth-child(3) { background: $grey; }
@@ -270,59 +272,378 @@ ol.homepage-callout-list { display: block;
 </div>
 
 */
-
 .calendar-callout { display: block; background: $s-grey; padding:23px; }
-
 .calendar-callout {
-    span { display: block; font: normal 13px/28px "minion"; letter-spacing: 1px; padding-bottom: 5px; border-bottom: 1px solid #000; margin-bottom: 14px; }
-    table { margin-top: 10px; font-family: "nimbus-sans"; font-weight: 700; }
+    span { display: block; font: normal 13px/28px $minion; letter-spacing: 1px; padding-bottom: 5px; border-bottom: 1px solid #000; margin-bottom: 14px; }
+    table { margin-top: 10px; font-family: $nimbus; font-weight: 700; }
     tr { padding-top: 10px; }
     td { padding: 0px 21px 11px 0px; }
 }
 
 // Vertical callouts
-
 .#{$namespace}info-box { display: block; }
 .#{$namespace}info-box {
     .#{$namespace}info-box-header { background: $green; padding: 15px; }
     .#{$namespace}info-box-header {
-        .#{$namespace}info-box-header-title { display: block; text-align: center; text-transform: uppercase; font-size: 18px; font-weight: 600; font-family: "Nimbus-Sans"; color: white; };
+        .#{$namespace}info-box-header-title { display: block; text-align: center; text-transform: uppercase; font-size: 18px; font-weight: 600; font-family: $nimbus; color: white; };
      }
     .#{$namespace}info-box-body { background: $s-grey; padding: 11px 18px; }
     .#{$namespace}info-box-body {
-        .#{$namespace}info-box-body-title { display: block; text-transform: uppercase; font-size: 18px; font-weight: 600; font-family: "Nimbus-Sans-Condensed"; color: $d-grey; line-height: 23px; };
-        .#{$namespace}info-box-body-date { display: block; font-size: 15px; font-weight: 600; font-family: "Nimbus-Sans"; color: $d-grey; };
-        .#{$namespace}info-box-body-excerpt { display: block; font-size: 13px; font-weight: 400; font-family: "Minion"; color: $d-grey; letter-spacing: .05em; line-height: 18px; };
-        .#{$namespace}info-box-body-link { display: block; font-size: 14px; font-weight: 600; font-family: "Minion"; color: $d-grey; margin-top: 17px; font-style: italic; };
+        .#{$namespace}info-box-body-title { display: block; text-transform: uppercase; font-size: 18px; font-weight: 600; font-family: $nimbus-c; color: $d-grey; line-height: 23px; };
+        .#{$namespace}info-box-body-date { display: block; font-size: 15px; font-weight: 600; font-family: $nimbus; color: $d-grey; };
+        .#{$namespace}info-box-body-excerpt { display: block; font-size: 13px; font-weight: 400; font-family: $minion; color: $d-grey; letter-spacing: .05em; line-height: 18px; };
+        .#{$namespace}info-box-body-link { display: block; font-size: 14px; font-weight: 600; font-family: $minion; color: $d-grey; margin-top: 17px; font-style: italic; };
     }
 }
 
 .#{$namespace}short-callout { display: block; border-radius: 10px; background: #f65446; padding: 79px 24px; }
 .#{$namespace}short-callout {
-    span { display: block; font-family: "Nimbus-Sans-Condensed"; font-weight: 600; text-transform: uppercase; text-align: center; font-size: 43px; line-height: 46px; color: white; }
+    span { display: block; font-family: $nimbus-c; font-weight: 600; text-transform: uppercase; text-align: center; font-size: 43px; line-height: 46px; color: white; }
 }
 
 .#{$namespace}social-callout { display: block; }
 .#{$namespace}social-callout {
     .#{$namespace}social-callout-header { background: $blue; padding: 10px; }
     .#{$namespace}social-callout-header {
-        span { display: block; font-family: "Nimbus-Sans"; font-weight: 700; font-size: 19px; line-height: 27px; text-transform: uppercase; color: white; text-align: center; }
+        span { display: block; font-family: $nimbus; font-weight: 700; font-size: 19px; line-height: 27px; text-transform: uppercase; color: white; text-align: center; }
     }
     .#{$namespace}social-callout-body { background: $s-grey; padding: 10px; }
     .#{$namespace}social-callout-body {
         .#{$namespace}social-callout-icon { margin: 4px 3px 7px 15px; float: left; };
         .#{$namespace}social-callout-tweet { background: $blue;padding: 10px 8px; border-radius: 10px; font-size: 13px; line-height: 16px; margin-top: 12px; };
         .#{$namespace}social-callout-tweet {
-            .#{$namespace}social-callout-tweet-content { font-family: "Minion"; color: white; word-wrap: break-word; };
-            .#{$namespace}social-callout-tweet-date { font-family: "Nimbus-Sans"; font-size: 13px; line-height: 16px; color: white; font-weight: 700;  };
+            .#{$namespace}social-callout-tweet-content { font-family: $minion; color: white; word-wrap: break-word; };
+            .#{$namespace}social-callout-tweet-date { font-family: $nimbus; font-size: 13px; line-height: 16px; color: white; font-weight: 700;  };
         };
     }
 }
 
 
 // Vertical callout graphics
-
 .#{$namespace}callout-graphic-1 { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/140x275.gif') }
 .#{$namespace}callout-graphic-2 { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/140x275.gif') }
 .#{$namespace}callout-graphic-3 { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/140x275.gif') }
 .#{$namespace}callout-graphic-4 { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/140x275.gif') }
+
+
+//Search boxes
+/*
+   //search field
+  <div id="searchField">
+    <i class="fa fa-lg fa-search searchicon"></i>
+    <input type="search" placeholder="Search the collection" />
+  </div>
+
+   //collections search
+  <div id="KCPL_search">
+    <div class="gutter clearfix">
+      <form>
+        <div id="searchField">
+          <i class="fa fa-lg fa-search searchicon"></i>
+          <input type="search" placeholder="Search the collection" />
+        </div>
+        <div id="search-params">
+          <div id="type">
+            <span class="top">
+              Search or<br>Browse by
+            </span>
+            <span class="bottom">
+              <a class="media-active active">Media Type</a>
+              <a class="audience-active">Audience</a>
+            </span>
+          </div>
+          <div id="select" class="media-active clearfix">
+            <div class="media">
+              <div class="search-btn first books">
+                <div class="iconCont">
+                  <div class="icon KCPL_sprite-book"></div>
+                </div>
+                <hr>
+                <span class="KCPL_caption-minion-italicbold">Books</span>
+              </div>
+              <div class="search-btn music">
+                <div class="iconCont">
+                  <div class="icon KCPL_sprite-headphones"></div>
+                </div>
+                <hr>
+                <span class="KCPL_caption-minion-italicbold">Music</span>
+              </div>
+              <div class="search-btn research">
+                <div class="iconCont">
+                  <div class="icon KCPL_sprite-document"></div>
+                </div>
+                <hr>
+                <span class="KCPL_caption-minion-italicbold">Research Tools<br>and Resources</span>
+              </div>
+              <div class="search-btn magazines">
+                <div class="iconCont">
+                  <div class="icon KCPL_sprite-periodical"></div>
+                </div>
+                <hr>
+                <span class="KCPL_caption-minion-italicbold">Magazines</span>
+              </div>
+              <div class="search-btn video">
+                <div class="iconCont">
+                  <div class="icon KCPL_sprite-video"></div>
+                </div>
+                <hr>
+                <span class="KCPL_caption-minion-italicbold">Video</span>
+              </div>
+              <div class="search-btn ebooks">
+                <div class="iconCont">
+                  <div class="icon KCPL_sprite-tablet"></div>
+                </div>
+                <hr>
+                <span class="KCPL_caption-minion-italicbold">E-books</span>
+              </div>
+              <div class="search-btn audiobooks">
+                <div class="iconCont">
+                  <div class="icon KCPL_sprite-audiobook"></div>
+                </div>
+                <hr>
+                <span class="KCPL_caption-minion-italicbold">Audio Books</span>
+              </div>
+              <div class="search-btn last download">
+                <div class="iconCont">
+                  <div class="icon KCPL_sprite-download"></div>
+                </div>
+                <hr>
+                <span class="KCPL_caption-minion-italicbold">Downloadables</span>
+              </div>
+            </div>
+            <div class="audience">
+              <div class="search-btn first kids">
+                <div class="iconCont">
+                  <div class="icon KCPL_sprite-kids"></div>
+                </div>
+                <hr>
+                <span class="KCPL_caption-minion-italicbold">Kids</span>
+              </div>
+              <div class="search-btn teens">
+                <div class="iconCont">
+                  <div class="icon KCPL_sprite-teens"></div>
+                </div>
+                <hr>
+                <span class="KCPL_caption-minion-italicbold">Teens</span>
+              </div>
+              <div class="search-btn last adults">
+                <div class="iconCont">
+                  <div class="icon KCPL_sprite-adult"></div>
+                </div>
+                <hr>
+                <span class="KCPL_caption-minion-italicbold">Adults</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  //collections search - extended
+  <div id="KCPL_search" class="extended">
+   <div class="gutter clearfix">
+      <form>
+        <div id="searchField">
+          <i class="fa fa-lg fa-search searchicon"></i>
+          <input type="search" placeholder="Search the collection" />
+        </div>
+        <div id="exFields">
+          <div id="left">
+           <select id="search-topic">
+              <option value="">Topic</option>
+              <option value="option_1">Option 1</option>
+              <option value="option_2">Option 2</option>
+              <option value="option_3">Option 3</option>
+           </select>
+          </div>
+          <div id="right">
+           <select id="search-audience">
+              <option value="">Audience</option>
+              <option value="option_1">Option 1</option>
+              <option value="option_2">Option 2</option>
+              <option value="option_3">Option 3</option>
+           </select>
+           <div id="search-online">
+               <input type="checkbox" name="checkboxNAME" value="checkboxVAL" id="checkboxONE"/><label class="KCPL_meta-small" for="checkboxONE">Online</label>
+           </div>
+           <div id="search-libraryCard">
+               <input type="checkbox" name="checkboxNAME" value="checkboxVAL" id="checkboxTWO"/><label class="KCPL_meta-small" for="checkboxTWO">With Library Card</label>
+           </div>
+           <div id="search-inLibrary">
+               <input type="checkbox" name="checkboxNAME" value="checkboxVAL" id="checkboxTHREE"/><label class="KCPL_meta-small" for="checkboxTHREE">In Library Only</label>
+           </div>
+          </div>
+        </div>
+        <div id="search-params">
+          <div id="type">
+           <span class="top">
+              Search or<br>Browse by
+           </span>
+           <span class="bottom">
+              <a class="media-active active">Media Type</a>
+              <a class="audience-active">Audience</a>
+           </span>
+          </div>
+          <div id="select" class="media-active clearfix">
+           <div class="media">
+              <div class="search-btn first books">
+                  <div class="iconCont">
+                    <div class="icon KCPL_sprite-book"></div>
+                  </div>
+
+                <hr>
+                <span class="KCPL_caption-minion-italicbold">Books</span>
+              </div>
+              <div class="search-btn music">
+                  <div class="iconCont">
+                    <div class="icon KCPL_sprite-headphones"></div>
+                  </div>
+
+                <hr>
+                <span class="KCPL_caption-minion-italicbold">Music</span>
+              </div>
+              <div class="search-btn research">
+                  <div class="iconCont">
+                    <div class="icon KCPL_sprite-document"></div>
+                  </div>
+
+                <hr>
+                <span class="KCPL_caption-minion-italicbold">Research Tools<br>and Resources</span>
+              </div>
+              <div class="search-btn magazines">
+                  <div class="iconCont">
+                    <div class="icon KCPL_sprite-periodical"></div>
+                  </div>
+
+                <hr>
+                <span class="KCPL_caption-minion-italicbold">Magazines</span>
+              </div>
+              <div class="search-btn video">
+                  <div class="iconCont">
+                    <div class="icon KCPL_sprite-video"></div>
+                  </div>
+
+                <hr>
+                <span class="KCPL_caption-minion-italicbold">Video</span>
+              </div>
+              <div class="search-btn ebooks">
+                  <div class="iconCont">
+                    <div class="icon KCPL_sprite-tablet"></div>
+                  </div>
+
+                <hr>
+                <span class="KCPL_caption-minion-italicbold">E-books</span>
+              </div>
+              <div class="search-btn audiobooks">
+                  <div class="iconCont">
+                    <div class="icon KCPL_sprite-audiobook"></div>
+                  </div>
+
+                <hr>
+                <span class="KCPL_caption-minion-italicbold">Audio Books</span>
+              </div>
+              <div class="search-btn last download">
+                  <div class="iconCont">
+                    <div class="icon KCPL_sprite-download"></div>
+                  </div>
+
+                <hr>
+                <span class="KCPL_caption-minion-italicbold">Downloadables</span>
+              </div>
+           </div>
+           <div class="audience">
+              <div class="search-btn first kids">
+                  <div class="iconCont">
+                    <div class="icon KCPL_sprite-kids"></div>
+                  </div>
+
+                <hr>
+                <span class="KCPL_caption-minion-italicbold">Kids</span>
+              </div>
+              <div class="search-btn teens">
+                  <div class="iconCont">
+                    <div class="icon KCPL_sprite-teens"></div>
+                  </div>
+
+                <hr>
+                <span class="KCPL_caption-minion-italicbold">Teens</span>
+              </div>
+              <div class="search-btn last adults">
+                  <div class="iconCont">
+                    <div class="icon KCPL_sprite-adult"></div>
+                  </div>
+
+                <hr>
+                <span class="KCPL_caption-minion-italicbold">Adults</span>
+              </div>
+           </div>
+          </div>
+        </div>
+      </form>
+   </div>
+  </div>
+*/
+#searchField{position:relative;display:block;margin:0 0 22px;
+  .searchicon{position: absolute;z-index: 2;top: 13px;left: 15px;font-size: 17px;color: #323333;}
+  input[type="search"]{-webkit-appearance: none;border-radius: 0px;border: 3px solid #fff;background: #e2e2e2;font: bold 17px/27px $nimbus;position: relative;z-index: 1;padding: 1px 20px 2px 27px;box-sizing: border-box;width:100%;}
+}
+
+#KCPL_search{background:$yellow;display:block;
+  > .gutter{padding:8px 14px;}
+  form{padding:0;margin:0;}
+  #searchField{position:relative;display:block;margin:0 0 22px;}
+  .searchicon{position: absolute;z-index: 2;top: 13px;left: 15px;font-size: 17px;color: #323333;}
+  input[type="search"]{-webkit-appearance: none;border-radius: 0px;border: 3px solid #fff;background: #e2e2e2;font: bold 17px/27px $nimbus;position: relative;z-index: 1;padding: 1px 20px 2px 27px;box-sizing: border-box;width:100%;}
+  #search-params{display:block;float:left;width:100%;}
+  #type{float: left;width: 112px;border-right: 1px solid #323333;height: 99px;
+    .top{font: bold 15px/18px $nimbus;color: #323333;display: block;padding: 6px 0px 0 6px;letter-spacing: 0.01em;word-spacing: 0.065em;}
+    .bottom{font: bold 18px/22px $nimbus-c;color: #323333;display: block;text-transform: uppercase;padding: 1px 0 0;}
+      .bottom a{color: #323333;display: block;padding: 0 0 0 6px;letter-spacing: 0.06em;}
+      .bottom a:hover, .bottom a.active{color:#fff;cursor:pointer;}
+  }
+  #select{float:right;width:814px;}
+  #select.media-active .media{display:block;}
+  #select.audience-active .audience{display:block;}
+  .media,.audience{display:none;}
+  .search-btn{float: left;width: 80px;padding: 19px 0 0;margin: 0 12px 0;
+    hr{border:none;border-top:1px solid #323333;margin:0 auto;padding:0;width:45px;}
+    hr + span{display:block;text-align:center;}
+  }
+  .search-btn.first{margin-left:0;}
+  .search-btn.last{margin-right:0;}
+  .iconCont{height: 40px;width:100%;position:relative;
+    .icon{margin:0 auto;position:absolute;}
+  }
+  .books .icon{top:0;left:15px;}
+  .music .icon{top:0;left:23px;}
+  .research .icon{top:-3px;left:25px;}
+  .magazines .icon{top:-5px;left:25px;}
+  .video .icon{top:2px;left:20px;}
+  .ebooks .icon{top:-3px;left:24px;}
+  .audiobooks .icon{top:0;left:20px;}
+  .download .icon{top:1px;left:24px;}
+  .kids .icon{top:-12px;left:20px;}
+  .teens .icon{top:-12px;left:20px;}
+  .adults .icon{top:-12px;left:20px;}
+
+  #select:hover .search-btn{opacity:.7;}
+  #select:hover .search-btn:hover{opacity:1;cursor:pointer;}
+}
+
+#KCPL_search.extended{
+  #searchField{margin:0 0 8px;}
+  #exFields{display:block;
+    select{margin: 0;padding: 5px 0 3px 11px;border-radius: 0;-webkit-appearance: none;text-transform: uppercase;font: 14px/14px $nimbus;letter-spacing: 0.095em;margin:0 0 22px;}
+    #left{float:left;width:467px;}
+    #right{float:right;width:458px;margin:0 0 11px;
+      #search-online{float:left;width:106px;}
+      #search-libraryCard{float:left;width:189px;}
+      #search-inLibrary{float:left;width:160px;}
+
+      input[type="checkbox"]{-webkit-appearance: none;background: transparent;border: 1px solid #000;padding: 4px 4px;border-radius: 2px;margin: 0 5px 0 29px;position:relative;}
+         input[type="checkbox"]:checked:after{content: '';position: absolute;top: 1px;left: 1px;display: block;border: 2px solid #000;padding: 1px;border-radius: 2px;background: #000;}
+      label{font-size: 14px;letter-spacing: 0.075em;}
+    }
+  }
+}

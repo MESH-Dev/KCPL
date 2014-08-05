@@ -1,81 +1,171 @@
 <?php get_header(); ?>
-
-<div style="height: 100px;"></div>
+<div id="bannerHome" class="KCPL_background-red">
+  <div class="container">
+    <div class="columns seven">
+      <div class="gutter">
+        <h1>top</h1>
+        <h2>bottom</h2>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="container">
-
-
-    <div class="row">
-        <div class="two columns">
-
-            <div style="height: 500px;">
-
-                <div class="KCPL_info-box">
-                    <div class="KCPL_info-box-header">
-                        <span class="KCPL_info-box-header-title">Info</span>
-                    </div>
-                    <div class="KCPL_info-box-body">
-                        <span class="KCPL_info-box-body-title">Title this is the title it's short</span>
-                        <span class="KCPL_info-box-body-date">Date 3, 2014</span>
-                        <span class="KCPL_info-box-body-excerpt">Learn how easy it is to make your own healthy smoothies.</span>
-                        <span class="KCPL_info-box-body-link">More &nbsp; ≈</span>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="two columns">
-
-            <div class="KCPL_short-callout">
-                <span>Short Call Out</span>
-            </div>
-
-        </div>
-
-        <div class="two columns">
-
-            <div class="KCPL_social-callout">
-                <div class="KCPL_social-callout-header">
-                    <span>Follow Us</span>
-                </div>
-                <div class="KCPL_social-callout-body">
-                    <div class="KCPL_sprite-facebook KCPL_social-callout-icon"></div>
-                    <div class="KCPL_sprite-instagram KCPL_social-callout-icon"></div>
-                    <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
-                    <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
-                    <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
-                    <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
-
-                    <div class="clear"></div>
-
-                    <div class="KCPL_social-callout-tweet">
-                        <span class="KCPL_social-callout-tweet-content">"All KCPL locations will be closed all day on Wednesday, February 12 for Staff Development Day. Find us online at kanawhalibrary.org."</span>
-                        <span class="KCPL_social-callout-tweet-date">Feb 11</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="two columns">
-            <div class="KCPL_callout-graphic-1"></div>
-        </div>
-
-        <div class="two columns">
-            <div class="KCPL_callout-graphic-2"></div>
-        </div>
+  <div class="row">
+    <div class="columns four">
+      <div id="searchField">
+        <i class="fa fa-lg fa-search searchicon"></i>
+        <input type="search" placeholder="Search the collection" />
+      </div>
     </div>
+  </div>
 
-    <div class="row">
-        <div class="two columns">
-            <div class="KCPL_callout-graphic-3"></div>
-        </div>
+  <div class="row">
+    <div class="columns twelve alpha omega clearfix">
+      <div id="KCPL_search" class="extended">
+        <div class="gutter clearfix">
+          <form>
+            <div id="searchField">
+              <i class="fa fa-lg fa-search searchicon"></i>
+              <input type="search" placeholder="Search the collection" />
+            </div>
+            <div id="exFields">
+              <div id="left">
+                <select id="search-topic">
+                  <option value="">Topic</option>
+                  <option value="option_1">Option 1</option>
+                  <option value="option_2">Option 2</option>
+                  <option value="option_3">Option 3</option>
+                </select>
+              </div>
+              <div id="right">
+                <select id="search-audience">
+                  <option value="">Audience</option>
+                  <option value="option_1">Option 1</option>
+                  <option value="option_2">Option 2</option>
+                  <option value="option_3">Option 3</option>
+                </select>
+                <div id="search-online">
+                   <input type="checkbox" name="checkboxNAME" value="checkboxVAL" id="checkboxONE"/><label class="KCPL_meta-small" for="checkboxONE">Online</label>
+                </div>
+                <div id="search-libraryCard">
+                   <input type="checkbox" name="checkboxNAME" value="checkboxVAL" id="checkboxTWO"/><label class="KCPL_meta-small" for="checkboxTWO">With Library Card</label>
+                </div>
+                <div id="search-inLibrary">
+                   <input type="checkbox" name="checkboxNAME" value="checkboxVAL" id="checkboxTHREE"/><label class="KCPL_meta-small" for="checkboxTHREE">In Library Only</label>
+                </div>
+              </div>
+            </div>
+            <div id="search-params">
+              <div id="type">
+                <span class="top">
+                  Search or<br>Browse by
+                </span>
+                <span class="bottom">
+                  <a class="media-active active">Media Type</a>
+                  <a class="audience-active">Audience</a>
+                </span>
+              </div>
+              <div id="select" class="media-active clearfix">
+                <div class="media">
+                  <div class="search-btn first books">
+                      <div class="iconCont">
+                        <div class="icon KCPL_sprite-book"></div>
+                      </div>
 
-        <div class="two columns">
-            <div class="KCPL_callout-graphic-4"></div>
+                    <hr>
+                    <span class="KCPL_caption-minion-italicbold">Books</span>
+                  </div>
+                  <div class="search-btn music">
+                      <div class="iconCont">
+                        <div class="icon KCPL_sprite-headphones"></div>
+                      </div>
+
+                    <hr>
+                    <span class="KCPL_caption-minion-italicbold">Music</span>
+                  </div>
+                  <div class="search-btn research">
+                      <div class="iconCont">
+                        <div class="icon KCPL_sprite-document"></div>
+                      </div>
+
+                    <hr>
+                    <span class="KCPL_caption-minion-italicbold">Research Tools<br>and Resources</span>
+                  </div>
+                  <div class="search-btn magazines">
+                      <div class="iconCont">
+                        <div class="icon KCPL_sprite-periodical"></div>
+                      </div>
+
+                    <hr>
+                    <span class="KCPL_caption-minion-italicbold">Magazines</span>
+                  </div>
+                  <div class="search-btn video">
+                      <div class="iconCont">
+                        <div class="icon KCPL_sprite-video"></div>
+                      </div>
+
+                    <hr>
+                    <span class="KCPL_caption-minion-italicbold">Video</span>
+                  </div>
+                  <div class="search-btn ebooks">
+                      <div class="iconCont">
+                        <div class="icon KCPL_sprite-tablet"></div>
+                      </div>
+
+                    <hr>
+                    <span class="KCPL_caption-minion-italicbold">E-books</span>
+                  </div>
+                  <div class="search-btn audiobooks">
+                      <div class="iconCont">
+                        <div class="icon KCPL_sprite-audiobook"></div>
+                      </div>
+
+                    <hr>
+                    <span class="KCPL_caption-minion-italicbold">Audio Books</span>
+                  </div>
+                  <div class="search-btn last download">
+                      <div class="iconCont">
+                        <div class="icon KCPL_sprite-download"></div>
+                      </div>
+
+                    <hr>
+                    <span class="KCPL_caption-minion-italicbold">Downloadables</span>
+                  </div>
+                </div>
+                <div class="audience">
+                  <div class="search-btn first kids">
+                      <div class="iconCont">
+                        <div class="icon KCPL_sprite-kids"></div>
+                      </div>
+
+                    <hr>
+                    <span class="KCPL_caption-minion-italicbold">Kids</span>
+                  </div>
+                  <div class="search-btn teens">
+                      <div class="iconCont">
+                        <div class="icon KCPL_sprite-teens"></div>
+                      </div>
+
+                    <hr>
+                    <span class="KCPL_caption-minion-italicbold">Teens</span>
+                  </div>
+                  <div class="search-btn last adults">
+                      <div class="iconCont">
+                        <div class="icon KCPL_sprite-adult"></div>
+                      </div>
+
+                    <hr>
+                    <span class="KCPL_caption-minion-italicbold">Adults</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
+      </div>
     </div>
+  </div>
 
 </div>
 

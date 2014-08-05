@@ -7,5 +7,13 @@ jQuery(document).ready(function($){
 
   //header functions
 
+  //search functions
+  $(document).on('click','#KCPL_search #search-params .bottom > a',function(){
+    $class = $(this).attr('class');
+    $('#KCPL_search #search-params .bottom > a').removeClass('active');
+    $(this).addClass('active');
+    $('#KCPL_search #select').removeClass().addClass($class);
+  });
+
   //footer functions
 });
