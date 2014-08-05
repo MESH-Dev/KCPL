@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: KCPL
 Theme URI: http://meshfresh.com
@@ -2290,71 +2291,93 @@ ol.homepage-callout-list > li:nth-child(4) {
   padding: 0px 21px 11px 0px;
 }
 
-/* line 284, assets/sass/_elements.scss */
+/*
+
+<div class="KCPL_info-box">
+    <div class="KCPL_info-box-header">
+        <span class="KCPL_info-box-header-title">Info</span>
+    </div>
+    <div class="KCPL_info-box-body">
+        <span class="KCPL_info-box-body-title">Title this is the title it's short</span>
+        <span class="KCPL_info-box-body-date">Date 3, 2014</span>
+        <span class="KCPL_info-box-body-excerpt">Learn how easy it is to make your own healthy smoothies.</span>
+        <span class="KCPL_info-box-body-link">More &nbsp; ≈</span>
+    </div>
+</div>
+
+*/
+/* line 301, assets/sass/_elements.scss */
 .KCPL_info-box {
   display: block;
 }
 
-/* line 286, assets/sass/_elements.scss */
+/* line 303, assets/sass/_elements.scss */
 .KCPL_info-box .KCPL_info-box-header {
   background: #65a893;
   padding: 15px;
 }
-/* line 288, assets/sass/_elements.scss */
+/* line 305, assets/sass/_elements.scss */
 .KCPL_info-box .KCPL_info-box-header .KCPL_info-box-header-title {
   display: block;
   text-align: center;
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 600;
-  font-family: "nimbus-sans";
+  font-family: "Nimbus-Sans";
   color: white;
 }
-/* line 290, assets/sass/_elements.scss */
+/* line 307, assets/sass/_elements.scss */
 .KCPL_info-box .KCPL_info-box-body {
   background: #e2e2e2;
   padding: 11px 18px;
 }
-/* line 292, assets/sass/_elements.scss */
+/* line 309, assets/sass/_elements.scss */
 .KCPL_info-box .KCPL_info-box-body .KCPL_info-box-body-title {
   display: block;
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 600;
-  font-family: "nimbus-sans-condensed";
+  font-family: "Nimbus-Sans-Condensed";
   color: #323333;
   line-height: 23px;
 }
-/* line 293, assets/sass/_elements.scss */
+/* line 310, assets/sass/_elements.scss */
 .KCPL_info-box .KCPL_info-box-body .KCPL_info-box-body-date {
   display: block;
   font-size: 15px;
   font-weight: 600;
-  font-family: "nimbus-sans";
+  font-family: "Nimbus-Sans";
   color: #323333;
 }
-/* line 294, assets/sass/_elements.scss */
+/* line 311, assets/sass/_elements.scss */
 .KCPL_info-box .KCPL_info-box-body .KCPL_info-box-body-excerpt {
   display: block;
   font-size: 13px;
   font-weight: 400;
-  font-family: "minion";
+  font-family: "Minion";
   color: #323333;
   letter-spacing: .05em;
   line-height: 18px;
 }
-/* line 295, assets/sass/_elements.scss */
+/* line 312, assets/sass/_elements.scss */
 .KCPL_info-box .KCPL_info-box-body .KCPL_info-box-body-link {
   display: block;
   font-size: 14px;
   font-weight: 600;
-  font-family: "minion";
+  font-family: "Minion";
   color: #323333;
   margin-top: 17px;
   font-style: italic;
 }
 
-/* line 299, assets/sass/_elements.scss */
+/*
+
+<div class="KCPL_short-callout">
+    <span>Short Call Out</span>
+</div>
+
+*/
+/* line 324, assets/sass/_elements.scss */
 .KCPL_short-callout {
   display: block;
   border-radius: 10px;
@@ -2362,10 +2385,10 @@ ol.homepage-callout-list > li:nth-child(4) {
   padding: 79px 24px;
 }
 
-/* line 301, assets/sass/_elements.scss */
+/* line 326, assets/sass/_elements.scss */
 .KCPL_short-callout span {
   display: block;
-  font-family: "nimbus-sans-condensed";
+  font-family: "Nimbus-Sans-Condensed";
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
@@ -2374,20 +2397,44 @@ ol.homepage-callout-list > li:nth-child(4) {
   color: white;
 }
 
-/* line 304, assets/sass/_elements.scss */
+/*
+
+<div class="KCPL_social-callout">
+    <div class="KCPL_social-callout-header">
+        <span>Follow Us</span>
+    </div>
+    <div class="KCPL_social-callout-body">
+        <div class="KCPL_sprite-facebook KCPL_social-callout-icon"></div>
+        <div class="KCPL_sprite-instagram KCPL_social-callout-icon"></div>
+        <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
+        <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
+        <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
+        <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
+
+        <div class="clear"></div>
+
+        <div class="KCPL_social-callout-tweet">
+            <span class="KCPL_social-callout-tweet-content">"All KCPL locations will be closed all day on Wednesday, February 12 for Staff Development Day. Find us online at kanawhalibrary.org."</span>
+            <span class="KCPL_social-callout-tweet-date">Feb 11</span>
+        </div>
+    </div>
+</div>
+
+*/
+/* line 354, assets/sass/_elements.scss */
 .KCPL_social-callout {
   display: block;
 }
 
-/* line 306, assets/sass/_elements.scss */
+/* line 356, assets/sass/_elements.scss */
 .KCPL_social-callout .KCPL_social-callout-header {
   background: #137cc1;
   padding: 10px;
 }
-/* line 308, assets/sass/_elements.scss */
+/* line 358, assets/sass/_elements.scss */
 .KCPL_social-callout .KCPL_social-callout-header span {
   display: block;
-  font-family: "nimbus-sans";
+  font-family: "Nimbus-Sans";
   font-weight: 700;
   font-size: 19px;
   line-height: 27px;
@@ -2395,17 +2442,17 @@ ol.homepage-callout-list > li:nth-child(4) {
   color: white;
   text-align: center;
 }
-/* line 310, assets/sass/_elements.scss */
+/* line 360, assets/sass/_elements.scss */
 .KCPL_social-callout .KCPL_social-callout-body {
   background: #e2e2e2;
   padding: 10px;
 }
-/* line 312, assets/sass/_elements.scss */
+/* line 362, assets/sass/_elements.scss */
 .KCPL_social-callout .KCPL_social-callout-body .KCPL_social-callout-icon {
   margin: 4px 3px 7px 15px;
   float: left;
 }
-/* line 313, assets/sass/_elements.scss */
+/* line 363, assets/sass/_elements.scss */
 .KCPL_social-callout .KCPL_social-callout-body .KCPL_social-callout-tweet {
   background: #137cc1;
   padding: 10px 8px;
@@ -2414,55 +2461,152 @@ ol.homepage-callout-list > li:nth-child(4) {
   line-height: 16px;
   margin-top: 12px;
 }
-/* line 315, assets/sass/_elements.scss */
+/* line 365, assets/sass/_elements.scss */
 .KCPL_social-callout .KCPL_social-callout-body .KCPL_social-callout-tweet .KCPL_social-callout-tweet-content {
-  font-family: "minion";
+  font-family: "Minion";
   color: white;
   word-wrap: break-word;
 }
-/* line 316, assets/sass/_elements.scss */
+/* line 366, assets/sass/_elements.scss */
 .KCPL_social-callout .KCPL_social-callout-body .KCPL_social-callout-tweet .KCPL_social-callout-tweet-date {
-  font-family: "nimbus-sans";
+  font-family: "Nimbus-Sans";
   font-size: 13px;
   line-height: 16px;
   color: white;
   font-weight: 700;
 }
 
-/* line 323, assets/sass/_elements.scss */
-.KCPL_callout-graphic-1 {
+/*
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-1-blue"></div>
+</div>
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-1-green"></div>
+</div>
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-1-purple"></div>
+</div>
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-1-red"></div>
+</div>
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-1-yellow"></div>
+</div>
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-2-blue"></div>
+</div>
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-2-green"></div>
+</div>
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-2-purple"></div>
+</div>
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-2-red"></div>
+</div>
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-2-yellow"></div>
+</div>
+
+*/
+/* line 417, assets/sass/_elements.scss */
+.KCPL_callout-graphic-1-blue {
   display: block;
   width: 140px;
   height: 275px;
   border-radius: 10px;
-  background: url("./assets/img/140x275.gif");
+  background: url("./assets/img/verticalgraphiccallouts01_blue.png");
 }
 
-/* line 324, assets/sass/_elements.scss */
-.KCPL_callout-graphic-2 {
+/* line 418, assets/sass/_elements.scss */
+.KCPL_callout-graphic-1-green {
   display: block;
   width: 140px;
   height: 275px;
   border-radius: 10px;
-  background: url("./assets/img/140x275.gif");
+  background: url("./assets/img/verticalgraphiccallouts01_green.png");
 }
 
-/* line 325, assets/sass/_elements.scss */
-.KCPL_callout-graphic-3 {
+/* line 419, assets/sass/_elements.scss */
+.KCPL_callout-graphic-1-purple {
   display: block;
   width: 140px;
   height: 275px;
   border-radius: 10px;
-  background: url("./assets/img/140x275.gif");
+  background: url("./assets/img/verticalgraphiccallouts01_purple.png");
 }
 
-/* line 326, assets/sass/_elements.scss */
-.KCPL_callout-graphic-4 {
+/* line 420, assets/sass/_elements.scss */
+.KCPL_callout-graphic-1-red {
   display: block;
   width: 140px;
   height: 275px;
   border-radius: 10px;
-  background: url("./assets/img/140x275.gif");
+  background: url("./assets/img/verticalgraphiccallouts01_red.png");
+}
+
+/* line 421, assets/sass/_elements.scss */
+.KCPL_callout-graphic-1-yellow {
+  display: block;
+  width: 140px;
+  height: 275px;
+  border-radius: 10px;
+  background: url("./assets/img/verticalgraphiccallouts01_yellow.png");
+}
+
+/* line 423, assets/sass/_elements.scss */
+.KCPL_callout-graphic-2-blue {
+  display: block;
+  width: 140px;
+  height: 275px;
+  border-radius: 10px;
+  background: url("./assets/img/verticalgraphiccallouts02_blue.png");
+}
+
+/* line 424, assets/sass/_elements.scss */
+.KCPL_callout-graphic-2-green {
+  display: block;
+  width: 140px;
+  height: 275px;
+  border-radius: 10px;
+  background: url("./assets/img/verticalgraphiccallouts02_green.png");
+}
+
+/* line 425, assets/sass/_elements.scss */
+.KCPL_callout-graphic-2-purple {
+  display: block;
+  width: 140px;
+  height: 275px;
+  border-radius: 10px;
+  background: url("./assets/img/verticalgraphiccallouts02_purple.png");
+}
+
+/* line 426, assets/sass/_elements.scss */
+.KCPL_callout-graphic-2-red {
+  display: block;
+  width: 140px;
+  height: 275px;
+  border-radius: 10px;
+  background: url("./assets/img/verticalgraphiccallouts02_red.png");
+}
+
+/* line 427, assets/sass/_elements.scss */
+.KCPL_callout-graphic-2-yellow {
+  display: block;
+  width: 140px;
+  height: 275px;
+  border-radius: 10px;
+  background: url("./assets/img/verticalgraphiccallouts02_yellow.png");
 }
 
 /*
@@ -2722,13 +2866,13 @@ ol.homepage-callout-list > li:nth-child(4) {
    </div>
   </div>
 */
-/* line 587, assets/sass/_elements.scss */
+/* line 688, assets/sass/_elements.scss */
 #searchField {
   position: relative;
   display: block;
   margin: 0 0 22px;
 }
-/* line 588, assets/sass/_elements.scss */
+/* line 689, assets/sass/_elements.scss */
 #searchField .searchicon {
   position: absolute;
   z-index: 2;
@@ -2737,7 +2881,7 @@ ol.homepage-callout-list > li:nth-child(4) {
   font-size: 17px;
   color: #323333;
 }
-/* line 589, assets/sass/_elements.scss */
+/* line 690, assets/sass/_elements.scss */
 #searchField input[type="search"] {
   -webkit-appearance: none;
   border-radius: 0px;
@@ -2751,27 +2895,27 @@ ol.homepage-callout-list > li:nth-child(4) {
   width: 100%;
 }
 
-/* line 592, assets/sass/_elements.scss */
+/* line 693, assets/sass/_elements.scss */
 #KCPL_search {
   background: #ffa751;
   display: block;
 }
-/* line 593, assets/sass/_elements.scss */
+/* line 694, assets/sass/_elements.scss */
 #KCPL_search > .gutter {
   padding: 8px 14px;
 }
-/* line 594, assets/sass/_elements.scss */
+/* line 695, assets/sass/_elements.scss */
 #KCPL_search form {
   padding: 0;
   margin: 0;
 }
-/* line 595, assets/sass/_elements.scss */
+/* line 696, assets/sass/_elements.scss */
 #KCPL_search #searchField {
   position: relative;
   display: block;
   margin: 0 0 22px;
 }
-/* line 596, assets/sass/_elements.scss */
+/* line 697, assets/sass/_elements.scss */
 #KCPL_search .searchicon {
   position: absolute;
   z-index: 2;
@@ -2780,7 +2924,7 @@ ol.homepage-callout-list > li:nth-child(4) {
   font-size: 17px;
   color: #323333;
 }
-/* line 597, assets/sass/_elements.scss */
+/* line 698, assets/sass/_elements.scss */
 #KCPL_search input[type="search"] {
   -webkit-appearance: none;
   border-radius: 0px;
@@ -2793,20 +2937,20 @@ ol.homepage-callout-list > li:nth-child(4) {
   box-sizing: border-box;
   width: 100%;
 }
-/* line 598, assets/sass/_elements.scss */
+/* line 699, assets/sass/_elements.scss */
 #KCPL_search #search-params {
   display: block;
   float: left;
   width: 100%;
 }
-/* line 599, assets/sass/_elements.scss */
+/* line 700, assets/sass/_elements.scss */
 #KCPL_search #type {
   float: left;
   width: 112px;
   border-right: 1px solid #323333;
   height: 99px;
 }
-/* line 600, assets/sass/_elements.scss */
+/* line 701, assets/sass/_elements.scss */
 #KCPL_search #type .top {
   font: bold 15px/18px "nimbus-sans";
   color: #323333;
@@ -2815,7 +2959,7 @@ ol.homepage-callout-list > li:nth-child(4) {
   letter-spacing: 0.01em;
   word-spacing: 0.065em;
 }
-/* line 601, assets/sass/_elements.scss */
+/* line 702, assets/sass/_elements.scss */
 #KCPL_search #type .bottom {
   font: bold 18px/22px "nimbus-sans-condensed";
   color: #323333;
@@ -2823,43 +2967,43 @@ ol.homepage-callout-list > li:nth-child(4) {
   text-transform: uppercase;
   padding: 1px 0 0;
 }
-/* line 602, assets/sass/_elements.scss */
+/* line 703, assets/sass/_elements.scss */
 #KCPL_search #type .bottom a {
   color: #323333;
   display: block;
   padding: 0 0 0 6px;
   letter-spacing: 0.06em;
 }
-/* line 603, assets/sass/_elements.scss */
+/* line 704, assets/sass/_elements.scss */
 #KCPL_search #type .bottom a:hover, #KCPL_search #type .bottom a.active {
   color: #fff;
   cursor: pointer;
 }
-/* line 605, assets/sass/_elements.scss */
+/* line 706, assets/sass/_elements.scss */
 #KCPL_search #select {
   float: right;
   width: 814px;
 }
-/* line 606, assets/sass/_elements.scss */
+/* line 707, assets/sass/_elements.scss */
 #KCPL_search #select.media-active .media {
   display: block;
 }
-/* line 607, assets/sass/_elements.scss */
+/* line 708, assets/sass/_elements.scss */
 #KCPL_search #select.audience-active .audience {
   display: block;
 }
-/* line 608, assets/sass/_elements.scss */
+/* line 709, assets/sass/_elements.scss */
 #KCPL_search .media, #KCPL_search .audience {
   display: none;
 }
-/* line 609, assets/sass/_elements.scss */
+/* line 710, assets/sass/_elements.scss */
 #KCPL_search .search-btn {
   float: left;
   width: 80px;
   padding: 19px 0 0;
   margin: 0 12px 0;
 }
-/* line 610, assets/sass/_elements.scss */
+/* line 711, assets/sass/_elements.scss */
 #KCPL_search .search-btn hr {
   border: none;
   border-top: 1px solid #323333;
@@ -2867,104 +3011,104 @@ ol.homepage-callout-list > li:nth-child(4) {
   padding: 0;
   width: 45px;
 }
-/* line 611, assets/sass/_elements.scss */
+/* line 712, assets/sass/_elements.scss */
 #KCPL_search .search-btn hr + span {
   display: block;
   text-align: center;
 }
-/* line 613, assets/sass/_elements.scss */
+/* line 714, assets/sass/_elements.scss */
 #KCPL_search .search-btn.first {
   margin-left: 0;
 }
-/* line 614, assets/sass/_elements.scss */
+/* line 715, assets/sass/_elements.scss */
 #KCPL_search .search-btn.last {
   margin-right: 0;
 }
-/* line 615, assets/sass/_elements.scss */
+/* line 716, assets/sass/_elements.scss */
 #KCPL_search .iconCont {
   height: 40px;
   width: 100%;
   position: relative;
 }
-/* line 616, assets/sass/_elements.scss */
+/* line 717, assets/sass/_elements.scss */
 #KCPL_search .iconCont .icon {
   margin: 0 auto;
   position: absolute;
 }
-/* line 618, assets/sass/_elements.scss */
+/* line 719, assets/sass/_elements.scss */
 #KCPL_search .books .icon {
   top: 0;
   left: 15px;
 }
-/* line 619, assets/sass/_elements.scss */
+/* line 720, assets/sass/_elements.scss */
 #KCPL_search .music .icon {
   top: 0;
   left: 23px;
 }
-/* line 620, assets/sass/_elements.scss */
+/* line 721, assets/sass/_elements.scss */
 #KCPL_search .research .icon {
   top: -3px;
   left: 25px;
 }
-/* line 621, assets/sass/_elements.scss */
+/* line 722, assets/sass/_elements.scss */
 #KCPL_search .magazines .icon {
   top: -5px;
   left: 25px;
 }
-/* line 622, assets/sass/_elements.scss */
+/* line 723, assets/sass/_elements.scss */
 #KCPL_search .video .icon {
   top: 2px;
   left: 20px;
 }
-/* line 623, assets/sass/_elements.scss */
+/* line 724, assets/sass/_elements.scss */
 #KCPL_search .ebooks .icon {
   top: -3px;
   left: 24px;
 }
-/* line 624, assets/sass/_elements.scss */
+/* line 725, assets/sass/_elements.scss */
 #KCPL_search .audiobooks .icon {
   top: 0;
   left: 20px;
 }
-/* line 625, assets/sass/_elements.scss */
+/* line 726, assets/sass/_elements.scss */
 #KCPL_search .download .icon {
   top: 1px;
   left: 24px;
 }
-/* line 626, assets/sass/_elements.scss */
+/* line 727, assets/sass/_elements.scss */
 #KCPL_search .kids .icon {
   top: -12px;
   left: 20px;
 }
-/* line 627, assets/sass/_elements.scss */
+/* line 728, assets/sass/_elements.scss */
 #KCPL_search .teens .icon {
   top: -12px;
   left: 20px;
 }
-/* line 628, assets/sass/_elements.scss */
+/* line 729, assets/sass/_elements.scss */
 #KCPL_search .adults .icon {
   top: -12px;
   left: 20px;
 }
-/* line 630, assets/sass/_elements.scss */
+/* line 731, assets/sass/_elements.scss */
 #KCPL_search #select:hover .search-btn {
   opacity: .7;
 }
-/* line 631, assets/sass/_elements.scss */
+/* line 732, assets/sass/_elements.scss */
 #KCPL_search #select:hover .search-btn:hover {
   opacity: 1;
   cursor: pointer;
 }
 
-/* line 635, assets/sass/_elements.scss */
+/* line 736, assets/sass/_elements.scss */
 #KCPL_search.extended #searchField {
   margin: 0 0 8px;
 }
-/* line 636, assets/sass/_elements.scss */
+/* line 737, assets/sass/_elements.scss */
 #KCPL_search.extended #exFields {
   display: block;
 }
-/* line 637, assets/sass/_elements.scss */
+/* line 738, assets/sass/_elements.scss */
 #KCPL_search.extended #exFields select {
   margin: 0;
   padding: 5px 0 3px 11px;
@@ -2975,33 +3119,33 @@ ol.homepage-callout-list > li:nth-child(4) {
   letter-spacing: 0.095em;
   margin: 0 0 22px;
 }
-/* line 638, assets/sass/_elements.scss */
+/* line 739, assets/sass/_elements.scss */
 #KCPL_search.extended #exFields #left {
   float: left;
   width: 467px;
 }
-/* line 639, assets/sass/_elements.scss */
+/* line 740, assets/sass/_elements.scss */
 #KCPL_search.extended #exFields #right {
   float: right;
   width: 458px;
   margin: 0 0 11px;
 }
-/* line 640, assets/sass/_elements.scss */
+/* line 741, assets/sass/_elements.scss */
 #KCPL_search.extended #exFields #right #search-online {
   float: left;
   width: 106px;
 }
-/* line 641, assets/sass/_elements.scss */
+/* line 742, assets/sass/_elements.scss */
 #KCPL_search.extended #exFields #right #search-libraryCard {
   float: left;
   width: 189px;
 }
-/* line 642, assets/sass/_elements.scss */
+/* line 743, assets/sass/_elements.scss */
 #KCPL_search.extended #exFields #right #search-inLibrary {
   float: left;
   width: 160px;
 }
-/* line 644, assets/sass/_elements.scss */
+/* line 745, assets/sass/_elements.scss */
 #KCPL_search.extended #exFields #right input[type="checkbox"] {
   -webkit-appearance: none;
   background: transparent;
@@ -3011,7 +3155,7 @@ ol.homepage-callout-list > li:nth-child(4) {
   margin: 0 5px 0 29px;
   position: relative;
 }
-/* line 645, assets/sass/_elements.scss */
+/* line 746, assets/sass/_elements.scss */
 #KCPL_search.extended #exFields #right input[type="checkbox"]:checked:after {
   content: '';
   position: absolute;
@@ -3023,7 +3167,7 @@ ol.homepage-callout-list > li:nth-child(4) {
   border-radius: 2px;
   background: #000;
 }
-/* line 646, assets/sass/_elements.scss */
+/* line 747, assets/sass/_elements.scss */
 #KCPL_search.extended #exFields #right label {
   font-size: 14px;
   letter-spacing: 0.075em;

@@ -281,49 +281,150 @@ ol.homepage-callout-list { display: block;
 }
 
 // Vertical callouts
+
+/*
+
+<div class="KCPL_info-box">
+    <div class="KCPL_info-box-header">
+        <span class="KCPL_info-box-header-title">Info</span>
+    </div>
+    <div class="KCPL_info-box-body">
+        <span class="KCPL_info-box-body-title">Title this is the title it's short</span>
+        <span class="KCPL_info-box-body-date">Date 3, 2014</span>
+        <span class="KCPL_info-box-body-excerpt">Learn how easy it is to make your own healthy smoothies.</span>
+        <span class="KCPL_info-box-body-link">More &nbsp; ≈</span>
+    </div>
+</div>
+
+*/
+
 .#{$namespace}info-box { display: block; }
 .#{$namespace}info-box {
     .#{$namespace}info-box-header { background: $green; padding: 15px; }
     .#{$namespace}info-box-header {
-        .#{$namespace}info-box-header-title { display: block; text-align: center; text-transform: uppercase; font-size: 18px; font-weight: 600; font-family: $nimbus; color: white; };
+        .#{$namespace}info-box-header-title { display: block; text-align: center; text-transform: uppercase; font-size: 18px; font-weight: 600; font-family: "Nimbus-Sans"; color: white; };
      }
     .#{$namespace}info-box-body { background: $s-grey; padding: 11px 18px; }
     .#{$namespace}info-box-body {
-        .#{$namespace}info-box-body-title { display: block; text-transform: uppercase; font-size: 18px; font-weight: 600; font-family: $nimbus-c; color: $d-grey; line-height: 23px; };
-        .#{$namespace}info-box-body-date { display: block; font-size: 15px; font-weight: 600; font-family: $nimbus; color: $d-grey; };
-        .#{$namespace}info-box-body-excerpt { display: block; font-size: 13px; font-weight: 400; font-family: $minion; color: $d-grey; letter-spacing: .05em; line-height: 18px; };
-        .#{$namespace}info-box-body-link { display: block; font-size: 14px; font-weight: 600; font-family: $minion; color: $d-grey; margin-top: 17px; font-style: italic; };
+        .#{$namespace}info-box-body-title { display: block; text-transform: uppercase; font-size: 18px; font-weight: 600; font-family: "Nimbus-Sans-Condensed"; color: $d-grey; line-height: 23px; };
+        .#{$namespace}info-box-body-date { display: block; font-size: 15px; font-weight: 600; font-family: "Nimbus-Sans"; color: $d-grey; };
+        .#{$namespace}info-box-body-excerpt { display: block; font-size: 13px; font-weight: 400; font-family: "Minion"; color: $d-grey; letter-spacing: .05em; line-height: 18px; };
+        .#{$namespace}info-box-body-link { display: block; font-size: 14px; font-weight: 600; font-family: "Minion"; color: $d-grey; margin-top: 17px; font-style: italic; };
     }
 }
 
+/*
+
+<div class="KCPL_short-callout">
+    <span>Short Call Out</span>
+</div>
+
+*/
+
 .#{$namespace}short-callout { display: block; border-radius: 10px; background: #f65446; padding: 79px 24px; }
 .#{$namespace}short-callout {
-    span { display: block; font-family: $nimbus-c; font-weight: 600; text-transform: uppercase; text-align: center; font-size: 43px; line-height: 46px; color: white; }
+    span { display: block; font-family: "Nimbus-Sans-Condensed"; font-weight: 600; text-transform: uppercase; text-align: center; font-size: 43px; line-height: 46px; color: white; }
 }
+
+/*
+
+<div class="KCPL_social-callout">
+    <div class="KCPL_social-callout-header">
+        <span>Follow Us</span>
+    </div>
+    <div class="KCPL_social-callout-body">
+        <div class="KCPL_sprite-facebook KCPL_social-callout-icon"></div>
+        <div class="KCPL_sprite-instagram KCPL_social-callout-icon"></div>
+        <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
+        <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
+        <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
+        <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
+
+        <div class="clear"></div>
+
+        <div class="KCPL_social-callout-tweet">
+            <span class="KCPL_social-callout-tweet-content">"All KCPL locations will be closed all day on Wednesday, February 12 for Staff Development Day. Find us online at kanawhalibrary.org."</span>
+            <span class="KCPL_social-callout-tweet-date">Feb 11</span>
+        </div>
+    </div>
+</div>
+
+*/
 
 .#{$namespace}social-callout { display: block; }
 .#{$namespace}social-callout {
     .#{$namespace}social-callout-header { background: $blue; padding: 10px; }
     .#{$namespace}social-callout-header {
-        span { display: block; font-family: $nimbus; font-weight: 700; font-size: 19px; line-height: 27px; text-transform: uppercase; color: white; text-align: center; }
+        span { display: block; font-family: "Nimbus-Sans"; font-weight: 700; font-size: 19px; line-height: 27px; text-transform: uppercase; color: white; text-align: center; }
     }
     .#{$namespace}social-callout-body { background: $s-grey; padding: 10px; }
     .#{$namespace}social-callout-body {
         .#{$namespace}social-callout-icon { margin: 4px 3px 7px 15px; float: left; };
         .#{$namespace}social-callout-tweet { background: $blue;padding: 10px 8px; border-radius: 10px; font-size: 13px; line-height: 16px; margin-top: 12px; };
         .#{$namespace}social-callout-tweet {
-            .#{$namespace}social-callout-tweet-content { font-family: $minion; color: white; word-wrap: break-word; };
-            .#{$namespace}social-callout-tweet-date { font-family: $nimbus; font-size: 13px; line-height: 16px; color: white; font-weight: 700;  };
+            .#{$namespace}social-callout-tweet-content { font-family: "Minion"; color: white; word-wrap: break-word; };
+            .#{$namespace}social-callout-tweet-date { font-family: "Nimbus-Sans"; font-size: 13px; line-height: 16px; color: white; font-weight: 700;  };
         };
     }
 }
 
-
 // Vertical callout graphics
-.#{$namespace}callout-graphic-1 { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/140x275.gif') }
-.#{$namespace}callout-graphic-2 { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/140x275.gif') }
-.#{$namespace}callout-graphic-3 { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/140x275.gif') }
-.#{$namespace}callout-graphic-4 { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/140x275.gif') }
+
+/*
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-1-blue"></div>
+</div>
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-1-green"></div>
+</div>
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-1-purple"></div>
+</div>
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-1-red"></div>
+</div>
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-1-yellow"></div>
+</div>
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-2-blue"></div>
+</div>
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-2-green"></div>
+</div>
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-2-purple"></div>
+</div>
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-2-red"></div>
+</div>
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-2-yellow"></div>
+</div>
+
+*/
+
+.#{$namespace}callout-graphic-1-blue { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/verticalgraphiccallouts01_blue.png') }
+.#{$namespace}callout-graphic-1-green { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/verticalgraphiccallouts01_green.png') }
+.#{$namespace}callout-graphic-1-purple { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/verticalgraphiccallouts01_purple.png') }
+.#{$namespace}callout-graphic-1-red { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/verticalgraphiccallouts01_red.png') }
+.#{$namespace}callout-graphic-1-yellow { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/verticalgraphiccallouts01_yellow.png') }
+
+.#{$namespace}callout-graphic-2-blue { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/verticalgraphiccallouts02_blue.png') }
+.#{$namespace}callout-graphic-2-green { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/verticalgraphiccallouts02_green.png') }
+.#{$namespace}callout-graphic-2-purple { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/verticalgraphiccallouts02_purple.png') }
+.#{$namespace}callout-graphic-2-red { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/verticalgraphiccallouts02_red.png') }
+.#{$namespace}callout-graphic-2-yellow { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/verticalgraphiccallouts02_yellow.png') }
 
 
 //Search boxes
