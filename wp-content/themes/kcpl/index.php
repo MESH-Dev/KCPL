@@ -58,22 +58,49 @@
             </div>
         </div>
 
+    </div>
+
+    <div class="row">
         <div class="two columns">
-            <div class="KCPL_callout-graphic-1"></div>
+            <div class="KCPL_callout-graphic-1-blue"></div>
         </div>
 
         <div class="two columns">
-            <div class="KCPL_callout-graphic-2"></div>
+            <div class="KCPL_callout-graphic-1-green"></div>
+        </div>
+
+        <div class="two columns">
+            <div class="KCPL_callout-graphic-1-purple"></div>
+        </div>
+
+        <div class="two columns">
+            <div class="KCPL_callout-graphic-1-red"></div>
+        </div>
+
+        <div class="two columns">
+            <div class="KCPL_callout-graphic-1-yellow"></div>
         </div>
     </div>
 
     <div class="row">
         <div class="two columns">
-            <div class="KCPL_callout-graphic-3"></div>
+            <div class="KCPL_callout-graphic-2-blue"></div>
         </div>
 
         <div class="two columns">
-            <div class="KCPL_callout-graphic-4"></div>
+            <div class="KCPL_callout-graphic-2-green"></div>
+        </div>
+
+        <div class="two columns">
+            <div class="KCPL_callout-graphic-2-purple"></div>
+        </div>
+
+        <div class="two columns">
+            <div class="KCPL_callout-graphic-2-red"></div>
+        </div>
+
+        <div class="two columns">
+            <div class="KCPL_callout-graphic-2-yellow"></div>
         </div>
     </div>
 

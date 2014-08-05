@@ -2423,37 +2423,91 @@ ol.homepage-callout-list > li:nth-child(4) {
 }
 
 /* line 325, assets/sass/_elements.scss */
-.KCPL_callout-graphic-1 {
+.KCPL_callout-graphic-1-blue {
   display: block;
   width: 140px;
   height: 275px;
   border-radius: 10px;
-  background: url("./assets/img/140x275.gif");
+  background: url("./assets/img/verticalgraphiccallouts01_blue.png");
 }
 
 /* line 326, assets/sass/_elements.scss */
-.KCPL_callout-graphic-2 {
+.KCPL_callout-graphic-1-green {
   display: block;
   width: 140px;
   height: 275px;
   border-radius: 10px;
-  background: url("./assets/img/140x275.gif");
+  background: url("./assets/img/verticalgraphiccallouts01_green.png");
 }
 
 /* line 327, assets/sass/_elements.scss */
-.KCPL_callout-graphic-3 {
+.KCPL_callout-graphic-1-purple {
   display: block;
   width: 140px;
   height: 275px;
   border-radius: 10px;
-  background: url("./assets/img/140x275.gif");
+  background: url("./assets/img/verticalgraphiccallouts01_purple.png");
 }
 
 /* line 328, assets/sass/_elements.scss */
-.KCPL_callout-graphic-4 {
+.KCPL_callout-graphic-1-red {
   display: block;
   width: 140px;
   height: 275px;
   border-radius: 10px;
-  background: url("./assets/img/140x275.gif");
+  background: url("./assets/img/verticalgraphiccallouts01_red.png");
+}
+
+/* line 329, assets/sass/_elements.scss */
+.KCPL_callout-graphic-1-yellow {
+  display: block;
+  width: 140px;
+  height: 275px;
+  border-radius: 10px;
+  background: url("./assets/img/verticalgraphiccallouts01_yellow.png");
+}
+
+/* line 331, assets/sass/_elements.scss */
+.KCPL_callout-graphic-2-blue {
+  display: block;
+  width: 140px;
+  height: 275px;
+  border-radius: 10px;
+  background: url("./assets/img/verticalgraphiccallouts02_blue.png");
+}
+
+/* line 332, assets/sass/_elements.scss */
+.KCPL_callout-graphic-2-green {
+  display: block;
+  width: 140px;
+  height: 275px;
+  border-radius: 10px;
+  background: url("./assets/img/verticalgraphiccallouts02_green.png");
+}
+
+/* line 333, assets/sass/_elements.scss */
+.KCPL_callout-graphic-2-purple {
+  display: block;
+  width: 140px;
+  height: 275px;
+  border-radius: 10px;
+  background: url("./assets/img/verticalgraphiccallouts02_purple.png");
+}
+
+/* line 334, assets/sass/_elements.scss */
+.KCPL_callout-graphic-2-red {
+  display: block;
+  width: 140px;
+  height: 275px;
+  border-radius: 10px;
+  background: url("./assets/img/verticalgraphiccallouts02_red.png");
+}
+
+/* line 335, assets/sass/_elements.scss */
+.KCPL_callout-graphic-2-yellow {
+  display: block;
+  width: 140px;
+  height: 275px;
+  border-radius: 10px;
+  background: url("./assets/img/verticalgraphiccallouts02_yellow.png");
 }

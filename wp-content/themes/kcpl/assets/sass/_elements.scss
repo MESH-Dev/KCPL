@@ -322,7 +322,14 @@ ol.homepage-callout-list { display: block;
 
 // Vertical callout graphics
 
-.#{$namespace}callout-graphic-1 { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/140x275.gif') }
-.#{$namespace}callout-graphic-2 { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/140x275.gif') }
-.#{$namespace}callout-graphic-3 { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/140x275.gif') }
-.#{$namespace}callout-graphic-4 { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/140x275.gif') }
+.#{$namespace}callout-graphic-1-blue { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/verticalgraphiccallouts01_blue.png') }
+.#{$namespace}callout-graphic-1-green { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/verticalgraphiccallouts01_green.png') }
+.#{$namespace}callout-graphic-1-purple { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/verticalgraphiccallouts01_purple.png') }
+.#{$namespace}callout-graphic-1-red { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/verticalgraphiccallouts01_red.png') }
+.#{$namespace}callout-graphic-1-yellow { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/verticalgraphiccallouts01_yellow.png') }
+
+.#{$namespace}callout-graphic-2-blue { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/verticalgraphiccallouts02_blue.png') }
+.#{$namespace}callout-graphic-2-green { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/verticalgraphiccallouts02_green.png') }
+.#{$namespace}callout-graphic-2-purple { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/verticalgraphiccallouts02_purple.png') }
+.#{$namespace}callout-graphic-2-red { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/verticalgraphiccallouts02_red.png') }
+.#{$namespace}callout-graphic-2-yellow { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/verticalgraphiccallouts02_yellow.png') }
