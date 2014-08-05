@@ -326,3 +326,51 @@ ol.homepage-callout-list { display: block;
 .#{$namespace}callout-graphic-2 { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/140x275.gif') }
 .#{$namespace}callout-graphic-3 { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/140x275.gif') }
 .#{$namespace}callout-graphic-4 { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/140x275.gif') }
+
+// Listing Style 3
+
+/*
+
+<div class="KCPL_listing-style-3">
+    <div class="KCPL_listing-style-3-header">
+        <span>Social Feed</span>
+    </div>
+    <div class="KCPL_listing-style-3-body">
+        <span class="KCPL_listing-style-3-body-title">Title this is the title it's short</span>
+        <span class="KCPL_listing-style-3-body-date">Date 3, 2014</span>
+        <span class="KCPL_listing-style-3-body-excerpt">Learn how easy it is to make your own healthy smoothies.</span>
+        <span class="KCPL_listing-style-3-body-link">More &nbsp; ≈</span>
+    </div>
+    <div class="KCPL_listing-style-3-body">
+        <span class="KCPL_listing-style-3-body-title">Title this is the title it's very long this is the title</span>
+        <span class="KCPL_listing-style-3-body-date">Date 3, 2014</span>
+        <span class="KCPL_listing-style-3-body-excerpt">Learn how easy it is to make your own healthy smoothies.</span>
+        <span class="KCPL_listing-style-3-body-link">More &nbsp; ≈</span>
+    </div>
+    <div class="KCPL_listing-style-3-body">
+        <span class="KCPL_listing-style-3-body-title">Title this is the title it's short</span>
+        <span class="KCPL_listing-style-3-body-date">Date 3, 2014</span>
+        <span class="KCPL_listing-style-3-body-excerpt">Learn how easy it is to make your own healthy smoothies.</span>
+        <span class="KCPL_listing-style-3-body-link">More &nbsp; ≈</span>
+    </div>
+    <div class="KCPL_listing-style-3-body">
+        <span class="KCPL_listing-style-3-body-link">Read all &nbsp; ≈</span>
+    </div>
+</div>
+
+*/
+
+.#{$namespace}listing-style-3 { display: block; }
+.#{$namespace}listing-style-3 {
+    .#{$namespace}listing-style-3-header { background: $yellow; padding: 15px; }
+    .#{$namespace}listing-style-3-header {
+        span { display: block; font-family: "Nimbus-Sans"; font-weight: 700; font-size: 19px; line-height: 21px; text-transform: uppercase; color: white; text-align: center; }
+    }
+    .#{$namespace}listing-style-3-body { background: $s-grey; padding: 11px 18px; }
+    .#{$namespace}listing-style-3-body {
+        .#{$namespace}listing-style-3-body-title { display: block; text-transform: uppercase; font-size: 18px; font-weight: 600; font-family: "Nimbus-Sans-Condensed"; color: $d-grey; line-height: 23px; }
+        .#{$namespace}listing-style-3-body-date { display: block; font-size: 15px; font-weight: 600; font-family: "Nimbus-Sans"; color: $d-grey; }
+        .#{$namespace}listing-style-3-body-excerpt { display: inline; font-size: 13px; font-weight: 400; font-family: "Minion"; color: $d-grey; letter-spacing: .05em; line-height: 18px; }
+        .#{$namespace}listing-style-3-body-link { display: inline; font-size: 14px; font-weight: 700; font-family: "Minion"; color: $d-grey; font-style: italic; }
+    }
+}
