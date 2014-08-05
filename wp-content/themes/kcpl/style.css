@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: KCPL
 Theme URI: http://meshfresh.com
@@ -2283,17 +2284,32 @@ ol.homepage-callout-list > li:nth-child(4) {
   padding: 0px 21px 11px 0px;
 }
 
-/* line 285, assets/sass/_elements.scss */
+/*
+
+<div class="KCPL_info-box">
+    <div class="KCPL_info-box-header">
+        <span class="KCPL_info-box-header-title">Info</span>
+    </div>
+    <div class="KCPL_info-box-body">
+        <span class="KCPL_info-box-body-title">Title this is the title it's short</span>
+        <span class="KCPL_info-box-body-date">Date 3, 2014</span>
+        <span class="KCPL_info-box-body-excerpt">Learn how easy it is to make your own healthy smoothies.</span>
+        <span class="KCPL_info-box-body-link">More &nbsp; ≈</span>
+    </div>
+</div>
+
+*/
+/* line 301, assets/sass/_elements.scss */
 .KCPL_info-box {
   display: block;
 }
 
-/* line 287, assets/sass/_elements.scss */
+/* line 303, assets/sass/_elements.scss */
 .KCPL_info-box .KCPL_info-box-header {
   background: #65a893;
   padding: 15px;
 }
-/* line 289, assets/sass/_elements.scss */
+/* line 305, assets/sass/_elements.scss */
 .KCPL_info-box .KCPL_info-box-header .KCPL_info-box-header-title {
   display: block;
   text-align: center;
@@ -2303,12 +2319,12 @@ ol.homepage-callout-list > li:nth-child(4) {
   font-family: "Nimbus-Sans";
   color: white;
 }
-/* line 291, assets/sass/_elements.scss */
+/* line 307, assets/sass/_elements.scss */
 .KCPL_info-box .KCPL_info-box-body {
   background: #e2e2e2;
   padding: 11px 18px;
 }
-/* line 293, assets/sass/_elements.scss */
+/* line 309, assets/sass/_elements.scss */
 .KCPL_info-box .KCPL_info-box-body .KCPL_info-box-body-title {
   display: block;
   text-transform: uppercase;
@@ -2318,7 +2334,7 @@ ol.homepage-callout-list > li:nth-child(4) {
   color: #323333;
   line-height: 23px;
 }
-/* line 294, assets/sass/_elements.scss */
+/* line 310, assets/sass/_elements.scss */
 .KCPL_info-box .KCPL_info-box-body .KCPL_info-box-body-date {
   display: block;
   font-size: 15px;
@@ -2326,7 +2342,7 @@ ol.homepage-callout-list > li:nth-child(4) {
   font-family: "Nimbus-Sans";
   color: #323333;
 }
-/* line 295, assets/sass/_elements.scss */
+/* line 311, assets/sass/_elements.scss */
 .KCPL_info-box .KCPL_info-box-body .KCPL_info-box-body-excerpt {
   display: block;
   font-size: 13px;
@@ -2336,7 +2352,7 @@ ol.homepage-callout-list > li:nth-child(4) {
   letter-spacing: .05em;
   line-height: 18px;
 }
-/* line 296, assets/sass/_elements.scss */
+/* line 312, assets/sass/_elements.scss */
 .KCPL_info-box .KCPL_info-box-body .KCPL_info-box-body-link {
   display: block;
   font-size: 14px;
@@ -2347,7 +2363,14 @@ ol.homepage-callout-list > li:nth-child(4) {
   font-style: italic;
 }
 
-/* line 300, assets/sass/_elements.scss */
+/*
+
+<div class="KCPL_short-callout">
+    <span>Short Call Out</span>
+</div>
+
+*/
+/* line 324, assets/sass/_elements.scss */
 .KCPL_short-callout {
   display: block;
   border-radius: 10px;
@@ -2355,7 +2378,7 @@ ol.homepage-callout-list > li:nth-child(4) {
   padding: 79px 24px;
 }
 
-/* line 302, assets/sass/_elements.scss */
+/* line 326, assets/sass/_elements.scss */
 .KCPL_short-callout span {
   display: block;
   font-family: "Nimbus-Sans-Condensed";
@@ -2367,17 +2390,41 @@ ol.homepage-callout-list > li:nth-child(4) {
   color: white;
 }
 
-/* line 305, assets/sass/_elements.scss */
+/*
+
+<div class="KCPL_social-callout">
+    <div class="KCPL_social-callout-header">
+        <span>Follow Us</span>
+    </div>
+    <div class="KCPL_social-callout-body">
+        <div class="KCPL_sprite-facebook KCPL_social-callout-icon"></div>
+        <div class="KCPL_sprite-instagram KCPL_social-callout-icon"></div>
+        <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
+        <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
+        <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
+        <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
+
+        <div class="clear"></div>
+
+        <div class="KCPL_social-callout-tweet">
+            <span class="KCPL_social-callout-tweet-content">"All KCPL locations will be closed all day on Wednesday, February 12 for Staff Development Day. Find us online at kanawhalibrary.org."</span>
+            <span class="KCPL_social-callout-tweet-date">Feb 11</span>
+        </div>
+    </div>
+</div>
+
+*/
+/* line 354, assets/sass/_elements.scss */
 .KCPL_social-callout {
   display: block;
 }
 
-/* line 307, assets/sass/_elements.scss */
+/* line 356, assets/sass/_elements.scss */
 .KCPL_social-callout .KCPL_social-callout-header {
   background: #137cc1;
   padding: 10px;
 }
-/* line 309, assets/sass/_elements.scss */
+/* line 358, assets/sass/_elements.scss */
 .KCPL_social-callout .KCPL_social-callout-header span {
   display: block;
   font-family: "Nimbus-Sans";
@@ -2388,17 +2435,17 @@ ol.homepage-callout-list > li:nth-child(4) {
   color: white;
   text-align: center;
 }
-/* line 311, assets/sass/_elements.scss */
+/* line 360, assets/sass/_elements.scss */
 .KCPL_social-callout .KCPL_social-callout-body {
   background: #e2e2e2;
   padding: 10px;
 }
-/* line 313, assets/sass/_elements.scss */
+/* line 362, assets/sass/_elements.scss */
 .KCPL_social-callout .KCPL_social-callout-body .KCPL_social-callout-icon {
   margin: 4px 3px 7px 15px;
   float: left;
 }
-/* line 314, assets/sass/_elements.scss */
+/* line 363, assets/sass/_elements.scss */
 .KCPL_social-callout .KCPL_social-callout-body .KCPL_social-callout-tweet {
   background: #137cc1;
   padding: 10px 8px;
@@ -2407,13 +2454,13 @@ ol.homepage-callout-list > li:nth-child(4) {
   line-height: 16px;
   margin-top: 12px;
 }
-/* line 316, assets/sass/_elements.scss */
+/* line 365, assets/sass/_elements.scss */
 .KCPL_social-callout .KCPL_social-callout-body .KCPL_social-callout-tweet .KCPL_social-callout-tweet-content {
   font-family: "Minion";
   color: white;
   word-wrap: break-word;
 }
-/* line 317, assets/sass/_elements.scss */
+/* line 366, assets/sass/_elements.scss */
 .KCPL_social-callout .KCPL_social-callout-body .KCPL_social-callout-tweet .KCPL_social-callout-tweet-date {
   font-family: "Nimbus-Sans";
   font-size: 13px;
@@ -2422,7 +2469,50 @@ ol.homepage-callout-list > li:nth-child(4) {
   font-weight: 700;
 }
 
-/* line 325, assets/sass/_elements.scss */
+/*
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-1-blue"></div>
+</div>
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-1-green"></div>
+</div>
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-1-purple"></div>
+</div>
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-1-red"></div>
+</div>
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-1-yellow"></div>
+</div>
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-2-blue"></div>
+</div>
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-2-green"></div>
+</div>
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-2-purple"></div>
+</div>
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-2-red"></div>
+</div>
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-2-yellow"></div>
+</div>
+
+*/
+/* line 417, assets/sass/_elements.scss */
 .KCPL_callout-graphic-1-blue {
   display: block;
   width: 140px;
@@ -2431,7 +2521,7 @@ ol.homepage-callout-list > li:nth-child(4) {
   background: url("./assets/img/verticalgraphiccallouts01_blue.png");
 }
 
-/* line 326, assets/sass/_elements.scss */
+/* line 418, assets/sass/_elements.scss */
 .KCPL_callout-graphic-1-green {
   display: block;
   width: 140px;
@@ -2440,7 +2530,7 @@ ol.homepage-callout-list > li:nth-child(4) {
   background: url("./assets/img/verticalgraphiccallouts01_green.png");
 }
 
-/* line 327, assets/sass/_elements.scss */
+/* line 419, assets/sass/_elements.scss */
 .KCPL_callout-graphic-1-purple {
   display: block;
   width: 140px;
@@ -2449,7 +2539,7 @@ ol.homepage-callout-list > li:nth-child(4) {
   background: url("./assets/img/verticalgraphiccallouts01_purple.png");
 }
 
-/* line 328, assets/sass/_elements.scss */
+/* line 420, assets/sass/_elements.scss */
 .KCPL_callout-graphic-1-red {
   display: block;
   width: 140px;
@@ -2458,7 +2548,7 @@ ol.homepage-callout-list > li:nth-child(4) {
   background: url("./assets/img/verticalgraphiccallouts01_red.png");
 }
 
-/* line 329, assets/sass/_elements.scss */
+/* line 421, assets/sass/_elements.scss */
 .KCPL_callout-graphic-1-yellow {
   display: block;
   width: 140px;
@@ -2467,7 +2557,7 @@ ol.homepage-callout-list > li:nth-child(4) {
   background: url("./assets/img/verticalgraphiccallouts01_yellow.png");
 }
 
-/* line 331, assets/sass/_elements.scss */
+/* line 423, assets/sass/_elements.scss */
 .KCPL_callout-graphic-2-blue {
   display: block;
   width: 140px;
@@ -2476,7 +2566,7 @@ ol.homepage-callout-list > li:nth-child(4) {
   background: url("./assets/img/verticalgraphiccallouts02_blue.png");
 }
 
-/* line 332, assets/sass/_elements.scss */
+/* line 424, assets/sass/_elements.scss */
 .KCPL_callout-graphic-2-green {
   display: block;
   width: 140px;
@@ -2485,7 +2575,7 @@ ol.homepage-callout-list > li:nth-child(4) {
   background: url("./assets/img/verticalgraphiccallouts02_green.png");
 }
 
-/* line 333, assets/sass/_elements.scss */
+/* line 425, assets/sass/_elements.scss */
 .KCPL_callout-graphic-2-purple {
   display: block;
   width: 140px;
@@ -2494,7 +2584,7 @@ ol.homepage-callout-list > li:nth-child(4) {
   background: url("./assets/img/verticalgraphiccallouts02_purple.png");
 }
 
-/* line 334, assets/sass/_elements.scss */
+/* line 426, assets/sass/_elements.scss */
 .KCPL_callout-graphic-2-red {
   display: block;
   width: 140px;
@@ -2503,7 +2593,7 @@ ol.homepage-callout-list > li:nth-child(4) {
   background: url("./assets/img/verticalgraphiccallouts02_red.png");
 }
 
-/* line 335, assets/sass/_elements.scss */
+/* line 427, assets/sass/_elements.scss */
 .KCPL_callout-graphic-2-yellow {
   display: block;
   width: 140px;

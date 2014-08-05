@@ -282,6 +282,22 @@ ol.homepage-callout-list { display: block;
 
 // Vertical callouts
 
+/*
+
+<div class="KCPL_info-box">
+    <div class="KCPL_info-box-header">
+        <span class="KCPL_info-box-header-title">Info</span>
+    </div>
+    <div class="KCPL_info-box-body">
+        <span class="KCPL_info-box-body-title">Title this is the title it's short</span>
+        <span class="KCPL_info-box-body-date">Date 3, 2014</span>
+        <span class="KCPL_info-box-body-excerpt">Learn how easy it is to make your own healthy smoothies.</span>
+        <span class="KCPL_info-box-body-link">More &nbsp; ≈</span>
+    </div>
+</div>
+
+*/
+
 .#{$namespace}info-box { display: block; }
 .#{$namespace}info-box {
     .#{$namespace}info-box-header { background: $green; padding: 15px; }
@@ -297,10 +313,43 @@ ol.homepage-callout-list { display: block;
     }
 }
 
+/*
+
+<div class="KCPL_short-callout">
+    <span>Short Call Out</span>
+</div>
+
+*/
+
 .#{$namespace}short-callout { display: block; border-radius: 10px; background: #f65446; padding: 79px 24px; }
 .#{$namespace}short-callout {
     span { display: block; font-family: "Nimbus-Sans-Condensed"; font-weight: 600; text-transform: uppercase; text-align: center; font-size: 43px; line-height: 46px; color: white; }
 }
+
+/*
+
+<div class="KCPL_social-callout">
+    <div class="KCPL_social-callout-header">
+        <span>Follow Us</span>
+    </div>
+    <div class="KCPL_social-callout-body">
+        <div class="KCPL_sprite-facebook KCPL_social-callout-icon"></div>
+        <div class="KCPL_sprite-instagram KCPL_social-callout-icon"></div>
+        <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
+        <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
+        <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
+        <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
+
+        <div class="clear"></div>
+
+        <div class="KCPL_social-callout-tweet">
+            <span class="KCPL_social-callout-tweet-content">"All KCPL locations will be closed all day on Wednesday, February 12 for Staff Development Day. Find us online at kanawhalibrary.org."</span>
+            <span class="KCPL_social-callout-tweet-date">Feb 11</span>
+        </div>
+    </div>
+</div>
+
+*/
 
 .#{$namespace}social-callout { display: block; }
 .#{$namespace}social-callout {
@@ -319,8 +368,51 @@ ol.homepage-callout-list { display: block;
     }
 }
 
-
 // Vertical callout graphics
+
+/*
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-1-blue"></div>
+</div>
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-1-green"></div>
+</div>
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-1-purple"></div>
+</div>
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-1-red"></div>
+</div>
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-1-yellow"></div>
+</div>
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-2-blue"></div>
+</div>
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-2-green"></div>
+</div>
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-2-purple"></div>
+</div>
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-2-red"></div>
+</div>
+
+<div class="two columns">
+    <div class="KCPL_callout-graphic-2-yellow"></div>
+</div>
+
+*/
 
 .#{$namespace}callout-graphic-1-blue { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/verticalgraphiccallouts01_blue.png') }
 .#{$namespace}callout-graphic-1-green { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/verticalgraphiccallouts01_green.png') }
