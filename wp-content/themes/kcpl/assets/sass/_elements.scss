@@ -9,7 +9,7 @@ button {
     border-radius: .5em;
     background: #137cc1;
     font-size: 18px;
-    font-family: "Nimbus-Sans-Condensed";
+    font-family: $nimbus-c;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 0.07em;
@@ -23,18 +23,18 @@ button {
       ul{list-style:none;margin:0;}
       li{margin:0;}
       > li{}
-      > li > a{background:$blue;color: #fff;font: bold 19px/19px "nimbus-sans-condensed";text-transform: uppercase;display: block;padding: 16px 20px 8px;}
+      > li > a{background:$blue;color: #fff;font: bold 19px/19px $nimbus-c;text-transform: uppercase;display: block;padding: 16px 20px 8px;}
       > li:last-child > a{padding: 16px 20px 13px;}
         a{text-decoration:none;}
         a:hover, li.current-menu-item > a, .current-menu-ancestor > a{color:$d-grey;}
 
       > li > ul{background:$m-grey;}
       > li > ul > li{padding:0 0;}
-      > li > ul > li > a{color: #fff;font: bold 19px/19px "nimbus-sans-condensed";text-transform: uppercase;display: block;padding: 14px 0px 5px 20px;}
+      > li > ul > li > a{color: #fff;font: bold 19px/19px $nimbus-c;text-transform: uppercase;display: block;padding: 14px 0px 5px 20px;}
 
       > li > ul > li > ul{padding:0 0;}
       > li > ul > li > ul > li{padding:0 0;}
-      > li > ul > li > ul > li > a{color: #fff;font: 18px/18px "minion";display: block;padding: 4px 0px 0px 20px;letter-spacing: 0.03em;word-spacing: 0.09em;}
+      > li > ul > li > ul > li > a{color: #fff;font: 18px/18px $minion;display: block;padding: 4px 0px 0px 20px;letter-spacing: 0.03em;word-spacing: 0.09em;}
       > li > ul > li > ul > li:last-child > a{padding: 4px 0px 16px 20px;}
 
       > li > ul > li > ul ul{display:none;}
@@ -55,7 +55,7 @@ textarea,
 select {
 border: 3px solid #fff;
 padding: 6px 8px;
-font: 18px/24px "Nimbus-Sans", Helvetica, Arial, sans-serif;
+font: 18px/24px $nimbus, Helvetica, Arial, sans-serif;
 max-width: 100%;
 display: block;
 background: #e2e2e2;
@@ -114,7 +114,7 @@ $border-grey: #353535;
 table{background:$l-blue;}
 table{
   thead{}
-    thead th{border-bottom:2px solid $border-grey;border-left:2px solid $border-grey;border-right:2px solid $border-grey;font: bold 19px/22px "nimbus-sans-condensed";text-transform: uppercase;padding: 16px 0px 15px;text-align: center;}
+    thead th{border-bottom:2px solid $border-grey;border-left:2px solid $border-grey;border-right:2px solid $border-grey;font: bold 19px/22px $nimbus-c;text-transform: uppercase;padding: 16px 0px 15px;text-align: center;}
     thead th:first-child{border:none;border-bottom:2px solid $border-grey;border-right:2px solid $border-grey;}
     thead th:last-child{border:none;border-bottom:2px solid $border-grey;border-left:2px solid $border-grey;}
   tr{}
@@ -138,7 +138,7 @@ table{
 
 //images
 .wp-caption{border:none;padding:0;text-align:left;}
-  .wp-caption p.wp-caption-text{font:12px/16px "minion";margin:0 0 .1em;padding:0;}
+  .wp-caption p.wp-caption-text{font:12px/16px $minion;margin:0 0 .1em;padding:0;}
 
 //banners
 /*
@@ -173,19 +173,19 @@ table{
     > ul{margin:0 auto;display:inline-block;}
     > ul > li{display:table;}
     > ul > li ul{vertical-align:bottom;display:table-cell;}
-    > ul > li > a{font:bold 41px/41px "nimbus-sans-condensed";text-transform:uppercase;margin:0 25px 0 0;}
+    > ul > li > a{font:bold 41px/41px $nimbus-c;text-transform:uppercase;margin:0 25px 0 0;}
 
     > ul > li > ul{}
     > ul > li > ul > li{}
-    > ul > li > ul > li > a{font:italic 25px/30px "minion";margin:0 22px 0 0;}
+    > ul > li > ul > li > a{font:italic 25px/30px $minion;margin:0 22px 0 0;}
 
     > ul > li > ul > li > ul{}
     > ul > li > ul > li > ul > li{}
-    > ul > li > ul > li > ul > li > a{font:bold 19px/26px "nimbus-sans";margin:0 20px 0 0;text-transform:uppercase;}
+    > ul > li > ul > li > ul > li > a{font:bold 19px/26px $nimbus;margin:0 20px 0 0;text-transform:uppercase;}
 
     > ul > li > ul > li > ul > li > ul{}
     > ul > li > ul > li > ul > li > ul > li{}
-    > ul > li > ul > li > ul > li > ul > li > a{font:18px/25px "minion";margin:0;}
+    > ul > li > ul > li > ul > li > ul > li > a{font:18px/25px $minion;margin:0;}
   }
 }
 
@@ -210,7 +210,7 @@ table{
 */
 .homepage-callout-list { display: block; }
 ol.homepage-callout-list { display: block;
-    > li { font: normal 55px/51px "minion"; text-transform: uppercase; color: white; padding: 12px 20px; }
+    > li { font: normal 55px/51px $minion; text-transform: uppercase; color: white; padding: 12px 20px; }
     > li:nth-child(1) { background: $green; }
     > li:nth-child(2) { background: $red; }
     > li:nth-child(3) { background: $grey; }
@@ -273,8 +273,8 @@ ol.homepage-callout-list { display: block;
 */
 .calendar-callout { display: block; background: $s-grey; padding:23px; }
 .calendar-callout {
-    span { display: block; font: normal 13px/28px "minion"; letter-spacing: 1px; padding-bottom: 5px; border-bottom: 1px solid #000; margin-bottom: 14px; }
-    table { margin-top: 10px; font-family: "nimbus-sans"; font-weight: 700; }
+    span { display: block; font: normal 13px/28px $minion; letter-spacing: 1px; padding-bottom: 5px; border-bottom: 1px solid #000; margin-bottom: 14px; }
+    table { margin-top: 10px; font-family: $nimbus; font-weight: 700; }
     tr { padding-top: 10px; }
     td { padding: 0px 21px 11px 0px; }
 }
@@ -284,35 +284,35 @@ ol.homepage-callout-list { display: block;
 .#{$namespace}info-box {
     .#{$namespace}info-box-header { background: $green; padding: 15px; }
     .#{$namespace}info-box-header {
-        .#{$namespace}info-box-header-title { display: block; text-align: center; text-transform: uppercase; font-size: 18px; font-weight: 600; font-family: "Nimbus-Sans"; color: white; };
+        .#{$namespace}info-box-header-title { display: block; text-align: center; text-transform: uppercase; font-size: 18px; font-weight: 600; font-family: $nimbus; color: white; };
      }
     .#{$namespace}info-box-body { background: $s-grey; padding: 11px 18px; }
     .#{$namespace}info-box-body {
-        .#{$namespace}info-box-body-title { display: block; text-transform: uppercase; font-size: 18px; font-weight: 600; font-family: "Nimbus-Sans-Condensed"; color: $d-grey; line-height: 23px; };
-        .#{$namespace}info-box-body-date { display: block; font-size: 15px; font-weight: 600; font-family: "Nimbus-Sans"; color: $d-grey; };
-        .#{$namespace}info-box-body-excerpt { display: block; font-size: 13px; font-weight: 400; font-family: "Minion"; color: $d-grey; letter-spacing: .05em; line-height: 18px; };
-        .#{$namespace}info-box-body-link { display: block; font-size: 14px; font-weight: 600; font-family: "Minion"; color: $d-grey; margin-top: 17px; font-style: italic; };
+        .#{$namespace}info-box-body-title { display: block; text-transform: uppercase; font-size: 18px; font-weight: 600; font-family: $nimbus-c; color: $d-grey; line-height: 23px; };
+        .#{$namespace}info-box-body-date { display: block; font-size: 15px; font-weight: 600; font-family: $nimbus; color: $d-grey; };
+        .#{$namespace}info-box-body-excerpt { display: block; font-size: 13px; font-weight: 400; font-family: $minion; color: $d-grey; letter-spacing: .05em; line-height: 18px; };
+        .#{$namespace}info-box-body-link { display: block; font-size: 14px; font-weight: 600; font-family: $minion; color: $d-grey; margin-top: 17px; font-style: italic; };
     }
 }
 
 .#{$namespace}short-callout { display: block; border-radius: 10px; background: #f65446; padding: 79px 24px; }
 .#{$namespace}short-callout {
-    span { display: block; font-family: "Nimbus-Sans-Condensed"; font-weight: 600; text-transform: uppercase; text-align: center; font-size: 43px; line-height: 46px; color: white; }
+    span { display: block; font-family: $nimbus-c; font-weight: 600; text-transform: uppercase; text-align: center; font-size: 43px; line-height: 46px; color: white; }
 }
 
 .#{$namespace}social-callout { display: block; }
 .#{$namespace}social-callout {
     .#{$namespace}social-callout-header { background: $blue; padding: 10px; }
     .#{$namespace}social-callout-header {
-        span { display: block; font-family: "Nimbus-Sans"; font-weight: 700; font-size: 19px; line-height: 27px; text-transform: uppercase; color: white; text-align: center; }
+        span { display: block; font-family: $nimbus; font-weight: 700; font-size: 19px; line-height: 27px; text-transform: uppercase; color: white; text-align: center; }
     }
     .#{$namespace}social-callout-body { background: $s-grey; padding: 10px; }
     .#{$namespace}social-callout-body {
         .#{$namespace}social-callout-icon { margin: 4px 3px 7px 15px; float: left; };
         .#{$namespace}social-callout-tweet { background: $blue;padding: 10px 8px; border-radius: 10px; font-size: 13px; line-height: 16px; margin-top: 12px; };
         .#{$namespace}social-callout-tweet {
-            .#{$namespace}social-callout-tweet-content { font-family: "Minion"; color: white; word-wrap: break-word; };
-            .#{$namespace}social-callout-tweet-date { font-family: "Nimbus-Sans"; font-size: 13px; line-height: 16px; color: white; font-weight: 700;  };
+            .#{$namespace}social-callout-tweet-content { font-family: $minion; color: white; word-wrap: break-word; };
+            .#{$namespace}social-callout-tweet-date { font-family: $nimbus; font-size: 13px; line-height: 16px; color: white; font-weight: 700;  };
         };
     }
 }
