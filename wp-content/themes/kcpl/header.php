@@ -8,6 +8,11 @@
 </head>
 <body <?php if(wp_is_mobile()){$mobileClass="KCPLmobile";} body_class($mobileClass);?>>
 <header>
+  <div id="KCPL_header-search">
+     <div class="container">
+        <?php get_search_form(); ?>
+     </div>
+  </div>
   <div id="header-util">
     <div class="container clearfix">
       <div id="header-logo">

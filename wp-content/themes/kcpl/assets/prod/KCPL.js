@@ -6,6 +6,9 @@ jQuery(document).ready(function($){
   try{Typekit.load();}catch(e){}
 
   //header functions
+  $('#header-search').click(function(){
+     $('#KCPL_header-search').toggleClass('active');
+  });
 
   //search functions
   $(document).on('click','#KCPL_search #search-params .bottom > a',function(){

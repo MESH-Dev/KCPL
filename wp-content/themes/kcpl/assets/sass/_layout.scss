@@ -1,5 +1,13 @@
 .container{position:relative;margin:0 auto;width:970px;border-left:1px solid #ccc;border-right:1px solid #ccc;}
 
+//header search
+##{$namespace}header-search{height:51px;background:$l-blue;float:left;width:100%;margin:-51px 0 0;transition:0.2s all;-webkit-transition:0.2s all;-moz-transition:0.2s all;-ms-transition:0.2s all;-o-transition:0.2s all;
+   form{padding:0;margin:0;float:right;width: 290px;border-left: 2px solid #323333;margin: 20px 0 0 0;}
+   input[type="text"]{background: transparent;border: none;font: bold 18px/20px $nimbus-c;padding: 0px 7px;text-transform: uppercase;margin: 0;height: 19px;letter-spacing: 0.09em;}
+   input[type="submit"]{display:none;}
+}
+##{$namespace}header-search.active{margin:0;}
+
 //header - no sass nesting here
 header{width:100%;float:left;}
   header .container{width:988px;}
