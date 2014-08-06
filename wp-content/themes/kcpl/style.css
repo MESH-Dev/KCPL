@@ -1395,56 +1395,99 @@ or wrap each row of columns in a <div class="row"> */
 }
 
 /* line 4, assets/sass/_layout.scss */
+#KCPL_header-search {
+  height: 51px;
+  background: #61a2d7;
+  float: left;
+  width: 100%;
+  margin: -51px 0 0;
+  transition: 0.2s all;
+  -webkit-transition: 0.2s all;
+  -moz-transition: 0.2s all;
+  -ms-transition: 0.2s all;
+  -o-transition: 0.2s all;
+}
+/* line 5, assets/sass/_layout.scss */
+#KCPL_header-search form {
+  padding: 0;
+  margin: 0;
+  float: right;
+  width: 290px;
+  border-left: 2px solid #323333;
+  margin: 20px 0 0 0;
+}
+/* line 6, assets/sass/_layout.scss */
+#KCPL_header-search input[type="text"] {
+  background: transparent;
+  border: none;
+  font: bold 18px/20px "nimbus-sans-condensed";
+  padding: 0px 7px;
+  text-transform: uppercase;
+  margin: 0;
+  height: 19px;
+  letter-spacing: 0.09em;
+}
+/* line 7, assets/sass/_layout.scss */
+#KCPL_header-search input[type="submit"] {
+  display: none;
+}
+
+/* line 9, assets/sass/_layout.scss */
+#KCPL_header-search.active {
+  margin: 0;
+}
+
+/* line 12, assets/sass/_layout.scss */
 header {
   width: 100%;
   float: left;
 }
 
-/* line 5, assets/sass/_layout.scss */
+/* line 13, assets/sass/_layout.scss */
 header .container {
   width: 988px;
 }
 
-/* line 6, assets/sass/_layout.scss */
+/* line 14, assets/sass/_layout.scss */
 header > * {
   width: 100%;
   float: left;
   position: relative;
 }
 
-/* line 7, assets/sass/_layout.scss */
+/* line 15, assets/sass/_layout.scss */
 #header-logo {
   position: absolute;
   top: 0;
 }
 
-/* line 8, assets/sass/_layout.scss */
+/* line 16, assets/sass/_layout.scss */
 header #header-util {
   background: #e2e2e2;
   height: 45px;
   z-index: 2;
 }
 
-/* line 9, assets/sass/_layout.scss */
+/* line 17, assets/sass/_layout.scss */
 header #header-util .gutter {
   padding: 0 0 0 228px;
 }
 
-/* line 10, assets/sass/_layout.scss */
+/* line 18, assets/sass/_layout.scss */
 #header-util ul#util_nav {
   float: left;
   width: 515px;
   list-style: none;
 }
 
-/* line 11, assets/sass/_layout.scss */
+/* line 19, assets/sass/_layout.scss */
 #header-util ul#util_nav li {
   font: 12px/12px "minion";
   float: left;
   margin: 0;
 }
 
-/* line 12, assets/sass/_layout.scss */
+/* line 20, assets/sass/_layout.scss */
 #header-util ul#util_nav li a {
   color: #353535;
   padding: 22px 10px 11px;
@@ -1453,31 +1496,31 @@ header #header-util .gutter {
   min-width: 33px;
 }
 
-/* line 13, assets/sass/_layout.scss */
+/* line 21, assets/sass/_layout.scss */
 #header-util ul#util_nav ul {
   display: none;
   list-style: none;
 }
 
-/* line 15, assets/sass/_layout.scss */
+/* line 23, assets/sass/_layout.scss */
 #header-util #header-extra {
   float: right;
   width: 245px;
 }
 
-/* line 16, assets/sass/_layout.scss */
+/* line 24, assets/sass/_layout.scss */
 #header-extra > * {
   float: left;
   color: #353535;
   font: 11px/11px "nimbus-sans";
 }
 
-/* line 17, assets/sass/_layout.scss */
+/* line 25, assets/sass/_layout.scss */
 #header-extra #header-search {
   width: 80px;
 }
 
-/* line 18, assets/sass/_layout.scss */
+/* line 26, assets/sass/_layout.scss */
 #header-extra #header-search b {
   height: 17px;
   width: 19px;
@@ -1487,19 +1530,19 @@ header #header-util .gutter {
   margin: 19px 0 0 1px;
 }
 
-/* line 19, assets/sass/_layout.scss */
+/* line 27, assets/sass/_layout.scss */
 #header-extra #header-search span {
   margin: 23px 0 0 7px;
   float: left;
   letter-spacing: 0.045em;
 }
 
-/* line 20, assets/sass/_layout.scss */
+/* line 28, assets/sass/_layout.scss */
 #header-extra #header-newsletter {
   width: 115px;
 }
 
-/* line 21, assets/sass/_layout.scss */
+/* line 29, assets/sass/_layout.scss */
 #header-extra #header-newsletter b {
   height: 17px;
   width: 23px;
@@ -1509,51 +1552,51 @@ header #header-util .gutter {
   margin: 17px 0 0 10px;
 }
 
-/* line 22, assets/sass/_layout.scss */
+/* line 30, assets/sass/_layout.scss */
 #header-extra #header-newsletter span {
   margin: 23px 0 0 8px;
   float: left;
   letter-spacing: 0.08em;
 }
 
-/* line 23, assets/sass/_layout.scss */
+/* line 31, assets/sass/_layout.scss */
 #header-extra #header-login {
   position: absolute;
   top: 0;
   right: 0;
 }
 
-/* line 25, assets/sass/_layout.scss */
+/* line 33, assets/sass/_layout.scss */
 header #header-nav {
   background: #137cc1;
   height: 47px;
   z-index: 1;
 }
 
-/* line 26, assets/sass/_layout.scss */
+/* line 34, assets/sass/_layout.scss */
 header #header-nav .gutter {
   padding: 0 0 0 210px;
 }
 
-/* line 27, assets/sass/_layout.scss */
+/* line 35, assets/sass/_layout.scss */
 header #header-nav ul#main_nav {
   float: left;
   width: 744px;
   list-style: none;
 }
 
-/* line 28, assets/sass/_layout.scss */
+/* line 36, assets/sass/_layout.scss */
 ul#main_nav li {
   margin: 0;
 }
 
-/* line 29, assets/sass/_layout.scss */
+/* line 37, assets/sass/_layout.scss */
 header #header-nav ul#main_nav > li {
   float: left;
   position: relative;
 }
 
-/* line 30, assets/sass/_layout.scss */
+/* line 38, assets/sass/_layout.scss */
 header #header-nav ul#main_nav > li > a {
   color: #fff;
   font: bold 23px/23px "nimbus-sans-condensed";
@@ -1563,12 +1606,12 @@ header #header-nav ul#main_nav > li > a {
   letter-spacing: 0.05em;
 }
 
-/* line 31, assets/sass/_layout.scss */
+/* line 39, assets/sass/_layout.scss */
 header #header-nav ul#main_nav > li:hover > a {
   color: #323333;
 }
 
-/* line 33, assets/sass/_layout.scss */
+/* line 41, assets/sass/_layout.scss */
 header #header-nav ul#main_nav > li > ul {
   display: none;
   position: absolute;
@@ -1580,12 +1623,12 @@ header #header-nav ul#main_nav > li > ul {
   list-style: none;
 }
 
-/* line 34, assets/sass/_layout.scss */
+/* line 42, assets/sass/_layout.scss */
 header #header-nav ul#main_nav > li:hover > ul {
   display: block;
 }
 
-/* line 36, assets/sass/_layout.scss */
+/* line 44, assets/sass/_layout.scss */
 header #header-nav ul#main_nav > li > ul > li > a {
   color: #fff;
   font: bold 17px/17px "nimbus-sans-condensed";
@@ -1596,30 +1639,30 @@ header #header-nav ul#main_nav > li > ul > li > a {
   word-spacing: 0.1em;
 }
 
-/* line 37, assets/sass/_layout.scss */
+/* line 45, assets/sass/_layout.scss */
 header #header-nav ul#main_nav > li > ul > li:hover > a {
   color: #323333;
 }
 
-/* line 39, assets/sass/_layout.scss */
+/* line 47, assets/sass/_layout.scss */
 header #header-nav ul#main_nav > li > ul > li > ul {
   display: none;
 }
 
-/* line 43, assets/sass/_layout.scss */
+/* line 51, assets/sass/_layout.scss */
 #content {
   float: left;
   width: 100%;
 }
 
-/* line 52, assets/sass/_layout.scss */
+/* line 60, assets/sass/_layout.scss */
 footer {
   background: #c5c5c5;
   float: left;
   width: 100%;
 }
 
-/* line 53, assets/sass/_layout.scss */
+/* line 61, assets/sass/_layout.scss */
 footer {
   /*
     Footer Location Widget
@@ -1635,38 +1678,38 @@ footer {
     </div>
   */
 }
-/* line 57, assets/sass/_layout.scss */
+/* line 65, assets/sass/_layout.scss */
 footer .container > .gutter {
   padding: 30px 0px;
 }
-/* line 58, assets/sass/_layout.scss */
+/* line 66, assets/sass/_layout.scss */
 footer .title {
   font: bold 13px/18px "nimbus-sans";
   text-transform: uppercase;
   color: #323333;
   display: block;
 }
-/* line 59, assets/sass/_layout.scss */
+/* line 67, assets/sass/_layout.scss */
 footer .columns {
   min-height: 10px;
 }
-/* line 74, assets/sass/_layout.scss */
+/* line 82, assets/sass/_layout.scss */
 footer .footer-location-widget {
   color: #7d7d7d;
   margin: 0 0 18px;
 }
-/* line 76, assets/sass/_layout.scss */
+/* line 84, assets/sass/_layout.scss */
 footer .footer-location-widget .hour-cont {
   display: block;
 }
-/* line 77, assets/sass/_layout.scss */
+/* line 85, assets/sass/_layout.scss */
 footer .footer-location-widget .hours {
   font: 13px/12px "minion";
   font-style: italic;
   color: #323333;
   letter-spacing: 0.035em;
 }
-/* line 78, assets/sass/_layout.scss */
+/* line 86, assets/sass/_layout.scss */
 footer .footer-location-widget .open, footer .footer-location-widget .closed {
   font: 13px/12px "nimbus-sans-condensed";
   color: #323333;
@@ -1674,11 +1717,11 @@ footer .footer-location-widget .open, footer .footer-location-widget .closed {
   margin: 0 0 0 -2px;
   word-spacing: 0.05em;
 }
-/* line 79, assets/sass/_layout.scss */
+/* line 87, assets/sass/_layout.scss */
 footer .footer-location-widget .open {
   color: #f65446;
 }
-/* line 80, assets/sass/_layout.scss */
+/* line 88, assets/sass/_layout.scss */
 footer .footer-location-widget .address {
   font: 12px/18px "minion";
   display: block;
@@ -1686,16 +1729,16 @@ footer .footer-location-widget .address {
   letter-spacing: 0.06em;
   word-spacing: 0.015em;
 }
-/* line 83, assets/sass/_layout.scss */
+/* line 91, assets/sass/_layout.scss */
 footer #social_navCont {
   display: block;
   margin: 15px 0 0;
 }
-/* line 85, assets/sass/_layout.scss */
+/* line 93, assets/sass/_layout.scss */
 footer #social_navCont ul {
   width: 170px;
 }
-/* line 86, assets/sass/_layout.scss */
+/* line 94, assets/sass/_layout.scss */
 footer #social_navCont ul li {
   color: #fff;
   overflow: hidden;
@@ -1706,7 +1749,7 @@ footer #social_navCont ul li {
   margin: 0 20px 20px 0;
   background: #137cc1;
 }
-/* line 87, assets/sass/_layout.scss */
+/* line 95, assets/sass/_layout.scss */
 footer #social_navCont ul li:before {
   position: absolute;
   top: 32%;
@@ -1714,7 +1757,7 @@ footer #social_navCont ul li:before {
   font-size: 19px;
   z-index: 1;
 }
-/* line 94, assets/sass/_layout.scss */
+/* line 102, assets/sass/_layout.scss */
 footer #social_navCont ul li a {
   color: transparent;
   display: block;
@@ -1723,21 +1766,21 @@ footer #social_navCont ul li a {
   position: absolute;
   z-index: 2;
 }
-/* line 95, assets/sass/_layout.scss */
+/* line 103, assets/sass/_layout.scss */
 footer #social_navCont ul ul {
   display: none;
 }
-/* line 98, assets/sass/_layout.scss */
+/* line 106, assets/sass/_layout.scss */
 footer #footer-donate {
   color: #323333;
   font: bold 12px/12px "minion";
 }
-/* line 100, assets/sass/_layout.scss */
+/* line 108, assets/sass/_layout.scss */
 footer #footer-donate span {
   margin: 3px 0 18px;
   display: block;
 }
-/* line 101, assets/sass/_layout.scss */
+/* line 109, assets/sass/_layout.scss */
 footer #footer-donate a {
   text-align: center;
   padding: 7px 10px 8px;
