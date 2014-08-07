@@ -901,22 +901,45 @@ font: 14px/18px $nimbus;}
 
 
 /* Listing Style 4
-
+   <div class="KCPL_listing4">
+     <span class="title KCPL_background-COLORNAME">title</span>
+     <div class="gutter">
+        <div class="row">
+           <div class="entry">
+               <div class="image">image</div>
+               <div class="number">#</div>
+               <div class="content">
+                 <span class="entry-title">title</span>
+                 <span class="entry-author">author</span>
+               </div>
+           </div>
+           <div class="entry">
+               <div class="image">image</div>
+               <div class="number">#</div>
+               <div class="content">
+                 <span class="entry-title">title</span>
+                 <span class="entry-author">author</span>
+               </div>
+           </div>
+        </div>
+     </div>
+   </div>
 */
 .#{$namespace}listing4{display:block;background:#e2e2e2;
    .title{color:#fff;font:bold 18px/18px $nimbus;display:block;text-align:center;text-transform:uppercase;padding:15px 10px 15px;}
-   .gutter{padding:2px;}
-   .row{display:block;
+   .gutter{padding:20px 19px;}
+   .row{display:block;margin:0 0 40px;
       .entry{display:block;float:left;width:50%;
-         .image{width:50px;float:left;}
-         .number{width:50px;float:left;font:12px/12px $minion;}
-         .content{width:50px;float:left;
-            .entry-title{display:block;font:bold 12px/12px $nimbus-c;}
-            .entry-author{display:block;font:12px/12px $minion;}
+         .image{width:33px;float:left;}
+         .number{width: 57px;float: left;font: 52px/30px $minion;text-align: center;}
+         .content{width:190px;float:left;
+            .entry-title{display:block;font:bold 20px/20px $nimbus-c;text-transform:uppercase;}
+            .entry-author{display:block;font:15px/22px $minion;}
          }
       }
    }
 }
+
 
 /* Horizontal Callouts
    //single line

@@ -20,7 +20,7 @@
              <div class="gutter">
                 <div class="row">
                    <div class="entry">
-                      <div class="image"></div>
+                      <div class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/phIMG.png"/></div>
                       <div class="number">1</div>
                       <div class="content">
                         <span class="entry-title">Very long three line title this is the long title it is crazy long</span>
@@ -28,7 +28,7 @@
                       </div>
                    </div>
                    <div class="entry">
-                      <div class="image"></div>
+                      <div class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/phIMG.png"/></div>
                       <div class="number">1</div>
                       <div class="content">
                         <span class="entry-title">Very long three line title this is the long title it is crazy long</span>
@@ -38,7 +38,7 @@
                 </div>
                 <div class="row">
                    <div class="entry">
-                      <div class="image"></div>
+                      <div class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/phIMG.png"/></div>
                       <div class="number">1</div>
                       <div class="content">
                         <span class="entry-title">Very long three line title this is the long title it is crazy long</span>
@@ -46,7 +46,7 @@
                       </div>
                    </div>
                    <div class="entry">
-                      <div class="image"></div>
+                      <div class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/phIMG.png"/></div>
                       <div class="number">1</div>
                       <div class="content">
                         <span class="entry-title">Very long three line title this is the long title it is crazy long</span>
