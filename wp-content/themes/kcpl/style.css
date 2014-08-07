@@ -3297,13 +3297,35 @@ ol.homepage-callout-list > li:nth-child(4) {
   font-style: italic;
 }
 
-/* Horizontal Callouts */
-/* line 783, assets/sass/_elements.scss */
+/* Horizontal Callouts
+   //single line
+   <div class="KCPL_horz-single red">
+     <div class="gutter">
+        <span>Short Callouts</span>
+     </div>
+   </div>
+
+   //multi line
+   <div class="KCPL_horz-multi blue">
+     <div class="gutter">
+        <span>Medium Length Callout This is What</span>
+     </div>
+   </div>
+
+   //multi line w/ link
+   <div class="KCPL_horz-multi green">
+     <div class="gutter">
+        <span>Medium Length Callout</span>
+        <a class="KCPL_readmore" href="#">Read More ≈</a>
+     </div>
+   </div>
+*/
+/* line 805, assets/sass/_elements.scss */
 a > .KCPL_horz-single {
   color: #fff;
 }
 
-/* line 784, assets/sass/_elements.scss */
+/* line 806, assets/sass/_elements.scss */
 .KCPL_horz-single {
   font: bold 42px/42px "nimbus-sans-condensed";
   color: #fff;
@@ -3312,86 +3334,86 @@ a > .KCPL_horz-single {
   border-radius: 11px;
   text-align: center;
 }
-/* line 785, assets/sass/_elements.scss */
+/* line 807, assets/sass/_elements.scss */
 .KCPL_horz-single .gutter {
   padding: 5px 5px 2px;
   border: 1px solid #fff;
 }
-/* line 786, assets/sass/_elements.scss */
+/* line 808, assets/sass/_elements.scss */
 .KCPL_horz-single span {
   padding: 0;
 }
-/* line 787, assets/sass/_elements.scss */
+/* line 809, assets/sass/_elements.scss */
 .KCPL_horz-single a {
   padding: 0;
 }
 
-/* line 789, assets/sass/_elements.scss */
+/* line 811, assets/sass/_elements.scss */
 .KCPL_horz-single.red {
   background: #f65446;
 }
 
-/* line 790, assets/sass/_elements.scss */
+/* line 812, assets/sass/_elements.scss */
 .KCPL_horz-single.blue {
   background: #137cc1;
 }
 
-/* line 791, assets/sass/_elements.scss */
+/* line 813, assets/sass/_elements.scss */
 .KCPL_horz-single.green {
   background: #65a893;
 }
 
-/* line 792, assets/sass/_elements.scss */
+/* line 814, assets/sass/_elements.scss */
 .KCPL_horz-single.yellow {
   background: #ffa751;
 }
 
-/* line 793, assets/sass/_elements.scss */
+/* line 815, assets/sass/_elements.scss */
 .KCPL_horz-single.grey {
   background: #76849a;
 }
 
-/* line 795, assets/sass/_elements.scss */
+/* line 817, assets/sass/_elements.scss */
 .KCPL_horz-multi {
   border-radius: 11px;
   color: #fff;
 }
-/* line 796, assets/sass/_elements.scss */
+/* line 818, assets/sass/_elements.scss */
 .KCPL_horz-multi .gutter {
   padding: 14px 27px 13px;
 }
-/* line 797, assets/sass/_elements.scss */
+/* line 819, assets/sass/_elements.scss */
 .KCPL_horz-multi span {
   font: bold 20px/23px "nimbus-sans";
   text-transform: uppercase;
   display: block;
 }
-/* line 798, assets/sass/_elements.scss */
+/* line 820, assets/sass/_elements.scss */
 .KCPL_horz-multi a {
   color: #fff;
 }
 
-/* line 800, assets/sass/_elements.scss */
+/* line 822, assets/sass/_elements.scss */
 .KCPL_horz-multi.red {
   background: #f65446;
 }
 
-/* line 801, assets/sass/_elements.scss */
+/* line 823, assets/sass/_elements.scss */
 .KCPL_horz-multi.blue {
   background: #137cc1;
 }
 
-/* line 802, assets/sass/_elements.scss */
+/* line 824, assets/sass/_elements.scss */
 .KCPL_horz-multi.green {
   background: #65a893;
 }
 
-/* line 803, assets/sass/_elements.scss */
+/* line 825, assets/sass/_elements.scss */
 .KCPL_horz-multi.yellow {
   background: #ffa751;
 }
 
-/* line 804, assets/sass/_elements.scss */
+/* line 826, assets/sass/_elements.scss */
 .KCPL_horz-multi.grey {
   background: #76849a;
 }

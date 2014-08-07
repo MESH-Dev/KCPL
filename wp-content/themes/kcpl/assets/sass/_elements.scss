@@ -779,7 +779,29 @@ ol.homepage-callout-list { display: block;
 }
 
 
-/* Horizontal Callouts */
+/* Horizontal Callouts
+   //single line
+   <div class="KCPL_horz-single red">
+     <div class="gutter">
+        <span>Short Callouts</span>
+     </div>
+   </div>
+
+   //multi line
+   <div class="KCPL_horz-multi blue">
+     <div class="gutter">
+        <span>Medium Length Callout This is What</span>
+     </div>
+   </div>
+
+   //multi line w/ link
+   <div class="KCPL_horz-multi green">
+     <div class="gutter">
+        <span>Medium Length Callout</span>
+        <a class="KCPL_readmore" href="#">Read More ≈</a>
+     </div>
+   </div>
+*/
 a > .#{$namespace}horz-single{color:#fff;}
 .#{$namespace}horz-single{font:bold 42px/42px $nimbus-c;color:#fff;padding: 9px 27px 12px 18px;text-transform:uppercase;border-radius:11px;text-align:center;
    .gutter{padding:5px 5px 2px;border:1px solid #fff;}
