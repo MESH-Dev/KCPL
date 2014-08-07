@@ -830,7 +830,7 @@ a > .#{$namespace}horz-single{color:#fff;}
    //talk box miltiple fonts
 
 
-   //mulit font horizontal callout
+   //multi font horizontal callout
 
 
 */
@@ -846,6 +846,9 @@ a > .#{$namespace}horz-single{color:#fff;}
 .#{$namespace}horz-talkbox-fonts.#{$namespace}background-grey:after{background-position:-14px 0;}
 .#{$namespace}horz-talkbox-fonts.#{$namespace}background-yellow:after{background-position:0 0;}
 
-.#{$namespace}horz-fonts{padding:0;color:#fff;
-
+.#{$namespace}horz-fonts{padding:10px 13px;color:#fff;text-align:center;border-radius:10px;
+   .gutter{border:1px solid #fff;padding:15px 2px 16px;}
+   span{text-transform:uppercase;display:inline-block;vertical-align:bottom;font-size:18px;line-height:18px;}
+   .#{$namespace}font-nimbus-condensed{font-weight:bold;margin:0 4px 0 0;}
+   .#{$namespace}font-minion{}
 }

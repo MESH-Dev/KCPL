@@ -3422,7 +3422,7 @@ a > .KCPL_horz-single {
    //talk box miltiple fonts
 
 
-   //mulit font horizontal callout
+   //multi font horizontal callout
 
 
 */
@@ -3489,6 +3489,26 @@ a > .KCPL_horz-single {
 
 /* line 849, assets/sass/_elements.scss */
 .KCPL_horz-fonts {
-  padding: 0;
+  padding: 10px 13px;
   color: #fff;
+  text-align: center;
+  border-radius: 10px;
+}
+/* line 850, assets/sass/_elements.scss */
+.KCPL_horz-fonts .gutter {
+  border: 1px solid #fff;
+  padding: 15px 2px 16px;
+}
+/* line 851, assets/sass/_elements.scss */
+.KCPL_horz-fonts span {
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 18px;
+  line-height: 18px;
+}
+/* line 852, assets/sass/_elements.scss */
+.KCPL_horz-fonts .KCPL_font-nimbus-condensed {
+  font-weight: bold;
+  margin: 0 4px 0 0;
 }
