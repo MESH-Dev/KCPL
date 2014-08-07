@@ -296,14 +296,14 @@ ol.homepage-callout-list { display: block;
 .#{$namespace}info-box {
     .#{$namespace}info-box-header { background: $green; padding: 15px; }
     .#{$namespace}info-box-header {
-        .#{$namespace}info-box-header-title { display: block; text-align: center; text-transform: uppercase; font-size: 18px; font-weight: 600; font-family: "Nimbus-Sans"; color: white; };
+        .#{$namespace}info-box-header-title { display: block; text-align: center; text-transform: uppercase; font-size: 18px; font-weight: 600; font-family: $nimbus; color: white; };
      }
     .#{$namespace}info-box-body { background: $s-grey; padding: 11px 18px; }
     .#{$namespace}info-box-body {
-        .#{$namespace}info-box-body-title { display: block; text-transform: uppercase; font-size: 18px; font-weight: 600; font-family: "Nimbus-Sans-Condensed"; color: $d-grey; line-height: 23px; };
-        .#{$namespace}info-box-body-date { display: block; font-size: 15px; font-weight: 600; font-family: "Nimbus-Sans"; color: $d-grey; };
-        .#{$namespace}info-box-body-excerpt { display: block; font-size: 13px; font-weight: 400; font-family: "Minion"; color: $d-grey; letter-spacing: .05em; line-height: 18px; };
-        .#{$namespace}info-box-body-link { display: block; font-size: 14px; font-weight: 600; font-family: "Minion"; color: $d-grey; margin-top: 17px; font-style: italic; };
+        .#{$namespace}info-box-body-title { display: block; text-transform: uppercase; font-size: 18px; font-weight: 600; font-family: $nimbus-c; color: $d-grey; line-height: 23px; };
+        .#{$namespace}info-box-body-date { display: block; font-size: 15px; font-weight: 600; font-family: $nimbus; color: $d-grey; };
+        .#{$namespace}info-box-body-excerpt { display: block; font-size: 13px; font-weight: 400; font-family: $minion; color: $d-grey; letter-spacing: .05em; line-height: 18px; };
+        .#{$namespace}info-box-body-link { display: block; font-size: 14px; font-weight: 600; font-family: $minion; color: $d-grey; margin-top: 17px; font-style: italic; };
     }
 }
 
@@ -314,7 +314,7 @@ ol.homepage-callout-list { display: block;
 */
 .#{$namespace}short-callout { display: block; border-radius: 10px; background: #f65446; padding: 79px 24px; }
 .#{$namespace}short-callout {
-    span { display: block; font-family: "Nimbus-Sans-Condensed"; font-weight: 600; text-transform: uppercase; text-align: center; font-size: 43px; line-height: 46px; color: white; }
+    span { display: block; font-family: $nimbus-c; font-weight: 600; text-transform: uppercase; text-align: center; font-size: 43px; line-height: 46px; color: white; }
 }
 
 /*
@@ -343,15 +343,15 @@ ol.homepage-callout-list { display: block;
 .#{$namespace}social-callout {
     .#{$namespace}social-callout-header { background: $blue; padding: 10px; }
     .#{$namespace}social-callout-header {
-        span { display: block; font-family: "Nimbus-Sans"; font-weight: 700; font-size: 19px; line-height: 27px; text-transform: uppercase; color: white; text-align: center; }
+        span { display: block; font-family: $nimbus; font-weight: 700; font-size: 19px; line-height: 27px; text-transform: uppercase; color: white; text-align: center; }
     }
     .#{$namespace}social-callout-body { background: $s-grey; padding: 10px; }
     .#{$namespace}social-callout-body {
         .#{$namespace}social-callout-icon { margin: 4px 3px 7px 15px; float: left; };
         .#{$namespace}social-callout-tweet { background: $blue;padding: 10px 8px; border-radius: 10px; font-size: 13px; line-height: 16px; margin-top: 12px; };
         .#{$namespace}social-callout-tweet {
-            .#{$namespace}social-callout-tweet-content { font-family: "Minion"; color: white; word-wrap: break-word; };
-            .#{$namespace}social-callout-tweet-date { font-family: "Nimbus-Sans"; font-size: 13px; line-height: 16px; color: white; font-weight: 700;  };
+            .#{$namespace}social-callout-tweet-content { font-family: $minion; color: white; word-wrap: break-word; };
+            .#{$namespace}social-callout-tweet-date { font-family: $nimbus; font-size: 13px; line-height: 16px; color: white; font-weight: 700;  };
         };
     }
 }
@@ -767,11 +767,11 @@ ol.homepage-callout-list { display: block;
 .#{$namespace}listing-style-3 {
     .#{$namespace}listing-style-3-header { background: $yellow; padding: 15px; }
     .#{$namespace}listing-style-3-header {
-        span { display: block; font-family: "Nimbus-Sans"; font-weight: 700; font-size: 19px; line-height: 21px; text-transform: uppercase; color: white; text-align: center; }
+        span { display: block; font-family: $nimbus; font-weight: 700; font-size: 19px; line-height: 21px; text-transform: uppercase; color: white; text-align: center; }
     }
     .#{$namespace}listing-style-3-body { background: $s-grey; padding: 11px 18px; }
     .#{$namespace}listing-style-3-body {
-        .#{$namespace}listing-style-3-body-title { display: block; text-transform: uppercase; font-size: 18px; font-weight: 600; font-family: "Nimbus-Sans-Condensed"; color: $d-grey; line-height: 23px; }
+        .#{$namespace}listing-style-3-body-title { display: block; text-transform: uppercase; font-size: 18px; font-weight: 600; font-family: $nimbus-c; color: $d-grey; line-height: 23px; }
         .#{$namespace}listing-style-3-body-date { display: block; font-size: 15px; font-weight: 600; font-family: "Nimbus-Sans"; color: $d-grey; }
         .#{$namespace}listing-style-3-body-excerpt { display: inline; font-size: 13px; font-weight: 400; font-family: "Minion"; color: $d-grey; letter-spacing: .05em; line-height: 18px; }
         .#{$namespace}listing-style-3-body-link { display: inline; font-size: 14px; font-weight: 700; font-family: "Minion"; color: $d-grey; font-style: italic; }
@@ -793,8 +793,8 @@ a > .#{$namespace}horz-single{color:#fff;}
 .#{$namespace}horz-single.grey{background:$grey;}
 
 .#{$namespace}horz-multi{border-radius:11px;color:#fff;
-   .gutter{padding:0;}
-   span{font:bold 12px/12px $nimbus;text-transform:uppercase;}
+   .gutter{padding: 14px 27px 13px;}
+   span{font: bold 20px/23px $nimbus;text-transform: uppercase;display: block;}
    a{color:#fff;}
 }
 .#{$namespace}horz-multi.red{background:$red;}
