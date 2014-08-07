@@ -13,27 +13,23 @@
    <div class="container">
 
      <div class="row">
-       <div class="columns four alpha clearfix">
-          <div class="KCPL_horz-single red">
-             <div class="gutter">
-                <span>Short Callouts</span>
-             </div>
+       <div class="columns two alpha clearfix">
+
+          <div class="KCPL_horz-talkbox-fonts KCPL_background-blue">
+             <span class="KCPL_font-nimbus-condensed">Get Your Free</span>
+             <span class="KCPL_font-minion">Library Card</span>
           </div>
+
        </div>
        <div class="columns four clearfix">
-          <div class="KCPL_horz-multi blue">
+
+          <div class="KCPL_horz-fonts KCPL_background-green">
              <div class="gutter">
-                <span>Medium Length Callout This is What</span>
+                <span class="KCPL_font-nimbus-condensed">Get Your Free</span>
+                <span class="KCPL_font-minion">Library Card</span>
              </div>
           </div>
-       </div>
-       <div class="columns four omega clearfix">
-          <div class="KCPL_horz-multi green">
-             <div class="gutter">
-                <span>Medium Length Callout</span>
-                <a class="KCPL_readmore" href="#">Read More ≈</a>
-             </div>
-          </div>
+
        </div>
      </div>
 
