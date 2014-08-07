@@ -787,9 +787,73 @@ ol.homepage-callout-list { display: block;
 
 
 /* Listing Style 2
+   //events
+   <div class="KCPL_listing2-event KCPL_background-COLORNAME">
+     <span class="title">title</span>
+     <div class="gutter">
+        <div class="entry">
+           <div class="left">
+               <span class="entry-title">title</span>
+           </div>
+           <div class="right">
+               <span class="entry-date">date time</span>
+               <span class="entry-loc">location</span>
+               <div class="entry-tags">
+                 <a href="#">tags</a>
+               </div>
+           </div>
+        </div>
+        <a href="#" class="KCPL_readmore">More Events ≈</a>
+     </div>
+   </div>
 
+   //class
+   <div class="KCPL_listing2-class KCPL_background-COLORNAME">
+     <span class="title">title</span>
+     <div class="gutter">
+         <div class="entry">
+            <div class="left">
+               <span class="entry-title">title</span>
+            </div>
+            <div class="right">
+               <p>content</p>
+            </div>
+         </div>
+         <a href="#" class="KCPL_readmore">More Events ≈</a>
+     </div>
+   </div>
 */
+.#{$namespace}listing2-event{
+   .title{color:#323333;font:bold 18px/18px $nimbus;display:block;text-align:center;text-transform:uppercase;padding:15px 10px 15px;border-bottom:2px solid #323333;position:relative;margin:0 0 5px;}
+   .title:after{position:absolute;content:'';bottom:-7px;left:0;width:100%;border-bottom:2px solid #323333;}
+   .gutter{padding:0 20px;
+      > a{color:#323333;display:block;text-align:center;margin:0;padding:12px 0 16px;}
+   }
+   .entry{display:table;
+      .left{display:table-cell;border-right:1px solid #323333;height:100%;vertical-align:top;width:132px;padding:7px 0 0 0;}
+      .right{display:table-cell;height:100%;vertical-align:top;padding:12px 0 57px 13px;}
+      .entry-title{font:bold 17px/26px $nimbus-c;display:block;text-transform:uppercase;letter-spacing:0.09em;}
+      .entry-date{font:bold 14px/15px $nimbus;display:block;margin:0 0 2px;letter-spacing:0.025em;}
+      .entry-loc{font:13px/18px $minion;display:block;letter-spacing:0.095em;}
+      .entry-tags{display:block;
+         a{font:12px/12px $nimbus;color:#323333;letter-spacing:0.065em;}
+      }
+   }
+}
 
+.#{$namespace}listing2-class{
+   .title{color:#323333;font:bold 18px/18px $nimbus;display:block;text-align:center;text-transform:uppercase;padding:15px 10px 15px;border-bottom:2px solid #323333;position:relative;}
+   .gutter{padding:0 20px;
+      > a{color:#323333;display:block;text-align:center;margin:0;padding:12px 0 16px;}
+   }
+   .entry{display:table;
+      .left{display:table-cell;border-right:1px solid #323333;height:100%;vertical-align:top;width: 128px;padding: 13px 0 0 5px;}
+      .right{display:table-cell;height:100%;vertical-align:top;padding:16px 0 2px 11px;
+font: 14px/18px $nimbus;}
+      .entry-title{font:bold 17px/26px $nimbus-c;display:block;text-transform:uppercase;letter-spacing:0.09em;}
+      a{color:#323333;}
+   }
+}
 
 // Listing Style 3
 /*

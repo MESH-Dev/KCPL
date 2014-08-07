@@ -15,44 +15,76 @@
      <div class="row">
        <div class="columns four alpha clearfix">
 
-          <div class="KCPL_listing1-article KCPL_background-red">
-             <span class="title">Research Guides</span>
+          <div class="KCPL_listing2-cal KCPL_background-blue">
+             <span class="title">Featured Events</span>
              <div class="gutter">
                 <div class="entry">
-                   <span class="entry-title">Curated Research Topic</span>
-                   <div class="entry-excerpt">
-                      This topic is Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna purus, rutrum.
+                   <div class="left">
+                      <span class="entry-title">Topic Name</span>
                    </div>
-                   <a href="#" class="KCPL_readmore">Learn more ≈</a>
+                   <div class="right">
+                      <span class="entry-date">April 10, 3PM</span>
+                      <span class="entry-loc">Main Charleston Library</span>
+                      <div class="entry-tags">
+                        <a href="#">Teens</a> ,
+                        <a href="#">Screenings</a> ,
+                        <a href="#">Lectures</a> ,
+                        <a href="#">History</a> ,
+                        <a href="#">Technology</a> ,
+                        <a href="#">Adults</a> ,
+                        <a href="#">Poetry</a>
+                      </div>
+                   </div>
                 </div>
                 <div class="entry">
-                   <span class="entry-title">Curated Research Topic With A Much Longer Name Like This</span>
-                   <div class="entry-excerpt">
-                      This topic is Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna purus, rutrum.
+                   <div class="left">
+                      <span class="entry-title">Feed Your Head Lunchtime Program: I'm a Really Fun-Gi: Mushroom Growing 101</span>
                    </div>
-                   <a href="#" class="KCPL_readmore">Learn more ≈</a>
+                   <div class="right">
+                      <span class="entry-date">April 10, 3PM</span>
+                      <span class="entry-loc">Main Charleston Library Long Name of location and a lot of details</span>
+                      <div class="entry-tags">
+                        <a href="#">Teens</a> ,
+                        <a href="#">Screenings</a> ,
+                        <a href="#">Lectures</a>
+                      </div>
+                   </div>
                 </div>
+                <a href="#" class="KCPL_readmore">More Events ≈</a>
              </div>
           </div>
 
        </div>
        <div class="columns four clearfix">
 
-         <div class="KCPL_listing1-list KCPL_background-grey">
-            <span class="title">Link Listing</span>
-            <div class="gutter">
-               <span class="list-title">Title Title Goes Here</span>
-               <ul>
-                  <li><a href="#">www.url.com</a></li>
-                  <li><a href="#">www.url.com</a></li>
-                  <li><a href="#">www.url.com</a></li>
-                  <li><a href="#">www.url.com</a></li>
-                  <li><a href="#">www.url.com</a></li>
-                  <li><a href="#">www.url.com</a></li>
-                  <li><a href="#">www.url.com</a></li>
-               </ul>
-               <a href="#" class="KCPL_readmore">More Info ≈</a>
-            </div>
+         <div class="KCPL_listing2-class KCPL_background-green">
+           <span class="title">Online Classes</span>
+           <div class="gutter">
+               <div class="entry">
+                  <div class="left">
+                     <span class="entry-title">Topic Name</span>
+                  </div>
+                  <div class="right">
+                     <p><strong>Resource</strong><br>
+                        <a href="#">www.url.com</a><br>
+                        <strong>Resource</strong><br>
+                        <a href="#">www.url.com</a><br>
+                        <a href="#">www.url.com</a>
+                     </p>
+                  </div>
+               </div>
+               <div class="entry">
+                  <div class="left">
+                     <span class="entry-title">Really Long Topic Name</span>
+                  </div>
+                  <div class="right">
+                     <p><strong>Resource</strong><br>
+                        <a href="#">www.url.com</a><br>
+                        <a href="#">www.url.com</a></p>
+                  </div>
+               </div>
+               <a href="#" class="KCPL_readmore">More Events ≈</a>
+           </div>
          </div>
 
        </div>
