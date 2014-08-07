@@ -3600,6 +3600,61 @@ ol.homepage-callout-list > li:nth-child(4) {
 /* Listing Style 4
 
 */
+/* line 906, assets/sass/_elements.scss */
+.KCPL_listing4 {
+  display: block;
+  background: #e2e2e2;
+}
+/* line 907, assets/sass/_elements.scss */
+.KCPL_listing4 .title {
+  color: #fff;
+  font: bold 18px/18px "nimbus-sans";
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px 10px 15px;
+}
+/* line 908, assets/sass/_elements.scss */
+.KCPL_listing4 .gutter {
+  padding: 2px;
+}
+/* line 909, assets/sass/_elements.scss */
+.KCPL_listing4 .row {
+  display: block;
+}
+/* line 910, assets/sass/_elements.scss */
+.KCPL_listing4 .row .entry {
+  display: block;
+  float: left;
+  width: 50%;
+}
+/* line 911, assets/sass/_elements.scss */
+.KCPL_listing4 .row .entry .image {
+  width: 50px;
+  float: left;
+}
+/* line 912, assets/sass/_elements.scss */
+.KCPL_listing4 .row .entry .number {
+  width: 50px;
+  float: left;
+  font: 12px/12px "minion-pro";
+}
+/* line 913, assets/sass/_elements.scss */
+.KCPL_listing4 .row .entry .content {
+  width: 50px;
+  float: left;
+}
+/* line 914, assets/sass/_elements.scss */
+.KCPL_listing4 .row .entry .content .entry-title {
+  display: block;
+  font: bold 12px/12px "nimbus-sans-condensed";
+}
+/* line 915, assets/sass/_elements.scss */
+.KCPL_listing4 .row .entry .content .entry-author {
+  display: block;
+  font: 12px/12px "minion-pro";
+}
+
 /* Horizontal Callouts
    //single line
    <div class="KCPL_horz-single red">
@@ -3623,12 +3678,12 @@ ol.homepage-callout-list > li:nth-child(4) {
      </div>
    </div>
 */
-/* line 931, assets/sass/_elements.scss */
+/* line 944, assets/sass/_elements.scss */
 a > .KCPL_horz-single {
   color: #fff;
 }
 
-/* line 932, assets/sass/_elements.scss */
+/* line 945, assets/sass/_elements.scss */
 .KCPL_horz-single {
   font: bold 42px/42px "nimbus-sans-condensed";
   color: #fff;
@@ -3637,86 +3692,86 @@ a > .KCPL_horz-single {
   border-radius: 11px;
   text-align: center;
 }
-/* line 933, assets/sass/_elements.scss */
+/* line 946, assets/sass/_elements.scss */
 .KCPL_horz-single .gutter {
   padding: 5px 5px 2px;
   border: 1px solid #fff;
 }
-/* line 934, assets/sass/_elements.scss */
+/* line 947, assets/sass/_elements.scss */
 .KCPL_horz-single span {
   padding: 0;
 }
-/* line 935, assets/sass/_elements.scss */
+/* line 948, assets/sass/_elements.scss */
 .KCPL_horz-single a {
   padding: 0;
 }
 
-/* line 937, assets/sass/_elements.scss */
+/* line 950, assets/sass/_elements.scss */
 .KCPL_horz-single.red {
   background: #f65446;
 }
 
-/* line 938, assets/sass/_elements.scss */
+/* line 951, assets/sass/_elements.scss */
 .KCPL_horz-single.blue {
   background: #137cc1;
 }
 
-/* line 939, assets/sass/_elements.scss */
+/* line 952, assets/sass/_elements.scss */
 .KCPL_horz-single.green {
   background: #65a893;
 }
 
-/* line 940, assets/sass/_elements.scss */
+/* line 953, assets/sass/_elements.scss */
 .KCPL_horz-single.yellow {
   background: #ffa751;
 }
 
-/* line 941, assets/sass/_elements.scss */
+/* line 954, assets/sass/_elements.scss */
 .KCPL_horz-single.grey {
   background: #76849a;
 }
 
-/* line 943, assets/sass/_elements.scss */
+/* line 956, assets/sass/_elements.scss */
 .KCPL_horz-multi {
   border-radius: 11px;
   color: #fff;
 }
-/* line 944, assets/sass/_elements.scss */
+/* line 957, assets/sass/_elements.scss */
 .KCPL_horz-multi .gutter {
   padding: 14px 27px 13px;
 }
-/* line 945, assets/sass/_elements.scss */
+/* line 958, assets/sass/_elements.scss */
 .KCPL_horz-multi span {
   font: bold 20px/23px "nimbus-sans";
   text-transform: uppercase;
   display: block;
 }
-/* line 946, assets/sass/_elements.scss */
+/* line 959, assets/sass/_elements.scss */
 .KCPL_horz-multi a {
   color: #fff;
 }
 
-/* line 948, assets/sass/_elements.scss */
+/* line 961, assets/sass/_elements.scss */
 .KCPL_horz-multi.red {
   background: #f65446;
 }
 
-/* line 949, assets/sass/_elements.scss */
+/* line 962, assets/sass/_elements.scss */
 .KCPL_horz-multi.blue {
   background: #137cc1;
 }
 
-/* line 950, assets/sass/_elements.scss */
+/* line 963, assets/sass/_elements.scss */
 .KCPL_horz-multi.green {
   background: #65a893;
 }
 
-/* line 951, assets/sass/_elements.scss */
+/* line 964, assets/sass/_elements.scss */
 .KCPL_horz-multi.yellow {
   background: #ffa751;
 }
 
-/* line 952, assets/sass/_elements.scss */
+/* line 965, assets/sass/_elements.scss */
 .KCPL_horz-multi.grey {
   background: #76849a;
 }
@@ -3736,31 +3791,31 @@ a > .KCPL_horz-single {
      </div>
    </div>
 */
-/* line 970, assets/sass/_elements.scss */
+/* line 983, assets/sass/_elements.scss */
 .KCPL_horz-talkbox-fonts {
   position: relative;
   color: #fff;
   padding: 9px 14px 7px;
   border-radius: 4px;
 }
-/* line 971, assets/sass/_elements.scss */
+/* line 984, assets/sass/_elements.scss */
 .KCPL_horz-talkbox-fonts span {
   display: block;
   text-transform: uppercase;
   text-align: center;
 }
-/* line 972, assets/sass/_elements.scss */
+/* line 985, assets/sass/_elements.scss */
 .KCPL_horz-talkbox-fonts .KCPL_font-nimbus-condensed {
   font-weight: bold;
   font-size: 19px;
   margin: 0 0 2px;
 }
-/* line 973, assets/sass/_elements.scss */
+/* line 986, assets/sass/_elements.scss */
 .KCPL_horz-talkbox-fonts .KCPL_font-minion {
   font-size: 14px;
 }
 
-/* line 975, assets/sass/_elements.scss */
+/* line 988, assets/sass/_elements.scss */
 .KCPL_horz-talkbox-fonts:after {
   position: absolute;
   top: -7px;
@@ -3772,44 +3827,44 @@ a > .KCPL_horz-single {
   background: url(assets/img/talkCalloutCaret.png) no-repeat;
 }
 
-/* line 976, assets/sass/_elements.scss */
+/* line 989, assets/sass/_elements.scss */
 .KCPL_horz-talkbox-fonts.KCPL_background-blue:after {
   background-position: -56px 0;
 }
 
-/* line 977, assets/sass/_elements.scss */
+/* line 990, assets/sass/_elements.scss */
 .KCPL_horz-talkbox-fonts.KCPL_background-red:after {
   background-position: -42px 0;
 }
 
-/* line 978, assets/sass/_elements.scss */
+/* line 991, assets/sass/_elements.scss */
 .KCPL_horz-talkbox-fonts.KCPL_background-green:after {
   background-position: -28px 0;
 }
 
-/* line 979, assets/sass/_elements.scss */
+/* line 992, assets/sass/_elements.scss */
 .KCPL_horz-talkbox-fonts.KCPL_background-grey:after {
   background-position: -14px 0;
 }
 
-/* line 980, assets/sass/_elements.scss */
+/* line 993, assets/sass/_elements.scss */
 .KCPL_horz-talkbox-fonts.KCPL_background-yellow:after {
   background-position: 0 0;
 }
 
-/* line 982, assets/sass/_elements.scss */
+/* line 995, assets/sass/_elements.scss */
 .KCPL_horz-fonts {
   padding: 10px 13px;
   color: #fff;
   text-align: center;
   border-radius: 10px;
 }
-/* line 983, assets/sass/_elements.scss */
+/* line 996, assets/sass/_elements.scss */
 .KCPL_horz-fonts .gutter {
   border: 1px solid #fff;
   padding: 15px 2px 16px;
 }
-/* line 984, assets/sass/_elements.scss */
+/* line 997, assets/sass/_elements.scss */
 .KCPL_horz-fonts span {
   text-transform: uppercase;
   display: inline-block;
@@ -3817,7 +3872,7 @@ a > .KCPL_horz-single {
   font-size: 18px;
   line-height: 18px;
 }
-/* line 985, assets/sass/_elements.scss */
+/* line 998, assets/sass/_elements.scss */
 .KCPL_horz-fonts .KCPL_font-nimbus-condensed {
   font-weight: bold;
   margin: 0 4px 0 0;

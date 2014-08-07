@@ -903,7 +903,20 @@ font: 14px/18px $nimbus;}
 /* Listing Style 4
 
 */
-
+.#{$namespace}listing4{display:block;background:#e2e2e2;
+   .title{color:#fff;font:bold 18px/18px $nimbus;display:block;text-align:center;text-transform:uppercase;padding:15px 10px 15px;}
+   .gutter{padding:2px;}
+   .row{display:block;
+      .entry{display:block;float:left;width:50%;
+         .image{width:50px;float:left;}
+         .number{width:50px;float:left;font:12px/12px $minion;}
+         .content{width:50px;float:left;
+            .entry-title{display:block;font:bold 12px/12px $nimbus-c;}
+            .entry-author{display:block;font:12px/12px $minion;}
+         }
+      }
+   }
+}
 
 /* Horizontal Callouts
    //single line
