@@ -200,14 +200,12 @@ table{
 
 // Homepage Unique Callouts
 /*
-
-<ol class="homepage-callout-list">
-    <li>Learn</li>
-    <li>Play</li>
-    <li>Visit</li>
-    <li>Find</li>
-</ol>
-
+   <ol class="homepage-callout-list">
+       <li>Learn</li>
+       <li>Play</li>
+       <li>Visit</li>
+       <li>Find</li>
+   </ol>
 */
 .homepage-callout-list { display: block; }
 ol.homepage-callout-list { display: block;
@@ -219,57 +217,56 @@ ol.homepage-callout-list { display: block;
 }
 
 /*
-
-<div class="calendar-callout">
-    <span>April 2014</span>
-    <table>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-        </tr>
-        <tr>
-            <td>8</td>
-            <td>9</td>
-            <td>10</td>
-            <td>11</td>
-            <td>12</td>
-            <td>13</td>
-            <td>14</td>
-        </tr>
-        <tr>
-            <td>15</td>
-            <td>16</td>
-            <td>17</td>
-            <td>18</td>
-            <td>19</td>
-            <td>20</td>
-            <td>21</td>
-        </tr>
-        <tr>
-            <td>22</td>
-            <td>23</td>
-            <td>24</td>
-            <td>25</td>
-            <td>26</td>
-            <td>27</td>
-            <td>28</td>
-        </tr>
-        <tr>
-            <td>29</td>
-            <td>30</td>
-            <td>31</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
-</div>
+   <div class="calendar-callout">
+       <span>April 2014</span>
+       <table>
+           <tr>
+               <td>1</td>
+               <td>2</td>
+               <td>3</td>
+               <td>4</td>
+               <td>5</td>
+               <td>6</td>
+               <td>7</td>
+           </tr>
+           <tr>
+               <td>8</td>
+               <td>9</td>
+               <td>10</td>
+               <td>11</td>
+               <td>12</td>
+               <td>13</td>
+               <td>14</td>
+           </tr>
+           <tr>
+               <td>15</td>
+               <td>16</td>
+               <td>17</td>
+               <td>18</td>
+               <td>19</td>
+               <td>20</td>
+               <td>21</td>
+           </tr>
+           <tr>
+               <td>22</td>
+               <td>23</td>
+               <td>24</td>
+               <td>25</td>
+               <td>26</td>
+               <td>27</td>
+               <td>28</td>
+           </tr>
+           <tr>
+               <td>29</td>
+               <td>30</td>
+               <td>31</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+           </tr>
+       </table>
+   </div>
 
 */
 .calendar-callout { display: block; background: $s-grey; padding:23px; }
@@ -281,137 +278,125 @@ ol.homepage-callout-list { display: block;
 }
 
 // Vertical callouts
-
 /*
-
-<div class="KCPL_info-box">
-    <div class="KCPL_info-box-header">
-        <span class="KCPL_info-box-header-title">Info</span>
-    </div>
-    <div class="KCPL_info-box-body">
-        <span class="KCPL_info-box-body-title">Title this is the title it's short</span>
-        <span class="KCPL_info-box-body-date">Date 3, 2014</span>
-        <span class="KCPL_info-box-body-excerpt">Learn how easy it is to make your own healthy smoothies.</span>
-        <span class="KCPL_info-box-body-link">More &nbsp; ≈</span>
-    </div>
-</div>
-
+   <div class="KCPL_info-box">
+       <div class="KCPL_info-box-header">
+           <span class="KCPL_info-box-header-title">Info</span>
+       </div>
+       <div class="KCPL_info-box-body">
+           <span class="KCPL_info-box-body-title">Title this is the title it's short</span>
+           <span class="KCPL_info-box-body-date">Date 3, 2014</span>
+           <span class="KCPL_info-box-body-excerpt">Learn how easy it is to make your own healthy smoothies.</span>
+           <span class="KCPL_info-box-body-link">More &nbsp; ≈</span>
+       </div>
+   </div>
 */
 
 .#{$namespace}info-box { display: block; }
 .#{$namespace}info-box {
     .#{$namespace}info-box-header { background: $green; padding: 15px; }
     .#{$namespace}info-box-header {
-        .#{$namespace}info-box-header-title { display: block; text-align: center; text-transform: uppercase; font-size: 18px; font-weight: 600; font-family: "Nimbus-Sans"; color: white; };
+        .#{$namespace}info-box-header-title { display: block; text-align: center; text-transform: uppercase; font-size: 18px; font-weight: 600; font-family: $nimbus; color: white; };
      }
     .#{$namespace}info-box-body { background: $s-grey; padding: 11px 18px; }
     .#{$namespace}info-box-body {
-        .#{$namespace}info-box-body-title { display: block; text-transform: uppercase; font-size: 18px; font-weight: 600; font-family: "Nimbus-Sans-Condensed"; color: $d-grey; line-height: 23px; };
-        .#{$namespace}info-box-body-date { display: block; font-size: 15px; font-weight: 600; font-family: "Nimbus-Sans"; color: $d-grey; };
-        .#{$namespace}info-box-body-excerpt { display: block; font-size: 13px; font-weight: 400; font-family: "Minion"; color: $d-grey; letter-spacing: .05em; line-height: 18px; };
-        .#{$namespace}info-box-body-link { display: block; font-size: 14px; font-weight: 600; font-family: "Minion"; color: $d-grey; margin-top: 17px; font-style: italic; };
+        .#{$namespace}info-box-body-title { display: block; text-transform: uppercase; font-size: 18px; font-weight: 600; font-family: $nimbus-c; color: $d-grey; line-height: 23px; };
+        .#{$namespace}info-box-body-date { display: block; font-size: 15px; font-weight: 600; font-family: $nimbus; color: $d-grey; };
+        .#{$namespace}info-box-body-excerpt { display: block; font-size: 13px; font-weight: 400; font-family: $minion; color: $d-grey; letter-spacing: .05em; line-height: 18px; };
+        .#{$namespace}info-box-body-link { display: block; font-size: 14px; font-weight: 600; font-family: $minion; color: $d-grey; margin-top: 17px; font-style: italic; };
     }
 }
 
 /*
-
-<div class="KCPL_short-callout">
-    <span>Short Call Out</span>
-</div>
-
+   <div class="KCPL_short-callout">
+       <span>Short Call Out</span>
+   </div>
 */
-
 .#{$namespace}short-callout { display: block; border-radius: 10px; background: #f65446; padding: 79px 24px; }
 .#{$namespace}short-callout {
-    span { display: block; font-family: "Nimbus-Sans-Condensed"; font-weight: 600; text-transform: uppercase; text-align: center; font-size: 43px; line-height: 46px; color: white; }
+    span { display: block; font-family: $nimbus-c; font-weight: 600; text-transform: uppercase; text-align: center; font-size: 43px; line-height: 46px; color: white; }
 }
 
 /*
+   <div class="KCPL_social-callout">
+       <div class="KCPL_social-callout-header">
+           <span>Follow Us</span>
+       </div>
+       <div class="KCPL_social-callout-body">
+           <div class="KCPL_sprite-facebook KCPL_social-callout-icon"></div>
+           <div class="KCPL_sprite-instagram KCPL_social-callout-icon"></div>
+           <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
+           <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
+           <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
+           <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
 
-<div class="KCPL_social-callout">
-    <div class="KCPL_social-callout-header">
-        <span>Follow Us</span>
-    </div>
-    <div class="KCPL_social-callout-body">
-        <div class="KCPL_sprite-facebook KCPL_social-callout-icon"></div>
-        <div class="KCPL_sprite-instagram KCPL_social-callout-icon"></div>
-        <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
-        <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
-        <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
-        <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
+           <div class="clear"></div>
 
-        <div class="clear"></div>
-
-        <div class="KCPL_social-callout-tweet">
-            <span class="KCPL_social-callout-tweet-content">"All KCPL locations will be closed all day on Wednesday, February 12 for Staff Development Day. Find us online at kanawhalibrary.org."</span>
-            <span class="KCPL_social-callout-tweet-date">Feb 11</span>
-        </div>
-    </div>
-</div>
-
+           <div class="KCPL_social-callout-tweet">
+               <span class="KCPL_social-callout-tweet-content">"All KCPL locations will be closed all day on Wednesday, February 12 for Staff Development Day. Find us online at kanawhalibrary.org."</span>
+               <span class="KCPL_social-callout-tweet-date">Feb 11</span>
+           </div>
+       </div>
+   </div>
 */
-
 .#{$namespace}social-callout { display: block; }
 .#{$namespace}social-callout {
     .#{$namespace}social-callout-header { background: $blue; padding: 10px; }
     .#{$namespace}social-callout-header {
-        span { display: block; font-family: "Nimbus-Sans"; font-weight: 700; font-size: 19px; line-height: 27px; text-transform: uppercase; color: white; text-align: center; }
+        span { display: block; font-family: $nimbus; font-weight: 700; font-size: 19px; line-height: 27px; text-transform: uppercase; color: white; text-align: center; }
     }
     .#{$namespace}social-callout-body { background: $s-grey; padding: 10px; }
     .#{$namespace}social-callout-body {
         .#{$namespace}social-callout-icon { margin: 4px 3px 7px 15px; float: left; };
         .#{$namespace}social-callout-tweet { background: $blue;padding: 10px 8px; border-radius: 10px; font-size: 13px; line-height: 16px; margin-top: 12px; };
         .#{$namespace}social-callout-tweet {
-            .#{$namespace}social-callout-tweet-content { font-family: "Minion"; color: white; word-wrap: break-word; };
-            .#{$namespace}social-callout-tweet-date { font-family: "Nimbus-Sans"; font-size: 13px; line-height: 16px; color: white; font-weight: 700;  };
+            .#{$namespace}social-callout-tweet-content { font-family: $minion; color: white; word-wrap: break-word; };
+            .#{$namespace}social-callout-tweet-date { font-family: $nimbus; font-size: 13px; line-height: 16px; color: white; font-weight: 700;  };
         };
     }
 }
 
 // Vertical callout graphics
-
 /*
+   <div class="two columns">
+       <div class="KCPL_callout-graphic-1-blue"></div>
+   </div>
 
-<div class="two columns">
-    <div class="KCPL_callout-graphic-1-blue"></div>
-</div>
+   <div class="two columns">
+       <div class="KCPL_callout-graphic-1-green"></div>
+   </div>
 
-<div class="two columns">
-    <div class="KCPL_callout-graphic-1-green"></div>
-</div>
+   <div class="two columns">
+       <div class="KCPL_callout-graphic-1-purple"></div>
+   </div>
 
-<div class="two columns">
-    <div class="KCPL_callout-graphic-1-purple"></div>
-</div>
+   <div class="two columns">
+       <div class="KCPL_callout-graphic-1-red"></div>
+   </div>
 
-<div class="two columns">
-    <div class="KCPL_callout-graphic-1-red"></div>
-</div>
+   <div class="two columns">
+       <div class="KCPL_callout-graphic-1-yellow"></div>
+   </div>
 
-<div class="two columns">
-    <div class="KCPL_callout-graphic-1-yellow"></div>
-</div>
+   <div class="two columns">
+       <div class="KCPL_callout-graphic-2-blue"></div>
+   </div>
 
-<div class="two columns">
-    <div class="KCPL_callout-graphic-2-blue"></div>
-</div>
+   <div class="two columns">
+       <div class="KCPL_callout-graphic-2-green"></div>
+   </div>
 
-<div class="two columns">
-    <div class="KCPL_callout-graphic-2-green"></div>
-</div>
+   <div class="two columns">
+       <div class="KCPL_callout-graphic-2-purple"></div>
+   </div>
 
-<div class="two columns">
-    <div class="KCPL_callout-graphic-2-purple"></div>
-</div>
+   <div class="two columns">
+       <div class="KCPL_callout-graphic-2-red"></div>
+   </div>
 
-<div class="two columns">
-    <div class="KCPL_callout-graphic-2-red"></div>
-</div>
-
-<div class="two columns">
-    <div class="KCPL_callout-graphic-2-yellow"></div>
-</div>
-
+   <div class="two columns">
+       <div class="KCPL_callout-graphic-2-yellow"></div>
+   </div>
 */
 
 .#{$namespace}callout-graphic-1-blue { display: block; width: 140px; height: 275px; border-radius: 10px; background: url('./assets/img/verticalgraphiccallouts01_blue.png') }
@@ -750,9 +735,7 @@ ol.homepage-callout-list { display: block;
 }
 
 // Listing Style 3
-
 /*
-
 <div class="KCPL_listing-style-3">
     <div class="KCPL_listing-style-3-header">
         <span>Social Feed</span>
@@ -779,20 +762,65 @@ ol.homepage-callout-list { display: block;
         <span class="KCPL_listing-style-3-body-link">Read all &nbsp; ≈</span>
     </div>
 </div>
-
 */
-
 .#{$namespace}listing-style-3 { display: block; }
 .#{$namespace}listing-style-3 {
     .#{$namespace}listing-style-3-header { background: $yellow; padding: 15px; }
     .#{$namespace}listing-style-3-header {
-        span { display: block; font-family: "Nimbus-Sans"; font-weight: 700; font-size: 19px; line-height: 21px; text-transform: uppercase; color: white; text-align: center; }
+        span { display: block; font-family: $nimbus; font-weight: 700; font-size: 19px; line-height: 21px; text-transform: uppercase; color: white; text-align: center; }
     }
     .#{$namespace}listing-style-3-body { background: $s-grey; padding: 11px 18px; }
     .#{$namespace}listing-style-3-body {
-        .#{$namespace}listing-style-3-body-title { display: block; text-transform: uppercase; font-size: 18px; font-weight: 600; font-family: "Nimbus-Sans-Condensed"; color: $d-grey; line-height: 23px; }
+        .#{$namespace}listing-style-3-body-title { display: block; text-transform: uppercase; font-size: 18px; font-weight: 600; font-family: $nimbus-c; color: $d-grey; line-height: 23px; }
         .#{$namespace}listing-style-3-body-date { display: block; font-size: 15px; font-weight: 600; font-family: "Nimbus-Sans"; color: $d-grey; }
         .#{$namespace}listing-style-3-body-excerpt { display: inline; font-size: 13px; font-weight: 400; font-family: "Minion"; color: $d-grey; letter-spacing: .05em; line-height: 18px; }
         .#{$namespace}listing-style-3-body-link { display: inline; font-size: 14px; font-weight: 700; font-family: "Minion"; color: $d-grey; font-style: italic; }
     }
 }
+
+
+/* Horizontal Callouts
+   //single line
+   <div class="KCPL_horz-single red">
+     <div class="gutter">
+        <span>Short Callouts</span>
+     </div>
+   </div>
+
+   //multi line
+   <div class="KCPL_horz-multi blue">
+     <div class="gutter">
+        <span>Medium Length Callout This is What</span>
+     </div>
+   </div>
+
+   //multi line w/ link
+   <div class="KCPL_horz-multi green">
+     <div class="gutter">
+        <span>Medium Length Callout</span>
+        <a class="KCPL_readmore" href="#">Read More ≈</a>
+     </div>
+   </div>
+*/
+a > .#{$namespace}horz-single{color:#fff;}
+.#{$namespace}horz-single{font:bold 42px/42px $nimbus-c;color:#fff;padding: 9px 27px 12px 18px;text-transform:uppercase;border-radius:11px;text-align:center;
+   .gutter{padding:5px 5px 2px;border:1px solid #fff;}
+   span{padding:0;}
+   a{padding:0;}
+}
+.#{$namespace}horz-single.red{background:$red;}
+.#{$namespace}horz-single.blue{background:$blue;}
+.#{$namespace}horz-single.green{background:$green;}
+.#{$namespace}horz-single.yellow{background:$yellow;}
+.#{$namespace}horz-single.grey{background:$grey;}
+
+.#{$namespace}horz-multi{border-radius:11px;color:#fff;
+   .gutter{padding: 14px 27px 13px;}
+   span{font: bold 20px/23px $nimbus;text-transform: uppercase;display: block;}
+   a{color:#fff;}
+}
+.#{$namespace}horz-multi.red{background:$red;}
+.#{$namespace}horz-multi.blue{background:$blue;}
+.#{$namespace}horz-multi.green{background:$green;}
+.#{$namespace}horz-multi.yellow{background:$yellow;}
+.#{$namespace}horz-multi.grey{background:$grey;}
