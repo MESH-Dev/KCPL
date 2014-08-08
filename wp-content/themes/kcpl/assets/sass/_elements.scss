@@ -1235,3 +1235,123 @@ a > .#{$namespace}horz-single{color:#fff;}
 .#{$namespace}popup.#{$namespace}background-green:after{background-position:-42px 0;}
 .#{$namespace}popup.#{$namespace}background-grey:after{background-position:-14px 0;}
 .#{$namespace}popup.#{$namespace}background-yellow:after{background-position:0 0;}
+
+
+/* Comments
+   <div class="KCPL_comments clearfix">
+      <div id="comments" class="comments-area clearfix">
+         <ol class="comment-list clearfix">
+           <li class="comment even thread-even depth-1 parent clearfix" id="comment-1">
+
+               <i class="caret"></i>
+               <div class="comment-wrap clearfix">
+                  <div class="comment-img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/phIMG.png" /></div>
+                  <div class="comment-content">
+                     <span class="name">User Namename</span>
+                     <span class="date">July 17, 2014 2 PM</span>
+                     <div class="comment-comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod dictum gravida. Nullam semper dui elit, non fermentum consequat a dui. Etiam suscipit nibh at consequat gravida.</div>
+                     <a class="reply KCPL_readmore" href="#">Reply ≈</a>
+                     <a class="leave-comment KCPL_readmore" href="#">Leave a Comment ≈</a>
+                  </div>
+               </div>
+
+             <ol class="children clearfix">
+
+               <li class="comment byuser comment-author-admin bypostauthor odd alt depth-2 clearfix" id="comment-2">
+                  <i class="caret"></i>
+                  <div class="comment-wrap clearfix">
+                     <div class="comment-img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/phIMG.png" /></div>
+                     <div class="comment-content">
+                        <span class="name">User Namename</span>
+                        <span class="date">July 17, 2014 2 PM</span>
+                        <div class="comment-comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod dictum gravida. Nullam semper dui elit, non fermentum consequat a dui. Etiam suscipit nibh at consequat gravida.</div>
+                        <a class="reply KCPL_readmore" href="#">Reply ≈</a>
+                        <a class="leave-comment KCPL_readmore" href="#">Leave a Comment ≈</a>
+                     </div>
+                  </div>
+
+               </li>
+
+            </ol>
+           </li>
+
+           <li class="comment even thread-odd thread-alt depth-1 clearfix" id="comment-12">
+
+               <i class="caret"></i>
+               <div class="comment-wrap clearfix">
+                  <div class="comment-img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/phIMG.png" /></div>
+                  <div class="comment-content">
+                     <span class="name">User Namename</span>
+                     <span class="date">July 17, 2014 2 PM</span>
+                     <div class="comment-comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod dictum gravida. Nullam semper dui elit, non fermentum consequat a dui. Etiam suscipit nibh at consequat gravida.</div>
+                     <a class="reply KCPL_readmore" href="#">Reply ≈</a>
+                     <a class="leave-comment KCPL_readmore" href="#">Leave a Comment ≈</a>
+                  </div>
+               </div>
+
+           </li>
+
+         </ol>
+
+      </div>
+   </div>
+*/
+.#{$namespace}comments{display:block;
+   a{color:#323333;}
+   ol{list-style:none;}
+   li.comment{display:block;background:#e2e2e2;position:relative;border-radius:12px;margin:3px 0 27px;
+      .caret{position: absolute;top: -10px;left: 20px;display: block;content: '';background: url(assets/img/commentCaretG.png) no-repeat;height: 11px;width: 22px;}
+      .comment-wrap{padding:20px 20px 14px;}
+      .comment-img{float:left;width:33px}
+      .comment-content{float: right;width: 183px;padding: 0 32px 0 0;
+         .name{font:bold 18px/12px $nimbus-c;text-transform:uppercase;letter-spacing: 0.035em;display:block;margin:0 0 7px;}
+         .date{font:bold 15px/15px $nimbus;display:block;margin:0 0 19px;}
+         .comment-comment{font:15px/18px $minion;display:block;margin:0 0 17px;}
+         a.reply{display:block;margin:0 0 2px;}
+         a.leave-comment{display:block;margin:0;}
+      }
+   }
+
+   li.comment.depth-1.parent{background:#979797;
+      > .caret{background:url(assets/img/commentCaretDG.png) no-repeat;}
+      > ol{padding:13px 21px 0 70px;
+         li.comment{
+            .comment-content{width:126px;margin:0;}
+         }
+      }
+   }
+   li.comment.comment-author-admin{background:$red;
+      > .caret{background:url(assets/img/commentCaretR.png) no-repeat;left:auto;right:16px;}
+   }
+}
+
+.columns.eight{
+   .#{$namespace}comments{display:block;
+      a{color:#323333;}
+      ol{list-style:none;}
+      li.comment{display:block;background:#e2e2e2;position:relative;border-radius:12px;
+         .caret{position: absolute;top: -10px;left: 20px;display: block;content: '';background: url(assets/img/commentCaretG.png) no-repeat;height: 11px;width: 22px;}
+         .comment-wrap{padding:20px 20px 14px;}
+         .comment-img{float:left;width:33px}
+         .comment-content{float: right;width: 519px;padding: 0 24px 0 0;
+            .name{font:bold 18px/12px $nimbus-c;text-transform:uppercase;letter-spacing: 0.035em;display:block;margin:0 0 7px;}
+            .date{font:bold 15px/15px $nimbus;display:block;margin:0 0 19px;}
+            .comment-comment{font:15px/18px $minion;display:block;margin:0 0 17px;}
+            a.reply{display:block;margin:0 0 2px;}
+            a.leave-comment{display:block;margin:0;}
+         }
+      }
+
+      li.comment.depth-1.parent{background:#979797;
+         > .caret{background:url(assets/img/commentCaretDG.png) no-repeat;}
+         > ol{
+            li.comment{
+               .comment-content{width:431px;}
+            }
+         }
+      }
+      li.comment.comment-author-admin{background:$red;
+         > .caret{background:url(assets/img/commentCaretR.png) no-repeat;left:auto;right:16px;}
+      }
+   }
+}
