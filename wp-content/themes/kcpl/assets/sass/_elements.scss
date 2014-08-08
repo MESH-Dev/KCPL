@@ -1021,3 +1021,77 @@ a > .#{$namespace}horz-single{color:#fff;}
    .#{$namespace}font-nimbus-condensed{font-weight:bold;margin:0 4px 0 0;}
    .#{$namespace}font-minion{}
 }
+
+/* 8 Column Featured
+   <div class="KCPL_featured KCPL_background-green clearfix">
+     <div class="gutter clearfix">
+        <div class="entry left">
+           <div class="gutter">
+             <div class="image physical">
+                 <div class="wrap">
+                    <i></i>
+                 </div>
+             </div>
+             <span class="title">Physical Class</span>
+             <div class="excerpt">
+                 Demonstrate your good taste by topping a slice of watermelon "pizza" with a variety of fresh fruits.
+             </div>
+             <span class="date">June 30, 2014</span>
+             <a href="#" class="KCPL_readmore">More classes ≈</a>
+           </div>
+        </div>
+        <div class="entry center">
+           <div class="gutter">
+             <div class="image online">
+                 <div class="wrap">
+                    <i></i>
+                 </div>
+             </div>
+             <span class="title">Online Class</span>
+             <div class="excerpt">
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna purus, rutrum.
+             </div>
+             <span class="link"><a href="#">www.url.com</a></span>
+             <a href="#" class="KCPL_readmore">More classes ≈</a>
+           </div>
+        </div>
+        <div class="entry right">
+           <div class="gutter">
+             <div class="image video">
+                 <div class="wrap">
+                    <i></i>
+                 </div>
+             </div>
+             <span class="title">Featured Video</span>
+             <div class="excerpt">
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna purus, rutrum.
+             </div>
+             <span class="link"><a href="#">www.url.com</a></span>
+             <a href="#" class="KCPL_readmore">More classes ≈</a>
+           </div>
+        </div>
+     </div>
+   </div>
+*/
+.#{$namespace}featured{display:block;
+   a{color:#323333;}
+   .gutter{padding:0 38px;}
+   .entry{float:left;width:33%;
+      .gutter{padding:0 8px 0 28px;}
+      .image{display:table;vertical-align:middle;text-align:center;width:100%;height:115px;
+         .wrap{display:table-cell;vertical-align:middle;}
+         i{margin: 0 auto;display: block;height: 61px;width: 67px;background: url(assets/img/featuredIcons.png) no-repeat;}
+      }
+      .image.physical i{}
+      .image.online i{background-position: -79px 0;height: 63px;width: 69px;}
+      .image.video i{background-position: -160px -5px;height: 54px;width: 71px;}
+
+      .title{display:block;font:bold 18px/18px $nimbus-c;text-transform:uppercase;margin:0 0 2px;letter-spacing:0.065em;}
+      .excerpt{display:block;letter-spacing:0.065em;margin:0 0 19px;}
+      .date{display:block;font:bold 15px/15px $nimbus;margin:0 0 2px;}
+      .link{display:block;font:bold 14px/15px $nimbus;margin:0 0 2px;}
+      .KCPL_readmore{display:block;}
+   }
+   .entry.left .gutter{padding:0 16px 0 0;}
+   .entry.right .gutter{padding:0 0 0 42px;}
+}
