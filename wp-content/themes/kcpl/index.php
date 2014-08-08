@@ -14,57 +14,79 @@
 
      <div class="row">
 
-       <div class="columns eight alpha clearfix">
+       <div class="columns four alpha clearfix">
 
-          <div class="KCPL_featured KCPL_background-green clearfix">
-             <div class="gutter clearfix">
-                <div class="entry left">
-                   <div class="gutter">
-                     <div class="image physical">
-                        <div class="wrap">
-                           <i></i>
-                        </div>
-                     </div>
-                     <span class="title">Physical Class</span>
-                     <div class="excerpt">
-                        Demonstrate your good taste by topping a slice of watermelon "pizza" with a variety of fresh fruits.
-                     </div>
-                     <span class="date">June 30, 2014</span>
-                     <a href="#" class="KCPL_readmore">More classes ≈</a>
-                  </div>
+          <div class="KCPL_oc-profile">
+             <span class="title KCPL_background-red">My Profile</span>
+             <div class="gutter">
+                <div class="top clearfix">
+                   <div class="profile-img">
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prIMG.png" />
+                   </div>
+                   <div class="profile-social">
+                      <a href="#" class="fa fa-lg fa-facebook facebook">facebook</a>
+                      <a href="#" class="fa fa-lg fa-pinterest pinterest">pinterest</a>
+                      <a href="#" class="fa fa-lg fa-tumblr tumblr">tumblr</a>
+                      <a href="#" class="fa fa-lg fa-instagram instagram">instagram</a>
+                      <a href="#" class="fa fa-lg fa-twitter twitter">twitter</a>
+                      <a href="#" class="fa fa-lg fa-google-plus googleplus">googleplus</a>
+                   </div>
                 </div>
-                <div class="entry center">
-                   <div class="gutter">
-                     <div class="image online">
-                        <div class="wrap">
-                           <i></i>
-                        </div>
-                     </div>
-                     <span class="title">Online Class</span>
-                     <div class="excerpt">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna purus, rutrum.
-                     </div>
-                     <span class="link"><a href="#">www.url.com</a></span>
-                     <a href="#" class="KCPL_readmore">More classes ≈</a>
-                  </div>
-                </div>
-                <div class="entry right">
-                   <div class="gutter">
-                     <div class="image video">
-                        <div class="wrap">
-                           <i></i>
-                        </div>
-                     </div>
-                     <span class="title">Featured Video</span>
-                     <div class="excerpt">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna purus, rutrum.
-                     </div>
-                     <span class="link"><a href="#">www.url.com</a></span>
-                     <a href="#" class="KCPL_readmore">More classes ≈</a>
-                  </div>
+                <div class="bottom clearfix">
+                   <div class="profile-username">
+                      <span class="title">User Name</span>
+                      <span>Location, WV</span>
+                      <a href="#">www.personalsite.com</a>
+                   </div>
+                   <div class="profile-interests">
+                      <span class="title">Interests</span>
+                      <a href="#">Mystery</a> , <a href="#">Romance</a> , <a href="#">Painting</a> , <a href="#">Crafts</a> , <a href="#">Zombies</a>
+                   </div>
+                   <div class="profile-reading">
+                      <span class="title">Currently Reading</span>
+                      <a href="#">Title of This Book by Author McAuthorson</a>
+                   </div>
                 </div>
              </div>
           </div>
+
+       </div>
+
+       <div class="columns eight omega clearfix">
+
+         <div class="KCPL_oc-profile clearfix">
+            <span class="title KCPL_background-red">My Profile</span>
+            <div class="gutter clearfix">
+               <div class="left">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prIMG.png" />
+               </div>
+               <div class="center">
+                  <div class="profile-username">
+                     <span class="title">User Name</span>
+                     <span>Location, WV</span>
+                     <a href="#">www.personalsite.com</a>
+                  </div>
+                  <div class="profile-interests">
+                     <span class="title">Interests</span>
+                     <a href="#">Mystery</a> , <a href="#">Romance</a> , <a href="#">Painting</a> , <a href="#">Crafts</a> , <a href="#">Zombies</a>
+                  </div>
+               </div>
+               <div class="right">
+                  <div class="profile-social">
+                     <a href="#" class="fa fa-lg fa-facebook facebook">facebook</a>
+                     <a href="#" class="fa fa-lg fa-pinterest pinterest">pinterest</a>
+                     <a href="#" class="fa fa-lg fa-tumblr tumblr">tumblr</a>
+                     <a href="#" class="fa fa-lg fa-instagram instagram">instagram</a>
+                     <a href="#" class="fa fa-lg fa-twitter twitter">twitter</a>
+                     <a href="#" class="fa fa-lg fa-google-plus googleplus">googleplus</a>
+                  </div>
+                  <div class="profile-reading">
+                     <span class="title">Currently Reading</span>
+                     <a href="#">Title of This Book by Author McAuthorson</a>
+                  </div>
+               </div>
+            </div>
+         </div>
 
        </div>
 
