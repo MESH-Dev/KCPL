@@ -1095,3 +1095,127 @@ a > .#{$namespace}horz-single{color:#fff;}
    .entry.left .gutter{padding:0 16px 0 0;}
    .entry.right .gutter{padding:0 0 0 42px;}
 }
+
+
+/* Online Profile
+   //4 col
+   <div class="KCPL_oc-profile">
+     <span class="title KCPL_background-red">My Profile</span>
+     <div class="gutter">
+        <div class="top clearfix">
+           <div class="profile-img">
+               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prIMG.png" />
+           </div>
+           <div class="profile-social">
+               <a href="#" class="fa fa-lg fa-facebook facebook">facebook</a>
+               <a href="#" class="fa fa-lg fa-pinterest pinterest">pinterest</a>
+               <a href="#" class="fa fa-lg fa-tumblr tumblr">tumblr</a>
+               <a href="#" class="fa fa-lg fa-instagram instagram">instagram</a>
+               <a href="#" class="fa fa-lg fa-twitter twitter">twitter</a>
+               <a href="#" class="fa fa-lg fa-google-plus googleplus">googleplus</a>
+           </div>
+        </div>
+        <div class="bottom clearfix">
+           <div class="profile-username">
+               <span class="title">User Name</span>
+               <span>Location, WV</span>
+               <a href="#">www.personalsite.com</a>
+           </div>
+           <div class="profile-interests">
+               <span class="title">Interests</span>
+               <a href="#">Mystery</a> , <a href="#">Romance</a> , <a href="#">Painting</a> , <a href="#">Crafts</a> , <a href="#">Zombies</a>
+           </div>
+           <div class="profile-reading">
+               <span class="title">Currently Reading</span>
+               <a href="#">Title of This Book by Author McAuthorson</a>
+           </div>
+        </div>
+     </div>
+   </div>
+
+   //8 col
+   <div class="KCPL_oc-profile clearfix">
+      <span class="title KCPL_background-red">My Profile</span>
+      <div class="gutter clearfix">
+         <div class="left">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/prIMG.png" />
+         </div>
+         <div class="center">
+            <div class="profile-username">
+               <span class="title">User Name</span>
+               <span>Location, WV</span>
+               <a href="#">www.personalsite.com</a>
+            </div>
+            <div class="profile-interests">
+               <span class="title">Interests</span>
+               <a href="#">Mystery</a> , <a href="#">Romance</a> , <a href="#">Painting</a> , <a href="#">Crafts</a> , <a href="#">Zombies</a>
+            </div>
+         </div>
+         <div class="right">
+            <div class="profile-social">
+               <a href="#" class="fa fa-lg fa-facebook facebook">facebook</a>
+               <a href="#" class="fa fa-lg fa-pinterest pinterest">pinterest</a>
+               <a href="#" class="fa fa-lg fa-tumblr tumblr">tumblr</a>
+               <a href="#" class="fa fa-lg fa-instagram instagram">instagram</a>
+               <a href="#" class="fa fa-lg fa-twitter twitter">twitter</a>
+               <a href="#" class="fa fa-lg fa-google-plus googleplus">googleplus</a>
+            </div>
+            <div class="profile-reading">
+               <span class="title">Currently Reading</span>
+               <a href="#">Title of This Book by Author McAuthorson</a>
+            </div>
+         </div>
+      </div>
+   </div>
+*/
+.#{$namespace}oc-profile{display:block;background:#e2e2e2;
+   > .title{color:#fff;font:bold 18px/18px $nimbus;display:block;text-align:center;text-transform:uppercase;padding:17px 10px 18px;}
+   .gutter{padding:20px;}
+   .top{display:block;margin:0 0 13px;
+      .profile-img{float:left;width:111px}
+      .profile-social{float: right;width: 115px;margin: 0 5px 0 0;
+         a{background: $red;color: #fff;text-indent: -9999px;height: 35px;width: 35px;display: block;font-size: 12px;position: relative;margin: 0 20px 20px 0;float: left;}
+         a:nth-child(n+5){margin:0 20px 0 0;}
+         a:before{text-indent: 0px;position: absolute;top: 13px;left: 10px;font-size: 19px;}
+      }
+   }
+   .bottom{display:block;
+      .profile-username{font:16px/19px $minion;margin:0 0 19px;
+         .title{font:bold 20px/18px $nimbus-c;text-transform:uppercase;display:block;}
+         a{font:15px/18px $nimbus;color:#323333;display:block;}
+      }
+      .profile-interests{margin:0 0 18px;
+         .title{font:19px/22px $minion;display:block;letter-spacing: 0.04em;}
+         a{font:bold 12px/12px $nimbus;color:#323333;letter-spacing:0.055em;}
+      }
+      .profile-reading{margin:0 0 0px;
+         .title{font:19px/22px $minion;display:block;letter-spacing: 0.04em;}
+         a{font:bold 12px/12px $nimbus;color:#323333;letter-spacing:0.055em;}
+      }
+   }
+}
+
+.columns.eight .#{$namespace}oc-profile{display:block;
+   .left{float:left;width: 111px;margin: 0 21px 0 0;}
+   .center{float:left;width:160px;margin:0 20px 0 0;
+      .profile-username{font:16px/19px $minion;margin:0 0 19px;
+         .title{font:bold 20px/14px $nimbus-c;text-transform:uppercase;display:block;margin:0 0 2px;}
+         a{font:15px/18px $nimbus;color:#323333;display:block;}
+      }
+      .profile-interests{margin:0 0 18px;
+         .title{font:19px/22px $minion;display:block;letter-spacing: 0.04em;}
+         a{font:bold 12px/12px $nimbus;color:#323333;letter-spacing:0.055em;}
+      }
+   }
+   .right{float:left;width:286px;
+      .profile-social{display:block;float:none;margin:0;
+         a{background: $red;color: #fff;text-indent: -9999px;height: 35px;width: 35px;display: block;font-size: 12px;position: relative;margin: 0 14px 15px 0;float: left;}
+         a:last-child{margin:0;}
+         a:before{text-indent: 0px;position: absolute;top: 13px;left: 10px;font-size: 19px;}
+      }
+      .profile-reading{margin:0 0 0px;
+         .title{font:19px/22px $minion;display:block;letter-spacing: 0.04em;}
+         a{font:bold 12px/12px $nimbus;color:#323333;letter-spacing:0.055em;}
+      }
+   }
+}
