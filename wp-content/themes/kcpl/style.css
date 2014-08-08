@@ -3904,30 +3904,78 @@ a > .KCPL_horz-single {
 }
 
 /* 8 Column Featured
-
+   <div class="KCPL_featured KCPL_background-green clearfix">
+     <div class="gutter clearfix">
+        <div class="entry left">
+           <div class="gutter">
+             <div class="image physical">
+                 <div class="wrap">
+                    <i></i>
+                 </div>
+             </div>
+             <span class="title">Physical Class</span>
+             <div class="excerpt">
+                 Demonstrate your good taste by topping a slice of watermelon "pizza" with a variety of fresh fruits.
+             </div>
+             <span class="date">June 30, 2014</span>
+             <a href="#" class="KCPL_readmore">More classes ≈</a>
+           </div>
+        </div>
+        <div class="entry center">
+           <div class="gutter">
+             <div class="image online">
+                 <div class="wrap">
+                    <i></i>
+                 </div>
+             </div>
+             <span class="title">Online Class</span>
+             <div class="excerpt">
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna purus, rutrum.
+             </div>
+             <span class="link"><a href="#">www.url.com</a></span>
+             <a href="#" class="KCPL_readmore">More classes ≈</a>
+           </div>
+        </div>
+        <div class="entry right">
+           <div class="gutter">
+             <div class="image video">
+                 <div class="wrap">
+                    <i></i>
+                 </div>
+             </div>
+             <span class="title">Featured Video</span>
+             <div class="excerpt">
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna purus, rutrum.
+             </div>
+             <span class="link"><a href="#">www.url.com</a></span>
+             <a href="#" class="KCPL_readmore">More classes ≈</a>
+           </div>
+        </div>
+     </div>
+   </div>
 */
-/* line 1028, assets/sass/_elements.scss */
+/* line 1076, assets/sass/_elements.scss */
 .KCPL_featured {
   display: block;
 }
-/* line 1029, assets/sass/_elements.scss */
+/* line 1077, assets/sass/_elements.scss */
 .KCPL_featured a {
   color: #323333;
 }
-/* line 1030, assets/sass/_elements.scss */
+/* line 1078, assets/sass/_elements.scss */
 .KCPL_featured .gutter {
   padding: 0 38px;
 }
-/* line 1031, assets/sass/_elements.scss */
+/* line 1079, assets/sass/_elements.scss */
 .KCPL_featured .entry {
   float: left;
   width: 33%;
 }
-/* line 1032, assets/sass/_elements.scss */
+/* line 1080, assets/sass/_elements.scss */
 .KCPL_featured .entry .gutter {
   padding: 0 8px 0 28px;
 }
-/* line 1033, assets/sass/_elements.scss */
+/* line 1081, assets/sass/_elements.scss */
 .KCPL_featured .entry .image {
   display: table;
   vertical-align: middle;
@@ -3935,12 +3983,12 @@ a > .KCPL_horz-single {
   width: 100%;
   height: 115px;
 }
-/* line 1034, assets/sass/_elements.scss */
+/* line 1082, assets/sass/_elements.scss */
 .KCPL_featured .entry .image .wrap {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 1035, assets/sass/_elements.scss */
+/* line 1083, assets/sass/_elements.scss */
 .KCPL_featured .entry .image i {
   margin: 0 auto;
   display: block;
@@ -3948,19 +3996,19 @@ a > .KCPL_horz-single {
   width: 67px;
   background: url(assets/img/featuredIcons.png) no-repeat;
 }
-/* line 1038, assets/sass/_elements.scss */
+/* line 1086, assets/sass/_elements.scss */
 .KCPL_featured .entry .image.online i {
   background-position: -79px 0;
   height: 63px;
   width: 69px;
 }
-/* line 1039, assets/sass/_elements.scss */
+/* line 1087, assets/sass/_elements.scss */
 .KCPL_featured .entry .image.video i {
   background-position: -160px -5px;
   height: 54px;
   width: 71px;
 }
-/* line 1041, assets/sass/_elements.scss */
+/* line 1089, assets/sass/_elements.scss */
 .KCPL_featured .entry .title {
   display: block;
   font: bold 18px/18px "nimbus-sans-condensed";
@@ -3968,33 +4016,33 @@ a > .KCPL_horz-single {
   margin: 0 0 2px;
   letter-spacing: 0.065em;
 }
-/* line 1042, assets/sass/_elements.scss */
+/* line 1090, assets/sass/_elements.scss */
 .KCPL_featured .entry .excerpt {
   display: block;
   letter-spacing: 0.065em;
   margin: 0 0 19px;
 }
-/* line 1043, assets/sass/_elements.scss */
+/* line 1091, assets/sass/_elements.scss */
 .KCPL_featured .entry .date {
   display: block;
   font: bold 15px/15px "nimbus-sans";
   margin: 0 0 2px;
 }
-/* line 1044, assets/sass/_elements.scss */
+/* line 1092, assets/sass/_elements.scss */
 .KCPL_featured .entry .link {
   display: block;
   font: bold 14px/15px "nimbus-sans";
   margin: 0 0 2px;
 }
-/* line 1045, assets/sass/_elements.scss */
+/* line 1093, assets/sass/_elements.scss */
 .KCPL_featured .entry .KCPL_readmore {
   display: block;
 }
-/* line 1047, assets/sass/_elements.scss */
+/* line 1095, assets/sass/_elements.scss */
 .KCPL_featured .entry.left .gutter {
   padding: 0 16px 0 0;
 }
-/* line 1048, assets/sass/_elements.scss */
+/* line 1096, assets/sass/_elements.scss */
 .KCPL_featured .entry.right .gutter {
   padding: 0 0 0 42px;
 }

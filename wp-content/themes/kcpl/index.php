@@ -18,7 +18,6 @@
 
           <div class="KCPL_featured KCPL_background-green clearfix">
              <div class="gutter clearfix">
-
                 <div class="entry left">
                    <div class="gutter">
                      <div class="image physical">
@@ -34,7 +33,6 @@
                      <a href="#" class="KCPL_readmore">More classes ≈</a>
                   </div>
                 </div>
-
                 <div class="entry center">
                    <div class="gutter">
                      <div class="image online">
@@ -50,7 +48,6 @@
                      <a href="#" class="KCPL_readmore">More classes ≈</a>
                   </div>
                 </div>
-
                 <div class="entry right">
                    <div class="gutter">
                      <div class="image video">
@@ -66,7 +63,6 @@
                      <a href="#" class="KCPL_readmore">More classes ≈</a>
                   </div>
                 </div>
-
              </div>
           </div>
 
