@@ -1010,8 +1010,8 @@ a > .#{$namespace}horz-single{color:#fff;}
 }
 .#{$namespace}horz-talkbox-fonts:after{position: absolute;top: -7px;left: 12px;content: '';display: block;height: 8px;width: 14px;background: url(assets/img/talkCalloutCaret.png) no-repeat;}
 .#{$namespace}horz-talkbox-fonts.#{$namespace}background-blue:after{background-position:-56px 0;}
-.#{$namespace}horz-talkbox-fonts.#{$namespace}background-red:after{background-position:-42px 0;}
-.#{$namespace}horz-talkbox-fonts.#{$namespace}background-green:after{background-position:-28px 0;}
+.#{$namespace}horz-talkbox-fonts.#{$namespace}background-red:after{background-position:-28px 0;}
+.#{$namespace}horz-talkbox-fonts.#{$namespace}background-green:after{background-position:-42px 0;}
 .#{$namespace}horz-talkbox-fonts.#{$namespace}background-grey:after{background-position:-14px 0;}
 .#{$namespace}horz-talkbox-fonts.#{$namespace}background-yellow:after{background-position:0 0;}
 
@@ -1219,3 +1219,19 @@ a > .#{$namespace}horz-single{color:#fff;}
       }
    }
 }
+
+
+/* Popups
+
+*/
+.#{$namespace}popup{display:block;position:relative;border-radius:13px;
+   .gutter{padding:14px 40px 17px 19px;}
+   span{color:#fff;font:bold 18px/23px $nimbus;display:block;text-transform:uppercase;letter-spacing:0.055em;}
+   a{display:block;color:#fff;margin:0;}
+}
+.#{$namespace}popup:after{position: absolute;bottom: -8px;right: 32px;content: '';display: block;height: 8px;width: 14px;background: url(assets/img/talkCalloutCaret.png) no-repeat;transform:rotate(180deg);}
+.#{$namespace}popup.#{$namespace}background-blue:after{background-position:-56px 0;}
+.#{$namespace}popup.#{$namespace}background-red:after{background-position:-28px 0;}
+.#{$namespace}popup.#{$namespace}background-green:after{background-position:-42px 0;}
+.#{$namespace}popup.#{$namespace}background-grey:after{background-position:-14px 0;}
+.#{$namespace}popup.#{$namespace}background-yellow:after{background-position:0 0;}

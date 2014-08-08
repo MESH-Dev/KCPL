@@ -3859,12 +3859,12 @@ a > .KCPL_horz-single {
 
 /* line 1013, assets/sass/_elements.scss */
 .KCPL_horz-talkbox-fonts.KCPL_background-red:after {
-  background-position: -42px 0;
+  background-position: -28px 0;
 }
 
 /* line 1014, assets/sass/_elements.scss */
 .KCPL_horz-talkbox-fonts.KCPL_background-green:after {
-  background-position: -28px 0;
+  background-position: -42px 0;
 }
 
 /* line 1015, assets/sass/_elements.scss */
@@ -4332,4 +4332,70 @@ a > .KCPL_horz-single {
   font: bold 12px/12px "nimbus-sans";
   color: #323333;
   letter-spacing: 0.055em;
+}
+
+/* Popups
+
+*/
+/* line 1227, assets/sass/_elements.scss */
+.KCPL_popup {
+  display: block;
+  position: relative;
+  border-radius: 13px;
+}
+/* line 1228, assets/sass/_elements.scss */
+.KCPL_popup .gutter {
+  padding: 14px 40px 17px 19px;
+}
+/* line 1229, assets/sass/_elements.scss */
+.KCPL_popup span {
+  color: #fff;
+  font: bold 18px/23px "nimbus-sans";
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.055em;
+}
+/* line 1230, assets/sass/_elements.scss */
+.KCPL_popup a {
+  display: block;
+  color: #fff;
+  margin: 0;
+}
+
+/* line 1232, assets/sass/_elements.scss */
+.KCPL_popup:after {
+  position: absolute;
+  bottom: -8px;
+  right: 32px;
+  content: '';
+  display: block;
+  height: 8px;
+  width: 14px;
+  background: url(assets/img/talkCalloutCaret.png) no-repeat;
+  transform: rotate(180deg);
+}
+
+/* line 1233, assets/sass/_elements.scss */
+.KCPL_popup.KCPL_background-blue:after {
+  background-position: -56px 0;
+}
+
+/* line 1234, assets/sass/_elements.scss */
+.KCPL_popup.KCPL_background-red:after {
+  background-position: -28px 0;
+}
+
+/* line 1235, assets/sass/_elements.scss */
+.KCPL_popup.KCPL_background-green:after {
+  background-position: -42px 0;
+}
+
+/* line 1236, assets/sass/_elements.scss */
+.KCPL_popup.KCPL_background-grey:after {
+  background-position: -14px 0;
+}
+
+/* line 1237, assets/sass/_elements.scss */
+.KCPL_popup.KCPL_background-yellow:after {
+  background-position: 0 0;
 }
