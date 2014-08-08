@@ -1,0 +1,4 @@
+[13-Jul-2014 05:33:29 America/Chicago] PHP Fatal error:  Class 'FrmFieldsHelper' not found in /home/jqdsalt/public_html/wp-content/plugins/formidable/classes/views/frm-fields/show.php on line 1
+[13-Jul-2014 05:33:30 America/Chicago] PHP Fatal error:  Call to undefined function do_action() in /home/jqdsalt/public_html/wp-content/plugins/formidable/classes/views/frm-fields/input.php on line 75
+[13-Jul-2014 05:33:32 America/Chicago] PHP Fatal error:  Call to undefined function language_attributes() in /home/jqdsalt/public_html/wp-content/plugins/formidable/classes/views/frm-fields/import_choices.php on line 2
+[13-Jul-2014 05:33:35 America/Chicago] PHP Fatal error:  Call to undefined function esc_attr() in /home/jqdsalt/public_html/wp-content/plugins/formidable/classes/views/frm-fields/single-option.php on line 4

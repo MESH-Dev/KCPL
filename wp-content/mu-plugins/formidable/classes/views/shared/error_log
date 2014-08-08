@@ -1,0 +1,3 @@
+[13-Jul-2014 05:31:43 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jqdsalt/public_html/wp-content/plugins/formidable/classes/views/shared/nav.php on line 1
+[13-Jul-2014 05:31:51 America/Chicago] PHP Fatal error:  Call to undefined function admin_url() in /home/jqdsalt/public_html/wp-content/plugins/formidable/classes/views/shared/update_message.php on line 3
+[13-Jul-2014 05:33:12 America/Chicago] PHP Fatal error:  Call to undefined function admin_url() in /home/jqdsalt/public_html/wp-content/plugins/formidable/classes/views/shared/form-nav.php on line 3

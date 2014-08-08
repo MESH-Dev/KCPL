@@ -1,0 +1,2 @@
+[13-Jul-2014 05:31:25 America/Chicago] PHP Fatal error:  Call to undefined function site_url() in /home/jqdsalt/public_html/wp-content/plugins/formidable/deprecated.php on line 7
+[13-Jul-2014 05:31:28 America/Chicago] PHP Fatal error:  Call to undefined function __() in /home/jqdsalt/public_html/wp-content/plugins/formidable/classes/models/FrmSettings.php on line 2
