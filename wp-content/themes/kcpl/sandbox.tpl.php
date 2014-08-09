@@ -1,17 +1,8 @@
-<?php /* Template Name: Elements */ get_header(); ?>
+<?php /* Template Name: Sandbox */ get_header();
+$pID = KCPL_get_menu_parent_ID();
+var_dump($pID); ?>
 
 <?php if(have_posts()){while(have_posts()){the_post(); ?>
-
-<div id="bannerHome" class="KCPL_background-yellow">
-  <div class="container">
-    <div class="columns seven">
-      <div class="gutter">
-        <h1>Your library is more than millions of resources at your fingertips, We are your community center.</h1>
-        <h2>Share your thoughts on our new site!</h2>
-      </div>
-    </div>
-  </div>
-</div>
 
 <div id="content">
   <div class="container">
