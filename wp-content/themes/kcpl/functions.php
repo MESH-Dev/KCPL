@@ -45,7 +45,6 @@
      unregister_widget('WP_Widget_Links');
      unregister_widget('WP_Widget_Meta');
      unregister_widget('WP_Widget_Search');
-     //unregister_widget('WP_Widget_Text');
      unregister_widget('WP_Widget_Categories');
      unregister_widget('WP_Widget_Recent_Posts');
      unregister_widget('WP_Widget_Recent_Comments');
@@ -161,42 +160,33 @@
 
   //get parent ID
   function KCPL_get_menu_parent_ID(){
-    //get menu ID
     $menu_slug = 'main_nav';
     $locations = get_nav_menu_locations();
     $menu_id   = $locations[$menu_slug];
-
-    //get parent ID
     $post_id        = get_the_ID();
     $menu_items     = wp_get_nav_menu_items($menu_id);
     $parent_item_id = wp_filter_object_list($menu_items,array('object_id'=>$post_id),'and','menu_item_parent');
     $parent_item_id = array_shift( $parent_item_id );
-
-    //return $menu_items;
-
     function checkForParent($parent_item_id,$menu_items){
-      //get object_id
       $parent_post_id = wp_filter_object_list( $menu_items, array( 'ID' => $parent_item_id ), 'and', 'object_id' );
       $parent_item_id = wp_filter_object_list($menu_items,array('ID'=>$parent_item_id),'and','menu_item_parent');
       $parent_item_id = array_shift( $parent_item_id );
-      //determine if parent
-      //return $parent_item_id;
       if($parent_item_id=="0"){
         $parent_post_id = array_shift($parent_post_id);
         return $parent_post_id;
       }else{
         return checkForParent($parent_item_id,$menu_items);
       }
-
     }
-
-    //parent check
     if(!empty($parent_item_id)){
       return checkForParent($parent_item_id,$menu_items);
     }else{
       return $post_id;
     }
-
+  }
+  //get sidebar widget from KCPL_get_menu_parent_ID()
+  function KCPL_get_sidebar($postID){
+    return get_field('sidebar_fields',intval($postID));
   }
 
 

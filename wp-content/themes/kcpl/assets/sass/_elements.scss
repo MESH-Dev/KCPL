@@ -17,8 +17,7 @@ button {
 textarea,input,select{outline: none;}
 
 //Secondary Sidebar Menu - uses wp_nav_menu() for markup
-#secondary-sidebar-nav{display:block;}
-#secondary-sidebar-nav{
+#secondary-sidebar-nav{display:block;margin:0 0 26px;
   ul#main_nav_secondary{display:block;list-style:none;}
   ul#main_nav_secondary{
       ul{list-style:none;margin:0;}
@@ -965,27 +964,17 @@ font: 14px/18px $nimbus;}
    </div>
 */
 a > .#{$namespace}horz-single{color:#fff;}
-.#{$namespace}horz-single{font:bold 42px/42px $nimbus-c;color:#fff;padding: 9px 27px 12px 18px;text-transform:uppercase;border-radius:11px;text-align:center;
+.#{$namespace}horz-single{font:bold 42px/42px $nimbus-c;color:#fff;padding: 9px 27px 12px 18px;text-transform:uppercase;border-radius:11px;text-align:center;margin:0 0 26px;
    .gutter{padding:5px 5px 2px;border:1px solid #fff;}
    span{padding:0;}
    a{padding:0;}
 }
-.#{$namespace}horz-single.red{background:$red;}
-.#{$namespace}horz-single.blue{background:$blue;}
-.#{$namespace}horz-single.green{background:$green;}
-.#{$namespace}horz-single.yellow{background:$yellow;}
-.#{$namespace}horz-single.grey{background:$grey;}
 
-.#{$namespace}horz-multi{border-radius:11px;color:#fff;
+.#{$namespace}horz-multi{border-radius:11px;color:#fff;margin:0 0 26px;
    .gutter{padding: 14px 27px 13px;}
    span{font: bold 20px/23px $nimbus;text-transform: uppercase;display: block;}
    a{color:#fff;}
 }
-.#{$namespace}horz-multi.red{background:$red;}
-.#{$namespace}horz-multi.blue{background:$blue;}
-.#{$namespace}horz-multi.green{background:$green;}
-.#{$namespace}horz-multi.yellow{background:$yellow;}
-.#{$namespace}horz-multi.grey{background:$grey;}
 
 
 /* Special Callouts

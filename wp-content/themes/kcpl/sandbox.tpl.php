@@ -1,8 +1,4 @@
-<?php /* Template Name: Sandbox */ get_header();
-$pID = KCPL_get_menu_parent_ID();
-var_dump($pID);
-
- ?>
+<?php /* Template Name: Sandbox */ get_header(); ?>
 
 <?php if(have_posts()){while(have_posts()){the_post(); ?>
 
@@ -31,6 +27,7 @@ var_dump($pID);
         }else{
           echo "<p><em>main_nav</em> doesn't exist! Create it and it'll render here.</p>";
         } ?>
+      <?php get_template_part('partials/module','sidebar-widgets'); ?>
     </div>
     <div class="column seven omega offset-by-one" id="contentPrimary">
       <?php the_content(); ?>

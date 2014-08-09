@@ -56,6 +56,7 @@
         }else{
           echo "<p><em>main_nav</em> doesn't exist! Create it and it'll render here.</p>";
         } ?>
+      <?php get_template_part('partials/module','sidebar-widgets'); ?>
     </div>
     <div class="column seven omega offset-by-one" id="contentPrimary">
       <?php the_content(); ?>
