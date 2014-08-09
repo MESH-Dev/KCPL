@@ -1,6 +1,8 @@
 <?php /* Template Name: Sandbox */ get_header();
 $pID = KCPL_get_menu_parent_ID();
-var_dump($pID); ?>
+var_dump($pID);
+
+ ?>
 
 <?php if(have_posts()){while(have_posts()){the_post(); ?>
 
