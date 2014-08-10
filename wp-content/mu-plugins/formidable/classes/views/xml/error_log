@@ -1,0 +1,2 @@
+[13-Jul-2014 05:31:55 America/Chicago] PHP Fatal error:  Call to undefined function the_generator() in /home/jqdsalt/public_html/wp-content/plugins/formidable/classes/views/xml/xml.php on line 1
+[13-Jul-2014 05:33:10 America/Chicago] PHP Fatal error:  Call to undefined function _e() in /home/jqdsalt/public_html/wp-content/plugins/formidable/classes/views/xml/import_form.php on line 3

@@ -45,7 +45,6 @@
      unregister_widget('WP_Widget_Links');
      unregister_widget('WP_Widget_Meta');
      unregister_widget('WP_Widget_Search');
-     //unregister_widget('WP_Widget_Text');
      unregister_widget('WP_Widget_Categories');
      unregister_widget('WP_Widget_Recent_Posts');
      unregister_widget('WP_Widget_Recent_Comments');
@@ -108,5 +107,87 @@
 
   //disable code editors
   define('DISALLOW_FILE_EDIT', true);
+
+  //research CPT
+  add_action('init','KCPL_researchCPT');
+  function KCPL_researchCPT() {
+  	$labels = array(
+  		'name'               => _x('Research Tools & Resources','post type general name'),
+  		'singular_name'      => _x('Research Tool or Resource','post type singular name'),
+  		'menu_name'          => _x('Research Tools & Resources','admin menu'),
+  		'name_admin_bar'     => _x('Research Tool or Resource','add new on admin bar'),
+  		'add_new'            => _x('Add New'),
+  		'add_new_item'       => __('Add New Research Tool or Resource'),
+  		'new_item'           => __('New Research Tool or Resource'),
+  		'edit_item'          => __('Edit Research Tool or Resource'),
+  		'view_item'          => __('View Research Tool or Resource'),
+  		'all_items'          => __('All Research Tools & Resources'),
+  		'search_items'       => __('Search Research Tools & Resources'),
+  		'parent_item_colon'  => __('Parent Research Tools & Resources:'),
+  		'not_found'          => __('No Research Tools or Resources found.'),
+  		'not_found_in_trash' => __('No Research Tools or Resources found in Trash.')
+  	);
+
+  	$args = array(
+  		'labels'             => $labels,
+  		'public'             => true,
+  		'publicly_queryable' => true,
+  		'show_ui'            => true,
+  		'show_in_menu'       => true,
+  		'query_var'          => true,
+  		'rewrite'            => array( 'slug' => 'resources'),
+  		'capability_type'    => 'post',
+  		'has_archive'        => true,
+  		'hierarchical'       => false,
+  		'menu_position'      => null,
+  		'supports'           => array('title','editor','author','thumbnail','excerpt','comments')
+  	); register_post_type('resources',$args);
+  }
+
+  //research Tax
+  add_action( 'init', 'KCPL_researchTax' );
+  function KCPL_researchTax() {
+  	register_taxonomy(
+  		'resources-category',
+  		'resources',
+  		array(
+  			'label' => __('Resource Category'),
+  			'rewrite' => array('slug'=>'resource-category'),
+  			'hierarchical' => true,
+  		)
+  	);
+  }
+
+  //get parent ID
+  function KCPL_get_menu_parent_ID(){
+    $menu_slug = 'main_nav';
+    $locations = get_nav_menu_locations();
+    $menu_id   = $locations[$menu_slug];
+    $post_id        = get_the_ID();
+    $menu_items     = wp_get_nav_menu_items($menu_id);
+    $parent_item_id = wp_filter_object_list($menu_items,array('object_id'=>$post_id),'and','menu_item_parent');
+    $parent_item_id = array_shift( $parent_item_id );
+    function checkForParent($parent_item_id,$menu_items){
+      $parent_post_id = wp_filter_object_list( $menu_items, array( 'ID' => $parent_item_id ), 'and', 'object_id' );
+      $parent_item_id = wp_filter_object_list($menu_items,array('ID'=>$parent_item_id),'and','menu_item_parent');
+      $parent_item_id = array_shift( $parent_item_id );
+      if($parent_item_id=="0"){
+        $parent_post_id = array_shift($parent_post_id);
+        return $parent_post_id;
+      }else{
+        return checkForParent($parent_item_id,$menu_items);
+      }
+    }
+    if(!empty($parent_item_id)){
+      return checkForParent($parent_item_id,$menu_items);
+    }else{
+      return $post_id;
+    }
+  }
+  //get sidebar widget from KCPL_get_menu_parent_ID()
+  function KCPL_get_sidebar($postID){
+    return get_field('sidebar_fields',intval($postID));
+  }
+
 
 ?>
