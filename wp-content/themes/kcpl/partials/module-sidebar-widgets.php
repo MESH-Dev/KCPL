@@ -40,6 +40,24 @@ foreach($sidebar as $widget){
       </a>
     <?php } ?>
 
+  <?php }elseif($widget['field_type'] == 'listing-style1-2'){
+    //listing style 1-2 ?>
+
+    <div class="KCPL_listing1-list KCPL_background-<?php echo $widget['field_color']; ?>">
+       <span class="title"><?php echo $widget['field_title']; ?></span>
+       <div class="gutter">
+          <span class="list-title"><?php echo $widget['listing_title'];?></span>
+          <ul>
+             <?php foreach($widget['urls'] as $list){ ?>
+                <li><a href="<?php echo $list['url']; ?>"><?php echo $list['title']; ?></a></li>
+             <?php } ?>
+          </ul>
+          <?php if($widget['field_link'] != ''){ ?>
+            <a class="KCPL_readmore" href="<?php echo $widget['field_link']; ?>">More Info ≈</a>
+          <?php } ?>
+       </div>
+    </div>
+
   <?php }else{
     echo "Hasn't been configured yet. Deal with it.";
   }
