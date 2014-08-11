@@ -1,11 +1,13 @@
 <?php
   $content = get_field('full_width_callouts');
+  if($content){
+    echo "<div id='KCPL_content_8col' class='clearfix'>";
+  }
   foreach($content as $widget){
-
     if($widget['field_type'] == 'listing-style-4'){
       //listing style 4 ?>
       <div class="KCPL_listing4">
-        <span class="title KCPL_background-<?php echo $widget['field_color']; ?>">title</span>
+        <span class="title KCPL_background-<?php echo $widget['field_color']; ?>"><?php echo $widget['field_title']; ?></span>
         <div class="gutter">
            <div class="row">
 
@@ -26,15 +28,39 @@
            </div>
         </div>
       </div>
-
     <?php }elseif($widget['field_type'] == '8-column-featured'){
       //8 column featured ?>
-
-
+      <div class="KCPL_featured KCPL_background-<?php echo $widget['field_color']; ?> clearfix">
+        <div class="gutter clearfix">
+          <?php foreach($widget['8_column_featured'] as $entry){ ?>
+           <div class="entry <?php echo cycle('left','center','right'); ?>">
+              <div class="gutter">
+                <div class="image <?php echo $entry['type']; ?>">
+                    <div class="wrap">
+                       <i></i>
+                    </div>
+                </div>
+                <span class="title"><?php echo $entry['title']; ?></span>
+                <div class="excerpt">
+                    <?php echo $entry['excerpt']; ?>
+                </div>
+                <?php if($entry['type'] == 'physical'){ ?>
+                    <span class="date"><?php echo $entry['date']; ?></span>
+                <?php }else{ ?>
+                    <span class="link"><a href="<?php echo $entry['url_link']; ?>"><?php echo $entry['url_text']; ?></a></span>
+                <?php }?>
+                <a href="<?php echo $entry['read_more_link']; ?>" class="KCPL_readmore"><?php echo $entry['read_more_text']; ?></a>
+              </div>
+           </div>
+           <?php } ?>
+        </div>
+      </div>
     <?php }else{
       echo "field type not valid";
     }
-
+  }
+  if($content){
+    echo "</div>";
   }
 
 ?>

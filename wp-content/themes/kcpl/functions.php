@@ -1,4 +1,5 @@
 <?php
+  include_once('functions/toolbox.php');
   include_once('functions/branch-hours.php');
 
   //enqueue scripts and styles *use production assets. Dev assets are located in assets/css and assets/js
@@ -158,43 +159,10 @@
   	);
   }
 
-  //get parent ID
-  function KCPL_get_menu_parent_ID(){
-    $menu_slug = 'main_nav';
-    $locations = get_nav_menu_locations();
-    $menu_id   = $locations[$menu_slug];
-    $post_id        = get_the_ID();
-    $menu_items     = wp_get_nav_menu_items($menu_id);
-    $parent_item_id = wp_filter_object_list($menu_items,array('object_id'=>$post_id),'and','menu_item_parent');
-    $parent_item_id = array_shift( $parent_item_id );
-    function checkForParent($parent_item_id,$menu_items){
-      $parent_post_id = wp_filter_object_list( $menu_items, array( 'ID' => $parent_item_id ), 'and', 'object_id' );
-      $parent_item_id = wp_filter_object_list($menu_items,array('ID'=>$parent_item_id),'and','menu_item_parent');
-      $parent_item_id = array_shift( $parent_item_id );
-      if($parent_item_id=="0"){
-        $parent_post_id = array_shift($parent_post_id);
-        return $parent_post_id;
-      }else{
-        return checkForParent($parent_item_id,$menu_items);
-      }
-    }
-    if(!empty($parent_item_id)){
-      return checkForParent($parent_item_id,$menu_items);
-    }else{
-      return $post_id;
-    }
-  }
-  //get sidebar widget from KCPL_get_menu_parent_ID()
-  function KCPL_get_sidebar($postID){
-    return get_field('sidebar_fields',intval($postID));
-  }
-
-
   //Comment walker
 	function comments_walker($comment, $args, $depth) {
 		$GLOBALS['comment'] = $comment;
 		extract($args, EXTR_SKIP);
-
 		if ( 'div' == $args['style'] ) {
 			$tag = 'div';
 			$add_below = 'comment';
@@ -207,9 +175,6 @@
 		<?php if ( 'div' != $args['style'] ) : ?>
 		<div id="div-comment-<?php comment_ID() ?>" class="comment-body clearfix">
 		<?php endif; ?>
-
-
-    <!-- New !-->
     <div class="comment-wrap clearfix">
       <?php edit_comment_link( __( '(Edit)' ), '  ', '' ); ?>
        <div class="comment-img"><?php if ( $args['avatar_size'] != 0 ) echo get_avatar( $comment, $args['avatar_size'] ); ?></div>
@@ -227,31 +192,6 @@
           <a class="leave-comment KCPL_readmore" href="#KCPL_commentbox">Leave a Comment ≈</a>
        </div>
     </div>
-
-
-    <!-- Old
-		<div class="comment-author vcard">
-			<?php if ( $args['avatar_size'] != 0 ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
-		</div>
-		<?php if ( $comment->comment_approved == '0' ) : ?>
-			<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.' ); ?></em>
-			<br />
-		<?php endif; ?>
-		<div class="comment-content-box">
-			<?php comment_text(); ?>
-			<div class="comment-content-meta-things">
-				<?php printf( __( 'Posted by %s' ),get_comment_author_link()); ?>
-				|
-				<a href="<?php echo htmlspecialchars(get_comment_link($comment->comment_ID)); ?>">
-					<?php printf( __('%1$s'), get_comment_date()); ?>
-				</a>
-				<?php edit_comment_link( __( '(Edit)' ), '  ', '' ); ?>
-				|
-				<?php comment_reply_link(array_merge($args,array('add_below'=>$add_below,'depth'=>$depth,'max_depth'=>$args['max_depth']))); ?>
-			</div>
-		</div> !-->
-
-
 		<?php if ( 'div' != $args['style'] ) : ?>
 		</div>
 		<?php endif; ?>

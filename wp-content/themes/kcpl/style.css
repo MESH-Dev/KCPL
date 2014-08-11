@@ -3928,6 +3928,7 @@ a > .KCPL_horz-single {
 /* line 1064, assets/sass/_elements.scss */
 .KCPL_featured {
   display: block;
+  margin: 0 0 26px;
 }
 /* line 1065, assets/sass/_elements.scss */
 .KCPL_featured a {
