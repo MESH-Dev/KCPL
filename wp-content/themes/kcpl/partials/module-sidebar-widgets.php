@@ -79,7 +79,7 @@ foreach($sidebar as $widget){
     //listing style 3 ?>
 
     <div class="KCPL_listing-style-3">
-        <div class="KCPL_listing-style-3-header">
+        <div class="KCPL_listing-style-3-header KCPL_background-<?php echo $widget['field_color']; ?>">
             <span><?php echo $widget['field_title']; ?></span>
         </div>
         <?php foreach($widget['posts'] as $post){

@@ -763,7 +763,7 @@ ol.homepage-callout-list { display: block;
    </div>
 
 */
-.#{$namespace}listing1-article{border-radius:10px;color:#323333;
+.#{$namespace}listing1-article{border-radius:10px;color:#323333;margin:0 0 26px;
    .title{color:#fff;font:bold 18px/18px $nimbus;display:block;text-align:center;text-transform:uppercase;padding:15px 10px 15px;border-bottom:2px solid #323333;}
    .gutter{padding:12px 20px 1px;}
    .entry{display:block;margin:0 0 27px;
@@ -774,7 +774,7 @@ ol.homepage-callout-list { display: block;
 }
 
 
-.#{$namespace}listing1-list{border-radius:10px;
+.#{$namespace}listing1-list{border-radius:10px;margin:0 0 26px;
    .title{color: #fff;font: bold 18px/18px $nimbus;display: block;text-align: center;text-transform: uppercase;padding: 15px 10px 15px;border-bottom: 2px solid #000;}
    .gutter{padding:15px 20px 12px;}
    a{color:#323333;}
@@ -822,7 +822,7 @@ ol.homepage-callout-list { display: block;
      </div>
    </div>
 */
-.#{$namespace}listing2-event{
+.#{$namespace}listing2-event{margin:0 0 26px;
    .title{color:#323333;font:bold 18px/18px $nimbus;display:block;text-align:center;text-transform:uppercase;padding:15px 10px 15px;border-bottom:2px solid #323333;position:relative;margin:0 0 5px;}
    .title:after{position:absolute;content:'';bottom:-7px;left:0;width:100%;border-bottom:2px solid #323333;}
    .gutter{padding:0 20px;
@@ -840,7 +840,7 @@ ol.homepage-callout-list { display: block;
    }
 }
 
-.#{$namespace}listing2-class{
+.#{$namespace}listing2-class{margin:0 0 26px;
    .title{color:#323333;font:bold 18px/18px $nimbus;display:block;text-align:center;text-transform:uppercase;padding:15px 10px 15px;border-bottom:2px solid #323333;position:relative;}
    .gutter{padding:0 20px;
       > a{color:#323333;display:block;text-align:center;margin:0;padding:12px 0 16px;}
@@ -883,8 +883,7 @@ font: 14px/18px $nimbus;}
     </div>
 </div>
 */
-.#{$namespace}listing-style-3 { display: block; }
-.#{$namespace}listing-style-3 {
+.#{$namespace}listing-style-3 {margin:0 0 26px;display:block;
     .#{$namespace}listing-style-3-header { padding: 15px; }
     .#{$namespace}listing-style-3-header {
         span { display: block; font-family: $nimbus; font-weight: 700; font-size: 19px; line-height: 21px; text-transform: uppercase; color: white; text-align: center; }
@@ -924,7 +923,7 @@ font: 14px/18px $nimbus;}
      </div>
    </div>
 */
-.#{$namespace}listing4{display:block;background:#e2e2e2;
+.#{$namespace}listing4{display:block;background:#e2e2e2;margin:0 0 26px;
    .title{color:#fff;font:bold 18px/18px $nimbus;display:block;text-align:center;text-transform:uppercase;padding:15px 10px 15px;}
    .gutter{padding:20px 19px;}
    .row{display:block;margin:0 0 40px;
