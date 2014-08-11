@@ -40,8 +40,8 @@ header{width:100%;float:left;}
 
     header #header-nav ul#main_nav > li > ul{display:none;position:absolute;top:100%;left:9px;width:227px;background:$l-blue;padding: 5px 0;list-style:none;}
     header #header-nav ul#main_nav > li:hover > ul{display:block;}
-      header #header-nav ul#main_nav > li > ul > li{}
-      header #header-nav ul#main_nav > li > ul > li > a{color: #fff;font: bold 17px/17px $nimbus-c;text-transform: uppercase;float: left;letter-spacing: 0.05em;padding: 7px 20px;word-spacing:0.1em;}
+      header #header-nav ul#main_nav > li > ul > li{display: block;float: left;width: 100%;}
+      header #header-nav ul#main_nav > li > ul > li > a{color: #fff;font: bold 17px/17px $nimbus-c;text-transform: uppercase;letter-spacing: 0.05em;padding: 7px 20px;word-spacing:0.1em;display: block;}
         header #header-nav ul#main_nav > li > ul > li:hover > a{color:#323333;}
 
     header #header-nav ul#main_nav > li > ul > li > ul{display:none;}

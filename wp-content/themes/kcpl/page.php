@@ -1,8 +1,12 @@
-<?php get_header(); ?>
+<?php get_header();
+global $post;
+$pID = KCPL_get_menu_parent_ID();
+$sidebar = KCPL_get_sidebar($pID);
+$color = get_field('section_color',$pID); ?>
 
 <?php if(have_posts()){while(have_posts()){the_post(); ?>
 
-<div id="banner" class="KCPL_background-green">
+<div id="banner" class="KCPL_background-<?php echo $color; ?>">
   <div class="container">
       <div class="gutter">
         <?php if(has_nav_menu('main_nav')){
@@ -56,9 +60,11 @@
         }else{
           echo "<p><em>main_nav</em> doesn't exist! Create it and it'll render here.</p>";
         } ?>
-      <?php get_template_part('partials/module','sidebar-widgets'); ?>
+      <?php include_once(locate_template('partials/module-sidebar-widgets.php')); ?>
     </div>
-    <div class="column seven omega offset-by-one" id="contentPrimary">
+    <div class="column eight omega" id="contentPrimary">
+
+      <?php include_once(locate_template('partials/module-content-8column.php'));?>
       <?php the_content(); ?>
     </div>
   </div>

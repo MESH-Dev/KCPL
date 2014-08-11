@@ -1,6 +1,4 @@
-<?php global $post;
-$pID = KCPL_get_menu_parent_ID();
-$sidebar = KCPL_get_sidebar($pID);
+<?php 
 
 foreach($sidebar as $widget){
   //horizontal callout - single
