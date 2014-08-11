@@ -161,7 +161,7 @@ table{
     </div>
   </div>
 */
-#banner{height:202px;float:left;width:100%;text-align:center;
+#banner{height:202px;float:left;width:100%;text-align:center;margin:0 0 26px;
   ul{list-style:none;margin:0;vertical-align:bottom;display:table-cell;}
   li{float:left;display:block;display:table;}
     ul ul{}
@@ -189,7 +189,7 @@ table{
   }
 }
 
-#bannerHome{ color:#fff;height:297px;float:left;width:100%;
+#bannerHome{ color:#fff;height:297px;float:left;width:100%;margin:0 0 26px;
   .gutter{padding:0 0 0 11px;}
   .container{display:table;height:297px;}
   .columns{display:table-cell;float:none;margin:0 0 0 13px;vertical-align:middle;}
@@ -1061,7 +1061,7 @@ a > .#{$namespace}horz-single{color:#fff;}
      </div>
    </div>
 */
-.#{$namespace}featured{display:block;
+.#{$namespace}featured{display:block;margin:0 0 26px;
    a{color:#323333;}
    .gutter{padding:0 38px;}
    .entry{float:left;width:33%;
@@ -1308,7 +1308,7 @@ a > .#{$namespace}horz-single{color:#fff;}
          }
       }
    }
-   li.comment.comment-author-admin{background:$red;
+   li.comment.thread-alt{background:$red;
       > .caret{background:url(assets/img/commentCaretR.png) no-repeat;left:auto;right:16px;}
    }
 }
