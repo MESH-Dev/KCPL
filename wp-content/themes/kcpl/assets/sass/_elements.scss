@@ -885,16 +885,16 @@ font: 14px/18px $nimbus;}
 */
 .#{$namespace}listing-style-3 { display: block; }
 .#{$namespace}listing-style-3 {
-    .#{$namespace}listing-style-3-header { background: $yellow; padding: 15px; }
+    .#{$namespace}listing-style-3-header { padding: 15px; }
     .#{$namespace}listing-style-3-header {
         span { display: block; font-family: $nimbus; font-weight: 700; font-size: 19px; line-height: 21px; text-transform: uppercase; color: white; text-align: center; }
     }
     .#{$namespace}listing-style-3-body { background: $s-grey; padding: 11px 18px; }
     .#{$namespace}listing-style-3-body {
         .#{$namespace}listing-style-3-body-title { display: block; text-transform: uppercase; font-size: 18px; font-weight: 600; font-family: $nimbus-c; color: $d-grey; line-height: 23px; }
-        .#{$namespace}listing-style-3-body-date { display: block; font-size: 15px; font-weight: 600; font-family: "Nimbus-Sans"; color: $d-grey; }
-        .#{$namespace}listing-style-3-body-excerpt { display: inline; font-size: 13px; font-weight: 400; font-family: "Minion"; color: $d-grey; letter-spacing: .05em; line-height: 18px; }
-        .#{$namespace}listing-style-3-body-link { display: inline; font-size: 14px; font-weight: 700; font-family: "Minion"; color: $d-grey; font-style: italic; }
+        .#{$namespace}listing-style-3-body-date { display: block; font-size: 15px; font-weight: 600; font-family: $nimbus; color: $d-grey; }
+        .#{$namespace}listing-style-3-body-excerpt { display: inline; font-size: 13px; font-weight: 400; font-family: $minion; color: $d-grey; letter-spacing: .05em; line-height: 18px; }
+        .#{$namespace}listing-style-3-body-link { display: inline; font-size: 14px; font-weight: 700; font-family: $minion; color: $d-grey; font-style: italic; }
     }
 }
 
