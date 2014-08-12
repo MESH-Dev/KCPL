@@ -62,12 +62,24 @@ $color = get_field('section_color',$pID); ?>
         } ?>
       <?php include_once(locate_template('partials/module-sidebar-widgets.php')); ?>
     </div>
-    <div class="column eight omega" id="contentPrimary">
 
-      <?php include_once(locate_template('partials/module-content-8column.php')); ?>
-      <?php include_once(locate_template('partials/module-content-4column.php')); ?>
-      <?php the_content(); ?>
+    <div class="column eight omega" id="contentPrimary">
+      <div class="column eight alpha omega">
+        <?php include_once(locate_template('partials/module-content-topcallout.php')); ?>
+      </div>
+
+      <div class="column eight alpha omega">
+        <?php include_once(locate_template('partials/module-content-8column.php')); ?>
+      </div>
+
+      <?php $rightSidebar = get_field('sidebar_callouts'); ?>
+      <div class="column eight alpha omega">
+        <?php var_dump($rightSidebar); ?>
+        <?php the_content(); ?>
+      </div>
+
     </div>
+
   </div>
 </div>
 
