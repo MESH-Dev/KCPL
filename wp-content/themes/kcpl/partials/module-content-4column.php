@@ -13,10 +13,31 @@
   //left array
   echo "<div class='columns four alpha'>";
   foreach($contentArrL as $widget){
-    if($widget['field_type'] == 'single-featured-item'){
+    if($widget['field_type'] == 'single-featured'){
       //single featured item ?>
 
-      single-featured-item
+      <div class="KCPL_single-featured <?php if($widget['single_featured_item_image'] != false){echo 'fimage';} ?>">
+        <span class="title KCPL_background-<?php echo $widget['field_color']; ?>"><?php echo $widget['field_title']; ?></span>
+        <div class="gutter">
+          <?php if($widget['single_featured_item_image'] != false){ ?>
+            <div class="image">
+              <img src="<?php echo $widget['single_featured_item_image']; ?>" />
+            </div>
+          <?php } ?>
+          <?php $post = $widget['single_featured_item'];
+          setup_postdata($post); ?>
+           <div class="entry">
+              <span class="entry-title"><?php the_title(); ?></span>
+              <span class="entry-date"><?php the_time('F j, Y'); ?></span>
+              <div class="entry-tags"><?php the_tags('',', ','<br />'); ?></div>
+              <div class="entry-excerpt">
+                  <?php the_excerpt(); ?>
+              </div>
+              <a href="<?php the_permalink(); ?>" class="KCPL_readmore">Learn more ≈</a>
+           </div>
+           <?php wp_reset_postdata(); ?>
+        </div>
+      </div>
 
     <?php }elseif($widget['field_type'] == 'listing-style-1-1'){
       //listing style 1-1 ?>
@@ -114,10 +135,31 @@
   //right array
   echo "<div class='columns four omega'>";
   foreach($contentArrR as $widget){
-    if($widget['field_type'] == 'single-featured-item'){
+    if($widget['field_type'] == 'single-featured'){
       //single featured item ?>
 
-      single-featured-item
+      <div class="KCPL_single-featured <?php if($widget['single_featured_item_image'] != false){echo 'fimage';} ?>">
+        <span class="title KCPL_background-<?php echo $widget['field_color']; ?>"><?php echo $widget['field_title']; ?></span>
+        <div class="gutter">
+          <?php if($widget['single_featured_item_image'] != false){ ?>
+            <div class="image">
+              <img src="<?php echo $widget['single_featured_item_image']; ?>" />
+            </div>
+          <?php } ?>
+          <?php $post = $widget['single_featured_item'];
+          setup_postdata($post); ?>
+           <div class="entry">
+              <span class="entry-title"><?php the_title(); ?></span>
+              <span class="entry-date"><?php the_time('F j, Y'); ?></span>
+              <div class="entry-tags"><?php the_tags('',', ','<br />'); ?></div>
+              <div class="entry-excerpt">
+                  <?php the_excerpt(); ?>
+              </div>
+              <a href="<?php the_permalink(); ?>" class="KCPL_readmore">Learn more ≈</a>
+           </div>
+           <?php wp_reset_postdata(); ?>
+        </div>
+      </div>
 
     <?php }elseif($widget['field_type'] == 'listing-style-1-1'){
       //listing style 1-1 ?>

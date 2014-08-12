@@ -733,6 +733,39 @@ ol.homepage-callout-list { display: block;
   }
 }
 
+/* Single Featured Item
+   <div class="KCPL_single-featured">
+     <span class="title KCPL_background-COLORNAME">title</span>
+     <div class="gutter">
+        <div class="entry">
+           <span class="entry-title">title</span>
+           <div class="entry-excerpt">
+               excerpt
+           </div>
+           <a href="#" class="KCPL_readmore">Learn more ≈</a>
+        </div>
+     </div>
+   </div>
+*/
+.#{$namespace}single-featured{color:#323333;margin:0 0 26px;border-radius:10px;background:#e2e2e2;overflow:hidden;
+   .title{color:#fff;font:bold 18px/18px $nimbus;display:block;text-align:center;text-transform:uppercase;padding:15px 10px 15px;}
+   .gutter{padding:20px 20px 1px;}
+   .entry{display:block;margin:0 0 27px;
+      .entry-title{font: bold 17px/17px $nimbus-c;text-transform: uppercase;letter-spacing: 0.095em;display:block;margin:0 0 2px;}
+      .entry-date{}
+      .entry-date{font:bold 14px/15px $nimbus;display:block;margin:0 0 2px;letter-spacing:0.025em;}
+      .entry-loc{font:13px/18px $minion;display:block;letter-spacing:0.095em;}
+      .entry-tags{display:block;
+         a{font:12px/12px $nimbus;color:#323333;letter-spacing:0.065em;}
+      }
+      .entry-excerpt{font:13px/18px $minion;display:block;letter-spacing:0.055em;margin:0 0 18px;}
+      a{color:#323333;display:block;}
+   }
+}
+.#{$namespace}single-featured.fimage{
+  .image{float:left;width:32.4%;margin:0 8% 0 0;}
+  .entry{float:left;width:59.6%;}
+}
 
 /* Listing Style 1
    //articles
