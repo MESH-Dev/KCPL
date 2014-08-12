@@ -13,10 +13,10 @@
   //left array
   echo "<div class='columns four alpha'>";
   foreach($contentArrL as $widget){
-    if($widget['field_type'] == 'single_featured_item'){
+    if($widget['field_type'] == 'single-featured-item'){
       //single featured item ?>
 
-
+      single-featured-item
 
     <?php }elseif($widget['field_type'] == 'listing-style-1-1'){
       //listing style 1-1 ?>
@@ -79,7 +79,28 @@
     <?php }elseif($widget['field_type'] == 'listing-style-4'){
       //listing style 4 ?>
 
+      <div class="KCPL_listing4">
+        <span class="title KCPL_background-<?php echo $widget['field_color']; ?>"><?php echo $widget['field_title']; ?></span>
+        <div class="gutter">
+           <div class="row">
 
+              <?php $i=0;
+              foreach($widget['listing_style_4'] as $entry){
+                if($i%2==0 && $i!=0){echo '</div><div class="row">';}
+                $img = wp_get_attachment_image_src($entry['image'],'small'); ?>
+              <div class="entry">
+                  <div class="image"><img src="<?php echo $img[0]; ?>" /></div>
+                  <div class="number"><?php echo $i+1; ?></div>
+                  <div class="content">
+                    <span class="entry-title"><?php echo $entry['title']; ?></span>
+                    <span class="entry-author"><?php echo $entry['author']; ?></span>
+                  </div>
+              </div>
+              <?php $i++; } ?>
+
+           </div>
+        </div>
+      </div>
 
     <?php }else{
       echo "Hasn't been configured yet. Deal with it.";
@@ -93,7 +114,12 @@
   //right array
   echo "<div class='columns four omega'>";
   foreach($contentArrR as $widget){
-    if($widget['field_type'] == 'listing-style-1-1'){
+    if($widget['field_type'] == 'single-featured-item'){
+      //single featured item ?>
+
+      single-featured-item
+
+    <?php }elseif($widget['field_type'] == 'listing-style-1-1'){
       //listing style 1-1 ?>
 
       <div class="KCPL_listing1-article KCPL_background-<?php echo $widget['field_color']; ?>">
@@ -149,6 +175,32 @@
           <div class="KCPL_listing-style-3-body">
               <a class="KCPL_listing-style-3-body-link KCPL_readmore" href="<?php echo get_post_type_archive_link('post'); ?>">Read all &nbsp; ≈</a>
           </div>
+      </div>
+
+    <?php }elseif($widget['field_type'] == 'listing-style-4'){
+      //listing style 4 ?>
+
+      <div class="KCPL_listing4">
+        <span class="title KCPL_background-<?php echo $widget['field_color']; ?>"><?php echo $widget['field_title']; ?></span>
+        <div class="gutter">
+           <div class="row">
+
+              <?php $i=0;
+              foreach($widget['listing_style_4'] as $entry){
+                if($i%2==0 && $i!=0){echo '</div><div class="row">';}
+                $img = wp_get_attachment_image_src($entry['image'],'small'); ?>
+              <div class="entry">
+                  <div class="image"><img src="<?php echo $img[0]; ?>" /></div>
+                  <div class="number"><?php echo $i+1; ?></div>
+                  <div class="content">
+                    <span class="entry-title"><?php echo $entry['title']; ?></span>
+                    <span class="entry-author"><?php echo $entry['author']; ?></span>
+                  </div>
+              </div>
+              <?php $i++; } ?>
+
+           </div>
+        </div>
       </div>
 
     <?php }else{
