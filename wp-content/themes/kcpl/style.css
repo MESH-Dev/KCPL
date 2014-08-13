@@ -3766,19 +3766,19 @@ ol.homepage-callout-list > li:nth-child(4) {
 }
 /* line 964, assets/sass/_elements.scss */
 .KCPL_listing4 .row .entry .image {
-  width: 33px;
+  width: 11%;
   float: left;
 }
 /* line 965, assets/sass/_elements.scss */
 .KCPL_listing4 .row .entry .number {
-  width: 57px;
+  width: 19%;
   float: left;
   font: 52px/30px "minion-pro";
   text-align: center;
 }
 /* line 966, assets/sass/_elements.scss */
 .KCPL_listing4 .row .entry .content {
-  width: 190px;
+  width: 70%;
   float: left;
 }
 /* line 967, assets/sass/_elements.scss */
@@ -4725,4 +4725,22 @@ a > .KCPL_horz-single {
   background: url(assets/img/commentCaretR.png) no-repeat;
   left: auto;
   right: 16px;
+}
+
+/* Video Embed */
+/* line 1382, assets/sass/_elements.scss */
+.KCPL_videoembed {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+  margin: 0 0 26px;
+}
+/* line 1383, assets/sass/_elements.scss */
+.KCPL_videoembed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

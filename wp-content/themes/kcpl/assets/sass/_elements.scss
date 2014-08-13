@@ -961,9 +961,9 @@ font: 14px/18px $nimbus;}
    .gutter{padding:20px 19px;}
    .row{display:block;margin:0 0 40px;
       .entry{display:block;float:left;width:50%;
-         .image{width:33px;float:left;}
-         .number{width: 57px;float: left;font: 52px/30px $minion;text-align: center;}
-         .content{width:190px;float:left;
+         .image{width:11%;float:left;}
+         .number{width:19%;float: left;font: 52px/30px $minion;text-align: center;}
+         .content{width:70%;float:left;
             .entry-title{display:block;font:bold 20px/20px $nimbus-c;text-transform:uppercase;}
             .entry-author{display:block;font:15px/22px $minion;}
          }
@@ -1375,4 +1375,10 @@ a > .#{$namespace}horz-single{color:#fff;}
          > .caret{background:url(assets/img/commentCaretR.png) no-repeat;left:auto;right:16px;}
       }
    }
+}
+
+
+/* Video Embed */
+.#{$namespace}videoembed{position: relative;padding-bottom: 56.25%;padding-top: 25px;height: 0;margin:0 0 26px;
+  iframe{position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
 }

@@ -1,6 +1,7 @@
 <?php
   include_once('functions/toolbox.php');
   include_once('functions/branch-hours.php');
+  include_once('functions/custom-fields.php');
 
   //enqueue scripts and styles *use production assets. Dev assets are located in assets/css and assets/js
   function KCPL_scripts() {
@@ -117,7 +118,7 @@
   		'singular_name'      => _x('Research Tool or Resource','post type singular name'),
   		'menu_name'          => _x('Research Tools & Resources','admin menu'),
   		'name_admin_bar'     => _x('Research Tool or Resource','add new on admin bar'),
-  		'add_new'            => _x('Add New'),
+  		'add_new'            => _x('Add New','add new'),
   		'add_new_item'       => __('Add New Research Tool or Resource'),
   		'new_item'           => __('New Research Tool or Resource'),
   		'edit_item'          => __('Edit Research Tool or Resource'),

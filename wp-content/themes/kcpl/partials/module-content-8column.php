@@ -55,7 +55,9 @@
            <?php } ?>
         </div>
       </div>
-    <?php }else{
+    <?php }elseif($widget['field_type'] == 'video'){
+      echo "<div class='KCPL_videoembed'>".$widget['video_embedded']."</div>";
+    }else{
       echo "field type not valid";
     }
   }

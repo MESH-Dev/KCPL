@@ -1,14 +1,9 @@
 <?php
-  $content = get_field('four_column_widgets');
-  if($content){
+  $contentArrL = get_field('four_column_widgets-left');
+  $contentArrR = get_field('four_column_widgets-right');
+  if($contentArrL || $contentArrR){
     echo "<div id='KCPL_content_4col' class='clearfix'>";
   }
-
-  //split array
-  $len = count($content);
-  $contentArrL = array_slice($content,0,$len/2);
-  $contentArrR = array_slice($content,$len/2);
-
 
   //left array
   echo "<div class='columns four alpha'>";
@@ -24,18 +19,14 @@
               <img src="<?php echo $widget['single_featured_item_image']; ?>" />
             </div>
           <?php } ?>
-          <?php $post = $widget['single_featured_item'];
-          setup_postdata($post); ?>
            <div class="entry">
-              <span class="entry-title"><?php the_title(); ?></span>
-              <span class="entry-date"><?php the_time('F j, Y'); ?></span>
-              <div class="entry-tags"><?php the_tags('',', ','<br />'); ?></div>
+              <span class="entry-title"><?php echo $widget['single_featured_item']; ?></span>
+              <span class="entry-date"><?php echo $widget['single_featured_item_supporting_info']; ?></span>
               <div class="entry-excerpt">
-                  <?php the_excerpt(); ?>
+                  <?php echo $widget['single_featured_item_description']; ?>
               </div>
-              <a href="<?php the_permalink(); ?>" class="KCPL_readmore">Learn more ≈</a>
+              <a href="<?php echo $widget['single_featured_item_link_url']; ?>" class="KCPL_readmore"><?php echo $widget['single_featured_item_link_text']; ?></a>
            </div>
-           <?php wp_reset_postdata(); ?>
         </div>
       </div>
 
@@ -45,14 +36,24 @@
       <div class="KCPL_listing1-article KCPL_background-<?php echo $widget['field_color']; ?>">
         <span class="title"><?php echo $widget['field_title']; ?></span>
         <div class="gutter">
-          <?php foreach($widget['resources'] as $post){
-            setup_postdata($post); ?>
+          <?php foreach($widget['listing_style_1-1'] as $entry){
+            if($entry['reference'] == true){
+              $post = $entry['reference_post'];
+              setup_postdata($post);
+              $link = get_permalink();
+              $title = get_the_title();
+              $excerpt = get_the_excerpt();
+            }else{
+              $title= $entry['title'];
+              $excerpt = $entry['description'];
+              $link = $entry['link_url'];
+            } ?>
             <div class="entry">
-               <a href="<?php the_permalink(); ?>"><span class="entry-title"><?php the_title(); ?></span></a>
+               <a href="<?php echo $link; ?>"><span class="entry-title"><?php echo $title; ?></span></a>
                <div class="entry-excerpt">
-                   <?php the_excerpt(); ?>
+                   <?php echo $excerpt; ?>
                </div>
-               <a href="<?php the_permalink(); ?>" class="KCPL_readmore">Learn more ≈</a>
+               <a href="<?php echo $link; ?>" class="KCPL_readmore"><?php echo $entry['link_text']; ?></a>
             </div>
           <?php } wp_reset_postdata(); ?>
         </div>
@@ -79,23 +80,7 @@
     <?php }elseif($widget['field_type'] == 'listing-style-3'){
       //listing style 3 ?>
 
-      <div class="KCPL_listing-style-3">
-          <div class="KCPL_listing-style-3-header KCPL_background-<?php echo $widget['field_color']; ?>">
-              <span><?php echo $widget['field_title']; ?></span>
-          </div>
-          <?php foreach($widget['posts'] as $post){
-            setup_postdata($post); ?>
-            <div class="KCPL_listing-style-3-body">
-                <a href="<?php the_permalink(); ?>"><span class="KCPL_listing-style-3-body-title"><?php the_title(); ?></span></a>
-                <span class="KCPL_listing-style-3-body-date"><?php the_time('F j, Y'); ?></span>
-                <span class="KCPL_listing-style-3-body-excerpt"><?php the_excerpt(); ?></span>
-                <a class="KCPL_listing-style-3-body-link KCPL_readmore" href="<?php the_permalink(); ?>">More &nbsp; ≈</a>
-            </div>
-          <?php } wp_reset_postdata(); ?>
-          <div class="KCPL_listing-style-3-body">
-              <a class="KCPL_listing-style-3-body-link KCPL_readmore" href="<?php echo get_post_type_archive_link('post'); ?>">Read all &nbsp; ≈</a>
-          </div>
-      </div>
+      listing-style-3
 
     <?php }elseif($widget['field_type'] == 'listing-style-4'){
       //listing style 4 ?>
