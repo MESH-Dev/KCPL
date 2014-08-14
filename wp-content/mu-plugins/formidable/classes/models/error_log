@@ -1,9 +1,0 @@
-[13-Jul-2014 05:23:49 America/Chicago] PHP Fatal error:  Call to undefined function __() in /home/jqdsalt/public_html/wp-content/plugins/formidable/classes/models/FrmSettings.php on line 2
-[13-Jul-2014 05:23:52 America/Chicago] PHP Fatal error:  Call to undefined function __() in /home/jqdsalt/public_html/wp-content/plugins/formidable/classes/models/FrmDb.php on line 2
-[13-Jul-2014 05:23:53 America/Chicago] PHP Fatal error:  Call to undefined function __() in /home/jqdsalt/public_html/wp-content/plugins/formidable/classes/models/FrmForm.php on line 2
-[13-Jul-2014 05:32:24 America/Chicago] PHP Fatal error:  Call to undefined function __() in /home/jqdsalt/public_html/wp-content/plugins/formidable/classes/models/FrmSettings.php on line 2
-[13-Jul-2014 05:32:42 America/Chicago] PHP Fatal error:  Call to undefined function __() in /home/jqdsalt/public_html/wp-content/plugins/formidable/classes/models/FrmEntry.php on line 2
-[13-Jul-2014 05:32:47 America/Chicago] PHP Fatal error:  Call to undefined function __() in /home/jqdsalt/public_html/wp-content/plugins/formidable/classes/models/FrmForm.php on line 2
-[13-Jul-2014 05:32:52 America/Chicago] PHP Fatal error:  Call to undefined function __() in /home/jqdsalt/public_html/wp-content/plugins/formidable/classes/models/FrmField.php on line 2
-[13-Jul-2014 05:33:02 America/Chicago] PHP Fatal error:  Call to undefined function __() in /home/jqdsalt/public_html/wp-content/plugins/formidable/classes/models/FrmDb.php on line 2
-[13-Jul-2014 05:33:03 America/Chicago] PHP Fatal error:  Call to undefined function __() in /home/jqdsalt/public_html/wp-content/plugins/formidable/classes/models/FrmEntryMeta.php on line 2
