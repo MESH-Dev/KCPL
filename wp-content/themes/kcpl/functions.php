@@ -1,7 +1,7 @@
 <?php
   include_once('functions/toolbox.php');
   include_once('functions/branch-hours.php');
-  include_once('functions/custom-fields.php');
+  //include_once('functions/custom-fields.php');
 
   //enqueue scripts and styles *use production assets. Dev assets are located in assets/css and assets/js
   function KCPL_scripts() {
