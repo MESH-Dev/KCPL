@@ -6,9 +6,17 @@
     echo "<div id='KCPL_content_4col' class='clearfix'>";
   }
 
+  $count = 1;
+  $len = count($contentArrL);
+
   //left array
   echo "<div class='columns four alpha'>";
   foreach($contentArrL as $widget){
+
+    if ($count % 10 == 1) {
+        echo "<div class='paginate-". $count ."'>";
+    }
+
     if($widget['field_type'] == 'single-featured'){
       //single featured item ?>
 
@@ -112,15 +120,30 @@
     <?php }else{
       echo "Hasn't been configured yet. Deal with it.";
     }
+
+    if ($count%10==0 || $count == $len) {
+        echo "</div>";
+    }
+
+    $count = $count + 1;
+
   }
   echo "</div>";
 
 
-
+  $count = 1;
+  $len = count($contentArrR);
 
   //right array
   echo "<div class='columns four omega'>";
   foreach($contentArrR as $widget){
+
+    $len = count($countentArrL);
+
+    if ($count % 10 == 1) {
+        echo "<div class='paginate-". $count ."'>";
+    }
+
     if($widget['field_type'] == 'single-featured'){
       //single featured item ?>
 
@@ -234,6 +257,13 @@
     <?php }else{
       echo "Hasn't been configured yet. Deal with it.";
     }
+
+    if ($count%10==0 || $count == $len) {
+        echo "</div>";
+    }
+
+    $count = $count + 1;
+
   }
   echo "</div>";
 

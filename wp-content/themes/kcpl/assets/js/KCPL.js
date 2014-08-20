@@ -19,5 +19,9 @@ jQuery(document).ready(function($){
   });
 
   //footer functions
+
+  //pagination functions
+
   
+
 });

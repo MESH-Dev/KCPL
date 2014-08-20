@@ -1,3 +1,5 @@
+<?php /* Template Name: Landing */ ?>
+
 <?php get_header();
 global $post;
 $pID = KCPL_get_menu_parent_ID();
@@ -62,36 +64,20 @@ $color = get_field('section_color',$pID); ?>
         } ?>
       <?php include_once(locate_template('partials/module-sidebar-widgets.php')); ?>
     </div>
-
     <div class="column eight omega" id="contentPrimary">
-      <!-- <div class="column eight alpha omega">
-        <?php include_once(locate_template('partials/module-content-topcallout.php')); ?>
-      </div> -->
 
-      <div class="column eight alpha omega">
-        <?php include_once(locate_template('partials/module-content-8column.php')); ?>
-      </div>
+        <?php
+            // Partial to use for 8 column (full width) content blocks
+            include_once(locate_template('partials/module-content-8column.php'));
+        ?>
 
-      <?php $rightSidebar = get_field('sidebar_callouts');
-            $rsCount = count($rightSidebar); ?>
-
-      <div class="column <?php if($rsCount != 0){echo 'six';}else{echo 'eight omega';} ?> alpha">
+        <?php
+            // Partial to use for two side-by-side 4 column content blocks
+            include_once(locate_template('partials/module-content-4column.php'));
+        ?>
         <?php the_content(); ?>
-      </div>
-
-      <?php if($rsCount != 0){ ?>
-
-        <div class="column two omega">
-          <?php foreach($rightSidebar as $widget){
-              echo $widget['field_type'];
-          }?>
-
-        </div>
-
-      <?php } ?>
 
     </div>
-
   </div>
 </div>
 
