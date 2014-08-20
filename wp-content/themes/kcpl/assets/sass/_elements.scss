@@ -1425,3 +1425,19 @@ a > .#{$namespace}horz-single{color:#fff;}
     input[type="submit"]:hover{cursor:pointer;}
 
 }
+
+/* Pagination */
+
+/*
+
+<a class="previous page-numbers" href=""><i class="fa fa-angle-double-left"></i></a>
+<span class='page-numbers current'>1</span>
+<a class='page-numbers' href=''>2</a>
+<a class="next page-numbers" href=""><i class="fa fa-angle-double-right"></i></a>
+
+*/
+
+.page-numbers { display: inline; font-family: $nimbus; font-style: bold; font-size: 16px; line-height: 18px; color: $m-grey; padding: 0px 6px; }
+.current { color: $d-grey; }
+.previous { display: inline; padding-right: 23px; font-size: 20px; }
+.next { display: inline; padding-left: 23px; font-size: 20px; }

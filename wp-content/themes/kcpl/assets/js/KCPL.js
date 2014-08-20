@@ -19,9 +19,13 @@ jQuery(document).ready(function($){
   });
 
   //footer functions
+<<<<<<< HEAD
 
   //pagination functions
 
   
+=======
+ 
+>>>>>>> 9f5bb61070b08a101b36fd372b46124a0656643b
 
 });

@@ -4951,3 +4951,34 @@ a > .KCPL_horz-single {
 #KCPL_Calendar_sidebar input[type="submit"]:hover {
   cursor: pointer;
 }
+
+/* Pagination */
+/* line 1431, assets/sass/_elements.scss */
+.page-numbers {
+  display: inline;
+  font-family: "nimbus-sans";
+  font-style: bold;
+  font-size: 16px;
+  line-height: 18px;
+  color: #7c7d7d;
+  padding: 0px 6px;
+}
+
+/* line 1432, assets/sass/_elements.scss */
+.current {
+  color: #323333;
+}
+
+/* line 1433, assets/sass/_elements.scss */
+.previous {
+  display: inline;
+  padding-right: 23px;
+  font-size: 20px;
+}
+
+/* line 1434, assets/sass/_elements.scss */
+.next {
+  display: inline;
+  padding-left: 23px;
+  font-size: 20px;
+}
