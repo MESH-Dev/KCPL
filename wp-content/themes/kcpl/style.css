@@ -4747,23 +4747,52 @@ a > .KCPL_horz-single {
 
 /* Calendar */
 /* line 1388, assets/sass/_elements.scss */
+#KCPL_Calendar_viewby {
+  display: block;
+  padding: 0 0 18px;
+}
+/* line 1389, assets/sass/_elements.scss */
+#KCPL_Calendar_viewby * {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 1390, assets/sass/_elements.scss */
+#KCPL_Calendar_viewby span {
+  font: 14px/14px "minion-pro";
+  font-style: italic;
+  letter-spacing: 0.05em;
+  margin: 0 6px 0 0;
+}
+/* line 1391, assets/sass/_elements.scss */
+#KCPL_Calendar_viewby a {
+  font: bold 14px/14px "nimbus-sans";
+  padding: 7px 10px 4px;
+  color: #323333;
+  letter-spacing: 0.055em;
+}
+/* line 1392, assets/sass/_elements.scss */
+#KCPL_Calendar_viewby a.active, #KCPL_Calendar_viewby a:hover {
+  background: #76849a;
+}
+
+/* line 1395, assets/sass/_elements.scss */
 #KCPL_Calendar_monthsel {
   background: #758499;
   padding: 18px 50px 16px;
   position: relative;
 }
-/* line 1389, assets/sass/_elements.scss */
+/* line 1396, assets/sass/_elements.scss */
 #KCPL_Calendar_monthsel a {
   font: bold 17px/17px "nimbus-sans";
   text-transform: uppercase;
   color: #323333;
   margin: 0 8px;
 }
-/* line 1390, assets/sass/_elements.scss */
+/* line 1397, assets/sass/_elements.scss */
 #KCPL_Calendar_monthsel a:hover, #KCPL_Calendar_monthsel a.active {
   color: #fff;
 }
-/* line 1391, assets/sass/_elements.scss */
+/* line 1398, assets/sass/_elements.scss */
 #KCPL_Calendar_monthsel a#KCPL_Calendar_prev {
   background: url(assets/img/calMonthLeft.png) no-repeat;
   height: 12px;
@@ -4776,7 +4805,7 @@ a > .KCPL_horz-single {
   text-indent: -9999px;
   display: block;
 }
-/* line 1392, assets/sass/_elements.scss */
+/* line 1399, assets/sass/_elements.scss */
 #KCPL_Calendar_monthsel a#KCPL_Calendar_next {
   background: url(assets/img/calMonthRight.png) no-repeat;
   height: 12px;
@@ -4790,18 +4819,18 @@ a > .KCPL_horz-single {
   display: block;
 }
 
-/* line 1395, assets/sass/_elements.scss */
+/* line 1402, assets/sass/_elements.scss */
 #KCPL_Calendar_gridview {
   display: block;
 }
 
-/* line 1396, assets/sass/_elements.scss */
+/* line 1403, assets/sass/_elements.scss */
 #KCPL_Calendar_gridview table {
   width: 100%;
   background: #e2e2e2;
 }
 
-/* line 1398, assets/sass/_elements.scss */
+/* line 1405, assets/sass/_elements.scss */
 #KCPL_Calendar_gridview th {
   border: none;
   border-left: 1px solid #676767;
@@ -4810,7 +4839,7 @@ a > .KCPL_horz-single {
   text-transform: uppsercase;
 }
 
-/* line 1400, assets/sass/_elements.scss */
+/* line 1407, assets/sass/_elements.scss */
 #KCPL_Calendar_gridview table tr td {
   width: 14.28571428571429%;
   position: relative;
@@ -4818,19 +4847,19 @@ a > .KCPL_horz-single {
   border: 1px solid #676767 !important;
 }
 
-/* line 1401, assets/sass/_elements.scss */
+/* line 1408, assets/sass/_elements.scss */
 #KCPL_Calendar_gridview table tr td span {
   display: block;
   font: 12px/16px 'minion pro';
 }
 
-/* line 1402, assets/sass/_elements.scss */
+/* line 1409, assets/sass/_elements.scss */
 #KCPL_Calendar_gridview table tr td span strong {
   font: bold 12px/12px 'nimbus-sans';
   text-transform: uppercase;
 }
 
-/* line 1403, assets/sass/_elements.scss */
+/* line 1410, assets/sass/_elements.scss */
 #KCPL_Calendar_gridview table tr td span.day-marker {
   position: absolute;
   top: 6px;
@@ -4839,27 +4868,27 @@ a > .KCPL_horz-single {
   line-height: 12px;
 }
 
-/* line 1406, assets/sass/_elements.scss */
+/* line 1413, assets/sass/_elements.scss */
 #KCPL_Calendar_listview {
   display: block;
   background: #76849a;
 }
-/* line 1407, assets/sass/_elements.scss */
+/* line 1414, assets/sass/_elements.scss */
 #KCPL_Calendar_listview #KCPL_Calendar_monthsel {
   border-bottom: 1px solid #323333;
 }
-/* line 1408, assets/sass/_elements.scss */
+/* line 1415, assets/sass/_elements.scss */
 #KCPL_Calendar_listview #KCPL_Calendar_listview-entries {
   border-top: 1px solid #323333;
   margin: 3px 0 0;
   display: block;
 }
-/* line 1409, assets/sass/_elements.scss */
+/* line 1416, assets/sass/_elements.scss */
 #KCPL_Calendar_listview .KCPL_Calendar_date-entry {
   display: table;
   width: 100%;
 }
-/* line 1410, assets/sass/_elements.scss */
+/* line 1417, assets/sass/_elements.scss */
 #KCPL_Calendar_listview .KCPL_Calendar_date-entry .left {
   width: 50%;
   display: table-cell;
@@ -4868,20 +4897,20 @@ a > .KCPL_horz-single {
   vertical-align: top;
   padding: 12px 20px;
 }
-/* line 1411, assets/sass/_elements.scss */
+/* line 1418, assets/sass/_elements.scss */
 #KCPL_Calendar_listview .KCPL_Calendar_date-entry .left .title {
   font: bold 17px/26px "nimbus-sans-condensed";
   display: block;
   text-transform: uppercase;
   letter-spacing: 0.09em;
 }
-/* line 1412, assets/sass/_elements.scss */
+/* line 1419, assets/sass/_elements.scss */
 #KCPL_Calendar_listview .KCPL_Calendar_date-entry .left .desc {
   font: 13px/18px "minion-pro";
   display: block;
   letter-spacing: 0.095em;
 }
-/* line 1414, assets/sass/_elements.scss */
+/* line 1421, assets/sass/_elements.scss */
 #KCPL_Calendar_listview .KCPL_Calendar_date-entry .right {
   width: 50%;
   display: table-cell;
@@ -4889,37 +4918,37 @@ a > .KCPL_horz-single {
   vertical-align: top;
   padding: 18px 40px;
 }
-/* line 1415, assets/sass/_elements.scss */
+/* line 1422, assets/sass/_elements.scss */
 #KCPL_Calendar_listview .KCPL_Calendar_date-entry .right .time {
   font: bold 14px/15px "nimbus-sans";
   display: block;
   margin: 0 0 2px;
   letter-spacing: 0.025em;
 }
-/* line 1416, assets/sass/_elements.scss */
+/* line 1423, assets/sass/_elements.scss */
 #KCPL_Calendar_listview .KCPL_Calendar_date-entry .right .tags {
   display: block;
 }
-/* line 1417, assets/sass/_elements.scss */
+/* line 1424, assets/sass/_elements.scss */
 #KCPL_Calendar_listview .KCPL_Calendar_date-entry .right .tags a {
   font: 12px/12px "nimbus-sans";
   color: #323333;
   letter-spacing: 0.065em;
 }
 
-/* line 1423, assets/sass/_elements.scss */
+/* line 1430, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar-form {
   margin: 0;
   padding: 0;
 }
 
-/* line 1424, assets/sass/_elements.scss */
+/* line 1431, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar {
   display: block;
   background: #e2e2e2;
   margin: 53px 0 0;
 }
-/* line 1425, assets/sass/_elements.scss */
+/* line 1432, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar h3 {
   font: bold 17px/17px "nimbus-sans";
   padding: 18px 0 17px 19px;
@@ -4927,11 +4956,11 @@ a > .KCPL_horz-single {
   border-bottom: 1px solid #676767;
   margin: 0;
 }
-/* line 1426, assets/sass/_elements.scss */
+/* line 1433, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar > div {
   display: block;
 }
-/* line 1427, assets/sass/_elements.scss */
+/* line 1434, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar input[type="radio"] {
   -webkit-appearance: none;
   background: transparent;
@@ -4941,7 +4970,7 @@ a > .KCPL_horz-single {
   margin: 0 1px 0 20px;
   position: relative;
 }
-/* line 1428, assets/sass/_elements.scss */
+/* line 1435, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar input[type="radio"]:checked:after {
   content: '';
   position: absolute;
@@ -4953,37 +4982,37 @@ a > .KCPL_horz-single {
   border-radius: 2px;
   background: #000;
 }
-/* line 1429, assets/sass/_elements.scss */
+/* line 1436, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar label {
   letter-spacing: 0.075em;
   font-size: 14px;
   vertical-align: bottom;
 }
-/* line 1430, assets/sass/_elements.scss */
+/* line 1437, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar #KCPL_Calendar_sidebar-tax label {
   font-size: 12px;
 }
-/* line 1431, assets/sass/_elements.scss */
+/* line 1438, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar div#KCPL_Calendar_sidebar-ce {
   padding: 6px 0;
   border-bottom: 1px solid #676767;
 }
-/* line 1432, assets/sass/_elements.scss */
+/* line 1439, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar .KCPL_Calendar_radio-cont {
   margin: 6px 0;
 }
-/* line 1433, assets/sass/_elements.scss */
+/* line 1440, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar span.KCPL_Calendar_sidebar-dropdown {
   font: 14px/14px "nimbus-sans";
   margin: 20px 0 0px 18px;
   display: block;
   letter-spacing: 0.065em;
 }
-/* line 1434, assets/sass/_elements.scss */
+/* line 1441, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar span.KCPL_Calendar_sidebar-dropdown:hover {
   cursor: pointer;
 }
-/* line 1435, assets/sass/_elements.scss */
+/* line 1442, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar span.KCPL_Calendar_sidebar-dropdown i {
   display: inline-block;
   background: url(assets/img/calSidebarDrop.png) no-repeat;
@@ -4992,25 +5021,25 @@ a > .KCPL_horz-single {
   vertical-align: middle;
   transition: 0.2s all;
 }
-/* line 1436, assets/sass/_elements.scss */
+/* line 1443, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar span.KCPL_Calendar_sidebar-dropdown.active i {
   transform: rotate(180deg);
 }
-/* line 1437, assets/sass/_elements.scss */
+/* line 1444, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar .KCPL_Calendar_dropdown {
   display: none;
 }
-/* line 1438, assets/sass/_elements.scss */
+/* line 1445, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar div#KCPL_Calendar_search {
   text-align: right;
   padding: 14px 17px 18px 0;
 }
-/* line 1439, assets/sass/_elements.scss */
+/* line 1446, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar input[type="submit"] {
   background: #76849a;
   padding: 3px 27px 3px 26px;
 }
-/* line 1440, assets/sass/_elements.scss */
+/* line 1447, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar input[type="submit"]:hover {
   cursor: pointer;
 }

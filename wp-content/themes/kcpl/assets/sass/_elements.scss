@@ -1385,6 +1385,13 @@ a > .#{$namespace}horz-single{color:#fff;}
 
 
 /* Calendar */
+#KCPL_Calendar_viewby{display:block;padding:0 0 18px;
+  *{display:inline-block;vertical-align:middle;}
+  span{font:14px/14px $minion;font-style:italic;letter-spacing: 0.05em;margin:0 6px 0 0;}
+  a{font: bold 14px/14px $nimbus;padding: 7px 10px 4px;color: #323333;letter-spacing: 0.055em;}
+    a.active,a:hover{background:$grey;}
+}
+
 #KCPL_Calendar_monthsel{background:#758499;padding:18px 50px 16px;position: relative;
   a{font: bold 17px/17px "nimbus-sans";text-transform: uppercase;color: #323333;margin:0 8px;}
     a:hover,a.active{color:#fff;}
