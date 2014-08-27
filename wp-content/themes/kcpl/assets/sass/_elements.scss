@@ -1392,6 +1392,13 @@ a > .#{$namespace}horz-single{color:#fff;}
     a.active,a:hover{background:$grey;}
 }
 
+#KCPL_Calendar_listview-current{position:relative;font:bold 15px/30px $nimbus;padding:0 30px;
+  #KCPL_Calendar_listview-current-np{position:absolute;top:10px;right:10px;
+    .next{background: url(assets/img/calMonthRight.png) no-repeat;height: 12px;width: 11px;float:right;top: 20px;left: 18px;margin: 0 0 0 6px;padding: 0;text-indent: -9999px;display: block;}
+    .prev{background: url(assets/img/calMonthLeft.png) no-repeat;height: 12px;width: 11px;float:left;top: 20px;left: 18px;margin: 0;padding: 0;text-indent: -9999px;display: block;}
+  }
+}
+
 #KCPL_Calendar_monthsel{background:#758499;padding:18px 50px 16px;position: relative;
   a{font: bold 17px/17px "nimbus-sans";text-transform: uppercase;color: #323333;margin:0 8px;}
     a:hover,a.active{color:#fff;}
