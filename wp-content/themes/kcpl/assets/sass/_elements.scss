@@ -674,7 +674,7 @@ ol.homepage-callout-list { display: block;
   input[type="search"]{-webkit-appearance: none;border-radius: 0px;border: 3px solid #fff;background: #e2e2e2;font: bold 17px/27px $nimbus;position: relative;z-index: 1;padding: 1px 20px 2px 27px;box-sizing: border-box;width:100%;}
 }
 
-#KCPL_search{background:$yellow;display:block;
+#KCPL_search{background:$yellow;display:block; margin-bottom: 30px;
   > .gutter{padding:8px 14px;}
   form{padding:0;margin:0;}
   #searchField{position:relative;display:block;margin:0 0 22px;}
@@ -1454,3 +1454,20 @@ a > .#{$namespace}horz-single{color:#fff;}
     input[type="submit"]:hover{cursor:pointer;}
 
 }
+
+/* Pagination */
+
+/*
+
+<a class="previous page-numbers" href=""><i class="fa fa-angle-double-left"></i></a>
+<span class='page-numbers current'>1</span>
+<a class='page-numbers' href=''>2</a>
+<a class="next page-numbers" href=""><i class="fa fa-angle-double-right"></i></a>
+
+*/
+
+.page-numbers-container { display: block; text-align:center; margin: 0px auto 20px; }
+.page-numbers { display: inline; font-family: $nimbus; font-style: bold; font-size: 16px; line-height: 18px; color: $m-grey; padding: 0px 6px; cursor: pointer; }
+.current { color: $d-grey; }
+.previous { display: inline; padding-right: 23px; font-size: 20px; cursor: pointer; }
+.next { display: inline; padding-left: 23px; font-size: 20px; cursor: pointer; }

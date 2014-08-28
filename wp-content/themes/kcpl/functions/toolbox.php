@@ -47,3 +47,17 @@ function cycle($first_value, $values = '*') {
   $count[$name]++;
   return $values[$index];
 }
+
+// get highest level ancestor ID
+
+function KCPL_get_highest_ancestor($post) {
+    if ($post->post_parent)	{
+    	$ancestors=get_post_ancestors($post->ID);
+    	$root=count($ancestors)-1;
+    	$parent = $ancestors[$root];
+        return $parent;
+    } else {
+    	$parent = $post->ID;
+        return $parent;
+    }
+}
