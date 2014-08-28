@@ -24,18 +24,10 @@ jQuery(document).ready(function($){
   $('.paginate').hide();
   $('.p-1').show();
 
-  // generate the previous arrow
-
-  $(".page-numbers-container").append('<a class="previous"><i class="fa fa-angle-double-left"></i></a>');
-
   // generate as many page numbers as there are pages
   for(var n = 1; n <= $(".paginate").length; n++){
-      $(".page-numbers-container").append("<a class='page-numbers'>" + n + "</a>");
+      // $(".page-numbers-container").append("<a class='page-numbers'>" + n + "</a>");
   };
-
-  // generate the next arrow
-
-  $(".page-numbers-container").append('<a class="next"><i class="fa fa-angle-double-right"></i></a>');
 
   // make the first page the current page
   $(".page-numbers:eq(0)").addClass("current");
@@ -47,8 +39,8 @@ jQuery(document).ready(function($){
       var n = $(this);
       var c = $('.current');
 
-      $('.p-' + c.html()).fadeOut("slow", function(){});
-      $('.p-' + n.html()).delay(800).fadeIn('slow', function(){});
+      $('.p-' + c.html()).hide('slide', {direction: 'left'}, 1000);
+      $('.p-' + n.html()).show('slide', {direction: 'right'}, 1000).delay(1000);
 
       c.removeClass('current');
       $(this).addClass('current');
@@ -63,8 +55,8 @@ jQuery(document).ready(function($){
         var n = $('.current').next('.page-numbers');
         var c = $('.current');
 
-        $('.p-' + c.html()).fadeOut("slow", function(){});
-        $('.p-' + n.html()).delay(800).fadeIn('slow', function(){});
+        $('.p-' + c.html()).hide('slide', {direction: 'left'}, 1000);
+        $('.p-' + n.html()).show('slide', {direction: 'right'}, 1000);
 
         c.removeClass('current');
         n.addClass('current');
@@ -82,8 +74,8 @@ jQuery(document).ready(function($){
         var p = $('.current').prev('.page-numbers');
         var c = $('.current');
 
-        $('.p-' + c.html()).fadeOut("slow", function(){});
-        $('.p-' + p.html()).delay(800).fadeIn('slow', function(){});
+        $('.p-' + c.html()).hide('slide', {direction: 'right'}, 1000);
+        $('.p-' + p.html()).show('slide', {direction: 'left'}, 1000);
 
         c.removeClass('current');
         p.addClass('current');
