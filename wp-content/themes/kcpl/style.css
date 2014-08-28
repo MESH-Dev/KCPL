@@ -2948,6 +2948,7 @@ ol.homepage-callout-list > li:nth-child(4) {
 #KCPL_search {
   background: #ffa751;
   display: block;
+  margin-bottom: 30px;
 }
 /* line 678, assets/sass/_elements.scss */
 #KCPL_search > .gutter {
@@ -4953,7 +4954,22 @@ a > .KCPL_horz-single {
 }
 
 /* Pagination */
-/* line 1431, assets/sass/_elements.scss */
+/*
+
+<a class="previous page-numbers" href=""><i class="fa fa-angle-double-left"></i></a>
+<span class='page-numbers current'>1</span>
+<a class='page-numbers' href=''>2</a>
+<a class="next page-numbers" href=""><i class="fa fa-angle-double-right"></i></a>
+
+*/
+/* line 1440, assets/sass/_elements.scss */
+.page-numbers-container {
+  display: block;
+  text-align: center;
+  margin: 0px auto 20px;
+}
+
+/* line 1441, assets/sass/_elements.scss */
 .page-numbers {
   display: inline;
   font-family: "nimbus-sans";
@@ -4962,23 +4978,26 @@ a > .KCPL_horz-single {
   line-height: 18px;
   color: #7c7d7d;
   padding: 0px 6px;
+  cursor: pointer;
 }
 
-/* line 1432, assets/sass/_elements.scss */
+/* line 1442, assets/sass/_elements.scss */
 .current {
   color: #323333;
 }
 
-/* line 1433, assets/sass/_elements.scss */
+/* line 1443, assets/sass/_elements.scss */
 .previous {
   display: inline;
   padding-right: 23px;
   font-size: 20px;
+  cursor: pointer;
 }
 
-/* line 1434, assets/sass/_elements.scss */
+/* line 1444, assets/sass/_elements.scss */
 .next {
   display: inline;
   padding-left: 23px;
   font-size: 20px;
+  cursor: pointer;
 }

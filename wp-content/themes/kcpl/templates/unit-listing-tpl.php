@@ -3,7 +3,13 @@
 <?php get_header();
 
 global $post;
-$pID = KCPL_get_menu_parent_ID();
+
+// Couldn't get this to work
+// $pID = KCPL_get_menu_parent_ID();
+
+// See toolbox.php for this function
+$pID = KCPL_get_highest_ancestor($post);
+
 $sidebar = KCPL_get_sidebar($pID);
 $color = get_field('section_color',$pID); ?>
 
@@ -69,7 +75,7 @@ $color = get_field('section_color',$pID); ?>
 
       <?php include_once(locate_template('partials/module-content-8column.php')); ?>
       <?php include_once(locate_template('partials/module-content-4column-p.php')); ?>
-      <!-- <?php the_content(); ?> -->
+      <?php the_content(); ?>
     </div>
   </div>
 </div>

@@ -2,7 +2,11 @@
 
 <?php get_header();
 global $post;
-$pID = KCPL_get_menu_parent_ID();
+// Couldn't get this to work
+// $pID = KCPL_get_menu_parent_ID();
+
+// See toolbox.php for this function
+$pID = KCPL_get_highest_ancestor($post);
 $sidebar = KCPL_get_sidebar($pID);
 $color = get_field('section_color',$pID); ?>
 
