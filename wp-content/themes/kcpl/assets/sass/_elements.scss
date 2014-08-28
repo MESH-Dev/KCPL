@@ -995,6 +995,7 @@ font: 14px/18px $nimbus;}
      </div>
    </div>
 */
+
 a > .#{$namespace}horz-single{color:#fff;}
 .#{$namespace}horz-single{font:bold 42px/42px $nimbus-c;color:#fff;padding: 9px 27px 12px 18px;text-transform:uppercase;border-radius:11px;text-align:center;margin:0 0 26px;
    .gutter{padding:5px 5px 2px;border:1px solid #fff;}
@@ -1041,6 +1042,24 @@ a > .#{$namespace}horz-single{color:#fff;}
    span{text-transform:uppercase;display:inline-block;vertical-align:bottom;font-size:18px;line-height:18px;}
    .#{$namespace}font-nimbus-condensed{font-weight:bold;margin:0 4px 0 0;}
    .#{$namespace}font-minion{}
+}
+
+/* "Get a Free Library Card" Callout
+
+<div class="KCPL_horz-card KCPL_background-red">
+  <div class="gutter">
+     <span class="KCPL_horz-card-first">Get your free</span> <span class="KCPL_horz-card-last">library card</span>
+  </div>
+</div>
+
+*/
+
+.#{$namespace}horz-card{color:#fff;padding: 9px 27px 12px 18px;text-transform:uppercase;border-radius:11px;text-align:center;margin:0 0 26px;
+   .gutter{padding:15px 5px 15px;border:1px solid #fff;}
+   span{padding:0;}
+   a{padding:0;}
+   .#{$namespace}horz-card-first{ font:bold 18px/22px $nimbus-c; letter-spacing: 0.04em; }
+   .#{$namespace}horz-card-last{ font: bold 18px/22px $minion; }
 }
 
 /* 8 Column Featured
