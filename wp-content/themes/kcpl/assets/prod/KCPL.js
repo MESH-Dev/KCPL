@@ -24,10 +24,16 @@ jQuery(document).ready(function($){
   $('.paginate').hide();
   $('.p-1').show();
 
+  $(".page-numbers-container").append('<a class="previous"><i class="fa fa-angle-double-left"></i></a>');
+
   // generate as many page numbers as there are pages
   for(var n = 1; n <= $(".paginate").length; n++){
-      // $(".page-numbers-container").append("<a class='page-numbers'>" + n + "</a>");
+      $(".page-numbers-container").append("<a class='page-numbers'>" + n + "</a>");
   };
+
+  // generate the next arrow
+
+  $(".page-numbers-container").append('<a class="next"><i class="fa fa-angle-double-right"></i></a>');
 
   // make the first page the current page
   $(".page-numbers:eq(0)").addClass("current");
