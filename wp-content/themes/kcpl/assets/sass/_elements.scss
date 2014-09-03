@@ -1003,6 +1003,8 @@ a > .#{$namespace}horz-single{color:#fff;}
    a{padding:0;}
 }
 
+.#{$namespace}horz-single:hover{ opacity: 0.8; cursor: pointer; }
+
 .#{$namespace}horz-multi{border-radius:11px;color:#fff;margin:0 0 26px;
    .gutter{padding: 14px 27px 13px;}
    span{font: bold 20px/23px $nimbus;text-transform: uppercase;display: block;}
@@ -1061,6 +1063,8 @@ a > .#{$namespace}horz-single{color:#fff;}
    .#{$namespace}horz-card-first{ font:bold 18px/22px $nimbus-c; letter-spacing: 0.04em; }
    .#{$namespace}horz-card-last{ font: bold 18px/22px $minion; }
 }
+
+.#{$namespace}horz-card:hover{ opacity: 0.8; cursor: pointer; }
 
 /* 8 Column Featured
    <div class="KCPL_featured KCPL_background-green clearfix">
