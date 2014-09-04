@@ -1,15 +1,12 @@
-<?php /* Template Name: Unit Listing */ ?>
+<?php /* Template Name: Calendar  */ ?>
 
 <?php get_header();
-
 global $post;
-
 // Couldn't get this to work
 // $pID = KCPL_get_menu_parent_ID();
 
 // See toolbox.php for this function
 $pID = KCPL_get_highest_ancestor($post);
-
 $sidebar = KCPL_get_sidebar($pID);
 $color = get_field('section_color',$pID); ?>
 
@@ -19,12 +16,16 @@ $color = get_field('section_color',$pID); ?>
 
 <div id="content">
   <div class="container">
-    <?php include_once(locate_template('partials/module-sidebar-nav.php')); ?>
-    <div class="column eight omega" id="contentPrimary">
+     <div class="three column alpha">
+        
+        <?php //KCPL_Calendar_sidebar(); ?>
 
-      <?php include_once(locate_template('partials/module-content-8column.php')); ?>
-      <?php include_once(locate_template('partials/module-content-4column-p.php')); ?>
-      <?php the_content(); ?>
+     </div>
+    
+    <div class="column nine omega" id="contentPrimary">
+
+        <?php KCPL_Calendar_gridlayout(); ?>
+
     </div>
   </div>
 </div>
