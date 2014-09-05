@@ -1,34 +1,51 @@
 <div id="KCPL_search" class="extended">
  <div class="gutter clearfix">
-    <form>
+
+ <?php //echo do_shortcode( '[acps id="344"]'); ?>
+  
+
+
+
+
+    <form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
       <div id="searchField">
         <i class="fa fa-lg fa-search searchicon"></i>
-        <input type="search" placeholder="Search the collection" />
+        <input type="search" placeholder="Search the collection" name="s" id="s" value=''/>
+        <input type="hidden" name="search-type" value="resources" />
       </div>
       <div id="exFields">
         <div id="left">
          <select id="search-topic">
             <option value="">Topic</option>
-            <option value="option_1">Option 1</option>
-            <option value="option_2">Option 2</option>
-            <option value="option_3">Option 3</option>
+            <?php 
+            $terms = get_terms("resources-category");
+            if ( !empty( $terms ) && !is_wp_error( $terms ) ){
+               foreach ( $terms as $term ) {
+                 echo "<option value='" . $term->name . "'>" . $term->name . "</li>";
+               }
+            } ?>
+ 
          </select>
         </div>
         <div id="right">
          <select id="search-audience">
             <option value="">Audience</option>
-            <option value="option_1">Option 1</option>
-            <option value="option_2">Option 2</option>
-            <option value="option_3">Option 3</option>
+            <?php 
+            $terms = get_terms("audience");
+            if ( !empty( $terms ) && !is_wp_error( $terms ) ){
+               foreach ( $terms as $term ) {
+                 echo "<option value='" . $term->name . "'>" . $term->name . "</li>";
+               }
+            } ?>
          </select>
          <div id="search-online">
-             <input type="checkbox" name="checkboxNAME" value="checkboxVAL" id="checkboxONE"/><label class="KCPL_meta-small" for="checkboxONE">Online</label>
+             <input type="checkbox" name="Online" value="online" id="online"/><label class="KCPL_meta-small" for="checkboxONE">Online</label>
          </div>
          <div id="search-libraryCard">
-             <input type="checkbox" name="checkboxNAME" value="checkboxVAL" id="checkboxTWO"/><label class="KCPL_meta-small" for="checkboxTWO">With Library Card</label>
+             <input type="checkbox" name="With Library Card" value="with-library-card" id="with-library-card"/><label class="KCPL_meta-small" for="checkboxTWO">With Library Card</label>
          </div>
          <div id="search-inLibrary">
-             <input type="checkbox" name="checkboxNAME" value="checkboxVAL" id="checkboxTHREE"/><label class="KCPL_meta-small" for="checkboxTHREE">In Library Only</label>
+             <input type="checkbox" name="In Library Only" value="in-library-only" id="in-library-only"/><label class="KCPL_meta-small" for="checkboxTHREE">In Library Only</label>
          </div>
         </div>
       </div>
@@ -60,7 +77,7 @@
               <hr>
               <span class="KCPL_caption-minion-italicbold">Music</span>
             </div>
-            <div class="search-btn research">
+            <div class="search-btn research active">
                 <div class="iconCont">
                   <div class="icon KCPL_sprite-document"></div>
                 </div>

@@ -1,67 +1,20 @@
 <?php get_header();
 global $post;
-$pID = KCPL_get_menu_parent_ID();
+$pID = KCPL_get_highest_ancestor($post);
+
 $sidebar = KCPL_get_sidebar($pID);
-$color = get_field('section_color',$pID); ?>
+$color = get_field('section_color',$pID); 
+echo $pID;
+?>
+
 
 <?php if(have_posts()){while(have_posts()){the_post(); ?>
 
-<div id="banner" class="KCPL_background-<?php echo $color; ?>">
-  <div class="container">
-      <div class="gutter">
-        <?php if(has_nav_menu('main_nav')){
-            $defaults = array(
-              'theme_location'  => 'main_nav',
-              'menu'            => 'main_nav',
-              'container'       => 'div',
-              'container_class' => '',
-              'container_id'    => 'main_navBannerCont',
-              'menu_class'      => 'menu clearfix',
-              'menu_id'         => 'main_nav_breadcrumbs',
-              'echo'            => true,
-              'fallback_cb'     => 'wp_page_menu',
-              'before'          => '',
-              'after'           => '',
-              'link_before'     => '',
-              'link_after'      => '',
-              'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-              'depth'           => 0,
-              'walker'          => ''
-            ); wp_nav_menu( $defaults );
-          }else{
-            echo "<p><em>main_nav</em> doesn't exist! Create it and it'll render here.</p>";
-          } ?>
-      </div>
-  </div>
-</div>
+<?php include_once(locate_template('partials/module-breadcrumbs.php')); ?>
 
 <div id="content">
   <div class="container">
-    <div class="columns four alpha" id="contentSecondary">
-      <?php if(has_nav_menu('main_nav')){
-          $defaults = array(
-            'theme_location'  => 'main_nav',
-            'menu'            => 'main_nav',
-            'container'       => 'div',
-            'container_class' => '',
-            'container_id'    => 'secondary-sidebar-nav',
-            'menu_class'      => 'menu clearfix',
-            'menu_id'         => 'main_nav_secondary',
-            'echo'            => true,
-            'fallback_cb'     => 'wp_page_menu',
-            'before'          => '',
-            'after'           => '',
-            'link_before'     => '',
-            'link_after'      => '',
-            'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-            'depth'           => 0,
-            'walker'          => ''
-          ); wp_nav_menu( $defaults );
-        }else{
-          echo "<p><em>main_nav</em> doesn't exist! Create it and it'll render here.</p>";
-        } ?>
-      <?php include_once(locate_template('partials/module-sidebar-widgets.php')); ?>
-    </div>
+    <?php include_once(locate_template('partials/module-sidebar-nav.php')); ?>
 
     <div class="column eight omega" id="contentPrimary">
       <!-- <div class="column eight alpha omega">

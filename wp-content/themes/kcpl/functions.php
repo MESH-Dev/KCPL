@@ -162,6 +162,75 @@
   	);
   }
 
+  //Audience Taxonomy
+  function KCPL_audience_tax() {
+
+    $labels = array(
+      'name'                       => 'Audiences',
+      'singular_name'              => 'Audience',
+      'menu_name'                  => 'Audiences',
+      'all_items'                  => 'All Audience',
+      'parent_item'                => 'Parent Audience',
+      'parent_item_colon'          => 'Parent Audience:',
+      'new_item_name'              => 'New Audience Name',
+      'add_new_item'               => 'Add New Audience',
+      'edit_item'                  => 'Edit Audience',
+      'update_item'                => 'Update Audience',
+      'separate_items_with_commas' => 'Separate Audience with commas',
+      'search_items'               => 'Search Audience',
+      'add_or_remove_items'        => 'Add or remove Audiences',
+      'choose_from_most_used'      => 'Choose from the most used items',
+      'not_found'                  => 'Not Found',
+    );
+    $args = array(
+      'labels'                     => $labels,
+      'hierarchical'               => true,
+      'public'                     => true,
+      'show_ui'                    => true,
+      'show_admin_column'          => true,
+      'show_in_nav_menus'          => true,
+    );
+    register_taxonomy( 'audience', array( 'resources' ), $args );
+  }
+  add_action( 'init', 'KCPL_audience_tax');
+
+  //Audience Taxonomy
+  function KCPL_access_tax() {
+
+    $labels = array(
+      'name'                       => 'Access',
+      'singular_name'              => 'Access',
+      'menu_name'                  => 'Access',
+      'all_items'                  => 'All Access',
+      'parent_item'                => 'Parent Access',
+      'parent_item_colon'          => 'Parent Access:',
+      'new_item_name'              => 'New Access Name',
+      'add_new_item'               => 'Add New Access',
+      'edit_item'                  => 'Edit Access',
+      'update_item'                => 'Update Access',
+      'separate_items_with_commas' => 'Separate Access with commas',
+      'search_items'               => 'Search Access',
+      'add_or_remove_items'        => 'Add or remove Access',
+      'choose_from_most_used'      => 'Choose from the most used items',
+      'not_found'                  => 'Not Found',
+    );
+    $args = array(
+      'labels'                     => $labels,
+      'hierarchical'               => true,
+      'public'                     => true,
+      'show_ui'                    => true,
+      'show_admin_column'          => true,
+      'show_in_nav_menus'          => true,
+    );
+    register_taxonomy( 'access', array( 'resources' ), $args );
+  }
+  add_action( 'init', 'KCPL_access_tax');
+
+
+
+
+
+
   //Comment walker
 	function comments_walker($comment, $args, $depth) {
 		$GLOBALS['comment'] = $comment;

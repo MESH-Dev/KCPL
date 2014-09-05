@@ -19,6 +19,7 @@ class KCPL_branch_info extends WP_Widget{
     //check time
     date_default_timezone_set(get_option('timezone_string'));
     $curTime = date('G:i');
+
     if($curTime > $open && $curTime < $close){
       $flag = 'Open Now';
       $class='open';
@@ -30,13 +31,18 @@ class KCPL_branch_info extends WP_Widget{
     //before widget
 		echo $args['before_widget'];
 
+    //Set time to 12-hour for hours display
+    $closehour = date('g:i a', strtotime($close));
+    $openhour = date('g:i a', strtotime($open));
+
     //output
     echo "<div class='footer-location-widget'>";
     if (!empty($title)){
       echo $args['before_title'] . $title . $args['after_title'];
     }
+
     echo   "<div class='hour-cont'>
-              <span class='hours'>Hours</span> <span class='$class'>$flag</span>
+              <span class='hours'> $openhour - $closehour</span> <br><span class='$class'>$flag</span>
             </div>
             <span class='address'>$address</span>
           </div>";
