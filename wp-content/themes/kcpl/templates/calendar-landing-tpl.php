@@ -18,7 +18,7 @@ $color = get_field('section_color',$pID); ?>
   <div class="container">
      <div class="three column alpha">
         
-        <?php //KCPL_Calendar_sidebar(); ?>
+        <?php KCPL_Calendar_sidebar(); ?>
 
      </div>
     

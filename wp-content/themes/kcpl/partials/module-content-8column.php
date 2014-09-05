@@ -37,18 +37,13 @@
               <div class="gutter">
                 <div class="image <?php echo $entry['type']; ?>">
                     <div class="wrap">
-                       <i></i>
+                       <img src="<?php echo $entry['icon']; ?>" />
                     </div>
                 </div>
                 <span class="title"><?php echo $entry['title']; ?></span>
                 <div class="excerpt">
                     <?php echo $entry['excerpt']; ?>
                 </div>
-                <?php if($entry['type'] == 'physical'){ ?>
-                    <span class="date"><?php echo $entry['date']; ?></span>
-                <?php }else{ ?>
-                    <span class="link"><a href="<?php echo $entry['url_link']; ?>"><?php echo $entry['url_text']; ?></a></span>
-                <?php }?>
                 <a href="<?php echo $entry['read_more_link']; ?>" class="KCPL_readmore"><?php echo $entry['read_more_text']; ?></a>
               </div>
            </div>
