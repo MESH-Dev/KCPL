@@ -1,5 +1,6 @@
 <?php
 $topCallouts = get_field('top_callouts');
+ 
 foreach($topCallouts as $widget){
   echo "<div class='columns four ".cycle('alpha','', 'omega')."'>";
 

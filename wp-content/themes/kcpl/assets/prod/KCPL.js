@@ -91,4 +91,25 @@ jQuery(document).ready(function($){
       // need to build in catch when it's at the beginning of the pagination
   });
 
+  $('.single-row').click(function() {
+      var id = $(this).attr('id');
+      var bg = $(this).attr('class');
+      var content = id.slice(7,bg.length)
+      content = "#content-" + content;
+      bg = bg.slice(11,bg.length);
+       console.log(content);
+
+      $('.engage-content').hide();
+
+      $(content).show();
+
+      $('#row-expanded').removeClass().addClass(bg);
+      $('#row-expanded').animate({left:"298px"},400);
+  });
+
+  $('.close').click(function() {
+    $('#row-expanded').animate({left:"-690px"},500);
+  });
+
+
 });
