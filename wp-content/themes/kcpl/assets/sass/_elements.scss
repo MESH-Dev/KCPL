@@ -818,7 +818,7 @@ ol.homepage-callout-list { display: block;
     </div>
   </div>
   <div id="row-expanded" >
-    <span class="title "> </span> 
+    <span class="fulletitle  "> </span> 
     <span class="close">close x</span>
     <div id="content-first" class="engage-content hide">
             Content 1
@@ -846,8 +846,8 @@ ol.homepage-callout-list { display: block;
     #row-expanded{
         margin: 0px; width: 672px; height: 352px; overflow: hidden; position:absolute; color:#000;   left: 298px; left:-366px; left: -690px; top: 0px; z-index: 10; border-top-right-radius:10px;  
         .title{border-radius: 0px; border-top-right-radius:10px; padding:15px 10px 15px; min-height:18px; background-color:#e2e2e2; position:relative; z-index: 10}
-         .close{position: absolute; right: 20px; top: 60px; font: bold 13px/13px $minion #000; z-index: 11; }
-
+        .close{position: absolute; right: 20px; top: 60px; font: bold 13px/13px $minion #000; z-index: 11; }
+        .KCPL_featured .section-title{display:block;font:bold 18px/18px $nimbus-c;text-transform:uppercase;margin:0 0 2px;letter-spacing:0.065em; background:none; border:none; padding:0px}
       }
  }
 
@@ -1219,7 +1219,7 @@ a > .#{$namespace}horz-single{color:#fff;}
       .image.online i{background-position: -79px 0;height: 63px;width: 69px;}
       .image.video i{background-position: -160px -5px;height: 54px;width: 71px;}
 
-      .title{display:block;font:bold 18px/18px $nimbus-c;text-transform:uppercase;margin:0 0 2px;letter-spacing:0.065em;}
+      .title{display:block;font:bold 18px/18px $nimbus-c;text-transform:uppercase;margin:0 0 2px;letter-spacing:0.065em; background:none; border:none; padding:0px}
       .excerpt{display:block;letter-spacing:0.065em;margin:0 0 19px;}
       .date{display:block;font:bold 15px/15px $nimbus;margin:0 0 2px;}
       .link{display:block;font:bold 14px/15px $nimbus;margin:0 0 2px;}
