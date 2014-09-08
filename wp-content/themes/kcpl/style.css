@@ -3445,7 +3445,7 @@ ol.homepage-callout-list > li:nth-child(4) {
     </div>
   </div>
   <div id="row-expanded" >
-    <span class="title "> </span> 
+    <span class="fulletitle  "> </span> 
     <span class="close">close x</span>
     <div id="content-first" class="engage-content hide">
             Content 1
@@ -3527,6 +3527,17 @@ ol.homepage-callout-list > li:nth-child(4) {
   top: 60px;
   font: bold 13px/13px "minion-pro" black;
   z-index: 11;
+}
+/* line 850, assets/sass/_elements.scss */
+.KCPL_home-engagement #row-expanded .KCPL_featured .section-title {
+  display: block;
+  font: bold 18px/18px "nimbus-sans-condensed";
+  text-transform: uppercase;
+  margin: 0 0 2px;
+  letter-spacing: 0.065em;
+  background: none;
+  border: none;
+  padding: 0px;
 }
 
 /* Listing Style 1
@@ -4352,6 +4363,9 @@ a > .KCPL_horz-single {
   text-transform: uppercase;
   margin: 0 0 2px;
   letter-spacing: 0.065em;
+  background: none;
+  border: none;
+  padding: 0px;
 }
 /* line 1223, assets/sass/_elements.scss */
 .KCPL_featured .entry .excerpt {
