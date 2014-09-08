@@ -2445,6 +2445,7 @@ ol.homepage-callout-list > li:nth-child(4) {
   border-radius: 10px;
   background: #f65446;
   padding: 79px 24px;
+  word-wrap: break-word;
 }
 
 /* line 316, assets/sass/_elements.scss */
@@ -3423,7 +3424,6 @@ ol.homepage-callout-list > li:nth-child(4) {
 /* Homepage Engagement 
 <div class="KCPL_home-engagement">
   <span class="title "> </span>
- 
   <div id="engage-first" class="single-row KCPL_background-green">
     <div class="gutter">  
       Learn
@@ -3434,7 +3434,6 @@ ol.homepage-callout-list > li:nth-child(4) {
      Play
     </div>
   </div>
-
   <div id="engage-third" class="single-row KCPL_background-grey">
     <div class="gutter">
       Visit
@@ -3445,7 +3444,6 @@ ol.homepage-callout-list > li:nth-child(4) {
       Find
     </div>
   </div>
-
   <div id="row-expanded" >
     <span class="title "> </span> 
     <span class="close">close x</span>
@@ -3462,22 +3460,21 @@ ol.homepage-callout-list > li:nth-child(4) {
             Content 4
     </div>
   </div>
- 
 </div>
  */
-/* line 843, assets/sass/_elements.scss */
+/* line 839, assets/sass/_elements.scss */
 .frontpage .container {
   overflow: hidden;
 }
 
-/* line 844, assets/sass/_elements.scss */
+/* line 840, assets/sass/_elements.scss */
 .KCPL_home-engagement {
   color: #FFF;
   margin: 0 0 26px;
   border-radius: 10px;
   background: #e2e2e2;
 }
-/* line 845, assets/sass/_elements.scss */
+/* line 841, assets/sass/_elements.scss */
 .KCPL_home-engagement .title {
   display: block;
   padding: 15px 10px 15px;
@@ -3485,7 +3482,7 @@ ol.homepage-callout-list > li:nth-child(4) {
   position: relative;
   z-index: 15;
 }
-/* line 847, assets/sass/_elements.scss */
+/* line 843, assets/sass/_elements.scss */
 .KCPL_home-engagement .single-row {
   font: 55px/76px "minion-pro";
   text-transform: uppercase;
@@ -3494,11 +3491,11 @@ ol.homepage-callout-list > li:nth-child(4) {
   z-index: 15;
   position: relative;
 }
-/* line 848, assets/sass/_elements.scss */
+/* line 844, assets/sass/_elements.scss */
 .KCPL_home-engagement .single-row .gutter {
   padding: 0px 10px 0px 10px;
 }
-/* line 850, assets/sass/_elements.scss */
+/* line 846, assets/sass/_elements.scss */
 .KCPL_home-engagement #row-expanded {
   margin: 0px;
   width: 672px;
@@ -3513,7 +3510,7 @@ ol.homepage-callout-list > li:nth-child(4) {
   z-index: 10;
   border-top-right-radius: 10px;
 }
-/* line 852, assets/sass/_elements.scss */
+/* line 848, assets/sass/_elements.scss */
 .KCPL_home-engagement #row-expanded .title {
   border-radius: 0px;
   border-top-right-radius: 10px;
@@ -3523,7 +3520,7 @@ ol.homepage-callout-list > li:nth-child(4) {
   position: relative;
   z-index: 10;
 }
-/* line 853, assets/sass/_elements.scss */
+/* line 849, assets/sass/_elements.scss */
 .KCPL_home-engagement #row-expanded .close {
   position: absolute;
   right: 20px;
@@ -3561,13 +3558,13 @@ ol.homepage-callout-list > li:nth-child(4) {
    </div>
 
 */
-/* line 891, assets/sass/_elements.scss */
+/* line 887, assets/sass/_elements.scss */
 .KCPL_listing1-article {
   border-radius: 10px;
   color: #323333;
   margin: 0 0 26px;
 }
-/* line 892, assets/sass/_elements.scss */
+/* line 888, assets/sass/_elements.scss */
 .KCPL_listing1-article .title {
   color: #fff;
   font: bold 18px/18px "nimbus-sans";
@@ -3577,16 +3574,16 @@ ol.homepage-callout-list > li:nth-child(4) {
   padding: 15px 10px 15px;
   border-bottom: 2px solid #323333;
 }
-/* line 893, assets/sass/_elements.scss */
+/* line 889, assets/sass/_elements.scss */
 .KCPL_listing1-article .gutter {
   padding: 12px 20px 1px;
 }
-/* line 894, assets/sass/_elements.scss */
+/* line 890, assets/sass/_elements.scss */
 .KCPL_listing1-article .entry {
   display: block;
   margin: 0 0 27px;
 }
-/* line 895, assets/sass/_elements.scss */
+/* line 891, assets/sass/_elements.scss */
 .KCPL_listing1-article .entry .entry-title {
   font: bold 17px/17px "nimbus-sans-condensed";
   text-transform: uppercase;
@@ -3594,25 +3591,25 @@ ol.homepage-callout-list > li:nth-child(4) {
   display: block;
   margin: 0 0 2px;
 }
-/* line 896, assets/sass/_elements.scss */
+/* line 892, assets/sass/_elements.scss */
 .KCPL_listing1-article .entry .entry-excerpt {
   font: 13px/18px "minion-pro";
   display: block;
   letter-spacing: 0.055em;
   margin: 0 0 18px;
 }
-/* line 897, assets/sass/_elements.scss */
+/* line 893, assets/sass/_elements.scss */
 .KCPL_listing1-article .entry a {
   color: #323333;
   display: block;
 }
 
-/* line 902, assets/sass/_elements.scss */
+/* line 898, assets/sass/_elements.scss */
 .KCPL_listing1-list {
   border-radius: 10px;
   margin: 0 0 26px;
 }
-/* line 903, assets/sass/_elements.scss */
+/* line 899, assets/sass/_elements.scss */
 .KCPL_listing1-list .title {
   color: #fff;
   font: bold 18px/18px "nimbus-sans";
@@ -3622,26 +3619,26 @@ ol.homepage-callout-list > li:nth-child(4) {
   padding: 15px 10px 15px;
   border-bottom: 2px solid #000;
 }
-/* line 904, assets/sass/_elements.scss */
+/* line 900, assets/sass/_elements.scss */
 .KCPL_listing1-list .gutter {
   padding: 15px 20px 12px;
 }
-/* line 905, assets/sass/_elements.scss */
+/* line 901, assets/sass/_elements.scss */
 .KCPL_listing1-list a {
   color: #323333;
 }
-/* line 906, assets/sass/_elements.scss */
+/* line 902, assets/sass/_elements.scss */
 .KCPL_listing1-list .list-title {
   text-transform: uppercase;
   font: bold 18px/18px "nimbus-sans-condensed";
   letter-spacing: 0.075em;
 }
-/* line 907, assets/sass/_elements.scss */
+/* line 903, assets/sass/_elements.scss */
 .KCPL_listing1-list ul {
   list-style: none;
   margin: 0 0 20px;
 }
-/* line 908, assets/sass/_elements.scss */
+/* line 904, assets/sass/_elements.scss */
 .KCPL_listing1-list ul li {
   font: 12px/12px "nimbus-sans";
   margin: 3px 0 6px;
@@ -3684,11 +3681,11 @@ ol.homepage-callout-list > li:nth-child(4) {
      </div>
    </div>
 */
-/* line 950, assets/sass/_elements.scss */
+/* line 946, assets/sass/_elements.scss */
 .KCPL_listing2-event {
   margin: 0 0 26px;
 }
-/* line 951, assets/sass/_elements.scss */
+/* line 947, assets/sass/_elements.scss */
 .KCPL_listing2-event .title {
   color: #323333;
   font: bold 18px/18px "nimbus-sans";
@@ -3700,7 +3697,7 @@ ol.homepage-callout-list > li:nth-child(4) {
   position: relative;
   margin: 0 0 5px;
 }
-/* line 952, assets/sass/_elements.scss */
+/* line 948, assets/sass/_elements.scss */
 .KCPL_listing2-event .title:after {
   position: absolute;
   content: '';
@@ -3709,11 +3706,11 @@ ol.homepage-callout-list > li:nth-child(4) {
   width: 100%;
   border-bottom: 2px solid #323333;
 }
-/* line 953, assets/sass/_elements.scss */
+/* line 949, assets/sass/_elements.scss */
 .KCPL_listing2-event .gutter {
   padding: 0 20px;
 }
-/* line 954, assets/sass/_elements.scss */
+/* line 950, assets/sass/_elements.scss */
 .KCPL_listing2-event .gutter > a {
   color: #323333;
   display: block;
@@ -3721,11 +3718,11 @@ ol.homepage-callout-list > li:nth-child(4) {
   margin: 0;
   padding: 12px 0 16px;
 }
-/* line 956, assets/sass/_elements.scss */
+/* line 952, assets/sass/_elements.scss */
 .KCPL_listing2-event .entry {
   display: table;
 }
-/* line 957, assets/sass/_elements.scss */
+/* line 953, assets/sass/_elements.scss */
 .KCPL_listing2-event .entry .left {
   display: table-cell;
   border-right: 1px solid #323333;
@@ -3734,49 +3731,49 @@ ol.homepage-callout-list > li:nth-child(4) {
   width: 132px;
   padding: 7px 0 0 0;
 }
-/* line 958, assets/sass/_elements.scss */
+/* line 954, assets/sass/_elements.scss */
 .KCPL_listing2-event .entry .right {
   display: table-cell;
   height: 100%;
   vertical-align: top;
   padding: 12px 0 57px 13px;
 }
-/* line 959, assets/sass/_elements.scss */
+/* line 955, assets/sass/_elements.scss */
 .KCPL_listing2-event .entry .entry-title {
   font: bold 17px/26px "nimbus-sans-condensed";
   display: block;
   text-transform: uppercase;
   letter-spacing: 0.09em;
 }
-/* line 960, assets/sass/_elements.scss */
+/* line 956, assets/sass/_elements.scss */
 .KCPL_listing2-event .entry .entry-date {
   font: bold 14px/15px "nimbus-sans";
   display: block;
   margin: 0 0 2px;
   letter-spacing: 0.025em;
 }
-/* line 961, assets/sass/_elements.scss */
+/* line 957, assets/sass/_elements.scss */
 .KCPL_listing2-event .entry .entry-loc {
   font: 13px/18px "minion-pro";
   display: block;
   letter-spacing: 0.095em;
 }
-/* line 962, assets/sass/_elements.scss */
+/* line 958, assets/sass/_elements.scss */
 .KCPL_listing2-event .entry .entry-tags {
   display: block;
 }
-/* line 963, assets/sass/_elements.scss */
+/* line 959, assets/sass/_elements.scss */
 .KCPL_listing2-event .entry .entry-tags a {
   font: 12px/12px "nimbus-sans";
   color: #323333;
   letter-spacing: 0.065em;
 }
 
-/* line 968, assets/sass/_elements.scss */
+/* line 964, assets/sass/_elements.scss */
 .KCPL_listing2-class {
   margin: 0 0 26px;
 }
-/* line 969, assets/sass/_elements.scss */
+/* line 965, assets/sass/_elements.scss */
 .KCPL_listing2-class .title {
   color: #323333;
   font: bold 18px/18px "nimbus-sans";
@@ -3787,11 +3784,11 @@ ol.homepage-callout-list > li:nth-child(4) {
   border-bottom: 2px solid #323333;
   position: relative;
 }
-/* line 970, assets/sass/_elements.scss */
+/* line 966, assets/sass/_elements.scss */
 .KCPL_listing2-class .gutter {
   padding: 0 20px;
 }
-/* line 971, assets/sass/_elements.scss */
+/* line 967, assets/sass/_elements.scss */
 .KCPL_listing2-class .gutter > a {
   color: #323333;
   display: block;
@@ -3799,11 +3796,11 @@ ol.homepage-callout-list > li:nth-child(4) {
   margin: 0;
   padding: 12px 0 16px;
 }
-/* line 973, assets/sass/_elements.scss */
+/* line 969, assets/sass/_elements.scss */
 .KCPL_listing2-class .entry {
   display: table;
 }
-/* line 974, assets/sass/_elements.scss */
+/* line 970, assets/sass/_elements.scss */
 .KCPL_listing2-class .entry .left {
   display: table-cell;
   border-right: 1px solid #323333;
@@ -3812,7 +3809,7 @@ ol.homepage-callout-list > li:nth-child(4) {
   width: 128px;
   padding: 13px 0 0 5px;
 }
-/* line 975, assets/sass/_elements.scss */
+/* line 971, assets/sass/_elements.scss */
 .KCPL_listing2-class .entry .right {
   display: table-cell;
   height: 100%;
@@ -3820,14 +3817,14 @@ ol.homepage-callout-list > li:nth-child(4) {
   padding: 16px 0 2px 11px;
   font: 14px/18px "nimbus-sans";
 }
-/* line 977, assets/sass/_elements.scss */
+/* line 973, assets/sass/_elements.scss */
 .KCPL_listing2-class .entry .entry-title {
   font: bold 17px/26px "nimbus-sans-condensed";
   display: block;
   text-transform: uppercase;
   letter-spacing: 0.09em;
 }
-/* line 978, assets/sass/_elements.scss */
+/* line 974, assets/sass/_elements.scss */
 .KCPL_listing2-class .entry a {
   color: #323333;
 }
@@ -3860,16 +3857,16 @@ ol.homepage-callout-list > li:nth-child(4) {
     </div>
 </div>
 */
-/* line 1011, assets/sass/_elements.scss */
+/* line 1007, assets/sass/_elements.scss */
 .KCPL_listing-style-3 {
   margin: 0 0 26px;
   display: block;
 }
-/* line 1012, assets/sass/_elements.scss */
+/* line 1008, assets/sass/_elements.scss */
 .KCPL_listing-style-3 .KCPL_listing-style-3-header {
   padding: 15px;
 }
-/* line 1014, assets/sass/_elements.scss */
+/* line 1010, assets/sass/_elements.scss */
 .KCPL_listing-style-3 .KCPL_listing-style-3-header span {
   display: block;
   font-family: "nimbus-sans";
@@ -3880,12 +3877,12 @@ ol.homepage-callout-list > li:nth-child(4) {
   color: white;
   text-align: center;
 }
-/* line 1016, assets/sass/_elements.scss */
+/* line 1012, assets/sass/_elements.scss */
 .KCPL_listing-style-3 .KCPL_listing-style-3-body {
   background: #e2e2e2;
   padding: 11px 18px;
 }
-/* line 1018, assets/sass/_elements.scss */
+/* line 1014, assets/sass/_elements.scss */
 .KCPL_listing-style-3 .KCPL_listing-style-3-body .KCPL_listing-style-3-body-title {
   display: block;
   text-transform: uppercase;
@@ -3895,7 +3892,7 @@ ol.homepage-callout-list > li:nth-child(4) {
   color: #323333;
   line-height: 23px;
 }
-/* line 1019, assets/sass/_elements.scss */
+/* line 1015, assets/sass/_elements.scss */
 .KCPL_listing-style-3 .KCPL_listing-style-3-body .KCPL_listing-style-3-body-date {
   display: block;
   font-size: 15px;
@@ -3903,7 +3900,7 @@ ol.homepage-callout-list > li:nth-child(4) {
   font-family: "nimbus-sans";
   color: #323333;
 }
-/* line 1020, assets/sass/_elements.scss */
+/* line 1016, assets/sass/_elements.scss */
 .KCPL_listing-style-3 .KCPL_listing-style-3-body .KCPL_listing-style-3-body-excerpt {
   display: inline;
   font-size: 13px;
@@ -3913,7 +3910,7 @@ ol.homepage-callout-list > li:nth-child(4) {
   letter-spacing: .05em;
   line-height: 18px;
 }
-/* line 1021, assets/sass/_elements.scss */
+/* line 1017, assets/sass/_elements.scss */
 .KCPL_listing-style-3 .KCPL_listing-style-3-body .KCPL_listing-style-3-body-link {
   display: inline;
   font-size: 14px;
@@ -3948,13 +3945,13 @@ ol.homepage-callout-list > li:nth-child(4) {
      </div>
    </div>
 */
-/* line 1051, assets/sass/_elements.scss */
+/* line 1047, assets/sass/_elements.scss */
 .KCPL_listing4 {
   display: block;
   background: #e2e2e2;
   margin: 0 0 26px;
 }
-/* line 1052, assets/sass/_elements.scss */
+/* line 1048, assets/sass/_elements.scss */
 .KCPL_listing4 .title {
   color: #fff;
   font: bold 18px/18px "nimbus-sans";
@@ -3963,45 +3960,45 @@ ol.homepage-callout-list > li:nth-child(4) {
   text-transform: uppercase;
   padding: 15px 10px 15px;
 }
-/* line 1053, assets/sass/_elements.scss */
+/* line 1049, assets/sass/_elements.scss */
 .KCPL_listing4 .gutter {
   padding: 20px 19px;
 }
-/* line 1054, assets/sass/_elements.scss */
+/* line 1050, assets/sass/_elements.scss */
 .KCPL_listing4 .row {
   display: block;
   margin: 0 0 40px;
 }
-/* line 1055, assets/sass/_elements.scss */
+/* line 1051, assets/sass/_elements.scss */
 .KCPL_listing4 .row .entry {
   display: block;
   float: left;
   width: 50%;
 }
-/* line 1056, assets/sass/_elements.scss */
+/* line 1052, assets/sass/_elements.scss */
 .KCPL_listing4 .row .entry .image {
   width: 11%;
   float: left;
 }
-/* line 1057, assets/sass/_elements.scss */
+/* line 1053, assets/sass/_elements.scss */
 .KCPL_listing4 .row .entry .number {
   width: 19%;
   float: left;
   font: 52px/30px "minion-pro";
   text-align: center;
 }
-/* line 1058, assets/sass/_elements.scss */
+/* line 1054, assets/sass/_elements.scss */
 .KCPL_listing4 .row .entry .content {
   width: 70%;
   float: left;
 }
-/* line 1059, assets/sass/_elements.scss */
+/* line 1055, assets/sass/_elements.scss */
 .KCPL_listing4 .row .entry .content .entry-title {
   display: block;
   font: bold 20px/20px "nimbus-sans-condensed";
   text-transform: uppercase;
 }
-/* line 1060, assets/sass/_elements.scss */
+/* line 1056, assets/sass/_elements.scss */
 .KCPL_listing4 .row .entry .content .entry-author {
   display: block;
   font: 15px/22px "minion-pro";
@@ -4030,12 +4027,12 @@ ol.homepage-callout-list > li:nth-child(4) {
      </div>
    </div>
 */
-/* line 1091, assets/sass/_elements.scss */
+/* line 1087, assets/sass/_elements.scss */
 a > .KCPL_horz-single {
   color: #fff;
 }
 
-/* line 1092, assets/sass/_elements.scss */
+/* line 1088, assets/sass/_elements.scss */
 .KCPL_horz-single {
   font: bold 42px/42px "nimbus-sans-condensed";
   color: #fff;
@@ -4045,45 +4042,52 @@ a > .KCPL_horz-single {
   text-align: center;
   margin: 0 0 26px;
 }
-/* line 1093, assets/sass/_elements.scss */
+/* line 1089, assets/sass/_elements.scss */
 .KCPL_horz-single .gutter {
   padding: 5px 5px 2px;
   border: 1px solid #fff;
 }
-/* line 1094, assets/sass/_elements.scss */
+/* line 1090, assets/sass/_elements.scss */
 .KCPL_horz-single span {
   padding: 0;
 }
-/* line 1095, assets/sass/_elements.scss */
+/* line 1091, assets/sass/_elements.scss */
 .KCPL_horz-single a {
   padding: 0;
 }
 
-/* line 1098, assets/sass/_elements.scss */
+/* line 1094, assets/sass/_elements.scss */
 .KCPL_horz-single:hover {
   opacity: 0.8;
   cursor: pointer;
 }
 
-/* line 1100, assets/sass/_elements.scss */
+/* line 1096, assets/sass/_elements.scss */
 .KCPL_horz-multi {
   border-radius: 11px;
   color: #fff;
   margin: 0 0 26px;
 }
-/* line 1101, assets/sass/_elements.scss */
+/* line 1097, assets/sass/_elements.scss */
 .KCPL_horz-multi .gutter {
   padding: 14px 27px 13px;
 }
-/* line 1102, assets/sass/_elements.scss */
+/* line 1098, assets/sass/_elements.scss */
 .KCPL_horz-multi span {
   font: bold 20px/23px "nimbus-sans";
   text-transform: uppercase;
-  display: block;
+  display: inline-block;
+  width: 90%;
 }
-/* line 1103, assets/sass/_elements.scss */
+/* line 1099, assets/sass/_elements.scss */
 .KCPL_horz-multi a {
   color: #fff;
+}
+/* line 1100, assets/sass/_elements.scss */
+.KCPL_horz-multi span.alert {
+  display: inline;
+  float: left;
+  width: 10%;
 }
 
 /* Special Callouts
@@ -4101,31 +4105,31 @@ a > .KCPL_horz-single {
      </div>
    </div>
 */
-/* line 1122, assets/sass/_elements.scss */
+/* line 1119, assets/sass/_elements.scss */
 .KCPL_horz-talkbox-fonts {
   position: relative;
   color: #fff;
   padding: 9px 14px 7px;
   border-radius: 4px;
 }
-/* line 1123, assets/sass/_elements.scss */
+/* line 1120, assets/sass/_elements.scss */
 .KCPL_horz-talkbox-fonts span {
   display: block;
   text-transform: uppercase;
   text-align: center;
 }
-/* line 1124, assets/sass/_elements.scss */
+/* line 1121, assets/sass/_elements.scss */
 .KCPL_horz-talkbox-fonts .KCPL_font-nimbus-condensed {
   font-weight: bold;
   font-size: 19px;
   margin: 0 0 2px;
 }
-/* line 1125, assets/sass/_elements.scss */
+/* line 1122, assets/sass/_elements.scss */
 .KCPL_horz-talkbox-fonts .KCPL_font-minion {
   font-size: 14px;
 }
 
-/* line 1127, assets/sass/_elements.scss */
+/* line 1124, assets/sass/_elements.scss */
 .KCPL_horz-talkbox-fonts:after {
   position: absolute;
   top: -7px;
@@ -4137,44 +4141,44 @@ a > .KCPL_horz-single {
   background: url(assets/img/talkCalloutCaret.png) no-repeat;
 }
 
-/* line 1128, assets/sass/_elements.scss */
+/* line 1125, assets/sass/_elements.scss */
 .KCPL_horz-talkbox-fonts.KCPL_background-blue:after {
   background-position: -56px 0;
 }
 
-/* line 1129, assets/sass/_elements.scss */
+/* line 1126, assets/sass/_elements.scss */
 .KCPL_horz-talkbox-fonts.KCPL_background-red:after {
   background-position: -28px 0;
 }
 
-/* line 1130, assets/sass/_elements.scss */
+/* line 1127, assets/sass/_elements.scss */
 .KCPL_horz-talkbox-fonts.KCPL_background-green:after {
   background-position: -42px 0;
 }
 
-/* line 1131, assets/sass/_elements.scss */
+/* line 1128, assets/sass/_elements.scss */
 .KCPL_horz-talkbox-fonts.KCPL_background-grey:after {
   background-position: -14px 0;
 }
 
-/* line 1132, assets/sass/_elements.scss */
+/* line 1129, assets/sass/_elements.scss */
 .KCPL_horz-talkbox-fonts.KCPL_background-yellow:after {
   background-position: 0 0;
 }
 
-/* line 1134, assets/sass/_elements.scss */
+/* line 1131, assets/sass/_elements.scss */
 .KCPL_horz-fonts {
   padding: 10px 13px;
   color: #fff;
   text-align: center;
   border-radius: 10px;
 }
-/* line 1135, assets/sass/_elements.scss */
+/* line 1132, assets/sass/_elements.scss */
 .KCPL_horz-fonts .gutter {
   border: 1px solid #fff;
   padding: 15px 2px 16px;
 }
-/* line 1136, assets/sass/_elements.scss */
+/* line 1133, assets/sass/_elements.scss */
 .KCPL_horz-fonts span {
   text-transform: uppercase;
   display: inline-block;
@@ -4182,7 +4186,7 @@ a > .KCPL_horz-single {
   font-size: 18px;
   line-height: 18px;
 }
-/* line 1137, assets/sass/_elements.scss */
+/* line 1134, assets/sass/_elements.scss */
 .KCPL_horz-fonts .KCPL_font-nimbus-condensed {
   font-weight: bold;
   margin: 0 4px 0 0;
@@ -4197,7 +4201,7 @@ a > .KCPL_horz-single {
 </div>
 
 */
-/* line 1151, assets/sass/_elements.scss */
+/* line 1148, assets/sass/_elements.scss */
 .KCPL_horz-card {
   color: #fff;
   padding: 9px 18px 12px 18px;
@@ -4206,30 +4210,30 @@ a > .KCPL_horz-single {
   text-align: center;
   margin: 0 0 26px;
 }
-/* line 1152, assets/sass/_elements.scss */
+/* line 1149, assets/sass/_elements.scss */
 .KCPL_horz-card .gutter {
   padding: 15px 5px 15px;
   border: 1px solid #fff;
 }
-/* line 1153, assets/sass/_elements.scss */
+/* line 1150, assets/sass/_elements.scss */
 .KCPL_horz-card span {
   padding: 0;
 }
-/* line 1154, assets/sass/_elements.scss */
+/* line 1151, assets/sass/_elements.scss */
 .KCPL_horz-card a {
   padding: 0;
 }
-/* line 1155, assets/sass/_elements.scss */
+/* line 1152, assets/sass/_elements.scss */
 .KCPL_horz-card .KCPL_horz-card-first {
   font: bold 18px/22px "nimbus-sans-condensed";
   letter-spacing: 0.04em;
 }
-/* line 1156, assets/sass/_elements.scss */
+/* line 1153, assets/sass/_elements.scss */
 .KCPL_horz-card .KCPL_horz-card-last {
   font: bold 18px/22px "minion-pro";
 }
 
-/* line 1159, assets/sass/_elements.scss */
+/* line 1156, assets/sass/_elements.scss */
 .KCPL_horz-card:hover {
   opacity: 0.8;
   cursor: pointer;
@@ -4286,29 +4290,29 @@ a > .KCPL_horz-single {
      </div>
    </div>
 */
-/* line 1212, assets/sass/_elements.scss */
+/* line 1209, assets/sass/_elements.scss */
 .KCPL_featured {
   display: block;
   margin: 0 0 26px;
 }
-/* line 1213, assets/sass/_elements.scss */
+/* line 1210, assets/sass/_elements.scss */
 .KCPL_featured a {
   color: #323333;
 }
-/* line 1214, assets/sass/_elements.scss */
+/* line 1211, assets/sass/_elements.scss */
 .KCPL_featured .gutter {
   padding: 0 38px;
 }
-/* line 1215, assets/sass/_elements.scss */
+/* line 1212, assets/sass/_elements.scss */
 .KCPL_featured .entry {
   float: left;
   width: 33%;
 }
-/* line 1216, assets/sass/_elements.scss */
+/* line 1213, assets/sass/_elements.scss */
 .KCPL_featured .entry .gutter {
   padding: 0 8px 0 28px;
 }
-/* line 1217, assets/sass/_elements.scss */
+/* line 1214, assets/sass/_elements.scss */
 .KCPL_featured .entry .image {
   display: table;
   vertical-align: middle;
@@ -4316,12 +4320,12 @@ a > .KCPL_horz-single {
   width: 100%;
   height: 115px;
 }
-/* line 1218, assets/sass/_elements.scss */
+/* line 1215, assets/sass/_elements.scss */
 .KCPL_featured .entry .image .wrap {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 1219, assets/sass/_elements.scss */
+/* line 1216, assets/sass/_elements.scss */
 .KCPL_featured .entry .image i {
   margin: 0 auto;
   display: block;
@@ -4329,19 +4333,19 @@ a > .KCPL_horz-single {
   width: 67px;
   background: url(assets/img/featuredIcons.png) no-repeat;
 }
-/* line 1222, assets/sass/_elements.scss */
+/* line 1219, assets/sass/_elements.scss */
 .KCPL_featured .entry .image.online i {
   background-position: -79px 0;
   height: 63px;
   width: 69px;
 }
-/* line 1223, assets/sass/_elements.scss */
+/* line 1220, assets/sass/_elements.scss */
 .KCPL_featured .entry .image.video i {
   background-position: -160px -5px;
   height: 54px;
   width: 71px;
 }
-/* line 1225, assets/sass/_elements.scss */
+/* line 1222, assets/sass/_elements.scss */
 .KCPL_featured .entry .title {
   display: block;
   font: bold 18px/18px "nimbus-sans-condensed";
@@ -4349,33 +4353,33 @@ a > .KCPL_horz-single {
   margin: 0 0 2px;
   letter-spacing: 0.065em;
 }
-/* line 1226, assets/sass/_elements.scss */
+/* line 1223, assets/sass/_elements.scss */
 .KCPL_featured .entry .excerpt {
   display: block;
   letter-spacing: 0.065em;
   margin: 0 0 19px;
 }
-/* line 1227, assets/sass/_elements.scss */
+/* line 1224, assets/sass/_elements.scss */
 .KCPL_featured .entry .date {
   display: block;
   font: bold 15px/15px "nimbus-sans";
   margin: 0 0 2px;
 }
-/* line 1228, assets/sass/_elements.scss */
+/* line 1225, assets/sass/_elements.scss */
 .KCPL_featured .entry .link {
   display: block;
   font: bold 14px/15px "nimbus-sans";
   margin: 0 0 2px;
 }
-/* line 1229, assets/sass/_elements.scss */
+/* line 1226, assets/sass/_elements.scss */
 .KCPL_featured .entry .KCPL_readmore {
   display: block;
 }
-/* line 1231, assets/sass/_elements.scss */
+/* line 1228, assets/sass/_elements.scss */
 .KCPL_featured .entry.left .gutter {
   padding: 0 16px 0 0;
 }
-/* line 1232, assets/sass/_elements.scss */
+/* line 1229, assets/sass/_elements.scss */
 .KCPL_featured .entry.right .gutter {
   padding: 0 0 0 42px;
 }
@@ -4451,12 +4455,12 @@ a > .KCPL_horz-single {
       </div>
    </div>
 */
-/* line 1307, assets/sass/_elements.scss */
+/* line 1304, assets/sass/_elements.scss */
 .KCPL_oc-profile {
   display: block;
   background: #e2e2e2;
 }
-/* line 1308, assets/sass/_elements.scss */
+/* line 1305, assets/sass/_elements.scss */
 .KCPL_oc-profile > .title {
   color: #fff;
   font: bold 18px/18px "nimbus-sans";
@@ -4465,27 +4469,27 @@ a > .KCPL_horz-single {
   text-transform: uppercase;
   padding: 17px 10px 18px;
 }
-/* line 1309, assets/sass/_elements.scss */
+/* line 1306, assets/sass/_elements.scss */
 .KCPL_oc-profile .gutter {
   padding: 20px;
 }
-/* line 1310, assets/sass/_elements.scss */
+/* line 1307, assets/sass/_elements.scss */
 .KCPL_oc-profile .top {
   display: block;
   margin: 0 0 13px;
 }
-/* line 1311, assets/sass/_elements.scss */
+/* line 1308, assets/sass/_elements.scss */
 .KCPL_oc-profile .top .profile-img {
   float: left;
   width: 111px;
 }
-/* line 1312, assets/sass/_elements.scss */
+/* line 1309, assets/sass/_elements.scss */
 .KCPL_oc-profile .top .profile-social {
   float: right;
   width: 115px;
   margin: 0 5px 0 0;
 }
-/* line 1313, assets/sass/_elements.scss */
+/* line 1310, assets/sass/_elements.scss */
 .KCPL_oc-profile .top .profile-social a {
   background: #f65446;
   color: #fff;
@@ -4498,11 +4502,11 @@ a > .KCPL_horz-single {
   margin: 0 20px 20px 0;
   float: left;
 }
-/* line 1314, assets/sass/_elements.scss */
+/* line 1311, assets/sass/_elements.scss */
 .KCPL_oc-profile .top .profile-social a:nth-child(n+5) {
   margin: 0 20px 0 0;
 }
-/* line 1315, assets/sass/_elements.scss */
+/* line 1312, assets/sass/_elements.scss */
 .KCPL_oc-profile .top .profile-social a:before {
   text-indent: 0px;
   position: absolute;
@@ -4510,122 +4514,122 @@ a > .KCPL_horz-single {
   left: 10px;
   font-size: 19px;
 }
-/* line 1318, assets/sass/_elements.scss */
+/* line 1315, assets/sass/_elements.scss */
 .KCPL_oc-profile .bottom {
   display: block;
 }
-/* line 1319, assets/sass/_elements.scss */
+/* line 1316, assets/sass/_elements.scss */
 .KCPL_oc-profile .bottom .profile-username {
   font: 16px/19px "minion-pro";
   margin: 0 0 19px;
 }
-/* line 1320, assets/sass/_elements.scss */
+/* line 1317, assets/sass/_elements.scss */
 .KCPL_oc-profile .bottom .profile-username .title {
   font: bold 20px/18px "nimbus-sans-condensed";
   text-transform: uppercase;
   display: block;
 }
-/* line 1321, assets/sass/_elements.scss */
+/* line 1318, assets/sass/_elements.scss */
 .KCPL_oc-profile .bottom .profile-username a {
   font: 15px/18px "nimbus-sans";
   color: #323333;
   display: block;
 }
-/* line 1323, assets/sass/_elements.scss */
+/* line 1320, assets/sass/_elements.scss */
 .KCPL_oc-profile .bottom .profile-interests {
   margin: 0 0 18px;
 }
-/* line 1324, assets/sass/_elements.scss */
+/* line 1321, assets/sass/_elements.scss */
 .KCPL_oc-profile .bottom .profile-interests .title {
   font: 19px/22px "minion-pro";
   display: block;
   letter-spacing: 0.04em;
 }
-/* line 1325, assets/sass/_elements.scss */
+/* line 1322, assets/sass/_elements.scss */
 .KCPL_oc-profile .bottom .profile-interests a {
   font: bold 12px/12px "nimbus-sans";
   color: #323333;
   letter-spacing: 0.055em;
 }
-/* line 1327, assets/sass/_elements.scss */
+/* line 1324, assets/sass/_elements.scss */
 .KCPL_oc-profile .bottom .profile-reading {
   margin: 0 0 0px;
 }
-/* line 1328, assets/sass/_elements.scss */
+/* line 1325, assets/sass/_elements.scss */
 .KCPL_oc-profile .bottom .profile-reading .title {
   font: 19px/22px "minion-pro";
   display: block;
   letter-spacing: 0.04em;
 }
-/* line 1329, assets/sass/_elements.scss */
+/* line 1326, assets/sass/_elements.scss */
 .KCPL_oc-profile .bottom .profile-reading a {
   font: bold 12px/12px "nimbus-sans";
   color: #323333;
   letter-spacing: 0.055em;
 }
 
-/* line 1334, assets/sass/_elements.scss */
+/* line 1331, assets/sass/_elements.scss */
 .columns.eight .KCPL_oc-profile {
   display: block;
 }
-/* line 1335, assets/sass/_elements.scss */
+/* line 1332, assets/sass/_elements.scss */
 .columns.eight .KCPL_oc-profile .left {
   float: left;
   width: 111px;
   margin: 0 21px 0 0;
 }
-/* line 1336, assets/sass/_elements.scss */
+/* line 1333, assets/sass/_elements.scss */
 .columns.eight .KCPL_oc-profile .center {
   float: left;
   width: 160px;
   margin: 0 20px 0 0;
 }
-/* line 1337, assets/sass/_elements.scss */
+/* line 1334, assets/sass/_elements.scss */
 .columns.eight .KCPL_oc-profile .center .profile-username {
   font: 16px/19px "minion-pro";
   margin: 0 0 19px;
 }
-/* line 1338, assets/sass/_elements.scss */
+/* line 1335, assets/sass/_elements.scss */
 .columns.eight .KCPL_oc-profile .center .profile-username .title {
   font: bold 20px/14px "nimbus-sans-condensed";
   text-transform: uppercase;
   display: block;
   margin: 0 0 2px;
 }
-/* line 1339, assets/sass/_elements.scss */
+/* line 1336, assets/sass/_elements.scss */
 .columns.eight .KCPL_oc-profile .center .profile-username a {
   font: 15px/18px "nimbus-sans";
   color: #323333;
   display: block;
 }
-/* line 1341, assets/sass/_elements.scss */
+/* line 1338, assets/sass/_elements.scss */
 .columns.eight .KCPL_oc-profile .center .profile-interests {
   margin: 0 0 18px;
 }
-/* line 1342, assets/sass/_elements.scss */
+/* line 1339, assets/sass/_elements.scss */
 .columns.eight .KCPL_oc-profile .center .profile-interests .title {
   font: 19px/22px "minion-pro";
   display: block;
   letter-spacing: 0.04em;
 }
-/* line 1343, assets/sass/_elements.scss */
+/* line 1340, assets/sass/_elements.scss */
 .columns.eight .KCPL_oc-profile .center .profile-interests a {
   font: bold 12px/12px "nimbus-sans";
   color: #323333;
   letter-spacing: 0.055em;
 }
-/* line 1346, assets/sass/_elements.scss */
+/* line 1343, assets/sass/_elements.scss */
 .columns.eight .KCPL_oc-profile .right {
   float: left;
   width: 286px;
 }
-/* line 1347, assets/sass/_elements.scss */
+/* line 1344, assets/sass/_elements.scss */
 .columns.eight .KCPL_oc-profile .right .profile-social {
   display: block;
   float: none;
   margin: 0;
 }
-/* line 1348, assets/sass/_elements.scss */
+/* line 1345, assets/sass/_elements.scss */
 .columns.eight .KCPL_oc-profile .right .profile-social a {
   background: #f65446;
   color: #fff;
@@ -4638,11 +4642,11 @@ a > .KCPL_horz-single {
   margin: 0 14px 15px 0;
   float: left;
 }
-/* line 1349, assets/sass/_elements.scss */
+/* line 1346, assets/sass/_elements.scss */
 .columns.eight .KCPL_oc-profile .right .profile-social a:last-child {
   margin: 0;
 }
-/* line 1350, assets/sass/_elements.scss */
+/* line 1347, assets/sass/_elements.scss */
 .columns.eight .KCPL_oc-profile .right .profile-social a:before {
   text-indent: 0px;
   position: absolute;
@@ -4650,17 +4654,17 @@ a > .KCPL_horz-single {
   left: 10px;
   font-size: 19px;
 }
-/* line 1352, assets/sass/_elements.scss */
+/* line 1349, assets/sass/_elements.scss */
 .columns.eight .KCPL_oc-profile .right .profile-reading {
   margin: 0 0 0px;
 }
-/* line 1353, assets/sass/_elements.scss */
+/* line 1350, assets/sass/_elements.scss */
 .columns.eight .KCPL_oc-profile .right .profile-reading .title {
   font: 19px/22px "minion-pro";
   display: block;
   letter-spacing: 0.04em;
 }
-/* line 1354, assets/sass/_elements.scss */
+/* line 1351, assets/sass/_elements.scss */
 .columns.eight .KCPL_oc-profile .right .profile-reading a {
   font: bold 12px/12px "nimbus-sans";
   color: #323333;
@@ -4670,17 +4674,17 @@ a > .KCPL_horz-single {
 /* Popups
 
 */
-/* line 1363, assets/sass/_elements.scss */
+/* line 1360, assets/sass/_elements.scss */
 .KCPL_popup {
   display: block;
   position: relative;
   border-radius: 13px;
 }
-/* line 1364, assets/sass/_elements.scss */
+/* line 1361, assets/sass/_elements.scss */
 .KCPL_popup .gutter {
   padding: 14px 40px 17px 19px;
 }
-/* line 1365, assets/sass/_elements.scss */
+/* line 1362, assets/sass/_elements.scss */
 .KCPL_popup span {
   color: #fff;
   font: bold 18px/23px "nimbus-sans";
@@ -4688,14 +4692,14 @@ a > .KCPL_horz-single {
   text-transform: uppercase;
   letter-spacing: 0.055em;
 }
-/* line 1366, assets/sass/_elements.scss */
+/* line 1363, assets/sass/_elements.scss */
 .KCPL_popup a {
   display: block;
   color: #fff;
   margin: 0;
 }
 
-/* line 1368, assets/sass/_elements.scss */
+/* line 1365, assets/sass/_elements.scss */
 .KCPL_popup:after {
   position: absolute;
   bottom: -8px;
@@ -4708,27 +4712,27 @@ a > .KCPL_horz-single {
   transform: rotate(180deg);
 }
 
-/* line 1369, assets/sass/_elements.scss */
+/* line 1366, assets/sass/_elements.scss */
 .KCPL_popup.KCPL_background-blue:after {
   background-position: -56px 0;
 }
 
-/* line 1370, assets/sass/_elements.scss */
+/* line 1367, assets/sass/_elements.scss */
 .KCPL_popup.KCPL_background-red:after {
   background-position: -28px 0;
 }
 
-/* line 1371, assets/sass/_elements.scss */
+/* line 1368, assets/sass/_elements.scss */
 .KCPL_popup.KCPL_background-green:after {
   background-position: -42px 0;
 }
 
-/* line 1372, assets/sass/_elements.scss */
+/* line 1369, assets/sass/_elements.scss */
 .KCPL_popup.KCPL_background-grey:after {
   background-position: -14px 0;
 }
 
-/* line 1373, assets/sass/_elements.scss */
+/* line 1370, assets/sass/_elements.scss */
 .KCPL_popup.KCPL_background-yellow:after {
   background-position: 0 0;
 }
@@ -4792,19 +4796,19 @@ a > .KCPL_horz-single {
       </div>
    </div>
 */
-/* line 1435, assets/sass/_elements.scss */
+/* line 1432, assets/sass/_elements.scss */
 .KCPL_comments {
   display: block;
 }
-/* line 1436, assets/sass/_elements.scss */
+/* line 1433, assets/sass/_elements.scss */
 .KCPL_comments a {
   color: #323333;
 }
-/* line 1437, assets/sass/_elements.scss */
+/* line 1434, assets/sass/_elements.scss */
 .KCPL_comments ol {
   list-style: none;
 }
-/* line 1438, assets/sass/_elements.scss */
+/* line 1435, assets/sass/_elements.scss */
 .KCPL_comments li.comment {
   display: block;
   background: #e2e2e2;
@@ -4812,7 +4816,7 @@ a > .KCPL_horz-single {
   border-radius: 12px;
   margin: 3px 0 27px;
 }
-/* line 1439, assets/sass/_elements.scss */
+/* line 1436, assets/sass/_elements.scss */
 .KCPL_comments li.comment .caret {
   position: absolute;
   top: -10px;
@@ -4823,22 +4827,22 @@ a > .KCPL_horz-single {
   height: 11px;
   width: 22px;
 }
-/* line 1440, assets/sass/_elements.scss */
+/* line 1437, assets/sass/_elements.scss */
 .KCPL_comments li.comment .comment-wrap {
   padding: 20px 20px 14px;
 }
-/* line 1441, assets/sass/_elements.scss */
+/* line 1438, assets/sass/_elements.scss */
 .KCPL_comments li.comment .comment-img {
   float: left;
   width: 33px;
 }
-/* line 1442, assets/sass/_elements.scss */
+/* line 1439, assets/sass/_elements.scss */
 .KCPL_comments li.comment .comment-content {
   float: right;
   width: 183px;
   padding: 0 32px 0 0;
 }
-/* line 1443, assets/sass/_elements.scss */
+/* line 1440, assets/sass/_elements.scss */
 .KCPL_comments li.comment .comment-content .name {
   font: bold 18px/12px "nimbus-sans-condensed";
   text-transform: uppercase;
@@ -4846,76 +4850,76 @@ a > .KCPL_horz-single {
   display: block;
   margin: 0 0 7px;
 }
-/* line 1444, assets/sass/_elements.scss */
+/* line 1441, assets/sass/_elements.scss */
 .KCPL_comments li.comment .comment-content .date {
   font: bold 15px/15px "nimbus-sans";
   display: block;
   margin: 0 0 19px;
 }
-/* line 1445, assets/sass/_elements.scss */
+/* line 1442, assets/sass/_elements.scss */
 .KCPL_comments li.comment .comment-content .comment-comment {
   font: 15px/18px "minion-pro";
   display: block;
   margin: 0 0 17px;
 }
-/* line 1446, assets/sass/_elements.scss */
+/* line 1443, assets/sass/_elements.scss */
 .KCPL_comments li.comment .comment-content a.reply {
   display: block;
   margin: 0 0 2px;
 }
-/* line 1447, assets/sass/_elements.scss */
+/* line 1444, assets/sass/_elements.scss */
 .KCPL_comments li.comment .comment-content a.leave-comment {
   display: block;
   margin: 0;
 }
-/* line 1451, assets/sass/_elements.scss */
+/* line 1448, assets/sass/_elements.scss */
 .KCPL_comments li.comment.depth-1.parent {
   background: #979797;
 }
-/* line 1452, assets/sass/_elements.scss */
+/* line 1449, assets/sass/_elements.scss */
 .KCPL_comments li.comment.depth-1.parent > .caret {
   background: url(assets/img/commentCaretDG.png) no-repeat;
 }
-/* line 1453, assets/sass/_elements.scss */
+/* line 1450, assets/sass/_elements.scss */
 .KCPL_comments li.comment.depth-1.parent > ol {
   padding: 13px 21px 0 70px;
 }
-/* line 1455, assets/sass/_elements.scss */
+/* line 1452, assets/sass/_elements.scss */
 .KCPL_comments li.comment.depth-1.parent > ol li.comment .comment-content {
   width: 126px;
   margin: 0;
 }
-/* line 1459, assets/sass/_elements.scss */
+/* line 1456, assets/sass/_elements.scss */
 .KCPL_comments li.comment.thread-alt {
   background: #f65446;
 }
-/* line 1460, assets/sass/_elements.scss */
+/* line 1457, assets/sass/_elements.scss */
 .KCPL_comments li.comment.thread-alt > .caret {
   background: url(assets/img/commentCaretR.png) no-repeat;
   left: auto;
   right: 16px;
 }
 
-/* line 1465, assets/sass/_elements.scss */
+/* line 1462, assets/sass/_elements.scss */
 .columns.eight .KCPL_comments {
   display: block;
 }
-/* line 1466, assets/sass/_elements.scss */
+/* line 1463, assets/sass/_elements.scss */
 .columns.eight .KCPL_comments a {
   color: #323333;
 }
-/* line 1467, assets/sass/_elements.scss */
+/* line 1464, assets/sass/_elements.scss */
 .columns.eight .KCPL_comments ol {
   list-style: none;
 }
-/* line 1468, assets/sass/_elements.scss */
+/* line 1465, assets/sass/_elements.scss */
 .columns.eight .KCPL_comments li.comment {
   display: block;
   background: #e2e2e2;
   position: relative;
   border-radius: 12px;
 }
-/* line 1469, assets/sass/_elements.scss */
+/* line 1466, assets/sass/_elements.scss */
 .columns.eight .KCPL_comments li.comment .caret {
   position: absolute;
   top: -10px;
@@ -4926,22 +4930,22 @@ a > .KCPL_horz-single {
   height: 11px;
   width: 22px;
 }
-/* line 1470, assets/sass/_elements.scss */
+/* line 1467, assets/sass/_elements.scss */
 .columns.eight .KCPL_comments li.comment .comment-wrap {
   padding: 20px 20px 14px;
 }
-/* line 1471, assets/sass/_elements.scss */
+/* line 1468, assets/sass/_elements.scss */
 .columns.eight .KCPL_comments li.comment .comment-img {
   float: left;
   width: 33px;
 }
-/* line 1472, assets/sass/_elements.scss */
+/* line 1469, assets/sass/_elements.scss */
 .columns.eight .KCPL_comments li.comment .comment-content {
   float: right;
   width: 519px;
   padding: 0 24px 0 0;
 }
-/* line 1473, assets/sass/_elements.scss */
+/* line 1470, assets/sass/_elements.scss */
 .columns.eight .KCPL_comments li.comment .comment-content .name {
   font: bold 18px/12px "nimbus-sans-condensed";
   text-transform: uppercase;
@@ -4949,45 +4953,45 @@ a > .KCPL_horz-single {
   display: block;
   margin: 0 0 7px;
 }
-/* line 1474, assets/sass/_elements.scss */
+/* line 1471, assets/sass/_elements.scss */
 .columns.eight .KCPL_comments li.comment .comment-content .date {
   font: bold 15px/15px "nimbus-sans";
   display: block;
   margin: 0 0 19px;
 }
-/* line 1475, assets/sass/_elements.scss */
+/* line 1472, assets/sass/_elements.scss */
 .columns.eight .KCPL_comments li.comment .comment-content .comment-comment {
   font: 15px/18px "minion-pro";
   display: block;
   margin: 0 0 17px;
 }
-/* line 1476, assets/sass/_elements.scss */
+/* line 1473, assets/sass/_elements.scss */
 .columns.eight .KCPL_comments li.comment .comment-content a.reply {
   display: block;
   margin: 0 0 2px;
 }
-/* line 1477, assets/sass/_elements.scss */
+/* line 1474, assets/sass/_elements.scss */
 .columns.eight .KCPL_comments li.comment .comment-content a.leave-comment {
   display: block;
   margin: 0;
 }
-/* line 1481, assets/sass/_elements.scss */
+/* line 1478, assets/sass/_elements.scss */
 .columns.eight .KCPL_comments li.comment.depth-1.parent {
   background: #979797;
 }
-/* line 1482, assets/sass/_elements.scss */
+/* line 1479, assets/sass/_elements.scss */
 .columns.eight .KCPL_comments li.comment.depth-1.parent > .caret {
   background: url(assets/img/commentCaretDG.png) no-repeat;
 }
-/* line 1485, assets/sass/_elements.scss */
+/* line 1482, assets/sass/_elements.scss */
 .columns.eight .KCPL_comments li.comment.depth-1.parent > ol li.comment .comment-content {
   width: 431px;
 }
-/* line 1489, assets/sass/_elements.scss */
+/* line 1486, assets/sass/_elements.scss */
 .columns.eight .KCPL_comments li.comment.comment-author-admin {
   background: #f65446;
 }
-/* line 1490, assets/sass/_elements.scss */
+/* line 1487, assets/sass/_elements.scss */
 .columns.eight .KCPL_comments li.comment.comment-author-admin > .caret {
   background: url(assets/img/commentCaretR.png) no-repeat;
   left: auto;
@@ -4995,7 +4999,7 @@ a > .KCPL_horz-single {
 }
 
 /* Video Embed */
-/* line 1497, assets/sass/_elements.scss */
+/* line 1494, assets/sass/_elements.scss */
 .KCPL_videoembed {
   position: relative;
   padding-bottom: 56.25%;
@@ -5003,7 +5007,7 @@ a > .KCPL_horz-single {
   height: 0;
   margin: 0 0 26px;
 }
-/* line 1498, assets/sass/_elements.scss */
+/* line 1495, assets/sass/_elements.scss */
 .KCPL_videoembed iframe {
   position: absolute;
   top: 0;
@@ -5013,48 +5017,48 @@ a > .KCPL_horz-single {
 }
 
 /* Calendar */
-/* line 1503, assets/sass/_elements.scss */
+/* line 1500, assets/sass/_elements.scss */
 #KCPL_Calendar_viewby {
   display: block;
   padding: 0 0 18px;
 }
-/* line 1504, assets/sass/_elements.scss */
+/* line 1501, assets/sass/_elements.scss */
 #KCPL_Calendar_viewby * {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 1505, assets/sass/_elements.scss */
+/* line 1502, assets/sass/_elements.scss */
 #KCPL_Calendar_viewby span {
   font: 14px/14px "minion-pro";
   font-style: italic;
   letter-spacing: 0.05em;
   margin: 0 6px 0 0;
 }
-/* line 1506, assets/sass/_elements.scss */
+/* line 1503, assets/sass/_elements.scss */
 #KCPL_Calendar_viewby a {
   font: bold 14px/14px "nimbus-sans";
   padding: 7px 10px 4px;
   color: #323333;
   letter-spacing: 0.055em;
 }
-/* line 1507, assets/sass/_elements.scss */
+/* line 1504, assets/sass/_elements.scss */
 #KCPL_Calendar_viewby a.active, #KCPL_Calendar_viewby a:hover {
   background: #76849a;
 }
 
-/* line 1510, assets/sass/_elements.scss */
+/* line 1507, assets/sass/_elements.scss */
 #KCPL_Calendar_listview-current {
   position: relative;
   font: bold 15px/30px "nimbus-sans";
   padding: 0 30px;
 }
-/* line 1511, assets/sass/_elements.scss */
+/* line 1508, assets/sass/_elements.scss */
 #KCPL_Calendar_listview-current #KCPL_Calendar_listview-current-np {
   position: absolute;
   top: 10px;
   right: 10px;
 }
-/* line 1512, assets/sass/_elements.scss */
+/* line 1509, assets/sass/_elements.scss */
 #KCPL_Calendar_listview-current #KCPL_Calendar_listview-current-np .next {
   background: url(assets/img/calMonthRight.png) no-repeat;
   height: 12px;
@@ -5067,7 +5071,7 @@ a > .KCPL_horz-single {
   text-indent: -9999px;
   display: block;
 }
-/* line 1513, assets/sass/_elements.scss */
+/* line 1510, assets/sass/_elements.scss */
 #KCPL_Calendar_listview-current #KCPL_Calendar_listview-current-np .prev {
   background: url(assets/img/calMonthLeft.png) no-repeat;
   height: 12px;
@@ -5081,24 +5085,24 @@ a > .KCPL_horz-single {
   display: block;
 }
 
-/* line 1517, assets/sass/_elements.scss */
+/* line 1514, assets/sass/_elements.scss */
 #KCPL_Calendar_monthsel {
   background: #758499;
   padding: 18px 50px 16px;
   position: relative;
 }
-/* line 1518, assets/sass/_elements.scss */
+/* line 1515, assets/sass/_elements.scss */
 #KCPL_Calendar_monthsel a {
   font: bold 17px/17px "nimbus-sans";
   text-transform: uppercase;
   color: #323333;
   margin: 0 8px;
 }
-/* line 1519, assets/sass/_elements.scss */
+/* line 1516, assets/sass/_elements.scss */
 #KCPL_Calendar_monthsel a:hover, #KCPL_Calendar_monthsel a.active {
   color: #fff;
 }
-/* line 1520, assets/sass/_elements.scss */
+/* line 1517, assets/sass/_elements.scss */
 #KCPL_Calendar_monthsel a#KCPL_Calendar_prev {
   background: url(assets/img/calMonthLeft.png) no-repeat;
   height: 12px;
@@ -5111,7 +5115,7 @@ a > .KCPL_horz-single {
   text-indent: -9999px;
   display: block;
 }
-/* line 1521, assets/sass/_elements.scss */
+/* line 1518, assets/sass/_elements.scss */
 #KCPL_Calendar_monthsel a#KCPL_Calendar_next {
   background: url(assets/img/calMonthRight.png) no-repeat;
   height: 12px;
@@ -5125,18 +5129,18 @@ a > .KCPL_horz-single {
   display: block;
 }
 
-/* line 1524, assets/sass/_elements.scss */
+/* line 1521, assets/sass/_elements.scss */
 #KCPL_Calendar_gridview {
   display: block;
 }
 
-/* line 1525, assets/sass/_elements.scss */
+/* line 1522, assets/sass/_elements.scss */
 #KCPL_Calendar_gridview table {
   width: 100%;
   background: #e2e2e2;
 }
 
-/* line 1527, assets/sass/_elements.scss */
+/* line 1524, assets/sass/_elements.scss */
 #KCPL_Calendar_gridview th {
   border: none;
   border-left: 1px solid #676767;
@@ -5145,7 +5149,7 @@ a > .KCPL_horz-single {
   text-transform: uppsercase;
 }
 
-/* line 1529, assets/sass/_elements.scss */
+/* line 1526, assets/sass/_elements.scss */
 #KCPL_Calendar_gridview table tr td {
   width: 14.28571428571429%;
   position: relative;
@@ -5153,19 +5157,19 @@ a > .KCPL_horz-single {
   border: 1px solid #676767 !important;
 }
 
-/* line 1530, assets/sass/_elements.scss */
+/* line 1527, assets/sass/_elements.scss */
 #KCPL_Calendar_gridview table tr td span {
   display: block;
   font: 12px/16px 'minion pro';
 }
 
-/* line 1531, assets/sass/_elements.scss */
+/* line 1528, assets/sass/_elements.scss */
 #KCPL_Calendar_gridview table tr td span strong {
   font: bold 12px/12px 'nimbus-sans';
   text-transform: uppercase;
 }
 
-/* line 1532, assets/sass/_elements.scss */
+/* line 1529, assets/sass/_elements.scss */
 #KCPL_Calendar_gridview table tr td span.day-marker {
   position: absolute;
   top: 6px;
@@ -5174,27 +5178,27 @@ a > .KCPL_horz-single {
   line-height: 12px;
 }
 
-/* line 1535, assets/sass/_elements.scss */
+/* line 1532, assets/sass/_elements.scss */
 #KCPL_Calendar_listview {
   display: block;
   background: #76849a;
 }
-/* line 1536, assets/sass/_elements.scss */
+/* line 1533, assets/sass/_elements.scss */
 #KCPL_Calendar_listview #KCPL_Calendar_monthsel {
   border-bottom: 1px solid #323333;
 }
-/* line 1537, assets/sass/_elements.scss */
+/* line 1534, assets/sass/_elements.scss */
 #KCPL_Calendar_listview #KCPL_Calendar_listview-entries {
   border-top: 1px solid #323333;
   margin: 3px 0 0;
   display: block;
 }
-/* line 1538, assets/sass/_elements.scss */
+/* line 1535, assets/sass/_elements.scss */
 #KCPL_Calendar_listview .KCPL_Calendar_date-entry {
   display: table;
   width: 100%;
 }
-/* line 1539, assets/sass/_elements.scss */
+/* line 1536, assets/sass/_elements.scss */
 #KCPL_Calendar_listview .KCPL_Calendar_date-entry .left {
   width: 50%;
   display: table-cell;
@@ -5203,20 +5207,20 @@ a > .KCPL_horz-single {
   vertical-align: top;
   padding: 12px 20px;
 }
-/* line 1540, assets/sass/_elements.scss */
+/* line 1537, assets/sass/_elements.scss */
 #KCPL_Calendar_listview .KCPL_Calendar_date-entry .left .title {
   font: bold 17px/26px "nimbus-sans-condensed";
   display: block;
   text-transform: uppercase;
   letter-spacing: 0.09em;
 }
-/* line 1541, assets/sass/_elements.scss */
+/* line 1538, assets/sass/_elements.scss */
 #KCPL_Calendar_listview .KCPL_Calendar_date-entry .left .desc {
   font: 13px/18px "minion-pro";
   display: block;
   letter-spacing: 0.095em;
 }
-/* line 1543, assets/sass/_elements.scss */
+/* line 1540, assets/sass/_elements.scss */
 #KCPL_Calendar_listview .KCPL_Calendar_date-entry .right {
   width: 50%;
   display: table-cell;
@@ -5224,37 +5228,37 @@ a > .KCPL_horz-single {
   vertical-align: top;
   padding: 18px 40px;
 }
-/* line 1544, assets/sass/_elements.scss */
+/* line 1541, assets/sass/_elements.scss */
 #KCPL_Calendar_listview .KCPL_Calendar_date-entry .right .time {
   font: bold 14px/15px "nimbus-sans";
   display: block;
   margin: 0 0 2px;
   letter-spacing: 0.025em;
 }
-/* line 1545, assets/sass/_elements.scss */
+/* line 1542, assets/sass/_elements.scss */
 #KCPL_Calendar_listview .KCPL_Calendar_date-entry .right .tags {
   display: block;
 }
-/* line 1546, assets/sass/_elements.scss */
+/* line 1543, assets/sass/_elements.scss */
 #KCPL_Calendar_listview .KCPL_Calendar_date-entry .right .tags a {
   font: 12px/12px "nimbus-sans";
   color: #323333;
   letter-spacing: 0.065em;
 }
 
-/* line 1552, assets/sass/_elements.scss */
+/* line 1549, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar-form {
   margin: 0;
   padding: 0;
 }
 
-/* line 1553, assets/sass/_elements.scss */
+/* line 1550, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar {
   display: block;
   background: #e2e2e2;
   margin: 53px 0 0;
 }
-/* line 1554, assets/sass/_elements.scss */
+/* line 1551, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar h3 {
   font: bold 17px/17px "nimbus-sans";
   padding: 18px 0 17px 19px;
@@ -5262,11 +5266,11 @@ a > .KCPL_horz-single {
   border-bottom: 1px solid #676767;
   margin: 0;
 }
-/* line 1555, assets/sass/_elements.scss */
+/* line 1552, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar > div {
   display: block;
 }
-/* line 1556, assets/sass/_elements.scss */
+/* line 1553, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar input[type="radio"] {
   -webkit-appearance: none;
   background: transparent;
@@ -5276,7 +5280,7 @@ a > .KCPL_horz-single {
   margin: 0 1px 0 20px;
   position: relative;
 }
-/* line 1557, assets/sass/_elements.scss */
+/* line 1554, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar input[type="radio"]:checked:after {
   content: '';
   position: absolute;
@@ -5288,37 +5292,37 @@ a > .KCPL_horz-single {
   border-radius: 2px;
   background: #000;
 }
-/* line 1558, assets/sass/_elements.scss */
+/* line 1555, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar label {
   letter-spacing: 0.075em;
   font-size: 14px;
   vertical-align: bottom;
 }
-/* line 1559, assets/sass/_elements.scss */
+/* line 1556, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar #KCPL_Calendar_sidebar-tax label {
   font-size: 12px;
 }
-/* line 1560, assets/sass/_elements.scss */
+/* line 1557, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar div#KCPL_Calendar_sidebar-ce {
   padding: 6px 0;
   border-bottom: 1px solid #676767;
 }
-/* line 1561, assets/sass/_elements.scss */
+/* line 1558, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar .KCPL_Calendar_radio-cont {
   margin: 6px 0;
 }
-/* line 1562, assets/sass/_elements.scss */
+/* line 1559, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar span.KCPL_Calendar_sidebar-dropdown {
   font: 14px/14px "nimbus-sans";
   margin: 20px 0 0px 18px;
   display: block;
   letter-spacing: 0.065em;
 }
-/* line 1563, assets/sass/_elements.scss */
+/* line 1560, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar span.KCPL_Calendar_sidebar-dropdown:hover {
   cursor: pointer;
 }
-/* line 1564, assets/sass/_elements.scss */
+/* line 1561, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar span.KCPL_Calendar_sidebar-dropdown i {
   display: inline-block;
   background: url(assets/img/calSidebarDrop.png) no-repeat;
@@ -5327,25 +5331,25 @@ a > .KCPL_horz-single {
   vertical-align: middle;
   transition: 0.2s all;
 }
-/* line 1565, assets/sass/_elements.scss */
+/* line 1562, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar span.KCPL_Calendar_sidebar-dropdown.active i {
   transform: rotate(180deg);
 }
-/* line 1566, assets/sass/_elements.scss */
+/* line 1563, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar .KCPL_Calendar_dropdown {
   display: none;
 }
-/* line 1567, assets/sass/_elements.scss */
+/* line 1564, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar div#KCPL_Calendar_search {
   text-align: right;
   padding: 14px 17px 18px 0;
 }
-/* line 1568, assets/sass/_elements.scss */
+/* line 1565, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar input[type="submit"] {
   background: #76849a;
   padding: 3px 27px 3px 26px;
 }
-/* line 1569, assets/sass/_elements.scss */
+/* line 1566, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar input[type="submit"]:hover {
   cursor: pointer;
 }
@@ -5359,14 +5363,14 @@ a > .KCPL_horz-single {
 <a class="next page-numbers" href=""><i class="fa fa-angle-double-right"></i></a>
 
 */
-/* line 1584, assets/sass/_elements.scss */
+/* line 1581, assets/sass/_elements.scss */
 .page-numbers-container {
   display: block;
   text-align: center;
   margin: 0px auto 20px;
 }
 
-/* line 1585, assets/sass/_elements.scss */
+/* line 1582, assets/sass/_elements.scss */
 .page-numbers {
   display: inline;
   font-family: "nimbus-sans";
@@ -5378,12 +5382,12 @@ a > .KCPL_horz-single {
   cursor: pointer;
 }
 
-/* line 1586, assets/sass/_elements.scss */
+/* line 1583, assets/sass/_elements.scss */
 .current {
   color: #323333;
 }
 
-/* line 1587, assets/sass/_elements.scss */
+/* line 1584, assets/sass/_elements.scss */
 .previous {
   display: inline;
   padding-right: 23px;
@@ -5391,7 +5395,7 @@ a > .KCPL_horz-single {
   cursor: pointer;
 }
 
-/* line 1588, assets/sass/_elements.scss */
+/* line 1585, assets/sass/_elements.scss */
 .next {
   display: inline;
   padding-left: 23px;

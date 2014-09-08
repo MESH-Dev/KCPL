@@ -3,8 +3,8 @@
       <div class="gutter">
         <?php 
 
-        $post = get_post($pID);
-        $slug = $post->post_name;
+        $posttest = get_post($pID);
+        $slug = $posttest->post_name;
  
 
         if (($slug == 'collection') || ($slug == 'events-classes') || ($slug == 'learning-lab') || ($slug == 'community'))

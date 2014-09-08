@@ -32,6 +32,7 @@ $color = get_field('section_color',$pID); ?>
                 // Partial to use for 8 column (full width) content blocks
                 include_once(locate_template('partials/module-content-8column.php'));
             ?>
+ 
 
             <?php
                 // Partial to use for two side-by-side 4 column content blocks

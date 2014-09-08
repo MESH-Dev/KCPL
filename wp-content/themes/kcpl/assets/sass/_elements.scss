@@ -311,7 +311,7 @@ ol.homepage-callout-list { display: block;
        <span>Short Call Out</span>
    </div>
 */
-.#{$namespace}short-callout { display: block; border-radius: 10px; background: #f65446; padding: 79px 24px; }
+.#{$namespace}short-callout { display: block; border-radius: 10px; background: #f65446; padding: 79px 24px; word-wrap: break-word; }
 .#{$namespace}short-callout {
     span { display: block; font-family: $nimbus-c; font-weight: 600; text-transform: uppercase; text-align: center; font-size: 43px; line-height: 46px; color: white; }
 }
@@ -797,7 +797,6 @@ ol.homepage-callout-list { display: block;
 /* Homepage Engagement 
 <div class="KCPL_home-engagement">
   <span class="title "> </span>
- 
   <div id="engage-first" class="single-row KCPL_background-green">
     <div class="gutter">  
       Learn
@@ -808,7 +807,6 @@ ol.homepage-callout-list { display: block;
      Play
     </div>
   </div>
-
   <div id="engage-third" class="single-row KCPL_background-grey">
     <div class="gutter">
       Visit
@@ -819,7 +817,6 @@ ol.homepage-callout-list { display: block;
       Find
     </div>
   </div>
-
   <div id="row-expanded" >
     <span class="title "> </span> 
     <span class="close">close x</span>
@@ -836,7 +833,6 @@ ol.homepage-callout-list { display: block;
             Content 4
     </div>
   </div>
- 
 </div>
  */
 
@@ -1099,8 +1095,9 @@ a > .#{$namespace}horz-single{color:#fff;}
 
 .#{$namespace}horz-multi{border-radius:11px;color:#fff;margin:0 0 26px;
    .gutter{padding: 14px 27px 13px;}
-   span{font: bold 20px/23px $nimbus;text-transform: uppercase;display: block;}
+   span{font: bold 20px/23px $nimbus;text-transform: uppercase;display: inline-block; width: 90%;}
    a{color:#fff;}
+   span.alert{display:inline ; float: left; width: 10%; }
 }
 
 

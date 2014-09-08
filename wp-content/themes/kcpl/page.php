@@ -1,7 +1,6 @@
 <?php get_header();
 global $post;
 $pID = KCPL_get_highest_ancestor($post);
-
 $sidebar = KCPL_get_sidebar($pID);
 $color = get_field('section_color',$pID); 
  
@@ -16,29 +15,28 @@ $color = get_field('section_color',$pID);
   <div class="container">
     <?php include_once(locate_template('partials/module-sidebar-nav.php')); ?>
 
-    <div class="column eight omega" id="contentPrimary">
-      <!-- <div class="column eight alpha omega">
-        <?php include_once(locate_template('partials/module-content-topcallout.php')); ?>
-      </div> -->
-
+    <div class="columns eight omega" id="contentPrimary">
       <div class="column eight alpha omega">
+       
+        <?php include_once(locate_template('partials/module-content-topcallout.php')); ?>
+      </div>  
+
+      <div class="columns eight alpha omega">
+  
         <?php include_once(locate_template('partials/module-content-8column.php')); ?>
       </div>
 
-      <?php $rightSidebar = get_field('sidebar_callouts');
+      <?php $rightSidebar = get_field('page_sidebar'); 
             $rsCount = count($rightSidebar); ?>
 
-      <div class="column <?php if($rsCount != 0){echo 'six';}else{echo 'eight omega';} ?> alpha">
-        <?php the_content(); ?>
+      <div class="columns <?php if($rsCount != 0){echo 'six';}else{echo 'eight omega';} ?> alpha">
+        <?php the_content(); ?>  
       </div>
 
       <?php if($rsCount != 0){ ?>
 
-        <div class="column two omega">
-          <?php foreach($rightSidebar as $widget){
-              echo $widget['field_type'];
-          }?>
-
+        <div class="columns two omega">
+          <?php include_once(locate_template('partials/module-content-page-sidebar.php')); ?>
         </div>
 
       <?php } ?>
