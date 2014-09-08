@@ -45,8 +45,8 @@ jQuery(document).ready(function($){
       var n = $(this);
       var c = $('.current');
 
-      $('.p-' + c.html()).hide('slide', {direction: 'left'}, 1000);
-      $('.p-' + n.html()).show('slide', {direction: 'right'}, 1000).delay(1000);
+      $('.p-' + c.html()).fadeOut("slow", function(){});
+      $('.p-' + n.html()).delay(800).fadeIn('slow', function(){});
 
       c.removeClass('current');
       $(this).addClass('current');
@@ -61,8 +61,8 @@ jQuery(document).ready(function($){
         var n = $('.current').next('.page-numbers');
         var c = $('.current');
 
-        $('.p-' + c.html()).hide('slide', {direction: 'left'}, 1000);
-        $('.p-' + n.html()).show('slide', {direction: 'right'}, 1000);
+        $('.p-' + c.html()).fadeOut("slow", function(){});
+        $('.p-' + n.html()).delay(800).fadeIn('slow', function(){});
 
         c.removeClass('current');
         n.addClass('current');
@@ -80,8 +80,8 @@ jQuery(document).ready(function($){
         var p = $('.current').prev('.page-numbers');
         var c = $('.current');
 
-        $('.p-' + c.html()).hide('slide', {direction: 'right'}, 1000);
-        $('.p-' + p.html()).show('slide', {direction: 'left'}, 1000);
+        $('.p-' + c.html()).fadeOut("slow", function(){});
+        $('.p-' + p.html()).delay(800).fadeIn('slow', function(){});
 
         c.removeClass('current');
         p.addClass('current');
@@ -90,5 +90,26 @@ jQuery(document).ready(function($){
 
       // need to build in catch when it's at the beginning of the pagination
   });
+
+  $('.single-row').click(function() {
+      var id = $(this).attr('id');
+      var bg = $(this).attr('class');
+      var content = id.slice(7,bg.length)
+      content = "#content-" + content;
+      bg = bg.slice(11,bg.length);
+       console.log(content);
+
+      $('.engage-content').hide();
+
+      $(content).show();
+
+      $('#row-expanded').removeClass().addClass(bg);
+      $('#row-expanded').animate({left:"298px"},400);
+  });
+
+  $('.close').click(function() {
+    $('#row-expanded').animate({left:"-690px"},500);
+  });
+
 
 });

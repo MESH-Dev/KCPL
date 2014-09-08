@@ -3,7 +3,7 @@
 /**
  * Disable error reporting
  *
- * Set this to error_reporting( E_ALL ) or error_reporting( E_ALL | E_STRICT ) for debugging
+ * Set this to error_reporting( -1 ) for debugging.
  */
 error_reporting(0);
 
@@ -160,4 +160,3 @@ if ( $compress && ! ini_get('zlib.output_compression') && 'ob_gzhandler' != ini_
 
 echo $out;
 exit;
-?>

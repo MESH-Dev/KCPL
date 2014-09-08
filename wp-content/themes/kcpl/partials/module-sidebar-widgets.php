@@ -39,6 +39,7 @@ foreach($sidebar as $widget){
     <?php } ?>
       <div class="KCPL_horz-multi KCPL_background-<?php echo $widget['field_color']; ?>">
         <div class="gutter">
+          <?php if($widget['horizontal_callout_alert'] == 'yes'){?> <span class="alert"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/alert.png" /> </span><?php } ?>
            <span><?php echo $widget['horizontal_callout-multi_title']; ?></span>
            <?php if($widget['field_link'] != ''){ ?>
              <a class="KCPL_readmore" href="<?php echo $widget['field_link']; ?>">Read More ≈</a>
@@ -97,12 +98,136 @@ foreach($sidebar as $widget){
        </div>
     </div>
 
-  <?php }elseif($widget['field_type'] == 'listing-style-3'){
+  <?php } 
+  elseif($widget['field_type'] == 'recs'){
+    //OC Recommendations  ?>
+
+    <div class="KCPL_listing-style-3 KCPL_background-red">
+       <div class="KCPL_listing-style-3-header">
+          <span>Most Recommended Books<?php echo $widget['field_title']; ?></span>
+      </div>
+      
+      <div class="KCPL_listing-style-3-body">
+          
+        Most Recommended Books from Online Community Here [OC Function]
+          
+       </div>
+    </div>
+
+  <?php }
+  elseif($widget['field_type'] == 'listing-style-3'){
+    //OC Discussions  ?>
+
+    <div class="KCPL_listing-style-3 KCPL_background-red">
+       <div class="KCPL_listing-style-3-header">
+          <span>Recent Discussions<?php echo $widget['field_title']; ?></span>
+      </div>
+      
+      <div class="KCPL_listing-style-3-body">
+          
+        Most Recent Discussion From Online Community Here [OC Function]
+          
+       </div>
+    </div>
+
+  <?php }
+  elseif($widget['field_type'] == 'ask'){
     //listing style 3 ?>
 
-    listing-style-3
+    <div class="KCPL_single-featured ">
+       <span class="title KCPL_background-<?php echo $widget['field_color']; ?>">Ask A Librarian</span>
+       <div class="gutter">
+          
+        [Live Chat Widget Here]
+          
+       </div>
+    </div>
 
-  <?php }else{
+  <?php }
+   elseif($widget['field_type'] == 'listing-style-2-1'){
+    //listing style 3 ?>
+
+    <div class="KCPL_listing2-event KCPL_background-<?php echo $widget['field_color']; ?>">
+       <span class="title"><?php echo $widget['field_title']; ?></span>
+       <div class="gutter">
+          
+        [Calendar Widget Here]
+         
+        </div> 
+      
+    </div>
+
+  <?php }
+   elseif($widget['field_type'] == 'vertical-block'){
+    //2-COLS HERE  
+    $ctr = 1;
+    foreach($widget['vertical_blocks'] as $entry){
+
+      if($entry['vertical_type'] == "small-single"){ ?>
+       <div class="columns two <?php if($ctr == 1) echo 'alpha'; else echo 'omega';?> ">
+        <div class="KCPL_single-featured ?>">
+          <span class="title KCPL_background-<?php echo $widget['field_color']; ?>"><?php echo $entry['section_title']; ?></span>
+          <div class="gutter">
+
+             <div class="entry">
+                <span class="entry-title"><?php echo $entry['title']; ?></span>
+                <span class="entry-date"><?php echo $entry['supporting_info']; ?></span>
+                <div class="entry-excerpt">
+                    <?php echo $entry['description']; ?>
+                </div>
+                <a href="<?php echo $entry['page_link']; ?>" class="KCPL_readmore"><?php echo $entry['page_link_text']; ?></a>
+             </div>
+          </div>
+        </div>
+      </div>
+        
+      <?php
+      }
+      elseif($entry['vertical_type'] == "vertical-button"){ ?>
+       <div class="columns two <?php if($ctr == 1) echo 'alpha'; else echo 'omega';?>">
+        <a href="<?php echo $entry['page_link']; ?>">
+          <div class="KCPL_short-callout KCPL_background-<?php echo $widget['field_color']; ?>">
+            <span><?php echo $entry['title']; ?></span>
+          </div>
+        </a>
+      </div>
+        
+      <?php
+      }
+      elseif($entry['vertical_type'] == "social-feed"){ ?>
+         <div class="columns two <?php if($ctr == 1) echo 'alpha'; else echo 'omega';?> ">
+          <div class="KCPL_social-callout">
+           <div class="KCPL_social-callout-header">
+               <span>Follow Us</span>
+           </div>
+           <div class="KCPL_social-callout-body">
+               <div class="KCPL_sprite-facebook KCPL_social-callout-icon"></div>
+               <div class="KCPL_sprite-instagram KCPL_social-callout-icon"></div>
+               <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
+               <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
+               <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
+               <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
+
+               <div class="clear"></div>
+
+               <div class="KCPL_social-callout-tweet">
+                   <span class="KCPL_social-callout-tweet-content">"Tweets Go Here #awesome"</span>
+                   <span class="KCPL_social-callout-tweet-date">Date Here</span>
+               </div>
+           </div>
+         </div>
+        </div>    
+      <?php 
+     }
+      else{
+
+      }
+      $ctr++;
+
+    }
+
+  }
+  else{
     echo "Hasn't been configured yet. Deal with it.";
   }
 } ?>
