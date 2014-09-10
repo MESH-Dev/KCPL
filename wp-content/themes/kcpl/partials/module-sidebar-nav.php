@@ -1,10 +1,35 @@
 <div class="columns four alpha" id="contentSecondary">
-  <?php if(has_nav_menu('main_nav')){
+  <?php
+
+    $posttest = get_post($pID);
+    $slug = $posttest->post_name;
+
+    if (($slug == 'collection') || ($slug == 'events-classes') || ($slug == 'learning-lab') || ($slug == 'community'))
+        {
+          $nav = 'main_nav';
+        }
+        else{
+          $nav = 'util_nav';
+        }
+
+    if ($slug == 'collection') {
+      $color = 'yellow';
+    } elseif ($slug == 'events-classes') {
+      $color = 'l-grey';
+    } elseif ($slug == 'learning-lab') {
+      $color = 'green';
+    } elseif ($slug == 'community') {
+      $color = 'red';
+    } else {
+      $color = 'blue';
+    }
+
+    if(has_nav_menu('main_nav')){
       $defaults = array(
-        'theme_location'  => 'main_nav',
-        'menu'            => 'main_nav',
+        'theme_location'  => $nav,
+        'menu'            => $nav,
         'container'       => 'div',
-        'container_class' => '',
+        'container_class' => 'KCPL_background-'.$color,
         'container_id'    => 'secondary-sidebar-nav',
         'menu_class'      => 'menu clearfix',
         'menu_id'         => 'main_nav_secondary',
@@ -23,3 +48,5 @@
     } ?>
   <?php include_once(locate_template('partials/module-sidebar-widgets.php')); ?>
 </div>
+
+ 

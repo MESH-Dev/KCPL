@@ -271,4 +271,92 @@
 	}
 
 
+ //ADMIN CLEANUP
+ add_action('admin_menu','remove_dashboard_widgets'); // cleaning dashboard widgets  
+ add_action('admin_menu', 'delete_menu_items'); // deleting menu items from admin area
+ add_action('admin_menu','customize_meta_boxes'); // remove some meta boxes from pages and posts edition page
+
+
+/*** cleaning up the dashboard- ----------------------------------------*/
+function remove_dashboard_widgets(){
+  
+  //remove_meta_box('dashboard_right_now','dashboard','core'); // right now overview box
+  remove_meta_box('dashboard_incoming_links','dashboard','core'); // incoming links box
+  remove_meta_box('dashboard_quick_press','dashboard','core'); // quick press box
+  remove_meta_box('dashboard_plugins','dashboard','core'); // new plugins box
+  //remove_meta_box('dashboard_recent_drafts','dashboard','core'); // recent drafts box
+  remove_meta_box('dashboard_recent_comments','dashboard','core'); // recent comments box
+  remove_meta_box('dashboard_primary','dashboard','core'); // wordpress development blog box
+  remove_meta_box('dashboard_secondary','dashboard','core'); // other wordpress news box
+    
+  
+} 
+
+/*----------------------------------------------------------------------*/
+
+
+/* Remove some menus froms the admin area*/
+function delete_menu_items() {
+  
+  /*** Remove menu http://codex.wordpress.org/Function_Reference/remove_menu_page 
+  syntaxe : remove_menu_page( $menu_slug )  **/
+  //remove_menu_page('index.php'); // Dashboard
+  remove_menu_page('edit.php'); // Posts
+  //remove_menu_page('upload.php'); // Media
+  remove_menu_page('link-manager.php'); // Links
+  //remove_menu_page('edit.php?post_type=page'); // Pages
+  remove_menu_page('edit-comments.php'); // Comments
+  //remove_menu_page('themes.php'); // Appearance
+  //remove_menu_page('plugins.php'); // Plugins
+  //remove_menu_page('users.php'); // Users
+  //remove_menu_page('tools.php'); // Tools
+  //remove_menu_page('options-general.php'); // Settings
+    
+}
+
+/*----------------------------------------------------------------------*/
+
+
+/* remove some meta boxes from pages and posts -------------------------
+feel free to comment / uncomment  */
+
+function customize_meta_boxes() {
+
+  /* Removes meta boxes from pages */   
+  //remove_meta_box('postcustom','page','normal'); // custom fields metabox
+  remove_meta_box('trackbacksdiv','page','normal'); // trackbacks metabox
+  remove_meta_box('commentstatusdiv','page','normal'); // comment status metabox 
+  remove_meta_box('commentsdiv','page','normal'); // comments  metabox 
+  remove_meta_box('authordiv','page','normal'); // author metabox 
+  //remove_meta_box('revisionsdiv','page','normal'); // revisions  metabox 
+  //remove_meta_box('postimagediv','page','side'); // featured image metabox
+  //remove_meta_box('slugdiv','page','normal'); // slug metabox 
+  
+}
+
+function custom_menu_order($menu_ord) {
+    if (!$menu_ord) return true;
+     
+    return array(
+        'index.php', // Dashboard
+        'separator1', // First separator
+        'edit.php?post_type=page', // Pages
+        'edit.php?post_type=kcpl_calendar_entry', //Calendar
+        'edit.php?post_type=resources',
+        'separator2', // Second separator
+
+        'upload.php', // Media
+        'themes.php', // Appearance
+        'separator-last', // Last separator
+        'users.php', // Users
+        'plugins.php', // Plugins
+        
+        'tools.php', // Tools
+        'options-general.php', // Settings
+        
+    );
+}
+add_filter('custom_menu_order', 'custom_menu_order'); // Activate custom_menu_order
+add_filter('menu_order', 'custom_menu_order');
+
 ?>
