@@ -138,7 +138,7 @@ foreach($sidebar as $widget){
        <span class="title KCPL_background-<?php echo $widget['field_color']; ?>">Ask A Librarian</span>
        <div class="gutter">
           
-        [Live Chat Widget Here]
+        <iframe src="http://libraryh3lp.com/chat/kcpltest@chat.libraryh3lp.com?skin=13921&amp;theme=alphamod&amp;title=&amp;identity=KCPL&amp;sounds=true" frameborder="1" style="width: 100%; height: 360px; border: none;"> </iframe>
           
        </div>
     </div>
@@ -150,15 +150,42 @@ foreach($sidebar as $widget){
     <div class="KCPL_listing2-event KCPL_background-<?php echo $widget['field_color']; ?>">
        <span class="title"><?php echo $widget['field_title']; ?></span>
        <div class="gutter">
-          
-        [Calendar Widget Here]
+
+
+        <div class="entry">
+           <div class="left">
+               <span class="entry-title">title</span>
+           </div>
+           <div class="right">
+               <span class="entry-date">date time</span>
+               <span class="entry-loc">location</span>
+               <div class="entry-tags">
+                 <a href="#">tags</a>
+               </div>
+           </div>
+        </div>
+        <div class="entry">
+           <div class="left">
+               <span class="entry-title">title</span>
+           </div>
+           <div class="right">
+               <span class="entry-date">date time</span>
+               <span class="entry-loc">location</span>
+               <div class="entry-tags">
+                 <a href="#">tags</a>
+               </div>
+           </div>
+        </div>
          
-        </div> 
+       </div> 
       
     </div>
 
   <?php }
-   elseif($widget['field_type'] == 'vertical-block'){
+   elseif($widget['field_type'] == 'vertical-block'){ ?>
+
+     <div class="KCPL_vertical-callout clearfix">
+    <?php 
     //2-COLS HERE  
     $ctr = 1;
     foreach($widget['vertical_blocks'] as $entry){
@@ -224,7 +251,8 @@ foreach($sidebar as $widget){
       }
       $ctr++;
 
-    }
+    }?>
+    </div> <?php
 
   }
   else{

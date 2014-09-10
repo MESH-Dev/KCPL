@@ -9,7 +9,7 @@
   //left array
   echo "<div class='columns four alpha'>";
   foreach($contentArrL as $widget){
-     
+
      if($widget['field_type'] == 'horizontal-callout-single'){ ?>
 
     <?php if($widget['field_link'] != ''){ ?>
@@ -77,7 +77,9 @@
               <div class="entry-excerpt">
                   <?php echo $widget['single_featured_item_description']; ?>
               </div>
+              <?php if($widget['single_featured_item_link_url'] !=''){ ?> 
               <a href="<?php echo $widget['single_featured_item_link_url']; ?>" class="KCPL_readmore"><?php echo $widget['single_featured_item_link_text']; ?></a>
+              <?php }?>
            </div>
         </div>
       </div>
@@ -164,11 +166,11 @@
        <div class="KCPL_listing-style-3-header">
           <span>Most Recommended Books<?php echo $widget['field_title']; ?></span>
       </div>
-      
+
       <div class="KCPL_listing-style-3-body">
-          
+
         Most Recommended Books from Online Community Here [OC Function]
-          
+
        </div>
     </div>
 
@@ -180,11 +182,11 @@
        <div class="KCPL_listing-style-3-header">
           <span>Recent Discussions<?php echo $widget['field_title']; ?></span>
       </div>
-      
+
       <div class="KCPL_listing-style-3-body">
-          
+
         Most Recent Discussion From Online Community Here [OC Function]
-          
+
        </div>
     </div>
 
@@ -195,9 +197,9 @@
     <div class="KCPL_single-featured ">
        <span class="title KCPL_background-<?php echo $widget['field_color']; ?>">Ask A Librarian</span>
        <div class="gutter">
-          
+
         [Live Chat Widget Here]
-          
+
        </div>
     </div>
 
@@ -208,11 +210,11 @@
     <div class="KCPL_listing2-event KCPL_background-<?php echo $widget['field_color']; ?>">
        <span class="title"><?php echo $widget['field_title']; ?></span>
        <div class="gutter">
-          
+
         [Calendar Widget Here]
-         
-        </div> 
-      
+
+        </div>
+
     </div>
 
   <?php }
@@ -222,11 +224,11 @@
     <div class=" KCPL_background-<?php echo $widget['field_color']; ?>">
        <span class="title"><?php echo $widget['field_title']; ?></span>
        <div class="gutter">
-          
-         
-         
-        </div> 
-      
+
+
+
+        </div>
+
     </div>
 
   <?php }
@@ -242,7 +244,7 @@
   //right array
   echo "<div class='columns four omega'>";
   foreach($contentArrR as $widget){
-     
+
      if($widget['field_type'] == 'horizontal-callout-single'){ ?>
 
     <?php if($widget['field_link'] != ''){ ?>
@@ -260,17 +262,17 @@
   <?php }elseif($widget['field_type'] == 'card'){
     //horizontal callout - multi ?>
 
-    <?php if($widget['field_link'] != ''){ ?>
-      <a target="_blank" href="<?php echo $widget['field_link']; ?>">
-    <?php } ?>
-        <div class="KCPL_horz-card KCPL_background-<?php echo $widget['field_color']; ?>">
-          <div class="gutter">
-             <span class="KCPL_horz-card-first">Get your free</span> <span class="KCPL_horz-card-last">library card</span>
+      <?php if($widget['field_link'] != ''){ ?>
+        <a target="_blank" href="<?php echo $widget['field_link']; ?>">
+      <?php } ?>
+          <div class="KCPL_horz-card KCPL_background-<?php echo $widget['field_color']; ?>">
+            <div class="gutter">
+               <span class="KCPL_horz-card-first">Get your free</span> <span class="KCPL_horz-card-last">library card</span>
+            </div>
           </div>
-        </div>
-    <?php if($widget['field_link'] != ''){ ?>
-      </a>
-    <?php } ?>
+      <?php if($widget['field_link'] != ''){ ?>
+        </a>
+      <?php } ?>
 
   <?php }elseif($widget['field_type'] == 'horizontal-callout-multi'){
     //horizontal callout - multi ?>
@@ -310,7 +312,9 @@
               <div class="entry-excerpt">
                   <?php echo $widget['single_featured_item_description']; ?>
               </div>
+              <?php if($widget['single_featured_item_link_url'] !=''){ ?> 
               <a href="<?php echo $widget['single_featured_item_link_url']; ?>" class="KCPL_readmore"><?php echo $widget['single_featured_item_link_text']; ?></a>
+              <?php }?>
            </div>
         </div>
       </div>
@@ -397,16 +401,16 @@
        <div class="KCPL_listing-style-3-header">
           <span>Most Recommended Books<?php echo $widget['field_title']; ?></span>
       </div>
-      
+
       <div class="KCPL_listing-style-3-body">
-          
+
         Most Recommended Books from Online Community Here [OC Function]
-          
+
        </div>
     </div>
 
   <?php }
-  
+
   elseif($widget['field_type'] == 'listing-style-3'){
     //OC Discussions  ?>
 
@@ -414,11 +418,11 @@
        <div class="KCPL_listing-style-3-header">
           <span>Recent Discussions<?php echo $widget['field_title']; ?></span>
       </div>
-      
+
       <div class="KCPL_listing-style-3-body">
-          
+
         Most Recent Discussion From Online Community Here [OC Function]
-          
+
        </div>
     </div>
 
@@ -429,9 +433,9 @@
     <div class="KCPL_single-featured ">
        <span class="title KCPL_background-<?php echo $widget['field_color']; ?>">Ask A Librarian</span>
        <div class="gutter">
-          
+
         [Live Chat Widget Here]
-          
+
        </div>
     </div>
 
@@ -442,15 +446,15 @@
     <div class="KCPL_listing2-event KCPL_background-<?php echo $widget['field_color']; ?>">
        <span class="title"><?php echo $widget['field_title']; ?></span>
        <div class="gutter">
-          
+
         [Calendar Widget Here]
-         
-        </div> 
-      
+
+        </div>
+
     </div>
 
   <?php } elseif($widget['field_type'] == 'vertical-block'){
-    //2-COLS HERE  
+    //2-COLS HERE
     $ctr = 1;
     foreach($widget['vertical_blocks'] as $entry){
 
@@ -471,7 +475,7 @@
           </div>
         </div>
       </div>
-        
+
       <?php
       }
       elseif($entry['vertical_type'] == "vertical-button"){ ?>
@@ -482,7 +486,7 @@
           </div>
         </a>
       </div>
-        
+
       <?php
       }
       elseif($entry['vertical_type'] == "social-feed"){ ?>
@@ -507,8 +511,8 @@
                </div>
            </div>
          </div>
-        </div>    
-      <?php 
+        </div>
+      <?php
      }
       else{
 

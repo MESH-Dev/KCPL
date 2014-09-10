@@ -1,7 +1,10 @@
 <?php get_header(); ?>
 
 <?php 
-$args = array( 'post_type' => 'resources' );
+
+global $wp_query;
+//$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+$args = array( 'post_type' => 'resources', 'posts_per_page' => '-1');
 $args = array_merge( $args, $wp_query->query );
 query_posts( $args );
  
@@ -54,6 +57,27 @@ query_posts( $args );
 		</div>
 
 <?php endwhile; } ?>
+
+	<div class="pagination clearfix"> 
+
+	<?php 
+ /*
+
+echo paginate_links( array(
+	'prev_text'    => __('<i class="fa fa-angle-double-left"></i>'),
+	'next_text'    => __('<i class="fa fa-angle-double-right"></i>')
+) );
+ 
+?>
+
+<?php next_posts_link();  */?>
+</div>
+	<!--
+	<a class="previous page-numbers" href=""><i class="fa fa-angle-double-left"></i></a>
+	<span class='page-numbers current'>1</span>
+	<a class='page-numbers' href=''>2</a>
+	<a class="next page-numbers" href=""><i class="fa fa-angle-double-right"></i></a>
+-->
 
 	</div>
 </div>	

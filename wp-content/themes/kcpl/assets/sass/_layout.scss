@@ -12,7 +12,9 @@
 header{width:100%;float:left;}
   header .container{width:988px;}
   header > *{width:100%;float:left;position:relative;}
-  #header-logo{position:absolute;top:0;}
+  #header-logo{position:absolute;top:0;  
+    a:hover{opacity:1.0}
+  }
   header #header-util{background:$s-grey;height:45px;z-index:2;}
     header #header-util .gutter{padding:0 0 0 228px;}
     #header-util ul#util_nav{float:left;width:515px;list-style:none;}
@@ -55,6 +57,10 @@ header{width:100%;float:left;}
 
 //Single
 
+.page-content {background-color:$s-grey;}
+.page-content { margin:0px 0px 40px 0px;
+  .gutter {padding: 25px 35px;}
+}
 
 //footer - Used more sass nesting this time around
 footer{background:#c5c5c5;float:left;width:100%;}
@@ -91,10 +97,10 @@ footer{background:#c5c5c5;float:left;width:100%;}
     #social_navCont{display:block;margin:15px 0 0;}
     #social_navCont{
       ul{width:170px;}
-      ul li{color:#fff;overflow:hidden;height:35px;width:35px;float:left;position:relative;margin:0 20px 20px 0;background:$blue;}
+      ul li{color:#fff; list-style-type: none; overflow:hidden;height:35px;width:35px;float:left;position:relative;margin:0 20px 20px 0;background:$blue;}
         ul li:before{position: absolute;top: 32%;left: 33%;font-size: 19px;z-index:1;}
-        ul li.facebook{}
-        ul li.twitter{}
+        ul li.facebook{background: url(assets/img/sprites.png) 0px -50px no-repeat;height: 35px;width: 35px;}
+        ul li.twitter{background: url(assets/img/sprites.png) -164px -50px no-repeat;height: 35px;width: 35px;}
         ul li.tumblr{}
         ul li.googleplus{}
         ul li.pinterest{}
