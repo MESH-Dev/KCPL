@@ -2,15 +2,16 @@
 html,body{font:14px/18px $minion;color:#343131;}
 
 //headings
-h1{font:bold 40px/42px $nimbus-c;margin:0 0 .66em;text-transform:uppercase;}
-h2{font:italic 25px/29px $minion;margin:0 0 .85em;}
-h3{font:bold 23px/25px $nimbus-c;margin:0 0 1.05em;text-transform:uppercase;}
-h4{font:bold 18px/23px $nimbus;margin:0 0 1.3em;text-transform:uppercase;}
-h5{font:bold 18px/23px $nimbus-c;margin:0 0 1.2em;text-transform:uppercase;}
-h6{font:18px/22px $minion;margin:0 0 1.3em;}
+h1{font:bold 40px/42px $nimbus-c;margin:0 0 0.3em;text-transform:uppercase;}
+h2{font:italic 25px/29px $minion;margin:0 0 0.25em;}
+h3{font:bold 23px/25px $nimbus-c;margin:0 0 0.2em;text-transform:uppercase;}
+h4{font:bold 18px/23px $nimbus;margin:0 0 0;text-transform:uppercase;}
+h5{font:bold 18px/23px $nimbus-c;margin:0 0 0;text-transform:uppercase;}
+h6{font:18px/22px $minion;margin:0 0 0;}
 
 //paragraphs
 p{margin:0 0 .6em;}
+
 
 //modular styles
 .#{$namespace}date-time{font:bold 14px/18px $nimbus;margin:0;}
@@ -25,7 +26,7 @@ p{margin:0 0 .6em;}
 
 //anchors
 a{color:$blue;text-decoration:none;}
-  a:hover{}
+  a:hover{cursor: pointer; opacity: 0.8}
 
 //lists
 ul{list-style:disc inside;margin:0 0 .6em;}

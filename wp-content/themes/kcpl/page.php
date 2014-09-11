@@ -29,8 +29,11 @@ $color = get_field('section_color',$pID);
       <?php $rightSidebar = get_field('page_sidebar'); 
             $rsCount = count($rightSidebar); ?>
 
-      <div class="columns <?php if($rsCount != 0){echo 'six';}else{echo 'eight omega';} ?> alpha">
-        <?php the_content(); ?>  
+      <div class="columns page-content <?php if($rsCount != 0){echo 'six';}else{echo 'eight omega';} ?> alpha">
+        <div class="gutter">
+          <h3><?php the_title(); ?></h3>
+          <?php the_content(); ?> 
+        </div> 
       </div>
 
       <?php if($rsCount != 0){ ?>

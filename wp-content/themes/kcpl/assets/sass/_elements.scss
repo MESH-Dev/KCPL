@@ -23,21 +23,36 @@ textarea,input,select{outline: none;}
       ul{list-style:none;margin:0;}
       li{margin:0;}
       > li{}
-      > li > a{background:$blue;color: #fff;font: bold 19px/19px $nimbus-c;text-transform: uppercase;display: block;padding: 16px 20px 8px;}
+      > li > a{color: #fff;font: bold 19px/19px $nimbus-c;text-transform: uppercase;display: block;padding: 16px 20px 8px;}
       > li:last-child > a{padding: 16px 20px 13px;}
         a{text-decoration:none;}
         a:hover, li.current-menu-item > a, .current-menu-ancestor > a{color:$d-grey;}
 
-      > li > ul{background:$m-grey;}
+      > li > ul{display: none;}
       > li > ul > li{padding:0 0;}
       > li > ul > li > a{color: #fff;font: bold 19px/19px $nimbus-c;text-transform: uppercase;display: block;padding: 14px 0px 5px 20px;}
 
-      > li > ul > li > ul{padding:0 0;}
+      > li > ul > li > ul{padding:0 0; display: none;}
       > li > ul > li > ul > li{padding:0 0;}
       > li > ul > li > ul > li > a{color: #fff;font: 18px/18px $minion;display: block;padding: 4px 0px 0px 20px;letter-spacing: 0.03em;word-spacing: 0.09em;}
       > li > ul > li > ul > li:last-child > a{padding: 4px 0px 16px 20px;}
 
+      // Hide all other second and third level menu items
+
       > li > ul > li > ul ul{display:none;}
+
+      // Make the second and third level menu items of the current page visible
+
+      > li.current_page_item > ul, > li.current_page_ancestor > ul{display:block; background:$m-grey;}
+      > li.current_page_item > ul > li, > li.current_page_ancestor > ul > li{padding:0 0;}
+      > li.current_page_item > ul > li > a, > li.current_page_ancestor > ul > li > a{color: #fff;font: bold 19px/19px $nimbus-c;text-transform: uppercase;display: block;padding: 10px 20px;}
+      > li.current_page_ancestor > ul > li.current_page_item > a{color: #323333;font: bold 19px/19px $nimbus-c;text-transform: uppercase;display: block;padding: 10px 20px;}
+
+      > li.current_page_item > ul > li > ul, > li.current_page_ancestor > ul > li > ul{padding:0 0; display: none;}
+      > li.current_page_item > ul > li > ul > li, > li.current_page_ancestor > ul > li > ul > li{padding:0 0;}
+      > li.current_page_item > ul > li > ul > li > a, > li.current_page_ancestor > ul > li > ul > li > a{color: #fff;font: 18px/18px $minion;display: block;padding: 4px 0px 0px 20px;letter-spacing: 0.03em;word-spacing: 0.09em;}
+      > li.current_page_item > ul > li > ul > li:last-child > a, > li.current_page_ancestor > ul > li > ul > li:last-child > a{padding: 4px 0px 16px 20px;}
+
   }
 }
 
@@ -290,6 +305,8 @@ ol.homepage-callout-list { display: block;
        </div>
    </div>
 */
+
+.#{$namespace}vertical-callout {margin-bottom: 26px;}
 
 .#{$namespace}info-box { display: block; }
 .#{$namespace}info-box {
@@ -679,7 +696,7 @@ ol.homepage-callout-list { display: block;
   form{padding:0;margin:0;}
   #searchField{position:relative;display:block;margin:0 0 22px;}
   .searchicon{position: absolute;z-index: 2;top: 13px;left: 15px;font-size: 17px;color: #323333;}
-  input[type="search"]{-webkit-appearance: none;border-radius: 0px;border: 3px solid #fff;background: #e2e2e2;font: bold 17px/27px $nimbus;position: relative;z-index: 1;padding: 1px 20px 2px 27px;box-sizing: border-box;width:100%;}
+  input[type="search"]{-webkit-appearance: none;border-radius: 0px;border: 3px solid #fff;background: #e2e2e2;font: bold 17px/27px $nimbus;position: relative;z-index: 0;padding: 1px 20px 2px 27px;box-sizing: border-box;width:100%;}
   #search-params{display:block;float:left;width:100%;}
   #type{float: left;width: 112px;border-right: 1px solid #323333;height: 99px;
     .top{font: bold 15px/18px $nimbus;color: #323333;display: block;padding: 6px 0px 0 6px;letter-spacing: 0.01em;word-spacing: 0.065em;}
@@ -727,7 +744,7 @@ ol.homepage-callout-list { display: block;
 
   #type{float: left; width: 100%;border-right: none ;height: 100%; margin-bottom: 10px;
     .top{font: bold 15px/18px $nimbus;color: #323333;display: inline; float:left; padding: 0px 0px 0 6px;letter-spacing: 0.01em;word-spacing: 0.065em;}
-    .bottom{font: bold 18px/22px $nimbus-c;color: #323333;display: inline; float:left; text-transform: uppercase;padding: 1px 0 0;}
+    .bottom{font: bold 18px/22px $nimbus-c;color: #323333;display: inline; float:left; text-transform: uppercase;padding: 1px 0 0; top: -4px; position: relative; left: 6px;}
       .bottom a{color: #323333;display: inline; float:left; padding: 0 0 0 6px;letter-spacing: 0.06em;}
       .bottom a:hover, .bottom a.active{color:#fff;cursor:pointer;}
       .bottom a:first:after{content: '|'; }
@@ -740,7 +757,7 @@ ol.homepage-callout-list { display: block;
 
 }
 
- 
+
 
 
 #KCPL_search.extended{
@@ -794,16 +811,16 @@ ol.homepage-callout-list { display: block;
   .entry{float:left;width:59.6%;}
 }
 
-/* Homepage Engagement 
+/* Homepage Engagement
 <div class="KCPL_home-engagement">
   <span class="title "> </span>
   <div id="engage-first" class="single-row KCPL_background-green">
-    <div class="gutter">  
+    <div class="gutter">
       Learn
-    </div>  
+    </div>
   </div>
   <div id="engage-second" class="single-row KCPL_background-red">
-    <div class="gutter"> 
+    <div class="gutter">
      Play
     </div>
   </div>
@@ -818,7 +835,7 @@ ol.homepage-callout-list { display: block;
     </div>
   </div>
   <div id="row-expanded" >
-    <span class="fulletitle  "> </span> 
+    <span class="fulletitle  "> </span>
     <span class="close">close x</span>
     <div id="content-first" class="engage-content hide">
             Content 1
@@ -842,11 +859,13 @@ ol.homepage-callout-list { display: block;
 
    .single-row{font:55px/76px $minion; text-transform:uppercase;  width: 100%; margin: 0px;z-index: 15; position:relative;
       .gutter{ padding: 0px 10px 0px 10px;}
+      &:hover{cursor: pointer; opacity: 0.8}
    }
     #row-expanded{
-        margin: 0px; width: 672px; height: 352px; overflow: hidden; position:absolute; color:#000;   left: 298px; left:-366px; left: -690px; top: 0px; z-index: 10; border-top-right-radius:10px;  
+        margin: 0px; width: 672px; height: 352px; overflow: hidden; position:absolute; color:#000;   left: 298px; left:-366px; left: -690px; top: 0px; z-index: 10; border-top-right-radius:10px;
         .title{border-radius: 0px; border-top-right-radius:10px; padding:15px 10px 15px; min-height:18px; background-color:#e2e2e2; position:relative; z-index: 10}
         .close{position: absolute; right: 20px; top: 60px; font: bold 13px/13px $minion #000; z-index: 11; }
+        .close:hover{cursor: pointer; opacity: 0.8}
         .KCPL_featured .section-title{display:block;font:bold 18px/18px $nimbus-c;text-transform:uppercase;margin:0 0 2px;letter-spacing:0.065em; background:none; border:none; padding:0px}
       }
  }
@@ -1518,7 +1537,7 @@ a > .#{$namespace}horz-single{color:#fff;}
   a#KCPL_Calendar_next{background:url(assets/img/calMonthRight.png) no-repeat;height:12px;width:11px;position:absolute;top:20px;right:18px;margin:0;padding:0;text-indent:-9999px;display:block;}
 }
 
-#KCPL_Calendar_gridview{display:block;}
+#KCPL_Calendar_gridview{display:block; margin-bottom:40px;}
   #KCPL_Calendar_gridview table{width:100%;background:#e2e2e2;}
     #KCPL_Calendar_gridview thead{}
       #KCPL_Calendar_gridview th{border:none;border-left:1px solid #676767;border-right:1px solid #676767;font:bold 12px/12px $nimbus;text-transform:uppsercase;}
@@ -1529,12 +1548,14 @@ a > .#{$namespace}horz-single{color:#fff;}
       #KCPL_Calendar_gridview table tr td span.day-marker{position:absolute;top: 6px;left: 4px;font-size: 17px;line-height:12px;}
 
 
-#KCPL_Calendar_listview{display:block;background:$grey;
+#KCPL_Calendar_listview{display:block;background:$grey; margin-bottom:40px;
   #KCPL_Calendar_monthsel{border-bottom:1px solid #323333;}
   #KCPL_Calendar_listview-entries{border-top:1px solid #323333;margin:3px 0 0;display:block;}
   .KCPL_Calendar_date-entry{display:table;width:100%;
     .left{width:50%;display:table-cell;height:100%;border-right:1px solid #323333;vertical-align:top;padding:12px 20px;
-      .title{font:bold 17px/26px $nimbus-c;display:block;text-transform:uppercase;letter-spacing:0.09em;}
+      .title{font:bold 17px/26px $nimbus-c;display:block;text-transform:uppercase;letter-spacing:0.09em;
+          a{color: #fff;}
+      }
       .desc{font:13px/18px $minion;display:block;letter-spacing:0.095em;}
     }
     .right{width:50%;display:table-cell;height:100%;vertical-align:top;padding:18px 40px;
@@ -1547,7 +1568,7 @@ a > .#{$namespace}horz-single{color:#fff;}
 }
 
 #KCPL_Calendar_sidebar-form{margin:0;padding:0;}
-#KCPL_Calendar_sidebar{display:block;background:#e2e2e2;margin:53px 0 0;
+#KCPL_Calendar_sidebar{display:block;background:#e2e2e2;margin:0px 0 0;
   h3{font:bold 17px/17px $nimbus;padding: 18px 0 17px 19px;letter-spacing: 0.045em;border-bottom:1px solid #676767;margin:0;}
   > div{display:block;}
   input[type="radio"]{-webkit-appearance: none;background: transparent;border: 1px solid #000;padding: 4px 4px;border-radius: 2px;margin:0 1px 0 20px;position:relative;}
