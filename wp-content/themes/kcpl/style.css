@@ -1791,7 +1791,7 @@ footer .footer-location-widget .open, footer .footer-location-widget .closed {
   font: 13px/12px "nimbus-sans-condensed";
   color: #323333;
   text-transform: uppercase;
-  margin: 0 0 0 -2px;
+  margin: 0px;
   word-spacing: 0.05em;
 }
 /* line 93, assets/sass/_layout.scss */
