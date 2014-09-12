@@ -183,7 +183,7 @@ table{
   .container{height:202px;display:table;}
   .gutter{display:table;height:100%;width:100%;vertical-align:middle;}
   a{display:none;color:#fff;float:left;}
-    li.current-page-ancestor > a, li.current-menu-item > a{display:block;}
+    li.current-menu-ancestor > a, li.current-menu-item > a{display:block;}
   #main_navBannerCont{text-align:center;display:table-cell;width:100%;height:100%;vertical-align:middle;
     > ul{margin:0 auto;display:inline-block;}
     > ul > li{display:table;}
