@@ -1968,7 +1968,6 @@ textarea, input, select {
 /* line 35, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li > ul > li > ul {
   padding: 0 0;
-  display: none;
 }
 /* line 36, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li > ul > li > ul > li {
