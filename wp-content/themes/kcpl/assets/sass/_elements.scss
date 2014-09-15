@@ -32,7 +32,7 @@ textarea,input,select{outline: none;}
       > li > ul > li{padding:0 0;}
       > li > ul > li > a{color: #fff;font: bold 19px/19px $nimbus-c;text-transform: uppercase;display: block;padding: 14px 0px 5px 20px;}
 
-      > li > ul > li > ul{padding:0 0;}
+      > li > ul > li > ul{padding:0 0; display: none;}
       > li > ul > li > ul > li{padding:0 0;}
       > li > ul > li > ul > li > a{color: #fff;font: 18px/18px $minion;display: block;padding: 4px 0px 0px 20px;letter-spacing: 0.03em;word-spacing: 0.09em;}
       > li > ul > li > ul > li:last-child > a{padding: 4px 0px 16px 20px;}
@@ -47,6 +47,9 @@ textarea,input,select{outline: none;}
       > li.current_page_item > ul > li, > li.current_page_ancestor > ul > li{padding:0 0;}
       > li.current_page_item > ul > li > a, > li.current_page_ancestor > ul > li > a{color: #fff;font: bold 19px/19px $nimbus-c;text-transform: uppercase;display: block;padding: 10px 20px;}
       > li.current_page_ancestor > ul > li.current_page_item > a{color: #323333;font: bold 19px/19px $nimbus-c;text-transform: uppercase;display: block;padding: 10px 20px;}
+
+      > li.current_page_item > ul > li > ul, > li.current_page_ancestor > ul > li > ul{padding:0 0; display: block;}
+      > li.current_page_item > ul > li > ul > li, > li.current_page_ancestor > ul > li > ul > li{padding:0 0;}
 
       > li.current_page_item > ul > li > ul > li > a, > li.current_page_ancestor > ul > li > ul > li > a{color: #fff;font: 18px/18px $minion;display: block;padding: 4px 0px 0px 20px;letter-spacing: 0.03em;word-spacing: 0.09em;}
       > li.current_page_item > ul > li > ul > li:last-child > a, > li.current_page_ancestor > ul > li > ul > li:last-child > a{padding: 4px 0px 16px 20px;}
