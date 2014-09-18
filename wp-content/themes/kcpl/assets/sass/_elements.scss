@@ -1071,9 +1071,9 @@ font: 14px/18px $nimbus;}
    .gutter{padding:20px 19px;}
    .row{display:block;margin:0 0 40px;
       .entry{display:block;float:left;width:50%;
-         .image{width:11%;float:left;}
-         .number{width:19%;float: left;font: 52px/30px $minion;text-align: center;}
-         .content{width:70%;float:left;
+         .image{width:15%;float:left;}
+         .number{width:16%;float: left;font: 52px/30px $minion;text-align: left; padding-left: 3%}
+         .content{width:61%;float:left; padding-right: 5%;
             .entry-title{display:block;font:bold 20px/20px $nimbus-c;text-transform:uppercase;}
             .entry-author{display:block;font:15px/22px $minion;}
          }
