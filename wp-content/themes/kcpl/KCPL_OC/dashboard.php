@@ -1,3 +1,5 @@
 <?php
-  /* Template Name : OC | Dashboard */
-?>
+  /* Template Name: OC | Dashboard */
+get_header(); ?>
+
+<?php get_footer(); ?>
