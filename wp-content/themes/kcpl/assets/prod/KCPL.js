@@ -112,4 +112,13 @@ jQuery(document).ready(function($){
   });
 
 
+
+
+  /* ==============
+    Online Community
+  ================= */
+  $('#showProfile-cont.edit #showProfile-ava #avat').click(function(){
+    $('#avat, #kcpl_oc-avatar').toggleClass('active');
+  });
+
 });

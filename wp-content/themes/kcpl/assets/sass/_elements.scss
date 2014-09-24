@@ -1131,7 +1131,7 @@ a > .#{$namespace}horz-single{color:#fff;}
 
 
 /* Special Callouts
-   //talk box miltiple fonts
+   //talk box multiple fonts
    <div class="KCPL_horz-talkbox-fonts KCPL_background-COLORNAME">
      <span class="KCPL_font-nimbus-condensed">Nimbus Condensed</span>
      <span class="KCPL_font-minion">Minion</span>
@@ -1620,9 +1620,20 @@ a > .#{$namespace}horz-single{color:#fff;}
 
 
 /* Online Community - theme related overrides */
+#showProfile-cont.edit #showProfile-ava #avat{cursor:pointer;position:relative;
+  &:hover{opacity:0.7;}
+  &:before{content: '\f055';font-family: FontAwesome;font-size: 32px;position: absolute;top: 48px;left: 41px;color: #fff;display:none;transition:0.2s all;}
+  &:hover:before{display:block;}
+  &.active:before{display:block;transform:rotateZ(45deg);}
+}
+
 div#responses{font: bold 22px/60px 'nimbus-sans-condensed';text-align: center;margin:0 0 30px;transition:0.2s all;
   &.success{color:rgba(39, 174, 96,1.0);border:2px solid rgba(39, 174, 96,1.0);background:rgba(46, 204, 113,0.15);animation:bounce 1s;-webkit-animation:bounce 1s;animation-delay:.3s;-webkit-animation-delay:.3s;}
   &.error{color:rgba(192, 57, 43,1.0);border:2px solid rgba(192, 57, 43,1.0);background:rgba(231, 76, 60,0.15);animation:shake .5s;-webkit-animation:shake .5s;animation-delay:.3s;-webkit-animation-delay:.3s;}
+}
+
+.updated{font: bold 22px/60px 'nimbus-sans-condensed';text-align: center;transition:0.2s all;color:rgba(39, 174, 96,1.0);border:2px solid rgba(39, 174, 96,1.0);background:rgba(46, 204, 113,0.15);animation:bounce 1s;-webkit-animation:bounce 1s;animation-delay:.3s;-webkit-animation-delay:.3s;
+  p{margin:0;}
 }
 
 form#editProfile{margin:0;background:#e2e2e2;padding:20px;
@@ -1633,6 +1644,23 @@ form#editProfile{margin:0;background:#e2e2e2;padding:20px;
     input[type="submit"]{margin:20px 0 0;}
   }
 }
+
+#showProfile-ava{position:relative;}
+#kcpl_oc-avatar{position:absolute;color: #fff;border-radius: 4px;background:$red;top: 130px;transition:0.2s opacity, 0.2s transform;opacity:0;transform:translateY(-40px);z-index:1;left:-9999px;
+  .gutter{padding:10px;}
+  form{padding:0;margin:0;}
+  input:hover,button:hover{cursor:pointer;}
+  .wpua-edit-container{text-align:center;
+    h3{display:none;}
+  }
+  #wpua-thumbnail{display:none;}
+  span{display:block;text-transform:uppercase;text-align:center;}
+  .#{$namespace}font-nimbus-condensed{font-weight:bold;font-size:19px;margin:0 0 2px;}
+  .#{$namespace}font-minion{font-size:14px;}
+}
+#kcpl_oc-avatar:after{position: absolute;top: -7px;left: 12px;content: '';display: block;height: 8px;width: 14px;background: url(assets/img/talkCalloutCaret.png) no-repeat;}
+#kcpl_oc-avatar:after{background-position:-28px 0;}
+#kcpl_oc-avatar.active{z-index:100;opacity:1;transform:translateY(0px);display:block;left:0;}
 
 
 
