@@ -77,7 +77,7 @@ $settings = get_option('kcpl-oc');
 
         <div class="KCPL_listing4">
           <span class="title KCPL_background-red">User Curated List</span>
-          <div class="gutter">
+          <div class="gutter clearfix">
             <div class="row">
               <?php $bl = KCPL_OC_booklist::getUserBooklists(4,1,get_current_user_id(),false);
                 if(is_array($bl)){

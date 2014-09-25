@@ -19,7 +19,20 @@ $color = get_field('section_color',$pID);
 
     <div class="columns eight omega" id="contentPrimary">
 
-      booklist-new
+      <div class="columns four alpha">
+        <div class='KCPL_listing4'>
+          <span class='title KCPL_background-red'>My Book List</span>
+          <div class='gutter clearfix'>
+        <?php KCPL_OC_booklist::bookListForm(); ?>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="columns four omega">
+        <?php KCPL_OC_booklist::bookListSaveButton();
+              KCPL_OC_booklist::bookListCont("My Book List"); ?>
+      </div>
 
     </div>
 
