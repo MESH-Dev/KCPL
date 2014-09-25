@@ -45,7 +45,7 @@
                     <?php echo $widget['single_featured_item_description']; ?>
                 </div>
                  <?php if($widget['single_featured_item_link_url'] !=''){ ?> 
-              <a href="<?php echo $widget['single_featured_item_link_url']; ?>" class="KCPL_readmore"><?php echo $widget['single_featured_item_link_text']; ?></a>
+                  <a href="<?php echo $widget['single_featured_item_link_url']; ?>" class="KCPL_readmore"><?php echo $widget['single_featured_item_link_text']; ?></a>
               <?php }?>
              </div>
           </div>

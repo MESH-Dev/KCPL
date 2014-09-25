@@ -122,7 +122,8 @@
             <span class="list-title"><?php echo $widget['listing_title'];?></span>
             <ul>
                <?php foreach($widget['urls'] as $list){ ?>
-                  <li><a href="<?php echo $list['url']; ?>"><?php echo $list['title']; ?></a></li>
+                <?php if($list['tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
+                <li><a href="<?php echo $list['url']; ?>" target="<?php echo $target;?>"><?php echo $list['title']; ?></a></li> 
                <?php } ?>
             </ul>
             <?php if($widget['field_link'] != ''){ ?>
@@ -154,7 +155,9 @@
               <?php $i++; } ?>
 
            </div>
+            <?php if($widget['field_link'] !=''){ ?>
             <a href="<?php echo $widget['field_link']; ?>" class="KCPL_readmore">See More ≈ </a>
+            <?php } ?>
         </div>
       </div>
 
@@ -357,7 +360,8 @@
             <span class="list-title"><?php echo $widget['listing_title'];?></span>
             <ul>
                <?php foreach($widget['urls'] as $list){ ?>
-                  <li><a href="<?php echo $list['url']; ?>"><?php echo $list['title']; ?></a></li>
+                  <?php if($list['tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
+                <li><a href="<?php echo $list['url']; ?>" target="<?php echo $target;?>"><?php echo $list['title']; ?></a></li>
                <?php } ?>
             </ul>
             <?php if($widget['field_link'] != ''){ ?>
@@ -389,7 +393,9 @@
               <?php $i++; } ?>
 
            </div>
+           <?php if($widget['field_link'] !=''){ ?>
             <a href="<?php echo $widget['field_link']; ?>" class="KCPL_readmore">See More ≈ </a>
+            <?php } ?>
         </div>
       </div>
 
