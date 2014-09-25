@@ -32,8 +32,6 @@ $np = get_post($bid);
         $valid = false;
         echo "This booklist doesn't exist anymore, sorry about that. Head back to your booklists and edit another one.";
       } ?>
-
-
       <?php if($valid == true){ ?>
         <div class="columns four alpha">
           <div class='KCPL_listing4'>
@@ -43,8 +41,6 @@ $np = get_post($bid);
             </div>
           </div>
         </div>
-
-
         <div class="columns four omega">
           <?php KCPL_OC_booklist::bookListSaveButton();
                 KCPL_OC_booklist::bookListCont("Your Books",'red',true,$bid); ?>
