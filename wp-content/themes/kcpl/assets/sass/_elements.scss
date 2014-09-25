@@ -1069,12 +1069,15 @@ font: 14px/18px $nimbus;}
 .#{$namespace}listing4{display:block;background:#e2e2e2;margin:0 0 26px;
    .title{color:#fff;font:bold 18px/18px $nimbus;display:block;text-align:center;text-transform:uppercase;padding:15px 10px 15px;}
    .gutter{padding:20px 19px;}
+   a{color: $d-grey;}
    .row{display:block;margin:0 0 40px;
       .entry{display:block;float:left;width:50%;
          .image{width:15%;float:left;}
          .number{width:16%;float: left;font: 52px/30px $minion;text-align: left; padding-left: 3%}
          .content{width:61%;float:left; padding-right: 5%;
-            .entry-title{display:block;font:bold 20px/20px $nimbus-c;text-transform:uppercase;}
+            .entry-title{display:block;font:bold 20px/20px $nimbus-c;text-transform:uppercase;
+           
+            }
             .entry-author{display:block;font:15px/22px $minion;}
          }
       }
