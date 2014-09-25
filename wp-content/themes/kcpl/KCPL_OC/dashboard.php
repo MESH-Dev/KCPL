@@ -4,7 +4,7 @@ global $post;
 $pID = KCPL_get_highest_ancestor($post);
 $sidebar = KCPL_get_sidebar($pID);
 $color = get_field('section_color',$pID);
-
+$settings = get_option('kcpl-oc');
 ?>
 
 
@@ -17,34 +17,103 @@ $color = get_field('section_color',$pID);
     <?php include_once(locate_template('partials/module-sidebar-nav.php')); ?>
 
     <div class="columns eight omega" id="contentPrimary">
-      <div class="column eight alpha omega">
 
-        <?php include_once(locate_template('partials/module-content-topcallout.php')); ?>
-      </div>
+      <?php $li = is_user_logged_in();
+        if($li == true){ ?>
+      <div class="columns four alpha">
+        <?php KCPL_OC_profile::showProfile(); ?>
 
-      <div class="columns eight alpha omega">
-
-        <?php include_once(locate_template('partials/module-content-8column.php')); ?>
-      </div>
-
-      <?php $rightSidebar = get_field('page_sidebar');
-            $rsCount = count($rightSidebar); ?>
-
-      <div class="columns page-content <?php if($rsCount != 0){echo 'six';}else{echo 'eight omega';} ?> alpha">
-        <div class="gutter">
-          <h3><?php the_title(); ?></h3>
-          <?php the_content(); ?>
-        </div>
-      </div>
-
-      <?php if($rsCount != 0){ ?>
-
-        <div class="columns two omega">
-          <?php include_once(locate_template('partials/module-content-page-sidebar.php')); ?>
+        <div class="KCPL_listing4">
+          <span class="title KCPL_background-red">Most Recommended Books</span>
+          <div class="gutter">
+            <?php KCPL_OC_recommended::getMostRecommended(); ?>
+          </div>
         </div>
 
+        <a href="<?php echo get_permalink($settings['recommend']); ?>">
+          <div class="KCPL_horz-multi KCPL_background-red">
+            <div class="gutter">
+               <span>Give Recommendations</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="columns four omega">
+
+        <?php
+          $args = array(
+          	'user_id' => get_current_user_id(),
+          );
+          $comments = get_comments($args);
+          $i=0;
+          foreach($comments as $comment){
+            $post = get_post($comment->comment_post_ID); ?>
+            <div class="KCPL_single-featured">
+              <span class="title KCPL_background-red">Your Recent Discussion</span>
+              <div class="gutter">
+                 <div class="entry">
+                    <span class="entry-title"><?php echo $post->post_title; ?></span>
+                    <div class="entry-excerpt">
+                        <?php echo $comment->comment_content; ?>
+                    </div>
+                    <a href="<?php echo get_permalink($post->ID); ?>" class="KCPL_readmore">Go to discussion ≈</a>
+                 </div>
+              </div>
+            </div>
+          <?php $i++;
+            if($i >= 1){break;}
+          }
+        ?>
+
+        <a href="<?php echo get_post_type_archive_link('kcpl_oc-discussion'); ?>">
+          <div class="KCPL_horz-multi KCPL_background-red">
+            <div class="gutter">
+               <span>Join Discussions</span>
+            </div>
+          </div>
+        </a>
+
+        <div class="KCPL_listing4">
+          <span class="title KCPL_background-red">User Curated List</span>
+          <div class="gutter">
+            <div class="row">
+              <?php $bl = KCPL_OC_booklist::getUserBooklists(4,1,get_current_user_id(),false);
+                if(is_array($bl)){
+                  $i=1;
+                  foreach($bl[0] as $b){
+                    echo "<div class='entry kcpl_oc-mylist' id='kcpl_oc-mylist-".$b['id']."'>
+                            <div class='image'><img src='".$b['img']."'/></div>
+                            <div class='number'>".$i."</div>
+                            <div class='content'>
+                              <span class='entry-title'>".$b['title']."</span>
+                              <span class='entry-author'>".$b['author']."</span>
+                            </div>
+                          </div>";
+                    $i++;
+                  }
+                }else{
+                  echo $bl;
+                } ?>
+            </div>
+          </div>
+        </div>
+
+        <a href="#">
+          <div class="KCPL_horz-single KCPL_background-red">
+            <div class="gutter">
+               <span>Create a List</span>
+            </div>
+          </div>
+        </a>
+
+        <?php KCPL_Calendar::relatedEvents(); ?>
+
+      </div>
+      <?php }else{ ?>
+        <p>You must be logged in to access the Online Community.</p>
       <?php } ?>
-
     </div>
 
   </div>

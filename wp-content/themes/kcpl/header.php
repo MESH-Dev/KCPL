@@ -6,7 +6,7 @@
   <title><?php wp_title(); ?></title>
   <?php wp_head(); ?>
 </head>
-<body <?php if(wp_is_mobile()){$mobileClass="KCPLmobile";} body_class($mobileClass);?>>
+<body <?php if(wp_is_mobile()){$mobileClass="KCPLmobile";}else{$mobileClass="KCPLmobile";} body_class($mobileClass);?>>
 <header>
   <div id="KCPL_header-search">
      <div class="container">
