@@ -2,7 +2,7 @@
 $topCallouts = get_field('top_callouts');
  
 foreach($topCallouts as $widget){
-  echo "<div class='columns four ".cycle('alpha','', 'omega')."'>";
+  echo "<div class='columns four ".cycle('alpha','omega')."'>";
 
   //horizontal callout - single
   if($widget['field_type'] == 'horizontal-callout-single'){ ?>
