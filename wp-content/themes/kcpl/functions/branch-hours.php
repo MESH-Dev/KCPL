@@ -64,11 +64,7 @@ class KCPL_branch_info extends WP_Widget{
           break;
     }
 
-    echo $curTime; 
-
-    echo $open;
-
-    echo $close;
+ 
 
     if($curTime > $open && $curTime < $close){
       $flag = 'Open Now';
