@@ -1670,7 +1670,7 @@ form#editProfile{margin:0;background:#e2e2e2;padding:20px;
 #kcpl_oc-avatar.active{z-index:100;opacity:1;transform:translateY(0px);display:block;left:0;}
 .columns.four .KCPL_listing4 .row{margin:0;}
 
-#searchRecommended,#searchBooks{display:block;margin:0 0 26px;
+#searchRecommended,#searchBooks,#searchBooklists,#searchUserBooklists{display:block;margin:0 0 26px;
   .recommendedSearch{background:#e2e2e2;padding:20px;position:relative;display:block;margin:0 0 26px;
     input{margin:0;padding:6px 8px 6px 35px;}
     i{position:absolute;top: 33px;left: 35px;}
@@ -1697,6 +1697,10 @@ form#kcpl_oc-booklist{margin:0;padding:0;
   input[type="checkbox"]{-webkit-appearance: none;background: transparent;border: 1px solid #000;padding: 5px 5px;border-radius: 2px;margin: 0 5px;position:relative;}
      input[type="checkbox"]:checked:after{content: '';position: absolute;top: 1px;left: 1px;display: block;border: 2px solid #000;padding: 2px;border-radius: 2px;background: #000;}
   label{font-size: 14px;letter-spacing: 0.075em;}
+}
+
+#searchUserBooklists .output,#searchUserBooklists .output{transition:0.2s all;
+  &.active{opacity:0;}
 }
 
 

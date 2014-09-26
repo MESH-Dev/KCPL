@@ -100,13 +100,7 @@ $settings = get_option('kcpl-oc');
           </div>
         </div>
 
-        <a href="#">
-          <div class="KCPL_horz-single KCPL_background-red">
-            <div class="gutter">
-               <span>Create a List</span>
-            </div>
-          </div>
-        </a>
+        <?php KCPL_OC_booklist::booklistNewButton(); ?>
 
         <?php KCPL_Calendar::relatedEvents(); ?>
 

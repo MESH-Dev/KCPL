@@ -19,7 +19,7 @@ $color = get_field('section_color',$pID);
 
     <div class="columns eight omega" id="contentPrimary">
 
-      my-booklist
+      <?php KCPL_OC_booklist::searchUserBooklists(); ?>
 
     </div>
 
