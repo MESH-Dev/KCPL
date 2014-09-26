@@ -1,11 +1,16 @@
+<?php
+  if($color==''){
+    $color='red';
+  }
+?>
 <div id="banner" class="KCPL_background-<?php echo $color; ?>">
   <div class="container">
       <div class="gutter">
-        <?php 
+        <?php
 
         $posttest = get_post($pID);
         $slug = $posttest->post_name;
- 
+
 
         if (($slug == 'collection') || ($slug == 'events-classes') || ($slug == 'learning-lab') || ($slug == 'community'))
         {
@@ -14,7 +19,7 @@
         else{
           $nav = 'util_nav';
         }
- 
+
 
         if(has_nav_menu('main_nav')){
             $defaults = array(
