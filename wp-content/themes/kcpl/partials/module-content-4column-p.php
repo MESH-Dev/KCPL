@@ -12,7 +12,7 @@
   $len = count($contentArr);
 
   // array
-  echo "<div class='columns eight'>";
+  echo "<div class='columns eight alpha'>";
 
   for($x=0; $x < $len; $x++){
 
@@ -123,6 +123,8 @@
   }//END FULL OUTER LOOP
 
  ?>
+</div>
+ 
 <div class="clearfix"></div>
     <div class="page-numbers-container">
     </div>
