@@ -3594,7 +3594,7 @@ ol.homepage-callout-list > li:nth-child(4) {
 /* line 865, assets/sass/_elements.scss */
 .KCPL_home-engagement .single-row:hover {
   cursor: pointer;
-  opacity: 0.8;
+  color: #e2e2e2;
 }
 /* line 867, assets/sass/_elements.scss */
 .KCPL_home-engagement #row-expanded {

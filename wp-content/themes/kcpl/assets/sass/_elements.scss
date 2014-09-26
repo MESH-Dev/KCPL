@@ -862,7 +862,7 @@ ol.homepage-callout-list { display: block;
 
    .single-row{font:55px/76px $minion; text-transform:uppercase;  width: 100%; margin: 0px;z-index: 15; position:relative;
       .gutter{ padding: 0px 10px 0px 10px;}
-      &:hover{cursor: pointer; opacity: 0.8}
+      &:hover{cursor: pointer; color: $s-grey;}
    }
     #row-expanded{
         margin: 0px; width: 672px; height: 352px; overflow: hidden; position:absolute; color:#000;   left: 298px; left:-366px; left: -690px; top: 0px; z-index: 10; border-top-right-radius:10px;
