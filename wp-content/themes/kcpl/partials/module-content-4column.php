@@ -122,7 +122,8 @@
             <span class="list-title"><?php echo $widget['listing_title'];?></span>
             <ul>
                <?php foreach($widget['urls'] as $list){ ?>
-                  <li><a href="<?php echo $list['url']; ?>"><?php echo $list['title']; ?></a></li>
+                <?php if($list['tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
+                <li><a href="<?php echo $list['url']; ?>" target="<?php echo $target;?>"><?php echo $list['title']; ?></a></li> 
                <?php } ?>
             </ul>
             <?php if($widget['field_link'] != ''){ ?>
@@ -132,7 +133,7 @@
       </div>
 
     <?php } elseif($widget['field_type'] == 'listing-style-4'){
-      //listing style 4 ?>
+      //CURATED LISTING ?>
 
       <div class="KCPL_listing4">
         <span class="title KCPL_background-<?php echo $widget['field_color']; ?>"><?php echo $widget['field_title']; ?></span>
@@ -147,14 +148,22 @@
                   <div class="image"><img src="<?php echo $img[0]; ?>" /></div>
                   <div class="number"><?php echo $i+1; ?></div>
                   <div class="content">
-                    <span class="entry-title"><?php echo $entry['title']; ?></span>
+                    <span class="entry-title">
+                         <?php if($entry['link']!=''){ ?>
+                         <a href="<?php echo $entry['link']; ?>"><?php echo $entry['title']; ?></a>
+
+                      <?php }else{echo $entry['title']; }?> 
+                    </span>
                     <span class="entry-author"><?php echo $entry['author']; ?></span>
                   </div>
               </div>
               <?php $i++; } ?>
 
            </div>
+
+            <?php if($widget['field_link'] !=''){ ?>
             <a href="<?php echo $widget['field_link']; ?>" class="KCPL_readmore">See More ≈ </a>
+            <?php } ?>
         </div>
       </div>
 
@@ -357,7 +366,8 @@
             <span class="list-title"><?php echo $widget['listing_title'];?></span>
             <ul>
                <?php foreach($widget['urls'] as $list){ ?>
-                  <li><a href="<?php echo $list['url']; ?>"><?php echo $list['title']; ?></a></li>
+                  <?php if($list['tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
+                <li><a href="<?php echo $list['url']; ?>" target="<?php echo $target;?>"><?php echo $list['title']; ?></a></li>
                <?php } ?>
             </ul>
             <?php if($widget['field_link'] != ''){ ?>
@@ -389,7 +399,9 @@
               <?php $i++; } ?>
 
            </div>
+           <?php if($widget['field_link'] !=''){ ?>
             <a href="<?php echo $widget['field_link']; ?>" class="KCPL_readmore">See More ≈ </a>
+            <?php } ?>
         </div>
       </div>
 
