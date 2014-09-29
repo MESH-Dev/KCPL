@@ -22,6 +22,13 @@
     }
   }
 
+  .KCPL_home-engagement{
+    .single-row{
+      .gutter{padding:0px 21px;}
+    }
+    #row-expanded{left:-100%;transition:0.3s all;width:602px;}
+  }
+
   .KCPL_social-callout{
     .KCPL_social-callout-header{padding:17px 10px 15px;
       span{line-height: 23px;}
@@ -45,6 +52,28 @@
   .KCPL_horz-multi{
     .gutter{padding:38px 14px 40px;}
     span{font:bold 15px/18px "nimbus-sans";}
+  }
+
+
+  #content #KCPL_search{
+    #select{width:660px;}
+    .search-btn{margin: 0 32px 0 !important;height:80px;}
+  }
+
+  #KCPL_Calendar_monthsel{
+    a{font:bold 14px/17px "nimbus-sans";}
+  }
+
+  footer{
+    .title{font:bold 12px/16px "nimbus-sans";}
+    .container{
+      .gutter{padding:18px 0;}
+      .columns{margin:0 !important;}
+      .columns.two{width: 20%;margin: 0 2.5% !important;}
+      .columns.three{width:95%;padding:0 2.5%;
+        > div{width:45%;display:inline-block;}
+      }
+    }
   }
 
 

@@ -19,7 +19,7 @@ button {
     letter-spacing: 0.07em;
 }
 textarea,input,select{outline: none;}
-#KCPL_search input[type="search"]{margin:0;}
+
 
 //Secondary Sidebar Menu - uses wp_nav_menu() for markup
 #secondary-sidebar-nav{display:block;margin:0 0 26px;
@@ -1593,8 +1593,8 @@ a > .#{$namespace}horz-single{color:#fff;}
 #KCPL_Calendar_sidebar{display:block;background:#e2e2e2;margin:0px 0 0;
   h3{font:bold 17px/17px $nimbus;padding: 18px 0 17px 19px;letter-spacing: 0.045em;border-bottom:1px solid #676767;margin:0;}
   > div{display:block;}
-  input[type="radio"]{-webkit-appearance: none;background: transparent;border: 1px solid #000;padding: 4px 4px;border-radius: 2px;margin:0 1px 0 20px;position:relative;}
-     input[type="radio"]:checked:after{content: '';position: absolute;top: 1px;left: 1px;display: block;border: 2px solid #000;padding: 1px;border-radius: 2px;background: #000;}
+  input[type="radio"],input[type="checkbox"]{-webkit-appearance: none;background: transparent;border: 1px solid #000;padding: 4px 4px;border-radius: 2px;margin:0 1px 0 20px;position:relative;}
+     input[type="radio"]:checked:after,input[type="checkbox"]:checked:after{content: '';position: absolute;top: 1px;left: 1px;display: block;border: 2px solid #000;padding: 1px;border-radius: 2px;background: #000;}
   label{letter-spacing: 0.075em;font-size: 14px;vertical-align: bottom;}
   #KCPL_Calendar_sidebar-tax label{font-size:12px;}
   div#KCPL_Calendar_sidebar-ce{padding: 6px 0;border-bottom: 1px solid #676767;}
@@ -1602,7 +1602,7 @@ a > .#{$namespace}horz-single{color:#fff;}
   span.KCPL_Calendar_sidebar-dropdown{font: 14px/14px $nimbus;margin: 20px 0 0px 18px;display: block;letter-spacing: 0.065em;}
     span.KCPL_Calendar_sidebar-dropdown:hover{cursor:pointer;}
     span.KCPL_Calendar_sidebar-dropdown i{display:inline-block;background:url(assets/img/calSidebarDrop.png) no-repeat;height:10px;width:10px;vertical-align:middle;transition:0.2s all;}
-    span.KCPL_Calendar_sidebar-dropdown.active i{transform:rotate(180deg);}
+    span.KCPL_Calendar_sidebar-dropdown.active i{transform:rotateX(180deg);}
   .KCPL_Calendar_dropdown{display:none;}
   div#KCPL_Calendar_search {text-align: right;padding:14px 17px 18px 0;}
   input[type="submit"]{background:$grey;padding:3px 27px 3px 26px;}
@@ -1707,6 +1707,11 @@ form#kcpl_oc-booklist{margin:0;padding:0;
   &.active{opacity:0;}
 }
 
+#KCPL_search input[type="search"]{margin:0;}
+.KCPL_home-engagement #row-expanded .engage-content{display:none;}
+  .KCPL_home-engagement #row-expanded .engage-content.active{display:block;}
+.KCPL_home-engagement #row-expanded{left:-100%;transition:0.3s all;width:680px;}
+  .KCPL_home-engagement #row-expanded.active{left:30%;}
 
 /* Animations */
 @-webkit-keyframes shake {

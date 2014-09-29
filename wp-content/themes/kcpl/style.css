@@ -1887,11 +1887,6 @@ textarea, input, select {
   outline: none;
 }
 
-/* line 22, assets/sass/_elements.scss */
-#KCPL_search input[type="search"] {
-  margin: 0;
-}
-
 /* line 25, assets/sass/_elements.scss */
 #secondary-sidebar-nav {
   display: block;
@@ -5422,7 +5417,7 @@ a > .KCPL_horz-single {
   display: block;
 }
 /* line 1596, assets/sass/_elements.scss */
-#KCPL_Calendar_sidebar input[type="radio"] {
+#KCPL_Calendar_sidebar input[type="radio"], #KCPL_Calendar_sidebar input[type="checkbox"] {
   -webkit-appearance: none;
   background: transparent;
   border: 1px solid #000;
@@ -5432,7 +5427,7 @@ a > .KCPL_horz-single {
   position: relative;
 }
 /* line 1597, assets/sass/_elements.scss */
-#KCPL_Calendar_sidebar input[type="radio"]:checked:after {
+#KCPL_Calendar_sidebar input[type="radio"]:checked:after, #KCPL_Calendar_sidebar input[type="checkbox"]:checked:after {
   content: '';
   position: absolute;
   top: 1px;
@@ -5484,7 +5479,7 @@ a > .KCPL_horz-single {
 }
 /* line 1605, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar span.KCPL_Calendar_sidebar-dropdown.active i {
-  transform: rotate(180deg);
+  transform: rotateX(180deg);
 }
 /* line 1606, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar .KCPL_Calendar_dropdown {
@@ -5908,70 +5903,97 @@ form#kcpl_oc-booklist label {
   opacity: 0;
 }
 
+/* line 1710, assets/sass/_elements.scss */
+#KCPL_search input[type="search"] {
+  margin: 0;
+}
+
+/* line 1711, assets/sass/_elements.scss */
+.KCPL_home-engagement #row-expanded .engage-content {
+  display: none;
+}
+
+/* line 1712, assets/sass/_elements.scss */
+.KCPL_home-engagement #row-expanded .engage-content.active {
+  display: block;
+}
+
+/* line 1713, assets/sass/_elements.scss */
+.KCPL_home-engagement #row-expanded {
+  left: -100%;
+  transition: 0.3s all;
+  width: 680px;
+}
+
+/* line 1714, assets/sass/_elements.scss */
+.KCPL_home-engagement #row-expanded.active {
+  left: 30%;
+}
+
 /* Animations */
 @-webkit-keyframes shake {
-  /* line 1713, assets/sass/_elements.scss */
+  /* line 1718, assets/sass/_elements.scss */
   0%, 100% {
     -webkit-transform: translateX(0);
   }
 
-  /* line 1714, assets/sass/_elements.scss */
+  /* line 1719, assets/sass/_elements.scss */
   10%, 30%, 50%, 70%, 90% {
     -webkit-transform: translateX(-10px);
   }
 
-  /* line 1715, assets/sass/_elements.scss */
+  /* line 1720, assets/sass/_elements.scss */
   20%, 40%, 60%, 80% {
     -webkit-transform: translateX(10px);
   }
 }
 
 @keyframes shake {
-  /* line 1718, assets/sass/_elements.scss */
+  /* line 1723, assets/sass/_elements.scss */
   0%, 100% {
     transform: translateX(0);
   }
 
-  /* line 1719, assets/sass/_elements.scss */
+  /* line 1724, assets/sass/_elements.scss */
   10%, 30%, 50%, 70%, 90% {
     transform: translateX(-10px);
   }
 
-  /* line 1720, assets/sass/_elements.scss */
+  /* line 1725, assets/sass/_elements.scss */
   20%, 40%, 60%, 80% {
     transform: translateX(10px);
   }
 }
 
 @-webkit-keyframes bounce {
-  /* line 1724, assets/sass/_elements.scss */
+  /* line 1729, assets/sass/_elements.scss */
   0%, 20%, 50%, 80%, 100% {
     -webkit-transform: translateY(0);
   }
 
-  /* line 1725, assets/sass/_elements.scss */
+  /* line 1730, assets/sass/_elements.scss */
   40% {
     -webkit-transform: translateY(-30px);
   }
 
-  /* line 1726, assets/sass/_elements.scss */
+  /* line 1731, assets/sass/_elements.scss */
   60% {
     -webkit-transform: translateY(-15px);
   }
 }
 
 @keyframes bounce {
-  /* line 1729, assets/sass/_elements.scss */
+  /* line 1734, assets/sass/_elements.scss */
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
   }
 
-  /* line 1730, assets/sass/_elements.scss */
+  /* line 1735, assets/sass/_elements.scss */
   40% {
     transform: translateY(-30px);
   }
 
-  /* line 1731, assets/sass/_elements.scss */
+  /* line 1736, assets/sass/_elements.scss */
   60% {
     transform: translateY(-15px);
   }
@@ -6020,58 +6042,112 @@ form#kcpl_oc-booklist label {
     padding: 2px 0 0 0;
   }
 
-  /* line 26, assets/sass/_responsive.scss */
+  /* line 27, assets/sass/_responsive.scss */
+  .KCPL_home-engagement .single-row .gutter {
+    padding: 0px 21px;
+  }
+  /* line 29, assets/sass/_responsive.scss */
+  .KCPL_home-engagement #row-expanded {
+    left: -100%;
+    transition: 0.3s all;
+    width: 602px;
+  }
+
+  /* line 33, assets/sass/_responsive.scss */
   .KCPL_social-callout .KCPL_social-callout-header {
     padding: 17px 10px 15px;
   }
-  /* line 27, assets/sass/_responsive.scss */
+  /* line 34, assets/sass/_responsive.scss */
   .KCPL_social-callout .KCPL_social-callout-header span {
     line-height: 23px;
   }
-  /* line 29, assets/sass/_responsive.scss */
+  /* line 36, assets/sass/_responsive.scss */
   .KCPL_social-callout .KCPL_social-callout-body {
     padding: 16px 20px;
   }
-  /* line 30, assets/sass/_responsive.scss */
+  /* line 37, assets/sass/_responsive.scss */
   .KCPL_social-callout .KCPL_social-callout-body .KCPL_social-callout-icon {
     margin: 4px 2px 7px 3px;
   }
 
-  /* line 34, assets/sass/_responsive.scss */
+  /* line 41, assets/sass/_responsive.scss */
   .KCPL_horz-card {
     padding: 10px 13px 12px 13px;
   }
-  /* line 35, assets/sass/_responsive.scss */
+  /* line 42, assets/sass/_responsive.scss */
   .KCPL_horz-card .gutter {
     padding: 32px 5px 32px;
   }
-  /* line 36, assets/sass/_responsive.scss */
+  /* line 43, assets/sass/_responsive.scss */
   .KCPL_horz-card .gutter span {
     display: block;
     text-align: center;
   }
 
-  /* line 40, assets/sass/_responsive.scss */
+  /* line 47, assets/sass/_responsive.scss */
   .KCPL_horz-single {
     padding: 10px 13px;
   }
-  /* line 41, assets/sass/_responsive.scss */
+  /* line 48, assets/sass/_responsive.scss */
   .KCPL_horz-single .gutter {
     padding: 12px 12px 10px;
   }
-  /* line 42, assets/sass/_responsive.scss */
+  /* line 49, assets/sass/_responsive.scss */
   .KCPL_horz-single span {
     font-size: 40px;
     line-height: 44px;
   }
 
-  /* line 46, assets/sass/_responsive.scss */
+  /* line 53, assets/sass/_responsive.scss */
   .KCPL_horz-multi .gutter {
     padding: 38px 14px 40px;
   }
-  /* line 47, assets/sass/_responsive.scss */
+  /* line 54, assets/sass/_responsive.scss */
   .KCPL_horz-multi span {
     font: bold 15px/18px "nimbus-sans";
+  }
+
+  /* line 59, assets/sass/_responsive.scss */
+  #content #KCPL_search #select {
+    width: 660px;
+  }
+  /* line 60, assets/sass/_responsive.scss */
+  #content #KCPL_search .search-btn {
+    margin: 0 32px 0 !important;
+    height: 80px;
+  }
+
+  /* line 64, assets/sass/_responsive.scss */
+  #KCPL_Calendar_monthsel a {
+    font: bold 14px/17px "nimbus-sans";
+  }
+
+  /* line 68, assets/sass/_responsive.scss */
+  footer .title {
+    font: bold 12px/16px "nimbus-sans";
+  }
+  /* line 70, assets/sass/_responsive.scss */
+  footer .container .gutter {
+    padding: 18px 0;
+  }
+  /* line 71, assets/sass/_responsive.scss */
+  footer .container .columns {
+    margin: 0 !important;
+  }
+  /* line 72, assets/sass/_responsive.scss */
+  footer .container .columns.two {
+    width: 20%;
+    margin: 0 2.5% !important;
+  }
+  /* line 73, assets/sass/_responsive.scss */
+  footer .container .columns.three {
+    width: 95%;
+    padding: 0 2.5%;
+  }
+  /* line 74, assets/sass/_responsive.scss */
+  footer .container .columns.three > div {
+    width: 45%;
+    display: inline-block;
   }
 }
 /* Mobile - really it's just whatever isn't a tablet */
