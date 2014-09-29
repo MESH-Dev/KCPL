@@ -135,7 +135,7 @@ $sk-tablet-col: 48px;   //column width for tablet portrait
 
     /* Note: Design for a width of 768px */
 
-    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    @media only screen and (max-width: 1023px) {
         .container {                      position: relative; margin: 0 auto; padding: 0;
                                           @include grid-width($sk-tablet-col);
 
@@ -190,7 +190,7 @@ $sk-tablet-col: 48px;   //column width for tablet portrait
 
     /* Note: Design for a width of 320px */
 
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-device-width: 767px) {
         .container { width: 300px;
 
             .columns, .column { margin-left: 0px;  margin-right: 0px;
@@ -236,10 +236,11 @@ $sk-tablet-col: 48px;   //column width for tablet portrait
     }
 
 
+
 /* #Mobile (Landscape)
 ================================================== */
 
-    /* Note: Design for a width of 480px */
+    /* Note: Design for a width of 480px  LOLJK DESIGNING FOR PIXEL WIDTHS IS STUPID =D
 
     @media only screen and (min-width: 480px) and (max-width: 767px) {
         .container { width: 420px;
@@ -269,6 +270,7 @@ $sk-tablet-col: 48px;   //column width for tablet portrait
         } // .container
     }
 
+*/
 
 /* #Clearing
 ================================================== */

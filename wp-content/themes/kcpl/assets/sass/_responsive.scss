@@ -4,7 +4,7 @@
   -- few dimensions on either of the style guides.
 
 */
-@media only screen and (min-width: 768px) and (max-width:1023px){
+@media only screen and (max-width:1023px){
   .container{width:865px;}
 
   #bannerHome{height:274px;
@@ -79,7 +79,9 @@
 
 }
 
-/* Mobile - really it's just whatever isn't a tablet */
-@media only screen and (max-width: 767px){
-
+/* Mobile - really it's just whatever isn't a tablet.
+  THIS WILL ONLY RENDER ON A SCREEN WHO'S RES MAXES AT 767. */
+@media only screen and (max-device-width: 767px){
+  .container{width:95%;padding:0 2.5%;}
+  .columns,.column{width:100%;}
 }
