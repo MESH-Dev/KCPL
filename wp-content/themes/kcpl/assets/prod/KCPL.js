@@ -91,22 +91,20 @@ jQuery(document).ready(function($){
       // need to build in catch when it's at the beginning of the pagination
   });
 
-  $('.single-row').click(function() {
-      var id = $(this).attr('id');
-      var bg = $(this).attr('class');
-      var content = id.slice(7,bg.length)
-      content = "#content-" + content;
-      bg = bg.slice(11,bg.length);
-      $('.engage-content').hide();
-      $(content).show();
-      $('#row-expanded').removeClass().addClass(bg);
-      $('#row-expanded').animate({left:"298px"},400);
-  });
 
-  $('.close').click(function() {
-    $('#row-expanded').animate({left:"-690px"},500);
-  });
 
+  /* ==============
+    Made this better and smoother
+  ============== */
+  $('.KCPL_home-engagement .single-row').click(function(e){
+    $index = $('.KCPL_home-engagement .single-row').index(this);
+    $(this).siblings().addClass('active');
+    $('.KCPL_home-engagement #row-expanded .engage-content').not(':eq('+$index+')').removeClass('active');
+    $('.KCPL_home-engagement #row-expanded .engage-content').eq($index).addClass('active');
+  });
+  $('.KCPL_home-engagement .close').click(function(e){
+    $('.KCPL_home-engagement #row-expanded').removeClass('active');
+  });
 
 
 
