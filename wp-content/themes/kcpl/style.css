@@ -6169,13 +6169,173 @@ form#kcpl_oc-booklist label {
   THIS WILL ONLY RENDER ON A SCREEN WHO'S RES MAXES AT 767. */
 @media only screen and (max-device-width: 767px) {
   /* line 85, assets/sass/_responsive.scss */
+  header {
+    display: none;
+  }
+
+  /* line 86, assets/sass/_responsive.scss */
   .container {
     width: 95%;
     padding: 0 2.5%;
   }
 
-  /* line 86, assets/sass/_responsive.scss */
+  /* line 87, assets/sass/_responsive.scss */
   .columns, .column {
+    width: 100% !important;
+  }
+
+  /* line 89, assets/sass/_responsive.scss */
+  #bannerHome {
+    height: auto;
+  }
+  /* line 90, assets/sass/_responsive.scss */
+  #bannerHome .container {
+    height: auto;
+  }
+  /* line 91, assets/sass/_responsive.scss */
+  #bannerHome .columns {
+    display: block;
+  }
+
+  /* line 94, assets/sass/_responsive.scss */
+  .KCPL_home-engagement #row-expanded {
+    width: 95%;
+    padding: 0 2.5%;
+    left: -100%;
+  }
+
+  /* line 95, assets/sass/_responsive.scss */
+  .KCPL_home-engagement #row-expanded.active {
+    z-index: 100;
+    left: 0;
+  }
+
+  /* line 97, assets/sass/_responsive.scss */
+  #bannerHome .container .columns.five #KCPL_search.condensed {
+    height: auto;
+  }
+
+  /* line 98, assets/sass/_responsive.scss */
+  #bannerHome .container .columns.seven .gutter {
+    padding: 15px;
+  }
+
+  /* line 100, assets/sass/_responsive.scss */
+  .KCPL_home-engagement #row-expanded {
+    overflow: visible;
+  }
+
+  /* line 101, assets/sass/_responsive.scss */
+  .KCPL_featured .entry .gutter {
+    padding: 0 !important;
+  }
+
+  /* line 102, assets/sass/_responsive.scss */
+  .KCPL_featured .entry {
+    width: 95%;
+    padding: 0 2.5%;
+  }
+
+  /* line 105, assets/sass/_responsive.scss */
+  .KCPL_social-callout-body .icons {
+    display: block;
+    padding: 0 22%;
+    text-align: center;
+  }
+  /* line 106, assets/sass/_responsive.scss */
+  .KCPL_social-callout-body .KCPL_social-callout-icon {
+    margin: 6px;
+    display: inline-block;
+    float: none !important;
+  }
+
+  /* line 109, assets/sass/_responsive.scss */
+  .KCPL_horz-card {
+    padding: 10px 13px 12px 13px;
+  }
+  /* line 110, assets/sass/_responsive.scss */
+  .KCPL_horz-card .gutter {
+    padding: 6px 5px;
+  }
+  /* line 111, assets/sass/_responsive.scss */
+  .KCPL_horz-card .gutter span {
+    display: block;
+    text-align: center;
+  }
+
+  /* line 115, assets/sass/_responsive.scss */
+  .KCPL_horz-single {
+    padding: 10px 13px;
+  }
+  /* line 116, assets/sass/_responsive.scss */
+  .KCPL_horz-single .gutter {
+    padding: 3px 12px 2px;
+  }
+  /* line 117, assets/sass/_responsive.scss */
+  .KCPL_horz-single span {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  /* line 121, assets/sass/_responsive.scss */
+  .KCPL_horz-multi .gutter {
+    padding: 10px 14px;
+  }
+  /* line 122, assets/sass/_responsive.scss */
+  .KCPL_horz-multi span {
+    font: bold 15px/18px "nimbus-sans";
+  }
+
+  /* line 127, assets/sass/_responsive.scss */
+  #KCPL_search.condensed .search-btn {
+    margin: 0 4px !important;
+  }
+  /* line 130, assets/sass/_responsive.scss */
+  #KCPL_search #search-params #type {
     width: 100%;
+  }
+  /* line 131, assets/sass/_responsive.scss */
+  #KCPL_search #search-params #select {
+    width: 100%;
+  }
+  /* line 133, assets/sass/_responsive.scss */
+  #KCPL_search .searchicon {
+    top: 13px;
+    left: 10px;
+    font-size: 13px;
+  }
+
+  /* line 135, assets/sass/_responsive.scss */
+  #bannerHome .container .columns.five #KCPL_search.condensed {
+    margin: 0 0 20px;
+  }
+
+  /* line 138, assets/sass/_responsive.scss */
+  footer .title {
+    font: bold 12px/16px "nimbus-sans";
+  }
+  /* line 140, assets/sass/_responsive.scss */
+  footer .container .gutter {
+    padding: 18px 0;
+  }
+  /* line 141, assets/sass/_responsive.scss */
+  footer .container .columns {
+    width: 50%;
+    margin: 0 50% 0 0 !important;
+  }
+  /* line 142, assets/sass/_responsive.scss */
+  footer .container .columns.two {
+    width: 50%;
+    margin: 0 50% 0 0 !important;
+  }
+  /* line 143, assets/sass/_responsive.scss */
+  footer .container .columns.three {
+    width: 50%;
+    margin: 0 50% 0 0 !important;
+  }
+  /* line 144, assets/sass/_responsive.scss */
+  footer .container .columns.three > div {
+    width: 100%;
+    display: block;
   }
 }

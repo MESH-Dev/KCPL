@@ -99,7 +99,7 @@ foreach($sidebar as $widget){
        </div>
     </div>
 
-  <?php } 
+  <?php }
   elseif($widget['field_type'] == 'recs'){
     //OC Recommendations  ?>
 
@@ -107,11 +107,11 @@ foreach($sidebar as $widget){
        <div class="KCPL_listing-style-3-header">
           <span>Most Recommended Books<?php echo $widget['field_title']; ?></span>
       </div>
-      
+
       <div class="KCPL_listing-style-3-body">
-          
+
         Most Recommended Books from Online Community Here [OC Function]
-          
+
        </div>
     </div>
 
@@ -123,11 +123,11 @@ foreach($sidebar as $widget){
        <div class="KCPL_listing-style-3-header">
           <span>Recent Discussions<?php echo $widget['field_title']; ?></span>
       </div>
-      
+
       <div class="KCPL_listing-style-3-body">
-          
+
         Most Recent Discussion From Online Community Here [OC Function]
-          
+
        </div>
     </div>
 
@@ -138,9 +138,9 @@ foreach($sidebar as $widget){
     <div class="KCPL_single-featured ">
        <span class="title KCPL_background-<?php echo $widget['field_color']; ?>">Ask A Librarian</span>
        <div class="gutter">
-          
+
         <iframe src="http://libraryh3lp.com/chat/kcpltest@chat.libraryh3lp.com?skin=13921&amp;theme=alphamod&amp;title=&amp;identity=KCPL&amp;sounds=true" frameborder="1" style="width: 100%; height: 360px; border: none;"> </iframe>
-          
+
        </div>
     </div>
 
@@ -177,17 +177,17 @@ foreach($sidebar as $widget){
                </div>
            </div>
         </div>
-         
-       </div> 
-      
+
+       </div>
+
     </div>
 
   <?php }
    elseif($widget['field_type'] == 'vertical-block'){ ?>
 
      <div class="KCPL_vertical-callout clearfix">
-    <?php 
-    //2-COLS HERE  
+    <?php
+    //2-COLS HERE
     $ctr = 1;
     foreach($widget['vertical_blocks'] as $entry){
 
@@ -208,7 +208,7 @@ foreach($sidebar as $widget){
           </div>
         </div>
       </div>
-        
+
       <?php
       }
       elseif($entry['vertical_type'] == "vertical-button"){ ?>
@@ -219,7 +219,7 @@ foreach($sidebar as $widget){
           </div>
         </a>
       </div>
-        
+
       <?php
       }
       elseif($entry['vertical_type'] == "social-feed"){ ?>
@@ -229,12 +229,14 @@ foreach($sidebar as $widget){
                <span>Follow Us</span>
            </div>
            <div class="KCPL_social-callout-body">
-               <div class="KCPL_sprite-facebook KCPL_social-callout-icon"></div>
-               <div class="KCPL_sprite-instagram KCPL_social-callout-icon"></div>
-               <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
-               <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
-               <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
-               <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
+              <div class='icons'>
+                <div class="KCPL_sprite-facebook KCPL_social-callout-icon"></div>
+                <div class="KCPL_sprite-instagram KCPL_social-callout-icon"></div>
+                <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
+                <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
+                <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
+                <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
+              </div>
 
                <div class="clear"></div>
 
@@ -244,8 +246,8 @@ foreach($sidebar as $widget){
                </div>
            </div>
          </div>
-        </div>    
-      <?php 
+        </div>
+      <?php
      }
       else{
 
