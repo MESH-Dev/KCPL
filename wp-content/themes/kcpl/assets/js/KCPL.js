@@ -97,12 +97,8 @@ jQuery(document).ready(function($){
       var content = id.slice(7,bg.length)
       content = "#content-" + content;
       bg = bg.slice(11,bg.length);
-       console.log(content);
-
       $('.engage-content').hide();
-
       $(content).show();
-
       $('#row-expanded').removeClass().addClass(bg);
       $('#row-expanded').animate({left:"298px"},400);
   });

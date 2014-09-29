@@ -19,6 +19,7 @@ button {
     letter-spacing: 0.07em;
 }
 textarea,input,select{outline: none;}
+#KCPL_search input[type="search"]{margin:0;}
 
 //Secondary Sidebar Menu - uses wp_nav_menu() for markup
 #secondary-sidebar-nav{display:block;margin:0 0 26px;
@@ -1082,7 +1083,7 @@ font: 14px/18px $nimbus;}
          .number{width:16%;float: left;font: 52px/30px $minion;text-align: left; padding-left: 3%}
          .content{width:61%;float:left; padding-right: 5%;
             .entry-title{display:block;font:bold 20px/20px $nimbus-c;text-transform:uppercase;
-           
+
             }
             .entry-author{display:block;font:15px/22px $minion;}
          }

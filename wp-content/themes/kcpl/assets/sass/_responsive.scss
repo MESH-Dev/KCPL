@@ -1,0 +1,56 @@
+/* Tablets and an aribritrary value that I think defines a desktop
+
+  -- This is a lot of guess work as there are relatively
+  -- few dimensions on either of the style guides.
+
+*/
+@media only screen and (min-width: 768px) and (max-width:1023px){
+  .container{width:865px;}
+
+  #bannerHome{height:274px;
+    .container{height:274px;
+      .columns.seven{padding:0;
+        .gutter{padding:0;}
+      }
+      .columns.five{
+        #KCPL_search.condensed{margin-bottom:0;height:235px;
+          .search-btn{padding:0;
+            hr + span{font:italic bold 12px/13px "minion-pro";padding:2px 0 0 0;}
+          }
+        }
+      }
+    }
+  }
+
+  .KCPL_social-callout{
+    .KCPL_social-callout-header{padding:17px 10px 15px;
+      span{line-height: 23px;}
+    }
+    .KCPL_social-callout-body{padding:16px 20px;
+      .KCPL_social-callout-icon{margin:4px 2px 7px 3px;}
+    }
+  }
+
+  .KCPL_horz-card{padding:10px 13px 12px 13px;
+    .gutter{padding:32px 5px 32px;
+      span{display:block;text-align:center;}
+    }
+  }
+
+  .KCPL_horz-single{padding:10px 13px;
+    .gutter{padding:12px 12px 10px;}
+    span{font-size:40px;line-height:44px;}
+  }
+
+  .KCPL_horz-multi{
+    .gutter{padding:38px 14px 40px;}
+    span{font:bold 15px/18px "nimbus-sans";}
+  }
+
+
+}
+
+/* Mobile - really it's just whatever isn't a tablet */
+@media only screen and (max-width: 767px){
+
+}
