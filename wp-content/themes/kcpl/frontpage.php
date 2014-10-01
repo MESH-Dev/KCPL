@@ -25,11 +25,12 @@ $sidebar = KCPL_get_sidebar($pID);
 <div id="content" class="frontpage">
    <div class="container">
 
-      <div class="four columns alpha">
+      <div class="four columns alpha" id="contentSecondary">
 
        <?php include_once(locate_template('partials/module-content-engagement.php')); ?>
-
-       <?php include_once(locate_template('partials/module-sidebar-widgets.php')); ?>
+       <div id="kcpl_m-sidebar">
+         <?php include_once(locate_template('partials/module-sidebar-widgets.php')); ?>
+       </div>
 
       </div>
 
