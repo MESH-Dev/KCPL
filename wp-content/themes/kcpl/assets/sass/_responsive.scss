@@ -275,6 +275,12 @@
 
   .columns.eight > #showProfile #showProfile-social .socialicon{margin: 0 15px 5px 0;}
 
+  #contentPrimary .columns.four{width:48% !important;
+    &.alpha{margin:0 2% 0 0;}
+    &.omega{margin:0;}
+  }
+  #contentSecondary .kcpl_m-sidebar-l{width:48%;margin:0 2% 0 0;float:left;}
+  #contentSecondary .kcpl_m-sidebar-r{width:48%;float:left;}
 
   footer{
     .title{font:bold 12px/16px "nimbus-sans";}

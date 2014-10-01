@@ -6773,30 +6773,56 @@ form#kcpl_oc-booklist label {
     margin: 0 15px 5px 0;
   }
 
+  /* line 278, assets/sass/_responsive.scss */
+  #contentPrimary .columns.four {
+    width: 48% !important;
+  }
+  /* line 279, assets/sass/_responsive.scss */
+  #contentPrimary .columns.four.alpha {
+    margin: 0 2% 0 0;
+  }
   /* line 280, assets/sass/_responsive.scss */
+  #contentPrimary .columns.four.omega {
+    margin: 0;
+  }
+
+  /* line 282, assets/sass/_responsive.scss */
+  #contentSecondary .kcpl_m-sidebar-l {
+    width: 48%;
+    margin: 0 2% 0 0;
+    float: left;
+  }
+
+  /* line 283, assets/sass/_responsive.scss */
+  #contentSecondary .kcpl_m-sidebar-r {
+    width: 48%;
+    float: left;
+  }
+
+  /* line 286, assets/sass/_responsive.scss */
   footer .title {
     font: bold 12px/16px "nimbus-sans";
   }
-  /* line 282, assets/sass/_responsive.scss */
+  /* line 288, assets/sass/_responsive.scss */
   footer .container .gutter {
     padding: 18px 0;
   }
-  /* line 283, assets/sass/_responsive.scss */
+  /* line 289, assets/sass/_responsive.scss */
   footer .container .columns {
     width: 45% !important;
     margin: 0 2% !important;
   }
-  /* line 284, assets/sass/_responsive.scss */
+  /* line 290, assets/sass/_responsive.scss */
   footer .container .columns.two {
     width: 45% !important;
     margin: 0 2% 0 0 !important;
   }
-  /* line 285, assets/sass/_responsive.scss */
+  /* line 291, assets/sass/_responsive.scss */
   footer .container .columns.three {
     width: 100% !important;
     margin: 0 100% 0 0 !important;
   }
-  /* line 286, assets/sass/_responsive.scss */
+  /* line 292, assets/sass/_responsive.scss */
   footer .container .columns.three > div {
     width: 45%;
     margin: 0 2%;
