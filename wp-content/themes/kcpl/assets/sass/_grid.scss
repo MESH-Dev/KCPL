@@ -17,7 +17,7 @@
 $sk-col-width:  57px;   //column width
 $sk-col-gutter: 26px;   //column gutter size
 $sk-col-count:  12;     //total column count
-$sk-tablet-col: 48px;   //column width for tablet portrait
+$sk-tablet-col: 40px;   //column width for tablet portrait
 
 @mixin grid-width($col-width: $sk-col-width) {
     width: ($col-width * $sk-col-count) + ($sk-col-gutter * ($sk-col-count));
@@ -240,7 +240,7 @@ $sk-tablet-col: 48px;   //column width for tablet portrait
 /* #Mobile (Landscape)
 ================================================== */
 
-    /* Note: Design for a width of 480px  LOLJK DESIGNING FOR PIXEL WIDTHS IS STUPID =D
+    /* Note: Design for a width of 480px  LOLJK DESIGNING FOR PIXEL WIDTHS ON MOBILE IS STUPID =D
 
     @media only screen and (min-width: 480px) and (max-width: 767px) {
         .container { width: 420px;

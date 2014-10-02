@@ -5,7 +5,7 @@
 
 */
 @media only screen and (max-width:1023px){
-  .container{width:865px;}
+  .container{width:768px;}
 
   #bannerHome{height:274px;
     .container{height:274px;
@@ -26,15 +26,15 @@
     .single-row{
       .gutter{padding:0px 21px;}
     }
-    #row-expanded{left:-100%;transition:0.3s all;width:602px;}
+    #row-expanded{left:-100%;transition:0.3s all;width:537px;}
   }
 
   .KCPL_social-callout{
     .KCPL_social-callout-header{padding:17px 10px 15px;
       span{line-height: 23px;}
     }
-    .KCPL_social-callout-body{padding:16px 20px;
-      .KCPL_social-callout-icon{margin:4px 2px 7px 3px;}
+    .KCPL_social-callout-body{padding:16px 14px;
+      .KCPL_social-callout-icon{margin:2px;}
     }
   }
 
@@ -56,14 +56,20 @@
 
 
   #content #KCPL_search{
-    #select{width:660px;}
+    #select{width:610px;}
     .search-btn{margin: 0 32px 0 !important;height:80px;}
   }
 
-  #KCPL_Calendar_monthsel{
-    a{font:bold 14px/17px "nimbus-sans";}
+  #KCPL_search.extended #exFields #right{width:370px;
+    #search-online{width:40%;}
+    #search-libraryCard{width:60%;}
+    #search-inLibrary{width:100%;}
   }
+  #KCPL_search.extended #exFields #left{width:360px;}
+  .columns.eight > .KCPL_comments li.comment .comment-content{width:100%;margin:0;padding:0;}
 
+
+  #showProfile #showProfile-social .socialicon{margin:0 10px 10px 0;}
   footer{
     .title{font:bold 12px/16px "nimbus-sans";}
     .container{
@@ -76,15 +82,18 @@
     }
   }
 
+  #KCPL_Calendar_monthsel{padding:18px 40px 16px;
+    a{margin:0 6px;font:bold 14px/17px "nimbus-sans";}
+  }
+
 
 }
 
 /* Mobile - really it's just whatever isn't a tablet.
-  THIS WILL ONLY RENDER ON A SCREEN WHO'S RES MAXES AT 767.
-  It doesn't make sense otherwise. */
+  THIS WILL ONLY RENDER ON A SCREEN WHO'S RES MAXES AT 767. */
 @media only screen and (max-device-width: 767px) and (orientation:portrait){
   header{display:none;}
-  .container{width:95%;padding:0 2.5%;}
+  .container{width:100%;}
   .columns,.column{width:100% !important;}
 
   #banner{height:170px;}
@@ -96,7 +105,7 @@
     .columns{display:block;}
   }
 
-  .KCPL_home-engagement #row-expanded{width:95%;padding:0 2.5%;left:-100%;}
+  .KCPL_home-engagement #row-expanded{width:100%;padding:0;left:-100%;}
     .KCPL_home-engagement #row-expanded.active{z-index:100;left:0;}
 
   #bannerHome .container .columns.five #KCPL_search.condensed{height:auto;}
@@ -128,6 +137,7 @@
     a{display:block;margin:0;}
   }
 
+  div#kcpl_m-sidebar{width:95%;margin:0 auto;}
   div#contentPrimary.column.eight{width:95% !important;margin:0 2.5%;}
 
   #content #KCPL_search .search-btn{margin:0 !important;width:33%;float:left;}
@@ -161,13 +171,19 @@
     }
   }
 
+  #KCPL_search.extended #exFields #right{width:100%;
+    #search-online, #search-libraryCard, #search-inLibrary{width:100%;margin:0 0 10px;}
+  }
+  #KCPL_search.extended #exFields #left{width:100%;}
+  #KCPL_search.extended #exFields select{margin:0 0 10px;}
+
   footer{
     .title{font:bold 12px/16px "nimbus-sans";}
-    .container{
+    .container{width:95%;
       .gutter{padding:18px 0;}
       .columns{width: 50% !important;margin: 0 50% 0 0!important;}
-      .columns.two{width: 50% !important;margin: 0 50% 0 0!important;}
-      .columns.three{width: 50% !important;margin: 0 50% 0 0!important;
+      .columns.two{width: 48% !important;margin: 0 2% 0 0 !important;}
+      .columns.three{width: 48% !important;margin: 0 2% 0 0 !important;
         > div{width:100%;display:block;}
       }
     }
@@ -199,13 +215,26 @@
     .columns.eight > #showProfile #showProfile-person{width:100%;}
     form#editProfile .form-row label{width:22%;}
 
+  #kcpl_oc-discussion-first{padding:0;margin:0 auto 30px;width:95%;
+    .gutter{padding:30px;}
+  }
+  div.KCPL_comments{width:95%;margin:0 auto;}
+  .columns.eight > .KCPL_comments li.comment.depth-1.parent > ol li.comment .comment-content{width:100%;}
+  #respond.comment-respond{margin:30px 0 0;
+    form{padding:0;margin:0;
+      input[type="text"],textarea{margin:0;width:auto;display:block;}
+    }
+  }
+
+  .gbooks-result-row .gbooks-result-entry{width:95%;float:none;margin:0 auto;}
+
 }
 
 
 
 @media only screen and (max-device-width: 767px) and (orientation:landscape){
   header{display:none;}
-  .container{width:95%;padding:0 2.5%;}
+  .container{width:100%;}
   .columns,.column{width:100% !important;}
 
   #bannerHome{height:auto;
@@ -213,7 +242,8 @@
     .columns{display:block;}
   }
 
-  .KCPL_home-engagement #row-expanded{width:95%;padding:0 2.5%;left:-100%;}
+  div#kcpl_m-sidebar{width:95%;margin:0 auto;}
+  .KCPL_home-engagement #row-expanded{width:100%;padding:0;left:-100%;}
     .KCPL_home-engagement #row-expanded.active{z-index:100;left:0;}
 
   #bannerHome .container .columns.five #KCPL_search.condensed{height:auto;}
@@ -275,16 +305,27 @@
 
   .columns.eight > #showProfile #showProfile-social .socialicon{margin: 0 15px 5px 0;}
 
-  #contentPrimary .columns.four{width:48% !important;
+  #contentPrimary .columns.four{width:49% !important;
     &.alpha{margin:0 2% 0 0;}
     &.omega{margin:0;}
   }
   #contentSecondary .kcpl_m-sidebar-l{width:48%;margin:0 2% 0 0;float:left;}
   #contentSecondary .kcpl_m-sidebar-r{width:48%;float:left;}
 
+  #kcpl_oc-discussion-first{padding:0;margin:0 auto 30px;width:95%;
+    .gutter{padding:30px;}
+  }
+  div.KCPL_comments{width:95%;margin:0 auto;}
+  .columns.eight > .KCPL_comments li.comment.depth-1.parent > ol li.comment .comment-content{width:100%;}
+  #respond.comment-respond{margin:30px 0 0;
+    form{padding:0;margin:0;
+      input[type="text"],textarea{margin:0;width:auto;display:block;}
+    }
+  }
+
   footer{
     .title{font:bold 12px/16px "nimbus-sans";}
-    .container{
+    .container{width:95%;
       .gutter{padding:18px 0;}
       .columns{width: 45% !important;margin: 0 2% !important;}
       .columns.two{width: 45% !important;margin: 0 2% 0 0!important;}
