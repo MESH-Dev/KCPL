@@ -6750,7 +6750,7 @@ form#kcpl_oc-booklist label {
     margin: 0 auto;
   }
 }
-@media only screen and (max-device-width: 767px) and (orientation: landscape) {
+@media only screen and (max-device-width: 767px) and (orientation: landscape), screen and (min-width: 480px) and (max-width: 767px) and (orientation: portrait) {
   /* line 243, assets/sass/_responsive.scss */
   header {
     display: none;

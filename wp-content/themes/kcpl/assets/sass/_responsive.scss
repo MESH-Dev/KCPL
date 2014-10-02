@@ -239,7 +239,7 @@
 
 
 
-@media only screen and (max-device-width: 767px) and (orientation:landscape){
+@media only screen and (max-device-width: 767px) and (orientation:landscape), screen and (min-width:480px) and (max-width:767px) and (orientation:portrait){
   header{display:none;}
   .container{width:100%;}
   .columns,.column{width:100% !important;}
