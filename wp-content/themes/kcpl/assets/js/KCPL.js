@@ -136,7 +136,7 @@ jQuery(document).ready(function($){
   });
 
     //menu expand
-  $('#mobileWrap ul#main_nav > li').each(function(){
+  $('#mobileWrap ul#main_nav > li.menu-item-has-children').each(function(){
     $(this).append('<i class="drop fa fa-lg fa-caret-down"></i>');
   });
   $(document).on('touchend','#mobileWrap ul#main_nav > li > i.drop',function(e){
