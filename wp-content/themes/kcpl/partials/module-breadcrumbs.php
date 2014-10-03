@@ -12,7 +12,7 @@
         $slug = $posttest->post_name;
 
 
-        if (($slug == 'collection') || ($slug == 'events-classes') || ($slug == 'learning-lab') || ($slug == 'online-community'))
+        if (($slug == 'collection') || ($slug == 'events-classes') || ($slug == 'learning-lab') || ($slug == 'community'))
         {
           $nav = 'main_nav';
         }
