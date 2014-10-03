@@ -1,15 +1,14 @@
 jQuery(document).ready(function($){
-  //start with the localized object, that's important
-  console.log(KCPL);
-
   //global functions
   try{Typekit.load();}catch(e){}
 
   //header functions
-  $('#header-search,#mobileSearchTrigger').click(function(){
+  $('#header-search').click(function(){
      $('#KCPL_header-search').toggleClass('active');
      if($('#KCPL_header-search').hasClass('active')){
        $('#KCPL_header-search input[name="s"]').focus();
+     }else{
+       $('#KCPL_header-search input[name="s"]').blur();
      }
   });
 
@@ -157,6 +156,20 @@ jQuery(document).ready(function($){
         $(this).parent().addClass('active');
       }
     }
+  });
+    //search shift
+  $(document).on('touchend','#mobileSearchTrigger',function(){
+    if(event.type == "click"){
+      documentClick = true;
+    }
+    if(documentClick){
+      $('#KCPL_header-search').toggleClass('active');
+      if($('#KCPL_header-search').hasClass('active')){
+        $('#KCPL_header-search input[name="s"]').focus();
+      }else{
+        $('#KCPL_header-search input[name="s"]').blur();
+      }
+     }
   });
 
 });
