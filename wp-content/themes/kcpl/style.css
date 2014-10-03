@@ -6319,7 +6319,7 @@ form#kcpl_oc-booklist label {
     width: 100%;
   }
   /* line 111, assets/sass/_responsive.scss */
-  #mobileWrap ul#main_nav > li:before {
+  #mobileWrap ul#main_nav > li > i.drop {
     font: 25px/30px FontAwesome;
     content: '\f0d7';
     color: #fff;
@@ -6330,10 +6330,12 @@ form#kcpl_oc-booklist label {
     z-index: 200;
     height: 30px;
     width: 30px;
+    -webkit-transform-origin: 50% 50%;
+    text-align: center;
   }
   /* line 112, assets/sass/_responsive.scss */
-  #mobileWrap ul#main_nav > li.active:before {
-    -webkit-transform: rotateZ(90deg);
+  #mobileWrap ul#main_nav > li.active > i.drop {
+    -webkit-transform: rotateZ(180deg);
   }
   /* line 114, assets/sass/_responsive.scss */
   #mobileWrap ul#main_nav > li > a {

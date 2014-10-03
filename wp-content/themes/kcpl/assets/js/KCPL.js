@@ -126,37 +126,33 @@ jQuery(document).ready(function($){
       documentClick = false;
   });
     //menu shift
-  $('#mobileMenuTrigger:not(.active)').on('touchend',function(e){
+  $(document).on('touchend','#mobileMenuTrigger:not(.active), #contentWrap.active',function(e){
     if(event.type == "click"){
       documentClick = true;
     }
     if(documentClick){
-      $(this).addClass('active');
-      $('#mobileWrap,#contentWrap').addClass('active');
-    }
-  });
-  $('#contentWrap.active').on('touchend',function(e){
-    if(event.type == "click"){
-      documentClick = true;
-    }
-    if(documentClick){
-      alert('close');
-      $(this).removeClass('active');
-      $('#mobileWrap,#contentWrap').removeClass('active');
+      $('#mobileWrap,#contentWrap,#mobileMenuTrigger').toggleClass('active');
     }
   });
 
     //menu expand
-  $('#mobileWrap ul#main_nav > li:before').on('touchend',function(e){
+  $('#mobileWrap ul#main_nav > li').each(function(){
+    $(this).append('<i class="drop fa fa-lg fa-caret-down"></i>');
+  });
+  $(document).on('touchend','#mobileWrap ul#main_nav > li > i.drop',function(e){
     if(event.type == "click"){
       documentClick = true;
     }
     if(documentClick){
-      alert('drop');
-      $('#mobileWrap.active li:after').removeClass('active');
-      $('#mobileWrap.active li:after').parent().removeClass('active');
-      $(this).addClass('active');
-      $(this).parent().addClass('active');
+      if($(this).hasClass('active')){
+        $(this).removeClass('active');
+        $(this).parent().removeClass('active');
+      }else{
+        $('#mobileWrap.active i.drop').removeClass('active');
+        $('#mobileWrap.active i.drop').parent().removeClass('active');
+        $(this).addClass('active');
+        $(this).parent().addClass('active');
+      }
     }
   });
 
