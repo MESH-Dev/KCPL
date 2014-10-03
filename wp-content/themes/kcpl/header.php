@@ -54,8 +54,7 @@
           <a href="<?php echo home_url(); ?>"><img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" /></a>
           <?php if(wp_is_mobile()){ ?>
             <div id='mobileSearchTrigger'>
-              <i></i>
-              <i></i>
+              <i class="fa fa-lg fa-search"></i>
             </div>
           <?php } ?>
         </div>

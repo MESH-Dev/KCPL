@@ -6,8 +6,11 @@ jQuery(document).ready(function($){
   try{Typekit.load();}catch(e){}
 
   //header functions
-  $('#header-search').click(function(){
+  $('#header-search,#mobileSearchTrigger').click(function(){
      $('#KCPL_header-search').toggleClass('active');
+     if($('#KCPL_header-search').hasClass('active')){
+       $('#KCPL_header-search input[name="s"]').focus();
+     }
   });
 
   //search functions
