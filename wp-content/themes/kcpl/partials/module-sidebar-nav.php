@@ -4,7 +4,7 @@
     $posttest = get_post($pID);
     $slug = $posttest->post_name;
 
-    if (($slug == 'collection') || ($slug == 'events-classes') || ($slug == 'learning-lab') || ($slug == 'community'))
+    if (($slug == 'collection') || ($slug == 'events-classes') || ($slug == 'learning-lab') || ($slug == 'community') || $slug == 'online-community')
         {
           $nav = 'main_nav';
         }
@@ -18,7 +18,7 @@
       $color = 'l-grey';
     } elseif ($slug == 'learning-lab') {
       $color = 'green';
-    } elseif ($slug == 'community') {
+    } elseif ($slug == 'community' || $slug == 'online-community') {
       $color = 'red';
     } else {
       $color = 'blue';
@@ -48,5 +48,3 @@
     } ?>
   <?php include_once(locate_template('partials/module-sidebar-widgets.php')); ?>
 </div>
-
- 

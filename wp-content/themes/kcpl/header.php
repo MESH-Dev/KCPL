@@ -8,7 +8,32 @@
 </head>
 <body <?php if(wp_is_mobile()){$mobileClass="KCPLmobile";}else{$mobileClass="KCPLmobile";} body_class($mobileClass);?>>
 
-
+<?php if(wp_is_mobile()){ ?>
+  <div id='mobileWrap'>
+    <?php if(has_nav_menu('main_nav')){
+      $defaults = array(
+        'theme_location'  => 'main_nav',
+        'menu'            => 'main_nav',
+        'container'       => false,
+        'container_class' => '',
+        'container_id'    => 'main_navCont',
+        'menu_class'      => 'menu',
+        'menu_id'         => 'main_nav',
+        'echo'            => true,
+        'fallback_cb'     => 'wp_page_menu',
+        'before'          => '',
+        'after'           => '',
+        'link_before'     => '',
+        'link_after'      => '',
+        'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+        'depth'           => 0,
+        'walker'          => ''
+      ); wp_nav_menu( $defaults );
+    }else{
+      echo "<p><em>main_nav</em> doesn't exist! Create it and it'll render here.</p>";
+    } ?>
+  </div>
+<?php } ?>
 
 <div id="contentWrap">
   <header>
@@ -20,7 +45,19 @@
     <div id="header-util">
       <div class="container clearfix">
         <div id="header-logo">
+          <?php if(wp_is_mobile()){ ?>
+            <div id='mobileMenuTrigger'>
+              <i></i>
+              <i></i>
+            </div>
+          <?php } ?>
           <a href="<?php echo home_url(); ?>"><img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" /></a>
+          <?php if(wp_is_mobile()){ ?>
+            <div id='mobileSearchTrigger'>
+              <i></i>
+              <i></i>
+            </div>
+          <?php } ?>
         </div>
         <div class="gutter clearfix">
           <?php if(has_nav_menu('util_nav')){

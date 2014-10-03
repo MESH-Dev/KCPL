@@ -115,4 +115,49 @@ jQuery(document).ready(function($){
     $('#avat, #kcpl_oc-avatar').toggleClass('active');
   });
 
+
+  /* ==============
+    IT'S MOBILE TIME!
+  ============== */
+  $(document).on('touchstart', function() {
+      documentClick = true;
+  });
+  $(document).on('touchmove', function() {
+      documentClick = false;
+  });
+    //menu shift
+  $('#mobileMenuTrigger:not(.active)').on('touchend',function(e){
+    if(event.type == "click"){
+      documentClick = true;
+    }
+    if(documentClick){
+      $(this).addClass('active');
+      $('#mobileWrap,#contentWrap').addClass('active');
+    }
+  });
+  $('#contentWrap.active').on('touchend',function(e){
+    if(event.type == "click"){
+      documentClick = true;
+    }
+    if(documentClick){
+      alert('close');
+      $(this).removeClass('active');
+      $('#mobileWrap,#contentWrap').removeClass('active');
+    }
+  });
+
+    //menu expand
+  $('#mobileWrap ul#main_nav > li:before').on('touchend',function(e){
+    if(event.type == "click"){
+      documentClick = true;
+    }
+    if(documentClick){
+      alert('drop');
+      $('#mobileWrap.active li:after').removeClass('active');
+      $('#mobileWrap.active li:after').parent().removeClass('active');
+      $(this).addClass('active');
+      $(this).parent().addClass('active');
+    }
+  });
+
 });

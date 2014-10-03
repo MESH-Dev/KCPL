@@ -19,7 +19,6 @@
           $nav = 'util_nav';
         }
 
-
         if(has_nav_menu('main_nav')){
             $defaults = array(
               'theme_location'  => $nav,
