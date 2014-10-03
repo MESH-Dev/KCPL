@@ -8,7 +8,14 @@
 </head>
 <body <?php if(wp_is_mobile()){$mobileClass="KCPLmobile";}else{$mobileClass="KCPLmobile";} body_class($mobileClass);?>>
 
+<?php //ONLY show this for mobile browsers
+  if(wp_is_mobile()){ ?>
 
+  <div id="mobileWrap">
+
+  </div>
+
+} ?>
 
 <div id="contentWrap">
   <header>
