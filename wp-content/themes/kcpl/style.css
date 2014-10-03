@@ -6410,7 +6410,7 @@ form#kcpl_oc-booklist label {
 
   /* line 129, assets/sass/_responsive.scss */
   header {
-    height: 65px;
+    height: 78px;
   }
   /* line 130, assets/sass/_responsive.scss */
   header .container {
@@ -6434,7 +6434,7 @@ form#kcpl_oc-booklist label {
   }
   /* line 134, assets/sass/_responsive.scss */
   header #header-util #header-logo img {
-    max-height: 65px;
+    max-height: 78px;
     width: auto;
   }
   /* line 135, assets/sass/_responsive.scss */
@@ -6442,7 +6442,7 @@ form#kcpl_oc-booklist label {
     margin: 0 auto;
     position: relative;
     float: none;
-    max-width: 50%;
+    max-width: 60%;
     display: inline-block;
   }
   /* line 136, assets/sass/_responsive.scss */
@@ -7114,7 +7114,7 @@ form#kcpl_oc-booklist label {
 
   /* line 318, assets/sass/_responsive.scss */
   header {
-    height: 65px;
+    height: 78px;
   }
   /* line 319, assets/sass/_responsive.scss */
   header .container {
@@ -7138,7 +7138,7 @@ form#kcpl_oc-booklist label {
   }
   /* line 323, assets/sass/_responsive.scss */
   header #header-util #header-logo img {
-    max-height: 65px;
+    max-height: 78px;
     width: auto;
   }
   /* line 324, assets/sass/_responsive.scss */
@@ -7146,7 +7146,7 @@ form#kcpl_oc-booklist label {
     margin: 0 auto;
     position: relative;
     float: none;
-    max-width: 50%;
+    max-width: 60%;
     display: inline-block;
   }
   /* line 325, assets/sass/_responsive.scss */
