@@ -16,8 +16,10 @@
 
 
   /* Home banner + search */
+  header #header-nav ul#main_nav{max-width:100%;}
   #bannerHome{height:274px;
-    h1{font:bold 30px/33px "nimbus-sans-condensed";}
+    h1{font:bold 30px/33px "nimbus-sans-condensed";padding:0 5px 0 15px;}
+    h2{font-size:22px;padding:0 5px 0 15px;}
     .container{height:274px;
       .columns.seven{padding:0;
         .gutter{padding:0;}

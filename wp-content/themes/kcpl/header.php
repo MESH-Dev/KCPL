@@ -84,4 +84,3 @@
     </div>
   </div>
 </header>
-<?php var_dump(wp_is_mobile()); ?>
