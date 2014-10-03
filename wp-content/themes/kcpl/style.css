@@ -6386,6 +6386,7 @@ form#kcpl_oc-booklist label {
     padding: 7px 20px;
     word-spacing: 0.1em;
     display: block;
+    width: 60%;
   }
   /* line 121, assets/sass/_responsive.scss */
   #mobileWrap ul#main_nav > li > ul > li:hover > a {
