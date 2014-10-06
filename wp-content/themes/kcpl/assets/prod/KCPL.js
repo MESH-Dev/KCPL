@@ -121,14 +121,9 @@ jQuery(document).ready(function($){
   /* ==============
     IT'S MOBILE TIME!
   ============== */
-  $(document).on('touchstart', function() {
-      documentClick = true;
-  });
-  $(document).on('touchmove', function() {
-      documentClick = false;
-  });
     //menu shift
-  $(document).on('touchend','#mobileMenuTrigger:not(.active), #contentWrap.active',function(e){
+  $(document).on('touchstart','#mobileMenuTrigger:not(.active), #contentWrap.active',function(e){
+    e.preventDefault();
     if(event.type == "click"){
       documentClick = true;
     }
@@ -141,7 +136,8 @@ jQuery(document).ready(function($){
   $('#mobileWrap ul#main_nav > li.menu-item-has-children').each(function(){
     $(this).append('<i class="drop fa fa-lg fa-caret-down"></i>');
   });
-  $(document).on('touchend','#mobileWrap ul#main_nav > li > i.drop',function(e){
+  $(document).on('touchstart','#mobileWrap ul#main_nav > li > i.drop',function(e){
+    e.preventDefault();
     if(event.type == "click"){
       documentClick = true;
     }
@@ -158,7 +154,8 @@ jQuery(document).ready(function($){
     }
   });
     //search shift
-  $(document).on('touchend','#mobileSearchTrigger',function(){
+  $(document).on('touchstart','#mobileSearchTrigger',function(e){
+    e.preventDefault();
     if(event.type == "click"){
       documentClick = true;
     }
