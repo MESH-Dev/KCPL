@@ -124,12 +124,7 @@ jQuery(document).ready(function($){
     //menu shift
   $(document).on('touchstart','#mobileMenuTrigger:not(.active), #contentWrap.active',function(e){
     e.preventDefault();
-    if(event.type == "click"){
-      documentClick = true;
-    }
-    if(documentClick){
-      $('#mobileWrap,#contentWrap,#mobileMenuTrigger').toggleClass('active');
-    }
+    $('#mobileWrap,#contentWrap,#mobileMenuTrigger').toggleClass('active');
   });
 
     //menu expand
@@ -138,35 +133,25 @@ jQuery(document).ready(function($){
   });
   $(document).on('touchstart','#mobileWrap ul#main_nav > li > i.drop',function(e){
     e.preventDefault();
-    if(event.type == "click"){
-      documentClick = true;
-    }
-    if(documentClick){
-      if($(this).hasClass('active')){
-        $(this).removeClass('active');
-        $(this).parent().removeClass('active');
-      }else{
-        $('#mobileWrap.active i.drop').removeClass('active');
-        $('#mobileWrap.active i.drop').parent().removeClass('active');
-        $(this).addClass('active');
-        $(this).parent().addClass('active');
-      }
+    if($(this).hasClass('active')){
+      $(this).removeClass('active');
+      $(this).parent().removeClass('active');
+    }else{
+      $('#mobileWrap.active i.drop').removeClass('active');
+      $('#mobileWrap.active i.drop').parent().removeClass('active');
+      $(this).addClass('active');
+      $(this).parent().addClass('active');
     }
   });
     //search shift
   $(document).on('touchstart','#mobileSearchTrigger',function(e){
     e.preventDefault();
-    if(event.type == "click"){
-      documentClick = true;
+    $('#KCPL_header-search').toggleClass('active');
+    if($('#KCPL_header-search').hasClass('active')){
+      $('#KCPL_header-search input[name="s"]').focus();
+    }else{
+      $('#KCPL_header-search input[name="s"]').blur();
     }
-    if(documentClick){
-      $('#KCPL_header-search').toggleClass('active');
-      if($('#KCPL_header-search').hasClass('active')){
-        $('#KCPL_header-search input[name="s"]').focus();
-      }else{
-        $('#KCPL_header-search input[name="s"]').blur();
-      }
-     }
   });
 
 });
