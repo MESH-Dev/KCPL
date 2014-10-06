@@ -12,14 +12,12 @@
         $slug = $posttest->post_name;
 
 
-        if (($slug == 'collection') || ($slug == 'events-classes') || ($slug == 'learning-lab') || ($slug == 'community'))
-        {
+        if (($slug == 'collection') || ($slug == 'events-classes') || ($slug == 'learning-lab') || ($slug == 'community') || ($slug == 'online-community')){
           $nav = 'main_nav';
         }
         else{
           $nav = 'util_nav';
         }
-
 
         if(has_nav_menu('main_nav')){
             $defaults = array(

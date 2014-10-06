@@ -1,13 +1,30 @@
 jQuery(document).ready(function($){
-  //start with the localized object, that's important
-  console.log(KCPL);
-
   //global functions
   try{Typekit.load();}catch(e){}
+
+
+  //cookie & auth functions
+  function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) != -1) return c.substring(name.length,c.length);
+    }
+    return "";
+  }
+  console.log(getCookie('ezproxy'));
+
 
   //header functions
   $('#header-search').click(function(){
      $('#KCPL_header-search').toggleClass('active');
+     if($('#KCPL_header-search').hasClass('active')){
+       $('#KCPL_header-search input[name="s"]').focus();
+     }else{
+       $('#KCPL_header-search input[name="s"]').blur();
+     }
   });
 
   //search functions
@@ -113,6 +130,43 @@ jQuery(document).ready(function($){
   ================= */
   $('#showProfile-cont.edit #showProfile-ava #avat').click(function(){
     $('#avat, #kcpl_oc-avatar').toggleClass('active');
+  });
+
+
+  /* ==============
+    IT'S MOBILE TIME!
+  ============== */
+    //menu shift
+  $(document).on('touchstart','#mobileMenuTrigger:not(.active), #contentWrap.active',function(e){
+    e.preventDefault();
+    $('#mobileWrap,#contentWrap,#mobileMenuTrigger').toggleClass('active');
+  });
+
+    //menu expand
+  $('#mobileWrap ul#main_nav > li.menu-item-has-children').each(function(){
+    $(this).append('<i class="drop fa fa-lg fa-caret-down"></i>');
+  });
+  $(document).on('touchstart','#mobileWrap ul#main_nav > li > i.drop',function(e){
+    e.preventDefault();
+    if($(this).hasClass('active')){
+      $(this).removeClass('active');
+      $(this).parent().removeClass('active');
+    }else{
+      $('#mobileWrap.active i.drop').removeClass('active');
+      $('#mobileWrap.active i.drop').parent().removeClass('active');
+      $(this).addClass('active');
+      $(this).parent().addClass('active');
+    }
+  });
+    //search shift
+  $(document).on('touchstart','#mobileSearchTrigger',function(e){
+    e.preventDefault();
+    $('#KCPL_header-search').toggleClass('active');
+    if($('#KCPL_header-search').hasClass('active')){
+      $('#KCPL_header-search input[name="s"]').focus();
+    }else{
+      $('#KCPL_header-search input[name="s"]').blur();
+    }
   });
 
 });

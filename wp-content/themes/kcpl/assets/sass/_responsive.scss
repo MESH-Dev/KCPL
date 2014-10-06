@@ -1,13 +1,25 @@
-/* Tablets and an aribritrary value that I think defines a desktop
-
-  -- This is a lot of guess work as there are relatively
-  -- few dimensions on either of the style guides.
-
-*/
+/* Tablets (or anything less than 1023px but more than 768px, so like
+            really small browsers I guess. That sounds good.) */
 @media only screen and (max-width:1023px){
-  .container{width:768px;}
+  .container, header .container{width:768px;}
 
+  /* Header + Menus */
+  header #header-util .gutter{padding:0 0 0 198px;}
+  #header-util ul#util_nav{width:425px;}
+  #header-util #header-extra{width:135px;
+    span{display:none;}
+    #header-search, #header-newsletter{width:28px;}
+  }
+  header #header-nav .gutter{padding:0 0 0 194px;}
+  header #header-nav ul#main_nav > li > a{font: bold 18px/23px "nimbus-sans-condensed";padding:12px 16px;}
+  #header-extra #header-login{right:4px;}
+
+
+  /* Home banner + search */
+  header #header-nav ul#main_nav{max-width:100%;}
   #bannerHome{height:274px;
+    h1{font:bold 30px/33px "nimbus-sans-condensed";padding:0 5px 0 15px;}
+    h2{font-size:22px;padding:0 5px 0 15px;}
     .container{height:274px;
       .columns.seven{padding:0;
         .gutter{padding:0;}
@@ -22,13 +34,13 @@
     }
   }
 
+  /* Columns n' Stuff */
   .KCPL_home-engagement{
     .single-row{
       .gutter{padding:0px 21px;}
     }
     #row-expanded{left:-100%;transition:0.3s all;width:537px;}
   }
-
   .KCPL_social-callout{
     .KCPL_social-callout-header{padding:17px 10px 15px;
       span{line-height: 23px;}
@@ -37,18 +49,15 @@
       .KCPL_social-callout-icon{margin:2px;}
     }
   }
-
   .KCPL_horz-card{padding:10px 13px 12px 13px;
     .gutter{padding:32px 5px 32px;
       span{display:block;text-align:center;}
     }
   }
-
   .KCPL_horz-single{padding:10px 13px;
     .gutter{padding:12px 12px 10px;}
     span{font-size:40px;line-height:44px;}
   }
-
   .KCPL_horz-multi{
     .gutter{padding:38px 14px 40px;}
     span{font:bold 15px/18px "nimbus-sans";}
@@ -92,7 +101,58 @@
 /* Mobile - really it's just whatever isn't a tablet.
   THIS WILL ONLY RENDER ON A SCREEN WHO'S RES MAXES AT 767. */
 @media only screen and (max-device-width: 767px) and (orientation:portrait){
-  header{display:none;}
+  html,body{height:100%;}
+  #mobileMenuTrigger,#mobileSearchTrigger,#mobileWrap{display:block;}
+  #mobileWrap{position:absolute;height:100%;width:80%;-webkit-transform:translateX(-100%);transition:0.3s all;background:$blue;
+    &.active{-webkit-transform:translateX(0);}
+     ul#main_nav{display:block;width:100%;list-style:none;float:left;}
+      ul#main_nav li{margin:0;}
+     ul#main_nav > li{float:left;position:relative;width:100%;
+       > i.drop{font:25px/30px FontAwesome;content:'\f0d7';color:#fff;position:absolute;top:10px;right:10px;transition:0.3s all;z-index:200;height:30px;width:30px;-webkit-transform-origin:50% 50%;text-align:center;}
+       &.active > i.drop{-webkit-transform:rotateZ(180deg);}
+     }
+     ul#main_nav > li > a{color:#fff;font:bold 23px/23px $nimbus-c;text-transform: uppercase;padding: 12px 20px 12px;float: left;letter-spacing: 0.05em;position:relative;z-index:1;}
+       ul#main_nav > li:hover > a{color:#fff;}
+
+     ul#main_nav > li > ul{display:block;position:relative;top:auto;left:auto;width:100%;background:$l-blue;list-style:none;height:0px;overflow:hidden;transition:0.3s all;}
+     ul#main_nav > li.active > ul{display:block;height:auto;padding: 5px 0;}
+       ul#main_nav > li > ul > li{display: block;float: left;width: 100%;}
+       ul#main_nav > li > ul > li > a{color: #fff;font: bold 17px/17px $nimbus-c;text-transform: uppercase;letter-spacing: 0.05em;padding: 7px 20px;word-spacing:0.1em;display: block;width:60%;}
+         ul#main_nav > li > ul > li:hover > a{color:#323333;}
+
+     ul#main_nav > li > ul > li > ul{display:none;}
+  }
+  #contentWrap{height:100%;transition:0.3s all;
+    &.active{overflow:hidden;-webkit-transform:translateX(80%);position:fixed;}
+  }
+
+  header{height:auto;
+    .container{width:100%;}
+    #header-util{position:relative;height:78px;
+      .gutter{display:none;}
+      #header-logo{position: relative;z-index: 1;margin:0 auto;text-align:center;
+        img{max-height:78px;width:auto;}
+        > a{margin: 0 auto;position:relative;float:none;max-width:60%;display:inline-block;}
+        #mobileMenuTrigger{position:absolute;top:23px;left:15px;height:35px;width:35px;background:$blue;
+          i{height:5px;width:25px;background:#fff;left:5px;transition:0.3s all;}
+          i:first-child{position:absolute;top:10px;}
+          i:last-child{position:absolute;bottom:10px;}
+
+          &.active{
+            i{left:10.5px;}
+            i:first-child{top:7px;-webkit-transform-origin:0 0;-webkit-transform:rotateZ(45deg);}
+            i:last-child{bottom:6.5px;-webkit-transform-origin:0 100%;-webkit-transform:rotateZ(-45deg);}
+          }
+        }
+        #mobileSearchTrigger{position:absolute;top:23px;right:15px;height:35px;width:35px;background:$blue;font-size:15px;line-height:32px;
+          i{color:#fff;}
+        }
+      }
+    }
+    #header-nav{display:none;}
+  }
+
+
   .container{width:100%;}
   .columns,.column{width:100% !important;}
 
@@ -108,7 +168,7 @@
   .KCPL_home-engagement #row-expanded{width:100%;padding:0;left:-100%;}
     .KCPL_home-engagement #row-expanded.active{z-index:100;left:0;}
 
-  #bannerHome .container .columns.five #KCPL_search.condensed{height:auto;}
+  #bannerHome .container .columns.five #KCPL_search.condensed{height:auto;width:95%;margin:0 auto 20px;}
   #bannerHome .container .columns.seven .gutter{padding:15px;}
 
   .KCPL_home-engagement #row-expanded{overflow:visible;}
@@ -163,7 +223,6 @@
     #type{height:auto;}
   }
 
-  #bannerHome .container .columns.five #KCPL_search.condensed{margin:0 0 20px;}
 
   .KCPL_listing4{
     .row{margin:0;
@@ -232,8 +291,58 @@
 
 
 
-@media only screen and (max-device-width: 767px) and (orientation:landscape){
-  header{display:none;}
+@media only screen and (max-device-width: 767px) and (orientation:landscape), screen and (min-width:480px) and (max-width:767px) and (orientation:portrait){
+  html,body{height:100%;}
+  #mobileMenuTrigger,#mobileSearchTrigger,#mobileWrap{display:block;}
+  #mobileWrap{position:absolute;height:100%;width:80%;-webkit-transform:translateX(-100%);transition:0.3s all;background:$blue;
+    &.active{-webkit-transform:translateX(0);}
+     ul#main_nav{display:block;width:100%;list-style:none;float:left;}
+      ul#main_nav li{margin:0;}
+     ul#main_nav > li{float:left;position:relative;width:100%;
+       > i.drop{font:25px/30px FontAwesome;content:'\f0d7';color:#fff;position:absolute;top:10px;right:10px;transition:0.3s all;z-index:200;height:30px;width:30px;-webkit-transform-origin:50% 50%;text-align:center;}
+       &.active > i.drop{-webkit-transform:rotateZ(180deg);}
+     }
+     ul#main_nav > li > a{color:#fff;font:bold 23px/23px $nimbus-c;text-transform: uppercase;padding: 12px 20px 12px;float: left;letter-spacing: 0.05em;position:relative;z-index:1;}
+       ul#main_nav > li:hover > a{color:#fff;}
+
+     ul#main_nav > li > ul{display:block;position:relative;top:auto;left:auto;width:100%;background:$l-blue;list-style:none;height:0px;overflow:hidden;transition:0.3s all;}
+     ul#main_nav > li.active > ul{display:block;height:auto;padding: 5px 0;}
+       ul#main_nav > li > ul > li{display: block;float: left;width: 100%;}
+       ul#main_nav > li > ul > li > a{color: #fff;font: bold 17px/17px $nimbus-c;text-transform: uppercase;letter-spacing: 0.05em;padding: 7px 20px;word-spacing:0.1em;display: block;}
+         ul#main_nav > li > ul > li:hover > a{color:#323333;}
+
+     ul#main_nav > li > ul > li > ul{display:none;}
+  }
+  #contentWrap{height:100%;transition:0.3s all;
+    &.active{overflow:hidden;-webkit-transform:translateX(80%);position:fixed;}
+  }
+
+  header{height:auto;
+    .container{width:100%;}
+    #header-util{position:relative;height:78px;
+      .gutter{display:none;}
+      #header-logo{position: relative;z-index: 1;margin:0 auto;text-align:center;
+        img{max-height:78px;width:auto;}
+        > a{margin: 0 auto;position:relative;float:none;max-width:60%;display:inline-block;}
+        #mobileMenuTrigger{position:absolute;top:23px;left:15px;height:35px;width:35px;background:$blue;
+          i{height:5px;width:25px;background:#fff;left:5px;transition:0.3s all;}
+          i:first-child{position:absolute;top:10px;}
+          i:last-child{position:absolute;bottom:10px;}
+
+          &.active{
+            i{left:10.5px;}
+            i:first-child{top:7px;-webkit-transform-origin:0 0;-webkit-transform:rotateZ(45deg);}
+            i:last-child{bottom:6.5px;-webkit-transform-origin:0 100%;-webkit-transform:rotateZ(-45deg);}
+          }
+        }
+        #mobileSearchTrigger{position:absolute;top:23px;right:15px;height:35px;width:35px;background:$blue;font-size:15px;line-height:32px;
+          i{color:#fff;}
+        }
+      }
+    }
+    #header-nav{display:none;}
+  }
+
   .container{width:100%;}
   .columns,.column{width:100% !important;}
 
@@ -246,7 +355,7 @@
   .KCPL_home-engagement #row-expanded{width:100%;padding:0;left:-100%;}
     .KCPL_home-engagement #row-expanded.active{z-index:100;left:0;}
 
-  #bannerHome .container .columns.five #KCPL_search.condensed{height:auto;}
+  #bannerHome .container .columns.five #KCPL_search.condensed{height:auto;width:98%;margin:0 auto 20px;float:none;}
   #bannerHome .container .columns.seven .gutter{padding:15px;}
 
   .KCPL_home-engagement #row-expanded{overflow:visible;}
@@ -301,7 +410,6 @@
   }
 
 
-  #bannerHome .container .columns.five #KCPL_search.condensed{margin:0 0 20px;}
 
   .columns.eight > #showProfile #showProfile-social .socialicon{margin: 0 15px 5px 0;}
 
@@ -309,8 +417,8 @@
     &.alpha{margin:0 2% 0 0;}
     &.omega{margin:0;}
   }
-  #contentSecondary .kcpl_m-sidebar-l{width:48%;margin:0 2% 0 0;float:left;}
-  #contentSecondary .kcpl_m-sidebar-r{width:48%;float:left;}
+  #contentSecondary .kcpl_m-sidebar-l{width:49%;float:left;}
+  #contentSecondary .kcpl_m-sidebar-r{width:49%;float:right;}
 
   #kcpl_oc-discussion-first{padding:0;margin:0 auto 30px;width:95%;
     .gutter{padding:30px;}

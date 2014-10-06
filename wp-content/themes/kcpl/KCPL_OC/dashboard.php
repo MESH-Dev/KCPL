@@ -30,10 +30,18 @@ $settings = get_option('kcpl-oc');
           </div>
         </div>
 
-        <a href="<?php echo get_permalink($settings['recommend']); ?>">
+        <a href="<?php echo get_permalink($settings['recommended']); ?>">
           <div class="KCPL_horz-multi KCPL_background-red">
             <div class="gutter">
                <span>Give Recommendations</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="<?php echo get_permalink($settings['recommend']); ?>">
+          <div class="KCPL_horz-multi KCPL_background-red">
+            <div class="gutter">
+               <span>Search Recommended Books</span>
             </div>
           </div>
         </a>
