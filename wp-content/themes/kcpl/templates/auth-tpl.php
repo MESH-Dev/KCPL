@@ -25,6 +25,11 @@ $color = get_field('section_color',$pID);
       }else{
         echo "NO COOKIES MUTHAFUCKA!";
       } ?>
+
+      <h1>Cookie Dump</h1>
+      <?php foreach ($_COOKIE as $key=>$val){
+              echo '<strong>'.$key.'</strong> | '.$val."<br>\n";
+            } ?>
     </div>
 
   </div>
