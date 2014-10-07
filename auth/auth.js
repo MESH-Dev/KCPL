@@ -11,9 +11,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     $('form.left input[name="user"]').keyup(function(){
       var uid = $(this).val();
-      setCookie('kcplID',uid,365);
-      var ourcookie = getCookie('kcplID');
-      console.log(ourcookie);
+      document.cookie="kcplID="+uid;
+      console.log(document.cookie);
     });
 
 
