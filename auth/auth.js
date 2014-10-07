@@ -10,11 +10,14 @@ document.addEventListener('DOMContentLoaded', function () {
     var jqForm = $('form.left');
 
     $('form.left').submit(function(e){
+      var form = $(this);
       e.preventDefault();
       var uid = $(this).find('input[name="user"]').val();
       setCookie('kcplID',uid,365);
       var ourcookie = getCookie('kcplID');
-      $(this).unbind('submit').submit();
+      if(ourcookie != ''){
+        form.trigger('submit');
+      }
     });
 
 });
