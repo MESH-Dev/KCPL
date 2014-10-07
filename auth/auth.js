@@ -1,3 +1,3 @@
-jQuery(document).ready(function($){
-  console.log('this worked');
+document.addEventListener('DOMContentLoaded', function () {
+    console.log('Aloha');
 });
