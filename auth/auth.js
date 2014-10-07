@@ -10,12 +10,13 @@ document.addEventListener('DOMContentLoaded', function () {
     var jqForm = $('form.left');
 
     $('form.left').submit(function(e){
+      var form = $(this);
       e.preventDefault();
       var uid = $(this).find('input[name="user"]').val();
       setCookie('kcplID',uid,365);
       var ourcookie = getCookie('kcplID');
       setTimeout(function(){
-        $(this).unbind('submit').submit();
+        form.submit();
       },500);
     });
 
