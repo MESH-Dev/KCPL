@@ -1,11 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
-    console.log('Aloha! Ohana! Words!');
+    console.log('Here we go!');
 
-    var kcplidC = getCookie('kcplID');
+    document.cookie="kcplAuth=0;domain=.ezproxy.kanawhalibrary.org;";
+    var kcplidC  = getCookie('kcplID');
     var ezproxyC = getCookie('ezproxy');
+    var authC    = getCookie('kcplAuth');
 
     console.log(kcplidC);
     console.log(ezproxyC);
+    console.log(authC);
 
     var jqForm = $('form.left');
 
@@ -15,15 +18,12 @@ document.addEventListener('DOMContentLoaded', function () {
       console.log(document.cookie);
     });
 
+    jqForm.submit(function(){
+      document.cookie="kcplAuth=success;domain=.ezproxy.kanawhalibrary.org;";
+    });
+
 
 });
-
-function setCookie(cname, cvalue, exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    var expires = "expires="+d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";domain=.ezproxy.kanawhalibrary.org " + expires;
-}
 
 function getCookie(cname) {
     var name = cname + "=";

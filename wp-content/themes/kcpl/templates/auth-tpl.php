@@ -27,9 +27,12 @@ $color = get_field('section_color',$pID);
       } ?>
 
       <h1>Cookie Dump</h1>
+      <?php var_dump($_COOKIES); ?>
       <?php foreach ($_COOKIE as $key=>$val){
               echo '<strong>'.$key.'</strong> | '.$val."<br>\n";
             } ?>
+
+
     </div>
 
   </div>
