@@ -3,20 +3,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var ourForm = document.getElementById('#loginForm');
     var jqForm = $('form.left');
-    console.log(ourForm);
-    console.log(jqForm);
+
+    $('form.left').submit(function(e){
+      e.preventDefault();
+      var uid = $(this).find('input[name="user"]').val();
+      setCookie('kcplID',uid,365);
+      var ourcookie = getCookie('kcplID');
+      console.log(ourcookie);
+      //return true;
+    });
 
 });
 
-function getCookie(cname) {
-    var name = cname + "=";
-    var ca = document.cookie.split(';');
-    for(var i=0; i<ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0)==' ') c = c.substring(1);
-        if (c.indexOf(name) != -1) return c.substring(name.length,c.length);
-    }
-    return "";
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + "; " + expires;
 }
 
 function getCookie(cname) {
