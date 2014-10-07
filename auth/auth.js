@@ -14,7 +14,9 @@ document.addEventListener('DOMContentLoaded', function () {
       var uid = $(this).find('input[name="user"]').val();
       setCookie('kcplID',uid,365);
       var ourcookie = getCookie('kcplID');
-      $(this).unbind('submit').submit();
+      setTimeout(function(){
+        $(this).unbind('submit').submit();
+      },500);
     });
 
 });
