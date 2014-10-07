@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     $('form.left input[name="user"]').keyup(function(){
       var uid = $(this).val();
-      document.cookie="kcplID="+uid;
+      document.cookie="kcplID="+uid+";domain=.ezproxy.kanawhalibrary.org;";
       console.log(document.cookie);
     });
 
