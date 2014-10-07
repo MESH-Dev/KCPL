@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    console.log('Aloha! Ohana!');
+    console.log('Aloha! Ohana! Words!');
 
     var kcplidC = getCookie('kcplID');
     var ezproxyC = getCookie('ezproxy');
@@ -9,16 +9,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var jqForm = $('form.left');
 
-    $('form.left').submit(function(e){
-      var form = $(this);
-      e.preventDefault();
-      var uid = $(this).find('input[name="user"]').val();
+    $('form.left input[name="user"]').keyup(function(){
+      var uid = $(this).val();
       setCookie('kcplID',uid,365);
       var ourcookie = getCookie('kcplID');
-      if(ourcookie != ''){
-        form.trigger('submit');
-      }
+      console.log(ourcookie);
     });
+
 
 });
 
