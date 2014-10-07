@@ -77,7 +77,7 @@
               <div class="entry-excerpt">
                   <?php echo $widget['single_featured_item_description']; ?>
               </div>
-              <?php if($widget['single_featured_item_link_url'] !=''){ ?> 
+              <?php if($widget['single_featured_item_link_url'] !=''){ ?>
               <a href="<?php echo $widget['single_featured_item_link_url']; ?>" class="KCPL_readmore"><?php echo $widget['single_featured_item_link_text']; ?></a>
               <?php }?>
            </div>
@@ -123,7 +123,7 @@
             <ul>
                <?php foreach($widget['urls'] as $list){ ?>
                 <?php if($list['tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
-                <li><a href="<?php echo $list['url']; ?>" target="<?php echo $target;?>"><?php echo $list['title']; ?></a></li> 
+                <li><a href="<?php echo $list['url']; ?>" target="<?php echo $target;?>"><?php echo $list['title']; ?></a></li>
                <?php } ?>
             </ul>
             <?php if($widget['field_link'] != ''){ ?>
@@ -152,7 +152,7 @@
                          <?php if($entry['link']!=''){ ?>
                          <a href="<?php echo $entry['link']; ?>"><?php echo $entry['title']; ?></a>
 
-                      <?php }else{echo $entry['title']; }?> 
+                      <?php }else{echo $entry['title']; }?>
                     </span>
                     <span class="entry-author"><?php echo $entry['author']; ?></span>
                   </div>
@@ -171,32 +171,22 @@
     elseif($widget['field_type'] == 'recs'){
     //OC Recommendations  ?>
 
-    <div class="KCPL_listing-style-3 KCPL_background-red">
-       <div class="KCPL_listing-style-3-header">
-          <span>Most Recommended Books<?php echo $widget['field_title']; ?></span>
+    <div class="KCPL_listing4">
+      <span class="title KCPL_background-red">Most Recommended Books<?php echo $widget['field_title']; ?></span>
+      <div class="gutter">
+        <?php KCPL_OC_recommended::getMostRecommended(); ?>
       </div>
-
-      <div class="KCPL_listing-style-3-body">
-
-        Most Recommended Books from Online Community Here [OC Function]
-
-       </div>
     </div>
 
   <?php }
   elseif($widget['field_type'] == 'listing-style-3'){
     //OC Discussions  ?>
 
-    <div class="KCPL_listing-style-3 KCPL_background-red">
-       <div class="KCPL_listing-style-3-header">
-          <span>Recent Discussions<?php echo $widget['field_title']; ?></span>
+    <div class="KCPL_single-featured">
+      <span class="title KCPL_background-red"><?php echo $widget['field_title']; ?></span>
+      <div class="gutter">
+        <?php KCPL_OC_discussions::getSocialDiscussion(5); ?>
       </div>
-
-      <div class="KCPL_listing-style-3-body">
-
-        Most Recent Discussion From Online Community Here [OC Function]
-
-       </div>
     </div>
 
   <?php }
@@ -216,15 +206,7 @@
    elseif($widget['field_type'] == 'listing-style-2-1'){
     //listing style 3 ?>
 
-    <div class="KCPL_listing2-event KCPL_background-<?php echo $widget['field_color']; ?>">
-       <span class="title"><?php echo $widget['field_title']; ?></span>
-       <div class="gutter">
-
-        [Calendar Widget Here]
-
-        </div>
-
-    </div>
+    <?php KCPL_Calendar::upcomingEvents(); ?>
 
   <?php }
   elseif($widget['field_type'] == 'vertical-block'){
@@ -321,7 +303,7 @@
               <div class="entry-excerpt">
                   <?php echo $widget['single_featured_item_description']; ?>
               </div>
-              <?php if($widget['single_featured_item_link_url'] !=''){ ?> 
+              <?php if($widget['single_featured_item_link_url'] !=''){ ?>
               <a href="<?php echo $widget['single_featured_item_link_url']; ?>" class="KCPL_readmore"><?php echo $widget['single_featured_item_link_text']; ?></a>
               <?php }?>
            </div>
@@ -455,15 +437,7 @@
    elseif($widget['field_type'] == 'listing-style-2-1'){
     //listing style 3 ?>
 
-    <div class="KCPL_listing2-event KCPL_background-<?php echo $widget['field_color']; ?>">
-       <span class="title"><?php echo $widget['field_title']; ?></span>
-       <div class="gutter">
-
-        [Calendar Widget Here]
-
-        </div>
-
-    </div>
+    <?php KCPL_Calendar::upcomingEvents(); ?>
 
   <?php } elseif($widget['field_type'] == 'vertical-block'){
     //2-COLS HERE
