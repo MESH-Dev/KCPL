@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     console.log('Aloha');
 
-    var ourForm = getElementById('#loginForm');
+    var ourForm = document.getElementById('#loginForm');
     var jqForm = $('form.left');
     console.log(ourForm);
     console.log(jqform);
