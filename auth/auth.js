@@ -12,13 +12,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var jqForm = $('form.left');
 
-    $('form.left input[name="user"]').keyup(function(){
-      var uid = $(this).val();
-      document.cookie="kcplID="+uid+";domain=.ezproxy.kanawhalibrary.org;";
-      console.log(document.cookie);
-    });
-
     jqForm.submit(function(){
+      var uid = $(this).find('input[name="user"]').val();
+      document.cookie="kcplID="+uid+";domain=.ezproxy.kanawhalibrary.org;";
       document.cookie="kcplAuth=success;domain=.ezproxy.kanawhalibrary.org;";
     });
 
