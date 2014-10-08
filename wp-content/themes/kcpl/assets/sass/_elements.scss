@@ -1744,7 +1744,46 @@ form#kcpl_oc-booklist{margin:0;padding:0;
 }
 
 
+/* AUTHENTICATION!!! */
+#authContainer{
+  position:relative;width:100%;min-height:300px;
+  > *{
+    transition:0.2s opacity;
+    opacity:0;
+    z-index:1;
+    width:80%;
+    height:100%;
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+    &.active #authContainer-load{
+      opacity:1;
+      z-index:5;
+    }
+    #authContainer-load{
+      img{
+        margin:0 auto 20px;
+        display:block;
+      }
+    }
+    &.success #authContainer-success{
+      opacity:1;
+      z-index:5;
+    }
+    #authContainer-success{
 
+    }
+    &.fail #authContainer-fail{
+      opacity:1;
+      z-index:5;
+    }
+    #authContainer-fail{
+
+    }
+}
 
 
 /* Mobile Overrides */

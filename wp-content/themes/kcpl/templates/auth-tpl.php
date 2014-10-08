@@ -17,21 +17,19 @@ $color = get_field('section_color',$pID);
     <?php include_once(locate_template('partials/module-sidebar-nav.php')); ?>
 
     <div class="columns eight omega" id="contentPrimary">
-      <h1>Authenticate</h1>
-      <?php KCPL_OC_auth::loginForm(); ?>
 
-      <?php if(isset($_COOKIE['ezproxy'])){
-        echo 'ezproxy: '.$_COOKIE['ezproxy'];
-      }else{
-        echo "NO COOKIES MUTHAFUCKA!";
-      } ?>
+      <div id="authContainer" class="active">
+        <div id="authContainer-load">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/loading.gif" />
+          <h5>The gears are turning and we're authenticating you with the Online Community.</h5>
+        </div>
+        <div id="authContainer-success">
 
-      <h1>Cookie Dump</h1>
-      <?php var_dump($_COOKIES); ?>
-      <?php foreach ($_COOKIE as $key=>$val){
-              echo '<strong>'.$key.'</strong> | '.$val."<br>\n";
-            } ?>
-
+        </div>
+        <div id="authContainer-fail">
+          <h5>Something went horribly wrong and we couldn't authenticate you with the Online Community.</h5>
+        </div>
+      </div>
 
     </div>
 

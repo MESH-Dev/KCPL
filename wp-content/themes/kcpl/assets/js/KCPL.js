@@ -157,32 +157,13 @@ jQuery(document).ready(function($){
 
 
   //cookies
-    console.log('Aloha! Ohana!');
+  setCookie('kcplID','1234');
+  setCookie('ezproxy','success');
+  setCookie('kcplAuth','success');
+  var kcplidC = getCookie('kcplID');
+  var ezproxyC = getCookie('ezproxy');
 
-    var kcplidC = getCookie('kcplID');
-    var ezproxyC = getCookie('ezproxy');
-
-    console.log(kcplidC);
-    console.log(ezproxyC);
-
-    var jqForm = $('form.left');
-
-    $('form.left').submit(function(e){
-      e.preventDefault();
-      var uid = $(this).find('input[name="user"]').val();
-      setCookie('kcplID',uid,365);
-      var ourcookie = getCookie('kcplID');
-      $(this).unbind('submit').submit();
-    });
-
-    function setCookie(cname, cvalue, exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    var expires = "expires="+d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";domain=.ezproxy.kanawhalibrary.org " + expires;
-}
-
-function getCookie(cname) {
+  function getCookie(cname) {
     var name = cname + "=";
     var ca = document.cookie.split(';');
     for(var i=0; i<ca.length; i++) {
@@ -191,7 +172,10 @@ function getCookie(cname) {
         if (c.indexOf(name) != -1) return c.substring(name.length,c.length);
     }
     return "";
-}
+  }
+  function setCookie(cname, cvalue){
+    document.cookie = cname + "=" + cvalue + ";";
+  }
 
 
 });

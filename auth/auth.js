@@ -1,14 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
-    console.log('Here we go!');
-
     document.cookie="kcplAuth=0;domain=.ezproxy.kanawhalibrary.org;";
     var kcplidC  = getCookie('kcplID');
     var ezproxyC = getCookie('ezproxy');
     var authC    = getCookie('kcplAuth');
-
-    console.log(kcplidC);
-    console.log(ezproxyC);
-    console.log(authC);
 
     var jqForm = $('form.left');
 
