@@ -24,7 +24,7 @@ header{width:100%;float:left;}
 
     #header-util #header-extra{float:right;width:245px;}
       #header-extra > *{float:left;color:#353535;font:11px/11px $nimbus;}
-      #header-extra #header-search{width:80px;}
+      #header-extra #header-search{width:80px; cursor: pointer;}
         #header-extra #header-search b{height: 17px;width: 19px;background: url(assets/img/utilSprites.png);display: block;float: left;margin: 19px 0 0 1px;}
         #header-extra #header-search span{margin: 23px 0 0 7px;float: left;letter-spacing: 0.045em;}
       #header-extra #header-newsletter{width:115px;}

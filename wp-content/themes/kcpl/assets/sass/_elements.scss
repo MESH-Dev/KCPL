@@ -1632,9 +1632,11 @@ a > .#{$namespace}horz-single{color:#fff;}
 .page-numbers { display: inline; font-family: $nimbus; font-style: bold; font-size: 16px; line-height: 18px; color: $m-grey; padding: 0px 6px; cursor: pointer; }
 .current { color: $d-grey; }
 .previous { display: inline; padding-right: 23px; font-size: 20px; cursor: pointer; }
+.prev { display: inline; padding-right: 23px; font-size: 20px; cursor: pointer; }
 .next { display: inline; padding-left: 23px; font-size: 20px; cursor: pointer; }
 
-
+.search-page-numbers-container { display: block; text-align: center; margin: 0px auto 20px; }
+.read-more { margin-top: 20px; color: $blue !important; }
 
 /* Online Community - theme related overrides */
 #showProfile{display:block;float:none;margin:0 0 26px;}
