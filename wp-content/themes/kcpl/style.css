@@ -5626,24 +5626,38 @@ a > .KCPL_horz-single {
   color: #137cc1 !important;
 }
 
-/* Online Community - theme related overrides */
+/* line 1641, assets/sass/_elements.scss */
+.search-box form {
+  margin: 20px 0 0 0;
+  padding: 0;
+}
 /* line 1642, assets/sass/_elements.scss */
+.search-box form input[type="text"] {
+  margin: 0;
+}
+/* line 1643, assets/sass/_elements.scss */
+.search-box form input[type="submit"] {
+  display: none;
+}
+
+/* Online Community - theme related overrides */
+/* line 1648, assets/sass/_elements.scss */
 #showProfile {
   display: block;
   float: none;
   margin: 0 0 26px;
 }
 
-/* line 1643, assets/sass/_elements.scss */
+/* line 1649, assets/sass/_elements.scss */
 #showProfile-cont.edit #showProfile-ava #avat {
   cursor: pointer;
   position: relative;
 }
-/* line 1644, assets/sass/_elements.scss */
+/* line 1650, assets/sass/_elements.scss */
 #showProfile-cont.edit #showProfile-ava #avat:hover {
   opacity: 0.7;
 }
-/* line 1645, assets/sass/_elements.scss */
+/* line 1651, assets/sass/_elements.scss */
 #showProfile-cont.edit #showProfile-ava #avat:before {
   content: '\f055';
   font-family: FontAwesome;
@@ -5655,24 +5669,24 @@ a > .KCPL_horz-single {
   display: none;
   transition: 0.2s all;
 }
-/* line 1646, assets/sass/_elements.scss */
+/* line 1652, assets/sass/_elements.scss */
 #showProfile-cont.edit #showProfile-ava #avat:hover:before {
   display: block;
 }
-/* line 1647, assets/sass/_elements.scss */
+/* line 1653, assets/sass/_elements.scss */
 #showProfile-cont.edit #showProfile-ava #avat.active:before {
   display: block;
   transform: rotateZ(45deg);
 }
 
-/* line 1650, assets/sass/_elements.scss */
+/* line 1656, assets/sass/_elements.scss */
 div#responses {
   font: bold 22px/60px 'nimbus-sans-condensed';
   text-align: center;
   margin: 0 0 30px;
   transition: 0.2s all;
 }
-/* line 1651, assets/sass/_elements.scss */
+/* line 1657, assets/sass/_elements.scss */
 div#responses.success {
   color: #27ae60;
   border: 2px solid #27ae60;
@@ -5682,7 +5696,7 @@ div#responses.success {
   animation-delay: .3s;
   -webkit-animation-delay: .3s;
 }
-/* line 1652, assets/sass/_elements.scss */
+/* line 1658, assets/sass/_elements.scss */
 div#responses.error {
   color: #c0392b;
   border: 2px solid #c0392b;
@@ -5693,7 +5707,7 @@ div#responses.error {
   -webkit-animation-delay: .3s;
 }
 
-/* line 1655, assets/sass/_elements.scss */
+/* line 1661, assets/sass/_elements.scss */
 .updated {
   font: bold 22px/60px 'nimbus-sans-condensed';
   text-align: center;
@@ -5706,50 +5720,50 @@ div#responses.error {
   animation-delay: .3s;
   -webkit-animation-delay: .3s;
 }
-/* line 1656, assets/sass/_elements.scss */
+/* line 1662, assets/sass/_elements.scss */
 .updated p {
   margin: 0;
 }
 
-/* line 1659, assets/sass/_elements.scss */
+/* line 1665, assets/sass/_elements.scss */
 form#editProfile {
   margin: 0;
   background: #e2e2e2;
   padding: 20px;
 }
-/* line 1660, assets/sass/_elements.scss */
+/* line 1666, assets/sass/_elements.scss */
 form#editProfile h3 {
   margin: 10px 0;
 }
-/* line 1661, assets/sass/_elements.scss */
+/* line 1667, assets/sass/_elements.scss */
 form#editProfile .form-row {
   display: table;
   width: 100%;
   padding: 5px 0;
 }
-/* line 1662, assets/sass/_elements.scss */
+/* line 1668, assets/sass/_elements.scss */
 form#editProfile .form-row label {
   display: table-cell;
   width: 15%;
   vertical-align: middle;
 }
-/* line 1663, assets/sass/_elements.scss */
+/* line 1669, assets/sass/_elements.scss */
 form#editProfile .form-row textarea, form#editProfile .form-row input[type="text"] {
   display: table-cell;
   width: 85%;
   vertical-align: middle;
 }
-/* line 1664, assets/sass/_elements.scss */
+/* line 1670, assets/sass/_elements.scss */
 form#editProfile .form-row input[type="submit"] {
   margin: 20px 0 0;
 }
 
-/* line 1668, assets/sass/_elements.scss */
+/* line 1674, assets/sass/_elements.scss */
 #showProfile-ava {
   position: relative;
 }
 
-/* line 1669, assets/sass/_elements.scss */
+/* line 1675, assets/sass/_elements.scss */
 #kcpl_oc-avatar {
   position: absolute;
   color: #fff;
@@ -5762,49 +5776,49 @@ form#editProfile .form-row input[type="submit"] {
   z-index: 1;
   left: -9999px;
 }
-/* line 1670, assets/sass/_elements.scss */
+/* line 1676, assets/sass/_elements.scss */
 #kcpl_oc-avatar .gutter {
   padding: 10px;
 }
-/* line 1671, assets/sass/_elements.scss */
+/* line 1677, assets/sass/_elements.scss */
 #kcpl_oc-avatar form {
   padding: 0;
   margin: 0;
 }
-/* line 1672, assets/sass/_elements.scss */
+/* line 1678, assets/sass/_elements.scss */
 #kcpl_oc-avatar input:hover, #kcpl_oc-avatar button:hover {
   cursor: pointer;
 }
-/* line 1673, assets/sass/_elements.scss */
+/* line 1679, assets/sass/_elements.scss */
 #kcpl_oc-avatar .wpua-edit-container {
   text-align: center;
 }
-/* line 1674, assets/sass/_elements.scss */
+/* line 1680, assets/sass/_elements.scss */
 #kcpl_oc-avatar .wpua-edit-container h3 {
   display: none;
 }
-/* line 1676, assets/sass/_elements.scss */
+/* line 1682, assets/sass/_elements.scss */
 #kcpl_oc-avatar #wpua-thumbnail {
   display: none;
 }
-/* line 1677, assets/sass/_elements.scss */
+/* line 1683, assets/sass/_elements.scss */
 #kcpl_oc-avatar span {
   display: block;
   text-transform: uppercase;
   text-align: center;
 }
-/* line 1678, assets/sass/_elements.scss */
+/* line 1684, assets/sass/_elements.scss */
 #kcpl_oc-avatar .KCPL_font-nimbus-condensed {
   font-weight: bold;
   font-size: 19px;
   margin: 0 0 2px;
 }
-/* line 1679, assets/sass/_elements.scss */
+/* line 1685, assets/sass/_elements.scss */
 #kcpl_oc-avatar .KCPL_font-minion {
   font-size: 14px;
 }
 
-/* line 1681, assets/sass/_elements.scss */
+/* line 1687, assets/sass/_elements.scss */
 #kcpl_oc-avatar:after {
   position: absolute;
   top: -7px;
@@ -5816,12 +5830,12 @@ form#editProfile .form-row input[type="submit"] {
   background: url(assets/img/talkCalloutCaret.png) no-repeat;
 }
 
-/* line 1682, assets/sass/_elements.scss */
+/* line 1688, assets/sass/_elements.scss */
 #kcpl_oc-avatar:after {
   background-position: -28px 0;
 }
 
-/* line 1683, assets/sass/_elements.scss */
+/* line 1689, assets/sass/_elements.scss */
 #kcpl_oc-avatar.active {
   z-index: 100;
   opacity: 1;
@@ -5830,17 +5844,17 @@ form#editProfile .form-row input[type="submit"] {
   left: 0;
 }
 
-/* line 1684, assets/sass/_elements.scss */
+/* line 1690, assets/sass/_elements.scss */
 .columns.four .KCPL_listing4 .row {
   margin: 0;
 }
 
-/* line 1686, assets/sass/_elements.scss */
+/* line 1692, assets/sass/_elements.scss */
 #searchRecommended, #searchBooks, #searchBooklists, #searchUserBooklists {
   display: block;
   margin: 0 0 26px;
 }
-/* line 1687, assets/sass/_elements.scss */
+/* line 1693, assets/sass/_elements.scss */
 #searchRecommended .recommendedSearch, #searchBooks .recommendedSearch, #searchBooklists .recommendedSearch, #searchUserBooklists .recommendedSearch {
   background: #e2e2e2;
   padding: 20px;
@@ -5848,19 +5862,19 @@ form#editProfile .form-row input[type="submit"] {
   display: block;
   margin: 0 0 26px;
 }
-/* line 1688, assets/sass/_elements.scss */
+/* line 1694, assets/sass/_elements.scss */
 #searchRecommended .recommendedSearch input, #searchBooks .recommendedSearch input, #searchBooklists .recommendedSearch input, #searchUserBooklists .recommendedSearch input {
   margin: 0;
   padding: 6px 8px 6px 35px;
 }
-/* line 1689, assets/sass/_elements.scss */
+/* line 1695, assets/sass/_elements.scss */
 #searchRecommended .recommendedSearch i, #searchBooks .recommendedSearch i, #searchBooklists .recommendedSearch i, #searchUserBooklists .recommendedSearch i {
   position: absolute;
   top: 33px;
   left: 35px;
 }
 
-/* line 1693, assets/sass/_elements.scss */
+/* line 1699, assets/sass/_elements.scss */
 .gbooks-result-entry .gbooks-result-buttons .gbooks-button-add {
   width: auto;
   display: inline-block;
@@ -5873,7 +5887,7 @@ form#editProfile .form-row input[type="submit"] {
   vertical-align: middle;
 }
 
-/* line 1695, assets/sass/_elements.scss */
+/* line 1701, assets/sass/_elements.scss */
 .gbooks-result-button-number {
   display: inline-block;
   font: bold 20px/20px nimbus-sans-condensed;
@@ -5882,28 +5896,28 @@ form#editProfile .form-row input[type="submit"] {
   width: auto;
 }
 
-/* line 1696, assets/sass/_elements.scss */
+/* line 1702, assets/sass/_elements.scss */
 #searchBooks .output .gbooks-result-buttons {
   margin: 10px 0 0;
 }
 
-/* line 1698, assets/sass/_elements.scss */
+/* line 1704, assets/sass/_elements.scss */
 .gbooks-result-row {
   margin: 0 0 20px;
 }
 
-/* line 1699, assets/sass/_elements.scss */
+/* line 1705, assets/sass/_elements.scss */
 .gbooks-result-entry .gbooks-result-title {
   width: 90%;
   font: bold 19px/19px nimbus-sans-condensed;
 }
 
-/* line 1700, assets/sass/_elements.scss */
+/* line 1706, assets/sass/_elements.scss */
 .gbooks-result-entry .new .gbooks-result-img {
   width: 9.5%;
 }
 
-/* line 1701, assets/sass/_elements.scss */
+/* line 1707, assets/sass/_elements.scss */
 .gbooks-result-entry .gbooks-result-buttons.new .gbooks-button-add {
   padding: 0 10px 0 6px;
   border: none;
@@ -5911,39 +5925,39 @@ form#editProfile .form-row input[type="submit"] {
   font-size: 14px;
 }
 
-/* line 1703, assets/sass/_elements.scss */
+/* line 1709, assets/sass/_elements.scss */
 .gbooks-list-add-entry-title {
   font: bold 19px/19px nimbus-sans-condensed;
   padding: 0 0 0 10px;
 }
 
-/* line 1704, assets/sass/_elements.scss */
+/* line 1710, assets/sass/_elements.scss */
 .gbooks-list-add-entry-remove {
   background: none;
   border: none;
   vertical-align: middle;
 }
 
-/* line 1705, assets/sass/_elements.scss */
+/* line 1711, assets/sass/_elements.scss */
 .gbooks-list-add-entry-remove:before {
   margin: 12px 0 0 0;
   display: block;
 }
 
-/* line 1707, assets/sass/_elements.scss */
+/* line 1713, assets/sass/_elements.scss */
 form#kcpl_oc-booklist {
   margin: 0;
   padding: 0;
 }
-/* line 1708, assets/sass/_elements.scss */
+/* line 1714, assets/sass/_elements.scss */
 form#kcpl_oc-booklist input[type="text"] {
   margin: 6px 0;
 }
-/* line 1709, assets/sass/_elements.scss */
+/* line 1715, assets/sass/_elements.scss */
 form#kcpl_oc-booklist label {
   font: 12px/35px nimbus-sans;
 }
-/* line 1710, assets/sass/_elements.scss */
+/* line 1716, assets/sass/_elements.scss */
 form#kcpl_oc-booklist input[type="checkbox"] {
   -webkit-appearance: none;
   background: transparent;
@@ -5953,7 +5967,7 @@ form#kcpl_oc-booklist input[type="checkbox"] {
   margin: 0 5px;
   position: relative;
 }
-/* line 1711, assets/sass/_elements.scss */
+/* line 1717, assets/sass/_elements.scss */
 form#kcpl_oc-booklist input[type="checkbox"]:checked:after {
   content: '';
   position: absolute;
@@ -5965,44 +5979,44 @@ form#kcpl_oc-booklist input[type="checkbox"]:checked:after {
   border-radius: 2px;
   background: #000;
 }
-/* line 1712, assets/sass/_elements.scss */
+/* line 1718, assets/sass/_elements.scss */
 form#kcpl_oc-booklist label {
   font-size: 14px;
   letter-spacing: 0.075em;
 }
 
-/* line 1715, assets/sass/_elements.scss */
+/* line 1721, assets/sass/_elements.scss */
 #searchUserBooklists .output, #searchUserBooklists .output {
   transition: 0.2s all;
 }
-/* line 1716, assets/sass/_elements.scss */
+/* line 1722, assets/sass/_elements.scss */
 #searchUserBooklists .output.active, #searchUserBooklists .output.active {
   opacity: 0;
 }
 
-/* line 1719, assets/sass/_elements.scss */
+/* line 1725, assets/sass/_elements.scss */
 #KCPL_search input[type="search"] {
   margin: 0;
 }
 
-/* line 1720, assets/sass/_elements.scss */
+/* line 1726, assets/sass/_elements.scss */
 .KCPL_home-engagement #row-expanded .engage-content {
   display: none;
 }
 
-/* line 1721, assets/sass/_elements.scss */
+/* line 1727, assets/sass/_elements.scss */
 .KCPL_home-engagement #row-expanded .engage-content.active {
   display: block;
 }
 
-/* line 1722, assets/sass/_elements.scss */
+/* line 1728, assets/sass/_elements.scss */
 .KCPL_home-engagement #row-expanded {
   left: -100%;
   transition: 0.3s all;
   width: 680px;
 }
 
-/* line 1723, assets/sass/_elements.scss */
+/* line 1729, assets/sass/_elements.scss */
 .KCPL_home-engagement #row-expanded.active {
   left: 30%;
 }
@@ -6053,13 +6067,13 @@ form#kcpl_oc-booklist label {
   }
 }
 /* AUTHENTICATION!!! */
-/* line 1750, assets/sass/_elements.scss */
+/* line 1756, assets/sass/_elements.scss */
 #authContainer {
   position: relative;
   width: 100%;
   min-height: 300px;
 }
-/* line 1752, assets/sass/_elements.scss */
+/* line 1758, assets/sass/_elements.scss */
 #authContainer > * {
   transition: 0.2s opacity;
   opacity: 0;
@@ -6072,29 +6086,29 @@ form#kcpl_oc-booklist label {
   left: 0;
   right: 0;
 }
-/* line 1764, assets/sass/_elements.scss */
+/* line 1770, assets/sass/_elements.scss */
 #authContainer.active #authContainer-load {
   opacity: 1;
   z-index: 5;
 }
-/* line 1769, assets/sass/_elements.scss */
+/* line 1775, assets/sass/_elements.scss */
 #authContainer #authContainer-load img {
   margin: 0 auto 20px;
   display: block;
 }
-/* line 1774, assets/sass/_elements.scss */
+/* line 1780, assets/sass/_elements.scss */
 #authContainer.success #authContainer-success {
   opacity: 1;
   z-index: 5;
 }
-/* line 1781, assets/sass/_elements.scss */
+/* line 1787, assets/sass/_elements.scss */
 #authContainer.fail #authContainer-fail {
   opacity: 1;
   z-index: 5;
 }
 
 /* Mobile Overrides */
-/* line 1792, assets/sass/_elements.scss */
+/* line 1798, assets/sass/_elements.scss */
 #mobileMenuTrigger, #mobileSearchTrigger, #mobileWrap {
   display: none;
 }

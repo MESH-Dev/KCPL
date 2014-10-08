@@ -1637,6 +1637,12 @@ a > .#{$namespace}horz-single{color:#fff;}
 
 .search-page-numbers-container { display: block; text-align: center; margin: 0px auto 20px; }
 .read-more { margin-top: 20px; color: $blue !important; }
+.search-box {
+  form { margin: 20px 0 0 0; padding: 0;
+    input[type="text"] { margin: 0; }
+    input[type="submit"] { display: none; }
+  }
+}
 
 /* Online Community - theme related overrides */
 #showProfile{display:block;float:none;margin:0 0 26px;}

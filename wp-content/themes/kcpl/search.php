@@ -57,7 +57,18 @@ $color = get_field('section_color',$pID);
 
       <?php $i = $i + 1; ?>
 
-      <?php } } ?>
+      <?php } } else { ?>
+
+        <div class="eight columns alpha page-content">
+          <div class="gutter">
+            <h3>No results returned! Try another search.</h3>
+            <div class="search-box">
+              <?php get_search_form(); ?>
+            </div>
+          </div>
+        </div>
+
+      <?php } ?>
 
       <?php if($i%2 == 1) {
 
