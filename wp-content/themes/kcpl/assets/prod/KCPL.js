@@ -3,20 +3,6 @@ jQuery(document).ready(function($){
   try{Typekit.load();}catch(e){}
 
 
-  //cookie & auth functions
-  function getCookie(cname) {
-    var name = cname + "=";
-    var ca = document.cookie.split(';');
-    for(var i=0; i<ca.length; i++) {
-      var c = ca[i];
-      while (c.charAt(0)==' ') c = c.substring(1);
-        if (c.indexOf(name) != -1) return c.substring(name.length,c.length);
-    }
-    return "";
-  }
-  console.log(getCookie('ezproxy'));
-
-
   //header functions
   $('#header-search').click(function(){
      $('#KCPL_header-search').toggleClass('active');
@@ -168,5 +154,28 @@ jQuery(document).ready(function($){
       $('#KCPL_header-search input[name="s"]').blur();
     }
   });
+
+
+  //cookies
+  setCookie('kcplID','1234');
+  setCookie('ezproxy','success');
+  setCookie('kcplAuth','success');
+  var kcplidC = getCookie('kcplID');
+  var ezproxyC = getCookie('ezproxy');
+
+  function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) != -1) return c.substring(name.length,c.length);
+    }
+    return "";
+  }
+  function setCookie(cname, cvalue){
+    document.cookie = cname + "=" + cvalue + ";";
+  }
+
 
 });
