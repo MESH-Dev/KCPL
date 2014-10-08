@@ -1864,6 +1864,12 @@ footer #social_navCont ul li.twitter {
   height: 35px;
   width: 35px;
 }
+/* line 106, assets/sass/_layout.scss */
+footer #social_navCont ul li.pinterest {
+  background: url(assets/img/sprites.png) -42px -50px no-repeat;
+  height: 35px;
+  width: 35px;
+}
 /* line 108, assets/sass/_layout.scss */
 footer #social_navCont ul li a {
   color: transparent;
