@@ -17,7 +17,7 @@ $color = get_field('section_color',$pID); ?>
 <div id="content">
   <div class="container">
     <?php include_once(locate_template('partials/module-sidebar-nav.php')); ?>
-    
+
     <div class="column eight omega" id="contentPrimary">
 
         <?php
@@ -29,11 +29,11 @@ $color = get_field('section_color',$pID); ?>
             // Partial to use for two side-by-side 4 column content blocks
             include_once(locate_template('partials/module-content-4column.php'));
         ?>
-        <?php the_content(); ?>
+        <!-- <?php the_content(); ?> -->
 
     </div>
   </div>
-</div> 
+</div>
 
 <?php } } ?>
 

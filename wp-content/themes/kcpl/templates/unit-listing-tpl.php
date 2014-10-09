@@ -24,7 +24,7 @@ $color = get_field('section_color',$pID); ?>
 
       <?php include_once(locate_template('partials/module-content-8column.php')); ?>
       <?php include_once(locate_template('partials/module-content-4column-p.php')); ?>
-      <?php the_content(); ?>
+      
     </div>
   </div>
 </div>

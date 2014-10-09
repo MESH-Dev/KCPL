@@ -58,6 +58,7 @@ textarea,input,select{outline: none;}
       > li.current_page_item > ul > li > ul > li, > li.current_page_ancestor > ul > li > ul > li{padding:0 0;}
 
       > li.current_page_ancestor > ul > li.current_page_item > ul { display:block; }
+      > li.current_page_ancestor > ul > li.current_page_ancestor > ul { display:block; }
 
       > li.current_page_item > ul > li > ul > li > a, > li.current_page_ancestor > ul > li > ul > li > a{color: #fff;font: 18px/18px $minion;display: block;padding: 4px 0px 0px 20px;letter-spacing: 0.03em;word-spacing: 0.09em;}
       > li.current_page_item > ul > li > ul > li:last-child > a, > li.current_page_ancestor > ul > li > ul > li:last-child > a{padding: 4px 0px 16px 20px;}
@@ -1632,9 +1633,17 @@ a > .#{$namespace}horz-single{color:#fff;}
 .page-numbers { display: inline; font-family: $nimbus; font-style: bold; font-size: 16px; line-height: 18px; color: $m-grey; padding: 0px 6px; cursor: pointer; }
 .current { color: $d-grey; }
 .previous { display: inline; padding-right: 23px; font-size: 20px; cursor: pointer; }
+.prev { display: inline; padding-right: 23px; font-size: 20px; cursor: pointer; }
 .next { display: inline; padding-left: 23px; font-size: 20px; cursor: pointer; }
 
-
+.search-page-numbers-container { display: block; text-align: center; margin: 0px auto 20px; }
+.read-more { margin-top: 20px; color: $blue !important; }
+.search-box {
+  form { margin: 20px 0 0 0; padding: 0;
+    input[type="text"] { margin: 0; }
+    input[type="submit"] { display: none; }
+  }
+}
 
 /* Online Community - theme related overrides */
 #showProfile{display:block;float:none;margin:0 0 26px;}

@@ -15,7 +15,7 @@
       wp_enqueue_script('jquery-ui-core');
       wp_enqueue_script('jquery-effects-slide');
   	wp_enqueue_script( 'KCPL-script', get_template_directory_uri().'/assets/prod/KCPL.js', array('jquery'), '1.0.0', true );
-    wp_enqueue_script('typekit','//use.typekit.net/drm7klb.js');
+    // wp_enqueue_script('typekit','//use.typekit.net/drm7klb.js');
     wp_localize_script( 'KCPL-script', 'KCPL',array(
       'ajaxurl' => admin_url('admin-ajax.php'),
       'curUser' => get_current_user_id()
@@ -363,5 +363,10 @@ function custom_menu_order($menu_ord) {
 }
 add_filter('custom_menu_order', 'custom_menu_order'); // Activate custom_menu_order
 add_filter('menu_order', 'custom_menu_order');
+
+function new_excerpt_more( $more ) {
+	return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More »', 'your-text-domain') . '</a>';
+}
+add_filter( 'excerpt_more', 'new_excerpt_more' );
 
 ?>
