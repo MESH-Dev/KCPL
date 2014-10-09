@@ -58,6 +58,7 @@ textarea,input,select{outline: none;}
       > li.current_page_item > ul > li > ul > li, > li.current_page_ancestor > ul > li > ul > li{padding:0 0;}
 
       > li.current_page_ancestor > ul > li.current_page_item > ul { display:block; }
+      > li.current_page_ancestor > ul > li.current_page_ancestor > ul { display:block; }
 
       > li.current_page_item > ul > li > ul > li > a, > li.current_page_ancestor > ul > li > ul > li > a{color: #fff;font: 18px/18px $minion;display: block;padding: 4px 0px 0px 20px;letter-spacing: 0.03em;word-spacing: 0.09em;}
       > li.current_page_item > ul > li > ul > li:last-child > a, > li.current_page_ancestor > ul > li > ul > li:last-child > a{padding: 4px 0px 16px 20px;}
