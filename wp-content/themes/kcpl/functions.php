@@ -3,6 +3,10 @@
   include_once('functions/branch-hours.php');
   include_once('functions/custom-fields.php');
 
+  if ( ! current_user_can( 'edit_posts' ) ) {
+    add_filter('show_admin_bar', '__return_false');
+  }
+
   //enqueue scripts and styles *use production assets. Dev assets are located in assets/css and assets/js
   function KCPL_scripts() {
     wp_enqueue_style('font-awesome','//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
