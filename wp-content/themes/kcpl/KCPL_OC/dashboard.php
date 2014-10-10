@@ -113,9 +113,30 @@ $settings = get_option('kcpl-oc');
         <?php KCPL_Calendar::relatedEvents(); ?>
 
       </div>
-      <?php }else{ ?>
-        <p>You must be logged in to access the Online Community.</p>
-      <?php } ?>
+      <?php }else{
+        echo "<p>You must be logged in to access the Online Community</p>
+              <div class='KCPL_listing4'>
+                <span class='title KCPL_background-red'>Log In</span>
+                <div class='gutter'>";
+        $options = get_site_option('kcpl-oc');
+        $args = array(
+          'echo'           => true,
+          'redirect'       => site_url( $_SERVER['REQUEST_URI'] ),
+          'form_id'        => 'loginform',
+          'label_username' => __( 'Card Number' ),
+          'label_password' => __( 'PIN Number' ),
+          'label_log_in'   => __( 'Log In' ),
+          'id_username'    => 'user_login',
+          'id_password'    => 'user_pass',
+          'id_remember'    => 'rememberme',
+          'id_submit'      => 'wp-submit',
+          'remember'       => false,
+          'value_username' => NULL,
+          'value_remember' => false
+        ); ?>
+        <?php wp_login_form( $args );
+      }
+      echo "</div></div>"; ?>
     </div>
 
   </div>
