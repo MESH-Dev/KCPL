@@ -217,7 +217,7 @@ table{
 }
 
 #bannerHome{ color:#fff;height:297px;float:left;width:100%;margin:0 0 26px;
-  .gutter{padding:0 0 0 0px;}
+  .gutter{padding:0 20px 0 0px;}
   .container{display:table;height:297px;}
   .columns{display:table-cell;float:none; vertical-align:middle;}
   h1{margin:0 0 0;}
@@ -1792,6 +1792,22 @@ form#kcpl_oc-booklist{margin:0;padding:0;
     #authContainer-fail{
 
     }
+}
+
+/* Search Results */
+
+#searchResults {
+  text-align: center;
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  span {
+    font: bold 41px/41px $nimbus-c;
+    text-transform: uppercase;
+    margin: 0;
+    color: white;
+  }
 }
 
 

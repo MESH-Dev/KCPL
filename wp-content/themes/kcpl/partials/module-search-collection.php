@@ -1,10 +1,7 @@
 <div id="KCPL_search">
   <div class="gutter clearfix">
-    
-
-
     <form method="get" id="searchForm" action="http://kana.ent.sirsi.net/client/embedded.search/http://kana.ent.sirsi.net/client/default">
-      <input type="hidden" name="ln" value="en_US"> 
+      <input type="hidden" name="ln" value="en_US">
       <div id="searchField">
         <i class="fa fa-lg fa-search searchicon"></i>
         <input type="search"  id="q" name="q" placeholder="Search the collection" />
