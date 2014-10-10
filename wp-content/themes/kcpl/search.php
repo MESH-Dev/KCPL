@@ -6,7 +6,16 @@ $color = get_field('section_color',$pID);
 
 ?>
 
-<?php include_once(locate_template('partials/module-breadcrumbs.php')); ?>
+<div id="banner" class="KCPL_background-blue">
+  <div class="container">
+      <div class="gutter">
+        <div id="searchResults">
+          <span>Search Results</span>
+        </div>
+      </div>
+  </div>
+</div>
+
 
 <div id="content">
   <div class="container">
