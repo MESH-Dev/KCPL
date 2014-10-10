@@ -37,55 +37,81 @@ $settings = get_option('kcpl-oc'); ?>
       <?php get_template_part('partials/module','sidebar-widgets'); ?>
     </div>
     <div class="columns eight omega" id="contentPrimary">
-      <?php
-      $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-      $posts = get_posts(array(
-        'post_type' => 'kcpl_oc-discussion',
-        'paged'     => $paged,
-      ));
-      $postCount = count($posts);
-      $lCol = array_slice($posts,0,$postCount/2);
-      $rCol = array_slice($posts,$postCount/2); ?>
 
-      <div class="columns four alpha">
-        <?php foreach($lCol as $post){
-          setup_postdata($post); ?>
+      <?php if(is_user_logged_in()){ ?>
 
-          <div class="KCPL_single-featured">
-             <span class="title KCPL_background-red"> </span>
-             <div class="gutter">
-                <div class="entry">
-                   <span class="entry-title"><?php the_title(); ?></span>
-                   <div class="entry-excerpt">
-                       <?php the_excerpt(); ?>
-                   </div>
-                   <a href="<?php the_permalink(); ?>" class="KCPL_readmore">Join ≈</a>
-                </div>
+        <?php
+        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+        $posts = get_posts(array(
+          'post_type' => 'kcpl_oc-discussion',
+          'paged'     => $paged,
+        ));
+        $postCount = count($posts);
+        $lCol = array_slice($posts,0,$postCount/2);
+        $rCol = array_slice($posts,$postCount/2); ?>
+
+        <div class="columns four alpha">
+          <?php foreach($lCol as $post){
+            setup_postdata($post); ?>
+
+            <div class="KCPL_single-featured">
+               <span class="title KCPL_background-red"> </span>
+               <div class="gutter">
+                  <div class="entry">
+                     <span class="entry-title"><?php the_title(); ?></span>
+                     <div class="entry-excerpt">
+                         <?php the_excerpt(); ?>
+                     </div>
+                     <a href="<?php the_permalink(); ?>" class="KCPL_readmore">Join ≈</a>
+                  </div>
+               </div>
              </div>
-           </div>
 
-        <?php } ?>
-      </div>
-      <div class="columns four omega">
-        <?php foreach($rCol as $post){
-          setup_postdata($post); ?>
+          <?php } ?>
+        </div>
+        <div class="columns four omega">
+          <?php foreach($rCol as $post){
+            setup_postdata($post); ?>
 
-          <div class="KCPL_single-featured">
-             <span class="title KCPL_background-red"> </span>
-             <div class="gutter">
-                <div class="entry">
-                   <span class="entry-title"><?php the_title(); ?></span>
-                   <div class="entry-excerpt">
-                       <?php the_excerpt(); ?>
-                   </div>
-                   <a href="<?php the_permalink(); ?>" class="KCPL_readmore">Join ≈</a>
-                </div>
+            <div class="KCPL_single-featured">
+               <span class="title KCPL_background-red"> </span>
+               <div class="gutter">
+                  <div class="entry">
+                     <span class="entry-title"><?php the_title(); ?></span>
+                     <div class="entry-excerpt">
+                         <?php the_excerpt(); ?>
+                     </div>
+                     <a href="<?php the_permalink(); ?>" class="KCPL_readmore">Join ≈</a>
+                  </div>
+               </div>
              </div>
-           </div>
 
-        <?php } ?>
-      </div>
-
+          <?php } ?>
+        </div>
+      <?php }else{
+        echo "<p>You must be logged in to access the Online Community</p>
+              <div class='KCPL_listing4'>
+                <span class='title KCPL_background-red'>Log In</span>
+                <div class='gutter'>";
+        $options = get_site_option('kcpl-oc');
+        $args = array(
+          'echo'           => true,
+          'redirect'       => site_url( $_SERVER['REQUEST_URI'] ),
+          'form_id'        => 'loginform',
+          'label_username' => __( 'Card Number' ),
+          'label_password' => __( 'PIN Number' ),
+          'label_log_in'   => __( 'Log In' ),
+          'id_username'    => 'user_login',
+          'id_password'    => 'user_pass',
+          'id_remember'    => 'rememberme',
+          'id_submit'      => 'wp-submit',
+          'remember'       => false,
+          'value_username' => NULL,
+          'value_remember' => false
+        ); ?>
+        <?php wp_login_form( $args );
+      }
+      echo "</div></div>"; ?>
 
 
     </div>

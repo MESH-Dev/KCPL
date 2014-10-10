@@ -6028,12 +6028,23 @@ form#kcpl_oc-booklist label {
 
 /* AUTHENTICATION!!! */
 /* line 1748, assets/sass/_elements.scss */
+#loginform {
+  margin: 0;
+  padding: 0;
+}
+/* line 1752, assets/sass/_elements.scss */
+#loginform input[type="text"],
+#loginform input[type="password"] {
+  margin: 0;
+}
+
+/* line 1757, assets/sass/_elements.scss */
 #authContainer {
   position: relative;
   width: 100%;
   min-height: 300px;
 }
-/* line 1750, assets/sass/_elements.scss */
+/* line 1759, assets/sass/_elements.scss */
 #authContainer > * {
   transition: 0.2s opacity;
   opacity: 0;
@@ -6046,29 +6057,29 @@ form#kcpl_oc-booklist label {
   left: 0;
   right: 0;
 }
-/* line 1762, assets/sass/_elements.scss */
+/* line 1771, assets/sass/_elements.scss */
 #authContainer.active #authContainer-load {
   opacity: 1;
   z-index: 5;
 }
-/* line 1767, assets/sass/_elements.scss */
+/* line 1776, assets/sass/_elements.scss */
 #authContainer #authContainer-load img {
   margin: 0 auto 20px;
   display: block;
 }
-/* line 1772, assets/sass/_elements.scss */
+/* line 1781, assets/sass/_elements.scss */
 #authContainer.success #authContainer-success {
   opacity: 1;
   z-index: 5;
 }
-/* line 1779, assets/sass/_elements.scss */
+/* line 1788, assets/sass/_elements.scss */
 #authContainer.fail #authContainer-fail {
   opacity: 1;
   z-index: 5;
 }
 
 /* Mobile Overrides */
-/* line 1790, assets/sass/_elements.scss */
+/* line 1799, assets/sass/_elements.scss */
 #mobileMenuTrigger, #mobileSearchTrigger, #mobileWrap {
   display: none;
 }

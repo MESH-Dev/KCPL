@@ -17,16 +17,39 @@ $color = get_field('section_color',$pID);
     <?php include_once(locate_template('partials/module-sidebar-nav.php')); ?>
 
     <div class="columns eight omega" id="contentPrimary">
-
-      <div class="KCPL_listing4">
-        <span class="title KCPL_background-red">Most Recommended Books</span>
-        <div class="gutter">
-          <?php KCPL_OC_recommended::getMostRecommended(4); ?>
+      <?php if(is_user_logged_in()){ ?>
+        <div class="KCPL_listing4">
+          <span class="title KCPL_background-red">Most Recommended Books</span>
+          <div class="gutter">
+            <?php KCPL_OC_recommended::getMostRecommended(4); ?>
+          </div>
         </div>
-      </div>
 
-      <?php KCPL_OC_recommended::searchRecommended(10,"Search Recommended Books"); ?>
-
+        <?php KCPL_OC_recommended::searchRecommended(10,"Search Recommended Books"); ?>
+      <?php }else{
+        echo "<p>You must be logged in to access the Online Community</p>
+              <div class='KCPL_listing4'>
+                <span class='title KCPL_background-red'>Log In</span>
+                <div class='gutter'>";
+        $options = get_site_option('kcpl-oc');
+        $args = array(
+          'echo'           => true,
+          'redirect'       => site_url( $_SERVER['REQUEST_URI'] ),
+          'form_id'        => 'loginform',
+          'label_username' => __( 'Card Number' ),
+          'label_password' => __( 'PIN Number' ),
+          'label_log_in'   => __( 'Log In' ),
+          'id_username'    => 'user_login',
+          'id_password'    => 'user_pass',
+          'id_remember'    => 'rememberme',
+          'id_submit'      => 'wp-submit',
+          'remember'       => false,
+          'value_username' => NULL,
+          'value_remember' => false
+        ); ?>
+        <?php wp_login_form( $args );
+      }
+      echo "</div></div>"; ?>
     </div>
 
   </div>
