@@ -12,6 +12,7 @@ class KCPL_branch_info extends WP_Widget{
 	//Display
 	public function widget($args,$instance){
 		$title = apply_filters('widget_title',$instance['title']);
+    $page_link = $instance['page_link'];
     $mon_open    = $instance['mon_open'];
     $mon_close   = $instance['mon_close'];
     $tues_open    = $instance['tues_open'];
@@ -84,13 +85,17 @@ class KCPL_branch_info extends WP_Widget{
     //output
     echo "<div class='footer-location-widget'>";
     if (!empty($title)){
-      echo $args['before_title'] . $title . $args['after_title'];
+      echo $args['before_title'] . "<a href='".$page_link."' title='". $title . "'>". $title . "</a>". $args['after_title'];
     }
 
+ 
+    $directions = preg_replace( "/\r|\n/", " ", $address);
+    
+ 
     echo   "<div class='hour-cont'>
               <span class='hours'> $openhour - $closehour</span> <br><span class='$class'>$flag</span>
             </div>
-            <span class='address'>$address <br>$phone</span>
+            <span class='address'><a href='https://www.google.com/maps/place/".$directions."' target='_blank' title='directions' />$address</a><br>$phone</span>
           </div>";
 
     //after widget
@@ -101,6 +106,7 @@ class KCPL_branch_info extends WP_Widget{
 	public function form($instance){
 		if(isset($instance['title'])){
 			$title   = $instance['title'];
+      $page_link = $instance['page_link'];
       $mon_open    = $instance['mon_open'];
       $mon_close   = $instance['mon_close'];
       $tues_open    = $instance['tues_open'];
@@ -123,6 +129,10 @@ class KCPL_branch_info extends WP_Widget{
   		<label for="<?php echo $this->get_field_id('title'); ?>">Branch Name</label>
   		<input class="widefat KCPL_branch_info-text" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>">
 		</p>
+    <p>
+      <label for="<?php echo $this->get_field_id('page_link'); ?>">Page Link</label>
+      <input class="widefat KCPL_branch_info-text" id="<?php echo $this->get_field_id('page_link'); ?>" name="<?php echo $this->get_field_name('page_link'); ?>" type="text" value="<?php echo esc_attr($page_link); ?>">
+    </p>
     <p>
       <label for="<?php echo $this->get_field_id('hours'); ?>">Monday Hours</label><br>
       <span><em>Open:</em> </span><input class="widefat KCPL_branch_info-time" id="<?php echo $this->get_field_id('mon_open'); ?>" name="<?php echo $this->get_field_name('mon_open'); ?>" type="time" value="<?php echo esc_attr($mon_open); ?>"><br>
@@ -168,6 +178,7 @@ class KCPL_branch_info extends WP_Widget{
 	public function update( $new_instance, $old_instance ) {
 		$instance = array();
 		$instance['title'] = (!empty($new_instance['title'])) ? strip_tags($new_instance['title']):'';
+    $instance['page_link'] = (!empty($new_instance['page_link'])) ? strip_tags($new_instance['page_link']):'';
     $instance['mon_open'] = (!empty($new_instance['mon_open'])) ? strip_tags($new_instance['mon_open']):'';
     $instance['mon_close'] = (!empty($new_instance['mon_close'])) ? strip_tags($new_instance['mon_close']):'';
     $instance['tues_open'] = (!empty($new_instance['tues_open'])) ? strip_tags($new_instance['tues_open']):'';
