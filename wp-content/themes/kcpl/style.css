@@ -5471,7 +5471,7 @@ a > .KCPL_horz-single {
   border: 1px solid #000;
   padding: 4px 4px;
   border-radius: 2px;
-  margin: 0 2px 0 33px;
+  margin: 0 2px 0 0px;
   position: relative;
 }
 /* line 1605, assets/sass/_elements.scss */
@@ -5503,7 +5503,7 @@ a > .KCPL_horz-single {
 }
 /* line 1609, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar .KCPL_Calendar_radio-cont {
-  margin: 6px 0;
+  margin: 6px 0 6px 33px;
 }
 /* line 1610, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar span.KCPL_Calendar_sidebar-dropdown {
