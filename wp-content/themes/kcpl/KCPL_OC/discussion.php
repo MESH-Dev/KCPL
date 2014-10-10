@@ -5,7 +5,8 @@ global $post;
 $pID = KCPL_get_highest_ancestor($post);
 $sidebar = KCPL_get_sidebar($pID);
 $color = get_field('section_color',$pID);
-$settings = get_option('kcpl-oc'); ?>
+$settings = get_option('kcpl-oc');
+$color = 'red'; ?>
 
 <?php include_once(locate_template('partials/module-breadcrumbs.php')); ?>
 

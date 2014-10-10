@@ -7,7 +7,7 @@ $sidebar = KCPL_get_sidebar($pID);
 $color = get_field('section_color',$pID);
 $bid = $_GET['bid'];
 $np = get_post($bid);
-
+$color = 'red';
 ?>
 
 
