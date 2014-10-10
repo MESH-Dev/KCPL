@@ -9,7 +9,6 @@ $settings = get_option('kcpl-oc');
 $color = 'red'; ?>
 
 <?php include_once(locate_template('partials/module-breadcrumbs.php')); ?>
-kjh
 <div id="content">
   <div class="container">
     <div class="columns four alpha" id="contentSecondary">
