@@ -97,11 +97,20 @@
               <div id="header-newsletter">
                 <b></b><span>Newsletter</span>
               </div>
-              <div id="header-login">
-                <a href="<?php echo get_bloginfo('url') ?>/login">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/login.png"/>
-                </a>
-              </div>
+
+              <?php if(is_user_logged_in()){ ?>
+                <div id="header-login">
+                  <a href="<?php echo wp_logout_url( home_url() ); ?>">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logout.png"/>
+                  </a>
+                </div>
+              <?php }else{ ?>
+                <div id="header-login">
+                  <a href="<?php echo get_bloginfo('url') ?>/login">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/login.png"/>
+                  </a>
+                </div>
+              <?php } ?>
             </div>
         </div>
       </div>
