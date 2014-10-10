@@ -98,7 +98,9 @@
                 <b></b><span>Newsletter</span>
               </div>
               <div id="header-login">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/login.png"/>
+                <a href="<?php echo get_bloginfo('url') ?>/login">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/login.png"/>
+                </a>
               </div>
             </div>
         </div>

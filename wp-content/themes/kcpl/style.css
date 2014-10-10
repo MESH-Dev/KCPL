@@ -1749,14 +1749,24 @@ header #header-nav ul#main_nav > li > ul > li > ul {
   padding: 25px 35px;
 }
 
-/* line 66, assets/sass/_layout.scss */
+/* line 68, assets/sass/_layout.scss */
+.login-form form {
+  margin: 0;
+  padding: 0;
+}
+/* line 69, assets/sass/_layout.scss */
+.login-form input[type="text"], .login-form input[type="password"] {
+  margin: 10px 0;
+}
+
+/* line 73, assets/sass/_layout.scss */
 footer {
   background: #c5c5c5;
   float: left;
   width: 100%;
 }
 
-/* line 67, assets/sass/_layout.scss */
+/* line 74, assets/sass/_layout.scss */
 footer {
   /*
     Footer Location Widget
@@ -1772,38 +1782,38 @@ footer {
     </div>
   */
 }
-/* line 71, assets/sass/_layout.scss */
+/* line 78, assets/sass/_layout.scss */
 footer .container > .gutter {
   padding: 30px 0px;
 }
-/* line 72, assets/sass/_layout.scss */
+/* line 79, assets/sass/_layout.scss */
 footer .title {
   font: bold 13px/18px "nimbus-sans";
   text-transform: uppercase;
   color: #323333;
   display: block;
 }
-/* line 73, assets/sass/_layout.scss */
+/* line 80, assets/sass/_layout.scss */
 footer .columns {
   min-height: 10px;
 }
-/* line 88, assets/sass/_layout.scss */
+/* line 95, assets/sass/_layout.scss */
 footer .footer-location-widget {
   color: #7d7d7d;
   margin: 0 0 18px;
 }
-/* line 90, assets/sass/_layout.scss */
+/* line 97, assets/sass/_layout.scss */
 footer .footer-location-widget .hour-cont {
   display: block;
 }
-/* line 91, assets/sass/_layout.scss */
+/* line 98, assets/sass/_layout.scss */
 footer .footer-location-widget .hours {
   font: 13px/12px "minion-pro";
   font-style: italic;
   color: #323333;
   letter-spacing: 0.035em;
 }
-/* line 92, assets/sass/_layout.scss */
+/* line 99, assets/sass/_layout.scss */
 footer .footer-location-widget .open, footer .footer-location-widget .closed {
   font: 13px/12px "nimbus-sans-condensed";
   color: #323333;
@@ -1811,11 +1821,11 @@ footer .footer-location-widget .open, footer .footer-location-widget .closed {
   margin: 0px;
   word-spacing: 0.05em;
 }
-/* line 93, assets/sass/_layout.scss */
+/* line 100, assets/sass/_layout.scss */
 footer .footer-location-widget .open {
   color: #f65446;
 }
-/* line 94, assets/sass/_layout.scss */
+/* line 101, assets/sass/_layout.scss */
 footer .footer-location-widget .address {
   font: 12px/18px "minion-pro";
   display: block;
@@ -1823,16 +1833,16 @@ footer .footer-location-widget .address {
   letter-spacing: 0.06em;
   word-spacing: 0.015em;
 }
-/* line 97, assets/sass/_layout.scss */
+/* line 104, assets/sass/_layout.scss */
 footer #social_navCont {
   display: block;
   margin: 15px 0 0;
 }
-/* line 99, assets/sass/_layout.scss */
+/* line 106, assets/sass/_layout.scss */
 footer #social_navCont ul {
   width: 170px;
 }
-/* line 100, assets/sass/_layout.scss */
+/* line 107, assets/sass/_layout.scss */
 footer #social_navCont ul li {
   color: #fff;
   list-style-type: none;
@@ -1844,7 +1854,7 @@ footer #social_navCont ul li {
   margin: 0 20px 20px 0;
   background: #137cc1;
 }
-/* line 101, assets/sass/_layout.scss */
+/* line 108, assets/sass/_layout.scss */
 footer #social_navCont ul li:before {
   position: absolute;
   top: 32%;
@@ -1852,25 +1862,25 @@ footer #social_navCont ul li:before {
   font-size: 19px;
   z-index: 1;
 }
-/* line 102, assets/sass/_layout.scss */
+/* line 109, assets/sass/_layout.scss */
 footer #social_navCont ul li.facebook {
   background: url(assets/img/sprites.png) 0px -50px no-repeat;
   height: 35px;
   width: 35px;
 }
-/* line 103, assets/sass/_layout.scss */
+/* line 110, assets/sass/_layout.scss */
 footer #social_navCont ul li.twitter {
   background: url(assets/img/sprites.png) -164px -50px no-repeat;
   height: 35px;
   width: 35px;
 }
-/* line 106, assets/sass/_layout.scss */
+/* line 113, assets/sass/_layout.scss */
 footer #social_navCont ul li.pinterest {
   background: url(assets/img/sprites.png) -42px -50px no-repeat;
   height: 35px;
   width: 35px;
 }
-/* line 108, assets/sass/_layout.scss */
+/* line 115, assets/sass/_layout.scss */
 footer #social_navCont ul li a {
   color: transparent;
   display: block;
@@ -1879,21 +1889,21 @@ footer #social_navCont ul li a {
   position: absolute;
   z-index: 2;
 }
-/* line 109, assets/sass/_layout.scss */
+/* line 116, assets/sass/_layout.scss */
 footer #social_navCont ul ul {
   display: none;
 }
-/* line 112, assets/sass/_layout.scss */
+/* line 119, assets/sass/_layout.scss */
 footer #footer-donate {
   color: #323333;
   font: bold 12px/12px "minion-pro";
 }
-/* line 114, assets/sass/_layout.scss */
+/* line 121, assets/sass/_layout.scss */
 footer #footer-donate span {
   margin: 3px 0 18px;
   display: block;
 }
-/* line 115, assets/sass/_layout.scss */
+/* line 122, assets/sass/_layout.scss */
 footer #footer-donate a {
   text-align: center;
   padding: 7px 10px 8px;
