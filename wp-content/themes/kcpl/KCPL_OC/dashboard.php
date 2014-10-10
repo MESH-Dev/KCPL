@@ -76,7 +76,7 @@ $color = 'red';
           }
         ?>
 
-        <a href="<?php echo get_post_type_archive_link('kcpl_oc-discussion'); ?>">
+        <a href="<?php echo get_permalink($settings['discussions']); ?>">
           <div class="KCPL_horz-multi KCPL_background-red">
             <div class="gutter">
                <span>Join Discussions</span>
