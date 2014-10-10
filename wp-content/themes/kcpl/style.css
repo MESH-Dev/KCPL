@@ -2371,7 +2371,7 @@ table td:last-child {
 }
 /* line 220, assets/sass/_elements.scss */
 #bannerHome .gutter {
-  padding: 0 0 0 0px;
+  padding: 0 20px 0 0px;
 }
 /* line 221, assets/sass/_elements.scss */
 #bannerHome .container {
@@ -6127,8 +6127,25 @@ form#kcpl_oc-booklist label {
   z-index: 5;
 }
 
-/* Mobile Overrides */
+/* Search Results */
 /* line 1799, assets/sass/_elements.scss */
+#searchResults {
+  text-align: center;
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+/* line 1805, assets/sass/_elements.scss */
+#searchResults span {
+  font: bold 41px/41px "nimbus-sans-condensed";
+  text-transform: uppercase;
+  margin: 0;
+  color: white;
+}
+
+/* Mobile Overrides */
+/* line 1815, assets/sass/_elements.scss */
 #mobileMenuTrigger, #mobileSearchTrigger, #mobileWrap {
   display: none;
 }

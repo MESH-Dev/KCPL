@@ -1,9 +1,10 @@
 <div id="KCPL_search" class="condensed">
   <div class="gutter clearfix">
-    <form>
+    <form method="get" id="searchForm" action="http://kana.ent.sirsi.net/client/embedded.search/http://kana.ent.sirsi.net/client/default">
+      <input type="hidden" name="ln" value="en_US">
       <div id="searchField">
         <i class="fa fa-lg fa-search searchicon"></i>
-        <input type="search" placeholder="Search the collection" />
+        <input type="search" id="q" name="q" placeholder="Search the collection" />
       </div>
       <div id="search-params">
         <div id="type">
@@ -11,7 +12,7 @@
             Search or Browse by
           </span>
           <span class="bottom">
-            <a class="media-active active">Media Type</a>   
+            <a class="media-active active">Media Type</a>
             <a class="audience-active">Audience</a>
           </span>
         </div>
