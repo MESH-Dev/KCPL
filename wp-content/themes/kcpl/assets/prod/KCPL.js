@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){
   //global functions
-  try{Typekit.load();}catch(e){}
+  // try{Typekit.load();}catch(e){}
 
 
   //header functions

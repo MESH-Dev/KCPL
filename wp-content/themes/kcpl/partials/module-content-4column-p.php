@@ -14,14 +14,18 @@
   // array
   echo "<div class='columns eight alpha'>";
 
+  $count = 0;
+
   for($x=0; $x < $len; $x++){
+
+    $count = $count + 1;
 
     if($x%9 == 0){
       echo "<div class='paginate p-". $p ."'>";
 
       if($p == 1)
         $y = 0;
-      else 
+      else
          $y = ($p*10)-10;
 
       $stop = $y+10;
@@ -31,7 +35,7 @@
       for($y; $y < $stop; $y++){
         if($y%2 == 0){
           if($y%10 == 0){
-            echo "<div class='columns four alpha'>";  
+            echo "<div class='columns four alpha'>";
           } ?>
 
         <?php if($contentArr[$y]['single_featured_item_description'] !=''){ ?>
@@ -49,7 +53,7 @@
                 <div class="entry-excerpt">
                     <?php echo $contentArr[$y]['single_featured_item_description']; ?>
                 </div>
-                 <?php if($contentArr[$y]['single_featured_item_link_url'] !=''){ ?> 
+                 <?php if($contentArr[$y]['single_featured_item_link_url'] !=''){ ?>
               <a href="<?php echo $contentArr[$y]['single_featured_item_link_url']; ?>" class="KCPL_readmore"><?php echo $contentArr[$y]['single_featured_item_link_text']; ?></a>
               <?php }?>
              </div>
@@ -61,15 +65,15 @@
           if($ctr!=0 && $ctr%8 == 0){
             echo "</div>";
           }
-        } //end left odd loop 
+        } //end left odd loop
         $ctr++;
-      }//end left 10's loop 
+      }//end left 10's loop
 
 
 
       if($p == 1)
         $y = 0;
-      else 
+      else
          $y = ($p*10)-10;
 
       $stop = $y+10;
@@ -97,7 +101,7 @@
                 <div class="entry-excerpt">
                     <?php echo $contentArr[$y]['single_featured_item_description']; ?>
                 </div>
-                 <?php if($contentArr[$y]['single_featured_item_link_url'] !=''){ ?> 
+                 <?php if($contentArr[$y]['single_featured_item_link_url'] !=''){ ?>
               <a href="<?php echo $contentArr[$y]['single_featured_item_link_url']; ?>" class="KCPL_readmore"><?php echo $contentArr[$y]['single_featured_item_link_text']; ?></a>
               <?php }?>
              </div>
@@ -110,10 +114,10 @@
             echo "</div>";
           }
 
-        }//end right odd loop 
+        }//end right odd loop
         $ctr++;
       }//End loop of 10's
- 
+
 
       $p = $p + 1; // increase first set
       echo "</div>"; //end of pagination set
@@ -124,10 +128,15 @@
 
  ?>
 </div>
- 
+
 <div class="clearfix"></div>
+
+    <?php if($count > 10) { ?>
+
     <div class="page-numbers-container">
     </div>
+
+    <?php } ?>
 
 <!--
         <div class="KCPL_single-featured <?php if($contentArr[$y]['single_featured_item_image'] != false){echo 'fimage';} ?>">
@@ -144,7 +153,7 @@
                 <div class="entry-excerpt">
                     <?php echo $contentArr[$y]['single_featured_item_description']; ?>
                 </div>
-                 <?php if($contentArr[$y]['single_featured_item_link_url'] !=''){ ?> 
+                 <?php if($contentArr[$y]['single_featured_item_link_url'] !=''){ ?>
               <a href="<?php echo $contentArr[$y]['single_featured_item_link_url']; ?>" class="KCPL_readmore"><?php echo $contentArr[$y]['single_featured_item_link_text']; ?></a>
               <?php }?>
              </div>
@@ -156,4 +165,3 @@
     </div>
 
 -->
- 
