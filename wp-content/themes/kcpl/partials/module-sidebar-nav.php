@@ -3,7 +3,6 @@
 
     $posttest = get_post($pID);
     $slug = $posttest->post_name;
-    var_dump($slug);
     if (($slug == 'collection') || ($slug == 'events-classes') || ($slug == 'learning-lab') || ($slug == 'community') || $slug == 'online-community')
         {
           $nav = 'main_nav';
