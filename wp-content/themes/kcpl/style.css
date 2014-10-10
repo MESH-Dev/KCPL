@@ -2371,7 +2371,7 @@ table td:last-child {
 }
 /* line 220, assets/sass/_elements.scss */
 #bannerHome .gutter {
-  padding: 0 0 0 0px;
+  padding: 0 20px 0 0px;
 }
 /* line 221, assets/sass/_elements.scss */
 #bannerHome .container {
