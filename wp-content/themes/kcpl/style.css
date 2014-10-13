@@ -39,7 +39,7 @@ blockquote, q {
   quotes: none;
 }
 
-/* line 19, assets/sass/_reset.scss */
+/* line 18, assets/sass/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
@@ -359,9 +359,15 @@ em {
 ================================================== */
 /* #Forms
 ================================================== */
+/* line 127, assets/sass/_base.scss */
+input[type="submit"]:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 /* #Images
 ================================================== */
-/* line 130, assets/sass/_base.scss */
+/* line 132, assets/sass/_base.scss */
 img {
   max-width: 100%;
   height: auto;
@@ -369,60 +375,60 @@ img {
 
 /* WordPress Image Styles
    ========================================================================== */
-/* line 135, assets/sass/_base.scss */
+/* line 137, assets/sass/_base.scss */
 .alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 136, assets/sass/_base.scss */
+/* line 138, assets/sass/_base.scss */
 .aligncenter, div.aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 137, assets/sass/_base.scss */
+/* line 139, assets/sass/_base.scss */
 .alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 138, assets/sass/_base.scss */
+/* line 140, assets/sass/_base.scss */
 .alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 139, assets/sass/_base.scss */
+/* line 141, assets/sass/_base.scss */
 .aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 140, assets/sass/_base.scss */
+/* line 142, assets/sass/_base.scss */
 a img.alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 141, assets/sass/_base.scss */
+/* line 143, assets/sass/_base.scss */
 a img.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 142, assets/sass/_base.scss */
+/* line 144, assets/sass/_base.scss */
 a img.alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 143, assets/sass/_base.scss */
+/* line 145, assets/sass/_base.scss */
 a img.aligncenter {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 144, assets/sass/_base.scss */
+/* line 146, assets/sass/_base.scss */
 .wp-caption {
   background: #fff;
   border: 1px solid #f0f0f0;
@@ -431,22 +437,22 @@ a img.aligncenter {
   text-align: center;
 }
 
-/* line 145, assets/sass/_base.scss */
+/* line 147, assets/sass/_base.scss */
 .wp-caption.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 146, assets/sass/_base.scss */
+/* line 148, assets/sass/_base.scss */
 .wp-caption.alignleft {
   margin: 5px 20px 20px 0;
 }
 
-/* line 147, assets/sass/_base.scss */
+/* line 149, assets/sass/_base.scss */
 .wp-caption.alignright {
   margin: 5px 0 20px 20px;
 }
 
-/* line 148, assets/sass/_base.scss */
+/* line 150, assets/sass/_base.scss */
 .wp-caption img {
   border: 0 none;
   height: auto;
@@ -456,7 +462,7 @@ a img.aligncenter {
   width: auto;
 }
 
-/* line 149, assets/sass/_base.scss */
+/* line 151, assets/sass/_base.scss */
 .wp-caption p.wp-caption-text {
   font-size: 11px;
   line-height: 17px;
@@ -1055,229 +1061,257 @@ blockquote {
   .container .offset-by-one {
     padding-left: 66px;
   }
+}
+@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
+  /* line 169, assets/sass/_grid.scss */
+  .container .offset-by-one {
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width: 1023px) and (max-width: 479px) {
+  /* line 169, assets/sass/_grid.scss */
+  .container .offset-by-one {
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width: 1023px) {
   /* line 170, assets/sass/_grid.scss */
   .container .offset-by-two {
     padding-left: 132px;
   }
+}
+@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
+  /* line 170, assets/sass/_grid.scss */
+  .container .offset-by-two {
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width: 1023px) and (max-width: 479px) {
+  /* line 170, assets/sass/_grid.scss */
+  .container .offset-by-two {
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width: 1023px) {
   /* line 171, assets/sass/_grid.scss */
   .container .offset-by-three {
     padding-left: 198px;
   }
+}
+@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
+  /* line 171, assets/sass/_grid.scss */
+  .container .offset-by-three {
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width: 1023px) and (max-width: 479px) {
+  /* line 171, assets/sass/_grid.scss */
+  .container .offset-by-three {
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width: 1023px) {
   /* line 172, assets/sass/_grid.scss */
   .container .offset-by-four {
     padding-left: 264px;
   }
+}
+@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
+  /* line 172, assets/sass/_grid.scss */
+  .container .offset-by-four {
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width: 1023px) and (max-width: 479px) {
+  /* line 172, assets/sass/_grid.scss */
+  .container .offset-by-four {
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width: 1023px) {
   /* line 173, assets/sass/_grid.scss */
   .container .offset-by-five {
     padding-left: 330px;
   }
+}
+@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
+  /* line 173, assets/sass/_grid.scss */
+  .container .offset-by-five {
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width: 1023px) and (max-width: 479px) {
+  /* line 173, assets/sass/_grid.scss */
+  .container .offset-by-five {
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width: 1023px) {
   /* line 174, assets/sass/_grid.scss */
   .container .offset-by-six {
     padding-left: 396px;
   }
+}
+@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
+  /* line 174, assets/sass/_grid.scss */
+  .container .offset-by-six {
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width: 1023px) and (max-width: 479px) {
+  /* line 174, assets/sass/_grid.scss */
+  .container .offset-by-six {
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width: 1023px) {
   /* line 175, assets/sass/_grid.scss */
   .container .offset-by-seven {
     padding-left: 462px;
   }
+}
+@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
+  /* line 175, assets/sass/_grid.scss */
+  .container .offset-by-seven {
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width: 1023px) and (max-width: 479px) {
+  /* line 175, assets/sass/_grid.scss */
+  .container .offset-by-seven {
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width: 1023px) {
   /* line 176, assets/sass/_grid.scss */
   .container .offset-by-eight {
     padding-left: 528px;
   }
+}
+@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
+  /* line 176, assets/sass/_grid.scss */
+  .container .offset-by-eight {
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width: 1023px) and (max-width: 479px) {
+  /* line 176, assets/sass/_grid.scss */
+  .container .offset-by-eight {
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width: 1023px) {
   /* line 177, assets/sass/_grid.scss */
   .container .offset-by-nine {
     padding-left: 594px;
   }
+}
+@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
+  /* line 177, assets/sass/_grid.scss */
+  .container .offset-by-nine {
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width: 1023px) and (max-width: 479px) {
+  /* line 177, assets/sass/_grid.scss */
+  .container .offset-by-nine {
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width: 1023px) {
   /* line 178, assets/sass/_grid.scss */
   .container .offset-by-ten {
     padding-left: 660px;
   }
+}
+@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
+  /* line 178, assets/sass/_grid.scss */
+  .container .offset-by-ten {
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width: 1023px) and (max-width: 479px) {
+  /* line 178, assets/sass/_grid.scss */
+  .container .offset-by-ten {
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width: 1023px) {
   /* line 179, assets/sass/_grid.scss */
   .container .offset-by-eleven {
     padding-left: 726px;
   }
+}
+@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
+  /* line 179, assets/sass/_grid.scss */
+  .container .offset-by-eleven {
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width: 1023px) and (max-width: 479px) {
+  /* line 179, assets/sass/_grid.scss */
+  .container .offset-by-eleven {
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width: 1023px) {
   /* line 180, assets/sass/_grid.scss */
   .container .offset-by-twelve {
     padding-left: 792px;
   }
+}
+@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
+  /* line 180, assets/sass/_grid.scss */
+  .container .offset-by-twelve {
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width: 1023px) and (max-width: 479px) {
+  /* line 180, assets/sass/_grid.scss */
+  .container .offset-by-twelve {
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width: 1023px) {
   /* line 181, assets/sass/_grid.scss */
   .container .offset-by-thirteen {
     padding-left: 858px;
   }
+}
+@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
+  /* line 181, assets/sass/_grid.scss */
+  .container .offset-by-thirteen {
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width: 1023px) and (max-width: 479px) {
+  /* line 181, assets/sass/_grid.scss */
+  .container .offset-by-thirteen {
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width: 1023px) {
   /* line 182, assets/sass/_grid.scss */
   .container .offset-by-fourteen {
     padding-left: 924px;
   }
+}
+@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
+  /* line 182, assets/sass/_grid.scss */
+  .container .offset-by-fourteen {
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width: 1023px) and (max-width: 479px) {
+  /* line 182, assets/sass/_grid.scss */
+  .container .offset-by-fourteen {
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width: 1023px) {
   /* line 183, assets/sass/_grid.scss */
   .container .offset-by-fifteen {
     padding-left: 990px;
-  }
-}
-@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 169, assets/sass/_grid.scss */
-  .container .offset-by-one {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (max-width: 479px) {
-  /* line 169, assets/sass/_grid.scss */
-  .container .offset-by-one {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 170, assets/sass/_grid.scss */
-  .container .offset-by-two {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (max-width: 479px) {
-  /* line 170, assets/sass/_grid.scss */
-  .container .offset-by-two {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 171, assets/sass/_grid.scss */
-  .container .offset-by-three {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (max-width: 479px) {
-  /* line 171, assets/sass/_grid.scss */
-  .container .offset-by-three {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 172, assets/sass/_grid.scss */
-  .container .offset-by-four {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (max-width: 479px) {
-  /* line 172, assets/sass/_grid.scss */
-  .container .offset-by-four {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 173, assets/sass/_grid.scss */
-  .container .offset-by-five {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (max-width: 479px) {
-  /* line 173, assets/sass/_grid.scss */
-  .container .offset-by-five {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 174, assets/sass/_grid.scss */
-  .container .offset-by-six {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (max-width: 479px) {
-  /* line 174, assets/sass/_grid.scss */
-  .container .offset-by-six {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 175, assets/sass/_grid.scss */
-  .container .offset-by-seven {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (max-width: 479px) {
-  /* line 175, assets/sass/_grid.scss */
-  .container .offset-by-seven {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 176, assets/sass/_grid.scss */
-  .container .offset-by-eight {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (max-width: 479px) {
-  /* line 176, assets/sass/_grid.scss */
-  .container .offset-by-eight {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 177, assets/sass/_grid.scss */
-  .container .offset-by-nine {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (max-width: 479px) {
-  /* line 177, assets/sass/_grid.scss */
-  .container .offset-by-nine {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 178, assets/sass/_grid.scss */
-  .container .offset-by-ten {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (max-width: 479px) {
-  /* line 178, assets/sass/_grid.scss */
-  .container .offset-by-ten {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 179, assets/sass/_grid.scss */
-  .container .offset-by-eleven {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (max-width: 479px) {
-  /* line 179, assets/sass/_grid.scss */
-  .container .offset-by-eleven {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 180, assets/sass/_grid.scss */
-  .container .offset-by-twelve {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (max-width: 479px) {
-  /* line 180, assets/sass/_grid.scss */
-  .container .offset-by-twelve {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 181, assets/sass/_grid.scss */
-  .container .offset-by-thirteen {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (max-width: 479px) {
-  /* line 181, assets/sass/_grid.scss */
-  .container .offset-by-thirteen {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 182, assets/sass/_grid.scss */
-  .container .offset-by-fourteen {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (max-width: 479px) {
-  /* line 182, assets/sass/_grid.scss */
-  .container .offset-by-fourteen {
-    padding-left: 0px;
   }
 }
 @media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
@@ -1307,11 +1341,11 @@ blockquote {
     margin-right: 0px;
     /* Offsets */
   }
-  /* line 215, assets/sass/_grid.scss */
+  /* line 198, assets/sass/_grid.scss */
   .container .columns.one, .container .columns.two, .container .columns.three, .container .columns.four, .container .columns.five, .container .columns.six, .container .columns.seven, .container .columns.eight, .container .columns.nine, .container .columns.ten, .container .columns.eleven, .container .columns.twelve, .container .columns.thirteen, .container .columns.fourteen, .container .columns.fifteen, .container .columns.sixteen, .container .columns.one-third, .container .columns.two-thirds, .container .column.one, .container .column.two, .container .column.three, .container .column.four, .container .column.five, .container .column.six, .container .column.seven, .container .column.eight, .container .column.nine, .container .column.ten, .container .column.eleven, .container .column.twelve, .container .column.thirteen, .container .column.fourteen, .container .column.fifteen, .container .column.sixteen, .container .column.one-third, .container .column.two-thirds {
     width: 300px;
   }
-  /* line 232, assets/sass/_grid.scss */
+  /* line 218, assets/sass/_grid.scss */
   .container .columns .offset-by-one,
   .container .columns .offset-by-two,
   .container .columns .offset-by-three,
@@ -1391,7 +1425,7 @@ blockquote {
 
 /* Use clearfix class on parent to clear nested columns,
 or wrap each row of columns in a <div class="row"> */
-/* line 286, assets/sass/_grid.scss */
+/* line 283, assets/sass/_grid.scss */
 .clearfix:before,
 .clearfix:after,
 .row:before,
@@ -1404,13 +1438,13 @@ or wrap each row of columns in a <div class="row"> */
   height: 0;
 }
 
-/* line 294, assets/sass/_grid.scss */
+/* line 293, assets/sass/_grid.scss */
 .row:after,
 .clearfix:after {
   clear: both;
 }
 
-/* line 297, assets/sass/_grid.scss */
+/* line 296, assets/sass/_grid.scss */
 .row,
 .clearfix {
   zoom: 1;
@@ -1549,7 +1583,7 @@ header #header-util .gutter {
 /* line 25, assets/sass/_layout.scss */
 #header-util #header-extra {
   float: right;
-  width: 245px;
+  width: 180px;
 }
 
 /* line 26, assets/sass/_layout.scss */
@@ -1580,11 +1614,6 @@ header #header-util .gutter {
   margin: 23px 0 0 7px;
   float: left;
   letter-spacing: 0.045em;
-}
-
-/* line 30, assets/sass/_layout.scss */
-#header-extra #header-newsletter {
-  width: 115px;
 }
 
 /* line 31, assets/sass/_layout.scss */
@@ -1897,7 +1926,7 @@ footer #footer-donate a {
   opacity: 0.7;
 }
 
-/* line 8, assets/sass/_elements.scss */
+/* line 5, assets/sass/_elements.scss */
 input[type="button"],
 input[type="reset"],
 input[type="submit"],
@@ -2070,7 +2099,7 @@ fieldset {
   margin-bottom: 20px;
 }
 
-/* line 81, assets/sass/_elements.scss */
+/* line 75, assets/sass/_elements.scss */
 input[type="text"],
 input[type="password"],
 input[type="email"],
@@ -3671,7 +3700,7 @@ ol.homepage-callout-list > li:nth-child(4) {
   position: absolute;
   right: 20px;
   top: 60px;
-  font: bold 13px/13px "minion-pro" black;
+  font: bold 13px/13px "minion-pro" #000;
   z-index: 11;
 }
 /* line 880, assets/sass/_elements.scss */
@@ -6015,73 +6044,49 @@ form#kcpl_oc-booklist label {
 
 /* Animations */
 @-webkit-keyframes shake {
-  /* line 1734, assets/sass/_elements.scss */
   0%, 100% {
     -webkit-transform: translateX(0);
   }
-
-  /* line 1735, assets/sass/_elements.scss */
   10%, 30%, 50%, 70%, 90% {
     -webkit-transform: translateX(-10px);
   }
-
-  /* line 1736, assets/sass/_elements.scss */
   20%, 40%, 60%, 80% {
     -webkit-transform: translateX(10px);
   }
 }
-
 @keyframes shake {
-  /* line 1739, assets/sass/_elements.scss */
   0%, 100% {
     transform: translateX(0);
   }
-
-  /* line 1740, assets/sass/_elements.scss */
   10%, 30%, 50%, 70%, 90% {
     transform: translateX(-10px);
   }
-
-  /* line 1741, assets/sass/_elements.scss */
   20%, 40%, 60%, 80% {
     transform: translateX(10px);
   }
 }
-
 @-webkit-keyframes bounce {
-  /* line 1745, assets/sass/_elements.scss */
   0%, 20%, 50%, 80%, 100% {
     -webkit-transform: translateY(0);
   }
-
-  /* line 1746, assets/sass/_elements.scss */
   40% {
     -webkit-transform: translateY(-30px);
   }
-
-  /* line 1747, assets/sass/_elements.scss */
   60% {
     -webkit-transform: translateY(-15px);
   }
 }
-
 @keyframes bounce {
-  /* line 1750, assets/sass/_elements.scss */
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
   }
-
-  /* line 1751, assets/sass/_elements.scss */
   40% {
     transform: translateY(-30px);
   }
-
-  /* line 1752, assets/sass/_elements.scss */
   60% {
     transform: translateY(-15px);
   }
 }
-
 /* AUTHENTICATION!!! */
 /* line 1757, assets/sass/_elements.scss */
 #authContainer {
@@ -6132,7 +6137,7 @@ form#kcpl_oc-booklist label {
   height: 100%;
   vertical-align: middle;
 }
-/* line 1805, assets/sass/_elements.scss */
+/* line 1800, assets/sass/_elements.scss */
 #searchResults span {
   font: bold 41px/41px "nimbus-sans-condensed";
   text-transform: uppercase;
@@ -6140,8 +6145,49 @@ form#kcpl_oc-booklist label {
   color: white;
 }
 
-/* Mobile Overrides */
+/* Newsletter */
+/* line 1805, assets/sass/_elements.scss */
+#newsletter {
+  margin-top: 20px;
+}
+/* line 1806, assets/sass/_elements.scss */
+#newsletter form {
+  margin: 0;
+  padding: 0;
+}
+/* line 1807, assets/sass/_elements.scss */
+#newsletter input {
+  margin: 10px 0;
+}
+
+/* line 1810, assets/sass/_elements.scss */
+::-webkit-input-placeholder {
+  color: #555555;
+  opacity: 0.5;
+}
+
 /* line 1815, assets/sass/_elements.scss */
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #555555;
+  opacity: 0.5;
+}
+
+/* line 1820, assets/sass/_elements.scss */
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #555555;
+  opacity: 0.5;
+}
+
+/* line 1825, assets/sass/_elements.scss */
+:-ms-input-placeholder {
+  color: #555555;
+  opacity: 0.5;
+}
+
+/* Mobile Overrides */
+/* line 1832, assets/sass/_elements.scss */
 #mobileMenuTrigger, #mobileSearchTrigger, #mobileWrap {
   display: none;
 }

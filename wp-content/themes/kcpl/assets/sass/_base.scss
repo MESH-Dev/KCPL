@@ -124,6 +124,8 @@ input[type="email"]{}
 input[type="number"]{}
 input[type="submit"]{}
 
+input[type="submit"]:hover { opacity: 0.8; cursor: pointer; }
+
 
 /* #Images
 ================================================== */

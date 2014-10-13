@@ -95,7 +95,7 @@
                 <b></b><span>Search</span>
               </div>
               <div id="header-newsletter">
-                <b></b><span>Newsletter</span>
+                <a href="<?php get_bloginfo('url') ?>/newsletter"><b></b></a>
               </div>
 
               <?php if(is_user_logged_in()){ ?>
