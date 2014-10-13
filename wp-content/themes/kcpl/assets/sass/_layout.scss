@@ -22,12 +22,12 @@ header{width:100%;float:left;}
     #header-util ul#util_nav li a{color: #353535;padding: 22px 10px 11px;float: left;letter-spacing: 0.085em;min-width: 33px;}
     #header-util ul#util_nav ul{display:none;list-style:none;}
 
-    #header-util #header-extra{float:right;width:245px;}
+    #header-util #header-extra{float:right;width:180px;}
       #header-extra > *{float:left;color:#353535;font:11px/11px $nimbus;}
       #header-extra #header-search{width:80px; cursor: pointer;}
         #header-extra #header-search b{height: 17px;width: 19px;background: url(assets/img/utilSprites.png);display: block;float: left;margin: 19px 0 0 1px;}
         #header-extra #header-search span{margin: 23px 0 0 7px;float: left;letter-spacing: 0.045em;}
-      #header-extra #header-newsletter{width:115px;}
+      #header-extra #header-newsletter{}
         #header-extra #header-newsletter b{height: 17px;width: 23px;background: url(assets/img/utilSprites.png) -20px 0px;display: block;float: left;margin:17px 0 0 10px;}
         #header-extra #header-newsletter span{margin: 23px 0 0 8px;float: left;letter-spacing: 0.08em;}
       #header-extra #header-login{position:absolute;top:0;right:0;}
