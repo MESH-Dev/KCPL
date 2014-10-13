@@ -91,8 +91,11 @@
               echo "<p><em>util_nav</em> doesn't exist! Create it and it'll render here.</p>";
             } ?>
             <div id="header-extra">
+              <div id="header-search-catalog">
+                <a href="http://kana.ent.sirsi.net/client/en_US/default/"><b></b><span>Search Catalog</span></a>
+              </div>
               <div id="header-search">
-                <b></b><span>Search</span>
+                <b></b><span>Search Site</span>
               </div>
               <div id="header-newsletter">
                 <a href="<?php get_bloginfo('url') ?>/newsletter"><b></b></a>

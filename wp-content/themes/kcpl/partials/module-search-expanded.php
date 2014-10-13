@@ -2,7 +2,7 @@
  <div class="gutter clearfix">
 
  <?php //echo do_shortcode( '[acps id="344"]'); ?>
-  
+
 
 
 
@@ -12,25 +12,26 @@
         <i class="fa fa-lg fa-search searchicon"></i>
         <input type="search" placeholder="Search the collection" name="s" id="s" value=''/>
         <input type="hidden" name="search-type" value="resources" />
+        <input type="submit" value="<?php echo esc_attr_x('Search','submit button'); ?>" />
       </div>
       <div id="exFields">
         <div id="left">
          <select id="search-topic">
             <option value="">Topic</option>
-            <?php 
+            <?php
             $terms = get_terms("resources-category");
             if ( !empty( $terms ) && !is_wp_error( $terms ) ){
                foreach ( $terms as $term ) {
                  echo "<option value='" . $term->name . "'>" . $term->name . "</li>";
                }
             } ?>
- 
+
          </select>
         </div>
         <div id="right">
          <select id="search-audience">
             <option value="">Audience</option>
-            <?php 
+            <?php
             $terms = get_terms("audience");
             if ( !empty( $terms ) && !is_wp_error( $terms ) ){
                foreach ( $terms as $term ) {
