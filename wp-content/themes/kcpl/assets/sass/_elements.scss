@@ -1641,8 +1641,8 @@ a > .#{$namespace}horz-single{color:#fff;}
 .read-more { margin-top: 20px; color: $blue !important; }
 .search-box {
   form { margin: 20px 0 0 0; padding: 0;
-    input[type="text"] { margin: 0; }
-    input[type="submit"] { display: none; }
+    input[type="text"] { margin: 0; width: 73%; display: inline; }
+    input[type="submit"] { display: inline; width: 23%; height: 35px; margin-left: 15px; }
   }
 }
 
