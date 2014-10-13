@@ -1519,6 +1519,7 @@ or wrap each row of columns in a <div class="row"> */
 header {
   width: 100%;
   float: left;
+  margin-top: -12px;
 }
 
 /* line 13, assets/sass/_layout.scss */
@@ -4008,7 +4009,7 @@ ol.homepage-callout-list > li:nth-child(4) {
 }
 /* line 997, assets/sass/_elements.scss */
 .KCPL_listing2-class .title {
-  color: #323333;
+  color: white;
   font: bold 18px/18px "nimbus-sans";
   display: block;
   text-align: center;
