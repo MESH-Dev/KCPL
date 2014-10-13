@@ -21,6 +21,38 @@ jQuery(document).ready(function($){
     $('#KCPL_search #select').removeClass().addClass($class);
   });
 
+  //search catalog functions
+
+  var medium = window.location.pathname;
+
+  if (medium.toLowerCase().indexOf('/books/') >= 0) {
+    $('#lm').attr('value', 'PRINTONLY');
+  };
+
+  if (medium.toLowerCase().indexOf('/audiobooks/') >= 0) {
+    $('#lm').attr('value', 'AUDIOONLY');
+  };
+
+  if (medium.toLowerCase().indexOf('/music/') >= 0) {
+    $('#lm').attr('value', 'MUSICONLY');
+  };
+
+  if (medium.toLowerCase().indexOf('/music/') >= 0) {
+    $('#lm').attr('value', 'MUSICONLY');
+  };
+
+  if (medium.toLowerCase().indexOf('/ebooks/') >= 0) {
+    $('#lm').attr('value', 'EBOOKSONLY');
+  };
+
+  if (medium.toLowerCase().indexOf('/kids/') >= 0) {
+    $('#lm').attr('value', 'CHILDMAT');
+  };
+
+  if (medium.toLowerCase().indexOf('/teens/') >= 0) {
+    $('#lm').attr('value', 'YAMAT');
+  };
+
   //pagination functions
 
   // display the first set and hide all the others
