@@ -9,7 +9,7 @@
 ##{$namespace}header-search.active{margin:0;}
 
 //header - no sass nesting here
-header{width:100%;float:left;}
+header{width:100%;float:left; margin-top: -12px;}
   header .container{width:988px;}
   header > *{width:100%;float:left;position:relative;}
   #header-logo{position:absolute;top:0;
