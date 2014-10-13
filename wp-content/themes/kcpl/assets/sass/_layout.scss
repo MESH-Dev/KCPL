@@ -3,8 +3,8 @@
 //header search
 ##{$namespace}header-search{height:51px;background:$l-blue;float:left;width:100%;margin:-51px 0 0;transition:0.2s all;-webkit-transition:0.2s all;-moz-transition:0.2s all;-ms-transition:0.2s all;-o-transition:0.2s all;
    form{padding:0;margin:0;float:right;width: 290px;border-left: 2px solid #323333;margin: 20px 0 0 0;}
-   input[type="text"]{background: transparent;border: none;font: bold 18px/20px $nimbus-c;padding: 0px 7px;text-transform: uppercase;margin: 0;height: 19px;letter-spacing: 0.09em;}
-   input[type="submit"]{display:none;}
+   input[type="text"]{background: transparent;border: none;font: bold 18px/20px $nimbus-c;padding: 0px 7px;text-transform: uppercase;margin: 0;height: 19px;letter-spacing: 0.09em; display: inline; width: initial;}
+   input[type="submit"]{ display: inline; position: absolute; bottom: -2px; }
 }
 ##{$namespace}header-search.active{margin:0;}
 
@@ -17,16 +17,20 @@ header{width:100%;float:left;}
   }
   header #header-util{background:$s-grey;height:45px;z-index:2;}
     header #header-util .gutter{padding:0 0 0 228px;}
-    #header-util ul#util_nav{float:left;width:515px;list-style:none;}
+    #header-util ul#util_nav{float:left;width:420px;list-style:none;}
     #header-util ul#util_nav li{font:12px/12px $minion;float:left;margin:0;}
     #header-util ul#util_nav li a{color: #353535;padding: 22px 10px 11px;float: left;letter-spacing: 0.085em;min-width: 33px;}
     #header-util ul#util_nav ul{display:none;list-style:none;}
 
-    #header-util #header-extra{float:right;width:180px;}
+    #header-util #header-extra{float:right;width:320px;}
       #header-extra > *{float:left;color:#353535;font:11px/11px $nimbus;}
-      #header-extra #header-search{width:80px; cursor: pointer;}
+      #header-extra #header-search{width:100px; cursor: pointer;}
         #header-extra #header-search b{height: 17px;width: 19px;background: url(assets/img/utilSprites.png);display: block;float: left;margin: 19px 0 0 1px;}
         #header-extra #header-search span{margin: 23px 0 0 7px;float: left;letter-spacing: 0.045em;}
+      #header-extra #header-search-catalog{width:120px; cursor: pointer;}
+        #header-extra #header-search-catalog a{color: #353535;}
+        #header-extra #header-search-catalog b{height: 17px;width: 19px;background: url(assets/img/utilSprites.png); color: black; display: block;float: left;margin: 19px 0 0 1px;}
+        #header-extra #header-search-catalog span{margin: 23px 0 0 7px;float: left;letter-spacing: 0.045em;}
       #header-extra #header-newsletter{}
         #header-extra #header-newsletter b{height: 17px;width: 23px;background: url(assets/img/utilSprites.png) -20px 0px;display: block;float: left;margin:17px 0 0 10px;}
         #header-extra #header-newsletter span{margin: 23px 0 0 8px;float: left;letter-spacing: 0.08em;}

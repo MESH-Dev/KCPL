@@ -708,7 +708,8 @@ ol.homepage-callout-list { display: block;
   form{padding:0;margin:0;}
   #searchField{position:relative;display:block;margin:0 0 22px;}
   .searchicon{position: absolute;z-index: 2;top: 13px;left: 15px;font-size: 17px;color: #323333;}
-  input[type="search"]{-webkit-appearance: none;border-radius: 0px;border: 3px solid #fff;background: #e2e2e2;font: bold 17px/27px $nimbus;position: relative;z-index: 0;padding: 1px 20px 2px 27px;box-sizing: border-box;width:100%;}
+  input[type="search"]{-webkit-appearance: none;border-radius: 0px;border: 3px solid #fff;background: #e2e2e2;font: bold 17px/27px $nimbus;position: relative;z-index: 0;padding: 1px 20px 2px 27px;box-sizing: border-box;width:73%; display: inline;}
+  input[type="submit"]{ display: inline; position: absolute; right: 0; height: 35px; width: 26%; }
   #search-params{display:block;float:left;width:100%;}
   #type{float: left;width: 112px;border-right: 1px solid #323333;height: 99px;
     .top{font: bold 15px/18px $nimbus;color: #323333;display: block;padding: 6px 0px 0 6px;letter-spacing: 0.01em;word-spacing: 0.065em;}
