@@ -5697,10 +5697,15 @@ a > .KCPL_horz-single {
 /* line 1644, assets/sass/_elements.scss */
 .search-box form input[type="text"] {
   margin: 0;
+  width: 73%;
+  display: inline;
 }
 /* line 1645, assets/sass/_elements.scss */
 .search-box form input[type="submit"] {
-  display: none;
+  display: inline;
+  width: 23%;
+  height: 35px;
+  margin-left: 15px;
 }
 
 /* Online Community - theme related overrides */
