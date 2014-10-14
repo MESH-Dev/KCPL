@@ -1733,7 +1733,7 @@ form#kcpl_oc-booklist{margin:0;padding:0;
 
 #KCPL_search input[type="search"]{margin:0;}
 .KCPL_home-engagement #row-expanded .engage-content{display:none;}
-  .KCPL_home-engagement #row-expanded .engage-content.active{display:block;}
+  .KCPL_home-engagement #row-expanded .engage-content.active{display:block; height: 304px;}
 .KCPL_home-engagement #row-expanded{left:-100%;transition:0.3s all;width:680px;}
   .KCPL_home-engagement #row-expanded.active{left:30%;}
 
