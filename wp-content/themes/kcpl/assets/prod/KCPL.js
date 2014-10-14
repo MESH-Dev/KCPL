@@ -132,9 +132,11 @@ jQuery(document).ready(function($){
     $(this).siblings().addClass('active');
     $('.KCPL_home-engagement #row-expanded .engage-content').not(':eq('+$index+')').removeClass('active');
     $('.KCPL_home-engagement #row-expanded .engage-content').eq($index).addClass('active');
+    $('#contentPrimary').addClass('open');
   });
   $('.KCPL_home-engagement .close').click(function(e){
     $('.KCPL_home-engagement #row-expanded').removeClass('active');
+    $('#contentPrimary').removeClass('open');
   });
 
 
