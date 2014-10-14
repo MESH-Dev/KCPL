@@ -1,7 +1,7 @@
 <?php
   include_once('functions/toolbox.php');
   include_once('functions/branch-hours.php');
-  include_once('functions/custom-fields.php');
+  // include_once('functions/custom-fields.php');
 
   if ( ! current_user_can( 'edit_posts' ) ) {
     add_filter('show_admin_bar', '__return_false');
