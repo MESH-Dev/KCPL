@@ -6097,6 +6097,7 @@ form#kcpl_oc-booklist label {
 /* line 1736, assets/sass/_elements.scss */
 .KCPL_home-engagement #row-expanded .engage-content.active {
   display: block;
+  height: 304px;
 }
 
 /* line 1737, assets/sass/_elements.scss */
