@@ -6,6 +6,7 @@
         <i class="fa fa-lg fa-search searchicon"></i>
         <input type="search"  id="q" name="q" placeholder="Search the collection" />
         <input type="hidden" id="lm" name="lm" />
+        <input type="hidden" id="qf" name="qf" />
         <input type="submit" value="<?php echo esc_attr_x('Search','submit button'); ?>" />
       </div>
       <div id="search-params">

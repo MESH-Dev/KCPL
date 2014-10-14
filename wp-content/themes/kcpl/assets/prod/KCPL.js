@@ -37,10 +37,6 @@ jQuery(document).ready(function($){
     $('#lm').attr('value', 'MUSICONLY');
   };
 
-  if (medium.toLowerCase().indexOf('/music/') >= 0) {
-    $('#lm').attr('value', 'MUSICONLY');
-  };
-
   if (medium.toLowerCase().indexOf('/ebooks/') >= 0) {
     $('#lm').attr('value', 'EBOOKSONLY');
   };
