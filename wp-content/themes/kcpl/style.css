@@ -1837,17 +1837,21 @@ footer .footer-location-widget {
   margin: 0 0 18px;
 }
 /* line 101, assets/sass/_layout.scss */
+footer .footer-location-widget a {
+  color: #323333;
+}
+/* line 102, assets/sass/_layout.scss */
 footer .footer-location-widget .hour-cont {
   display: block;
 }
-/* line 102, assets/sass/_layout.scss */
+/* line 103, assets/sass/_layout.scss */
 footer .footer-location-widget .hours {
   font: 13px/12px "minion-pro";
   font-style: italic;
   color: #323333;
   letter-spacing: 0.035em;
 }
-/* line 103, assets/sass/_layout.scss */
+/* line 104, assets/sass/_layout.scss */
 footer .footer-location-widget .open, footer .footer-location-widget .closed {
   font: 13px/12px "nimbus-sans-condensed";
   color: #323333;
@@ -1855,11 +1859,11 @@ footer .footer-location-widget .open, footer .footer-location-widget .closed {
   margin: 0px;
   word-spacing: 0.05em;
 }
-/* line 104, assets/sass/_layout.scss */
+/* line 105, assets/sass/_layout.scss */
 footer .footer-location-widget .open {
   color: #f65446;
 }
-/* line 105, assets/sass/_layout.scss */
+/* line 106, assets/sass/_layout.scss */
 footer .footer-location-widget .address {
   font: 12px/18px "minion-pro";
   display: block;
@@ -1867,16 +1871,20 @@ footer .footer-location-widget .address {
   letter-spacing: 0.06em;
   word-spacing: 0.015em;
 }
-/* line 108, assets/sass/_layout.scss */
+/* line 107, assets/sass/_layout.scss */
+footer .footer-location-widget .address a {
+  color: #7c7d7d;
+}
+/* line 111, assets/sass/_layout.scss */
 footer #social_navCont {
   display: block;
   margin: 15px 0 0;
 }
-/* line 110, assets/sass/_layout.scss */
+/* line 113, assets/sass/_layout.scss */
 footer #social_navCont ul {
   width: 170px;
 }
-/* line 111, assets/sass/_layout.scss */
+/* line 114, assets/sass/_layout.scss */
 footer #social_navCont ul li {
   color: #fff;
   list-style-type: none;
@@ -1888,7 +1896,7 @@ footer #social_navCont ul li {
   margin: 0 20px 20px 0;
   background: #137cc1;
 }
-/* line 112, assets/sass/_layout.scss */
+/* line 115, assets/sass/_layout.scss */
 footer #social_navCont ul li:before {
   position: absolute;
   top: 32%;
@@ -1896,25 +1904,25 @@ footer #social_navCont ul li:before {
   font-size: 19px;
   z-index: 1;
 }
-/* line 113, assets/sass/_layout.scss */
+/* line 116, assets/sass/_layout.scss */
 footer #social_navCont ul li.facebook {
   background: url(assets/img/sprites.png) 0px -50px no-repeat;
   height: 35px;
   width: 35px;
 }
-/* line 114, assets/sass/_layout.scss */
+/* line 117, assets/sass/_layout.scss */
 footer #social_navCont ul li.twitter {
   background: url(assets/img/sprites.png) -164px -50px no-repeat;
   height: 35px;
   width: 35px;
 }
-/* line 117, assets/sass/_layout.scss */
+/* line 120, assets/sass/_layout.scss */
 footer #social_navCont ul li.pinterest {
   background: url(assets/img/sprites.png) -42px -50px no-repeat;
   height: 35px;
   width: 35px;
 }
-/* line 119, assets/sass/_layout.scss */
+/* line 122, assets/sass/_layout.scss */
 footer #social_navCont ul li a {
   color: transparent;
   display: block;
@@ -1923,21 +1931,21 @@ footer #social_navCont ul li a {
   position: absolute;
   z-index: 2;
 }
-/* line 120, assets/sass/_layout.scss */
+/* line 123, assets/sass/_layout.scss */
 footer #social_navCont ul ul {
   display: none;
 }
-/* line 123, assets/sass/_layout.scss */
+/* line 126, assets/sass/_layout.scss */
 footer #footer-donate {
   color: #323333;
   font: bold 12px/12px "minion-pro";
 }
-/* line 125, assets/sass/_layout.scss */
+/* line 128, assets/sass/_layout.scss */
 footer #footer-donate span {
   margin: 3px 0 18px;
   display: block;
 }
-/* line 126, assets/sass/_layout.scss */
+/* line 129, assets/sass/_layout.scss */
 footer #footer-donate a {
   text-align: center;
   padding: 7px 10px 8px;
