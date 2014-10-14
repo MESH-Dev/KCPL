@@ -12,8 +12,6 @@ $pID = KCPL_get_highest_ancestor($post);
 $sidebar = KCPL_get_sidebar($pID);
 $color = get_field('section_color',$pID); ?>
 
-<h1><?php $pID ?></h1>
-
 <?php if(have_posts()){while(have_posts()){the_post(); ?>
 
 <?php include_once(locate_template('partials/module-breadcrumbs.php')); ?>
@@ -32,7 +30,7 @@ $color = get_field('section_color',$pID); ?>
                 // Partial to use for 8 column (full width) content blocks
                 include_once(locate_template('partials/module-content-8column.php'));
             ?>
- 
+
 
             <?php
                 // Partial to use for two side-by-side 4 column content blocks
