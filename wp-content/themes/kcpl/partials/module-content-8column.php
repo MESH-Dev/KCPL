@@ -42,7 +42,7 @@
       </div>
     <?php }elseif($widget['field_type'] == '8-column-featured'){
       //8 column featured ?>
-      <div class="KCPL_featured KCPL_background-<?php echo $widget['field_color']; ?> clearfix">
+      <div class="KCPL_featured KCPL_background-l-<?php echo $widget['field_color']; ?> clearfix">
         <div class="gutter clearfix">
           <?php foreach($widget['8_column_featured'] as $entry){ ?>
            <div class="entry <?php echo cycle('left','center','right'); ?>">

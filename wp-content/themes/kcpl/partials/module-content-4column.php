@@ -90,7 +90,7 @@
     <?php }elseif($widget['field_type'] == 'listing-style-1-1'){
       //Multi LInk list ?>
 
-      <div class="KCPL_listing1-article KCPL_background-<?php echo $widget['field_color']; ?>">
+      <div class="KCPL_listing1-article KCPL_background-l-<?php echo $widget['field_color']; ?>">
         <span class="title"><?php echo $widget['field_title']; ?></span>
         <div class="gutter">
           <?php foreach($widget['listing_style_1-1'] as $entry){
@@ -107,7 +107,7 @@
             } ?>
             <?php if($entry['new_tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
             <div class="entry">
-               <a href="<?php echo $link; ?>" target="<?php echo $target;?>><span class="entry-title"><?php echo $title; ?></span></a>
+               <a href="<?php echo $link; ?>" target="<?php echo $target;?>"><span class="entry-title"><?php echo $title; ?></span></a>
                <div class="entry-excerpt">
                    <?php echo $excerpt; ?>
                </div>
@@ -120,7 +120,7 @@
     <?php }elseif($widget['field_type'] == 'listing-style1-2'){
       //listing style 1-2 ?>
 
-      <div class="KCPL_listing1-list KCPL_background-<?php echo $widget['field_color']; ?>">
+      <div class="KCPL_listing1-list KCPL_background-l-<?php echo $widget['field_color']; ?>">
          <span class="title"><?php echo $widget['field_title']; ?></span>
          <div class="gutter">
             <span class="list-title"><?php echo $widget['listing_title'];?></span>
@@ -328,7 +328,7 @@
     <?php }elseif($widget['field_type'] == 'listing-style-1-1'){
       //Multi LInk list ?>
 
-      <div class="KCPL_listing1-article KCPL_background-<?php echo $widget['field_color']; ?>">
+      <div class="KCPL_listing1-article KCPL_background-l-<?php echo $widget['field_color']; ?>">
         <span class="title"><?php echo $widget['field_title']; ?></span>
         <div class="gutter">
           <?php foreach($widget['listing_style_1-1'] as $entry){
@@ -345,7 +345,7 @@
             } ?>
             <?php if($entry['new_tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
             <div class="entry">
-               <a href="<?php echo $link; ?>" target="<?php echo $target;?>><span class="entry-title"><?php echo $title; ?></span></a>
+               <a href="<?php echo $link; ?>" target="<?php echo $target;?>"><span class="entry-title"><?php echo $title; ?></span></a>
                <div class="entry-excerpt">
                    <?php echo $excerpt; ?>
                </div>
@@ -358,7 +358,7 @@
     <?php }elseif($widget['field_type'] == 'listing-style1-2'){
       //listing style 1-2 ?>
 
-      <div class="KCPL_listing1-list KCPL_background-<?php echo $widget['field_color']; ?>">
+      <div class="KCPL_listing1-list KCPL_background-l-<?php echo $widget['field_color']; ?>">
          <span class="title"><?php echo $widget['field_title']; ?></span>
          <div class="gutter">
             <span class="list-title"><?php echo $widget['listing_title'];?></span>
