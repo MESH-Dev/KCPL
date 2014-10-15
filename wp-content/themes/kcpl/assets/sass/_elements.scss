@@ -345,6 +345,7 @@ ol.homepage-callout-list { display: block;
 .#{$namespace}short-callout { display: block; border-radius: 10px; background: #f65446; padding: 79px 24px; word-wrap: break-word; }
 .#{$namespace}short-callout {
     span { display: block; font-family: $nimbus-c; font-weight: 600; text-transform: uppercase; text-align: center; font-size: 43px; line-height: 46px; color: white; }
+    &:hover{@include opacity(0.7); cursor:pointer}
 }
 
 /*
