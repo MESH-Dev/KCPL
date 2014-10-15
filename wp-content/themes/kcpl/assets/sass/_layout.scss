@@ -19,7 +19,7 @@ header{width:100%;float:left;}
     header #header-util .gutter{padding:0 0 0 228px;}
     #header-util ul#util_nav{float:left;width:420px;list-style:none;}
     #header-util ul#util_nav li{font:12px/12px $minion;float:left;margin:0;}
-    #header-util ul#util_nav li a{color: #353535;padding: 22px 10px 11px;float: left;letter-spacing: 0.085em;min-width: 33px;}
+    #header-util ul#util_nav li a{color: #353535;padding: 22px 8px 11px;float: left;letter-spacing: 0.085em;min-width: 33px;}
     #header-util ul#util_nav li.current_page_item, #header-util ul#util_nav li.current_page_ancestor{font-weight:bold}
     #header-util ul#util_nav ul{display:none;list-style:none;}
 
@@ -47,8 +47,8 @@ header{width:100%;float:left;}
     header #header-nav ul#main_nav > li{float:left;position:relative;}
     header #header-nav ul#main_nav > li > a{color:#fff;font:bold 23px/23px $nimbus-c;text-transform: uppercase;padding: 12px 28px 12px;float: left;letter-spacing: 0.05em;}
       header #header-nav ul#main_nav > li:hover > a{color:#323333;}
-      #header-nav ul#main_nav li.current_page_ancestor a{color:#323333;}
-      #header-nav ul#main_nav li.current_page_item a{color:#323333;}
+      #header-nav ul#main_nav > li.current_page_ancestor > a{color:#323333;}
+      #header-nav ul#main_nav > li.current_page_item > a,  #header-nav ul#main_nav > li ul li > a{color:#323333;}
 
     header #header-nav ul#main_nav > li > ul{display:none;position:absolute;top:100%;left:9px;width:227px;background:$l-blue;padding: 5px 0;list-style:none;}
     header #header-nav ul#main_nav > li:hover > ul{display:block;}

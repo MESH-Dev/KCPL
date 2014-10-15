@@ -107,32 +107,22 @@ foreach($left as $widget){
   elseif($widget['field_type'] == 'recs'){
     //OC Recommendations  ?>
 
-    <div class="KCPL_listing-style-3 KCPL_background-red">
-       <div class="KCPL_listing-style-3-header">
-          <span>Most Recommended Books<?php echo $widget['field_title']; ?></span>
+    <div class="KCPL_listing4">
+      <span class="title KCPL_background-red">Most Recommended Books<?php echo $widget['field_title']; ?></span>
+      <div class="gutter">
+        <?php KCPL_OC_recommended::getMostRecommended(); ?>
       </div>
-
-      <div class="KCPL_listing-style-3-body">
-
-        Most Recommended Books from Online Community Here [OC Function]
-
-       </div>
     </div>
 
   <?php }
   elseif($widget['field_type'] == 'listing-style-3'){
     //OC Discussions  ?>
 
-    <div class="KCPL_listing-style-3 KCPL_background-red">
-       <div class="KCPL_listing-style-3-header">
-          <span>Recent Discussions<?php echo $widget['field_title']; ?></span>
+    <div class="KCPL_single-featured">
+      <span class="title KCPL_background-red"><?php echo $widget['field_title']; ?></span>
+      <div class="gutter">
+        <?php KCPL_OC_discussions::getSocialDiscussion(5); ?>
       </div>
-
-      <div class="KCPL_listing-style-3-body">
-
-        Most Recent Discussion From Online Community Here [OC Function]
-
-       </div>
     </div>
 
   <?php }
@@ -152,39 +142,7 @@ foreach($left as $widget){
    elseif($widget['field_type'] == 'listing-style-2-1'){
     //listing style 3 ?>
 
-    <div class="KCPL_listing2-event KCPL_background-<?php echo $widget['field_color']; ?>">
-       <span class="title"><?php echo $widget['field_title']; ?></span>
-       <div class="gutter">
-
-
-        <div class="entry">
-           <div class="left">
-               <span class="entry-title">title</span>
-           </div>
-           <div class="right">
-               <span class="entry-date">date time</span>
-               <span class="entry-loc">location</span>
-               <div class="entry-tags">
-                 <a href="#">tags</a>
-               </div>
-           </div>
-        </div>
-        <div class="entry">
-           <div class="left">
-               <span class="entry-title">title</span>
-           </div>
-           <div class="right">
-               <span class="entry-date">date time</span>
-               <span class="entry-loc">location</span>
-               <div class="entry-tags">
-                 <a href="#">tags</a>
-               </div>
-           </div>
-        </div>
-
-       </div>
-
-    </div>
+    <?php KCPL_Calendar::upcomingEvents(); ?>
 
   <?php }
    elseif($widget['field_type'] == 'vertical-block'){ ?>
@@ -265,6 +223,18 @@ foreach($left as $widget){
     echo "Hasn't been configured yet. Deal with it.";
   }
 } echo "</div>";
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 echo "<div class='kcpl_m-sidebar-r'>";
@@ -371,32 +341,22 @@ foreach($right as $widget){
   elseif($widget['field_type'] == 'recs'){
     //OC Recommendations  ?>
 
-    <div class="KCPL_listing-style-3 KCPL_background-red">
-       <div class="KCPL_listing-style-3-header">
-          <span>Most Recommended Books<?php echo $widget['field_title']; ?></span>
+    <div class="KCPL_listing4">
+      <span class="title KCPL_background-red">Most Recommended Books<?php echo $widget['field_title']; ?></span>
+      <div class="gutter">
+        <?php KCPL_OC_recommended::getMostRecommended(); ?>
       </div>
-
-      <div class="KCPL_listing-style-3-body">
-
-        Most Recommended Books from Online Community Here [OC Function]
-
-       </div>
     </div>
 
   <?php }
   elseif($widget['field_type'] == 'listing-style-3'){
     //OC Discussions  ?>
 
-    <div class="KCPL_listing-style-3 KCPL_background-red">
-       <div class="KCPL_listing-style-3-header">
-          <span>Recent Discussions<?php echo $widget['field_title']; ?></span>
+    <div class="KCPL_single-featured">
+      <span class="title KCPL_background-red"><?php echo $widget['field_title']; ?></span>
+      <div class="gutter">
+        <?php KCPL_OC_discussions::getSocialDiscussion(5); ?>
       </div>
-
-      <div class="KCPL_listing-style-3-body">
-
-        Most Recent Discussion From Online Community Here [OC Function]
-
-       </div>
     </div>
 
   <?php }
@@ -416,39 +376,7 @@ foreach($right as $widget){
    elseif($widget['field_type'] == 'listing-style-2-1'){
     //listing style 3 ?>
 
-    <div class="KCPL_listing2-event KCPL_background-<?php echo $widget['field_color']; ?>">
-       <span class="title"><?php echo $widget['field_title']; ?></span>
-       <div class="gutter">
-
-
-        <div class="entry">
-           <div class="left">
-               <span class="entry-title">title</span>
-           </div>
-           <div class="right">
-               <span class="entry-date">date time</span>
-               <span class="entry-loc">location</span>
-               <div class="entry-tags">
-                 <a href="#">tags</a>
-               </div>
-           </div>
-        </div>
-        <div class="entry">
-           <div class="left">
-               <span class="entry-title">title</span>
-           </div>
-           <div class="right">
-               <span class="entry-date">date time</span>
-               <span class="entry-loc">location</span>
-               <div class="entry-tags">
-                 <a href="#">tags</a>
-               </div>
-           </div>
-        </div>
-
-       </div>
-
-    </div>
+    <?php KCPL_Calendar::upcomingEvents(); ?>
 
   <?php }
    elseif($widget['field_type'] == 'vertical-block'){ ?>
@@ -528,4 +456,4 @@ foreach($right as $widget){
   }else{
     echo "Hasn't been configured yet. Deal with it.";
   }
-}echo "</div>";  ?>
+} echo "</div>"; ?>
