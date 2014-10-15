@@ -111,7 +111,7 @@
                <div class="entry-excerpt">
                    <?php echo $excerpt; ?>
                </div>
-               <a href="<?php echo $link; ?> target="<?php echo $target;?>" class="KCPL_readmore"><?php echo $entry['link_text']; ?></a>
+               <a href="<?php echo $link; ?>" target="<?php echo $target;?>" class="KCPL_readmore"><?php echo $entry['link_text']; ?></a>
             </div>
           <?php } wp_reset_postdata(); ?>
         </div>
@@ -349,7 +349,7 @@
                <div class="entry-excerpt">
                    <?php echo $excerpt; ?>
                </div>
-               <a href="<?php echo $link; ?> target="<?php echo $target;?>" class="KCPL_readmore"><?php echo $entry['link_text']; ?></a>
+               <a href="<?php echo $link; ?>" target="<?php echo $target;?>" class="KCPL_readmore"><?php echo $entry['link_text']; ?></a>
             </div>
           <?php } wp_reset_postdata(); ?>
         </div>
