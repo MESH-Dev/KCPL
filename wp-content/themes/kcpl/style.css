@@ -2010,6 +2010,10 @@ textarea, input, select {
 #secondary-sidebar-nav ul#main_nav_secondary li {
   margin: 0;
 }
+/* line 31, assets/sass/_elements.scss */
+#secondary-sidebar-nav ul#main_nav_secondary > li:not(.current_page_ancestor):not(.current_page_item) {
+  display: none;
+}
 /* line 32, assets/sass/_elements.scss */
 #secondary-sidebar-nav ul#main_nav_secondary > li > a {
   color: #fff;
