@@ -47,8 +47,8 @@ header{width:100%;float:left;}
     header #header-nav ul#main_nav > li{float:left;position:relative;}
     header #header-nav ul#main_nav > li > a{color:#fff;font:bold 23px/23px $nimbus-c;text-transform: uppercase;padding: 12px 28px 12px;float: left;letter-spacing: 0.05em;}
       header #header-nav ul#main_nav > li:hover > a{color:#323333;}
-      #header-nav ul#main_nav li.current_page_ancestor a{color:#323333;}
-      #header-nav ul#main_nav li.current_page_item a{color:#323333;}
+      #header-nav ul#main_nav > li.current_page_ancestor > a{color:#323333;}
+      #header-nav ul#main_nav > li.current_page_item > a,  #header-nav ul#main_nav > li ul li > a{color:#323333;}
 
     header #header-nav ul#main_nav > li > ul{display:none;position:absolute;top:100%;left:9px;width:227px;background:$l-blue;padding: 5px 0;list-style:none;}
     header #header-nav ul#main_nav > li:hover > ul{display:block;}
