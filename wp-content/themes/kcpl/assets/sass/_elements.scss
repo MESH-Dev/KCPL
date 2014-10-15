@@ -66,6 +66,8 @@ textarea,input,select{outline: none;}
   }
 }
 
+
+
 /* Forms */
 form {
 margin: 20px;
@@ -216,7 +218,7 @@ table{
   }
 }
 
-#bannerHome{ color:#fff;height:297px;float:left;width:100%;margin:0 0 26px;
+#bannerHome{ color:#fff;height:297px;float:left;width:100%;margin:0 0 26px; border-top: 1px solid #fff;
   .gutter{padding:0 20px 0 0px;}
   .container{display:table;height:297px;}
   .columns{display:table-cell;float:none; vertical-align:middle;}
