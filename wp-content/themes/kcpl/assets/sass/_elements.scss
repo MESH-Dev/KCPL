@@ -1766,6 +1766,15 @@ form#kcpl_oc-booklist{margin:0;padding:0;
 
 
 /* AUTHENTICATION!!! */
+#loginform{
+  margin:0;
+  padding:0;
+    input[type="text"],
+    input[type="password"]{
+      margin:0;
+    }
+}
+
 #authContainer{
   position:relative;width:100%;min-height:300px;
   > *{
