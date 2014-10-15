@@ -787,7 +787,7 @@ ol.homepage-callout-list { display: block;
 
       input[type="checkbox"]{-webkit-appearance: none;background: transparent;border: 1px solid #000;padding: 4px 4px;border-radius: 2px;margin: 0 5px 0 29px;position:relative;}
          input[type="checkbox"]:checked:after{content: '';position: absolute;top: 1px;left: 1px;display: block;border: 2px solid #000;padding: 1px;border-radius: 2px;background: #000;}
-      label{font-size: 14px;letter-spacing: 0.075em;}
+      label{font-size: 14px;letter-spacing: 0.06em;}
     }
   }
 }
@@ -940,9 +940,9 @@ ol.homepage-callout-list { display: block;
    .title{color: #fff;font: bold 18px/18px $nimbus;display: block;text-align: center;text-transform: uppercase;padding: 15px 10px 15px;border-bottom: 2px solid #000;}
    .gutter{padding:15px 20px 12px;}
    a{color:#323333;}
-   .list-title{text-transform: uppercase;font: bold 18px/18px $nimbus-c;letter-spacing: 0.075em;}
+   .list-title{text-transform: uppercase;font: bold 18px/18px $nimbus-c;letter-spacing: 0.06em;}
    ul{list-style:none;margin:0 0 20px;}
-   ul li{font:12px/12px $nimbus;margin:3px 0 6px;}
+   ul li{font:17px/22px $nimbus-c; margin:3px 0 6px; font-weight:bold;letter-spacing: 0.06em; text-transform: uppercase;}
 }
 
 
@@ -1088,6 +1088,7 @@ font: 14px/18px $nimbus;}
 .#{$namespace}listing4{display:block;background:#e2e2e2;margin:0 0 26px;
    .title{color:#fff;font:bold 18px/18px $nimbus;display:block;text-align:center;text-transform:uppercase;padding:15px 10px 15px;}
    .gutter{padding:20px 19px;}
+   .#{$namespace}readmore{float: right;top: -10px;position: relative;}
    a{color: $d-grey;}
    .row{display:block;margin:0 0 40px;
       .entry{display:block;float:left;width:50%;
@@ -1613,7 +1614,7 @@ a > .#{$namespace}horz-single{color:#fff;}
   > div{display:block;}
   input[type="radio"],input[type="checkbox"]{-webkit-appearance: none;background: transparent;border: 1px solid #000;padding: 4px 4px;border-radius: 2px;margin:0 2px 0 0px;position:relative;}
      input[type="radio"]:checked:after,input[type="checkbox"]:checked:after{content: '';position: absolute;top: 1px;left: 1px;display: block;border: 2px solid #000;padding: 1px;border-radius: 2px;background: #000;}
-  label{letter-spacing: 0.075em;font-size: 14px;vertical-align: bottom;}
+  label{letter-spacing: 0.06em;font-size: 14px;vertical-align: bottom;}
   #KCPL_Calendar_sidebar-tax label{font-size:12px;}
   div#KCPL_Calendar_sidebar-ce{padding: 6px 0;border-bottom: 1px solid #676767;}
   .KCPL_Calendar_radio-cont{margin: 6px 0 6px 33px;}
@@ -1726,7 +1727,7 @@ form#kcpl_oc-booklist{margin:0;padding:0;
   label{font:12px/35px nimbus-sans;}
   input[type="checkbox"]{-webkit-appearance: none;background: transparent;border: 1px solid #000;padding: 5px 5px;border-radius: 2px;margin: 0 5px;position:relative;}
      input[type="checkbox"]:checked:after{content: '';position: absolute;top: 1px;left: 1px;display: block;border: 2px solid #000;padding: 2px;border-radius: 2px;background: #000;}
-  label{font-size: 14px;letter-spacing: 0.075em;}
+  label{font-size: 14px;letter-spacing: 0.06em;}
 }
 
 #searchUserBooklists .output,#searchUserBooklists .output{transition:0.2s all;
