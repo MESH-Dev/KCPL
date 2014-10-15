@@ -38,7 +38,7 @@
             echo "<div class='columns four alpha'>";
           } ?>
 
-        <?php if($contentArr[$y]['single_featured_item_description'] !=''){ ?>
+        <?php if($contentArr[$y]['field_title'] !=''){ ?>
         <div class="KCPL_single-featured <?php if($contentArr[$y]['single_featured_item_image'] != false){echo 'fimage';} ?>">
           <span class="title KCPL_background-<?php echo $contentArr[$y]['field_color']; ?>"><?php echo $contentArr[$y]['field_title']; ?></span>
           <div class="gutter">
@@ -54,7 +54,7 @@
                     <?php echo $contentArr[$y]['single_featured_item_description']; ?>
                 </div>
                  <?php if($contentArr[$y]['single_featured_item_link_url'] !=''){ ?>
-              <a href="<?php echo $contentArr[$y]['single_featured_item_link_url']; ?>" class="KCPL_readmore"><?php echo $contentArr[$y]['single_featured_item_link_text']; ?></a>
+              <a href="<?php echo $contentArr[$y]['single_featured_item_link_url']; ?>" class="KCPL_readmore" target="_blank"><?php echo $contentArr[$y]['single_featured_item_link_text']; ?></a>
               <?php }?>
              </div>
           </div>
@@ -86,7 +86,7 @@
             echo "<div class='columns four omega'>";
           }?>
 
-        <?php if($contentArr[$y]['single_featured_item_description'] !=''){ ?>
+        <?php if($contentArr[$y]['field_title'] !=''){ ?>
         <div class="KCPL_single-featured <?php if($contentArr[$y]['single_featured_item_image'] != false){echo 'fimage';} ?>">
           <span class="title KCPL_background-<?php echo $contentArr[$y]['field_color']; ?>"><?php echo $contentArr[$y]['field_title']; ?></span>
           <div class="gutter">
@@ -102,7 +102,7 @@
                     <?php echo $contentArr[$y]['single_featured_item_description']; ?>
                 </div>
                  <?php if($contentArr[$y]['single_featured_item_link_url'] !=''){ ?>
-              <a href="<?php echo $contentArr[$y]['single_featured_item_link_url']; ?>" class="KCPL_readmore"><?php echo $contentArr[$y]['single_featured_item_link_text']; ?></a>
+              <a href="<?php echo $contentArr[$y]['single_featured_item_link_url']; ?>" class="KCPL_readmore" target="_blank"><?php echo $contentArr[$y]['single_featured_item_link_text']; ?></a>
               <?php }?>
              </div>
           </div>
