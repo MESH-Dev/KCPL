@@ -192,18 +192,16 @@ foreach($left as $widget){
            </div>
            <div class="KCPL_social-callout-body">
               <div class='icons'>
-                <div class="KCPL_sprite-facebook KCPL_social-callout-icon"></div>
-                <div class="KCPL_sprite-instagram KCPL_social-callout-icon"></div>
-                <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
-                <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
-                <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
-                <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
+                <a href="http://www.facebook.com/pages/Charleston-WV/Kanawha-County-Public-Library/162450860303" target="_blank"><div class="KCPL_sprite-facebook KCPL_social-callout-icon"></div></a>
+                <a href="" target="_blank"><div class="KCPL_sprite-pinterest KCPL_social-callout-icon"></div></a>
+                <a href="http://twitter.com/KanawhaLibrary" target="_blank"><div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div></a>
+ 
               </div>
 
                <div class="clear"></div>
 
                <div class="KCPL_social-callout-tweet">
-                   <span class="KCPL_social-callout-tweet-content">"Tweets Go Here #awesome"</span>
+                   <span class="KCPL_social-callout-tweet-content">"Tweesdsdsdts Go Here #awesome"</span>
                    <span class="KCPL_social-callout-tweet-date">Date Here</span>
                </div>
            </div>
@@ -426,12 +424,10 @@ foreach($right as $widget){
            </div>
            <div class="KCPL_social-callout-body">
               <div class='icons'>
-                <div class="KCPL_sprite-facebook KCPL_social-callout-icon"></div>
-                <div class="KCPL_sprite-instagram KCPL_social-callout-icon"></div>
-                <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
-                <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
-                <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
-                <div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div>
+                <a href="http://www.facebook.com/pages/Charleston-WV/Kanawha-County-Public-Library/162450860303" target="_blank"><div class="KCPL_sprite-facebook KCPL_social-callout-icon"></div></a>
+                <a href="" target="_blank"><div class="KCPL_sprite-pinterest KCPL_social-callout-icon"></div></a>
+                <a href="http://twitter.com/KanawhaLibrary" target="_blank"><div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div></a>
+ 
               </div>
 
                <div class="clear"></div>

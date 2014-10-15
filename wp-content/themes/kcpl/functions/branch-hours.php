@@ -77,7 +77,7 @@ class KCPL_branch_info extends WP_Widget{
 
     //before widget
 		echo $args['before_widget'];
-    echo $open;
+ 
 
     //Set time to 12-hour for hours display
     $closehour = date('g:i a', strtotime($close));
