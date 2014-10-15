@@ -20,18 +20,22 @@ header{width:100%;float:left;}
     #header-util ul#util_nav{float:left;width:420px;list-style:none;}
     #header-util ul#util_nav li{font:12px/12px $minion;float:left;margin:0;}
     #header-util ul#util_nav li a{color: #353535;padding: 22px 10px 11px;float: left;letter-spacing: 0.085em;min-width: 33px;}
+    #header-util ul#util_nav li.current_page_item, #header-util ul#util_nav li.current_page_ancestor{font-weight:bold}
     #header-util ul#util_nav ul{display:none;list-style:none;}
 
     #header-util #header-extra{float:right;width:320px;}
       #header-extra > *{float:left;color:#353535;font:11px/11px $nimbus;}
-      #header-extra #header-search{width:100px; cursor: pointer;}
+      #header-extra #header-search{width:100px; &:hover{cursor: pointer; opacity: 0.7}}
         #header-extra #header-search b{height: 17px;width: 19px;background: url(assets/img/utilSprites.png);display: block;float: left;margin: 19px 0 0 1px;}
         #header-extra #header-search span{margin: 23px 0 0 7px;float: left;letter-spacing: 0.045em;}
-      #header-extra #header-search-catalog{width:120px; cursor: pointer;}
+      #header-extra #header-search-catalog{width:120px; &:hover{cursor: pointer; opacity: 0.7}}
+
         #header-extra #header-search-catalog a{color: #353535;}
-        #header-extra #header-search-catalog b{height: 17px;width: 19px;background: url(assets/img/utilSprites.png); color: black; display: block;float: left;margin: 19px 0 0 1px;}
+        #header-extra #header-search-catalog b{height: 17px;width: 19px; background: url(assets/img/utilSprites.png) -44px 0px; color: black; display: block;float: left;margin: 19px 0 0 1px;}
         #header-extra #header-search-catalog span{margin: 23px 0 0 7px;float: left;letter-spacing: 0.045em;}
-      #header-extra #header-newsletter{}
+      #header-extra #header-newsletter{
+        &:hover{cursor: pointer; opacity: 0.7}
+      }
         #header-extra #header-newsletter b{height: 17px;width: 23px;background: url(assets/img/utilSprites.png) -20px 0px;display: block;float: left;margin:17px 0 0 10px;}
         #header-extra #header-newsletter span{margin: 23px 0 0 8px;float: left;letter-spacing: 0.08em;}
       #header-extra #header-login{position:absolute;top:0;right:0;}
@@ -43,6 +47,8 @@ header{width:100%;float:left;}
     header #header-nav ul#main_nav > li{float:left;position:relative;}
     header #header-nav ul#main_nav > li > a{color:#fff;font:bold 23px/23px $nimbus-c;text-transform: uppercase;padding: 12px 28px 12px;float: left;letter-spacing: 0.05em;}
       header #header-nav ul#main_nav > li:hover > a{color:#323333;}
+      #header-nav ul#main_nav li.current_page_ancestor a{color:#323333;}
+      #header-nav ul#main_nav li.current_page_item a{color:#323333;}
 
     header #header-nav ul#main_nav > li > ul{display:none;position:absolute;top:100%;left:9px;width:227px;background:$l-blue;padding: 5px 0;list-style:none;}
     header #header-nav ul#main_nav > li:hover > ul{display:block;}
