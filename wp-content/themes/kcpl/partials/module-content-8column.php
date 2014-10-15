@@ -1,10 +1,10 @@
 <?php
   $content = get_field('full_width_callouts');
   if($content){
-    echo "<div id='KCPL_content_8col' class='clearfix'>"; 
+    echo "<div id='KCPL_content_8col' class='clearfix'>";
   }
   foreach($content as $widget){
-    if($widget['field_type'] == 'listing-style-4'){ 
+    if($widget['field_type'] == 'listing-style-4'){
       //CURATED LISTING ?>
       <div class="KCPL_listing4">
         <span class="title KCPL_background-<?php echo $widget['field_color']; ?>"><?php echo $widget['field_title']; ?></span>
@@ -23,21 +23,21 @@
                       <?php if($entry['link']!=''){ ?>
                          <a href="<?php echo $entry['link']; ?>"><?php echo $entry['title']; ?></a>
 
-                      <?php }else{echo $entry['title']; }?> 
+                      <?php }else{echo $entry['title']; }?>
                     </span>
                     <span class="entry-author"><?php echo $entry['author']; ?></span>
                   </div>
               </div>
               <?php $i++; } ?>
 
-               
+
 
            </div>
-         
+
              <?php if($widget['field_link'] !=''){ ?>
                 <a href="<?php echo $widget['field_link']; ?>" class="KCPL_readmore">See More ≈ </a>
               <?php } ?>
-   
+
         </div>
       </div>
     <?php }elseif($widget['field_type'] == '8-column-featured'){
@@ -56,7 +56,7 @@
                 <div class="excerpt">
                     <?php echo $entry['excerpt']; ?>
                 </div>
-                <a href="<?php echo $entry['read_more_link']; ?>" class="KCPL_readmore"><?php echo $entry['read_more_text']; ?></a>
+                <a href="<?php echo $entry['read_more_link']; ?>" target="_blank" class="KCPL_readmore"><?php echo $entry['read_more_text']; ?></a>
               </div>
            </div>
            <?php } ?>

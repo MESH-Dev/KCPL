@@ -276,7 +276,7 @@
           <?php if($widget['horizontal_callout_alert'] == 'yes'){?> <span class="alert"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/alert.png" /> </span><?php } ?>
            <span><?php echo $widget['horizontal_callout-multi_title']; ?></span>
            <?php if($widget['field_link'] != ''){ ?>
-             <a class="KCPL_readmore" href="<?php echo $widget['field_link']; ?>">Read More ≈</a>
+             <a class="KCPL_readmore" href="<?php echo $widget['field_link']; ?>" target="_blank">Read More ≈</a>
            <?php } ?>
         </div>
       </div>
@@ -333,7 +333,7 @@
                <div class="entry-excerpt">
                    <?php echo $excerpt; ?>
                </div>
-               <a href="<?php echo $link; ?>" class="KCPL_readmore"><?php echo $entry['link_text']; ?></a>
+               <a href="<?php echo $link; ?>" class="KCPL_readmore" target="_blank"><?php echo $entry['link_text']; ?></a>
             </div>
           <?php } wp_reset_postdata(); ?>
         </div>
@@ -353,7 +353,7 @@
                <?php } ?>
             </ul>
             <?php if($widget['field_link'] != ''){ ?>
-              <a class="KCPL_readmore" href="<?php echo $widget['field_link']; ?>">More Info ≈</a>
+              <a class="KCPL_readmore" href="<?php echo $widget['field_link']; ?>" target="_blank">More Info ≈</a>
             <?php } ?>
          </div>
       </div>
@@ -382,7 +382,7 @@
 
            </div>
            <?php if($widget['field_link'] !=''){ ?>
-            <a href="<?php echo $widget['field_link']; ?>" class="KCPL_readmore">See More ≈ </a>
+            <a href="<?php echo $widget['field_link']; ?>" class="KCPL_readmore" target="_blank">See More ≈ </a>
             <?php } ?>
         </div>
       </div>
@@ -456,7 +456,7 @@
                 <div class="entry-excerpt">
                     <?php echo $entry['description']; ?>
                 </div>
-                <a href="<?php echo $entry['page_link']; ?>" class="KCPL_readmore"><?php echo $entry['page_link_text']; ?></a>
+                <a href="<?php echo $entry['page_link']; ?>" class="KCPL_readmore" target="_blank"><?php echo $entry['page_link_text']; ?></a>
              </div>
           </div>
         </div>
