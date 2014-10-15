@@ -5415,7 +5415,7 @@ a > .KCPL_horz-single {
 
 /* line 1575, assets/sass/_elements.scss */
 #KCPL_Calendar_monthsel {
-  background: #758499;
+  background: #9dabc3;
   padding: 18px 50px 16px;
   position: relative;
 }
@@ -5510,7 +5510,7 @@ a > .KCPL_horz-single {
 /* line 1593, assets/sass/_elements.scss */
 #KCPL_Calendar_listview {
   display: block;
-  background: #76849a;
+  background: #9dabc3;
   margin-bottom: 40px;
 }
 /* line 1594, assets/sass/_elements.scss */

@@ -123,7 +123,7 @@
       <div class="KCPL_listing1-list KCPL_background-l-<?php echo $widget['field_color']; ?>">
          <span class="title"><?php echo $widget['field_title']; ?></span>
          <div class="gutter">
-            <span class="list-title"><?php echo $widget['listing_title'];?></span>
+          
             <ul>
                <?php foreach($widget['urls'] as $list){ ?>
                 <?php if($list['tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
@@ -208,7 +208,8 @@
 
   <?php }
    elseif($widget['field_type'] == 'listing-style-2-1'){
-    //listing style 3 ?>
+    //listing style 3 
+    ?>
 
     <?php KCPL_Calendar::upcomingEvents(); ?>
 
@@ -361,7 +362,7 @@
       <div class="KCPL_listing1-list KCPL_background-l-<?php echo $widget['field_color']; ?>">
          <span class="title"><?php echo $widget['field_title']; ?></span>
          <div class="gutter">
-            <span class="list-title"><?php echo $widget['listing_title'];?></span>
+            
             <ul>
                <?php foreach($widget['urls'] as $list){ ?>
                 <?php if($list['tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
