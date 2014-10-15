@@ -270,7 +270,40 @@
       echo '</div>';
 
     }
-   }
+  }
+
+  elseif($widget['field_type'] == 'horizontal-graphic-callout'){
+     //Graphic Callouts
+
+       echo '<div class="four columns alpha">';
+
+       if ($widget['horizontal_graphic_callout'] == 'blue-lines') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts01_blue.png">';
+       } elseif ($widget['horizontal_graphic_callout'] == 'green-lines') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts01_green.png">';
+       } elseif ($widget['horizontal_graphic_callout'] == 'purple-lines') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts01_purple.png">';
+       } elseif ($widget['horizontal_graphic_callout'] == 'red-lines') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts01_red.png">';
+       } elseif ($widget['horizontal_graphic_callout'] == 'yellow-lines') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts01_yellow.png">';
+       } elseif ($widget['horizontal_graphic_callout'] == 'blue-shapes') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts02_blue.png">';
+       } elseif ($widget['horizontal_graphic_callout'] == 'green-shapes') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts02_green.png">';
+       } elseif ($widget['horizontal_graphic_callout'] == 'purple-shapes') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts02_purple.png">';
+       } elseif ($widget['horizontal_graphic_callout'] == 'red-shapes') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts02_red.png">';
+       } elseif ($widget['horizontal_graphic_callout'] == 'yellow-shapes') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts02_yellow.png">';
+       } else {
+         // Nothing here.
+       }
+
+       echo '</div>';
+
+    }
 
     else{
       //echo "Hasn't been configured yet. Deal with it.";
@@ -553,6 +586,39 @@
 
     }
    }
+
+   elseif($widget['field_type'] == 'horizontal-graphic-callout'){
+     //Graphic Callouts
+
+       echo '<div class="four columns alpha">';
+
+       if ($widget['horizontal_graphic_callout'] == 'blue-lines') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts01_blue.png">';
+       } elseif ($widget['horizontal_graphic_callout'] == 'green-lines') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts01_green.png">';
+       } elseif ($widget['horizontal_graphic_callout'] == 'purple-lines') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts01_purple.png">';
+       } elseif ($widget['horizontal_graphic_callout'] == 'red-lines') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts01_red.png">';
+       } elseif ($widget['horizontal_graphic_callout'] == 'yellow-lines') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts01_yellow.png">';
+       } elseif ($widget['horizontal_graphic_callout'] == 'blue-shapes') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts02_blue.png">';
+       } elseif ($widget['horizontal_graphic_callout'] == 'green-shapes') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts02_green.png">';
+       } elseif ($widget['horizontal_graphic_callout'] == 'purple-shapes') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts02_purple.png">';
+       } elseif ($widget['horizontal_graphic_callout'] == 'red-shapes') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts02_red.png">';
+       } elseif ($widget['horizontal_graphic_callout'] == 'yellow-shapes') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts02_yellow.png">';
+       } else {
+         // Nothing here.
+       }
+
+       echo '</div>';
+
+    }
 
     else{
       //echo "Hasn't been configured yet. Deal with it.";
