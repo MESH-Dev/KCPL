@@ -85,7 +85,7 @@
       </div>
 
     <?php }elseif($widget['field_type'] == 'listing-style-1-1'){
-      //listing style 1-1 ?>
+      //Multi LInk list ?>
 
       <div class="KCPL_listing1-article KCPL_background-<?php echo $widget['field_color']; ?>">
         <span class="title"><?php echo $widget['field_title']; ?></span>
@@ -102,12 +102,13 @@
               $excerpt = $entry['description'];
               $link = $entry['link_url'];
             } ?>
+            <?php if($entry['new_tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
             <div class="entry">
-               <a href="<?php echo $link; ?>"><span class="entry-title"><?php echo $title; ?></span></a>
+               <a href="<?php echo $link; ?>" target="<?php echo $target;?>><span class="entry-title"><?php echo $title; ?></span></a>
                <div class="entry-excerpt">
                    <?php echo $excerpt; ?>
                </div>
-               <a href="<?php echo $link; ?>" class="KCPL_readmore"><?php echo $entry['link_text']; ?></a>
+               <a href="<?php echo $link; ?> target="<?php echo $target;?>" class="KCPL_readmore"><?php echo $entry['link_text']; ?></a>
             </div>
           <?php } wp_reset_postdata(); ?>
         </div>
