@@ -28,7 +28,7 @@ textarea,input,select{outline: none;}
   ul#main_nav_secondary{
       ul{list-style:none;margin:0;}
       li{margin:0;}
-      > li{}
+      > li:not(.current_page_ancestor):not(.current_page_item){ display: none; }
       > li > a{color: #fff;font: bold 19px/19px $nimbus-c;text-transform: uppercase;display: block;padding: 16px 20px 8px;}
       > li:last-child > a{padding: 16px 20px 13px;}
         a{text-decoration:none;}
