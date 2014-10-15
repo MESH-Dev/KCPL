@@ -34,32 +34,40 @@ $color = get_field('section_color',$pID);
               <?php KCPL_OC_auth::processVerify(); ?>
             </div>
             <div class="columns four alpha">
-              <h5>Login</h5>
-              <div class="login-form">
-                <?php
-                $options = get_site_option('kcpl-oc');
-                $args = array(
-                  'echo'           => true,
-                  'redirect'       => get_permalink($options['dashboard']),
-                  'form_id'        => 'loginform',
-                  'label_username' => __( 'Username' ),
-                  'label_password' => __( 'Password' ),
-                  'label_log_in'   => __( 'Log In' ),
-                  'id_username'    => 'user_login',
-                  'id_password'    => 'user_pass',
-                  'id_remember'    => 'rememberme',
-                  'id_submit'      => 'wp-submit',
-                  'remember'       => false,
-                  'value_username' => NULL,
-                  'value_remember' => false
-                ); ?>
-                <?php wp_login_form( $args ); ?>
+              <div class='KCPL_listing4'>
+                <span class='title KCPL_background-red'>Log In</span>
+                <div class="gutter">
+                  <div class="login-form">
+                    <?php
+                    $options = get_site_option('kcpl-oc');
+                    $args = array(
+                      'echo'           => true,
+                      'redirect'       => get_permalink($options['dashboard']),
+                      'form_id'        => 'loginform',
+                      'label_username' => __( 'Username' ),
+                      'label_password' => __( 'Password' ),
+                      'label_log_in'   => __( 'Log In' ),
+                      'id_username'    => 'user_login',
+                      'id_password'    => 'user_pass',
+                      'id_remember'    => 'rememberme',
+                      'id_submit'      => 'wp-submit',
+                      'remember'       => false,
+                      'value_username' => NULL,
+                      'value_remember' => false
+                    ); ?>
+                    <?php wp_login_form( $args ); ?>
+                  </div>
+                </div>
               </div>
             </div>
 
             <div class="columns four omega">
-              <h5>Register</h5>
-              <?php KCPL_OC_auth::registerForm(); ?>
+              <div class='KCPL_listing4'>
+                <span class='title KCPL_background-red'>Register</span>
+                <div class='gutter'>
+                  <?php KCPL_OC_auth::registerForm(); ?>
+                </div>
+              </div>
             </div>
 
 
