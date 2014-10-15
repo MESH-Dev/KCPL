@@ -1544,7 +1544,7 @@ header #header-util .gutter {
 /* line 22, assets/sass/_layout.scss */
 #header-util ul#util_nav li a {
   color: #353535;
-  padding: 22px 10px 11px;
+  padding: 22px 8px 11px;
   float: left;
   letter-spacing: 0.085em;
   min-width: 33px;
