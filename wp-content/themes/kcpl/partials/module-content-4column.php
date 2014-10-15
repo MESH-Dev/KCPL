@@ -12,8 +12,9 @@
 
      if($widget['field_type'] == 'horizontal-callout-single'){ ?>
 
+    <?php if($widget['new_tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
     <?php if($widget['field_link'] != ''){ ?>
-      <a target="_blank" href="<?php echo $widget['field_link']; ?>">
+      <a target="<?php echo $target; ?>" href="<?php echo $widget['field_link']; ?>">
     <?php } ?>
         <div class="KCPL_horz-single KCPL_background-<?php echo $widget['field_color']; ?>">
           <div class="gutter">
@@ -240,8 +241,9 @@
 
      if($widget['field_type'] == 'horizontal-callout-single'){ ?>
 
+    <?php if($widget['new_tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
     <?php if($widget['field_link'] != ''){ ?>
-      <a target="_blank" href="<?php echo $widget['field_link']; ?>">
+      <a target="<?php echo $target; ?>" href="<?php echo $widget['field_link']; ?>">
     <?php } ?>
         <div class="KCPL_horz-single KCPL_background-<?php echo $widget['field_color']; ?>">
           <div class="gutter">
