@@ -52,7 +52,7 @@
           <?php if($widget['horizontal_callout_alert'] == 'yes'){?> <span class="alert"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/alert.png" /> </span><?php } ?>
            <span><?php echo $widget['horizontal_callout-multi_title']; ?></span>
            <?php if($widget['field_link'] != ''){ ?>
-             <a class="KCPL_readmore" href="<?php echo $widget['field_link']; ?>">Read More ≈</a>
+             <a class="KCPL_readmore" href="<?php echo $widget['field_link']; ?>" target="<?php echo $target; ?>">Read More ≈</a>
            <?php } ?>
         </div>
       </div>
@@ -290,7 +290,7 @@
           <?php if($widget['horizontal_callout_alert'] == 'yes'){?> <span class="alert"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/alert.png" /> </span><?php } ?>
            <span><?php echo $widget['horizontal_callout-multi_title']; ?></span>
            <?php if($widget['field_link'] != ''){ ?>
-             <a class="KCPL_readmore" href="<?php echo $widget['field_link']; ?>">Read More ≈</a>
+             <a class="KCPL_readmore" href="<?php echo $widget['field_link']; ?>" target="<?php echo $target; ?>">Read More ≈</a>
            <?php } ?>
         </div>
       </div>
