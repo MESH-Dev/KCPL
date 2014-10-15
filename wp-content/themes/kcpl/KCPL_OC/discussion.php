@@ -68,7 +68,8 @@ $color = 'red'; ?>
           <?php } ?>
         </div>
       <?php }else{
-        echo "<p>You must be logged in to access the Online Community</p>"; ?>
+        echo "<p>You must be logged in to access the Online Community</p>";
+      } ?>
 
 
     </div>

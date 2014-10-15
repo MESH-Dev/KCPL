@@ -22,7 +22,8 @@ $color = 'red';
         if(is_user_logged_in()){
           KCPL_OC_recommended::searchBooks(10);
         }else{
-          echo "<p>You must be logged in to access the Online Community</p>"; ?>
+          echo "<p>You must be logged in to access the Online Community</p>";
+        } ?>
 
     </div>
 
