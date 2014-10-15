@@ -77,10 +77,13 @@ class KCPL_branch_info extends WP_Widget{
 
     //before widget
 		echo $args['before_widget'];
+    echo $open;
 
     //Set time to 12-hour for hours display
     $closehour = date('g:i a', strtotime($close));
     $openhour = date('g:i a', strtotime($open));
+
+
 
     //output
     echo "<div class='footer-location-widget'>";
@@ -91,7 +94,10 @@ class KCPL_branch_info extends WP_Widget{
 		$directions = preg_replace( "/\r|\n/", " ", $address);
 
     echo   "<div class='hour-cont'>
-              <span class='hours'> $openhour - $closehour</span> <br><span class='$class'>$flag</span>
+              <span class='hours'>";
+              if($open == '') echo "Closed Today"; 
+              else echo $openhour ." - ". $closehour;
+  echo "</span> <br><span class='$class'>$flag</span>
             </div>
             <span class='address'><a href='https://www.google.com/maps/place/".$directions."' target='_blank' title='directions' />$address</a>
           </div>";
