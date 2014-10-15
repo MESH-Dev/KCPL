@@ -29,6 +29,9 @@ foreach($topCallouts as $widget){
       <div class="KCPL_horz-multi KCPL_background-<?php echo $widget['field_color']; ?>">
         <div class="gutter">
            <span><?php echo $widget['horizontal_callout-multi_title']; ?></span>
+           <?php if($widget['field_link'] != ''){ ?>
+             <a class="KCPL_readmore" href="<?php echo $widget['field_link']; ?>">Read More ≈</a>
+           <?php } ?>
         </div>
       </div>
 
