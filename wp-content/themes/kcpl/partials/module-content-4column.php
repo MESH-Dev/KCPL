@@ -43,10 +43,11 @@
   <?php }elseif($widget['field_type'] == 'horizontal-callout-multi'){
     //horizontal callout - multi ?>
 
+    <?php if($widget['new_tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
     <?php if($widget['field_link'] != ''){ ?>
-      <a target="_blank" href="<?php echo $widget['field_link']; ?>">
+      <a target="<?php echo $target; ?>" href="<?php echo $widget['field_link']; ?>">
     <?php } ?>
-      <div class="KCPL_horz-multi KCPL_background-<?php echo $widget['field_color']; ?>">
+      <div class="KCPL_horz-multi KCPL_background-<?php echo $widget['horizontal_callout_color']; ?>">
         <div class="gutter">
           <?php if($widget['horizontal_callout_alert'] == 'yes'){?> <span class="alert"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/alert.png" /> </span><?php } ?>
            <span><?php echo $widget['horizontal_callout-multi_title']; ?></span>
@@ -257,6 +258,14 @@
   <?php }elseif($widget['field_type'] == 'card'){
     //horizontal callout - multi ?>
 
+      <?php if($widget['field_link'] != ''){ ?>
+        <a target="_blank" href="<?php echo $widget['field_link']; ?>">
+      <?php } ?>
+          <div class="KCPL_horz-card KCPL_background-<?php echo $widget['field_color']; ?>">
+            <div class="gutter">
+               <span class="KCPL_horz-card-first">Get your free</span> <span class="KCPL_horz-card-last">library card</span>
+            </div>
+
     <?php if($widget['field_link'] != ''){ ?>
       <a target="_blank" href="<?php echo $widget['field_link']; ?>">
     <?php } ?>
@@ -272,8 +281,9 @@
   <?php }elseif($widget['field_type'] == 'horizontal-callout-multi'){
     //horizontal callout - multi ?>
 
+    <?php if($widget['new_tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
     <?php if($widget['field_link'] != ''){ ?>
-      <a target="_blank" href="<?php echo $widget['field_link']; ?>">
+      <a target="<?php echo $target; ?>" href="<?php echo $widget['field_link']; ?>">
     <?php } ?>
       <div class="KCPL_horz-multi KCPL_background-<?php echo $widget['field_color']; ?>">
         <div class="gutter">
