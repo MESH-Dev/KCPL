@@ -1,4 +1,9 @@
-<?php get_header();
+<?php 
+$search_refer = $_GET["search-type"];
+if ($search_refer == 'resources') { load_template(TEMPLATEPATH . '/resources-search.php'); }
+else{
+
+get_header();
 global $post;
 $pID = KCPL_get_highest_ancestor($post);
 $sidebar = KCPL_get_sidebar($pID);
@@ -118,4 +123,8 @@ $color = get_field('section_color',$pID);
   </div>
 </div>
 
-<?php get_footer(); ?>
+<?php get_footer(); 
+
+}?>
+
+

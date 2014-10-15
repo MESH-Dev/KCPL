@@ -10,10 +10,10 @@
       <div id="search-params">
         <div id="type">
           <span class="top">
-            Search or Browse by
+            or Browse by
           </span>
           <span class="bottom">
-            <a class="media-active active">Media Type</a>
+            <a class="media-active active">Media Type |</a>
             <a class="audience-active">Audience</a>
           </span>
         </div>
