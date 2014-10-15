@@ -88,7 +88,7 @@
       </div>
 
     <?php }elseif($widget['field_type'] == 'listing-style-1-1'){
-      //Multi LInk list ?>
+      //Multi Link list ?>
 
       <div class="KCPL_listing1-article KCPL_background-l-<?php echo $widget['field_color']; ?>">
         <span class="title"><?php echo $widget['field_title']; ?></span>
