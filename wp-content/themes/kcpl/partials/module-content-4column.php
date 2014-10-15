@@ -123,7 +123,7 @@
       <div class="KCPL_listing1-list KCPL_background-l-<?php echo $widget['field_color']; ?>">
          <span class="title"><?php echo $widget['field_title']; ?></span>
          <div class="gutter">
-          
+
             <ul>
                <?php foreach($widget['urls'] as $list){ ?>
                 <?php if($list['tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
@@ -208,7 +208,7 @@
 
   <?php }
    elseif($widget['field_type'] == 'listing-style-2-1'){
-    //listing style 3 
+    //listing style 3
     ?>
 
     <?php KCPL_Calendar::upcomingEvents(); ?>
@@ -228,6 +228,50 @@
     </div>
 
   <?php }
+
+  elseif($widget['field_type'] == 'vertical-graphic-callout'){
+    //Graphic Callouts
+
+    $i = 0;
+
+    foreach($widget['vertical_graphic_callout'] as $entry){
+
+      if ($i == 0) {
+          echo '<div class="two columns alpha">';
+          $i = $i + 1;
+      } else {
+        echo '<div class="two columns omega">';
+      }
+
+      if ($entry['graphic_callout_type'] == 'blue-shapes') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts01_blue.png">';
+      } elseif ($entry['graphic_callout_type'] == 'green-shapes') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts01_green.png">';
+      } elseif ($entry['graphic_callout_type'] == 'purple-shapes') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts01_purple.png">';
+      } elseif ($entry['graphic_callout_type'] == 'red-shapes') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts01_red.png">';
+      } elseif ($entry['graphic_callout_type'] == 'yellow-shapes') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts01_yellow.png">';
+      } elseif ($entry['graphic_callout_type'] == 'blue-exclamation') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts02_blue.png">';
+      } elseif ($entry['graphic_callout_type'] == 'green-exclamation') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts02_green.png">';
+      } elseif ($entry['graphic_callout_type'] == 'purple-exclamation') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts02_purple.png">';
+      } elseif ($entry['graphic_callout_type'] == 'red-exclamation') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts02_red.png">';
+      } elseif ($entry['graphic_callout_type'] == 'yellow-exclamation') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts02_yellow.png">';
+      } else {
+        // Nothing here.
+      }
+
+      echo '</div>';
+
+    }
+   }
+
     else{
       //echo "Hasn't been configured yet. Deal with it.";
     }
@@ -362,7 +406,7 @@
       <div class="KCPL_listing1-list KCPL_background-l-<?php echo $widget['field_color']; ?>">
          <span class="title"><?php echo $widget['field_title']; ?></span>
          <div class="gutter">
-            
+
             <ul>
                <?php foreach($widget['urls'] as $list){ ?>
                 <?php if($list['tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
@@ -466,6 +510,50 @@
     </div>
 
   <?php }
+
+  elseif($widget['field_type'] == 'vertical-graphic-callout'){
+    //Graphic Callouts
+
+    $i = 0;
+
+    foreach($widget['vertical_graphic_callout'] as $entry){
+
+      if ($i == 0) {
+          echo '<div class="two columns alpha">';
+          $i = $i + 1;
+      } else {
+        echo '<div class="two columns omega">';
+      }
+
+      if ($entry['graphic_callout_type'] == 'blue-shapes') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts01_blue.png">';
+      } elseif ($entry['graphic_callout_type'] == 'green-shapes') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts01_green.png">';
+      } elseif ($entry['graphic_callout_type'] == 'purple-shapes') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts01_purple.png">';
+      } elseif ($entry['graphic_callout_type'] == 'red-shapes') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts01_red.png">';
+      } elseif ($entry['graphic_callout_type'] == 'yellow-shapes') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts01_yellow.png">';
+      } elseif ($entry['graphic_callout_type'] == 'blue-exclamation') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts02_blue.png">';
+      } elseif ($entry['graphic_callout_type'] == 'green-exclamation') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts02_green.png">';
+      } elseif ($entry['graphic_callout_type'] == 'purple-exclamation') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts02_purple.png">';
+      } elseif ($entry['graphic_callout_type'] == 'red-exclamation') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts02_red.png">';
+      } elseif ($entry['graphic_callout_type'] == 'yellow-exclamation') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts02_yellow.png">';
+      } else {
+        // Nothing here.
+      }
+
+      echo '</div>';
+
+    }
+   }
+
     else{
       //echo "Hasn't been configured yet. Deal with it.";
     }
