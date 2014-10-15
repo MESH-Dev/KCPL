@@ -107,7 +107,7 @@
             } ?>
             <?php if($entry['new_tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
             <div class="entry">
-               <a href="<?php echo $link; ?>" target="<?php echo $target;?>><span class="entry-title"><?php echo $title; ?></span></a>
+               <a href="<?php echo $link; ?>" target="<?php echo $target;?>"><span class="entry-title"><?php echo $title; ?></span></a>
                <div class="entry-excerpt">
                    <?php echo $excerpt; ?>
                </div>
@@ -345,7 +345,7 @@
             } ?>
             <?php if($entry['new_tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
             <div class="entry">
-               <a href="<?php echo $link; ?>" target="<?php echo $target;?>><span class="entry-title"><?php echo $title; ?></span></a>
+               <a href="<?php echo $link; ?>" target="<?php echo $target;?>"><span class="entry-title"><?php echo $title; ?></span></a>
                <div class="entry-excerpt">
                    <?php echo $excerpt; ?>
                </div>
