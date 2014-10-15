@@ -27,7 +27,8 @@ $color = 'red';
 
         <?php KCPL_OC_recommended::searchRecommended(10,"Search Recommended Books"); ?>
       <?php }else{
-        echo "<p>You must be logged in to access the Online Community</p>"; ?>
+        echo "<p>You must be logged in to access the Online Community</p>";
+      } ?>
     </div>
 
   </div>

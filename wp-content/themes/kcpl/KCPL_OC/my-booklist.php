@@ -23,7 +23,8 @@ $color = 'red';
         if(is_user_logged_in()){
           KCPL_OC_booklist::searchUserBooklists();
         }else{
-          echo "<p>You must be logged in to access the Online Community</p>"; ?>
+          echo "<p>You must be logged in to access the Online Community</p>";
+        } ?>
 
     </div>
 

@@ -34,7 +34,8 @@ $color = 'red';
                 KCPL_OC_booklist::bookListCont("My Book List"); ?>
         </div>
       <?php }else{
-        echo "<p>You must be logged in to access the Online Community</p>"; ?>
+        echo "<p>You must be logged in to access the Online Community</p>";
+      } ?>
 
     </div>
 
