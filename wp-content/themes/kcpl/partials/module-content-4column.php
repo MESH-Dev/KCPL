@@ -12,8 +12,9 @@
 
      if($widget['field_type'] == 'horizontal-callout-single'){ ?>
 
+    <?php if($widget['new_tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
     <?php if($widget['field_link'] != ''){ ?>
-      <a target="_blank" href="<?php echo $widget['field_link']; ?>">
+      <a target="<?php echo $target; ?>" href="<?php echo $widget['field_link']; ?>">
     <?php } ?>
         <div class="KCPL_horz-single KCPL_background-<?php echo $widget['field_color']; ?>">
           <div class="gutter">
@@ -42,10 +43,11 @@
   <?php }elseif($widget['field_type'] == 'horizontal-callout-multi'){
     //horizontal callout - multi ?>
 
+    <?php if($widget['new_tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
     <?php if($widget['field_link'] != ''){ ?>
-      <a target="_blank" href="<?php echo $widget['field_link']; ?>">
+      <a target="<?php echo $target; ?>" href="<?php echo $widget['field_link']; ?>">
     <?php } ?>
-      <div class="KCPL_horz-multi KCPL_background-<?php echo $widget['field_color']; ?>">
+      <div class="KCPL_horz-multi KCPL_background-<?php echo $widget['horizontal_callout_color']; ?>">
         <div class="gutter">
           <?php if($widget['horizontal_callout_alert'] == 'yes'){?> <span class="alert"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/alert.png" /> </span><?php } ?>
            <span><?php echo $widget['horizontal_callout-multi_title']; ?></span>
@@ -77,8 +79,9 @@
               <div class="entry-excerpt">
                   <?php echo $widget['single_featured_item_description']; ?>
               </div>
+              <?php if($widget['new_tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
               <?php if($widget['single_featured_item_link_url'] !=''){ ?>
-              <a href="<?php echo $widget['single_featured_item_link_url']; ?>" target="_blank" class="KCPL_readmore"><?php echo $widget['single_featured_item_link_text']; ?></a>
+              <a href="<?php echo $widget['single_featured_item_link_url']; ?>" target="<?php echo $target; ?>" class="KCPL_readmore"><?php echo $widget['single_featured_item_link_text']; ?></a>
               <?php }?>
            </div>
         </div>
@@ -239,8 +242,9 @@
 
      if($widget['field_type'] == 'horizontal-callout-single'){ ?>
 
+    <?php if($widget['new_tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
     <?php if($widget['field_link'] != ''){ ?>
-      <a target="_blank" href="<?php echo $widget['field_link']; ?>">
+      <a target="<?php echo $target; ?>" href="<?php echo $widget['field_link']; ?>">
     <?php } ?>
         <div class="KCPL_horz-single KCPL_background-<?php echo $widget['field_color']; ?>">
           <div class="gutter">
@@ -254,8 +258,9 @@
   <?php }elseif($widget['field_type'] == 'card'){
     //horizontal callout - multi ?>
 
+      <?php if($widget['new_tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
       <?php if($widget['field_link'] != ''){ ?>
-        <a target="_blank" href="<?php echo $widget['field_link']; ?>">
+        <a target="<?php echo $target; ?>" href="<?php echo $widget['field_link']; ?>">
       <?php } ?>
           <div class="KCPL_horz-card KCPL_background-<?php echo $widget['field_color']; ?>">
             <div class="gutter">
@@ -304,8 +309,9 @@
               <div class="entry-excerpt">
                   <?php echo $widget['single_featured_item_description']; ?>
               </div>
+              <?php if($widget['new_tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
               <?php if($widget['single_featured_item_link_url'] !=''){ ?>
-              <a href="<?php echo $widget['single_featured_item_link_url']; ?>" target="_blank" class="KCPL_readmore"><?php echo $widget['single_featured_item_link_text']; ?></a>
+              <a href="<?php echo $widget['single_featured_item_link_url']; ?>" target="<?php echo $target; ?>" class="KCPL_readmore"><?php echo $widget['single_featured_item_link_text']; ?></a>
               <?php }?>
            </div>
         </div>
