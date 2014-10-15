@@ -150,6 +150,7 @@
         echo $output;
       ?>
 
+
       <div class="gutter">
 
        <?php
@@ -165,6 +166,31 @@
         $presenter_email = $meta['presenter_email'][0];
         $contact_name    = $meta['contact_nam'][0];
         $contact_email   = $meta['contact_email'][0];
+
+
+        //get the exact dates
+        if( isset( $meta['recurring'] ) && $meta['recurring'][0] == 1 ){
+          //recurring
+          $thisdate = date('F j',($meta['start_date'][0]/1000))." to ".date('F j',($meta['end_date'][0]/1000));
+
+        }elseif( isset( $meta['recurring'] ) && $meta['recurring'][0] == 1 ){
+          //multiple
+          global $wpdb;
+          $dates = $wpdb->get_results("SELECT `meta_value`
+                                      FROM `wp_postmeta`
+                                      WHERE `post_id` = $postid
+                                      AND `meta_key` LIKE 'multiple_dates___date'
+                                      ORDER BY `meta_key`
+                                      ");
+          $dateArr = array();
+          foreach($dates as $date){
+            array_push($dateArr,date('F j',($date/1000)));
+          }
+          $thisdate = join(', ',$dateArr);
+        }else{
+          //single
+          $thisdate = date('F j',($meta['single_date'][0]/1000));
+        }
 
 
         //tax arr
@@ -202,7 +228,7 @@
           }?>
 
         <h3><?php the_title();?></h3>
-        <h4> <?php echo $day; ?> <?php echo $time; ?> </h4>
+        <h4> <?php echo $thisdate; ?> <?php echo $time; ?> </h4>
         <?php echo $loc; ?> <br>
         <?php echo $type . ' ' .  $age . ' ' . $topic; ?>
         <br><br>
