@@ -234,6 +234,8 @@
 
     $i = 0;
 
+    echo '<div class="KCPL_vertical-callout clearfix">';
+
     foreach($widget['vertical_graphic_callout'] as $entry){
 
       if ($i == 0) {
@@ -270,12 +272,15 @@
       echo '</div>';
 
     }
+
+    echo '</div>';
+
   }
 
   elseif($widget['field_type'] == 'horizontal-graphic-callout'){
      //Graphic Callouts
 
-       echo '<div class="four columns alpha">';
+       echo '<div class="KCPL_vertical-callout clearfix"><div class="four columns alpha">';
 
        if ($widget['horizontal_graphic_callout'] == 'blue-lines') {
          echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts01_blue.png">';
@@ -301,7 +306,7 @@
          // Nothing here.
        }
 
-       echo '</div>';
+       echo '</div></div>';
 
     }
 
