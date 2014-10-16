@@ -4,7 +4,7 @@
       <input type="hidden" name="ln" value="en_US">
       <div id="searchField">
         <i class="fa fa-lg fa-search searchicon"></i>
-        <input type="search" id="q" name="q" placeholder="Search the collection" />
+        <input type="search" id="q" name="q" placeholder="Search the Collection" />
         <input type="submit" value="<?php echo esc_attr_x('Search','submit button'); ?>" />
       </div>
       <div id="search-params">

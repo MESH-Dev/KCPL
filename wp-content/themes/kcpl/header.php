@@ -92,7 +92,7 @@
             } ?>
             <div id="header-extra">
               <div id="header-search-catalog">
-                <a href="http://kana.ent.sirsi.net/client/en_US/default/"><b></b><span>Search Catalog</span></a>
+                <a href="http://kana.ent.sirsi.net/client/en_US/default/"><b></b><span>Search Collection</span></a>
               </div>
               <div id="header-search">
                 <b></b><span>Search Site</span>
