@@ -2194,7 +2194,7 @@ textarea, input, select {
 /* line 90, assets/sass/_elements.scss */
 #secondary-sidebar-nav.KCPL_background-red ul#main_nav_secondary > li.current_page_item > ul > li > ul > li > a,
 #secondary-sidebar-nav.KCPL_background-red ul#main_nav_secondary > li.current_page_ancestor > ul > li > ul > li > a,
-#secondary-sidebar-nav.KCPL_background-green ul#main_nav_secondary > li.current_page_ancestor > ul > li > ul > li > ul > li > a {
+#secondary-sidebar-nav.KCPL_background-red ul#main_nav_secondary > li.current_page_ancestor > ul > li > ul > li > ul > li > a {
   color: #ff856f;
 }
 
@@ -2220,7 +2220,7 @@ textarea, input, select {
 /* line 103, assets/sass/_elements.scss */
 #secondary-sidebar-nav.KCPL_background-blue ul#main_nav_secondary > li.current_page_item > ul > li > ul > li > a,
 #secondary-sidebar-nav.KCPL_background-blue ul#main_nav_secondary > li.current_page_ancestor > ul > li > ul > li > a,
-#secondary-sidebar-nav.KCPL_background-green ul#main_nav_secondary > li.current_page_ancestor > ul > li > ul > li > ul > li > a {
+#secondary-sidebar-nav.KCPL_background-blue ul#main_nav_secondary > li.current_page_ancestor > ul > li > ul > li > ul > li > a {
   color: #61a2d7;
 }
 
