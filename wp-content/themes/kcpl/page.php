@@ -16,10 +16,7 @@ $color = get_field('section_color',$pID);
     <?php include_once(locate_template('partials/module-sidebar-nav.php')); ?>
 
     <div class="columns eight omega" id="contentPrimary">
-      <div class="column eight alpha omega">
-       
-        <?php include_once(locate_template('partials/module-content-topcallout.php')); ?>
-      </div>  
+ 
 
       <div class="columns eight alpha omega">
   
