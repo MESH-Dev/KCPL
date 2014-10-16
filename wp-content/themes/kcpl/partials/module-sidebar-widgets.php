@@ -244,7 +244,7 @@ foreach($left as $widget){
     </div> <?php
 
   }else{
-    echo "Hasn't been configured yet. Deal with it.";
+    //echo "Hasn't been configured yet. Deal with it.";
   }
 } echo "</div>";
 
@@ -505,6 +505,6 @@ foreach($right as $widget){
     </div> <?php
 
   }else{
-    echo "Hasn't been configured yet. Deal with it.";
+    //echo "Hasn't been configured yet. Deal with it.";
   }
 } echo "</div>"; ?>

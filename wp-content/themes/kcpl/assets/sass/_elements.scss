@@ -32,7 +32,7 @@ textarea,input,select{outline: none;}
       > li > a{color: #fff;font: bold 19px/19px $nimbus-c;text-transform: uppercase;display: block;padding: 16px 20px 8px;}
       > li:last-child > a{padding: 16px 20px 13px;}
         a{text-decoration:none;}
-        a:hover, li.current-menu-item > a, .current-menu-ancestor > a{color:$d-grey;}
+        a:hover, li.current-menu-item > a, .current-menu-ancestor > a{color:#fff;}
 
       > li > ul{display: none;}
       > li > ul > li{padding:0 0;}
@@ -49,22 +49,38 @@ textarea,input,select{outline: none;}
 
       // Make the second and third level menu items of the current page visible
 
-      > li.current_page_item > ul, > li.current_page_ancestor > ul{display:block; background:$m-grey;}
+      > li.current_page_item > ul, > li.current_page_ancestor > ul{display:block; background:$s-grey;}
       > li.current_page_item > ul > li, > li.current_page_ancestor > ul > li{padding:0 0;}
-      > li.current_page_item > ul > li > a, > li.current_page_ancestor > ul > li > a{color: #fff;font: bold 19px/19px $nimbus-c;text-transform: uppercase;display: block;padding: 10px 20px;}
+      > li.current_page_item > ul > li > a, > li.current_page_ancestor > ul > li > a{font: bold 19px/19px $nimbus-c;text-transform: uppercase;display: block;padding: 10px 20px;}
       > li.current_page_ancestor > ul > li.current_page_item > a{color: #323333;font: bold 19px/19px $nimbus-c;text-transform: uppercase;display: block;padding: 10px 20px;}
 
       > li.current_page_item > ul > li > ul, > li.current_page_ancestor > ul > li > ul{padding:0 0; display: none;}
-      > li.current_page_item > ul > li > ul > li, > li.current_page_ancestor > ul > li > ul > li{padding:0 0;}
+      > li.current_page_item > ul > li > ul > li, 
+      > li.current_page_ancestor > ul > li > ul > li{padding:0 0;}
 
-      > li.current_page_ancestor > ul > li.current_page_item > ul { display:block; }
-      > li.current_page_ancestor > ul > li.current_page_ancestor > ul { display:block; }
+      > li.current_page_ancestor > ul > li.current_page_item > ul,
+      > li.current_page_ancestor > ul > li.current_page_item, 
+      > li.current_page_ancestor > ul > li.current-menu-ancestor{ display:block; background-color: $m-grey }
+      > li.current_page_ancestor > ul > li.current_page_ancestor > ul { display:block; background-color: $m-grey}  
 
       > li.current_page_item > ul > li > ul > li > a, > li.current_page_ancestor > ul > li > ul > li > a{color: #fff;font: 18px/18px $minion;display: block;padding: 4px 0px 0px 20px;letter-spacing: 0.03em;word-spacing: 0.09em;}
+      > li.current_page_ancestor > ul > li > ul > li.current_page_item > a{ } //third level active page
       > li.current_page_item > ul > li > ul > li:last-child > a, > li.current_page_ancestor > ul > li > ul > li:last-child > a{padding: 4px 0px 16px 20px;}
 
   }
 }
+
+div#secondary-sidebar-nav.KCPL_background-red ul#main_nav_secondary > li.current_page_item > ul > li > a, 
+div#secondary-sidebar-nav.KCPL_background-red ul#main_nav_secondary > li.current_page_ancestor > ul > li > a,
+div#secondary-sidebar-nav.KCPL_background-red ul#main_nav_secondary > li.current_page_ancestor > ul > li > ul > li.current_page_item > a{color: $red;}
+
+div#secondary-sidebar-nav.KCPL_background-green ul#main_nav_secondary > li.current_page_item > ul > li > a, 
+div#secondary-sidebar-nav.KCPL_background-green ul#main_nav_secondary > li.current_page_ancestor > ul > li > a, 
+div#secondary-sidebar-nav.KCPL_background-green ul#main_nav_secondary > li.current_page_ancestor > ul > li > ul > li.current_page_item > a{color: $green;}
+
+div#secondary-sidebar-nav.KCPL_background-blue ul#main_nav_secondary > li.current_page_item > ul > li > a, 
+div#secondary-sidebar-nav.KCPL_background-blue ul#main_nav_secondary > li.current_page_ancestor > ul > li > a,
+div#secondary-sidebar-nav.KCPL_background-blue ul#main_nav_secondary > li.current_page_ancestor > ul > li > ul > li.current_page_item > a{color: $blue;}
 
 
 
@@ -190,11 +206,11 @@ table{
     </div>
   </div>
 */
-#banner{height:202px;float:left;width:100%;text-align:center;margin:0 0 26px; border-top: solid 1px white;
+#banner{height:150px;float:left;width:100%;text-align:center;margin:0 0 26px; border-top: solid 1px white;
   ul{list-style:none;margin:0;vertical-align:bottom;display:table-cell;}
   li{float:left;display:block;display:table;}
     ul ul{}
-  .container{height:202px;display:table;}
+  .container{height:150px;display:table;}
   .gutter{display:table;height:100%;width:100%;vertical-align:middle;}
   a{display:none;color:#fff;float:left;}
     li.current_page_ancestor > a, li.current-page-ancestor > a, li.current-menu-item > a{display:block;}
@@ -206,11 +222,11 @@ table{
 
     > ul > li > ul{}
     > ul > li > ul > li{}
-    > ul > li > ul > li > a{font:italic 25px/30px $minion;margin:0 22px 0 0;}
+    > ul > li > ul > li > a{font:bold 19px/19px $nimbus-c; margin:0 22px 0 0; text-transform: uppercase; letter-spacing:0.04em}
 
     > ul > li > ul > li > ul{}
     > ul > li > ul > li > ul > li{}
-    > ul > li > ul > li > ul > li > a{font:bold 19px/26px $nimbus;margin:0 20px 0 0;text-transform:uppercase;}
+    > ul > li > ul > li > ul > li > a{font:18px/18px $minion;margin:0 20px 0 0;letter-spacing:0.03em }
 
     > ul > li > ul > li > ul > li > ul{}
     > ul > li > ul > li > ul > li > ul > li{}
