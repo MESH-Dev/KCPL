@@ -455,8 +455,8 @@ foreach($right as $widget){
                 <a href="https://twitter.com/KanawhaLibrary" target="_blank"><div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div></a>
 
               </div>
-
                <div class="clear"></div>
+
 
                <?php
 
