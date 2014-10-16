@@ -279,7 +279,7 @@ foreach($right as $widget){
     <?php } ?>
 
   <?php }elseif($widget['field_type'] == 'card'){
-    //horizontal callout - multi ?>
+    //card ?>
 
     <?php if($widget['field_link'] != ''){ ?>
       <a target="_blank" href="<?php echo $widget['field_link']; ?>">
