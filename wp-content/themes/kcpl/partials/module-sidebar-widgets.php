@@ -284,11 +284,13 @@ foreach($right as $widget){
     <?php if($widget['field_link'] != ''){ ?>
       <a target="_blank" href="<?php echo $widget['field_link']; ?>">
     <?php } ?>
+
         <div class="KCPL_horz-card KCPL_background-<?php echo $widget['field_color']; ?>">
           <div class="gutter">
              <span class="KCPL_horz-card-first">Get your free</span> <span class="KCPL_horz-card-last">library card</span>
           </div>
         </div>
+
     <?php if($widget['field_link'] != ''){ ?>
       </a>
     <?php } ?>
