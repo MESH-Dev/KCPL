@@ -5,6 +5,7 @@
 global $wp_query;
 //$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
+//Get Search Terms
 $s = $_GET['s'];
 $topic = $_GET['topic'];
 $audience = $_GET['audience'];
@@ -12,42 +13,52 @@ $online = $_GET['online'];
 $inlib = $_GET['inlib'];
 $withcard = $_GET['withcard'];
  
-
 $access = array();
 if ($online !=''){array_push($access, $online);}
 if ($inlib !=''){array_push($access, $inlib);}
 if ($withcard !=''){array_push($access, $withcard);}
 
+//tax_query array for custom query
+$tax_q_array = array('relation' => 'OR');
+
+if ($topic != "") {
+	$topics_arr =  array(
+	'taxonomy' => 'resources-category',
+	'field' => 'slug',
+	'terms' => $topic
+	);
+	array_push($tax_q_array, $topics_arr);
+}
+
+if ($audience != "") {
+	$audience_arr =  array(
+	'taxonomy' => 'audience',
+	'field' => 'slug',
+	'terms' => $audience
+	);
+	array_push($tax_q_array, $audience_arr);
+}
+
+if (!empty($access)) {
+	$access_arr =  array(
+	'taxonomy' => 'access',
+	'field' => 'slug',
+	'terms' => $access
+	);
+	array_push($tax_q_array, $access_arr);
+}
  
 
+//Custom query args
 $args = array( 
 	'post_type' => 'resources', 
 	'posts_per_page' => '-1',
-	's' => $s,
-	'tax_query' => array(
-
-		'relation' => 'OR',
-		array(
-				'taxonomy' => 'resources-category',
-				'field' => 'slug',
-				'terms' => $topic
-			),
-		array(
-			'taxonomy' => 'audience',
-			'field' => 'slug',
-			'terms' => $audience
-		),
-		array(
-			'taxonomy' => 'access',
-			'field' => 'slug',
-			'terms' => $access
-		)
-	)
+ 	's' => $s,
+	'tax_query' => $tax_q_array
 
 	);
-//$args = array_merge( $args, $wp_query->query );
-//query_posts( $args );
- $the_query = new WP_Query( $args );
+ 
+    $the_query = new WP_Query( $args );
 
 ?>
 
@@ -77,16 +88,31 @@ $args = array(
 	<?php 
 
 	$ctr = 1; //to add alpha/omega class
-	if($the_query->have_posts()){while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+	if($the_query->have_posts()){ ?>
+		<?php if ($s != ''){?>
+		<h2>Search Results for: "<?php echo $s; ?>"   </h2> 
+		<?php } ?>
+		<?php if ($topic != ''){?>
+		<h3>Topic: <?php echo $topic; ?>   </h3> 
+		<?php } ?>
+		<?php if ($audience != ''){?>
+		<h3>Audience: <?php echo $audience; ?>   </h3> 
+		<?php } ?>
+		<?php if (!empty($access)){?>
+		<h3>Access: <?php $acc =  implode(", ", $access); $acc = str_replace("-", " ", $acc); echo $acc; ?></h3> 
+		<?php } ?>
+
+
+	<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 		<?php if ($ctr%3 == 1){
 				$class = 'alpha';}
 			else if ($ctr%3 == 0){
 				$class = 'omega';}
 			else{$class = '';}
 		?>
-		<h2>Search Results for: <?php echo $s; ?></h2> 
+
  		<div class="four columns <?php echo $class; $ctr++;?>">
-			<div class="KCPL_single-featured">
+			<div class="KCPL_single-featured research-results">
 			     <span class="title KCPL_background-yellow"></span>
 			     <div class="gutter">
 			        <div class="entry">
@@ -100,7 +126,14 @@ $args = array(
 		   </div>
 		</div>
 
-<?php endwhile; } ?>
+<?php endwhile; 
+} 
+else{?>
+
+<h2>Sorry no results found. Please broaden your search and try again!</h2>
+
+<?php
+ }?>
 <?php wp_reset_postdata(); ?>
 
 	<div class="pagination clearfix"> 
