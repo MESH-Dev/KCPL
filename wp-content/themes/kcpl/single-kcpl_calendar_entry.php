@@ -20,7 +20,7 @@
     <div class="columns three alpha" id="contentPrimary">
 
         <?php // echo KCPL_calendar::KCPL_Calendar_sidebar(); ?>
-
+        <p>&nbsp;</p>
     </div>
     <div class="columns nine omega page-content" id="contentPrimary">
       <?php
