@@ -46,4 +46,5 @@
       echo "<p><em>main_nav</em> doesn't exist! Create it and it'll render here.</p>";
     } ?>
   <?php include_once(locate_template('partials/module-sidebar-widgets.php')); ?>
+  
 </div>

@@ -111,7 +111,7 @@
                <div class="entry-excerpt">
                    <?php echo $excerpt; ?>
                </div>
-               <a href="<?php echo $link; ?> target="<?php echo $target;?>" class="KCPL_readmore"><?php echo $entry['link_text']; ?></a>
+               <a href="<?php echo $link; ?>" target="<?php echo $target;?>" class="KCPL_readmore"><?php echo $entry['link_text']; ?></a>
             </div>
           <?php } wp_reset_postdata(); ?>
         </div>
@@ -123,7 +123,7 @@
       <div class="KCPL_listing1-list KCPL_background-l-<?php echo $widget['field_color']; ?>">
          <span class="title"><?php echo $widget['field_title']; ?></span>
          <div class="gutter">
-          
+
             <ul>
                <?php foreach($widget['urls'] as $list){ ?>
                 <?php if($list['tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
@@ -208,7 +208,7 @@
 
   <?php }
    elseif($widget['field_type'] == 'listing-style-2-1'){
-    //listing style 3 
+    //listing style 3
     ?>
 
     <?php KCPL_Calendar::upcomingEvents(); ?>
@@ -228,6 +228,138 @@
     </div>
 
   <?php }
+
+  elseif($widget['field_type'] == 'vertical-graphic-callout'){
+    //Graphic Callouts
+
+    $i = 0;
+
+    echo '<div class="KCPL_vertical-callout clearfix">';
+
+    foreach($widget['vertical_graphic_callout'] as $entry){
+
+      if ($i == 0) {
+          echo '<div class="two columns alpha">';
+          $i = $i + 1;
+      } else {
+        echo '<div class="two columns omega">';
+      }
+
+      if ($entry['graphic_callout_type'] == 'blue-shapes') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts01_blue.png">';
+      } elseif ($entry['graphic_callout_type'] == 'green-shapes') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts01_green.png">';
+      } elseif ($entry['graphic_callout_type'] == 'purple-shapes') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts01_purple.png">';
+      } elseif ($entry['graphic_callout_type'] == 'red-shapes') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts01_red.png">';
+      } elseif ($entry['graphic_callout_type'] == 'yellow-shapes') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts01_yellow.png">';
+      } elseif ($entry['graphic_callout_type'] == 'blue-exclamation') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts02_blue.png">';
+      } elseif ($entry['graphic_callout_type'] == 'green-exclamation') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts02_green.png">';
+      } elseif ($entry['graphic_callout_type'] == 'purple-exclamation') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts02_purple.png">';
+      } elseif ($entry['graphic_callout_type'] == 'red-exclamation') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts02_red.png">';
+      } elseif ($entry['graphic_callout_type'] == 'yellow-exclamation') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts02_yellow.png">';
+      } else {
+        // Nothing here.
+      }
+
+      echo '</div>';
+
+    }
+
+    echo '</div>';
+
+  }
+
+  elseif($widget['field_type'] == 'horizontal-graphic-callout'){
+     //Graphic Callouts
+
+       echo '<div class="KCPL_vertical-callout clearfix"><div class="four columns alpha">';
+
+       if ($widget['horizontal_graphic_callout'] == 'blue-lines') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts01_blue.png">';
+       } elseif ($widget['horizontal_graphic_callout'] == 'green-lines') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts01_green.png">';
+       } elseif ($widget['horizontal_graphic_callout'] == 'purple-lines') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts01_purple.png">';
+       } elseif ($widget['horizontal_graphic_callout'] == 'red-lines') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts01_red.png">';
+       } elseif ($widget['horizontal_graphic_callout'] == 'yellow-lines') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts01_yellow.png">';
+       } elseif ($widget['horizontal_graphic_callout'] == 'blue-shapes') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts02_blue.png">';
+       } elseif ($widget['horizontal_graphic_callout'] == 'green-shapes') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts02_green.png">';
+       } elseif ($widget['horizontal_graphic_callout'] == 'purple-shapes') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts02_purple.png">';
+       } elseif ($widget['horizontal_graphic_callout'] == 'red-shapes') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts02_red.png">';
+       } elseif ($widget['horizontal_graphic_callout'] == 'yellow-shapes') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts02_yellow.png">';
+       } else {
+         // Nothing here.
+       }
+
+       echo '</div></div>';
+
+    }elseif($entry['vertical_type'] == "social-feed"){ ?>
+       <div class="columns two <?php if($ctr == 1) echo 'alpha'; else echo 'omega';?> ">
+        <div class="KCPL_social-callout">
+         <div class="KCPL_social-callout-header">
+             <span>Follow Us</span>
+         </div>
+         <div class="KCPL_social-callout-body">
+            <div class='icons'>
+              <a href="https://www.facebook.com/KanawhaLibrary" target="_blank"><div class="KCPL_sprite-facebook KCPL_social-callout-icon"></div></a>
+              <a href="http://www.pinterest.com/kanawhalibrary/" target="_blank"><div class="KCPL_sprite-pinterest KCPL_social-callout-icon"></div></a>
+              <a href="http://twitter.com/KanawhaLibrary" target="_blank"><div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div></a>
+            </div>
+
+             <div class="clear"></div>
+
+             <?php
+
+             $settings = array(
+                  'oauth_access_token' => "83915658-qoSmzFO1D0QbPupw9BhX3XOiA11BeYdt0VDqg3oSp",
+                  'oauth_access_token_secret' => "WGKKZkm5hxYkxW8JHfGBwQpps1NKE1llVCqwLkNEzpOoB",
+                  'consumer_key' => "ajAwYUZL83PVw78lL2RVlTchh",
+                  'consumer_secret' => "2g9khxKkgvG7pR9WAQ5rF16RVlR9B7Z4LrhgrtStax68uNjgJY"
+                );
+
+              $url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
+              $getfield = '?screen_name=KanawhaLibrary&count=1';
+              $requestMethod = 'GET';
+
+              $twitter = new TwitterAPIExchange($settings);
+              $response = $twitter->setGetfield($getfield)
+                           ->buildOauth($url, $requestMethod)
+                           ->performRequest();
+
+              $result = json_decode($response, true);
+              $tweet = $result[0]['text'];
+              $date = $result[0]['created_at'];
+              $newDate = date("M j", strtotime($date));
+
+             ?>
+
+             <a href="https://twitter.com/KanawhaLibrary" target="_blank">
+               <div class="KCPL_social-callout-tweet">
+                   <span class="KCPL_social-callout-tweet-content"><?php echo $tweet; ?></span><br/>
+                   <span class="KCPL_social-callout-tweet-date"><?php echo $newDate; ?></span>
+               </div>
+             </a>
+         </div>
+       </div>
+      </div>
+    <?php
+   }
+
     else{
       //echo "Hasn't been configured yet. Deal with it.";
     }
@@ -257,15 +389,7 @@
     <?php } ?>
 
   <?php }elseif($widget['field_type'] == 'card'){
-    //horizontal callout - multi ?>
-
-      <?php if($widget['field_link'] != ''){ ?>
-        <a target="_blank" href="<?php echo $widget['field_link']; ?>">
-      <?php } ?>
-          <div class="KCPL_horz-card KCPL_background-<?php echo $widget['field_color']; ?>">
-            <div class="gutter">
-               <span class="KCPL_horz-card-first">Get your free</span> <span class="KCPL_horz-card-last">library card</span>
-            </div>
+    //card ?>
 
     <?php if($widget['field_link'] != ''){ ?>
       <a target="_blank" href="<?php echo $widget['field_link']; ?>">
@@ -350,7 +474,7 @@
                <div class="entry-excerpt">
                    <?php echo $excerpt; ?>
                </div>
-               <a href="<?php echo $link; ?> target="<?php echo $target;?>" class="KCPL_readmore"><?php echo $entry['link_text']; ?></a>
+               <a href="<?php echo $link; ?>" target="<?php echo $target;?>" class="KCPL_readmore"><?php echo $entry['link_text']; ?></a>
             </div>
           <?php } wp_reset_postdata(); ?>
         </div>
@@ -362,7 +486,7 @@
       <div class="KCPL_listing1-list KCPL_background-l-<?php echo $widget['field_color']; ?>">
          <span class="title"><?php echo $widget['field_title']; ?></span>
          <div class="gutter">
-            
+
             <ul>
                <?php foreach($widget['urls'] as $list){ ?>
                 <?php if($list['tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
@@ -466,6 +590,140 @@
     </div>
 
   <?php }
+
+  elseif($widget['field_type'] == 'vertical-graphic-callout'){
+    //Graphic Callouts
+
+    $i = 0;
+
+    echo '<div class="KCPL_vertical-callout clearfix">';
+
+    foreach($widget['vertical_graphic_callout'] as $entry){
+
+      if ($i == 0) {
+          echo '<div class="two columns alpha">';
+          $i = $i + 1;
+      } else {
+        echo '<div class="two columns omega">';
+      }
+
+      if ($entry['graphic_callout_type'] == 'blue-shapes') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts01_blue.png">';
+      } elseif ($entry['graphic_callout_type'] == 'green-shapes') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts01_green.png">';
+      } elseif ($entry['graphic_callout_type'] == 'purple-shapes') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts01_purple.png">';
+      } elseif ($entry['graphic_callout_type'] == 'red-shapes') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts01_red.png">';
+      } elseif ($entry['graphic_callout_type'] == 'yellow-shapes') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts01_yellow.png">';
+      } elseif ($entry['graphic_callout_type'] == 'blue-exclamation') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts02_blue.png">';
+      } elseif ($entry['graphic_callout_type'] == 'green-exclamation') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts02_green.png">';
+      } elseif ($entry['graphic_callout_type'] == 'purple-exclamation') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts02_purple.png">';
+      } elseif ($entry['graphic_callout_type'] == 'red-exclamation') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts02_red.png">';
+      } elseif ($entry['graphic_callout_type'] == 'yellow-exclamation') {
+        echo '<img src="' . get_template_directory_uri() . '/assets/img/verticalgraphiccallouts02_yellow.png">';
+      } else {
+        // Nothing here.
+      }
+
+      echo '</div>';
+
+    }
+
+    echo '</div>';
+
+   }
+
+   elseif($widget['field_type'] == 'horizontal-graphic-callout'){
+     //Graphic Callouts
+
+       echo '<div class="KCPL_vertical-callout clearfix"><div class="four columns alpha">';
+
+       if ($widget['horizontal_graphic_callout'] == 'blue-lines') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts01_blue.png">';
+       } elseif ($widget['horizontal_graphic_callout'] == 'green-lines') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts01_green.png">';
+       } elseif ($widget['horizontal_graphic_callout'] == 'purple-lines') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts01_purple.png">';
+       } elseif ($widget['horizontal_graphic_callout'] == 'red-lines') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts01_red.png">';
+       } elseif ($widget['horizontal_graphic_callout'] == 'yellow-lines') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts01_yellow.png">';
+       } elseif ($widget['horizontal_graphic_callout'] == 'blue-shapes') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts02_blue.png">';
+       } elseif ($widget['horizontal_graphic_callout'] == 'green-shapes') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts02_green.png">';
+       } elseif ($widget['horizontal_graphic_callout'] == 'purple-shapes') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts02_purple.png">';
+       } elseif ($widget['horizontal_graphic_callout'] == 'red-shapes') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts02_red.png">';
+       } elseif ($widget['horizontal_graphic_callout'] == 'yellow-shapes') {
+         echo '<img src="' . get_template_directory_uri() . '/assets/img/HorizontalGraphicCallouts02_yellow.png">';
+       } else {
+         // Nothing here.
+       }
+
+       echo '</div></div>';
+
+    }
+
+    elseif($entry['vertical_type'] == "social-feed"){ ?>
+       <div class="columns two <?php if($ctr == 1) echo 'alpha'; else echo 'omega';?> ">
+        <div class="KCPL_social-callout">
+         <div class="KCPL_social-callout-header">
+             <span>Follow Us</span>
+         </div>
+         <div class="KCPL_social-callout-body">
+            <div class='icons'>
+              <a href="https://www.facebook.com/KanawhaLibrary" target="_blank"><div class="KCPL_sprite-facebook KCPL_social-callout-icon"></div></a>
+              <a href="http://www.pinterest.com/kanawhalibrary/" target="_blank"><div class="KCPL_sprite-pinterest KCPL_social-callout-icon"></div></a>
+              <a href="http://twitter.com/KanawhaLibrary" target="_blank"><div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div></a>
+            </div>
+
+             <div class="clear"></div>
+
+             <?php
+
+             $settings = array(
+                  'oauth_access_token' => "83915658-qoSmzFO1D0QbPupw9BhX3XOiA11BeYdt0VDqg3oSp",
+                  'oauth_access_token_secret' => "WGKKZkm5hxYkxW8JHfGBwQpps1NKE1llVCqwLkNEzpOoB",
+                  'consumer_key' => "ajAwYUZL83PVw78lL2RVlTchh",
+                  'consumer_secret' => "2g9khxKkgvG7pR9WAQ5rF16RVlR9B7Z4LrhgrtStax68uNjgJY"
+                );
+
+              $url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
+              $getfield = '?screen_name=KanawhaLibrary&count=1';
+              $requestMethod = 'GET';
+
+              $twitter = new TwitterAPIExchange($settings);
+              $response = $twitter->setGetfield($getfield)
+                           ->buildOauth($url, $requestMethod)
+                           ->performRequest();
+
+              $result = json_decode($response, true);
+              $tweet = $result[0]['text'];
+              $date = $result[0]['created_at'];
+              $newDate = date("M j", strtotime($date));
+
+             ?>
+
+             <a href="https://twitter.com/KanawhaLibrary" target="_blank">
+               <div class="KCPL_social-callout-tweet">
+                   <span class="KCPL_social-callout-tweet-content"><?php echo $tweet; ?></span><br/>
+                   <span class="KCPL_social-callout-tweet-date"><?php echo $newDate; ?></span>
+               </div>
+             </a>
+         </div>
+       </div>
+      </div>
+    <?php
+   }
+
     else{
       //echo "Hasn't been configured yet. Deal with it.";
     }
