@@ -54,5 +54,10 @@
   </footer>
 </div>
 <?php wp_footer(); ?>
+<script>
+jQuery(document).ready(function($){
+  $('.wysiwyg .gutter div').css('width','100%');
+});
+</script>
 </body>
 </html>
