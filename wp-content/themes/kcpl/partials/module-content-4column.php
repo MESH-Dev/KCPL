@@ -62,7 +62,7 @@
       //single featured item ?>
 
       <div class="KCPL_single-featured <?php if($widget['single_featured_item_image'] != false){echo 'fimage';} ?>">
-        <span class="title KCPL_background-<?php echo $widget['field_color']; ?>"><?php echo $widget['field_title']; ?></span>
+        <a href="<?php echo $widget['single_featured_item_link_url']; ?>" class="KCPL_readmore"><span class="title KCPL_background-<?php echo $widget['field_color']; ?>"><?php echo $widget['field_title']; ?></span></a>
         <div class="gutter">
           <?php if($widget['single_featured_item_image'] != false){ ?>
             <div class="image">
@@ -75,9 +75,8 @@
               <div class="entry-excerpt">
                   <?php echo $widget['single_featured_item_description']; ?>
               </div>
-              <?php if($widget['new_tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
               <?php if($widget['single_featured_item_link_url'] !=''){ ?>
-              <a href="<?php echo $widget['single_featured_item_link_url']; ?>" target="<?php echo $target; ?>" class="KCPL_readmore"><?php echo $widget['single_featured_item_link_text']; ?></a>
+              <a href="<?php echo $widget['single_featured_item_link_url']; ?>" class="KCPL_readmore"><?php echo $widget['single_featured_item_link_text']; ?></a>
               <?php }?>
            </div>
         </div>
@@ -498,7 +497,7 @@
       //single featured item ?>
 
       <div class="KCPL_single-featured <?php if($widget['single_featured_item_image'] != false){echo 'fimage';} ?>">
-        <span class="title KCPL_background-<?php echo $widget['field_color']; ?>"><?php echo $widget['field_title']; ?></span>
+        <a href="<?php echo $widget['single_featured_item_link_url']; ?>" class="KCPL_readmore"><span class="title KCPL_background-<?php echo $widget['field_color']; ?>"><?php echo $widget['field_title']; ?></span></a>
         <div class="gutter">
           <?php if($widget['single_featured_item_image'] != false){ ?>
             <div class="image">
@@ -511,9 +510,8 @@
               <div class="entry-excerpt">
                   <?php echo $widget['single_featured_item_description']; ?>
               </div>
-              <?php if($widget['new_tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
               <?php if($widget['single_featured_item_link_url'] !=''){ ?>
-              <a href="<?php echo $widget['single_featured_item_link_url']; ?>" target="<?php echo $target; ?>" class="KCPL_readmore"><?php echo $widget['single_featured_item_link_text']; ?></a>
+              <a href="<?php echo $widget['single_featured_item_link_url']; ?>" class="KCPL_readmore"><?php echo $widget['single_featured_item_link_text']; ?></a>
               <?php }?>
            </div>
         </div>
