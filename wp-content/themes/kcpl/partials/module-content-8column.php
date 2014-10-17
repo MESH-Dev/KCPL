@@ -75,11 +75,11 @@
     <div class="KCPL_listing4">
        <span class="title KCPL_background-<?php echo $widget['field_color']; ?>"><?php echo $widget['field_title']; ?></span>
        <div class="gutter">
-        <?php echo $entry['content']; ?>
+        <?php echo $widget['content']; ?>
        </div>
      </div>
 
-    
+
     <?}
     else{
       echo "field type not valid";
