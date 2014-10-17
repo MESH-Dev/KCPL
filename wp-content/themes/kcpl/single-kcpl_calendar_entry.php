@@ -110,8 +110,8 @@ $vbdayurl  = "$url?c_view=list&c_mode=day&c_day=$vbday&c_month=$vbmonth&c_year=$
       <form id="KCPL_Calendar_sidebar-form">
 					<h3>Filter By:</h3>
           <div id="KCPL_Calendar_sidebar-ce">
-            <em>To filter events and classes, view by month, week, or day</em>
             <div class='form-row'>
+              <span>To filter events and classes, view by month, week, or day</span>
   						<a class="cal_button" href="<?php echo $vbmonthurl; ?>">Month</a>
             </div>
             <div class='form-row'>
