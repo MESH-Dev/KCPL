@@ -106,7 +106,7 @@ $vbdayurl  = "$url?c_view=list&c_mode=day&c_day=$vbday&c_month=$vbmonth&c_year=$
 
 <div id="content">
   <div class="container">
-    <div class="columns three alpha" id="contentPrimary">
+    <div class="columns three alpha" id="KCPL_Calendar_sidebar">
       <form id="KCPL_Calendar_sidebar-form">
 					<h3>Filter By:</h3>
           <div id="KCPL_Calendar_sidebar-ce">
