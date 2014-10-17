@@ -3614,6 +3614,7 @@ ol.homepage-callout-list > li:nth-child(4) {
 #KCPL_search.condensed .search-btn hr + span {
   display: block;
   text-align: center;
+  color: #323333;
 }
 
 /* line 840, assets/sass/_elements.scss */
