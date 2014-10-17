@@ -207,5 +207,33 @@ jQuery(document).ready(function($){
     document.cookie = cname + "=" + cvalue + ";";
   }
 
+  // New tabs
+
+  /* ==========
+     Variables
+   ========== */
+   var url = location.protocol+'//'+location.hostname+(location.port ? ':'+location.port: '');
+
+  /* ==========
+      Utilities
+    ========== */
+   function beginsWith(needle, haystack){
+     return (haystack.substr(0, needle.length) == needle);
+   };
+
+
+  /* ==========
+     Anchors open in new tab/window
+   ========== */
+   $('a').each(function(){
+
+     if(typeof $(this).attr('href') != "undefined") {
+      var test = beginsWith( url, $(this).attr('href') );
+      //if it's an external link then open in a new tab
+      if( test == false && $(this).attr('href') != '#' ){
+        $(this).attr('target','_blank');
+      }
+     }
+   });
 
 });
