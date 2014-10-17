@@ -14,8 +14,6 @@
               <?php $i=0;
               foreach($widget['listing_style_4'] as $entry){
 
-                if($entry['new_tab'][0] == '_blank'){ $target = "_blank"; } else { $target = "_self"; }
-
                 if($i%2==0 && $i!=0){echo '</div><div class="row">';}
                 $img = wp_get_attachment_image_src($entry['image'],'small'); ?>
               <div class="entry">
@@ -24,7 +22,7 @@
                   <div class="content">
                     <span class="entry-title">
                       <?php if($entry['link']!=''){ ?>
-                         <a href="<?php echo $entry['link']; ?>" target="<?php echo $target; ?>"><?php echo $entry['title']; ?></a>
+                         <a href="<?php echo $entry['link']; ?>"><?php echo $entry['title']; ?></a>
 
                       <?php }else{echo $entry['title']; }?>
                     </span>
@@ -48,7 +46,6 @@
       <div class="KCPL_featured KCPL_background-l-<?php echo $widget['field_color']; ?> clearfix">
         <div class="gutter clearfix">
           <?php foreach($widget['8_column_featured'] as $entry){ ?>
-           <?php if($entry['new_tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
            <div class="entry <?php echo cycle('left','center','right'); ?>">
               <div class="gutter">
                 <div class="image ">
@@ -60,7 +57,7 @@
                 <div class="excerpt">
                     <?php echo $entry['excerpt']; ?>
                 </div>
-                <a href="<?php echo $entry['read_more_link']; ?>" target="<?php echo $target; ?>" class="KCPL_readmore"><?php echo $entry['read_more_text']; ?></a>
+                <a href="<?php echo $entry['read_more_link']; ?>" class="KCPL_readmore"><?php echo $entry['read_more_text']; ?></a>
               </div>
            </div>
            <?php } ?>

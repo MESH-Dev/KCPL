@@ -12,9 +12,8 @@
 
      if($widget['field_type'] == 'horizontal-callout-single'){ ?>
 
-    <?php if($widget['new_tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
     <?php if($widget['field_link'] != ''){ ?>
-      <a target="<?php echo $target; ?>" href="<?php echo $widget['field_link']; ?>">
+      <a href="<?php echo $widget['field_link']; ?>">
     <?php } ?>
         <div class="KCPL_horz-single KCPL_background-<?php echo $widget['field_color']; ?>">
           <div class="gutter">
@@ -39,16 +38,15 @@
   <?php }elseif($widget['field_type'] == 'horizontal-callout-multi'){
     //horizontal callout - multi ?>
 
-    <?php if($widget['new_tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
     <?php if($widget['field_link'] != ''){ ?>
-      <a target="<?php echo $target; ?>" href="<?php echo $widget['field_link']; ?>">
+      <a href="<?php echo $widget['field_link']; ?>">
     <?php } ?>
       <div class="KCPL_horz-multi KCPL_background-<?php echo $widget['horizontal_callout_color']; ?>">
         <div class="gutter">
           <?php if($widget['horizontal_callout_alert'] == 'yes'){?> <span class="alert"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/alert.png" /> </span><?php } ?>
            <span><?php echo $widget['horizontal_callout-multi_title']; ?></span>
            <?php if($widget['field_link'] != ''){ ?>
-             <a class="KCPL_readmore" href="<?php echo $widget['field_link']; ?>" target="<?php echo $target; ?>">Read More ≈</a>
+             <a class="KCPL_readmore" href="<?php echo $widget['field_link']; ?>">Read More ≈</a>
            <?php } ?>
         </div>
       </div>
@@ -100,13 +98,13 @@
               $excerpt = $entry['description'];
               $link = $entry['link_url'];
             } ?>
-            <?php if($entry['new_tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
+
             <div class="entry">
-               <a href="<?php echo $link; ?>" target="<?php echo $target;?>"><span class="entry-title"><?php echo $title; ?></span></a>
+               <a href="<?php echo $link; ?>"><span class="entry-title"><?php echo $title; ?></span></a>
                <div class="entry-excerpt">
                    <?php echo $excerpt; ?>
                </div>
-               <a href="<?php echo $link; ?>" target="<?php echo $target;?>" class="KCPL_readmore"><?php echo $entry['link_text']; ?></a>
+               <a href="<?php echo $link; ?>" class="KCPL_readmore"><?php echo $entry['link_text']; ?></a>
             </div>
           <?php } wp_reset_postdata(); ?>
         </div>
@@ -121,8 +119,7 @@
 
             <ul>
                <?php foreach($widget['urls'] as $list){ ?>
-                <?php if($list['tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
-                <li><a href="<?php echo $list['url']; ?>" target="<?php echo $target;?>"><?php echo $list['title']; ?></a></li>
+                <li><a href="<?php echo $list['url']; ?>"><?php echo $list['title']; ?></a></li>
                <?php } ?>
             </ul>
             <?php if($widget['field_link'] != ''){ ?>
@@ -447,9 +444,8 @@
 
      if($widget['field_type'] == 'horizontal-callout-single'){ ?>
 
-    <?php if($widget['new_tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
     <?php if($widget['field_link'] != ''){ ?>
-      <a target="<?php echo $target; ?>" href="<?php echo $widget['field_link']; ?>">
+      <a href="<?php echo $widget['field_link']; ?>">
     <?php } ?>
         <div class="KCPL_horz-single KCPL_background-<?php echo $widget['field_color']; ?>">
           <div class="gutter">
@@ -474,16 +470,15 @@
   <?php }elseif($widget['field_type'] == 'horizontal-callout-multi'){
     //horizontal callout - multi ?>
 
-    <?php if($widget['new_tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
     <?php if($widget['field_link'] != ''){ ?>
-      <a target="<?php echo $target; ?>" href="<?php echo $widget['field_link']; ?>">
+      <a href="<?php echo $widget['field_link']; ?>">
     <?php } ?>
       <div class="KCPL_horz-multi KCPL_background-<?php echo $widget['field_color']; ?>">
         <div class="gutter">
           <?php if($widget['horizontal_callout_alert'] == 'yes'){?> <span class="alert"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/alert.png" /> </span><?php } ?>
            <span><?php echo $widget['horizontal_callout-multi_title']; ?></span>
            <?php if($widget['field_link'] != ''){ ?>
-             <a class="KCPL_readmore" href="<?php echo $widget['field_link']; ?>" target="<?php echo $target; ?>">Read More ≈</a>
+             <a class="KCPL_readmore" href="<?php echo $widget['field_link']; ?>">Read More ≈</a>
            <?php } ?>
         </div>
       </div>
@@ -535,13 +530,12 @@
               $excerpt = $entry['description'];
               $link = $entry['link_url'];
             } ?>
-            <?php if($entry['new_tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
             <div class="entry">
-               <a href="<?php echo $link; ?>" target="<?php echo $target;?>"><span class="entry-title"><?php echo $title; ?></span></a>
+               <a href="<?php echo $link; ?>"><span class="entry-title"><?php echo $title; ?></span></a>
                <div class="entry-excerpt">
                    <?php echo $excerpt; ?>
                </div>
-               <a href="<?php echo $link; ?>" target="<?php echo $target;?>" class="KCPL_readmore"><?php echo $entry['link_text']; ?></a>
+               <a href="<?php echo $link; ?>" class="KCPL_readmore"><?php echo $entry['link_text']; ?></a>
             </div>
           <?php } wp_reset_postdata(); ?>
         </div>
@@ -556,8 +550,7 @@
 
             <ul>
                <?php foreach($widget['urls'] as $list){ ?>
-                <?php if($list['tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
-                <li><a href="<?php echo $list['url']; ?>" target="<?php echo $target;?>"><?php echo $list['title']; ?></a></li>
+                <li><a href="<?php echo $list['url']; ?>"><?php echo $list['title']; ?></a></li>
                <?php } ?>
             </ul>
             <?php if($widget['field_link'] != ''){ ?>
