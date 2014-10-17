@@ -23,17 +23,13 @@ foreach($left as $widget){
   <?php }elseif($widget['field_type'] == 'card'){
     //card ?>
 
-    <?php if($widget['field_link'] != ''){ ?>
-      <a target="_blank" href="<?php echo $widget['field_link']; ?>">
-    <?php } ?>
-        <div class="KCPL_horz-card KCPL_background-<?php echo $widget['field_color']; ?>">
-          <div class="gutter">
-             <span class="KCPL_horz-card-first">Get your free</span> <span class="KCPL_horz-card-last">library card</span>
-          </div>
+    <a target="_blank" href="<?php echo get_page_link(4519); ?>">
+      <div class="KCPL_horz-card KCPL_background-blue">
+        <div class="gutter">
+           <span class="KCPL_horz-card-first">Get your free</span> <span class="KCPL_horz-card-last">library card</span>
         </div>
-    <?php if($widget['field_link'] != ''){ ?>
-      </a>
-    <?php } ?>
+      </div>
+    </a>
 
   <?php }elseif($widget['field_type'] == 'horizontal-callout-multi'){
     //horizontal callout - multi ?>
@@ -310,19 +306,13 @@ foreach($right as $widget){
   <?php }elseif($widget['field_type'] == 'card'){
     //card ?>
 
-    <?php if($widget['field_link'] != ''){ ?>
-      <a target="_blank" href="<?php echo $widget['field_link']; ?>">
-    <?php } ?>
-
-        <div class="KCPL_horz-card KCPL_background-<?php echo $widget['field_color']; ?>">
-          <div class="gutter">
-             <span class="KCPL_horz-card-first">Get your free</span> <span class="KCPL_horz-card-last">library card</span>
-          </div>
+    <a target="_blank" href="<?php echo get_page_link(4519); ?>">
+      <div class="KCPL_horz-card KCPL_background-blue">
+        <div class="gutter">
+           <span class="KCPL_horz-card-first">Get your free</span> <span class="KCPL_horz-card-last">library card</span>
         </div>
-
-    <?php if($widget['field_link'] != ''){ ?>
-      </a>
-    <?php } ?>
+      </div>
+    </a>
 
   <?php }elseif($widget['field_type'] == 'horizontal-callout-multi'){
     //horizontal callout - multi ?>
