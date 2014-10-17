@@ -1,7 +1,7 @@
 <div id="KCPL_search">
   <div class="gutter clearfix">
-    
-    <?php  
+
+    <?php
     $active = 'media';
 
     if($thisID == 119 ){
@@ -48,7 +48,7 @@
 
 
 
-    <form method="get" id="searchForm" action="http://kana.ent.sirsi.net/client/embedded.search/http://kana.ent.sirsi.net/client/default">
+    <form method="get" id="searchForm" action="http://kana.ent.sirsi.net/client/embedded.search/http://kana.ent.sirsi.net/client/default" target="_blank">
       <input type="hidden" name="ln" value="en_US">
       <div id="searchField">
         <i class="fa fa-lg fa-search searchicon"></i>

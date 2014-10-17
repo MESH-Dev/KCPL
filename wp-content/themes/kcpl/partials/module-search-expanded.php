@@ -2,7 +2,7 @@
  <div class="gutter clearfix">
 
  <?php //echo do_shortcode( '[acps id="344"]'); ?>
- 
+
     <form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
       <div id="searchField">
         <i class="fa fa-lg fa-search searchicon"></i>
@@ -46,7 +46,7 @@
          </div>
         </div>
       </div>
-      
+
     </form>
  </div>
 
@@ -145,6 +145,5 @@
           </div>
         </div>
       </div>
-   </div>   
+   </div>
 </div>
-
