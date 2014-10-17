@@ -1,4 +1,93 @@
-<?php get_header(); ?>
+<?php get_header();
+$url = get_permalink(get_option('KCPL_Calendar')['pageID']);
+$monthsAb = array('jan','feb','mar','apr','may','june','july','aug','sept','oct','nov','dec');
+if(isset($_GET['c_month']) && is_numeric($_GET['c_month']) && $_GET['c_month'] <= 12){
+  $curMonth = $_GET['c_month'];
+}else{
+  $curMonth = (int)date('n');
+}
+//month traversing url builder
+if(isset($_GET['c_month']) && is_numeric($_GET['c_month']) && $_GET['c_month'] <= 12){
+  $nextMonth = $_GET['c_month']+1;
+  $prevMonth = $_GET['c_month']-1;
+  if($prevMonth == 0){
+    $prevMonth = 12;
+    $prevCheck = true;
+  }
+  if($nextMonth == 13){
+    $nextMonth = 1;
+    $nextCheck = true;
+  }
+}else{
+  $nextMonth = date('n')+1;
+  $prevMonth = date('n')-1;
+  if($prevMonth == 0){
+    $prevMonth = 12;
+    $prevCheck = true;
+  }
+  if($nextMonth == 13){
+    $nextMonth = 1;
+    $nextCheck = true;
+  }
+}
+if(isset($_GET['c_year']) && is_numeric($_GET['c_year'])){
+  if($prevCheck == true){
+    $prevYear = $_GET['c_year']-1;
+  }else{
+    $prevYear = $_GET['c_year'];
+  }
+  if($nextCheck == true){
+    $nextYear = $_GET['c_year']+1;
+  }else{
+    $nextYear = $_GET['c_year'];
+  }
+}else{
+  if(isset($prevCheck) && $prevCheck == true){
+    $prevYear = date('Y')-1;
+  }else{
+    $prevYear = date('Y');
+  }
+  if(isset($nextCheck) && $nextCheck == true){
+    $nextYear = date('Y')+1;
+  }else{
+    $nextYear = date('Y');
+  }
+}
+$nextMonthL = "$url?c_month=$nextMonth&c_year=$nextYear&c_view=list&c_mode=$viewmode";
+$prevMonthL = "$url?c_month=$prevMonth&c_year=$prevYear&c_view=list&c_mode=$viewmode";
+
+
+if(isset($_GET['c_mode'])){
+  $vb = $_GET['c_mode'];
+}else{
+  $vb = 'month';
+}
+
+if(isset($_GET['c_year']) && is_numeric($_GET['c_year'])){
+  $vbyear = $_GET['c_year'];
+}else{
+  $vbyear = date('Y');
+}
+if(isset($_GET['c_month']) && is_numeric($_GET['c_month']) && $_GET['c_month'] <= 12){
+  $vbmonth = $_GET['c_month'];
+}else{
+  $vbmonth = date('n');
+}
+if(isset($_GET['c_week']) && is_numeric($_GET['c_week'])){
+  $vbweek = $_GET['c_week'];
+}else{
+  $vbweek = date('W');
+}
+if(isset($_GET['c_day']) && is_numeric($_GET['c_day'])){
+  $vbday = $_GET['c_day'];
+}else{
+  $vbday = date('j');
+}
+
+$vbmonthurl = "$url?c_month=$vbmonth&year=$vbyear";
+$vbweekurl  = "$url?c_view=list&c_mode=week&c_week=$vbweek&c_year=$vbyear";
+$vbdayurl  = "$url?c_view=list&c_mode=day&c_day=$vbday&c_month=$vbmonth&c_year=$vbyear";
+ ?>
 <div id="banner" class="KCPL_background-grey">
   <div class="container">
       <div class="gutter">
@@ -18,100 +107,18 @@
 <div id="content">
   <div class="container">
     <div class="columns three alpha" id="contentPrimary">
-
-        <?php // echo KCPL_calendar::KCPL_Calendar_sidebar(); ?>
-        <p>&nbsp;</p>
+      <form id="KCPL_Calendar_sidebar-form">
+					<h3>Filter By:</h3>
+          <div id="KCPL_Calendar_sidebar-ce">
+						<a class="cal_button" href="<?php echo $vbmonthurl; ?>">Month</a>
+            <a class="cal_button" href="<?php echo $vbweekurl; ?>">Week</a>
+					  <a class="cal_button" href="<?php echo $vbdayurl; ?>">Day</a>
+          </div>
+        </form>
     </div>
     <div class="columns nine omega page-content" id="contentPrimary">
       <?php
-        $url = get_permalink(get_option('KCPL_Calendar')['pageID']);
-        $monthsAb = array('jan','feb','mar','apr','may','june','july','aug','sept','oct','nov','dec');
-        if(isset($_GET['c_month']) && is_numeric($_GET['c_month']) && $_GET['c_month'] <= 12){
-          $curMonth = $_GET['c_month'];
-        }else{
-          $curMonth = (int)date('n');
-        }
-        //month traversing url builder
-        if(isset($_GET['c_month']) && is_numeric($_GET['c_month']) && $_GET['c_month'] <= 12){
-          $nextMonth = $_GET['c_month']+1;
-          $prevMonth = $_GET['c_month']-1;
-          if($prevMonth == 0){
-            $prevMonth = 12;
-            $prevCheck = true;
-          }
-          if($nextMonth == 13){
-            $nextMonth = 1;
-            $nextCheck = true;
-          }
-        }else{
-          $nextMonth = date('n')+1;
-          $prevMonth = date('n')-1;
-          if($prevMonth == 0){
-            $prevMonth = 12;
-            $prevCheck = true;
-          }
-          if($nextMonth == 13){
-            $nextMonth = 1;
-            $nextCheck = true;
-          }
-        }
-        if(isset($_GET['c_year']) && is_numeric($_GET['c_year'])){
-          if($prevCheck == true){
-            $prevYear = $_GET['c_year']-1;
-          }else{
-            $prevYear = $_GET['c_year'];
-          }
-          if($nextCheck == true){
-            $nextYear = $_GET['c_year']+1;
-          }else{
-            $nextYear = $_GET['c_year'];
-          }
-        }else{
-          if(isset($prevCheck) && $prevCheck == true){
-            $prevYear = date('Y')-1;
-          }else{
-            $prevYear = date('Y');
-          }
-          if(isset($nextCheck) && $nextCheck == true){
-            $nextYear = date('Y')+1;
-          }else{
-            $nextYear = date('Y');
-          }
-        }
-        $nextMonthL = "$url?c_month=$nextMonth&c_year=$nextYear&c_view=list&c_mode=$viewmode";
-        $prevMonthL = "$url?c_month=$prevMonth&c_year=$prevYear&c_view=list&c_mode=$viewmode";
 
-
-        if(isset($_GET['c_mode'])){
-          $vb = $_GET['c_mode'];
-        }else{
-          $vb = 'month';
-        }
-
-        if(isset($_GET['c_year']) && is_numeric($_GET['c_year'])){
-          $vbyear = $_GET['c_year'];
-        }else{
-          $vbyear = date('Y');
-        }
-        if(isset($_GET['c_month']) && is_numeric($_GET['c_month']) && $_GET['c_month'] <= 12){
-          $vbmonth = $_GET['c_month'];
-        }else{
-          $vbmonth = date('n');
-        }
-        if(isset($_GET['c_week']) && is_numeric($_GET['c_week'])){
-          $vbweek = $_GET['c_week'];
-        }else{
-          $vbweek = date('W');
-        }
-        if(isset($_GET['c_day']) && is_numeric($_GET['c_day'])){
-          $vbday = $_GET['c_day'];
-        }else{
-          $vbday = date('j');
-        }
-
-        $vbmonthurl = "$url?c_month=$vbmonth&year=$vbyear";
-        $vbweekurl  = "$url?c_view=list&c_mode=week&c_week=$vbweek&c_year=$vbyear";
-        $vbdayurl  = "$url?c_view=list&c_mode=day&c_day=$vbday&c_month=$vbmonth&c_year=$vbyear";
 
         //viewby
         $output = "<div id='KCPL_Calendar_viewby'>
