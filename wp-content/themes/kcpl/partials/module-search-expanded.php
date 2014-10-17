@@ -6,7 +6,7 @@
     <form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
       <div id="searchField">
         <i class="fa fa-lg fa-search searchicon"></i>
-        <input type="search" placeholder="Search Our Research Databases and Resources" name="s" id="s" value=''/>
+        <input type="search" placeholder="Search Our Research Tools and Resources" name="s" id="s" value=''/>
         <input type="hidden" name="search-type" value="resources" />
         <input type="submit" value="<?php echo esc_attr_x('Search','submit button'); ?>" />
       </div>
