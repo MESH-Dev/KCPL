@@ -7,7 +7,8 @@ global $post;
 $pID = KCPL_get_highest_ancestor($post);
 
 $sidebar = KCPL_get_sidebar($pID);
-$color = get_field('section_color',$pID); ?>
+$color = get_field('section_color',$pID); 
+$thisID = get_the_ID();?>
 
 <h1><?php $pID ?></h1>
 

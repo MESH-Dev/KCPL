@@ -258,7 +258,7 @@ table{
 
     > ul > li > ul{}
     > ul > li > ul > li{}
-    > ul > li > ul > li > a{font:bold 19px/19px $nimbus-c; margin:0 22px 0 0; text-transform: uppercase; letter-spacing:0.04em}
+    > ul > li > ul > li > a{font:bold 19px/19px $nimbus-c; margin:0 22px 3px 0; text-transform: uppercase; letter-spacing:0.04em}
 
     > ul > li > ul > li > ul{}
     > ul > li > ul > li > ul > li{}
@@ -266,7 +266,7 @@ table{
 
     > ul > li > ul > li > ul > li > ul{}
     > ul > li > ul > li > ul > li > ul > li{}
-    > ul > li > ul > li > ul > li > ul > li > a{font:18px/25px $minion;margin:0;}
+    > ul > li > ul > li > ul > li > ul > li > a{font:italic 14px/14px $minion;margin:0 20px -2px 0;letter-spacing:0.03em }
   }
 }
 
@@ -802,10 +802,13 @@ ol.homepage-callout-list { display: block;
   .teens .icon{top:-12px;left:20px;}
   .adults .icon{top:-12px;left:20px;}
 
-  #select:hover .search-btn{opacity: 0.7;}
+  #select:hover .search-btn{opacity: 0.25;}
   #select:hover .search-btn:hover{opacity:1;cursor:pointer;}
   #select .search-btn.active{opacity:1;}
   #select .search-btn {opacity:1;}
+  #select .search-btn.inactive{opacity:0.25;}
+
+
 }
 
 #KCPL_search.condensed{
