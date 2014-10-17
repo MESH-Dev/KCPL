@@ -28,7 +28,7 @@
   <?php }elseif($widget['field_type'] == 'card'){
     //horizontal callout - multi ?>
 
-    <a target="_blank" href="<?php echo get_page_link(4519); ?>">
+    <a href="<?php echo get_page_link(4519); ?>">
       <div class="KCPL_horz-card KCPL_background-blue">
         <div class="gutter">
            <span class="KCPL_horz-card-first">Get your free</span> <span class="KCPL_horz-card-last">library card</span>
@@ -464,7 +464,7 @@
   <?php }elseif($widget['field_type'] == 'card'){
     //card ?>
 
-    <a target="_blank" href="<?php echo get_page_link(4519); ?>">
+    <a href="<?php echo get_page_link(4519); ?>">
       <div class="KCPL_horz-card KCPL_background-blue">
         <div class="gutter">
            <span class="KCPL_horz-card-first">Get your free</span> <span class="KCPL_horz-card-last">library card</span>
