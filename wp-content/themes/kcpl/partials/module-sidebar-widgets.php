@@ -168,9 +168,9 @@ foreach($left as $widget){
         $multi = true;
       }
       if($multi == false){
-        KCPL_Calendar::upcomingEvents();
+        KCPL_Calendar::upcomingEvents(5,$widget['field_title']);
       }elseif($multi == true){
-        KCPL_Calendar::taxonomyUpcomingEvents($taxArr,$termArr);
+        KCPL_Calendar::taxonomyUpcomingEvents($taxArr,$termArr,5,$widget['field_title']);
       } ?>
 
   <?php }
@@ -456,9 +456,9 @@ foreach($right as $widget){
         $multi = true;
       }
       if($multi == false){
-        KCPL_Calendar::upcomingEvents();
+        KCPL_Calendar::upcomingEvents(5,$widget['field_title']);
       }elseif($multi == true){
-        KCPL_Calendar::taxonomyUpcomingEvents($taxArr,$termArr);
+        KCPL_Calendar::taxonomyUpcomingEvents($taxArr,$termArr,5,$widget['field_title']);
       } ?>
 
   <?php }
