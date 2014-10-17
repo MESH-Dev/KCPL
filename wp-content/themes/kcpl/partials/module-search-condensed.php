@@ -1,6 +1,6 @@
 <div id="KCPL_search" class="condensed">
   <div class="gutter clearfix">
-    <form method="get" id="searchForm" action="http://kana.ent.sirsi.net/client/embedded.search/http://kana.ent.sirsi.net/client/default">
+    <form method="get" id="searchForm" action="http://kana.ent.sirsi.net/client/embedded.search/http://kana.ent.sirsi.net/client/default" target="_blank">
       <input type="hidden" name="ln" value="en_US">
       <div id="searchField">
         <i class="fa fa-lg fa-search searchicon"></i>
