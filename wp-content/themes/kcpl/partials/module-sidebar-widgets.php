@@ -140,9 +140,38 @@ foreach($left as $widget){
 
   <?php }
    elseif($widget['field_type'] == 'listing-style-2-1'){
-    //listing style 3 ?>
+    //listing style 3
+    //var_dump($widget); ?>
 
-    <?php KCPL_Calendar::upcomingEvents(); ?>
+    <?php
+      $taxArr = array();
+      $termArr = array();
+      $multi = false;
+      if( $widget['cal_age'] != '' ){
+        $taxArr[] = 'kcpl_calendar_tax-age';
+        $termArr = array_merge($termArr,$widget['cal_age']);
+        $multi = true;
+      }
+      if( $widget['cal_branch'] != '' ){
+        $taxArr[] = 'kcpl_calendar_tax-branch';
+        $termArr = array_merge($termArr,$widget['cal_branch']);
+        $multi = true;
+      }
+      if( $widget['cal_topic'] != '' ){
+        $taxArr[] = 'kcpl_calendar_tax-topic';
+        $termArr = array_merge($termArr,$widget['cal_topic']);
+        $multi = true;
+      }
+      if( $widget['cal_type'] != '' ){
+        $taxArr[] = 'kcpl_calendar_tax-type';
+        $termArr = array_merge($termArr,$widget['cal_type']);
+        $multi = true;
+      }
+      if($multi == false){
+        KCPL_Calendar::upcomingEvents();
+      }elseif($multi == true){
+        KCPL_Calendar::taxonomyUpcomingEvents($taxArr,$termArr);
+      } ?>
 
   <?php }
    elseif($widget['field_type'] == 'vertical-block'){ ?>
