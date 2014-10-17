@@ -1,8 +1,7 @@
 jQuery(document).ready(function($){
   //global functions
   // try{Typekit.load();}catch(e){}
-
-  $('.wysiwyg .gutter div').css('width','100%');
+ 
   //header functions
   $('#header-search').click(function(){
      $('#KCPL_header-search').toggleClass('active');
