@@ -72,7 +72,7 @@
       echo "<div class='KCPL_videoembed'>".$widget['video_embedded']."</div>";
     }
     elseif($widget['field_type'] == 'wysiwyg'){ ?>
-    <div class="KCPL_listing4">
+    <div class="KCPL_listing4 wysiwyg">
        <span class="title KCPL_background-<?php echo $widget['field_color']; ?>"><?php echo $widget['field_title']; ?></span>
        <div class="gutter">
         <?php echo $widget['content']; ?>
