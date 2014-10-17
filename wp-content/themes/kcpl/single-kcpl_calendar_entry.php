@@ -110,9 +110,15 @@ $vbdayurl  = "$url?c_view=list&c_mode=day&c_day=$vbday&c_month=$vbmonth&c_year=$
       <form id="KCPL_Calendar_sidebar-form">
 					<h3>Filter By:</h3>
           <div id="KCPL_Calendar_sidebar-ce">
-						<a class="cal_button" href="<?php echo $vbmonthurl; ?>">Month</a>
-            <a class="cal_button" href="<?php echo $vbweekurl; ?>">Week</a>
-					  <a class="cal_button" href="<?php echo $vbdayurl; ?>">Day</a>
+            <div class='form-row'>
+  						<a class="cal_button" href="<?php echo $vbmonthurl; ?>">Month</a>
+            </div>
+            <div class='form-row'>
+              <a class="cal_button" href="<?php echo $vbweekurl; ?>">Week</a>
+            </div>
+            <div class='form-row'>
+  					  <a class="cal_button" href="<?php echo $vbdayurl; ?>">Day</a>
+            </div>
           </div>
         </form>
     </div>
