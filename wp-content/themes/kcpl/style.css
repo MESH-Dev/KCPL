@@ -3353,7 +3353,7 @@ ol.homepage-callout-list > li:nth-child(4) {
 /* line 771, assets/sass/_elements.scss */
 #KCPL_search .extended-params {
   background-color: #ffa751;
-  margin: 20px 0px 20px 0px;
+  margin: 0px 0px 20px 0px;
 }
 /* line 772, assets/sass/_elements.scss */
 #KCPL_search .extended-params .gutter {
