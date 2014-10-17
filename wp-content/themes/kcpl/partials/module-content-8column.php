@@ -62,9 +62,22 @@
            <?php } ?>
         </div>
       </div>
-    <?php }elseif($widget['field_type'] == 'video'){
+    <?php }
+
+    elseif($widget['field_type'] == 'video'){
       echo "<div class='KCPL_videoembed'>".$widget['video_embedded']."</div>";
-    }else{
+    }
+    elseif($widget['field_type'] == 'wysiwyg'){ ?>
+    <div class="KCPL_listing4">
+       <span class="title KCPL_background-<?php echo $widget['field_color']; ?>"><?php echo $widget['field_title']; ?></span>
+       <div class="gutter">
+        <?php echo $entry['content']; ?>
+       </div>
+     </div>
+
+    
+    <?}
+    else{
       echo "field type not valid";
     }
   }

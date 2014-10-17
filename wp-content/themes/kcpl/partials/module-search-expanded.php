@@ -13,7 +13,7 @@
       <div id="exFields">
         <div id="left">
          <select name="topic" id="search-topic">
-            <option value="">Topic</option>
+            <option value="">&#x25BC; Select Topic</option>
             <?php
             $terms = get_terms("resources-category");
             if ( !empty( $terms ) && !is_wp_error( $terms ) ){
@@ -26,7 +26,7 @@
         </div>
         <div id="right">
          <select name="audience" id="search-audience">
-            <option value="">Audience</option>
+            <option value="">&#x25BC; Select Audience </option>
             <?php
             $terms = get_terms("audience");
             if ( !empty( $terms ) && !is_wp_error( $terms ) ){
