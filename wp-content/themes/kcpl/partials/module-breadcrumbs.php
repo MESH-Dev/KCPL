@@ -11,6 +11,9 @@
         $posttest = get_post($pID);
         $slug = $posttest->post_name;
 
+        $this_page = get_post($thisID);
+        $this_slug = $this_page->post_name;
+
 
         if (($slug == 'collection') || ($slug == 'events-classes') || ($slug == 'learning-lab') || ($slug == 'community') || ($slug == 'online-community')){
           $nav = 'main_nav';

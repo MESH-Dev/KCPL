@@ -7,6 +7,7 @@ global $post;
 // $pID = KCPL_get_menu_parent_ID();
 
 // See toolbox.php for this function
+$thisID = get_the_ID();
 $pID = KCPL_get_highest_ancestor($post);
 
 $sidebar = KCPL_get_sidebar($pID);
