@@ -23,7 +23,7 @@ foreach($left as $widget){
   <?php }elseif($widget['field_type'] == 'card'){
     //card ?>
 
-    <a target="_blank" href="<?php echo get_page_link(122); ?>">
+    <a target="_blank" href="<?php echo get_page_link(4519); ?>">
       <div class="KCPL_horz-card KCPL_background-blue">
         <div class="gutter">
            <span class="KCPL_horz-card-first">Get your free</span> <span class="KCPL_horz-card-last">library card</span>
@@ -306,7 +306,7 @@ foreach($right as $widget){
   <?php }elseif($widget['field_type'] == 'card'){
     //card ?>
 
-    <a target="_blank" href="<?php echo get_page_link(122); ?>">
+    <a target="_blank" href="<?php echo get_page_link(4519); ?>">
       <div class="KCPL_horz-card KCPL_background-blue">
         <div class="gutter">
            <span class="KCPL_horz-card-first">Get your free</span> <span class="KCPL_horz-card-last">library card</span>
