@@ -89,8 +89,7 @@ foreach($left as $widget){
           <span class="list-title"><?php echo $widget['listing_title'];?></span>
           <ul>
              <?php foreach($widget['urls'] as $list){ ?>
-                <?php if($list['tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
-                <li><a href="<?php echo $list['url']; ?>" target="<?php echo $target;?>"><?php echo $list['title']; ?></a></li>
+                <li><a href="<?php echo $list['url']; ?>"><?php echo $list['title']; ?></a></li>
              <?php } ?>
           </ul>
           <?php if($widget['field_link'] != ''){ ?>
@@ -181,7 +180,7 @@ foreach($left as $widget){
       if($entry['vertical_type'] == "small-single"){ ?>
        <div class="columns two <?php if($ctr == 1) echo 'alpha'; else echo 'omega';?> ">
         <div class="KCPL_single-featured ?>">
-          <span class="title KCPL_background-<?php echo $widget['field_color']; ?>"><?php echo $entry['section_title']; ?></span>
+          <a href="<?php echo $entry['page_link']; ?>"><span class="title KCPL_background-<?php echo $widget['field_color']; ?>"><?php echo $entry['section_title']; ?></span></a>
           <div class="gutter">
 
              <div class="entry">
@@ -372,8 +371,7 @@ foreach($right as $widget){
           <span class="list-title"><?php echo $widget['listing_title'];?></span>
           <ul>
              <?php foreach($widget['urls'] as $list){ ?>
-                <?php if($list['tab'][0] == '_blank'){ $target = "_blank"; } else $target = "_self";?>
-                <li><a href="<?php echo $list['url']; ?>" target="<?php echo $target;?>"><?php echo $list['title']; ?></a></li>
+                <li><a href="<?php echo $list['url']; ?>"><?php echo $list['title']; ?></a></li>
              <?php } ?>
           </ul>
           <?php if($widget['field_link'] != ''){ ?>
@@ -455,101 +453,100 @@ foreach($right as $widget){
    elseif($widget['field_type'] == 'vertical-block'){ ?>
 
      <div class="KCPL_vertical-callout clearfix">
-    <?php
-    //2-COLS HERE
-    $ctr = 1;
-    foreach($widget['vertical_blocks'] as $entry){
-
-      if($entry['vertical_type'] == "small-single"){ ?>
-       <div class="columns two <?php if($ctr == 1) echo 'alpha'; else echo 'omega';?> ">
-        <div class="KCPL_single-featured ?>">
-          <span class="title KCPL_background-<?php echo $widget['field_color']; ?>"><?php echo $entry['section_title']; ?></span>
-          <div class="gutter">
-
-             <div class="entry">
-                <span class="entry-title"><?php echo $entry['title']; ?></span>
-                <span class="entry-date"><?php echo $entry['supporting_info']; ?></span>
-                <div class="entry-excerpt">
-                    <?php echo $entry['description']; ?>
-                </div>
-                <a href="<?php echo $entry['page_link']; ?>" class="KCPL_readmore"><?php echo $entry['page_link_text']; ?></a>
-             </div>
-          </div>
-        </div>
-      </div>
-
       <?php
-      }
-      elseif($entry['vertical_type'] == "vertical-button"){ ?>
-       <div class="columns two <?php if($ctr == 1) echo 'alpha'; else echo 'omega';?>">
-        <a href="<?php echo $entry['page_link']; ?>">
-          <div class="KCPL_short-callout KCPL_background-<?php echo $widget['field_color']; ?>">
-            <span><?php echo $entry['title']; ?></span>
-          </div>
-        </a>
-      </div>
+      //2-COLS HERE
+      $ctr = 1;
+      foreach($widget['vertical_blocks'] as $entry){
 
-      <?php
-      }
-      elseif($entry['vertical_type'] == "social-feed"){ ?>
+        if($entry['vertical_type'] == "small-single"){ ?>
          <div class="columns two <?php if($ctr == 1) echo 'alpha'; else echo 'omega';?> ">
-          <div class="KCPL_social-callout">
-           <div class="KCPL_social-callout-header">
-               <span>Follow Us</span>
-           </div>
-           <div class="KCPL_social-callout-body">
-              <div class='icons'>
-                <a href="https://www.facebook.com/KanawhaLibrary" target="_blank"><div class="KCPL_sprite-facebook KCPL_social-callout-icon"></div></a>
-                <a href="http://www.pinterest.com/kanawhalibrary/" target="_blank"><div class="KCPL_sprite-pinterest KCPL_social-callout-icon"></div></a>
-                <a href="https://twitter.com/KanawhaLibrary" target="_blank"><div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div></a>
-
-              </div>
-               <div class="clear"></div>
-
-
-               <?php
-
-               $settings = array(
-                    'oauth_access_token' => "83915658-qoSmzFO1D0QbPupw9BhX3XOiA11BeYdt0VDqg3oSp",
-                    'oauth_access_token_secret' => "WGKKZkm5hxYkxW8JHfGBwQpps1NKE1llVCqwLkNEzpOoB",
-                    'consumer_key' => "ajAwYUZL83PVw78lL2RVlTchh",
-                    'consumer_secret' => "2g9khxKkgvG7pR9WAQ5rF16RVlR9B7Z4LrhgrtStax68uNjgJY"
-                  );
-
-                $url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
-                $getfield = '?screen_name=KanawhaLibrary&count=1';
-                $requestMethod = 'GET';
-
-                $twitter = new TwitterAPIExchange($settings);
-                $response = $twitter->setGetfield($getfield)
-                             ->buildOauth($url, $requestMethod)
-                             ->performRequest();
-
-                $result = json_decode($response, true);
-                $tweet = $result[0]['text'];
-                $date = $result[0]['created_at'];
-                $newDate = date("M j", strtotime($date));
-
-               ?>
-
-               <a href="https://twitter.com/KanawhaLibrary" target="_blank">
-                 <div class="KCPL_social-callout-tweet">
-                     <span class="KCPL_social-callout-tweet-content"><?php echo $tweet; ?></span><br/>
-                     <span class="KCPL_social-callout-tweet-date"><?php echo $newDate; ?></span>
-                 </div>
-               </a>
-           </div>
-         </div>
+          <div class="KCPL_single-featured ?>">
+            <a href="<?php echo $entry['page_link']; ?>"><span class="title KCPL_background-<?php echo $widget['field_color']; ?>"><?php echo $entry['section_title']; ?></span></a>
+            <div class="gutter">
+               <div class="entry">
+                  <span class="entry-title"><?php echo $entry['title']; ?></span>
+                  <span class="entry-date"><?php echo $entry['supporting_info']; ?></span>
+                  <div class="entry-excerpt">
+                      <?php echo $entry['description']; ?>
+                  </div>
+                  <a href="<?php echo $entry['page_link']; ?>" class="KCPL_readmore"><?php echo $entry['page_link_text']; ?></a>
+               </div>
+            </div>
+          </div>
         </div>
-      <?php
-     }
-      else{
 
-      }
-      $ctr++;
+        <?php
+        }
+        elseif($entry['vertical_type'] == "vertical-button"){ ?>
+         <div class="columns two <?php if($ctr == 1) echo 'alpha'; else echo 'omega';?>">
+          <a href="<?php echo $entry['page_link']; ?>">
+            <div class="KCPL_short-callout KCPL_background-<?php echo $widget['field_color']; ?>">
+              <span><?php echo $entry['title']; ?></span>
+            </div>
+          </a>
+        </div>
 
-    } ?>
-    </div> <?php
+        <?php
+        }
+        elseif($entry['vertical_type'] == "social-feed"){ ?>
+           <div class="columns two <?php if($ctr == 1) echo 'alpha'; else echo 'omega';?> ">
+            <div class="KCPL_social-callout">
+             <div class="KCPL_social-callout-header">
+                 <span>Follow Us</span>
+             </div>
+             <div class="KCPL_social-callout-body">
+                <div class='icons'>
+                  <a href="https://www.facebook.com/KanawhaLibrary" target="_blank"><div class="KCPL_sprite-facebook KCPL_social-callout-icon"></div></a>
+                  <a href="http://www.pinterest.com/kanawhalibrary/" target="_blank"><div class="KCPL_sprite-pinterest KCPL_social-callout-icon"></div></a>
+                  <a href="https://twitter.com/KanawhaLibrary" target="_blank"><div class="KCPL_sprite-twitter KCPL_social-callout-icon"></div></a>
+
+                </div>
+                 <div class="clear"></div>
+
+
+                 <?php
+
+                 $settings = array(
+                      'oauth_access_token' => "83915658-qoSmzFO1D0QbPupw9BhX3XOiA11BeYdt0VDqg3oSp",
+                      'oauth_access_token_secret' => "WGKKZkm5hxYkxW8JHfGBwQpps1NKE1llVCqwLkNEzpOoB",
+                      'consumer_key' => "ajAwYUZL83PVw78lL2RVlTchh",
+                      'consumer_secret' => "2g9khxKkgvG7pR9WAQ5rF16RVlR9B7Z4LrhgrtStax68uNjgJY"
+                    );
+
+                  $url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
+                  $getfield = '?screen_name=KanawhaLibrary&count=1';
+                  $requestMethod = 'GET';
+
+                  $twitter = new TwitterAPIExchange($settings);
+                  $response = $twitter->setGetfield($getfield)
+                               ->buildOauth($url, $requestMethod)
+                               ->performRequest();
+
+                  $result = json_decode($response, true);
+                  $tweet = $result[0]['text'];
+                  $date = $result[0]['created_at'];
+                  $newDate = date("M j", strtotime($date));
+
+                 ?>
+
+                 <a href="https://twitter.com/KanawhaLibrary" target="_blank">
+                   <div class="KCPL_social-callout-tweet">
+                       <span class="KCPL_social-callout-tweet-content"><?php echo $tweet; ?></span><br/>
+                       <span class="KCPL_social-callout-tweet-date"><?php echo $newDate; ?></span>
+                   </div>
+                 </a>
+             </div>
+           </div>
+          </div>
+        <?php
+       }
+        else{
+
+        }
+        $ctr++;
+
+      } ?>
+     </div> <?php
 
   }else{
     //echo "Hasn't been configured yet. Deal with it.";

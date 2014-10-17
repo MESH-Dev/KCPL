@@ -343,7 +343,7 @@
           if($entry['vertical_type'] == "small-single"){ ?>
            <div class="columns two <?php if($ctr == 1) echo 'alpha'; else echo 'omega';?> ">
             <div class="KCPL_single-featured ?>">
-              <span class="title KCPL_background-<?php echo $widget['field_color']; ?>"><?php echo $entry['section_title']; ?></span>
+              <a href="<?php echo $entry['page_link']; ?>"><span class="title KCPL_background-<?php echo $widget['field_color']; ?>"><?php echo $entry['section_title']; ?></span></a>
               <div class="gutter">
 
                  <div class="entry">
@@ -780,7 +780,7 @@
           if($entry['vertical_type'] == "small-single"){ ?>
            <div class="columns two <?php if($ctr == 1) echo 'alpha'; else echo 'omega';?> ">
             <div class="KCPL_single-featured ?>">
-              <span class="title KCPL_background-<?php echo $widget['field_color']; ?>"><?php echo $entry['section_title']; ?></span>
+              <a href="<?php echo $entry['page_link']; ?>"><span class="title KCPL_background-<?php echo $widget['field_color']; ?>"><?php echo $entry['section_title']; ?></span></a>
               <div class="gutter">
 
                  <div class="entry">
