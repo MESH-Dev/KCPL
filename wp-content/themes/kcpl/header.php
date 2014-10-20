@@ -8,8 +8,8 @@
   <meta property="fb:page_id" content="162450860303"/>
   <meta name="description"
             content="kanawhalibrary.org is a Kanawha County Libraries card holder's gateway to traditional and online audio, video, and print resources in the county's public and school library collections."/>
-  <link rel="image_src" href="http://kcpl.bkfk-t5yk.accessdomain.com/wp-content/uploads/2014/10/KCPL_HorizLogo_blue.jpg"/>
-  <meta property="og:image" content="http://kcpl.bkfk-t5yk.accessdomain.com/wp-content/uploads/2014/10/KCPL_HorizLogo_blue.jpg"/>
+  <link rel="image_src" href="<?php echo get_site_url(); ?>/wp-content/uploads/2014/10/KCPL_HorizLogo_blue.jpg"/>
+  <meta property="og:image" content="<?php echo get_site_url(); ?>/wp-content/uploads/2014/10/KCPL_HorizLogo_blue.jpg"/>
   <script>
    (function(d) {
      var config = {
@@ -20,6 +20,9 @@
   </script>
 
   <?php wp_head(); ?>
+  <!--[if lt IE 9]>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/modernizr.min.js"></script>
+  <![endif]-->
 </head>
 <body <?php if(wp_is_mobile()){$mobileClass="KCPLmobile";}else{$mobileClass="KCPLmobile";} body_class($mobileClass);?>>
 
