@@ -118,7 +118,9 @@ footer{background:#c5c5c5;float:left;width:100%;}
     #social_navCont{display:block;margin:15px 0 0;}
     #social_navCont{
       ul{width:170px;}
-      ul li{color:#fff; list-style-type: none; overflow:hidden;height:35px;width:35px;float:left;position:relative;margin:0 20px 20px 0;background:$blue;}
+      ul li{color:#fff; list-style-type: none; overflow:hidden;height:35px;width:35px;float:left;position:relative;margin:0 20px 20px 0;background:$blue;
+
+       &:hover{@include opacity(0.7)}}
         ul li:before{position: absolute;top: 32%;left: 33%;font-size: 19px;z-index:1;}
         ul li.facebook{background: url(assets/img/sprites.png) 0px -50px no-repeat;height: 35px;width: 35px;}
         ul li.twitter{background: url(assets/img/sprites.png) -164px -50px no-repeat;height: 35px;width: 35px;}
@@ -126,14 +128,17 @@ footer{background:#c5c5c5;float:left;width:100%;}
         ul li.googleplus{}
         ul li.pinterest{background: url(assets/img/sprites.png) -42px -50px no-repeat;height:35px;width: 35px; }
         ul li.instagram{}
-      ul li a{color:transparent;display:block;height: 100%;width: 100%;position: absolute;z-index: 2;}
+      ul li a{color:transparent;display:block;height: 100%;width: 100%;position: absolute;z-index: 2;
+       
+      }
+
       ul ul{display:none;}
     }
 
-    #footer-donate{color:$widget-d;font:bold 12px/12px $minion;}
+    #footer-donate{color:$widget-d;font:bold 12px/15px $minion;}
     #footer-donate{
-      span{margin: 3px 0 18px;display: block;}
-      a{text-align: center;padding: 7px 10px 8px;border: none;color: #ffffff;border-radius: 10px;background: $blue;font-size: 17px;font-family: $nimbus-c;text-transform: uppercase;font-weight: 700;letter-spacing: 0.07em;display: block;width: 129px;}
+      span{margin: 3px 0 18px;display: block; }
+      a{text-align: center;padding: 7px 10px 8px;border: none;color: #ffffff; border-radius: 10px;background: $blue;font-size: 17px;font-family: $nimbus-c;text-transform: uppercase;font-weight: 700;letter-spacing: 0.07em;display: block;width: 129px;}
     }
 
   }
