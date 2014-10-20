@@ -7495,8 +7495,8 @@ form#kcpl_oc-booklist label {
   }
 
   /* line 293, assets/sass/_responsive.scss */
-  .KCPL_search.condensed input[type="search"] {
-    width: 170px;
+  #KCPL_search.condensed input[type="search"] {
+    width: 170px !important;
   }
 }
 @media only screen and (max-device-width: 767px) and (orientation: landscape), screen and (min-width: 480px) and (max-width: 767px) and (orientation: portrait) {
@@ -8023,5 +8023,10 @@ form#kcpl_oc-booklist label {
   /* line 451, assets/sass/_responsive.scss */
   .KCPL_short-callout {
     margin-bottom: 20px;
+  }
+
+  /* line 452, assets/sass/_responsive.scss */
+  #KCPL_search.condensed input[type="search"] {
+    width: 170px !important;
   }
 }
