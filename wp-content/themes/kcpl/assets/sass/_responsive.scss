@@ -288,7 +288,8 @@
 
   .gbooks-result-row .gbooks-result-entry{width:95%;float:none;margin:0 auto;}
 
-  .KCPL_home-engagement #row-expanded .engage-content.active{display:block; height: 825px;}
+  .#{$namespace}home-engagement #row-expanded .engage-content.active{display:block; height: 825px;}
+  .#{$namespace}short-callout { margin-bottom: 20px; }
 
 }
 
@@ -446,5 +447,7 @@
     }
   }
 
-  .KCPL_home-engagement #row-expanded .engage-content.active{display:block; height: 825px;}
+  .#{$namespace}home-engagement #row-expanded .engage-content.active{display:block; height: 825px;}
+  .#{$namespace}short-callout { margin-bottom: 20px; }
+
 }
