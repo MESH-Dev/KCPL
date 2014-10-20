@@ -609,7 +609,7 @@ ul {
 
 /* line 33, assets/sass/_typography.scss */
 ul li {
-  margin: 2px 0;
+  margin: 2px 5px;
 }
 
 /* line 34, assets/sass/_typography.scss */
@@ -620,7 +620,7 @@ ol {
 
 /* line 35, assets/sass/_typography.scss */
 ol li {
-  margin: 2px 0;
+  margin: 2px 5px;
 }
 
 /* line 38, assets/sass/_typography.scss */
