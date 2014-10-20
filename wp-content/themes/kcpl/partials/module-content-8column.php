@@ -18,7 +18,7 @@
                 $img = wp_get_attachment_image_src($entry['image'],'small'); ?>
               <div class="entry">
                   <div class="image"><img src="<?php echo $img[0]; ?>" /></div>
-                  <div class="number"><?php echo $i+1; ?></div>
+                  <!--<div class="number"><?php echo $i+1; ?></div>-->
                   <div class="content">
                     <span class="entry-title">
                       <?php if($entry['link']!=''){ ?>

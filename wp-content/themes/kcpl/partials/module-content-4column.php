@@ -179,7 +179,7 @@
     //OC Discussions  ?>
 
     <div class="KCPL_single-featured">
-      <span class="title KCPL_background-red"><?php echo $widget['field_title']; ?></span>
+      <span class="title KCPL_background-red">Online Discussions</span>
       <div class="gutter">
         <?php KCPL_OC_discussions::getSocialDiscussion(5); ?>
       </div>
@@ -610,7 +610,7 @@
     //OC Discussions  ?>
 
     <div class="KCPL_single-featured">
-      <span class="title KCPL_background-red"><?php echo $widget['field_title']; ?></span>
+      <span class="title KCPL_background-red">Online Discussions</span>
       <div class="gutter">
         <?php KCPL_OC_discussions::getSocialDiscussion(5); ?>
       </div>
