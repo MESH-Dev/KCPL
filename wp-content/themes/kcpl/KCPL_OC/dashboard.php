@@ -31,21 +31,7 @@ $color = 'red';
           </div>
         </div>
 
-        <a href="<?php echo get_permalink($settings['recommended']); ?>">
-          <div class="KCPL_horz-multi KCPL_background-red">
-            <div class="gutter">
-               <span>Give Recommendations</span>
-            </div>
-          </div>
-        </a>
-
-        <a href="<?php echo get_permalink($settings['recommend']); ?>">
-          <div class="KCPL_horz-multi KCPL_background-red">
-            <div class="gutter">
-               <span>Search Recommended Books</span>
-            </div>
-          </div>
-        </a>
+        
 
       </div>
 
@@ -80,6 +66,22 @@ $color = 'red';
           <div class="KCPL_horz-multi KCPL_background-red">
             <div class="gutter">
                <span>Join Discussions</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="<?php echo get_permalink($settings['recommended']); ?>">
+          <div class="KCPL_horz-multi KCPL_background-red">
+            <div class="gutter">
+               <span>Give Recommendations</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="<?php echo get_permalink($settings['recommend']); ?>">
+          <div class="KCPL_horz-multi KCPL_background-red">
+            <div class="gutter">
+               <span>Search Recommended Books</span>
             </div>
           </div>
         </a>

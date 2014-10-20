@@ -1185,8 +1185,8 @@ font: 14px/18px $nimbus;}
    .row{display:block;margin:0 0 40px;
       .entry{display:block;float:left;width:50%;
          .image{width:15%;float:left;}
-         .number{width:16%;float: left;font: 52px/30px $minion;text-align: left; padding-left: 3%}
-         .content{width:61%;float:left; padding-right: 5%;
+         .number{width:19%;float: left;font: 52px/30px $minion;text-align: left; padding-left: 3%; letter-spacing: -0.12em}
+         .content{width:57%;float:left; padding-right: 5%;
             .entry-title{display:block;font:bold 20px/20px $nimbus-c;text-transform:uppercase;
 
             }
@@ -1804,10 +1804,13 @@ form#editProfile{margin:0;background:#e2e2e2;padding:20px;
   }
 }
 
+.gbooks-result-entry{height: 240px;}
 .gbooks-result-entry .gbooks-result-buttons .gbooks-button-add{width: auto;display: inline-block;height:auto;background: none;border-right: 1px solid #ccc;font-size: 22px;margin: 0 10px 0 0;padding: 0 10px 0 0;vertical-align:middle;
 }
 .gbooks-result-button-number{display:inline-block;font:bold 20px/20px nimbus-sans-condensed;vertical-align:middle;float:none;width:auto;}
 #searchBooks .output .gbooks-result-buttons{margin:10px 0 0;}
+
+.gbooks-result-buttons{margin:10px 0 0;}
 
 .gbooks-result-row{margin:0 0 20px;}
 .gbooks-result-entry .gbooks-result-title{width:90%;font:bold 19px/19px nimbus-sans-condensed;}
@@ -1817,6 +1820,23 @@ form#editProfile{margin:0;background:#e2e2e2;padding:20px;
 .gbooks-list-add-entry-title{font:bold 19px/19px nimbus-sans-condensed;padding:0 0 0 10px;}
 .gbooks-list-add-entry-remove{background:none;border:none;vertical-align:middle;}
   .gbooks-list-add-entry-remove:before{margin:12px 0 0 0;display:block;}
+
+#wp-user-book-list_results{
+  .gbooks-result-entry{
+    height: 100%;
+  }
+
+}  
+
+#kcpl_oc-profileedit a{
+  font: italic bold 12px/18px $minion;
+  color:  $d-grey;
+  margin-bottom: 10px;
+}
+
+.profile-edit{margin-bottom: 20px;}
+
+.gbooks-result-buttons:hover{@include opacity(.7)}
 
 form#kcpl_oc-booklist{margin:0;padding:0;
   input[type="text"]{margin:6px 0;}
