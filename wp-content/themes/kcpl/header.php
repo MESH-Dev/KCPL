@@ -3,7 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title><?php wp_title(); ?></title>
+  <title>Kanawha County Public Library | <?php wp_title(); ?></title>
+  <meta name="verify-v1" content="9zrmS6tl/6nvEfCC7csXM9yv6LDXWCvvZe4fhXCuX2k="/>
+  <meta property="fb:page_id" content="162450860303"/>
+  <meta name="description"
+            content="kanawhalibrary.org is a Kanawha County Libraries card holder's gateway to traditional and online audio, video, and print resources in the county's public and school library collections."/>
+  <link rel="image_src" href="http://kcpl.bkfk-t5yk.accessdomain.com/wp-content/uploads/2014/10/KCPL_HorizLogo_blue.jpg"/>
+  <meta property="og:image" content="http://kcpl.bkfk-t5yk.accessdomain.com/wp-content/uploads/2014/10/KCPL_HorizLogo_blue.jpg"/>
   <script>
    (function(d) {
      var config = {

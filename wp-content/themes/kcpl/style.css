@@ -1995,6 +1995,12 @@ footer #footer-donate a {
   width: 129px;
 }
 
+/* line 147, assets/sass/_layout.scss */
+.kcpl_cal-readmore:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+
 /* line 1, assets/sass/_elements.scss */
 ::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder, ::input-placeholder {
   opacity: 0.7;
