@@ -254,15 +254,15 @@
 
     $i = 0;
 
-    echo '<div class="KCPL_vertical-callout clearfix">';
+    echo '<div class="KCPL_vertical-callout clearfix"><div class="alpha">';
 
     foreach($widget['vertical_graphic_callout'] as $entry){
 
       if ($i == 0) {
-          echo '<div class="two columns alpha">';
+          echo '<div class="vertical-graphic-left">';
           $i = $i + 1;
       } else {
-        echo '<div class="two columns omega">';
+        echo '<div class="vertical-graphic-right">';
       }
 
       if ($entry['graphic_callout_type'] == 'blue-shapes') {
@@ -293,7 +293,7 @@
 
     }
 
-    echo '</div>';
+    echo '</div></div>';
 
   }
 
