@@ -2,9 +2,9 @@
 
 //header search
 ##{$namespace}header-search{height:51px;background:$l-blue;float:left;width:100%;margin:-51px 0 0;transition:0.2s all;-webkit-transition:0.2s all;-moz-transition:0.2s all;-ms-transition:0.2s all;-o-transition:0.2s all;
-   form{padding:0;margin:0;float:right;width: 290px;border-left: 2px solid #323333;margin: 20px 0 0 0;}
+   form{padding:0;margin:0;float:right;width: 320px;border-left: 2px solid #323333;margin: 15px 0 0 0;}
    input[type="text"]{background: transparent;border: none; font: bold 17px/27px $nimbus; color: $s-grey; padding: 0px 7px; ;margin: 0;height: 19px; display: inline; width: initial;}
-   input[type="submit"]{ display: inline; position: absolute; bottom: -2px; }
+   input[type="submit"]{ display: inline; position: absolute; bottom: -2px; right:0px }
    
 }
 ##{$namespace}header-search.active{margin:0;}
