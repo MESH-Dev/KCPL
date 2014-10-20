@@ -400,11 +400,6 @@ img {
 
 /* WordPress Image Styles
    ========================================================================== */
-/* line 142, assets/sass/_base.scss */
-.alignnone {
-  margin: 5px 20px 20px 0;
-}
-
 /* line 143, assets/sass/_base.scss */
 .aligncenter, div.aligncenter {
   display: block;
@@ -4523,15 +4518,16 @@ a.cal_button {
 }
 /* line 1187, assets/sass/_elements.scss */
 .KCPL_listing4 .row .entry .number {
-  width: 16%;
+  width: 19%;
   float: left;
   font: 52px/30px "minion-pro";
   text-align: left;
   padding-left: 3%;
+  letter-spacing: -0.12em;
 }
 /* line 1188, assets/sass/_elements.scss */
 .KCPL_listing4 .row .entry .content {
-  width: 61%;
+  width: 57%;
   float: left;
   padding-right: 5%;
 }
@@ -6258,7 +6254,16 @@ form#editProfile .form-row input[type="submit"] {
   left: 35px;
 }
 
+<<<<<<< HEAD
 /* line 1806, assets/sass/_elements.scss */
+=======
+/* line 1807, assets/sass/_elements.scss */
+.gbooks-result-entry {
+  height: 240px;
+}
+
+/* line 1808, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 .gbooks-result-entry .gbooks-result-buttons .gbooks-button-add {
   width: auto;
   display: inline-block;
@@ -6271,7 +6276,11 @@ form#editProfile .form-row input[type="submit"] {
   vertical-align: middle;
 }
 
+<<<<<<< HEAD
 /* line 1808, assets/sass/_elements.scss */
+=======
+/* line 1810, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 .gbooks-result-button-number {
   display: inline-block;
   font: bold 20px/20px nimbus-sans-condensed;
@@ -6280,28 +6289,53 @@ form#editProfile .form-row input[type="submit"] {
   width: auto;
 }
 
+<<<<<<< HEAD
 /* line 1809, assets/sass/_elements.scss */
+=======
+/* line 1811, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 #searchBooks .output .gbooks-result-buttons {
   margin: 10px 0 0;
 }
 
+<<<<<<< HEAD
 /* line 1811, assets/sass/_elements.scss */
+=======
+/* line 1813, assets/sass/_elements.scss */
+.gbooks-result-buttons {
+  margin: 10px 0 0;
+}
+
+/* line 1815, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 .gbooks-result-row {
   margin: 0 0 20px;
 }
 
+<<<<<<< HEAD
 /* line 1812, assets/sass/_elements.scss */
+=======
+/* line 1816, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 .gbooks-result-entry .gbooks-result-title {
   width: 90%;
   font: bold 19px/19px nimbus-sans-condensed;
 }
 
+<<<<<<< HEAD
 /* line 1813, assets/sass/_elements.scss */
+=======
+/* line 1817, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 .gbooks-result-entry .new .gbooks-result-img {
   width: 9.5%;
 }
 
+<<<<<<< HEAD
 /* line 1814, assets/sass/_elements.scss */
+=======
+/* line 1818, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 .gbooks-result-entry .gbooks-result-buttons.new .gbooks-button-add {
   padding: 0 10px 0 6px;
   border: none;
@@ -6309,30 +6343,70 @@ form#editProfile .form-row input[type="submit"] {
   font-size: 14px;
 }
 
+<<<<<<< HEAD
 /* line 1816, assets/sass/_elements.scss */
+=======
+/* line 1820, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 .gbooks-list-add-entry-title {
   font: bold 19px/19px nimbus-sans-condensed;
   padding: 0 0 0 10px;
 }
 
+<<<<<<< HEAD
 /* line 1817, assets/sass/_elements.scss */
+=======
+/* line 1821, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 .gbooks-list-add-entry-remove {
   background: none;
   border: none;
   vertical-align: middle;
 }
 
+<<<<<<< HEAD
 /* line 1818, assets/sass/_elements.scss */
+=======
+/* line 1822, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 .gbooks-list-add-entry-remove:before {
   margin: 12px 0 0 0;
   display: block;
 }
 
+<<<<<<< HEAD
 /* line 1820, assets/sass/_elements.scss */
+=======
+/* line 1825, assets/sass/_elements.scss */
+#wp-user-book-list_results .gbooks-result-entry {
+  height: 100%;
+}
+
+/* line 1831, assets/sass/_elements.scss */
+#kcpl_oc-profileedit a {
+  font: italic bold 12px/18px "minion-pro";
+  color: #323333;
+  margin-bottom: 10px;
+}
+
+/* line 1837, assets/sass/_elements.scss */
+.profile-edit {
+  margin-bottom: 20px;
+}
+
+/* line 1839, assets/sass/_elements.scss */
+.gbooks-result-buttons:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+
+/* line 1841, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 form#kcpl_oc-booklist {
   margin: 0;
   padding: 0;
 }
+<<<<<<< HEAD
 /* line 1821, assets/sass/_elements.scss */
 form#kcpl_oc-booklist input[type="text"] {
   margin: 6px 0;
@@ -6342,6 +6416,17 @@ form#kcpl_oc-booklist label {
   font: 12px/35px nimbus-sans;
 }
 /* line 1823, assets/sass/_elements.scss */
+=======
+/* line 1842, assets/sass/_elements.scss */
+form#kcpl_oc-booklist input[type="text"] {
+  margin: 6px 0;
+}
+/* line 1843, assets/sass/_elements.scss */
+form#kcpl_oc-booklist label {
+  font: 12px/35px nimbus-sans;
+}
+/* line 1844, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 form#kcpl_oc-booklist input[type="checkbox"] {
   -webkit-appearance: none;
   background: transparent;
@@ -6351,7 +6436,11 @@ form#kcpl_oc-booklist input[type="checkbox"] {
   margin: 0 5px;
   position: relative;
 }
+<<<<<<< HEAD
 /* line 1824, assets/sass/_elements.scss */
+=======
+/* line 1845, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 form#kcpl_oc-booklist input[type="checkbox"]:checked:after {
   content: '';
   position: absolute;
@@ -6363,113 +6452,217 @@ form#kcpl_oc-booklist input[type="checkbox"]:checked:after {
   border-radius: 2px;
   background: #000;
 }
+<<<<<<< HEAD
 /* line 1825, assets/sass/_elements.scss */
+=======
+/* line 1846, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 form#kcpl_oc-booklist label {
   font-size: 14px;
   letter-spacing: 0.06em;
 }
 
+<<<<<<< HEAD
 /* line 1828, assets/sass/_elements.scss */
 #searchUserBooklists .output, #searchUserBooklists .output {
   transition: 0.2s all;
 }
 /* line 1829, assets/sass/_elements.scss */
+=======
+/* line 1849, assets/sass/_elements.scss */
+#searchUserBooklists .output, #searchUserBooklists .output {
+  transition: 0.2s all;
+}
+/* line 1850, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 #searchUserBooklists .output.active, #searchUserBooklists .output.active {
   opacity: 0;
 }
 
+<<<<<<< HEAD
 /* line 1832, assets/sass/_elements.scss */
+=======
+/* line 1853, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 #KCPL_search input[type="search"] {
   margin: 0;
 }
 
+<<<<<<< HEAD
 /* line 1833, assets/sass/_elements.scss */
+=======
+/* line 1854, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 .KCPL_home-engagement #row-expanded .engage-content {
   display: none;
 }
 
+<<<<<<< HEAD
 /* line 1834, assets/sass/_elements.scss */
+=======
+/* line 1855, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 .KCPL_home-engagement #row-expanded .engage-content.active {
   display: block;
   height: 304px;
 }
 
+<<<<<<< HEAD
 /* line 1835, assets/sass/_elements.scss */
+=======
+/* line 1856, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 .KCPL_home-engagement #row-expanded {
   left: -100%;
   transition: 0.3s all;
   width: 680px;
 }
 
+<<<<<<< HEAD
 /* line 1836, assets/sass/_elements.scss */
+=======
+/* line 1857, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 .KCPL_home-engagement #row-expanded.active {
   left: 30%;
 }
 
 /* Animations */
 @-webkit-keyframes shake {
+<<<<<<< HEAD
   0%, 100% {
     -webkit-transform: translateX(0);
   }
   10%, 30%, 50%, 70%, 90% {
     -webkit-transform: translateX(-10px);
   }
+=======
+  /* line 1861, assets/sass/_elements.scss */
+  0%, 100% {
+    -webkit-transform: translateX(0);
+  }
+
+  /* line 1862, assets/sass/_elements.scss */
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+  }
+
+  /* line 1863, assets/sass/_elements.scss */
+>>>>>>> nav-styles
   20%, 40%, 60%, 80% {
     -webkit-transform: translateX(10px);
   }
 }
 @keyframes shake {
+<<<<<<< HEAD
   0%, 100% {
     transform: translateX(0);
   }
   10%, 30%, 50%, 70%, 90% {
     transform: translateX(-10px);
   }
+=======
+  /* line 1866, assets/sass/_elements.scss */
+  0%, 100% {
+    transform: translateX(0);
+  }
+
+  /* line 1867, assets/sass/_elements.scss */
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+
+  /* line 1868, assets/sass/_elements.scss */
+>>>>>>> nav-styles
   20%, 40%, 60%, 80% {
     transform: translateX(10px);
   }
 }
 @-webkit-keyframes bounce {
+<<<<<<< HEAD
   0%, 20%, 50%, 80%, 100% {
     -webkit-transform: translateY(0);
   }
   40% {
     -webkit-transform: translateY(-30px);
   }
+=======
+  /* line 1872, assets/sass/_elements.scss */
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+  }
+
+  /* line 1873, assets/sass/_elements.scss */
+  40% {
+    -webkit-transform: translateY(-30px);
+  }
+
+  /* line 1874, assets/sass/_elements.scss */
+>>>>>>> nav-styles
   60% {
     -webkit-transform: translateY(-15px);
   }
 }
 @keyframes bounce {
+<<<<<<< HEAD
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
   }
   40% {
     transform: translateY(-30px);
   }
+=======
+  /* line 1877, assets/sass/_elements.scss */
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+
+  /* line 1878, assets/sass/_elements.scss */
+  40% {
+    transform: translateY(-30px);
+  }
+
+  /* line 1879, assets/sass/_elements.scss */
+>>>>>>> nav-styles
   60% {
     transform: translateY(-15px);
   }
 }
 /* AUTHENTICATION!!! */
+<<<<<<< HEAD
 /* line 1863, assets/sass/_elements.scss */
+=======
+/* line 1884, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 #loginform {
   margin: 0;
   padding: 0;
 }
+<<<<<<< HEAD
 /* line 1866, assets/sass/_elements.scss */
+=======
+/* line 1888, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 #loginform input[type="text"],
 #loginform input[type="password"] {
   margin: 0;
 }
 
+<<<<<<< HEAD
 /* line 1872, assets/sass/_elements.scss */
+=======
+/* line 1893, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 #authContainer {
   position: relative;
   width: 100%;
   min-height: 300px;
 }
+<<<<<<< HEAD
 /* line 1874, assets/sass/_elements.scss */
+=======
+/* line 1895, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 #authContainer > * {
   transition: 0.2s opacity;
   opacity: 0;
@@ -6482,27 +6675,44 @@ form#kcpl_oc-booklist label {
   left: 0;
   right: 0;
 }
+<<<<<<< HEAD
 /* line 1886, assets/sass/_elements.scss */
+=======
+/* line 1907, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 #authContainer.active #authContainer-load {
   opacity: 1;
   z-index: 5;
 }
+<<<<<<< HEAD
 /* line 1891, assets/sass/_elements.scss */
+=======
+/* line 1912, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 #authContainer #authContainer-load img {
   margin: 0 auto 20px;
   display: block;
 }
+<<<<<<< HEAD
 /* line 1896, assets/sass/_elements.scss */
+=======
+/* line 1917, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 #authContainer.success #authContainer-success {
   opacity: 1;
   z-index: 5;
 }
+<<<<<<< HEAD
 /* line 1903, assets/sass/_elements.scss */
+=======
+/* line 1924, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 #authContainer.fail #authContainer-fail {
   opacity: 1;
   z-index: 5;
 }
 
+<<<<<<< HEAD
 /* Vertical Graphics */
 /* line 1914, assets/sass/_elements.scss */
 .vertical-graphic-left {
@@ -6518,6 +6728,10 @@ form#kcpl_oc-booklist label {
 
 /* Search Results */
 /* line 1920, assets/sass/_elements.scss */
+=======
+/* Search Results */
+/* line 1935, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 #searchResults {
   text-align: center;
   display: table-cell;
@@ -6525,7 +6739,11 @@ form#kcpl_oc-booklist label {
   height: 100%;
   vertical-align: middle;
 }
+<<<<<<< HEAD
 /* line 1921, assets/sass/_elements.scss */
+=======
+/* line 1936, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 #searchResults span {
   font: bold 41px/41px "nimbus-sans-condensed";
   text-transform: uppercase;
@@ -6534,48 +6752,80 @@ form#kcpl_oc-booklist label {
 }
 
 /* Newsletter */
+<<<<<<< HEAD
 /* line 1926, assets/sass/_elements.scss */
 #newsletter {
   margin-top: 20px;
 }
 /* line 1927, assets/sass/_elements.scss */
+=======
+/* line 1941, assets/sass/_elements.scss */
+#newsletter {
+  margin-top: 20px;
+}
+/* line 1942, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 #newsletter form {
   margin: 0;
   padding: 0;
 }
+<<<<<<< HEAD
 /* line 1928, assets/sass/_elements.scss */
+=======
+/* line 1943, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 #newsletter input {
   margin: 10px 0;
 }
 
+<<<<<<< HEAD
 /* line 1931, assets/sass/_elements.scss */
+=======
+/* line 1946, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 ::-webkit-input-placeholder {
   color: #555555;
   opacity: 0.5;
 }
 
+<<<<<<< HEAD
 /* line 1936, assets/sass/_elements.scss */
+=======
+/* line 1951, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 :-moz-placeholder {
   /* Firefox 18- */
   color: #555555;
   opacity: 0.5;
 }
 
+<<<<<<< HEAD
 /* line 1941, assets/sass/_elements.scss */
+=======
+/* line 1956, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #555555;
   opacity: 0.5;
 }
 
+<<<<<<< HEAD
 /* line 1946, assets/sass/_elements.scss */
+=======
+/* line 1961, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 :-ms-input-placeholder {
   color: #555555;
   opacity: 0.5;
 }
 
 /* Mobile Overrides */
+<<<<<<< HEAD
 /* line 1953, assets/sass/_elements.scss */
+=======
+/* line 1968, assets/sass/_elements.scss */
+>>>>>>> nav-styles
 #mobileMenuTrigger, #mobileSearchTrigger, #mobileWrap {
   display: none;
 }

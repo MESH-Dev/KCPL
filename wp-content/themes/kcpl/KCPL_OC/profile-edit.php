@@ -3,7 +3,7 @@ get_header();
 global $post;
 $pID = KCPL_get_highest_ancestor($post);
 $sidebar = KCPL_get_sidebar($pID);
-$color = get_field('section_color',$pID);
+$color = 'red';
 
 ?>
 
@@ -50,7 +50,7 @@ $color = get_field('section_color',$pID);
               } ?>
         </div>
 
-        <div class="columns eight alpha omega">
+        <div class="columns eight alpha omega profile-edit">
           <?php
             if($pr = true){
               KCPL_OC_profile::editProfile();
