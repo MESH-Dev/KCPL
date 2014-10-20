@@ -49,6 +49,8 @@ textarea,input,select{outline: none;}
 
       //> li > ul > li > ul ul{display:none;}
 
+      > li > ul > li > ul > li > ul > li { margin: 5px 0; }
+
       // Make the second,third level menu items of the current page visible
 
       > li.current_page_item > ul, > li.current_page_ancestor > ul{display:block; background:$s-grey;}
@@ -57,53 +59,53 @@ textarea,input,select{outline: none;}
       > li.current_page_ancestor > ul > li.current_page_item > a{color: #323333;font: bold 19px/19px $nimbus-c;text-transform: uppercase;display: block;padding: 10px 20px;}
 
       //> li.current_page_item > ul > li > ul, > li.current_page_ancestor > ul > li > ul{padding:0 0; display: none;}
-      > li.current_page_item > ul > li > ul > li, 
+      > li.current_page_item > ul > li > ul > li,
       > li.current_page_ancestor > ul > li > ul > li{padding: 0px 10px 0px 0px;}
 
       > li.current_page_ancestor > ul > li.current_page_item > ul,
-      > li.current_page_ancestor > ul > li.current_page_item, 
+      > li.current_page_ancestor > ul > li.current_page_item,
       > li.current_page_ancestor > ul > li.current-menu-ancestor{display:block; background-color: $m-grey }
-      > li.current_page_ancestor > ul > li.current_page_ancestor > ul { display:block; background-color: $m-grey}  
+      > li.current_page_ancestor > ul > li.current_page_ancestor > ul { display:block; background-color: $m-grey}
 
       > li.current_page_ancestor > ul > li.current_page_ancestor > a,
        > li.current_page_ancestor > ul > li.current_page_item > a{color: #fff !important;}  //Active second-level parent
 
       > li.current_page_item > ul > li > ul > li > a, > li.current_page_ancestor > ul > li > ul > li > a{color: #fff;font: 18px/18px $minion;display: block;padding: 4px 0px 0px 20px;letter-spacing: 0.03em;word-spacing: 0.09em;}
-      
+
       > li.current_page_ancestor > ul > li > ul > li.current_page_item > a, //third level active page
       > li.current_page_ancestor > ul > li > ul > li.current_page_ancestor > a{ color: #fff !important;} //third level active parent page
       > li.current_page_ancestor > ul > li > ul > li > ul > li.current_page_item > a { color: #fff !important;}  //fourth level active page
- 
 
-      > li.current_page_item > ul > li > ul > li:last-child > a{padding: 4px 0px 16px 20px;} 
+
+      > li.current_page_item > ul > li > ul > li:last-child > a{padding: 4px 0px 16px 20px;}
       > li.current_page_ancestor > ul > li > ul > li:last-child > a{padding: 4px 0px 16px 20px;}
       > li.current_page_ancestor > ul > li > ul > li.menu-item-has-children:last-child > a{padding: 4px 0px 0px 20px;}
        > li.current_page_ancestor > ul > li > ul > li.menu-item-has-children:last-child{padding: 4px 0px 10px 0px;}
 
       > li.current_page_ancestor > ul > li > ul > li.current_page_ancestor > ul {display:block; }//fourth level list
- 
+
 
   }
 }
 
 #secondary-sidebar-nav.KCPL_background-red ul#main_nav_secondary > li.current_page_item > ul > li > a,
-#secondary-sidebar-nav.KCPL_background-red ul#main_nav_secondary > li.current_page_ancestor > ul > li > a{color: $red;} 
+#secondary-sidebar-nav.KCPL_background-red ul#main_nav_secondary > li.current_page_ancestor > ul > li > a{color: $red;}
 #secondary-sidebar-nav.KCPL_background-red ul#main_nav_secondary> li.current_page_item > ul > li > ul > li > a,
 #secondary-sidebar-nav.KCPL_background-red ul#main_nav_secondary> li.current_page_ancestor > ul > li > ul > li > a,
-#secondary-sidebar-nav.KCPL_background-red ul#main_nav_secondary> li.current_page_ancestor > ul > li > ul > li > ul > li > a  {color: $l-red;} 
+#secondary-sidebar-nav.KCPL_background-red ul#main_nav_secondary> li.current_page_ancestor > ul > li > ul > li > ul > li > a  {color: $l-red;}
 
 #secondary-sidebar-nav.KCPL_background-green ul#main_nav_secondary > li.current_page_item > ul > li > a,
-#secondary-sidebar-nav.KCPL_background-green ul#main_nav_secondary > li.current_page_ancestor > ul > li > a{color: $green;} 
+#secondary-sidebar-nav.KCPL_background-green ul#main_nav_secondary > li.current_page_ancestor > ul > li > a{color: $green;}
 #secondary-sidebar-nav.KCPL_background-green ul#main_nav_secondary> li.current_page_item > ul > li > ul > li > a,
 #secondary-sidebar-nav.KCPL_background-green ul#main_nav_secondary> li.current_page_ancestor > ul > li > ul > li > a,
-#secondary-sidebar-nav.KCPL_background-green ul#main_nav_secondary> li.current_page_ancestor > ul > li > ul > li > ul > li > a {color: $l-green;} 
+#secondary-sidebar-nav.KCPL_background-green ul#main_nav_secondary> li.current_page_ancestor > ul > li > ul > li > ul > li > a {color: $l-green;}
 
 
 #secondary-sidebar-nav.KCPL_background-blue ul#main_nav_secondary > li.current_page_item > ul > li > a,
-#secondary-sidebar-nav.KCPL_background-blue ul#main_nav_secondary > li.current_page_ancestor > ul > li > a{color: $blue;} 
+#secondary-sidebar-nav.KCPL_background-blue ul#main_nav_secondary > li.current_page_ancestor > ul > li > a{color: $blue;}
 #secondary-sidebar-nav.KCPL_background-blue ul#main_nav_secondary> li.current_page_item > ul > li > ul > li > a,
 #secondary-sidebar-nav.KCPL_background-blue ul#main_nav_secondary> li.current_page_ancestor > ul > li > ul > li > a,
-#secondary-sidebar-nav.KCPL_background-blue ul#main_nav_secondary> li.current_page_ancestor > ul > li > ul > li > ul > li > a  {color: $l-blue;} 
+#secondary-sidebar-nav.KCPL_background-blue ul#main_nav_secondary> li.current_page_ancestor > ul > li > ul > li > ul > li > a  {color: $l-blue;}
 
 
 /*
@@ -777,7 +779,7 @@ ol.homepage-callout-list { display: block;
   #type{float: left;width: 112px;border-right: 1px solid #323333;height: 99px;
     .top{font: italic 14px/18px $minion; color: $d-grey; font-weight: normal;  display: block;padding: 6px 0px 0 6px; }
     .bottom{font: bold 14px/18px $nimbus;color: $d-grey;display: block; padding: 1px 0 0;}
- 
+
       .bottom a{color: $d-grey;display: inline; float:left; padding: 0 0 0 6px; @include opacity(.7) }
       .bottom a.active{color: $d-grey; cursor:pointer; @include opacity(1)}
       .bottom a:hover{color: $d-grey; @include opacity(1)}
@@ -844,7 +846,7 @@ a.cal_button{
   text-align: center;
   border: none;
   color: #FFF;
-  border-radius: .5em; 
+  border-radius: .5em;
   font-size: 13px;
   font-family: $minion;
   font-weight: 700;
