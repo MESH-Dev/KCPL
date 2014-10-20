@@ -6480,8 +6480,21 @@ form#kcpl_oc-booklist label {
   z-index: 5;
 }
 
-/* Search Results */
+/* Vertical Graphics */
 /* line 1908, assets/sass/_elements.scss */
+.vertical-graphic-left {
+  float: left;
+  width: 48%;
+}
+
+/* line 1909, assets/sass/_elements.scss */
+.vertical-graphic-right {
+  float: right;
+  width: 48%;
+}
+
+/* Search Results */
+/* line 1914, assets/sass/_elements.scss */
 #searchResults {
   text-align: center;
   display: table-cell;
@@ -6489,7 +6502,7 @@ form#kcpl_oc-booklist label {
   height: 100%;
   vertical-align: middle;
 }
-/* line 1909, assets/sass/_elements.scss */
+/* line 1915, assets/sass/_elements.scss */
 #searchResults span {
   font: bold 41px/41px "nimbus-sans-condensed";
   text-transform: uppercase;
@@ -6498,48 +6511,48 @@ form#kcpl_oc-booklist label {
 }
 
 /* Newsletter */
-/* line 1914, assets/sass/_elements.scss */
+/* line 1920, assets/sass/_elements.scss */
 #newsletter {
   margin-top: 20px;
 }
-/* line 1915, assets/sass/_elements.scss */
+/* line 1921, assets/sass/_elements.scss */
 #newsletter form {
   margin: 0;
   padding: 0;
 }
-/* line 1916, assets/sass/_elements.scss */
+/* line 1922, assets/sass/_elements.scss */
 #newsletter input {
   margin: 10px 0;
 }
 
-/* line 1919, assets/sass/_elements.scss */
+/* line 1925, assets/sass/_elements.scss */
 ::-webkit-input-placeholder {
   color: #555555;
   opacity: 0.5;
 }
 
-/* line 1924, assets/sass/_elements.scss */
+/* line 1930, assets/sass/_elements.scss */
 :-moz-placeholder {
   /* Firefox 18- */
   color: #555555;
   opacity: 0.5;
 }
 
-/* line 1929, assets/sass/_elements.scss */
+/* line 1935, assets/sass/_elements.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #555555;
   opacity: 0.5;
 }
 
-/* line 1934, assets/sass/_elements.scss */
+/* line 1940, assets/sass/_elements.scss */
 :-ms-input-placeholder {
   color: #555555;
   opacity: 0.5;
 }
 
 /* Mobile Overrides */
-/* line 1941, assets/sass/_elements.scss */
+/* line 1947, assets/sass/_elements.scss */
 #mobileMenuTrigger, #mobileSearchTrigger, #mobileWrap {
   display: none;
 }
