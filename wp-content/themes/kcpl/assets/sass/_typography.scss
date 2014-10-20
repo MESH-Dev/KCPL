@@ -30,9 +30,14 @@ a{color:$blue;text-decoration:none;}
 
 //lists
 ul{list-style:disc inside;margin:0 0 .6em;}
-  ul li{margin:2px 5px;}
+  ul li{margin:2px 0;}
 ol{list-style:decimal inside;margin:0 0 .6em;}
-  ol li{margin:2px 5px;}
+  ol li{margin:2px 0;}
+.page-content{
+	ul li{margin:2px 5px;}
+	ol li{margin:2px 5px;}
+}
+
 
 //blockquotes
 blockquote{margin: 0 10%;font: 20px/23px $nimbus-c;}
