@@ -75,7 +75,9 @@ textarea,input,select{outline: none;}
       > li.current_page_ancestor > ul > li > ul > li > ul > li.current_page_item > a { color: #fff !important;}  //fourth level active page
  
 
-      > li.current_page_item > ul > li > ul > li:last-child > a, > li.current_page_ancestor > ul > li > ul > li:last-child > a{padding: 4px 0px 16px 20px;}
+      > li.current_page_item > ul > li > ul > li:last-child > a{padding: 4px 0px 16px 20px;} 
+      > li.current_page_ancestor > ul > li > ul > li:last-child > a{padding: 4px 0px 16px 20px;}
+      > li.current_page_ancestor > ul > li > ul > li.menu-item-has-children > a{padding: 4px 0px 0px 20px;}
 
       > li.current_page_ancestor > ul > li > ul > li.current_page_ancestor > ul {display:block; }//fourth level list
  
@@ -835,6 +837,20 @@ ol.homepage-callout-list { display: block;
     hr + span{display:block;text-align:center; color: $d-grey;}
   }
 
+}
+
+a.cal_button{
+  text-align: center;
+  border: none;
+  color: #FFF;
+  border-radius: .5em; 
+  font-size: 13px;
+  font-family: $minion;
+  font-weight: 700;
+  font-style: italic;
+  -webkit-appearance: none;
+  background: #76849A;
+  padding: 3px 27px 3px 26px;
 }
 
 
