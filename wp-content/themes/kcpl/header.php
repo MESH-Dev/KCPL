@@ -109,7 +109,9 @@
                 </div>
               <?php }else{ ?>
                 <div id="header-login">
-                  <a href="<?php echo get_bloginfo('url') ?>/login">
+                  <a href="<?php
+                    $settings = get_site_option('kcpl-oc');
+                    echo get_permalink($settings['dashboard']); ?>">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/login.png"/>
                   </a>
                 </div>
