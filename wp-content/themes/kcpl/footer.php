@@ -43,7 +43,7 @@
             <div>
               <span class="title">Donate</span>
               <div id="footer-donate">
-                  <span>Please support the annual fund</span>
+                  <span>Please support the annual fund. Your gift supports vital library services for everyone in the community.</span>
                   <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9ACRUJ255P4BN" target="_blank">Make a Donation</a>
               </div>
             </div>

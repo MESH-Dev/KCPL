@@ -765,17 +765,19 @@ ol.homepage-callout-list { display: block;
   form{padding:0;margin:0;}
   #searchField{position:relative;display:block;margin:0 0 22px;}
   .searchicon{position: absolute;z-index: 2;top: 13px;left: 15px;font-size: 17px;color: #323333;}
-  input[type="search"]{-webkit-appearance: none;border-radius: 0px;border: 3px solid #fff;background: #e2e2e2;font: bold 17px/27px $nimbus;position: relative;z-index: 0;padding: 1px 20px 2px 27px;box-sizing: border-box;width:73%; display: inline;}
-  input[type="submit"]{ display: inline; position: absolute; right: 0; height: 35px; width: 26%; }
+  input[type="search"]{-webkit-appearance: none;border-radius: 0px;border: 3px solid #fff;background: #e2e2e2;font: bold 17px/27px $nimbus;position: relative;z-index: 0;padding: 1px 20px 2px 27px;box-sizing: border-box;width:89%; display: inline;}
+  input[type="submit"]{ display: inline; position: absolute; right: 0; height: 35px; width: 100px;; }
   #search-params{display:block;float:left;width:100%;}
   .extended-params{background-color: $yellow; margin: 0px 0px 20px 0px;
     .gutter{padding: 10px 10px;}
   }
   #type{float: left;width: 112px;border-right: 1px solid #323333;height: 99px;
-    .top{font: bold 15px/18px $nimbus;color: #323333;display: block;padding: 6px 0px 0 6px;letter-spacing: 0.01em;word-spacing: 0.065em;}
-    .bottom{font: bold 18px/22px $nimbus-c;color: #323333;display: block;text-transform: uppercase;padding: 1px 0 0;}
-      .bottom a{color: #323333;display: block;padding: 0 0 0 6px;letter-spacing: 0.06em;}
-      .bottom a:hover, .bottom a.active{color:#fff;cursor:pointer;}
+    .top{font: italic 14px/18px $minion; color: $d-grey; font-weight: normal;  display: block;padding: 6px 0px 0 6px; }
+    .bottom{font: bold 14px/18px $nimbus;color: $d-grey;display: block; padding: 1px 0 0;}
+ 
+      .bottom a{color: $d-grey;display: inline; float:left; padding: 0 0 0 6px; @include opacity(.7) }
+      .bottom a.active{color: $d-grey; cursor:pointer; @include opacity(1)}
+      .bottom a:hover{color: $d-grey; @include opacity(1)}
   }
   #select{float:right;width:814px;}
   #select.media-active .media{display:block;}
@@ -817,13 +819,14 @@ ol.homepage-callout-list { display: block;
   #select{float:left;width:389px; position: relative; top: -15px;}
 
   #searchField{position:relative;display:block;margin:0 0 10px;}
+  input[type="search"]{width: 73%;}
 
   #type{float: left; width: 100%;border-right: none ;height: 100%; margin-bottom: 15px; position: relative; top:0px;
     .top{font: italic 14px/18px $minion; color: $d-grey; font-weight: normal;  display: block; padding: 0px 0px 0 6px;letter-spacing: 0.01em;word-spacing: 0.065em;}
     .bottom{font: bold 14px/18px $nimbus;color: $d-grey;display: inline; float:left; padding: 1px 0 0;  position: relative; text-transform: none; }
-      .bottom a{color: #fff;display: inline; float:left; padding: 0 0 0 6px; }
-      .bottom a.active{color: $d-grey;cursor:pointer;}
-      .bottom a:hover{color: #fff; @include opacity(.7)}
+      .bottom a{color: $d-grey;display: inline; float:left; padding: 0 0 0 6px; @include opacity(.7) }
+      .bottom a.active{color: $d-grey; cursor:pointer; @include opacity(1)}
+      .bottom a:hover{color: $d-grey; @include opacity(1)}
       .bottom a:first:after{content: '|'; }
   }
 
