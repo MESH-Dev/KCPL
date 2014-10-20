@@ -1,7 +1,7 @@
 jQuery(document).ready(function($){
   //global functions
   // try{Typekit.load();}catch(e){}
- 
+
   //header functions
   $('#header-search').click(function(){
      $('#KCPL_header-search').toggleClass('active');
@@ -41,6 +41,10 @@ jQuery(document).ready(function($){
     $('#lm').attr('value', 'EBOOKSONLY');
   };
 
+  if (medium.toLowerCase().indexOf('/video/') >= 0) {
+    $('#lm').attr('value', 'VIDEOONLY');
+  };
+
   if (medium.toLowerCase().indexOf('/kids/') >= 0) {
     $('#lm').attr('value', 'CHILDMAT');
   };
@@ -48,6 +52,7 @@ jQuery(document).ready(function($){
   if (medium.toLowerCase().indexOf('/teens/') >= 0) {
     $('#lm').attr('value', 'YAMAT');
   };
+
 
   //pagination functions
 
