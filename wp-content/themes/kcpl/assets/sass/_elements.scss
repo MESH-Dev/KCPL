@@ -1178,7 +1178,7 @@ font: 14px/18px $nimbus;}
    a{color: $d-grey;}
    .row{display:block;margin:0 0 40px;
       .entry{display:block;float:left;width:50%;
-         .image{width:28%;float:left; padding-right: 5%;}
+         .image{width:15%;float:left;}
          .number{width:16%;float: left;font: 52px/30px $minion;text-align: left; padding-left: 3%}
          .content{width:61%;float:left; padding-right: 5%;
             .entry-title{display:block;font:bold 20px/20px $nimbus-c;text-transform:uppercase;
@@ -1189,6 +1189,9 @@ font: 14px/18px $nimbus;}
       }
    }
 }
+
+.curated .row .entry .image {width:28%;float:left; padding-right: 5%;}
+
 .columns.four .#{$namespace}listing4{
   .row{
     .entry{

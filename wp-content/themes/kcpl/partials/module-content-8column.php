@@ -6,7 +6,7 @@
   foreach($content as $widget){
     if($widget['field_type'] == 'listing-style-4'){
       //CURATED LISTING ?>
-      <div class="KCPL_listing4">
+      <div class="KCPL_listing4 curated">
         <span class="title KCPL_background-<?php echo $widget['field_color']; ?>"><?php echo $widget['field_title']; ?></span>
         <div class="gutter">
            <div class="row">
