@@ -107,6 +107,12 @@ textarea,input,select{outline: none;}
 #secondary-sidebar-nav.KCPL_background-blue ul#main_nav_secondary> li.current_page_ancestor > ul > li > ul > li > a,
 #secondary-sidebar-nav.KCPL_background-blue ul#main_nav_secondary> li.current_page_ancestor > ul > li > ul > li > ul > li > a  {color: $l-blue;}
 
+#secondary-sidebar-nav.KCPL_background-yellow ul#main_nav_secondary > li.current_page_item > ul > li > a,
+#secondary-sidebar-nav.KCPL_background-yellow ul#main_nav_secondary > li.current_page_ancestor > ul > li > a{color: $yellow;}
+#secondary-sidebar-nav.KCPL_background-yellow ul#main_nav_secondary> li.current_page_item > ul > li > ul > li > a,
+#secondary-sidebar-nav.KCPL_background-yellow ul#main_nav_secondary> li.current_page_ancestor > ul > li > ul > li > a,
+#secondary-sidebar-nav.KCPL_background-yellow ul#main_nav_secondary> li.current_page_ancestor > ul > li > ul > li > ul > li > a  {color: $l-yellow;}
+
 
 /*
 
@@ -1674,6 +1680,7 @@ a > .#{$namespace}horz-single{color:#fff;}
     #KCPL_Calendar_gridview table tr{}
       #KCPL_Calendar_gridview table tr td{width:14.28571428571429%;position:relative;padding:32px 4px;border:1px solid #676767 !important;}
       #KCPL_Calendar_gridview table tr td span{display:block;font:12px/16px 'minion pro';}
+      #KCPL_Calendar_gridview table tr td span.kcpl_cal-readmore{font-style: italic;}
         #KCPL_Calendar_gridview table tr td span strong{font:bold 12px/12px 'nimbus-sans';text-transform:uppercase;}
       #KCPL_Calendar_gridview table tr td span.day-marker{position:absolute;top: 6px;left: 4px;font-size: 17px;line-height:12px;}
 
