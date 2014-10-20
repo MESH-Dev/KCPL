@@ -40,6 +40,14 @@
                   echo "<p><em>social_nav</em> doesn't exist! Create it and it'll render here.</p>";
                 } ?>
             </div>
+
+            <span class="title">Newsletter Sign Up</span>
+            <div id="footer-newsletter">
+                
+                <span>Sign up for our newsletter to receive updates from your library.</span>
+                <a href="<?php get_bloginfo('url') ?>/newsletter"  >Sign up now</a>
+               
+            </div>
             <div>
               <span class="title">Donate</span>
               <div id="footer-donate">

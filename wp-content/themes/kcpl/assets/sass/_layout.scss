@@ -26,7 +26,7 @@ header{width:100%;float:left;}
 
     #header-util #header-extra{float:right;width:320px;}
       #header-extra > *{float:left;color:#353535;font:11px/11px $nimbus;}
-      #header-extra #header-search{width:100px; &:hover{cursor: pointer; opacity: 0.7}}
+      #header-extra #header-search{width:100px; padding-left: 24px; &:hover{cursor: pointer; opacity: 0.7}}
         #header-extra #header-search b{height: 17px;width: 19px;background: url(assets/img/utilSprites.png);display: block;float: left;margin: 19px 0 0 1px;}
         #header-extra #header-search span{margin: 23px 0 0 7px;float: left;letter-spacing: 0.045em;}
       #header-extra #header-search-catalog{width:125px; &:hover{cursor: pointer; opacity: 0.7}}
@@ -34,11 +34,11 @@ header{width:100%;float:left;}
         #header-extra #header-search-catalog a{color: #353535;}
         #header-extra #header-search-catalog b{height: 17px;width: 19px; background: url(assets/img/utilSprites.png) -44px 0px; color: black; display: block;float: left;margin: 19px 0 0 1px;}
         #header-extra #header-search-catalog span{margin: 23px 0 0 7px;float: left;letter-spacing: 0.045em;}
-      #header-extra #header-newsletter{
+       #header-newsletter{
         &:hover{cursor: pointer; opacity: 0.7}
       }
-        #header-extra #header-newsletter b{height: 17px;width: 23px;background: url(assets/img/utilSprites.png) -20px 0px;display: block;float: left;margin:17px 0 0 10px;}
-        #header-extra #header-newsletter span{margin: 23px 0 0 8px;float: left;letter-spacing: 0.08em;}
+       #header-newsletter b{height: 17px;width: 23px;background: url(assets/img/utilSprites.png) -20px 0px;display: block;float: left;margin:17px 0 0 10px;}
+        #header-newsletter span{margin: 23px 0 0 8px;float: left;letter-spacing: 0.08em;}
       #header-extra #header-login{position:absolute;top:0;right:0;}
 
   header #header-nav{background:$blue;height:47px;z-index:1;}
@@ -135,11 +135,15 @@ footer{background:#c5c5c5;float:left;width:100%;}
       ul ul{display:none;}
     }
 
-    #footer-donate{color:$widget-d;font:bold 12px/15px $minion;}
-    #footer-donate{
+    #footer-donate, #footer-newsletter{color:$widget-d;font:bold 12px/15px $minion;}
+    #footer-donate, #footer-newsletter{
       span{margin: 3px 0 18px;display: block; }
-      a{text-align: center;padding: 7px 10px 8px;border: none;color: #ffffff; border-radius: 10px;background: $blue;font-size: 17px;font-family: $nimbus-c;text-transform: uppercase;font-weight: 700;letter-spacing: 0.07em;display: block;width: 129px;}
+      a{text-align: center;padding: 7px 10px 8px; margin-bottom: 15px;border: none;color: #ffffff; border-radius: 10px;background: $blue;font-size: 13px; font-style: italic; font-family: $minion;font-weight: bold;display: block;width: 129px;}
     }
+
+
+
+
 
   }
 
