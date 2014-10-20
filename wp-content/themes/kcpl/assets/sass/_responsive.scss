@@ -95,8 +95,11 @@
   #KCPL_Calendar_monthsel{padding:18px 40px 16px;
     a{margin:0 6px;font:bold 14px/17px "nimbus-sans";}
   }
+}
 
-
+@media only screen and (min-width:768px) and (max-width:1022px){
+  ##{$namespace}search input[type="search"] { width: 635px; }
+  ##{$namespace}search.condensed input[type="search"] { width: 73%; }
 }
 
 /* Mobile - really it's just whatever isn't a tablet.
@@ -290,7 +293,8 @@
 
   .#{$namespace}home-engagement #row-expanded .engage-content.active{display:block; height: 825px;}
   .#{$namespace}short-callout { margin-bottom: 20px; }
-  ##{$namespace}search.condensed input[type="search"] { width: 170px !important; }
+  ##{$namespace}search input[type="search"] { width: 170px; }
+  ##{$namespace}search.condensed input[type="search"] { width: 170px; }
 }
 
 
@@ -449,5 +453,6 @@
 
   .#{$namespace}home-engagement #row-expanded .engage-content.active{display:block; height: 825px;}
   .#{$namespace}short-callout { margin-bottom: 20px; }
-  ##{$namespace}search.condensed input[type="search"] { width: 170px !important; }
+  ##{$namespace}search input[type="search"] { width: 77%; }
+  ##{$namespace}search.condensed input[type="search"] { width: 73%; }
 }

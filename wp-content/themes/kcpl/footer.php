@@ -43,10 +43,10 @@
 
             <span class="title">Newsletter Sign Up</span>
             <div id="footer-newsletter">
-                
+
                 <span>Sign up for our newsletter to receive updates from your library.</span>
                 <a href="<?php get_bloginfo('url') ?>/newsletter"  >Sign up now</a>
-               
+
             </div>
             <div>
               <span class="title">Donate</span>
@@ -62,6 +62,17 @@
   </footer>
 </div>
 <?php wp_footer(); ?>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46432156-2', 'kanawhalibrary.org');
+  ga('send', 'pageview');
+
+</script>
 
 </body>
 </html>
