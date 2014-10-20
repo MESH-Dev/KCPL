@@ -77,7 +77,8 @@ textarea,input,select{outline: none;}
 
       > li.current_page_item > ul > li > ul > li:last-child > a{padding: 4px 0px 16px 20px;} 
       > li.current_page_ancestor > ul > li > ul > li:last-child > a{padding: 4px 0px 16px 20px;}
-      > li.current_page_ancestor > ul > li > ul > li.menu-item-has-children > a{padding: 4px 0px 0px 20px;}
+      > li.current_page_ancestor > ul > li > ul > li.menu-item-has-children:last-child > a{padding: 4px 0px 0px 20px;}
+       > li.current_page_ancestor > ul > li > ul > li.menu-item-has-children:last-child{padding: 4px 0px 10px 0px;}
 
       > li.current_page_ancestor > ul > li > ul > li.current_page_ancestor > ul {display:block; }//fourth level list
  
