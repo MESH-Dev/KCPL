@@ -8003,4 +8003,10 @@ form#kcpl_oc-booklist label {
     display: block;
     float: left;
   }
+
+  /* line 447, assets/sass/_responsive.scss */
+  .KCPL_home-engagement #row-expanded .engage-content.active {
+    display: block;
+    height: 825px;
+  }
 }
