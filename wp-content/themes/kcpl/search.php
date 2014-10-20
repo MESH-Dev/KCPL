@@ -1,4 +1,4 @@
-<?php 
+<?php
 $search_refer = $_GET["search-type"];
 if ($search_refer == 'resources') { load_template(TEMPLATEPATH . '/resources-search.php'); }
 else{
@@ -51,6 +51,22 @@ $color = get_field('section_color',$pID);
                 <div class="entry">
                   <div class="entry-excerpt">
                     <?php the_excerpt(); ?>
+                    <?php
+
+                      if ($post->post_type == 'kcpl_calendar_entry') {
+                        $t = get_post_meta($post->ID, 'description', true);
+                        echo $t;
+                        echo '<a class="read-more" href="'. get_permalink( $post->ID ) . '">' . __('View Event »', 'your-text-domain') . '</a>';
+                      } elseif ($post->post_type == 'kcpl_oc-discussion') {
+                        echo '<a class="read-more" href="'. get_permalink( $post->ID ) . '">' . __('View Discussion »', 'your-text-domain') . '</a>';
+                      } elseif ($post->post_type == 'resources') {
+                        echo '<a class="read-more" href="'. get_field( 'url' , $post->ID ) . '">' . __('View Resource »', 'your-text-domain') . '</a>';
+                      } else {
+                        echo '<a class="read-more" href="'. get_permalink( $post->ID ) . '">' . __('Read More »', 'your-text-domain') . '</a>';
+                      }
+
+                    ?>
+                    <p>
                   </div>
                 </div>
               </div>
@@ -123,8 +139,6 @@ $color = get_field('section_color',$pID);
   </div>
 </div>
 
-<?php get_footer(); 
+<?php get_footer();
 
 }?>
-
-
