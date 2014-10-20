@@ -290,7 +290,7 @@
 
   .#{$namespace}home-engagement #row-expanded .engage-content.active{display:block; height: 825px;}
   .#{$namespace}short-callout { margin-bottom: 20px; }
-
+  .#{$namespace}search.condensed input[type="search"] { width: 170px; }
 }
 
 
@@ -449,5 +449,4 @@
 
   .#{$namespace}home-engagement #row-expanded .engage-content.active{display:block; height: 825px;}
   .#{$namespace}short-callout { margin-bottom: 20px; }
-
 }
