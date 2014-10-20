@@ -91,13 +91,7 @@
               <hr>
               <span class="KCPL_caption-minion-italicbold">Teens</span>
             </div>
-            <div class="search-btn last adults">
-              <div class="iconCont">
-                <a href="<?php echo get_permalink(423); ?>"><div class="icon KCPL_sprite-adult"></div></a>
-              </div>
-              <hr>
-              <span class="KCPL_caption-minion-italicbold">Adults</span>
-            </div>
+ 
           </div>
         </div>
       </div>
