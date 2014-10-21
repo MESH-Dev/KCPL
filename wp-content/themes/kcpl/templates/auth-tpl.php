@@ -24,7 +24,8 @@ $color = get_field('section_color',$pID);
         <p>You're already logged in, head over to the dashboard.</p>
 
       <?php }else{ ?>
-        <p>Your Online Community and your Library logins are separate. If this is your first time logging in, use your library card and PIN, then you can change your password later on if you want to.</p>
+        <p>This is a free to join online community where you can join online discussions, create and share reading lists, recommend books to others and more! Login if you already have an account or create a free account below.</p>
+        <p>This account is different from your library card account. You cannot use your library card PIN to access the Online Community. Please create a separate account through the Online Community.</p>
 
         <br/>
 
