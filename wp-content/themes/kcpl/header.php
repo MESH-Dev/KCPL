@@ -23,6 +23,13 @@
   <!--[if lt IE 9]>
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/modernizr.min.js"></script>
   <![endif]-->
+  <!--[if lte IE 8]>
+  <style>
+    input[type="password"] {
+      font-family: Arial !important;
+    }
+  </style>
+  <![endif]-->
 </head>
 <body <?php if(wp_is_mobile()){$mobileClass="KCPLmobile";}else{$mobileClass="KCPLmobile";} body_class($mobileClass);?>>
 
