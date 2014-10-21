@@ -116,12 +116,23 @@ $args = array(
 			     <span class="title KCPL_background-yellow"></span>
 			     <div class="gutter">
 			        <div class="entry">
-			           <span class="entry-title"><?php the_title(); ?></span>
+			           <span class="entry-title"> <a href="<?php the_field('url');?>"><?php the_title(); ?></a></span>
 			           <div class="entry-excerpt">
-			              <?php the_content(); ?>
+			              <?php the_excerpt(); ?>
 			           </div>
 			           <a href="<?php the_field('url');?>" class="KCPL_readmore">Learn more ≈</a>
+			           
+			            
 			        </div>
+			        <div class="access_icons">
+			           <?php
+			            $terms = get_terms("access");
+			            if ( !empty( $terms ) && !is_wp_error( $terms ) ){
+			               foreach ( $terms as $term ) {
+			                 echo "<span class='$term->slug '> </span>";
+			               }
+			            } ?>
+		            </div>
 			     </div>
 		   </div>
 		</div>

@@ -23,6 +23,9 @@
             } ?>
 
          </select>
+         <p>
+          Access to many of these resources require a library card and PIN and are only available to library patrons. If you do not have a library card, <a href="<?php bloginfo('url') ?>/get-involved/get-your-free-library-card/" >sign up now!</a> 
+         </p>
         </div>
         <div id="right">
          <select name="audience" id="search-audience">

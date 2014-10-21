@@ -41,11 +41,11 @@
                 } ?>
             </div>
 
-            <span class="title">Newsletter Sign Up</span>
+            <span class="title">Subscribe to Our Newsletter</span>
             <div id="footer-newsletter">
 
                 <span>Sign up for our newsletter to receive updates from your library.</span>
-                <a href="<?php get_bloginfo('url') ?>/newsletter"  >Sign up now</a>
+                <a href="<?php get_bloginfo('url') ?>/newsletter"  >Newsletter Sign Up</a>
 
             </div>
             <div>
