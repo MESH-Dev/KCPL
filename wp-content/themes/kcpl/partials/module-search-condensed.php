@@ -8,11 +8,10 @@
         <input type="submit" value="<?php echo esc_attr_x('Search','submit button'); ?>" />
       </div>
       <div id="search-params">
+        <div class="cat_btn"><a href="http://kana.ent.sirsi.net/client/en_US/default/" title="Catalog Search">Search the Catalog Directly</a> <br /></div>
         <div id="type">
-          <span class="top">
-            or Browse by
-          </span>
-          <span class="bottom">
+          <span class="top">  or Browse by</span>
+          <span class="bottom">  
             <a class="media-active active">Media Type |</a>
             <a class="audience-active">Audience</a>
           </span>
