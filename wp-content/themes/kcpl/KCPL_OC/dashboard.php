@@ -31,7 +31,7 @@ $color = 'red';
           </div>
         </div>
 
-        
+
 
       </div>
 
@@ -98,7 +98,7 @@ $color = 'red';
                             <div class='image'><img src='".$b['img']."'/></div>
                             <div class='number'>".$i."</div>
                             <div class='content'>
-                              <span class='entry-title'>".$b['title']."</span>
+                              <span class='entry-title'><a href='http://kana.ent.sirsi.net/client/en_US/http:/search/results/?ln=en_US&q=".str_replace(' ', '+', esc_html($b['title']))."&lm=PRINTONLY&qf=&rw=0'>".$b['title']."</a></span>
                               <span class='entry-author'>".$b['author']."</span>
                             </div>
                           </div>";
