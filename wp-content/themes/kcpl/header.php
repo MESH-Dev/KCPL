@@ -25,6 +25,7 @@
   <![endif]-->
   <!--[if lte IE 8]>
   <style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     input[type="password"] {
       font-family: Arial !important;
     }
@@ -76,7 +77,7 @@
               <i></i>
             </div>
           <?php } ?>
-          <a href="<?php echo home_url(); ?>"><img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>px" width="<?php echo get_custom_header()->width; ?>px" alt="Kanawha County Public Library logo" /></a>
+          <a href="<?php echo home_url(); ?>"><img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="Kanawha County Public Library logo" /></a>
           <?php if(wp_is_mobile()){ ?>
             <div id='mobileSearchTrigger'>
               <i class="fa fa-lg fa-search"></i>
