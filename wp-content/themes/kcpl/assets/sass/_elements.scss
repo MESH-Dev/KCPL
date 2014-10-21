@@ -280,8 +280,7 @@ table{
     > ul > li > ul > li > ul > li > ul{}
     > ul > li > ul > li > ul > li > ul > li{}
     > ul > li > ul > li > ul > li > ul > li > a{font:italic 14px/14px $minion;margin:0 20px -2px 0;letter-spacing:0.03em }
-
-     li.menu-item-160{display:none;}
+ 
   }
 }
 
@@ -830,7 +829,7 @@ ol.homepage-callout-list { display: block;
 
 #KCPL_search.condensed{
   height: 280px; margin-top:9px; margin-left:13px;
- 
+
 
   #select{float:left;width:389px; position: relative; top: -15px;}
 
@@ -888,12 +887,18 @@ a.cal_button{
       #search-libraryCard{float:left;width:189px;}
       #search-inLibrary{float:left;width:160px;}
 
-      input[type="checkbox"]{-webkit-appearance: none;background: transparent;border: 1px solid #000;padding: 4px 4px;border-radius: 2px;margin: 0 5px 0 29px;position:relative;}
+      input[type="checkbox"]{-webkit-appearance: none;background: transparent;border: 1px solid #000;padding: 4px 4px;border-radius: 2px;margin: 0 5px 0 0px;position:relative;}
          input[type="checkbox"]:checked:after{content: '';position: absolute;top: 1px;left: 1px;display: block;border: 2px solid #000;padding: 1px;border-radius: 2px;background: #000;}
-      label{font-size: 14px;letter-spacing: 0.06em;}
+      label{font-size: 14px;letter-spacing: 0.06em;
+          span.icon-in-library-only{ background: url(assets/img/accessSpritesSmall.png) 16px 0px; width: 17px; height: 23px; top: 4px; position: relative;display:inline-block; }
+          span.icon-online{ background: url(assets/img/accessSpritesSmall.png) 0px 0px; width: 25px; height: 23px;   top: 4px; position: relative; display:inline-block; }
+          span.icon-with-library-card-only{ background: url(assets/img/accessSpritesSmall.png) -24px 0px; width: 25px;height: 23px; top: 4px; position: relative;display:inline-block; }
+      }
     }
   }
 }
+
+
 
 /* Single Featured Item
    <div class="KCPL_single-featured">
@@ -938,6 +943,8 @@ a.cal_button{
   span.online{ background: url(assets/img/accessSprites.png) 1px 0px; width: 35px;}
   span.with-library-card-only{ background: url(assets/img/accessSprites.png) -33px 0px; width: 33px;}
 }
+
+
 
 
 /* Homepage Engagement

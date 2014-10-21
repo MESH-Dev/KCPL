@@ -39,13 +39,16 @@
             } ?>
          </select>
          <div id="search-online">
-             <input type="checkbox" name="online" value="online" id="online"/><label class="KCPL_meta-small" for="checkboxONE">Online</label>
+             <input type="checkbox" name="online" value="online" id="online"/><label class="KCPL_meta-small" for="checkboxONE">Online <span class="icon-online"></span></label>
+             
          </div>
          <div id="search-libraryCard">
-             <input type="checkbox" name="withcard" value="with-library-card-only" id="with-library-card"/><label class="KCPL_meta-small" for="checkboxTWO">With Library Card</label>
+             <input type="checkbox" name="withcard" value="with-library-card-only" id="with-library-card"/><label class="KCPL_meta-small" for="checkboxTWO">With Library Card <span class="icon-with-library-card-only"></span>  </label>
+             
          </div>
          <div id="search-inLibrary">
-             <input type="checkbox" name="inlib" value="in-library-only" id="in-library-only"/><label class="KCPL_meta-small" for="checkboxTHREE">In Library Only</label>
+             <input type="checkbox" name="inlib" value="in-library-only" id="in-library-only"/><label class="KCPL_meta-small" for="checkboxTHREE">In Library Only <span class="icon-in-library-only"></span></label>
+             
          </div>
         </div>
       </div>
