@@ -23,7 +23,10 @@ $color = 'red';
         if(is_user_logged_in()){
           KCPL_OC_booklist::searchUserBooklists();
         }else{ ?>
-          <p>You must be logged in to access the Online Community. Joining is fast and free, just log in or register if you have not already.</p>
+           <h2>Join Our Online Community Today!</h2>
+        <p>We are proud to announce we have a new online community you can join for free. Now you can connect with your library from home with ease. Participate in online discussions, create and share reading lists, recommend books to other and more!
+         Login or create a free account below by providing a username, password and valid email address.</p><p>Current library cardholder must register for an account and cannot use their library card and PIN to access the Online Community.</p>
+
 
           <br/>
 
