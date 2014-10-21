@@ -263,7 +263,7 @@ table{
     li.current_page_ancestor > a, li.current-page-ancestor > a, li.current-menu-item > a{display:block;}
 
   
-  #main_navBannerCont{text-align:center;display:table-cell;width:100%;height:100%;vertical-align:middle;
+  #main_navBannerCont{text-align:center;display:table-cell;width:100%;height:100%;vertical-align:middle; 
     > ul{margin:0 auto;display:inline-block;}
     > ul > li{display:table;}
     > ul > li ul{vertical-align:bottom;display:table-cell;}
@@ -271,7 +271,7 @@ table{
 
     > ul > li > ul{}
     > ul > li > ul > li{}
-    > ul > li > ul > li > a{font:bold 19px/19px $nimbus-c; margin:0 22px 3px 0; text-transform: uppercase; letter-spacing:0.04em}
+    > ul > li > ul > li > a{font:bold 19px/19px $nimbus-c; margin:0 22px 3px 0; text-transform: uppercase; letter-spacing:0.039em}
 
     > ul > li > ul > li > ul{}
     > ul > li > ul > li > ul > li{}
