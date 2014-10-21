@@ -3878,7 +3878,45 @@ a.cal_button {
 
 /* line 918, assets/sass/_elements.scss */
 .research-results .entry {
-  height: 150px;
+  height: 165px;
+  overflow: hidden;
+}
+
+/* line 919, assets/sass/_elements.scss */
+.research-results .KCPL_readmore {
+  display: inline-block;
+  float: left;
+  width: 50%;
+}
+
+/* line 920, assets/sass/_elements.scss */
+.access_icons {
+  width: 100%;
+  display: inline-block;
+  float: right;
+  position: relative;
+  top: -10px;
+}
+/* line 922, assets/sass/_elements.scss */
+.access_icons span {
+  width: 30px;
+  height: 30px;
+  background-color: #Fc0;
+  float: right;
+  display: inline-block;
+  margin: 0 10px 0 0px;
+}
+/* line 923, assets/sass/_elements.scss */
+.access_icons span.in-library-only {
+  background: url(assets/img/accessSprites.png) -60px 0px;
+}
+/* line 924, assets/sass/_elements.scss */
+.access_icons span.online {
+  background: url(assets/img/accessSprites.png) 0px 0px;
+}
+/* line 925, assets/sass/_elements.scss */
+.access_icons span.with-library-card-only {
+  background: url(assets/img/accessSprites.png) -30px 0px;
 }
 
 /* Homepage Engagement
@@ -3922,19 +3960,19 @@ a.cal_button {
   </div>
 </div>
  */
-/* line 962, assets/sass/_elements.scss */
+/* line 971, assets/sass/_elements.scss */
 .frontpage .container {
   overflow: hidden;
 }
 
-/* line 963, assets/sass/_elements.scss */
+/* line 972, assets/sass/_elements.scss */
 .KCPL_home-engagement {
   color: #FFF;
   margin: 0 0 26px;
   border-radius: 10px;
   background: #e2e2e2;
 }
-/* line 964, assets/sass/_elements.scss */
+/* line 973, assets/sass/_elements.scss */
 .KCPL_home-engagement .title {
   display: block;
   padding: 15px 10px 15px;
@@ -3942,7 +3980,7 @@ a.cal_button {
   position: relative;
   z-index: 15;
 }
-/* line 966, assets/sass/_elements.scss */
+/* line 975, assets/sass/_elements.scss */
 .KCPL_home-engagement .single-row {
   font: 55px/76px "minion-pro";
   text-transform: uppercase;
@@ -3951,16 +3989,16 @@ a.cal_button {
   z-index: 15;
   position: relative;
 }
-/* line 967, assets/sass/_elements.scss */
+/* line 976, assets/sass/_elements.scss */
 .KCPL_home-engagement .single-row .gutter {
   padding: 0px 10px 0px 10px;
 }
-/* line 968, assets/sass/_elements.scss */
+/* line 977, assets/sass/_elements.scss */
 .KCPL_home-engagement .single-row:hover {
   cursor: pointer;
   color: #e2e2e2;
 }
-/* line 970, assets/sass/_elements.scss */
+/* line 979, assets/sass/_elements.scss */
 .KCPL_home-engagement #row-expanded {
   margin: 0px;
   width: 672px;
@@ -3975,7 +4013,7 @@ a.cal_button {
   z-index: 10;
   border-top-right-radius: 10px;
 }
-/* line 972, assets/sass/_elements.scss */
+/* line 981, assets/sass/_elements.scss */
 .KCPL_home-engagement #row-expanded .title {
   border-radius: 0px;
   border-top-right-radius: 10px;
@@ -3985,7 +4023,7 @@ a.cal_button {
   position: relative;
   z-index: 10;
 }
-/* line 973, assets/sass/_elements.scss */
+/* line 982, assets/sass/_elements.scss */
 .KCPL_home-engagement #row-expanded .close {
   position: absolute;
   right: 20px;
@@ -3993,12 +4031,12 @@ a.cal_button {
   font: bold 13px/13px "minion-pro" black;
   z-index: 11;
 }
-/* line 974, assets/sass/_elements.scss */
+/* line 983, assets/sass/_elements.scss */
 .KCPL_home-engagement #row-expanded .close:hover {
   cursor: pointer;
   opacity: 0.8;
 }
-/* line 975, assets/sass/_elements.scss */
+/* line 984, assets/sass/_elements.scss */
 .KCPL_home-engagement #row-expanded .KCPL_featured .section-title {
   display: block;
   font: bold 18px/18px "nimbus-sans-condensed";
@@ -4010,12 +4048,12 @@ a.cal_button {
   padding: 0px;
 }
 
-/* line 979, assets/sass/_elements.scss */
+/* line 988, assets/sass/_elements.scss */
 .open {
   margin-top: 379px;
 }
 
-/* line 981, assets/sass/_elements.scss */
+/* line 990, assets/sass/_elements.scss */
 #contentPrimary {
   transition: 0.2s all;
   -webkit-transition: 0.2s all;
@@ -4053,13 +4091,13 @@ a.cal_button {
    </div>
 
 */
-/* line 1019, assets/sass/_elements.scss */
+/* line 1028, assets/sass/_elements.scss */
 .KCPL_listing1-article {
   border-radius: 10px;
   color: #323333;
   margin: 0 0 26px;
 }
-/* line 1020, assets/sass/_elements.scss */
+/* line 1029, assets/sass/_elements.scss */
 .KCPL_listing1-article .title {
   color: #fff;
   font: bold 18px/18px "nimbus-sans";
@@ -4069,16 +4107,16 @@ a.cal_button {
   padding: 15px 10px 15px;
   border-bottom: 2px solid #323333;
 }
-/* line 1021, assets/sass/_elements.scss */
+/* line 1030, assets/sass/_elements.scss */
 .KCPL_listing1-article .gutter {
   padding: 12px 20px 1px;
 }
-/* line 1022, assets/sass/_elements.scss */
+/* line 1031, assets/sass/_elements.scss */
 .KCPL_listing1-article .entry {
   display: block;
   margin: 0 0 27px;
 }
-/* line 1023, assets/sass/_elements.scss */
+/* line 1032, assets/sass/_elements.scss */
 .KCPL_listing1-article .entry .entry-title {
   font: bold 17px/17px "nimbus-sans-condensed";
   text-transform: uppercase;
@@ -4086,25 +4124,25 @@ a.cal_button {
   display: block;
   margin: 0 0 2px;
 }
-/* line 1024, assets/sass/_elements.scss */
+/* line 1033, assets/sass/_elements.scss */
 .KCPL_listing1-article .entry .entry-excerpt {
   font: 13px/18px "minion-pro";
   display: block;
   letter-spacing: 0.055em;
   margin: 0 0 18px;
 }
-/* line 1025, assets/sass/_elements.scss */
+/* line 1034, assets/sass/_elements.scss */
 .KCPL_listing1-article .entry a {
   color: #323333;
   display: block;
 }
 
-/* line 1030, assets/sass/_elements.scss */
+/* line 1039, assets/sass/_elements.scss */
 .KCPL_listing1-list {
   border-radius: 10px;
   margin: 0 0 26px;
 }
-/* line 1031, assets/sass/_elements.scss */
+/* line 1040, assets/sass/_elements.scss */
 .KCPL_listing1-list .title {
   color: #fff;
   font: bold 18px/18px "nimbus-sans";
@@ -4114,26 +4152,26 @@ a.cal_button {
   padding: 15px 10px 15px;
   border-bottom: 2px solid #000;
 }
-/* line 1032, assets/sass/_elements.scss */
+/* line 1041, assets/sass/_elements.scss */
 .KCPL_listing1-list .gutter {
   padding: 15px 20px 12px;
 }
-/* line 1033, assets/sass/_elements.scss */
+/* line 1042, assets/sass/_elements.scss */
 .KCPL_listing1-list a {
   color: #323333;
 }
-/* line 1034, assets/sass/_elements.scss */
+/* line 1043, assets/sass/_elements.scss */
 .KCPL_listing1-list .list-title {
   text-transform: uppercase;
   font: bold 18px/18px "nimbus-sans-condensed";
   letter-spacing: 0.06em;
 }
-/* line 1035, assets/sass/_elements.scss */
+/* line 1044, assets/sass/_elements.scss */
 .KCPL_listing1-list ul {
   list-style: none;
   margin: 0 0 20px;
 }
-/* line 1036, assets/sass/_elements.scss */
+/* line 1045, assets/sass/_elements.scss */
 .KCPL_listing1-list ul li {
   font: 17px/22px "nimbus-sans-condensed";
   margin: 3px 0 6px;
@@ -4179,11 +4217,11 @@ a.cal_button {
      </div>
    </div>
 */
-/* line 1078, assets/sass/_elements.scss */
+/* line 1087, assets/sass/_elements.scss */
 .KCPL_listing2-event {
   margin: 0 0 26px;
 }
-/* line 1079, assets/sass/_elements.scss */
+/* line 1088, assets/sass/_elements.scss */
 .KCPL_listing2-event .title {
   color: #323333;
   font: bold 18px/18px "nimbus-sans";
@@ -4195,7 +4233,7 @@ a.cal_button {
   position: relative;
   margin: 0 0 5px;
 }
-/* line 1080, assets/sass/_elements.scss */
+/* line 1089, assets/sass/_elements.scss */
 .KCPL_listing2-event .title:after {
   position: absolute;
   content: '';
@@ -4204,11 +4242,11 @@ a.cal_button {
   width: 100%;
   border-bottom: 2px solid #323333;
 }
-/* line 1081, assets/sass/_elements.scss */
+/* line 1090, assets/sass/_elements.scss */
 .KCPL_listing2-event .gutter {
   padding: 0 20px;
 }
-/* line 1082, assets/sass/_elements.scss */
+/* line 1091, assets/sass/_elements.scss */
 .KCPL_listing2-event .gutter > a {
   color: #323333;
   display: block;
@@ -4216,11 +4254,11 @@ a.cal_button {
   margin: 0;
   padding: 12px 0 16px;
 }
-/* line 1084, assets/sass/_elements.scss */
+/* line 1093, assets/sass/_elements.scss */
 .KCPL_listing2-event .entry {
   display: table;
 }
-/* line 1085, assets/sass/_elements.scss */
+/* line 1094, assets/sass/_elements.scss */
 .KCPL_listing2-event .entry .left {
   display: table-cell;
   border-right: 1px solid #323333;
@@ -4229,49 +4267,49 @@ a.cal_button {
   width: 132px;
   padding: 7px 0 0 0;
 }
-/* line 1086, assets/sass/_elements.scss */
+/* line 1095, assets/sass/_elements.scss */
 .KCPL_listing2-event .entry .right {
   display: table-cell;
   height: 100%;
   vertical-align: top;
   padding: 12px 0 57px 13px;
 }
-/* line 1087, assets/sass/_elements.scss */
+/* line 1096, assets/sass/_elements.scss */
 .KCPL_listing2-event .entry .entry-title {
   font: bold 17px/26px "nimbus-sans-condensed";
   display: block;
   text-transform: uppercase;
   letter-spacing: 0.09em;
 }
-/* line 1088, assets/sass/_elements.scss */
+/* line 1097, assets/sass/_elements.scss */
 .KCPL_listing2-event .entry .entry-date {
   font: bold 14px/15px "nimbus-sans";
   display: block;
   margin: 0 0 2px;
   letter-spacing: 0.025em;
 }
-/* line 1089, assets/sass/_elements.scss */
+/* line 1098, assets/sass/_elements.scss */
 .KCPL_listing2-event .entry .entry-loc {
   font: 13px/18px "minion-pro";
   display: block;
   letter-spacing: 0.095em;
 }
-/* line 1090, assets/sass/_elements.scss */
+/* line 1099, assets/sass/_elements.scss */
 .KCPL_listing2-event .entry .entry-tags {
   display: block;
 }
-/* line 1091, assets/sass/_elements.scss */
+/* line 1100, assets/sass/_elements.scss */
 .KCPL_listing2-event .entry .entry-tags a {
   font: 12px/12px "nimbus-sans";
   color: #323333;
   letter-spacing: 0.065em;
 }
 
-/* line 1096, assets/sass/_elements.scss */
+/* line 1105, assets/sass/_elements.scss */
 .KCPL_listing2-class {
   margin: 0 0 26px;
 }
-/* line 1097, assets/sass/_elements.scss */
+/* line 1106, assets/sass/_elements.scss */
 .KCPL_listing2-class .title {
   color: white;
   font: bold 18px/18px "nimbus-sans";
@@ -4282,11 +4320,11 @@ a.cal_button {
   border-bottom: 2px solid #323333;
   position: relative;
 }
-/* line 1098, assets/sass/_elements.scss */
+/* line 1107, assets/sass/_elements.scss */
 .KCPL_listing2-class .gutter {
   padding: 0 20px;
 }
-/* line 1099, assets/sass/_elements.scss */
+/* line 1108, assets/sass/_elements.scss */
 .KCPL_listing2-class .gutter > a {
   color: #323333;
   display: block;
@@ -4294,11 +4332,11 @@ a.cal_button {
   margin: 0;
   padding: 12px 0 16px;
 }
-/* line 1101, assets/sass/_elements.scss */
+/* line 1110, assets/sass/_elements.scss */
 .KCPL_listing2-class .entry {
   display: table;
 }
-/* line 1102, assets/sass/_elements.scss */
+/* line 1111, assets/sass/_elements.scss */
 .KCPL_listing2-class .entry .left {
   display: table-cell;
   border-right: 1px solid #323333;
@@ -4307,7 +4345,7 @@ a.cal_button {
   width: 128px;
   padding: 13px 0 0 5px;
 }
-/* line 1103, assets/sass/_elements.scss */
+/* line 1112, assets/sass/_elements.scss */
 .KCPL_listing2-class .entry .right {
   display: table-cell;
   height: 100%;
@@ -4315,14 +4353,14 @@ a.cal_button {
   padding: 16px 0 2px 11px;
   font: 14px/18px "nimbus-sans";
 }
-/* line 1105, assets/sass/_elements.scss */
+/* line 1114, assets/sass/_elements.scss */
 .KCPL_listing2-class .entry .entry-title {
   font: bold 17px/26px "nimbus-sans-condensed";
   display: block;
   text-transform: uppercase;
   letter-spacing: 0.09em;
 }
-/* line 1106, assets/sass/_elements.scss */
+/* line 1115, assets/sass/_elements.scss */
 .KCPL_listing2-class .entry a {
   color: #323333;
 }
@@ -4355,16 +4393,16 @@ a.cal_button {
     </div>
 </div>
 */
-/* line 1139, assets/sass/_elements.scss */
+/* line 1148, assets/sass/_elements.scss */
 .KCPL_listing-style-3 {
   margin: 0 0 26px;
   display: block;
 }
-/* line 1140, assets/sass/_elements.scss */
+/* line 1149, assets/sass/_elements.scss */
 .KCPL_listing-style-3 .KCPL_listing-style-3-header {
   padding: 15px;
 }
-/* line 1142, assets/sass/_elements.scss */
+/* line 1151, assets/sass/_elements.scss */
 .KCPL_listing-style-3 .KCPL_listing-style-3-header span {
   display: block;
   font-family: "nimbus-sans";
@@ -4375,12 +4413,12 @@ a.cal_button {
   color: white;
   text-align: center;
 }
-/* line 1144, assets/sass/_elements.scss */
+/* line 1153, assets/sass/_elements.scss */
 .KCPL_listing-style-3 .KCPL_listing-style-3-body {
   background: #e2e2e2;
   padding: 11px 18px;
 }
-/* line 1146, assets/sass/_elements.scss */
+/* line 1155, assets/sass/_elements.scss */
 .KCPL_listing-style-3 .KCPL_listing-style-3-body .KCPL_listing-style-3-body-title {
   display: block;
   text-transform: uppercase;
@@ -4390,7 +4428,7 @@ a.cal_button {
   color: #323333;
   line-height: 23px;
 }
-/* line 1147, assets/sass/_elements.scss */
+/* line 1156, assets/sass/_elements.scss */
 .KCPL_listing-style-3 .KCPL_listing-style-3-body .KCPL_listing-style-3-body-date {
   display: block;
   font-size: 15px;
@@ -4398,7 +4436,7 @@ a.cal_button {
   font-family: "nimbus-sans";
   color: #323333;
 }
-/* line 1148, assets/sass/_elements.scss */
+/* line 1157, assets/sass/_elements.scss */
 .KCPL_listing-style-3 .KCPL_listing-style-3-body .KCPL_listing-style-3-body-excerpt {
   display: inline;
   font-size: 13px;
@@ -4408,7 +4446,7 @@ a.cal_button {
   letter-spacing: .05em;
   line-height: 18px;
 }
-/* line 1149, assets/sass/_elements.scss */
+/* line 1158, assets/sass/_elements.scss */
 .KCPL_listing-style-3 .KCPL_listing-style-3-body .KCPL_listing-style-3-body-link {
   display: inline;
   font-size: 14px;
@@ -4443,13 +4481,13 @@ a.cal_button {
      </div>
    </div>
 */
-/* line 1179, assets/sass/_elements.scss */
+/* line 1188, assets/sass/_elements.scss */
 .KCPL_listing4 {
   display: block;
   background: #e2e2e2;
   margin: 0 0 26px;
 }
-/* line 1180, assets/sass/_elements.scss */
+/* line 1189, assets/sass/_elements.scss */
 .KCPL_listing4 .title {
   color: #fff;
   font: bold 18px/18px "nimbus-sans";
@@ -4458,37 +4496,37 @@ a.cal_button {
   text-transform: uppercase;
   padding: 15px 10px 15px;
 }
-/* line 1181, assets/sass/_elements.scss */
+/* line 1190, assets/sass/_elements.scss */
 .KCPL_listing4 .gutter {
   padding: 20px 19px;
 }
-/* line 1182, assets/sass/_elements.scss */
+/* line 1191, assets/sass/_elements.scss */
 .KCPL_listing4 .KCPL_readmore {
   float: right;
   top: -10px;
   position: relative;
 }
-/* line 1183, assets/sass/_elements.scss */
+/* line 1192, assets/sass/_elements.scss */
 .KCPL_listing4 a {
   color: #323333;
 }
-/* line 1184, assets/sass/_elements.scss */
+/* line 1193, assets/sass/_elements.scss */
 .KCPL_listing4 .row {
   display: block;
   margin: 0 0 40px;
 }
-/* line 1185, assets/sass/_elements.scss */
+/* line 1194, assets/sass/_elements.scss */
 .KCPL_listing4 .row .entry {
   display: block;
   float: left;
   width: 50%;
 }
-/* line 1186, assets/sass/_elements.scss */
+/* line 1195, assets/sass/_elements.scss */
 .KCPL_listing4 .row .entry .image {
   width: 15%;
   float: left;
 }
-/* line 1187, assets/sass/_elements.scss */
+/* line 1196, assets/sass/_elements.scss */
 .KCPL_listing4 .row .entry .number {
   width: 19%;
   float: left;
@@ -4497,32 +4535,32 @@ a.cal_button {
   padding-left: 3%;
   letter-spacing: -0.12em;
 }
-/* line 1188, assets/sass/_elements.scss */
+/* line 1197, assets/sass/_elements.scss */
 .KCPL_listing4 .row .entry .content {
   width: 57%;
   float: left;
   padding-right: 5%;
 }
-/* line 1189, assets/sass/_elements.scss */
+/* line 1198, assets/sass/_elements.scss */
 .KCPL_listing4 .row .entry .content .entry-title {
   display: block;
   font: bold 20px/20px "nimbus-sans-condensed";
   text-transform: uppercase;
 }
-/* line 1192, assets/sass/_elements.scss */
+/* line 1201, assets/sass/_elements.scss */
 .KCPL_listing4 .row .entry .content .entry-author {
   display: block;
   font: 15px/22px "minion-pro";
 }
 
-/* line 1198, assets/sass/_elements.scss */
+/* line 1207, assets/sass/_elements.scss */
 .curated .row .entry .image {
   width: 28%;
   float: left;
   padding-right: 5%;
 }
 
-/* line 1202, assets/sass/_elements.scss */
+/* line 1211, assets/sass/_elements.scss */
 .columns.four .KCPL_listing4 .row .entry {
   width: 100%;
   float: left;
@@ -4552,12 +4590,12 @@ a.cal_button {
      </div>
    </div>
 */
-/* line 1233, assets/sass/_elements.scss */
+/* line 1242, assets/sass/_elements.scss */
 a > .KCPL_horz-single {
   color: #fff;
 }
 
-/* line 1234, assets/sass/_elements.scss */
+/* line 1243, assets/sass/_elements.scss */
 .KCPL_horz-single {
   font: bold 42px/42px "nimbus-sans-condensed";
   color: #fff;
@@ -4567,48 +4605,48 @@ a > .KCPL_horz-single {
   text-align: center;
   margin: 0 0 26px;
 }
-/* line 1235, assets/sass/_elements.scss */
+/* line 1244, assets/sass/_elements.scss */
 .KCPL_horz-single .gutter {
   padding: 5px 5px 2px;
   border: 1px solid #fff;
 }
-/* line 1236, assets/sass/_elements.scss */
+/* line 1245, assets/sass/_elements.scss */
 .KCPL_horz-single span {
   padding: 0;
 }
-/* line 1237, assets/sass/_elements.scss */
+/* line 1246, assets/sass/_elements.scss */
 .KCPL_horz-single a {
   padding: 0;
 }
 
-/* line 1240, assets/sass/_elements.scss */
+/* line 1249, assets/sass/_elements.scss */
 .KCPL_horz-single:hover {
   opacity: 0.8;
   cursor: pointer;
 }
 
-/* line 1242, assets/sass/_elements.scss */
+/* line 1251, assets/sass/_elements.scss */
 .KCPL_horz-multi {
   border-radius: 11px;
   color: #fff;
   margin: 0 0 26px;
 }
-/* line 1243, assets/sass/_elements.scss */
+/* line 1252, assets/sass/_elements.scss */
 .KCPL_horz-multi .gutter {
   padding: 14px 27px 13px;
 }
-/* line 1244, assets/sass/_elements.scss */
+/* line 1253, assets/sass/_elements.scss */
 .KCPL_horz-multi span {
   font: bold 20px/23px "nimbus-sans";
   text-transform: uppercase;
   display: inline-block;
   width: 90%;
 }
-/* line 1245, assets/sass/_elements.scss */
+/* line 1254, assets/sass/_elements.scss */
 .KCPL_horz-multi a {
   color: #fff;
 }
-/* line 1246, assets/sass/_elements.scss */
+/* line 1255, assets/sass/_elements.scss */
 .KCPL_horz-multi span.alert {
   display: inline;
   float: left;
@@ -4630,31 +4668,31 @@ a > .KCPL_horz-single {
      </div>
    </div>
 */
-/* line 1265, assets/sass/_elements.scss */
+/* line 1274, assets/sass/_elements.scss */
 .KCPL_horz-talkbox-fonts {
   position: relative;
   color: #fff;
   padding: 9px 14px 7px;
   border-radius: 4px;
 }
-/* line 1266, assets/sass/_elements.scss */
+/* line 1275, assets/sass/_elements.scss */
 .KCPL_horz-talkbox-fonts span {
   display: block;
   text-transform: uppercase;
   text-align: center;
 }
-/* line 1267, assets/sass/_elements.scss */
+/* line 1276, assets/sass/_elements.scss */
 .KCPL_horz-talkbox-fonts .KCPL_font-nimbus-condensed {
   font-weight: bold;
   font-size: 19px;
   margin: 0 0 2px;
 }
-/* line 1268, assets/sass/_elements.scss */
+/* line 1277, assets/sass/_elements.scss */
 .KCPL_horz-talkbox-fonts .KCPL_font-minion {
   font-size: 14px;
 }
 
-/* line 1270, assets/sass/_elements.scss */
+/* line 1279, assets/sass/_elements.scss */
 .KCPL_horz-talkbox-fonts:after {
   position: absolute;
   top: -7px;
@@ -4666,44 +4704,44 @@ a > .KCPL_horz-single {
   background: url(assets/img/talkCalloutCaret.png) no-repeat;
 }
 
-/* line 1271, assets/sass/_elements.scss */
+/* line 1280, assets/sass/_elements.scss */
 .KCPL_horz-talkbox-fonts.KCPL_background-blue:after {
   background-position: -56px 0;
 }
 
-/* line 1272, assets/sass/_elements.scss */
+/* line 1281, assets/sass/_elements.scss */
 .KCPL_horz-talkbox-fonts.KCPL_background-red:after {
   background-position: -28px 0;
 }
 
-/* line 1273, assets/sass/_elements.scss */
+/* line 1282, assets/sass/_elements.scss */
 .KCPL_horz-talkbox-fonts.KCPL_background-green:after {
   background-position: -42px 0;
 }
 
-/* line 1274, assets/sass/_elements.scss */
+/* line 1283, assets/sass/_elements.scss */
 .KCPL_horz-talkbox-fonts.KCPL_background-grey:after {
   background-position: -14px 0;
 }
 
-/* line 1275, assets/sass/_elements.scss */
+/* line 1284, assets/sass/_elements.scss */
 .KCPL_horz-talkbox-fonts.KCPL_background-yellow:after {
   background-position: 0 0;
 }
 
-/* line 1277, assets/sass/_elements.scss */
+/* line 1286, assets/sass/_elements.scss */
 .KCPL_horz-fonts {
   padding: 10px 13px;
   color: #fff;
   text-align: center;
   border-radius: 10px;
 }
-/* line 1278, assets/sass/_elements.scss */
+/* line 1287, assets/sass/_elements.scss */
 .KCPL_horz-fonts .gutter {
   border: 1px solid #fff;
   padding: 15px 2px 16px;
 }
-/* line 1279, assets/sass/_elements.scss */
+/* line 1288, assets/sass/_elements.scss */
 .KCPL_horz-fonts span {
   text-transform: uppercase;
   display: inline-block;
@@ -4711,7 +4749,7 @@ a > .KCPL_horz-single {
   font-size: 18px;
   line-height: 18px;
 }
-/* line 1280, assets/sass/_elements.scss */
+/* line 1289, assets/sass/_elements.scss */
 .KCPL_horz-fonts .KCPL_font-nimbus-condensed {
   font-weight: bold;
   margin: 0 4px 0 0;
@@ -4726,7 +4764,7 @@ a > .KCPL_horz-single {
 </div>
 
 */
-/* line 1294, assets/sass/_elements.scss */
+/* line 1303, assets/sass/_elements.scss */
 .KCPL_horz-card {
   color: #fff;
   padding: 9px 18px 12px 18px;
@@ -4735,30 +4773,30 @@ a > .KCPL_horz-single {
   text-align: center;
   margin: 0 0 26px;
 }
-/* line 1295, assets/sass/_elements.scss */
+/* line 1304, assets/sass/_elements.scss */
 .KCPL_horz-card .gutter {
   padding: 15px 5px 15px;
   border: 1px solid #fff;
 }
-/* line 1296, assets/sass/_elements.scss */
+/* line 1305, assets/sass/_elements.scss */
 .KCPL_horz-card span {
   padding: 0;
 }
-/* line 1297, assets/sass/_elements.scss */
+/* line 1306, assets/sass/_elements.scss */
 .KCPL_horz-card a {
   padding: 0;
 }
-/* line 1298, assets/sass/_elements.scss */
+/* line 1307, assets/sass/_elements.scss */
 .KCPL_horz-card .KCPL_horz-card-first {
   font: bold 18px/22px "nimbus-sans-condensed";
   letter-spacing: 0.04em;
 }
-/* line 1299, assets/sass/_elements.scss */
+/* line 1308, assets/sass/_elements.scss */
 .KCPL_horz-card .KCPL_horz-card-last {
   font: bold 18px/22px "minion-pro";
 }
 
-/* line 1302, assets/sass/_elements.scss */
+/* line 1311, assets/sass/_elements.scss */
 .KCPL_horz-card:hover {
   opacity: 0.8;
   cursor: pointer;
@@ -4815,29 +4853,29 @@ a > .KCPL_horz-single {
      </div>
    </div>
 */
-/* line 1355, assets/sass/_elements.scss */
+/* line 1364, assets/sass/_elements.scss */
 .KCPL_featured {
   display: block;
   margin: 0 0 26px;
 }
-/* line 1356, assets/sass/_elements.scss */
+/* line 1365, assets/sass/_elements.scss */
 .KCPL_featured a {
   color: #323333;
 }
-/* line 1357, assets/sass/_elements.scss */
+/* line 1366, assets/sass/_elements.scss */
 .KCPL_featured .gutter {
   padding: 0 38px;
 }
-/* line 1358, assets/sass/_elements.scss */
+/* line 1367, assets/sass/_elements.scss */
 .KCPL_featured .entry {
   float: left;
   width: 33%;
 }
-/* line 1359, assets/sass/_elements.scss */
+/* line 1368, assets/sass/_elements.scss */
 .KCPL_featured .entry .gutter {
   padding: 0 8px 0 28px;
 }
-/* line 1360, assets/sass/_elements.scss */
+/* line 1369, assets/sass/_elements.scss */
 .KCPL_featured .entry .image {
   display: table;
   vertical-align: middle;
@@ -4845,12 +4883,12 @@ a > .KCPL_horz-single {
   width: 100%;
   height: 115px;
 }
-/* line 1361, assets/sass/_elements.scss */
+/* line 1370, assets/sass/_elements.scss */
 .KCPL_featured .entry .image .wrap {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 1362, assets/sass/_elements.scss */
+/* line 1371, assets/sass/_elements.scss */
 .KCPL_featured .entry .image i {
   margin: 0 auto;
   display: block;
@@ -4858,19 +4896,19 @@ a > .KCPL_horz-single {
   width: 67px;
   background: url(assets/img/featuredIcons.png) no-repeat;
 }
-/* line 1365, assets/sass/_elements.scss */
+/* line 1374, assets/sass/_elements.scss */
 .KCPL_featured .entry .image.online i {
   background-position: -79px 0;
   height: 63px;
   width: 69px;
 }
-/* line 1366, assets/sass/_elements.scss */
+/* line 1375, assets/sass/_elements.scss */
 .KCPL_featured .entry .image.video i {
   background-position: -160px -5px;
   height: 54px;
   width: 71px;
 }
-/* line 1368, assets/sass/_elements.scss */
+/* line 1377, assets/sass/_elements.scss */
 .KCPL_featured .entry .title {
   display: block;
   font: bold 18px/18px "nimbus-sans-condensed";
@@ -4881,33 +4919,33 @@ a > .KCPL_horz-single {
   border: none;
   padding: 0px;
 }
-/* line 1369, assets/sass/_elements.scss */
+/* line 1378, assets/sass/_elements.scss */
 .KCPL_featured .entry .excerpt {
   display: block;
   letter-spacing: 0.065em;
   margin: 0 0 19px;
 }
-/* line 1370, assets/sass/_elements.scss */
+/* line 1379, assets/sass/_elements.scss */
 .KCPL_featured .entry .date {
   display: block;
   font: bold 15px/15px "nimbus-sans";
   margin: 0 0 2px;
 }
-/* line 1371, assets/sass/_elements.scss */
+/* line 1380, assets/sass/_elements.scss */
 .KCPL_featured .entry .link {
   display: block;
   font: bold 14px/15px "nimbus-sans";
   margin: 0 0 2px;
 }
-/* line 1372, assets/sass/_elements.scss */
+/* line 1381, assets/sass/_elements.scss */
 .KCPL_featured .entry .KCPL_readmore {
   display: block;
 }
-/* line 1374, assets/sass/_elements.scss */
+/* line 1383, assets/sass/_elements.scss */
 .KCPL_featured .entry.left .gutter {
   padding: 0 16px 0 0;
 }
-/* line 1375, assets/sass/_elements.scss */
+/* line 1384, assets/sass/_elements.scss */
 .KCPL_featured .entry.right .gutter {
   padding: 0 0 0 42px;
 }
@@ -4983,12 +5021,12 @@ a > .KCPL_horz-single {
       </div>
    </div>
 */
-/* line 1450, assets/sass/_elements.scss */
+/* line 1459, assets/sass/_elements.scss */
 .KCPL_oc-profile {
   display: block;
   background: #e2e2e2;
 }
-/* line 1451, assets/sass/_elements.scss */
+/* line 1460, assets/sass/_elements.scss */
 .KCPL_oc-profile > .title {
   color: #fff;
   font: bold 18px/18px "nimbus-sans";
@@ -4997,27 +5035,27 @@ a > .KCPL_horz-single {
   text-transform: uppercase;
   padding: 17px 10px 18px;
 }
-/* line 1452, assets/sass/_elements.scss */
+/* line 1461, assets/sass/_elements.scss */
 .KCPL_oc-profile .gutter {
   padding: 20px;
 }
-/* line 1453, assets/sass/_elements.scss */
+/* line 1462, assets/sass/_elements.scss */
 .KCPL_oc-profile .top {
   display: block;
   margin: 0 0 13px;
 }
-/* line 1454, assets/sass/_elements.scss */
+/* line 1463, assets/sass/_elements.scss */
 .KCPL_oc-profile .top .profile-img {
   float: left;
   width: 111px;
 }
-/* line 1455, assets/sass/_elements.scss */
+/* line 1464, assets/sass/_elements.scss */
 .KCPL_oc-profile .top .profile-social {
   float: right;
   width: 115px;
   margin: 0 5px 0 0;
 }
-/* line 1456, assets/sass/_elements.scss */
+/* line 1465, assets/sass/_elements.scss */
 .KCPL_oc-profile .top .profile-social a {
   background: #f65446;
   color: #fff;
@@ -5030,11 +5068,11 @@ a > .KCPL_horz-single {
   margin: 0 20px 20px 0;
   float: left;
 }
-/* line 1457, assets/sass/_elements.scss */
+/* line 1466, assets/sass/_elements.scss */
 .KCPL_oc-profile .top .profile-social a:nth-child(n+5) {
   margin: 0 20px 0 0;
 }
-/* line 1458, assets/sass/_elements.scss */
+/* line 1467, assets/sass/_elements.scss */
 .KCPL_oc-profile .top .profile-social a:before {
   text-indent: 0px;
   position: absolute;
@@ -5042,122 +5080,122 @@ a > .KCPL_horz-single {
   left: 10px;
   font-size: 19px;
 }
-/* line 1461, assets/sass/_elements.scss */
+/* line 1470, assets/sass/_elements.scss */
 .KCPL_oc-profile .bottom {
   display: block;
 }
-/* line 1462, assets/sass/_elements.scss */
+/* line 1471, assets/sass/_elements.scss */
 .KCPL_oc-profile .bottom .profile-username {
   font: 16px/19px "minion-pro";
   margin: 0 0 19px;
 }
-/* line 1463, assets/sass/_elements.scss */
+/* line 1472, assets/sass/_elements.scss */
 .KCPL_oc-profile .bottom .profile-username .title {
   font: bold 20px/18px "nimbus-sans-condensed";
   text-transform: uppercase;
   display: block;
 }
-/* line 1464, assets/sass/_elements.scss */
+/* line 1473, assets/sass/_elements.scss */
 .KCPL_oc-profile .bottom .profile-username a {
   font: 15px/18px "nimbus-sans";
   color: #323333;
   display: block;
 }
-/* line 1466, assets/sass/_elements.scss */
+/* line 1475, assets/sass/_elements.scss */
 .KCPL_oc-profile .bottom .profile-interests {
   margin: 0 0 18px;
 }
-/* line 1467, assets/sass/_elements.scss */
+/* line 1476, assets/sass/_elements.scss */
 .KCPL_oc-profile .bottom .profile-interests .title {
   font: 19px/22px "minion-pro";
   display: block;
   letter-spacing: 0.04em;
 }
-/* line 1468, assets/sass/_elements.scss */
+/* line 1477, assets/sass/_elements.scss */
 .KCPL_oc-profile .bottom .profile-interests a {
   font: bold 12px/12px "nimbus-sans";
   color: #323333;
   letter-spacing: 0.055em;
 }
-/* line 1470, assets/sass/_elements.scss */
+/* line 1479, assets/sass/_elements.scss */
 .KCPL_oc-profile .bottom .profile-reading {
   margin: 0 0 0px;
 }
-/* line 1471, assets/sass/_elements.scss */
+/* line 1480, assets/sass/_elements.scss */
 .KCPL_oc-profile .bottom .profile-reading .title {
   font: 19px/22px "minion-pro";
   display: block;
   letter-spacing: 0.04em;
 }
-/* line 1472, assets/sass/_elements.scss */
+/* line 1481, assets/sass/_elements.scss */
 .KCPL_oc-profile .bottom .profile-reading a {
   font: bold 12px/12px "nimbus-sans";
   color: #323333;
   letter-spacing: 0.055em;
 }
 
-/* line 1477, assets/sass/_elements.scss */
+/* line 1486, assets/sass/_elements.scss */
 .columns.eight .KCPL_oc-profile {
   display: block;
 }
-/* line 1478, assets/sass/_elements.scss */
+/* line 1487, assets/sass/_elements.scss */
 .columns.eight .KCPL_oc-profile .left {
   float: left;
   width: 111px;
   margin: 0 21px 0 0;
 }
-/* line 1479, assets/sass/_elements.scss */
+/* line 1488, assets/sass/_elements.scss */
 .columns.eight .KCPL_oc-profile .center {
   float: left;
   width: 160px;
   margin: 0 20px 0 0;
 }
-/* line 1480, assets/sass/_elements.scss */
+/* line 1489, assets/sass/_elements.scss */
 .columns.eight .KCPL_oc-profile .center .profile-username {
   font: 16px/19px "minion-pro";
   margin: 0 0 19px;
 }
-/* line 1481, assets/sass/_elements.scss */
+/* line 1490, assets/sass/_elements.scss */
 .columns.eight .KCPL_oc-profile .center .profile-username .title {
   font: bold 20px/14px "nimbus-sans-condensed";
   text-transform: uppercase;
   display: block;
   margin: 0 0 2px;
 }
-/* line 1482, assets/sass/_elements.scss */
+/* line 1491, assets/sass/_elements.scss */
 .columns.eight .KCPL_oc-profile .center .profile-username a {
   font: 15px/18px "nimbus-sans";
   color: #323333;
   display: block;
 }
-/* line 1484, assets/sass/_elements.scss */
+/* line 1493, assets/sass/_elements.scss */
 .columns.eight .KCPL_oc-profile .center .profile-interests {
   margin: 0 0 18px;
 }
-/* line 1485, assets/sass/_elements.scss */
+/* line 1494, assets/sass/_elements.scss */
 .columns.eight .KCPL_oc-profile .center .profile-interests .title {
   font: 19px/22px "minion-pro";
   display: block;
   letter-spacing: 0.04em;
 }
-/* line 1486, assets/sass/_elements.scss */
+/* line 1495, assets/sass/_elements.scss */
 .columns.eight .KCPL_oc-profile .center .profile-interests a {
   font: bold 12px/12px "nimbus-sans";
   color: #323333;
   letter-spacing: 0.055em;
 }
-/* line 1489, assets/sass/_elements.scss */
+/* line 1498, assets/sass/_elements.scss */
 .columns.eight .KCPL_oc-profile .right {
   float: left;
   width: 286px;
 }
-/* line 1490, assets/sass/_elements.scss */
+/* line 1499, assets/sass/_elements.scss */
 .columns.eight .KCPL_oc-profile .right .profile-social {
   display: block;
   float: none;
   margin: 0;
 }
-/* line 1491, assets/sass/_elements.scss */
+/* line 1500, assets/sass/_elements.scss */
 .columns.eight .KCPL_oc-profile .right .profile-social a {
   background: #f65446;
   color: #fff;
@@ -5170,11 +5208,11 @@ a > .KCPL_horz-single {
   margin: 0 14px 15px 0;
   float: left;
 }
-/* line 1492, assets/sass/_elements.scss */
+/* line 1501, assets/sass/_elements.scss */
 .columns.eight .KCPL_oc-profile .right .profile-social a:last-child {
   margin: 0;
 }
-/* line 1493, assets/sass/_elements.scss */
+/* line 1502, assets/sass/_elements.scss */
 .columns.eight .KCPL_oc-profile .right .profile-social a:before {
   text-indent: 0px;
   position: absolute;
@@ -5182,17 +5220,17 @@ a > .KCPL_horz-single {
   left: 10px;
   font-size: 19px;
 }
-/* line 1495, assets/sass/_elements.scss */
+/* line 1504, assets/sass/_elements.scss */
 .columns.eight .KCPL_oc-profile .right .profile-reading {
   margin: 0 0 0px;
 }
-/* line 1496, assets/sass/_elements.scss */
+/* line 1505, assets/sass/_elements.scss */
 .columns.eight .KCPL_oc-profile .right .profile-reading .title {
   font: 19px/22px "minion-pro";
   display: block;
   letter-spacing: 0.04em;
 }
-/* line 1497, assets/sass/_elements.scss */
+/* line 1506, assets/sass/_elements.scss */
 .columns.eight .KCPL_oc-profile .right .profile-reading a {
   font: bold 12px/12px "nimbus-sans";
   color: #323333;
@@ -5202,17 +5240,17 @@ a > .KCPL_horz-single {
 /* Popups
 
 */
-/* line 1506, assets/sass/_elements.scss */
+/* line 1515, assets/sass/_elements.scss */
 .KCPL_popup {
   display: block;
   position: relative;
   border-radius: 13px;
 }
-/* line 1507, assets/sass/_elements.scss */
+/* line 1516, assets/sass/_elements.scss */
 .KCPL_popup .gutter {
   padding: 14px 40px 17px 19px;
 }
-/* line 1508, assets/sass/_elements.scss */
+/* line 1517, assets/sass/_elements.scss */
 .KCPL_popup span {
   color: #fff;
   font: bold 18px/23px "nimbus-sans";
@@ -5220,14 +5258,14 @@ a > .KCPL_horz-single {
   text-transform: uppercase;
   letter-spacing: 0.055em;
 }
-/* line 1509, assets/sass/_elements.scss */
+/* line 1518, assets/sass/_elements.scss */
 .KCPL_popup a {
   display: block;
   color: #fff;
   margin: 0;
 }
 
-/* line 1511, assets/sass/_elements.scss */
+/* line 1520, assets/sass/_elements.scss */
 .KCPL_popup:after {
   position: absolute;
   bottom: -8px;
@@ -5240,27 +5278,27 @@ a > .KCPL_horz-single {
   transform: rotate(180deg);
 }
 
-/* line 1512, assets/sass/_elements.scss */
+/* line 1521, assets/sass/_elements.scss */
 .KCPL_popup.KCPL_background-blue:after {
   background-position: -56px 0;
 }
 
-/* line 1513, assets/sass/_elements.scss */
+/* line 1522, assets/sass/_elements.scss */
 .KCPL_popup.KCPL_background-red:after {
   background-position: -28px 0;
 }
 
-/* line 1514, assets/sass/_elements.scss */
+/* line 1523, assets/sass/_elements.scss */
 .KCPL_popup.KCPL_background-green:after {
   background-position: -42px 0;
 }
 
-/* line 1515, assets/sass/_elements.scss */
+/* line 1524, assets/sass/_elements.scss */
 .KCPL_popup.KCPL_background-grey:after {
   background-position: -14px 0;
 }
 
-/* line 1516, assets/sass/_elements.scss */
+/* line 1525, assets/sass/_elements.scss */
 .KCPL_popup.KCPL_background-yellow:after {
   background-position: 0 0;
 }
@@ -5324,30 +5362,30 @@ a > .KCPL_horz-single {
       </div>
    </div>
 */
-/* line 1579, assets/sass/_elements.scss */
+/* line 1588, assets/sass/_elements.scss */
 .columns.four > .KCPL_comments {
   display: block;
 }
-/* line 1580, assets/sass/_elements.scss */
+/* line 1589, assets/sass/_elements.scss */
 .columns.four > .KCPL_comments a {
   color: #323333;
 }
-/* line 1581, assets/sass/_elements.scss */
+/* line 1590, assets/sass/_elements.scss */
 .columns.four > .KCPL_comments ol {
   list-style: none;
 }
-/* line 1582, assets/sass/_elements.scss */
+/* line 1591, assets/sass/_elements.scss */
 .columns.four > .KCPL_comments li.comment {
   display: block;
   position: relative;
   margin: 3px 0 27px;
 }
-/* line 1583, assets/sass/_elements.scss */
+/* line 1592, assets/sass/_elements.scss */
 .columns.four > .KCPL_comments li.comment > div {
   background: #e2e2e2;
   border-radius: 12px;
 }
-/* line 1584, assets/sass/_elements.scss */
+/* line 1593, assets/sass/_elements.scss */
 .columns.four > .KCPL_comments li.comment .caret {
   position: absolute;
   top: -10px;
@@ -5358,22 +5396,22 @@ a > .KCPL_horz-single {
   height: 11px;
   width: 22px;
 }
-/* line 1585, assets/sass/_elements.scss */
+/* line 1594, assets/sass/_elements.scss */
 .columns.four > .KCPL_comments li.comment .comment-wrap {
   padding: 20px 20px 14px;
 }
-/* line 1586, assets/sass/_elements.scss */
+/* line 1595, assets/sass/_elements.scss */
 .columns.four > .KCPL_comments li.comment .comment-img {
   float: left;
   width: 33px;
 }
-/* line 1587, assets/sass/_elements.scss */
+/* line 1596, assets/sass/_elements.scss */
 .columns.four > .KCPL_comments li.comment .comment-content {
   float: right;
   width: 183px;
   padding: 0 32px 0 0;
 }
-/* line 1588, assets/sass/_elements.scss */
+/* line 1597, assets/sass/_elements.scss */
 .columns.four > .KCPL_comments li.comment .comment-content .name {
   font: bold 18px/12px "nimbus-sans-condensed";
   text-transform: uppercase;
@@ -5381,81 +5419,81 @@ a > .KCPL_horz-single {
   display: block;
   margin: 0 0 7px;
 }
-/* line 1589, assets/sass/_elements.scss */
+/* line 1598, assets/sass/_elements.scss */
 .columns.four > .KCPL_comments li.comment .comment-content .date {
   font: bold 15px/15px "nimbus-sans";
   display: block;
   margin: 0 0 19px;
 }
-/* line 1590, assets/sass/_elements.scss */
+/* line 1599, assets/sass/_elements.scss */
 .columns.four > .KCPL_comments li.comment .comment-content .comment-comment {
   font: 15px/18px "minion-pro";
   display: block;
   margin: 0 0 17px;
 }
-/* line 1591, assets/sass/_elements.scss */
+/* line 1600, assets/sass/_elements.scss */
 .columns.four > .KCPL_comments li.comment .comment-content a.reply {
   display: block;
   margin: 0 0 2px;
 }
-/* line 1592, assets/sass/_elements.scss */
+/* line 1601, assets/sass/_elements.scss */
 .columns.four > .KCPL_comments li.comment .comment-content a.leave-comment {
   display: block;
   margin: 0;
 }
-/* line 1597, assets/sass/_elements.scss */
+/* line 1606, assets/sass/_elements.scss */
 .columns.four > .KCPL_comments li.comment.depth-1.parent > div {
   background: #979797;
   border-radius: 12px;
 }
-/* line 1598, assets/sass/_elements.scss */
+/* line 1607, assets/sass/_elements.scss */
 .columns.four > .KCPL_comments li.comment.depth-1.parent > .caret {
   background: url(assets/img/commentCaretDG.png) no-repeat;
 }
-/* line 1599, assets/sass/_elements.scss */
+/* line 1608, assets/sass/_elements.scss */
 .columns.four > .KCPL_comments li.comment.depth-1.parent > ol {
   padding: 13px 21px 0 70px;
 }
-/* line 1601, assets/sass/_elements.scss */
+/* line 1610, assets/sass/_elements.scss */
 .columns.four > .KCPL_comments li.comment.depth-1.parent > ol li.comment .comment-content {
   width: 126px;
   margin: 0;
 }
-/* line 1606, assets/sass/_elements.scss */
+/* line 1615, assets/sass/_elements.scss */
 .columns.four > .KCPL_comments li.comment.thread-alt > div {
   background: #f65446;
   border-radius: 12px;
 }
-/* line 1607, assets/sass/_elements.scss */
+/* line 1616, assets/sass/_elements.scss */
 .columns.four > .KCPL_comments li.comment.thread-alt > .caret {
   background: url(assets/img/commentCaretR.png) no-repeat;
   left: auto;
   right: 16px;
 }
 
-/* line 1613, assets/sass/_elements.scss */
+/* line 1622, assets/sass/_elements.scss */
 .columns.eight > .KCPL_comments {
   display: block;
 }
-/* line 1614, assets/sass/_elements.scss */
+/* line 1623, assets/sass/_elements.scss */
 .columns.eight > .KCPL_comments a {
   color: #323333;
 }
-/* line 1615, assets/sass/_elements.scss */
+/* line 1624, assets/sass/_elements.scss */
 .columns.eight > .KCPL_comments ol {
   list-style: none;
 }
-/* line 1616, assets/sass/_elements.scss */
+/* line 1625, assets/sass/_elements.scss */
 .columns.eight > .KCPL_comments li.comment {
   display: block;
   position: relative;
 }
-/* line 1617, assets/sass/_elements.scss */
+/* line 1626, assets/sass/_elements.scss */
 .columns.eight > .KCPL_comments li.comment > div {
   border-radius: 12px;
   background: #e2e2e2;
 }
-/* line 1618, assets/sass/_elements.scss */
+/* line 1627, assets/sass/_elements.scss */
 .columns.eight > .KCPL_comments li.comment .caret {
   position: absolute;
   top: -10px;
@@ -5466,22 +5504,22 @@ a > .KCPL_horz-single {
   height: 11px;
   width: 22px;
 }
-/* line 1619, assets/sass/_elements.scss */
+/* line 1628, assets/sass/_elements.scss */
 .columns.eight > .KCPL_comments li.comment .comment-wrap {
   padding: 20px 20px 14px;
 }
-/* line 1620, assets/sass/_elements.scss */
+/* line 1629, assets/sass/_elements.scss */
 .columns.eight > .KCPL_comments li.comment .comment-img {
   float: left;
   width: 33px;
 }
-/* line 1621, assets/sass/_elements.scss */
+/* line 1630, assets/sass/_elements.scss */
 .columns.eight > .KCPL_comments li.comment .comment-content {
   float: right;
   width: 519px;
   padding: 0 24px 0 0;
 }
-/* line 1622, assets/sass/_elements.scss */
+/* line 1631, assets/sass/_elements.scss */
 .columns.eight > .KCPL_comments li.comment .comment-content .name {
   font: bold 18px/12px "nimbus-sans-condensed";
   text-transform: uppercase;
@@ -5489,47 +5527,47 @@ a > .KCPL_horz-single {
   display: block;
   margin: 0 0 7px;
 }
-/* line 1623, assets/sass/_elements.scss */
+/* line 1632, assets/sass/_elements.scss */
 .columns.eight > .KCPL_comments li.comment .comment-content .date {
   font: bold 15px/15px "nimbus-sans";
   display: block;
   margin: 0 0 19px;
 }
-/* line 1624, assets/sass/_elements.scss */
+/* line 1633, assets/sass/_elements.scss */
 .columns.eight > .KCPL_comments li.comment .comment-content .comment-comment {
   font: 15px/18px "minion-pro";
   display: block;
   margin: 0 0 17px;
 }
-/* line 1625, assets/sass/_elements.scss */
+/* line 1634, assets/sass/_elements.scss */
 .columns.eight > .KCPL_comments li.comment .comment-content a.reply {
   display: block;
   margin: 0 0 2px;
 }
-/* line 1626, assets/sass/_elements.scss */
+/* line 1635, assets/sass/_elements.scss */
 .columns.eight > .KCPL_comments li.comment .comment-content a.leave-comment {
   display: block;
   margin: 0;
 }
-/* line 1631, assets/sass/_elements.scss */
+/* line 1640, assets/sass/_elements.scss */
 .columns.eight > .KCPL_comments li.comment.depth-1.parent > div {
   background: #979797;
   border-radius: 12px;
 }
-/* line 1632, assets/sass/_elements.scss */
+/* line 1641, assets/sass/_elements.scss */
 .columns.eight > .KCPL_comments li.comment.depth-1.parent > .caret {
   background: url(assets/img/commentCaretDG.png) no-repeat;
 }
-/* line 1635, assets/sass/_elements.scss */
+/* line 1644, assets/sass/_elements.scss */
 .columns.eight > .KCPL_comments li.comment.depth-1.parent > ol li.comment .comment-content {
   width: 431px;
 }
-/* line 1640, assets/sass/_elements.scss */
+/* line 1649, assets/sass/_elements.scss */
 .columns.eight > .KCPL_comments li.comment.comment-author-admin > div {
   background: #f65446;
   border-radius: 12px;
 }
-/* line 1641, assets/sass/_elements.scss */
+/* line 1650, assets/sass/_elements.scss */
 .columns.eight > .KCPL_comments li.comment.comment-author-admin > .caret {
   background: url(assets/img/commentCaretR.png) no-repeat;
   left: auto;
@@ -5537,7 +5575,7 @@ a > .KCPL_horz-single {
 }
 
 /* Video Embed */
-/* line 1648, assets/sass/_elements.scss */
+/* line 1657, assets/sass/_elements.scss */
 .KCPL_videoembed {
   position: relative;
   padding-bottom: 56.25%;
@@ -5545,7 +5583,7 @@ a > .KCPL_horz-single {
   height: 0;
   margin: 0 0 26px;
 }
-/* line 1649, assets/sass/_elements.scss */
+/* line 1658, assets/sass/_elements.scss */
 .KCPL_videoembed iframe {
   position: absolute;
   top: 0;
@@ -5555,48 +5593,48 @@ a > .KCPL_horz-single {
 }
 
 /* Calendar */
-/* line 1654, assets/sass/_elements.scss */
+/* line 1663, assets/sass/_elements.scss */
 #KCPL_Calendar_viewby {
   display: block;
   padding: 0 0 18px;
 }
-/* line 1655, assets/sass/_elements.scss */
+/* line 1664, assets/sass/_elements.scss */
 #KCPL_Calendar_viewby * {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 1656, assets/sass/_elements.scss */
+/* line 1665, assets/sass/_elements.scss */
 #KCPL_Calendar_viewby span {
   font: 14px/14px "minion-pro";
   font-style: italic;
   letter-spacing: 0.05em;
   margin: 0 6px 0 0;
 }
-/* line 1657, assets/sass/_elements.scss */
+/* line 1666, assets/sass/_elements.scss */
 #KCPL_Calendar_viewby a {
   font: bold 14px/14px "nimbus-sans";
   padding: 7px 10px 4px;
   color: #323333;
   letter-spacing: 0.055em;
 }
-/* line 1658, assets/sass/_elements.scss */
+/* line 1667, assets/sass/_elements.scss */
 #KCPL_Calendar_viewby a.active, #KCPL_Calendar_viewby a:hover {
   background: #76849a;
 }
 
-/* line 1661, assets/sass/_elements.scss */
+/* line 1670, assets/sass/_elements.scss */
 #KCPL_Calendar_listview-current {
   position: relative;
   font: bold 15px/30px "nimbus-sans";
   padding: 0 30px;
 }
-/* line 1662, assets/sass/_elements.scss */
+/* line 1671, assets/sass/_elements.scss */
 #KCPL_Calendar_listview-current #KCPL_Calendar_listview-current-np {
   position: absolute;
   top: 10px;
   right: 10px;
 }
-/* line 1663, assets/sass/_elements.scss */
+/* line 1672, assets/sass/_elements.scss */
 #KCPL_Calendar_listview-current #KCPL_Calendar_listview-current-np .next {
   background: url(assets/img/calMonthRight.png) no-repeat;
   height: 12px;
@@ -5609,7 +5647,7 @@ a > .KCPL_horz-single {
   text-indent: -9999px;
   display: block;
 }
-/* line 1664, assets/sass/_elements.scss */
+/* line 1673, assets/sass/_elements.scss */
 #KCPL_Calendar_listview-current #KCPL_Calendar_listview-current-np .prev {
   background: url(assets/img/calMonthLeft.png) no-repeat;
   height: 12px;
@@ -5623,24 +5661,24 @@ a > .KCPL_horz-single {
   display: block;
 }
 
-/* line 1668, assets/sass/_elements.scss */
+/* line 1677, assets/sass/_elements.scss */
 #KCPL_Calendar_monthsel {
   background: #9dabc3;
   padding: 18px 50px 16px;
   position: relative;
 }
-/* line 1669, assets/sass/_elements.scss */
+/* line 1678, assets/sass/_elements.scss */
 #KCPL_Calendar_monthsel a {
   font: bold 17px/17px "nimbus-sans";
   text-transform: uppercase;
   color: #323333;
   margin: 0 8px;
 }
-/* line 1670, assets/sass/_elements.scss */
+/* line 1679, assets/sass/_elements.scss */
 #KCPL_Calendar_monthsel a:hover, #KCPL_Calendar_monthsel a.active {
   color: #fff;
 }
-/* line 1671, assets/sass/_elements.scss */
+/* line 1680, assets/sass/_elements.scss */
 #KCPL_Calendar_monthsel a#KCPL_Calendar_prev {
   background: url(assets/img/calMonthLeft.png) no-repeat;
   height: 12px;
@@ -5653,7 +5691,7 @@ a > .KCPL_horz-single {
   text-indent: -9999px;
   display: block;
 }
-/* line 1672, assets/sass/_elements.scss */
+/* line 1681, assets/sass/_elements.scss */
 #KCPL_Calendar_monthsel a#KCPL_Calendar_next {
   background: url(assets/img/calMonthRight.png) no-repeat;
   height: 12px;
@@ -5667,19 +5705,19 @@ a > .KCPL_horz-single {
   display: block;
 }
 
-/* line 1675, assets/sass/_elements.scss */
+/* line 1684, assets/sass/_elements.scss */
 #KCPL_Calendar_gridview {
   display: block;
   margin-bottom: 40px;
 }
 
-/* line 1676, assets/sass/_elements.scss */
+/* line 1685, assets/sass/_elements.scss */
 #KCPL_Calendar_gridview table {
   width: 100%;
   background: #e2e2e2;
 }
 
-/* line 1678, assets/sass/_elements.scss */
+/* line 1687, assets/sass/_elements.scss */
 #KCPL_Calendar_gridview th {
   border: none;
   border-left: 1px solid #676767;
@@ -5688,7 +5726,7 @@ a > .KCPL_horz-single {
   text-transform: uppsercase;
 }
 
-/* line 1680, assets/sass/_elements.scss */
+/* line 1689, assets/sass/_elements.scss */
 #KCPL_Calendar_gridview table tr td {
   width: 14.28571428571429%;
   position: relative;
@@ -5696,24 +5734,24 @@ a > .KCPL_horz-single {
   border: 1px solid #676767 !important;
 }
 
-/* line 1681, assets/sass/_elements.scss */
+/* line 1690, assets/sass/_elements.scss */
 #KCPL_Calendar_gridview table tr td span {
   display: block;
   font: 12px/16px 'minion pro';
 }
 
-/* line 1682, assets/sass/_elements.scss */
+/* line 1691, assets/sass/_elements.scss */
 #KCPL_Calendar_gridview table tr td span.kcpl_cal-readmore {
   font-style: italic;
 }
 
-/* line 1683, assets/sass/_elements.scss */
+/* line 1692, assets/sass/_elements.scss */
 #KCPL_Calendar_gridview table tr td span strong {
   font: bold 12px/12px 'nimbus-sans';
   text-transform: uppercase;
 }
 
-/* line 1684, assets/sass/_elements.scss */
+/* line 1693, assets/sass/_elements.scss */
 #KCPL_Calendar_gridview table tr td span.day-marker {
   position: absolute;
   top: 6px;
@@ -5722,28 +5760,28 @@ a > .KCPL_horz-single {
   line-height: 12px;
 }
 
-/* line 1687, assets/sass/_elements.scss */
+/* line 1696, assets/sass/_elements.scss */
 #KCPL_Calendar_listview {
   display: block;
   background: #9dabc3;
   margin-bottom: 40px;
 }
-/* line 1688, assets/sass/_elements.scss */
+/* line 1697, assets/sass/_elements.scss */
 #KCPL_Calendar_listview #KCPL_Calendar_monthsel {
   border-bottom: 1px solid #323333;
 }
-/* line 1689, assets/sass/_elements.scss */
+/* line 1698, assets/sass/_elements.scss */
 #KCPL_Calendar_listview #KCPL_Calendar_listview-entries {
   border-top: 1px solid #323333;
   margin: 3px 0 0;
   display: block;
 }
-/* line 1690, assets/sass/_elements.scss */
+/* line 1699, assets/sass/_elements.scss */
 #KCPL_Calendar_listview .KCPL_Calendar_date-entry {
   display: table;
   width: 100%;
 }
-/* line 1691, assets/sass/_elements.scss */
+/* line 1700, assets/sass/_elements.scss */
 #KCPL_Calendar_listview .KCPL_Calendar_date-entry .left {
   width: 50%;
   display: table-cell;
@@ -5752,24 +5790,24 @@ a > .KCPL_horz-single {
   vertical-align: top;
   padding: 12px 20px;
 }
-/* line 1692, assets/sass/_elements.scss */
+/* line 1701, assets/sass/_elements.scss */
 #KCPL_Calendar_listview .KCPL_Calendar_date-entry .left .title {
   font: bold 17px/26px "nimbus-sans-condensed";
   display: block;
   text-transform: uppercase;
   letter-spacing: 0.09em;
 }
-/* line 1693, assets/sass/_elements.scss */
+/* line 1702, assets/sass/_elements.scss */
 #KCPL_Calendar_listview .KCPL_Calendar_date-entry .left .title a {
   color: #fff;
 }
-/* line 1695, assets/sass/_elements.scss */
+/* line 1704, assets/sass/_elements.scss */
 #KCPL_Calendar_listview .KCPL_Calendar_date-entry .left .desc {
   font: 13px/18px "minion-pro";
   display: block;
   letter-spacing: 0.095em;
 }
-/* line 1697, assets/sass/_elements.scss */
+/* line 1706, assets/sass/_elements.scss */
 #KCPL_Calendar_listview .KCPL_Calendar_date-entry .right {
   width: 50%;
   display: table-cell;
@@ -5777,37 +5815,37 @@ a > .KCPL_horz-single {
   vertical-align: top;
   padding: 18px 40px;
 }
-/* line 1698, assets/sass/_elements.scss */
+/* line 1707, assets/sass/_elements.scss */
 #KCPL_Calendar_listview .KCPL_Calendar_date-entry .right .time {
   font: bold 14px/15px "nimbus-sans";
   display: block;
   margin: 0 0 2px;
   letter-spacing: 0.025em;
 }
-/* line 1699, assets/sass/_elements.scss */
+/* line 1708, assets/sass/_elements.scss */
 #KCPL_Calendar_listview .KCPL_Calendar_date-entry .right .tags {
   display: block;
 }
-/* line 1700, assets/sass/_elements.scss */
+/* line 1709, assets/sass/_elements.scss */
 #KCPL_Calendar_listview .KCPL_Calendar_date-entry .right .tags a {
   font: 12px/12px "nimbus-sans";
   color: #323333;
   letter-spacing: 0.065em;
 }
 
-/* line 1706, assets/sass/_elements.scss */
+/* line 1715, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar-form {
   margin: 0;
   padding: 0;
 }
 
-/* line 1707, assets/sass/_elements.scss */
+/* line 1716, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar {
   display: block;
   background: #e2e2e2;
   margin: 0px 0 0;
 }
-/* line 1708, assets/sass/_elements.scss */
+/* line 1717, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar h3 {
   font: bold 17px/17px "nimbus-sans";
   padding: 18px 0 17px 19px;
@@ -5815,11 +5853,11 @@ a > .KCPL_horz-single {
   border-bottom: 1px solid #676767;
   margin: 0;
 }
-/* line 1709, assets/sass/_elements.scss */
+/* line 1718, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar > div {
   display: block;
 }
-/* line 1710, assets/sass/_elements.scss */
+/* line 1719, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar input[type="radio"], #KCPL_Calendar_sidebar input[type="checkbox"] {
   -webkit-appearance: none;
   background: transparent;
@@ -5829,7 +5867,7 @@ a > .KCPL_horz-single {
   margin: 0 2px 0 0px;
   position: relative;
 }
-/* line 1711, assets/sass/_elements.scss */
+/* line 1720, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar input[type="radio"]:checked:after, #KCPL_Calendar_sidebar input[type="checkbox"]:checked:after {
   content: '';
   position: absolute;
@@ -5841,37 +5879,37 @@ a > .KCPL_horz-single {
   border-radius: 2px;
   background: #000;
 }
-/* line 1712, assets/sass/_elements.scss */
+/* line 1721, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar label {
   letter-spacing: 0.06em;
   font-size: 14px;
   vertical-align: bottom;
 }
-/* line 1713, assets/sass/_elements.scss */
+/* line 1722, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar #KCPL_Calendar_sidebar-tax label {
   font-size: 12px;
 }
-/* line 1714, assets/sass/_elements.scss */
+/* line 1723, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar div#KCPL_Calendar_sidebar-ce {
   padding: 6px 0;
   border-bottom: 1px solid #676767;
 }
-/* line 1715, assets/sass/_elements.scss */
+/* line 1724, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar .KCPL_Calendar_radio-cont {
   margin: 6px 0 6px 33px;
 }
-/* line 1716, assets/sass/_elements.scss */
+/* line 1725, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar span.KCPL_Calendar_sidebar-dropdown {
   font: 14px/14px "nimbus-sans";
   margin: 20px 0 0px 18px;
   display: block;
   letter-spacing: 0.065em;
 }
-/* line 1717, assets/sass/_elements.scss */
+/* line 1726, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar span.KCPL_Calendar_sidebar-dropdown:hover {
   cursor: pointer;
 }
-/* line 1718, assets/sass/_elements.scss */
+/* line 1727, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar span.KCPL_Calendar_sidebar-dropdown i {
   display: inline-block;
   background: url(assets/img/calSidebarDrop.png) no-repeat;
@@ -5880,25 +5918,25 @@ a > .KCPL_horz-single {
   vertical-align: middle;
   transition: 0.2s all;
 }
-/* line 1719, assets/sass/_elements.scss */
+/* line 1728, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar span.KCPL_Calendar_sidebar-dropdown.active i {
   transform: rotateX(180deg);
 }
-/* line 1720, assets/sass/_elements.scss */
+/* line 1729, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar .KCPL_Calendar_dropdown {
   display: none;
 }
-/* line 1721, assets/sass/_elements.scss */
+/* line 1730, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar div#KCPL_Calendar_search {
   text-align: right;
   padding: 14px 17px 18px 0;
 }
-/* line 1722, assets/sass/_elements.scss */
+/* line 1731, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar input[type="submit"] {
   background: #76849a;
   padding: 3px 27px 3px 26px;
 }
-/* line 1723, assets/sass/_elements.scss */
+/* line 1732, assets/sass/_elements.scss */
 #KCPL_Calendar_sidebar input[type="submit"]:hover {
   cursor: pointer;
 }
@@ -5912,14 +5950,14 @@ a > .KCPL_horz-single {
 <a class="next page-numbers" href=""><i class="fa fa-angle-double-right"></i></a>
 
 */
-/* line 1738, assets/sass/_elements.scss */
+/* line 1747, assets/sass/_elements.scss */
 .page-numbers-container {
   display: block;
   text-align: center;
   margin: 0px auto 20px;
 }
 
-/* line 1739, assets/sass/_elements.scss */
+/* line 1748, assets/sass/_elements.scss */
 .page-numbers {
   display: inline;
   font-family: "nimbus-sans";
@@ -5931,12 +5969,12 @@ a > .KCPL_horz-single {
   cursor: pointer;
 }
 
-/* line 1740, assets/sass/_elements.scss */
+/* line 1749, assets/sass/_elements.scss */
 .current {
   color: #323333;
 }
 
-/* line 1741, assets/sass/_elements.scss */
+/* line 1750, assets/sass/_elements.scss */
 .previous {
   display: inline;
   padding-right: 23px;
@@ -5944,7 +5982,7 @@ a > .KCPL_horz-single {
   cursor: pointer;
 }
 
-/* line 1742, assets/sass/_elements.scss */
+/* line 1751, assets/sass/_elements.scss */
 .prev {
   display: inline;
   padding-right: 23px;
@@ -5952,7 +5990,7 @@ a > .KCPL_horz-single {
   cursor: pointer;
 }
 
-/* line 1743, assets/sass/_elements.scss */
+/* line 1752, assets/sass/_elements.scss */
 .next {
   display: inline;
   padding-left: 23px;
@@ -5960,31 +5998,31 @@ a > .KCPL_horz-single {
   cursor: pointer;
 }
 
-/* line 1745, assets/sass/_elements.scss */
+/* line 1754, assets/sass/_elements.scss */
 .search-page-numbers-container {
   display: block;
   text-align: center;
   margin: 0px auto 20px;
 }
 
-/* line 1746, assets/sass/_elements.scss */
+/* line 1755, assets/sass/_elements.scss */
 .read-more {
   margin-top: 20px;
   color: #137cc1 !important;
 }
 
-/* line 1748, assets/sass/_elements.scss */
+/* line 1757, assets/sass/_elements.scss */
 .search-box form {
   margin: 20px 0 0 0;
   padding: 0;
 }
-/* line 1749, assets/sass/_elements.scss */
+/* line 1758, assets/sass/_elements.scss */
 .search-box form input[type="text"] {
   margin: 0;
   width: 73%;
   display: inline;
 }
-/* line 1750, assets/sass/_elements.scss */
+/* line 1759, assets/sass/_elements.scss */
 .search-box form input[type="submit"] {
   display: inline;
   width: 23%;
@@ -5993,23 +6031,23 @@ a > .KCPL_horz-single {
 }
 
 /* Online Community - theme related overrides */
-/* line 1755, assets/sass/_elements.scss */
+/* line 1764, assets/sass/_elements.scss */
 #showProfile {
   display: block;
   float: none;
   margin: 0 0 26px;
 }
 
-/* line 1756, assets/sass/_elements.scss */
+/* line 1765, assets/sass/_elements.scss */
 #showProfile-cont.edit #showProfile-ava #avat {
   cursor: pointer;
   position: relative;
 }
-/* line 1757, assets/sass/_elements.scss */
+/* line 1766, assets/sass/_elements.scss */
 #showProfile-cont.edit #showProfile-ava #avat:hover {
   opacity: 0.7;
 }
-/* line 1758, assets/sass/_elements.scss */
+/* line 1767, assets/sass/_elements.scss */
 #showProfile-cont.edit #showProfile-ava #avat:before {
   content: '\f055';
   font-family: FontAwesome;
@@ -6021,24 +6059,24 @@ a > .KCPL_horz-single {
   display: none;
   transition: 0.2s all;
 }
-/* line 1759, assets/sass/_elements.scss */
+/* line 1768, assets/sass/_elements.scss */
 #showProfile-cont.edit #showProfile-ava #avat:hover:before {
   display: block;
 }
-/* line 1760, assets/sass/_elements.scss */
+/* line 1769, assets/sass/_elements.scss */
 #showProfile-cont.edit #showProfile-ava #avat.active:before {
   display: block;
   transform: rotateZ(45deg);
 }
 
-/* line 1763, assets/sass/_elements.scss */
+/* line 1772, assets/sass/_elements.scss */
 div#responses {
   font: bold 22px/60px 'nimbus-sans-condensed';
   text-align: center;
   margin: 0 0 30px;
   transition: 0.2s all;
 }
-/* line 1764, assets/sass/_elements.scss */
+/* line 1773, assets/sass/_elements.scss */
 div#responses.success {
   color: #27ae60;
   border: 2px solid #27ae60;
@@ -6048,7 +6086,7 @@ div#responses.success {
   animation-delay: .3s;
   -webkit-animation-delay: .3s;
 }
-/* line 1765, assets/sass/_elements.scss */
+/* line 1774, assets/sass/_elements.scss */
 div#responses.error {
   color: #c0392b;
   border: 2px solid #c0392b;
@@ -6059,7 +6097,7 @@ div#responses.error {
   -webkit-animation-delay: .3s;
 }
 
-/* line 1768, assets/sass/_elements.scss */
+/* line 1777, assets/sass/_elements.scss */
 .updated {
   font: bold 22px/60px 'nimbus-sans-condensed';
   text-align: center;
@@ -6072,50 +6110,50 @@ div#responses.error {
   animation-delay: .3s;
   -webkit-animation-delay: .3s;
 }
-/* line 1769, assets/sass/_elements.scss */
+/* line 1778, assets/sass/_elements.scss */
 .updated p {
   margin: 0;
 }
 
-/* line 1772, assets/sass/_elements.scss */
+/* line 1781, assets/sass/_elements.scss */
 form#editProfile {
   margin: 0;
   background: #e2e2e2;
   padding: 20px;
 }
-/* line 1773, assets/sass/_elements.scss */
+/* line 1782, assets/sass/_elements.scss */
 form#editProfile h3 {
   margin: 10px 0;
 }
-/* line 1774, assets/sass/_elements.scss */
+/* line 1783, assets/sass/_elements.scss */
 form#editProfile .form-row {
   display: table;
   width: 100%;
   padding: 5px 0;
 }
-/* line 1775, assets/sass/_elements.scss */
+/* line 1784, assets/sass/_elements.scss */
 form#editProfile .form-row label {
   display: table-cell;
   width: 15%;
   vertical-align: middle;
 }
-/* line 1776, assets/sass/_elements.scss */
+/* line 1785, assets/sass/_elements.scss */
 form#editProfile .form-row textarea, form#editProfile .form-row input[type="text"] {
   display: table-cell;
   width: 85%;
   vertical-align: middle;
 }
-/* line 1777, assets/sass/_elements.scss */
+/* line 1786, assets/sass/_elements.scss */
 form#editProfile .form-row input[type="submit"] {
   margin: 20px 0 0;
 }
 
-/* line 1781, assets/sass/_elements.scss */
+/* line 1790, assets/sass/_elements.scss */
 #showProfile-ava {
   position: relative;
 }
 
-/* line 1782, assets/sass/_elements.scss */
+/* line 1791, assets/sass/_elements.scss */
 #kcpl_oc-avatar {
   position: absolute;
   color: #fff;
@@ -6128,49 +6166,49 @@ form#editProfile .form-row input[type="submit"] {
   z-index: 1;
   left: -9999px;
 }
-/* line 1783, assets/sass/_elements.scss */
+/* line 1792, assets/sass/_elements.scss */
 #kcpl_oc-avatar .gutter {
   padding: 10px;
 }
-/* line 1784, assets/sass/_elements.scss */
+/* line 1793, assets/sass/_elements.scss */
 #kcpl_oc-avatar form {
   padding: 0;
   margin: 0;
 }
-/* line 1785, assets/sass/_elements.scss */
+/* line 1794, assets/sass/_elements.scss */
 #kcpl_oc-avatar input:hover, #kcpl_oc-avatar button:hover {
   cursor: pointer;
 }
-/* line 1786, assets/sass/_elements.scss */
+/* line 1795, assets/sass/_elements.scss */
 #kcpl_oc-avatar .wpua-edit-container {
   text-align: center;
 }
-/* line 1787, assets/sass/_elements.scss */
+/* line 1796, assets/sass/_elements.scss */
 #kcpl_oc-avatar .wpua-edit-container h3 {
   display: none;
 }
-/* line 1789, assets/sass/_elements.scss */
+/* line 1798, assets/sass/_elements.scss */
 #kcpl_oc-avatar #wpua-thumbnail {
   display: none;
 }
-/* line 1790, assets/sass/_elements.scss */
+/* line 1799, assets/sass/_elements.scss */
 #kcpl_oc-avatar span {
   display: block;
   text-transform: uppercase;
   text-align: center;
 }
-/* line 1791, assets/sass/_elements.scss */
+/* line 1800, assets/sass/_elements.scss */
 #kcpl_oc-avatar .KCPL_font-nimbus-condensed {
   font-weight: bold;
   font-size: 19px;
   margin: 0 0 2px;
 }
-/* line 1792, assets/sass/_elements.scss */
+/* line 1801, assets/sass/_elements.scss */
 #kcpl_oc-avatar .KCPL_font-minion {
   font-size: 14px;
 }
 
-/* line 1794, assets/sass/_elements.scss */
+/* line 1803, assets/sass/_elements.scss */
 #kcpl_oc-avatar:after {
   position: absolute;
   top: -7px;
@@ -6182,12 +6220,12 @@ form#editProfile .form-row input[type="submit"] {
   background: url(assets/img/talkCalloutCaret.png) no-repeat;
 }
 
-/* line 1795, assets/sass/_elements.scss */
+/* line 1804, assets/sass/_elements.scss */
 #kcpl_oc-avatar:after {
   background-position: -28px 0;
 }
 
-/* line 1796, assets/sass/_elements.scss */
+/* line 1805, assets/sass/_elements.scss */
 #kcpl_oc-avatar.active {
   z-index: 100;
   opacity: 1;
@@ -6196,17 +6234,17 @@ form#editProfile .form-row input[type="submit"] {
   left: 0;
 }
 
-/* line 1797, assets/sass/_elements.scss */
+/* line 1806, assets/sass/_elements.scss */
 .columns.four .KCPL_listing4 .row {
   margin: 0;
 }
 
-/* line 1799, assets/sass/_elements.scss */
+/* line 1808, assets/sass/_elements.scss */
 #searchRecommended, #searchBooks, #searchBooklists, #searchUserBooklists {
   display: block;
   margin: 0 0 26px;
 }
-/* line 1800, assets/sass/_elements.scss */
+/* line 1809, assets/sass/_elements.scss */
 #searchRecommended .recommendedSearch, #searchBooks .recommendedSearch, #searchBooklists .recommendedSearch, #searchUserBooklists .recommendedSearch {
   background: #e2e2e2;
   padding: 20px;
@@ -6214,24 +6252,24 @@ form#editProfile .form-row input[type="submit"] {
   display: block;
   margin: 0 0 26px;
 }
-/* line 1801, assets/sass/_elements.scss */
+/* line 1810, assets/sass/_elements.scss */
 #searchRecommended .recommendedSearch input, #searchBooks .recommendedSearch input, #searchBooklists .recommendedSearch input, #searchUserBooklists .recommendedSearch input {
   margin: 0;
   padding: 6px 8px 6px 35px;
 }
-/* line 1802, assets/sass/_elements.scss */
+/* line 1811, assets/sass/_elements.scss */
 #searchRecommended .recommendedSearch i, #searchBooks .recommendedSearch i, #searchBooklists .recommendedSearch i, #searchUserBooklists .recommendedSearch i {
   position: absolute;
   top: 33px;
   left: 35px;
 }
 
-/* line 1806, assets/sass/_elements.scss */
+/* line 1815, assets/sass/_elements.scss */
 .gbooks-result-entry {
   height: 240px;
 }
 
-/* line 1807, assets/sass/_elements.scss */
+/* line 1816, assets/sass/_elements.scss */
 .gbooks-result-entry .gbooks-result-buttons .gbooks-button-add {
   width: auto;
   display: inline-block;
@@ -6244,7 +6282,7 @@ form#editProfile .form-row input[type="submit"] {
   vertical-align: middle;
 }
 
-/* line 1809, assets/sass/_elements.scss */
+/* line 1818, assets/sass/_elements.scss */
 .gbooks-result-button-number {
   display: inline-block;
   font: bold 20px/20px nimbus-sans-condensed;
@@ -6253,33 +6291,33 @@ form#editProfile .form-row input[type="submit"] {
   width: auto;
 }
 
-/* line 1810, assets/sass/_elements.scss */
+/* line 1819, assets/sass/_elements.scss */
 #searchBooks .output .gbooks-result-buttons {
   margin: 10px 0 0;
 }
 
-/* line 1812, assets/sass/_elements.scss */
+/* line 1821, assets/sass/_elements.scss */
 .gbooks-result-buttons {
   margin: 10px 0 0;
 }
 
-/* line 1814, assets/sass/_elements.scss */
+/* line 1823, assets/sass/_elements.scss */
 .gbooks-result-row {
   margin: 0 0 20px;
 }
 
-/* line 1815, assets/sass/_elements.scss */
+/* line 1824, assets/sass/_elements.scss */
 .gbooks-result-entry .gbooks-result-title {
   width: 90%;
   font: bold 19px/19px nimbus-sans-condensed;
 }
 
-/* line 1816, assets/sass/_elements.scss */
+/* line 1825, assets/sass/_elements.scss */
 .gbooks-result-entry .new .gbooks-result-img {
   width: 9.5%;
 }
 
-/* line 1817, assets/sass/_elements.scss */
+/* line 1826, assets/sass/_elements.scss */
 .gbooks-result-entry .gbooks-result-buttons.new .gbooks-button-add {
   padding: 0 10px 0 6px;
   border: none;
@@ -6287,62 +6325,62 @@ form#editProfile .form-row input[type="submit"] {
   font-size: 14px;
 }
 
-/* line 1819, assets/sass/_elements.scss */
+/* line 1828, assets/sass/_elements.scss */
 .gbooks-list-add-entry-title {
   font: bold 19px/19px nimbus-sans-condensed;
   padding: 0 0 0 10px;
 }
 
-/* line 1820, assets/sass/_elements.scss */
+/* line 1829, assets/sass/_elements.scss */
 .gbooks-list-add-entry-remove {
   background: none;
   border: none;
   vertical-align: middle;
 }
 
-/* line 1821, assets/sass/_elements.scss */
+/* line 1830, assets/sass/_elements.scss */
 .gbooks-list-add-entry-remove:before {
   margin: 12px 0 0 0;
   display: block;
 }
 
-/* line 1824, assets/sass/_elements.scss */
+/* line 1833, assets/sass/_elements.scss */
 #wp-user-book-list_results .gbooks-result-entry {
   height: 100%;
 }
 
-/* line 1830, assets/sass/_elements.scss */
+/* line 1839, assets/sass/_elements.scss */
 #kcpl_oc-profileedit a {
   font: italic bold 12px/18px "minion-pro";
   color: #323333;
   margin-bottom: 10px;
 }
 
-/* line 1836, assets/sass/_elements.scss */
+/* line 1845, assets/sass/_elements.scss */
 .profile-edit {
   margin-bottom: 20px;
 }
 
-/* line 1838, assets/sass/_elements.scss */
+/* line 1847, assets/sass/_elements.scss */
 .gbooks-result-buttons:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
 }
 
-/* line 1840, assets/sass/_elements.scss */
+/* line 1849, assets/sass/_elements.scss */
 form#kcpl_oc-booklist {
   margin: 0;
   padding: 0;
 }
-/* line 1841, assets/sass/_elements.scss */
+/* line 1850, assets/sass/_elements.scss */
 form#kcpl_oc-booklist input[type="text"] {
   margin: 6px 0;
 }
-/* line 1842, assets/sass/_elements.scss */
+/* line 1851, assets/sass/_elements.scss */
 form#kcpl_oc-booklist label {
   font: 12px/35px nimbus-sans;
 }
-/* line 1843, assets/sass/_elements.scss */
+/* line 1852, assets/sass/_elements.scss */
 form#kcpl_oc-booklist input[type="checkbox"] {
   -webkit-appearance: none;
   background: transparent;
@@ -6352,7 +6390,7 @@ form#kcpl_oc-booklist input[type="checkbox"] {
   margin: 0 5px;
   position: relative;
 }
-/* line 1844, assets/sass/_elements.scss */
+/* line 1853, assets/sass/_elements.scss */
 form#kcpl_oc-booklist input[type="checkbox"]:checked:after {
   content: '';
   position: absolute;
@@ -6364,137 +6402,137 @@ form#kcpl_oc-booklist input[type="checkbox"]:checked:after {
   border-radius: 2px;
   background: #000;
 }
-/* line 1845, assets/sass/_elements.scss */
+/* line 1854, assets/sass/_elements.scss */
 form#kcpl_oc-booklist label {
   font-size: 14px;
   letter-spacing: 0.06em;
 }
 
-/* line 1848, assets/sass/_elements.scss */
+/* line 1857, assets/sass/_elements.scss */
 #searchUserBooklists .output, #searchUserBooklists .output {
   transition: 0.2s all;
 }
-/* line 1849, assets/sass/_elements.scss */
+/* line 1858, assets/sass/_elements.scss */
 #searchUserBooklists .output.active, #searchUserBooklists .output.active {
   opacity: 0;
 }
 
-/* line 1852, assets/sass/_elements.scss */
+/* line 1861, assets/sass/_elements.scss */
 #KCPL_search input[type="search"] {
   margin: 0;
 }
 
-/* line 1853, assets/sass/_elements.scss */
+/* line 1862, assets/sass/_elements.scss */
 .KCPL_home-engagement #row-expanded .engage-content {
   display: none;
 }
 
-/* line 1854, assets/sass/_elements.scss */
+/* line 1863, assets/sass/_elements.scss */
 .KCPL_home-engagement #row-expanded .engage-content.active {
   display: block;
   height: 304px;
 }
 
-/* line 1855, assets/sass/_elements.scss */
+/* line 1864, assets/sass/_elements.scss */
 .KCPL_home-engagement #row-expanded {
   left: -100%;
   transition: 0.3s all;
   width: 680px;
 }
 
-/* line 1856, assets/sass/_elements.scss */
+/* line 1865, assets/sass/_elements.scss */
 .KCPL_home-engagement #row-expanded.active {
   left: 30%;
 }
 
 /* Animations */
 @-webkit-keyframes shake {
-  /* line 1860, assets/sass/_elements.scss */
+  /* line 1869, assets/sass/_elements.scss */
   0%, 100% {
     -webkit-transform: translateX(0);
   }
 
-  /* line 1861, assets/sass/_elements.scss */
+  /* line 1870, assets/sass/_elements.scss */
   10%, 30%, 50%, 70%, 90% {
     -webkit-transform: translateX(-10px);
   }
 
-  /* line 1862, assets/sass/_elements.scss */
+  /* line 1871, assets/sass/_elements.scss */
   20%, 40%, 60%, 80% {
     -webkit-transform: translateX(10px);
   }
 }
 
 @keyframes shake {
-  /* line 1865, assets/sass/_elements.scss */
+  /* line 1874, assets/sass/_elements.scss */
   0%, 100% {
     transform: translateX(0);
   }
 
-  /* line 1866, assets/sass/_elements.scss */
+  /* line 1875, assets/sass/_elements.scss */
   10%, 30%, 50%, 70%, 90% {
     transform: translateX(-10px);
   }
 
-  /* line 1867, assets/sass/_elements.scss */
+  /* line 1876, assets/sass/_elements.scss */
   20%, 40%, 60%, 80% {
     transform: translateX(10px);
   }
 }
 
 @-webkit-keyframes bounce {
-  /* line 1871, assets/sass/_elements.scss */
+  /* line 1880, assets/sass/_elements.scss */
   0%, 20%, 50%, 80%, 100% {
     -webkit-transform: translateY(0);
   }
 
-  /* line 1872, assets/sass/_elements.scss */
+  /* line 1881, assets/sass/_elements.scss */
   40% {
     -webkit-transform: translateY(-30px);
   }
 
-  /* line 1873, assets/sass/_elements.scss */
+  /* line 1882, assets/sass/_elements.scss */
   60% {
     -webkit-transform: translateY(-15px);
   }
 }
 
 @keyframes bounce {
-  /* line 1876, assets/sass/_elements.scss */
+  /* line 1885, assets/sass/_elements.scss */
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
   }
 
-  /* line 1877, assets/sass/_elements.scss */
+  /* line 1886, assets/sass/_elements.scss */
   40% {
     transform: translateY(-30px);
   }
 
-  /* line 1878, assets/sass/_elements.scss */
+  /* line 1887, assets/sass/_elements.scss */
   60% {
     transform: translateY(-15px);
   }
 }
 
 /* AUTHENTICATION!!! */
-/* line 1883, assets/sass/_elements.scss */
+/* line 1892, assets/sass/_elements.scss */
 #loginform {
   margin: 0;
   padding: 0;
 }
-/* line 1887, assets/sass/_elements.scss */
+/* line 1896, assets/sass/_elements.scss */
 #loginform input[type="text"],
 #loginform input[type="password"] {
   margin: 0;
 }
 
-/* line 1892, assets/sass/_elements.scss */
+/* line 1901, assets/sass/_elements.scss */
 #authContainer {
   position: relative;
   width: 100%;
   min-height: 300px;
 }
-/* line 1894, assets/sass/_elements.scss */
+/* line 1903, assets/sass/_elements.scss */
 #authContainer > * {
   transition: 0.2s opacity;
   opacity: 0;
@@ -6507,42 +6545,42 @@ form#kcpl_oc-booklist label {
   left: 0;
   right: 0;
 }
-/* line 1906, assets/sass/_elements.scss */
+/* line 1915, assets/sass/_elements.scss */
 #authContainer.active #authContainer-load {
   opacity: 1;
   z-index: 5;
 }
-/* line 1911, assets/sass/_elements.scss */
+/* line 1920, assets/sass/_elements.scss */
 #authContainer #authContainer-load img {
   margin: 0 auto 20px;
   display: block;
 }
-/* line 1916, assets/sass/_elements.scss */
+/* line 1925, assets/sass/_elements.scss */
 #authContainer.success #authContainer-success {
   opacity: 1;
   z-index: 5;
 }
-/* line 1923, assets/sass/_elements.scss */
+/* line 1932, assets/sass/_elements.scss */
 #authContainer.fail #authContainer-fail {
   opacity: 1;
   z-index: 5;
 }
 
 /* Vertical Graphics */
-/* line 1934, assets/sass/_elements.scss */
+/* line 1943, assets/sass/_elements.scss */
 .vertical-graphic-left {
   float: left;
   width: 48%;
 }
 
-/* line 1935, assets/sass/_elements.scss */
+/* line 1944, assets/sass/_elements.scss */
 .vertical-graphic-right {
   float: right;
   width: 48%;
 }
 
 /* Search Results */
-/* line 1940, assets/sass/_elements.scss */
+/* line 1949, assets/sass/_elements.scss */
 #searchResults {
   text-align: center;
   display: table-cell;
@@ -6550,7 +6588,7 @@ form#kcpl_oc-booklist label {
   height: 100%;
   vertical-align: middle;
 }
-/* line 1941, assets/sass/_elements.scss */
+/* line 1950, assets/sass/_elements.scss */
 #searchResults span {
   font: bold 41px/41px "nimbus-sans-condensed";
   text-transform: uppercase;
@@ -6559,48 +6597,48 @@ form#kcpl_oc-booklist label {
 }
 
 /* Newsletter */
-/* line 1946, assets/sass/_elements.scss */
+/* line 1955, assets/sass/_elements.scss */
 #newsletter {
   margin-top: 20px;
 }
-/* line 1947, assets/sass/_elements.scss */
+/* line 1956, assets/sass/_elements.scss */
 #newsletter form {
   margin: 0;
   padding: 0;
 }
-/* line 1948, assets/sass/_elements.scss */
+/* line 1957, assets/sass/_elements.scss */
 #newsletter input {
   margin: 10px 0;
 }
 
-/* line 1951, assets/sass/_elements.scss */
+/* line 1960, assets/sass/_elements.scss */
 ::-webkit-input-placeholder {
   color: #555555;
   opacity: 0.5;
 }
 
-/* line 1956, assets/sass/_elements.scss */
+/* line 1965, assets/sass/_elements.scss */
 :-moz-placeholder {
   /* Firefox 18- */
   color: #555555;
   opacity: 0.5;
 }
 
-/* line 1961, assets/sass/_elements.scss */
+/* line 1970, assets/sass/_elements.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #555555;
   opacity: 0.5;
 }
 
-/* line 1966, assets/sass/_elements.scss */
+/* line 1975, assets/sass/_elements.scss */
 :-ms-input-placeholder {
   color: #555555;
   opacity: 0.5;
 }
 
 /* Mobile Overrides */
-/* line 1973, assets/sass/_elements.scss */
+/* line 1982, assets/sass/_elements.scss */
 #mobileMenuTrigger, #mobileSearchTrigger, #mobileWrap {
   display: none;
 }

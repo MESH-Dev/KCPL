@@ -99,7 +99,7 @@ class KCPL_branch_info extends WP_Widget{
               else echo $openhour ." - ". $closehour;
   echo "</span> <br><span class='$class'>$flag</span>
             </div>
-            <span class='address'><a href='https://www.google.com/maps/place/".$directions."' target='_blank' title='directions' />$address</a>
+            <span class='address'><a href='https://www.google.com/maps/place/".$directions."' target='_blank' title='directions'>$address</a></span>
           </div>";
 
     //after widget
