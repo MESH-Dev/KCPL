@@ -26,7 +26,8 @@
         .gutter{padding:0;}
       }
       .columns.five{
-        #KCPL_search.condensed{margin-bottom:0;height:235px;
+        #KCPL_search.condensed{margin-bottom:0;height:255px;
+          #select{top: 0px;}
           .search-btn{padding:0;
             hr + span{font:italic bold 12px/13px "minion-pro";padding:2px 0 0 0;}
           }
@@ -100,6 +101,8 @@
 @media only screen and (min-width:768px) and (max-width:1022px){
   ##{$namespace}search input[type="search"] { width: 635px; }
   ##{$namespace}search.condensed input[type="search"] { width: 73%; }
+
+
 }
 
 /* Mobile - really it's just whatever isn't a tablet.
