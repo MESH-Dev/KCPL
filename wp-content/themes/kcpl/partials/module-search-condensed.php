@@ -21,7 +21,7 @@
           <div class="media">
             <div class="search-btn first books">
               <div class="iconCont">
-                <a href="<?php echo get_permalink(119); ?>"><div class="icon KCPL_sprite-book"></div></a>
+                <a href="<?php echo get_permalink(119); ?>"><div class="icon KCPL_sprite-book" title="Search Books"></div></a>
               </div>
               <hr>
               <span class="KCPL_caption-minion-italicbold">Books</span>
@@ -91,7 +91,7 @@
               <hr>
               <span class="KCPL_caption-minion-italicbold">Teens</span>
             </div>
- 
+
           </div>
         </div>
       </div>
