@@ -93,14 +93,20 @@ class KCPL_branch_info extends WP_Widget{
 
 		$directions = preg_replace( "/\r|\n/", " ", $address);
 
+    if($title != "Mobile Library"){  
     echo   "<div class='hour-cont'>
               <span class='hours'>";
               if($open == '') echo "Closed Today"; 
               else echo $openhour ." - ". $closehour;
-  echo "</span> <br><span class='$class'>$flag</span>
+    echo "</span> <br><span class='$class'>$flag</span>
             </div>
             <span class='address'><a href='https://www.google.com/maps/place/".$directions."' target='_blank' title='directions'>$address</a></span>
           </div>";
+    }
+    else
+    {
+       echo "<div class='hour-cont'> <span class='hours'><a href='".$page_link."' title='". $title . "'>Get the latest schedule!</a></span></div></div>";
+    }
 
     //after widget
 		echo $args['after_widget'];
@@ -136,6 +142,7 @@ class KCPL_branch_info extends WP_Widget{
 			<label for="<?php echo $this->get_field_id('page_link'); ?>">Page Link</label>
       <input class="widefat KCPL_branch_info-text" id="<?php echo $this->get_field_id('page_link'); ?>" name="<?php echo $this->get_field_name('page_link'); ?>" type="text" value="<?php echo esc_attr($page_link); ?>">
 		</p>
+   
     <p>
       <label for="<?php echo $this->get_field_id('hours'); ?>">Monday Hours</label><br>
       <span><em>Open:</em> </span><input class="widefat KCPL_branch_info-time" id="<?php echo $this->get_field_id('mon_open'); ?>" name="<?php echo $this->get_field_name('mon_open'); ?>" type="time" value="<?php echo esc_attr($mon_open); ?>"><br>
@@ -174,6 +181,7 @@ class KCPL_branch_info extends WP_Widget{
       <label for="phone">Phone</label>
       <input class="widefat KCPL_branch_info-text" id="<?php echo $this->get_field_id('phone'); ?>" name="<?php echo $this->get_field_name('phone'); ?>" type="text" value="<?php echo esc_attr($phone); ?>">
     </p>
+  
 		<?php
 	}
 
