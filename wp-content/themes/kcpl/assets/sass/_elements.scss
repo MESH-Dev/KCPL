@@ -271,7 +271,7 @@ table{
 
     > ul > li > ul{}
     > ul > li > ul > li{}
-    > ul > li > ul > li > a{font:bold 19px/19px $nimbus-c; margin:0 22px 3px 0; text-transform: uppercase; letter-spacing:0.039em}
+    > ul > li > ul > li > a{font:bold 19px/19px $nimbus-c; margin:0 22px 3px 0; text-transform: uppercase; letter-spacing:0.04em}
 
     > ul > li > ul > li > ul{}
     > ul > li > ul > li > ul > li{}
@@ -830,15 +830,24 @@ ol.homepage-callout-list { display: block;
 
 #KCPL_search.condensed{
   height: 280px; margin-top:9px; margin-left:13px;
+ 
 
   #select{float:left;width:389px; position: relative; top: -15px;}
 
   #searchField{position:relative;display:block;margin:0 0 10px;}
   input[type="search"]{width: 73%;}
 
-  #type{float: left; width: 100%;border-right: none ;height: 100%; margin-bottom: 15px; position: relative; top:0px;
-    .top{font: italic 14px/18px $minion; color: $d-grey; font-weight: normal;  display: block; padding: 0px 0px 0 6px;letter-spacing: 0.01em;word-spacing: 0.065em;}
-    .bottom{font: bold 14px/18px $nimbus;color: $d-grey;display: inline; float:left; padding: 1px 0 0;  position: relative; text-transform: none; }
+    .cat_btn{font: bold 14px/18px $nimbus;color: $d-grey;display: block; width: 100%; padding: 0px 0px 0 6px; letter-spacing: 0.01em;word-spacing: 0.065em; position: relative; top: -3px; left: -8px;  
+        a{color: $d-grey;display: inline; float:left; padding: 0 0 0 6px; @include opacity(1) }
+        a:hover{color: $d-grey; @include opacity(0.7)}
+     }
+
+  #type{float: left; width: 100%;border-right: none ;height: 100%; margin-bottom: 15px; position: relative; top:8px;
+    
+   
+
+    .top{font: italic 14px/18px $minion; color: $d-grey; font-weight: normal;  display: inline; float: left; padding: 0px 0px 0 6px;letter-spacing: 0.01em;word-spacing: 0.065em;}
+    .bottom{font: bold 14px/18px $nimbus;color: $d-grey;display: inline; float: left; padding: 1px 0 0; text-transform: none; }
       .bottom a{color: $d-grey;display: inline; float:left; padding: 0 0 0 6px; @include opacity(.7) }
       .bottom a.active{color: $d-grey; cursor:pointer; @include opacity(1)}
       .bottom a:hover{color: $d-grey; @include opacity(1)}
