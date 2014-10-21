@@ -2556,7 +2556,7 @@ table td:last-child {
   font: bold 19px/19px "nimbus-sans-condensed";
   margin: 0 22px 3px 0;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.039em;
 }
 /* line 278, assets/sass/_elements.scss */
 #banner #main_navBannerCont > ul > li > ul > li > ul > li > a {
