@@ -20,12 +20,14 @@
   </script>
 
   <?php wp_head(); ?>
+  <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+  <![endif]-->
   <!--[if lt IE 9]>
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/modernizr.min.js"></script>
   <![endif]-->
   <!--[if lte IE 8]>
   <style>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     input[type="password"] {
       font-family: Arial !important;
     }
