@@ -27,6 +27,7 @@
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/modernizr.min.js"></script>
   <![endif]-->
   <!--[if lte IE 8]>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <style>
     input[type="password"] {
       font-family: Arial !important;
