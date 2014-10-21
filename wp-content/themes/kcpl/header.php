@@ -12,6 +12,7 @@
   <meta name="description"
             content="kanawhalibrary.org is a Kanawha County Libraries card holder's gateway to traditional and online audio, video, and print resources in the county's public and school library collections."/>
   <link rel="image_src" href="<?php echo get_site_url(); ?>/wp-content/uploads/2014/10/KCPL_HorizLogo_blue.jpg"/>
+  <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/assets/img/kcplfav.png">
   <meta property="og:image" content="<?php echo get_site_url(); ?>/wp-content/uploads/2014/10/KCPL_HorizLogo_blue.jpg"/>
   <script>
    (function(d) {
