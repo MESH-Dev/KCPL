@@ -2,6 +2,7 @@
    opacity:0.7;
 }
 
+
 input[type="button"],
 input[type="reset"],
 input[type="submit"],
@@ -918,7 +919,7 @@ a.cal_button{
 .research-results .entry{height: 165px; overflow: hidden;}
 .research-results  .KCPL_readmore{display:inline-block; float:left; width: 50%}
 .access_icons {
-  width: 100%; display: inline-block; float: right;  position: relative; top: -10px; 
+  width: 100%; display: inline-block; float: right;  position: relative; top: -10px;
   span{width: 30px; height: 30px;background-color: #Fc0; float: right; display:inline-block;  margin: 0 10px 0 0px;  }
   span.in-library-only{ background: url(assets/img/accessSprites.png) -60px 0px;}
   span.online{ background: url(assets/img/accessSprites.png) 0px 0px;}
@@ -1834,7 +1835,7 @@ form#editProfile{margin:0;background:#e2e2e2;padding:20px;
     height: 100%;
   }
 
-}  
+}
 
 #kcpl_oc-profileedit a{
   font: italic bold 12px/18px $minion;
