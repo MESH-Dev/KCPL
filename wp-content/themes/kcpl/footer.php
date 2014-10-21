@@ -55,6 +55,11 @@
                   <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9ACRUJ255P4BN" target="_blank">Make a Donation</a>
               </div>
             </div>
+            <div>
+              <div id="footer-credit">
+                <span>&#169; Kanawha County Public Library <?php echo date('Y')?>, Site by <a href="http://meshfresh.com">MESH</a></span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
