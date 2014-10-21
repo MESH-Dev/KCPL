@@ -261,6 +261,8 @@ table{
   .gutter{display:table;height:100%;width:100%;vertical-align:middle;}
   a{display:none;color:#fff;float:left;}
     li.current_page_ancestor > a, li.current-page-ancestor > a, li.current-menu-item > a{display:block;}
+
+  
   #main_navBannerCont{text-align:center;display:table-cell;width:100%;height:100%;vertical-align:middle;
     > ul{margin:0 auto;display:inline-block;}
     > ul > li{display:table;}
@@ -278,6 +280,8 @@ table{
     > ul > li > ul > li > ul > li > ul{}
     > ul > li > ul > li > ul > li > ul > li{}
     > ul > li > ul > li > ul > li > ul > li > a{font:italic 14px/14px $minion;margin:0 20px -2px 0;letter-spacing:0.03em }
+
+     li.menu-item-160{display:none;}
   }
 }
 
@@ -921,9 +925,9 @@ a.cal_button{
 .access_icons {
   width: 100%; display: inline-block; float: right;  position: relative; top: -10px;
   span{width: 30px; height: 30px;background-color: #Fc0; float: right; display:inline-block;  margin: 0 10px 0 0px;  }
-  span.in-library-only{ background: url(assets/img/accessSprites.png) -60px 0px;}
-  span.online{ background: url(assets/img/accessSprites.png) 0px 0px;}
-  span.with-library-card-only{ background: url(assets/img/accessSprites.png) -30px 0px;}
+  span.in-library-only{ background: url(assets/img/accessSprites.png) -65px 0px; width: 23px;}
+  span.online{ background: url(assets/img/accessSprites.png) 1px 0px; width: 35px;}
+  span.with-library-card-only{ background: url(assets/img/accessSprites.png) -33px 0px; width: 33px;}
 }
 
 
