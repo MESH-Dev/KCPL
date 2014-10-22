@@ -9,7 +9,7 @@ foreach($left as $widget){
   if($widget['field_type'] == 'horizontal-callout-single'){ ?>
 
     <?php if($widget['field_link'] != ''){ ?>
-      <a target="_blank" href="<?php echo $widget['field_link']; ?>">
+      <a href="<?php echo $widget['field_link']; ?>">
     <?php } ?>
         <div class="KCPL_horz-single KCPL_background-<?php echo $widget['field_color']; ?>">
           <div class="gutter">
@@ -35,7 +35,7 @@ foreach($left as $widget){
     //horizontal callout - multi ?>
 
     <?php if($widget['field_link'] != ''){ ?>
-      <a target="_blank" href="<?php echo $widget['field_link']; ?>">
+      <a href="<?php echo $widget['field_link']; ?>">
     <?php } ?>
       <div class="KCPL_horz-multi KCPL_background-<?php echo $widget['field_color']; ?>">
         <div class="gutter">
@@ -291,7 +291,7 @@ foreach($right as $widget){
   if($widget['field_type'] == 'horizontal-callout-single'){ ?>
 
     <?php if($widget['field_link'] != ''){ ?>
-      <a target="_blank" href="<?php echo $widget['field_link']; ?>">
+      <a href="<?php echo $widget['field_link']; ?>">
     <?php } ?>
         <div class="KCPL_horz-single KCPL_background-<?php echo $widget['field_color']; ?>">
           <div class="gutter">
@@ -317,7 +317,7 @@ foreach($right as $widget){
     //horizontal callout - multi ?>
 
     <?php if($widget['field_link'] != ''){ ?>
-      <a target="_blank" href="<?php echo $widget['field_link']; ?>">
+      <a href="<?php echo $widget['field_link']; ?>">
     <?php } ?>
       <div class="KCPL_horz-multi KCPL_background-<?php echo $widget['field_color']; ?>">
         <div class="gutter">
