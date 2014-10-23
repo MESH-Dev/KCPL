@@ -1,6 +1,3 @@
-<!--
-  KCPL dude.
-!-->
 <!DOCTYPE html>
 <html>
 <head>

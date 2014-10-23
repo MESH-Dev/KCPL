@@ -180,8 +180,8 @@ $vbdayurl  = "$url?c_view=list&c_mode=day&c_day=$vbday&c_month=$vbmonth&c_year=$
         $presenter_email = $meta['presenter_email'][0];
         $contact_name    = $meta['contact_nam'][0];
         $contact_email   = $meta['contact_email'][0];
-
-
+        $registration    = $meta['register_online'][0];
+ 
         //get the exact dates
         if( isset( $meta['recurring'] ) && $meta['recurring'][0] == 1 ){
           //recurring
@@ -267,7 +267,10 @@ $vbdayurl  = "$url?c_view=list&c_mode=day&c_day=$vbday&c_month=$vbmonth&c_year=$
         <?php if ($contact_email): ?>
           <p><strong> Contact Email: </strong> <a href="mailto:<?php echo $contact_email; ?>"><?php echo $contact_email; ?></a></p>
         <?php endif; ?>
-
+ 
+       <?php if($registration)
+              echo KCPL_calendar::regForm(); ?>
+ 
 
       </div>
     </div>
