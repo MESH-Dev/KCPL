@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<?php 
+<?php
 
 global $wp_query;
 //$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -12,7 +12,7 @@ $audience = $_GET['audience'];
 $online = $_GET['online'];
 $inlib = $_GET['inlib'];
 $withcard = $_GET['withcard'];
- 
+
 $access = array();
 if ($online !=''){array_push($access, $online);}
 if ($inlib !=''){array_push($access, $inlib);}
@@ -47,17 +47,17 @@ if (!empty($access)) {
 	);
 	array_push($tax_q_array, $access_arr);
 }
- 
+
 
 //Custom query args
-$args = array( 
-	'post_type' => 'resources', 
+$args = array(
+	'post_type' => 'resources',
 	'posts_per_page' => '-1',
  	's' => $s,
 	'tax_query' => $tax_q_array
 
 	);
- 
+
     $the_query = new WP_Query( $args );
 
 ?>
@@ -73,7 +73,7 @@ $args = array(
 						</ul>
 					</li>
 				</ul>
-			</div>      
+			</div>
 		</div>
 	</div>
 </div>
@@ -81,25 +81,25 @@ $args = array(
 <div id="content">
 	<div class="container">
 
-	<?php include_once(locate_template('partials/module-search-expanded.php')); ?>		
- 	
- 	
+	<?php include_once(locate_template('partials/module-search-expanded.php')); ?>
 
-	<?php 
+
+
+	<?php
 
 	$ctr = 1; //to add alpha/omega class
 	if($the_query->have_posts()){ ?>
 		<?php if ($s != ''){?>
-		<h2>Search Results for: "<?php echo $s; ?>"   </h2> 
+		<h2>Search Results for: "<?php echo $s; ?>"   </h2>
 		<?php } ?>
 		<?php if ($topic != ''){?>
-		<h3>Topic: <?php echo $topic; ?>   </h3> 
+		<h3>Topic: <?php echo $topic; ?>   </h3>
 		<?php } ?>
 		<?php if ($audience != ''){?>
-		<h3>Audience: <?php echo $audience; ?>   </h3> 
+		<h3>Audience: <?php echo $audience; ?>   </h3>
 		<?php } ?>
 		<?php if (!empty($access)){?>
-		<h3>Access: <?php $acc =  implode(", ", $access); $acc = str_replace("-", " ", $acc); echo $acc; ?></h3> 
+		<h3>Access: <?php $acc =  implode(", ", $access); $acc = str_replace("-", " ", $acc); echo $acc; ?></h3>
 		<?php } ?>
 
 
@@ -116,13 +116,13 @@ $args = array(
 			     <span class="title KCPL_background-yellow"></span>
 			     <div class="gutter">
 			        <div class="entry">
-			           <span class="entry-title"> <a href="<?php the_field('url');?>"><?php the_title(); ?></a></span>
+			           <span class="entry-title"> <a href="<?php the_field('url');?>" title="<?php the_field('purchase_notes'); ?>"><?php the_title(); ?></a></span>
 			           <div class="entry-excerpt">
 			              <?php the_excerpt(); ?>
 			           </div>
 			           <a href="<?php the_field('url');?>" class="KCPL_readmore">Learn more ≈</a>
-			           
-			            
+
+
 			        </div>
 			        <div class="access_icons">
 			           <?php
@@ -137,8 +137,8 @@ $args = array(
 		   </div>
 		</div>
 
-<?php endwhile; 
-} 
+<?php endwhile;
+}
 else{?>
 
 <h2>Sorry no results found. Please broaden your search and try again!</h2>
@@ -147,16 +147,16 @@ else{?>
  }?>
 <?php wp_reset_postdata(); ?>
 
-	<div class="pagination clearfix"> 
+	<div class="pagination clearfix">
 
-	<?php 
+	<?php
  /*
 
 echo paginate_links( array(
 	'prev_text'    => __('<i class="fa fa-angle-double-left"></i>'),
 	'next_text'    => __('<i class="fa fa-angle-double-right"></i>')
 ) );
- 
+
 ?>
 
 <?php next_posts_link();  */?>
@@ -169,6 +169,6 @@ echo paginate_links( array(
 -->
 
 	</div>
-</div>	
+</div>
 
 <?php get_footer(); ?>
