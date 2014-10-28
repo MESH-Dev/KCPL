@@ -80,6 +80,23 @@ header{width:100%;float:left;}
   input[type="text"], input[type="password"] { margin: 10px 0; }
 }
 
+.mobileLogin {
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  a {
+    background-color: $red;
+    color: white;
+    font: bold 23px/23px $nimbus-c;
+    text-transform: uppercase;
+    padding: 12px 20px 12px;
+    letter-spacing: 0.05em;
+    z-index: 1;
+    display: block;
+  }
+}
+
 //footer - Used more sass nesting this time around
 footer{background:#c5c5c5;float:left;width:100%;}
   footer{

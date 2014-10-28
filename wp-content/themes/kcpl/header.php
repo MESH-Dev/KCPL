@@ -1,3 +1,6 @@
+<!--
+  KCPL dude.
+!-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -58,6 +61,16 @@
     }else{
       echo "<p><em>main_nav</em> doesn't exist! Create it and it'll render here.</p>";
     } ?>
+    <div class="mobileLogin">
+      <?php if(is_user_logged_in()){ ?>
+        <a href="<?php echo wp_logout_url( home_url() ); ?>">Login</a>
+      <?php }else{ ?>
+        <a href="<?php
+          $settings = get_site_option('kcpl-oc');
+          echo get_permalink($settings['dashboard']); ?>">Log Out</a>
+      <?php } ?>
+
+    </div>
   </div>
 <?php } ?>
 
