@@ -63,11 +63,11 @@
     } ?>
     <div class="mobileLogin">
       <?php if(is_user_logged_in()){ ?>
-        <a href="<?php echo wp_logout_url( home_url() ); ?>">Login</a>
+        <a href="<?php echo wp_logout_url( home_url() ); ?>">Log Out</a>
       <?php }else{ ?>
         <a href="<?php
           $settings = get_site_option('kcpl-oc');
-          echo get_permalink($settings['dashboard']); ?>">Log Out</a>
+          echo get_permalink($settings['dashboard']); ?>">Log In</a>
       <?php } ?>
 
     </div>
