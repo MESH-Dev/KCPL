@@ -120,7 +120,8 @@ $color = 'red';
         <p>To access your online catalog account to place holds and review your checkout history, click the button below to login with your library card and PIN. </p>
         <p><br/>
 <!--<a class="cal_button" href="#" style="background-color: #FFA751"><strong>Catalog Login</strong></a></p>-->
-<a href="http://kana.ent.sirsi.net/client/en_US/default/#">
+<a href="
+http://kana.ent.sirsi.net/client/default/search/patronlogin/http:$002f$002fkana.ent.sirsi.net$002fclient$002fdefault$002fsearch$002faccount$003f">
   <div class="KCPL_horz-single KCPL_background-yellow"  >
           <div class="gutter">
              <span style="color: #fff !important">Catalog login</span>
