@@ -67,9 +67,9 @@ $args = array(
 		<div class="gutter">
 			<div id="main_navBannerCont" class="menu-main-navigation-container">
 				<ul id="main_nav_breadcrumbs" class="menu clearfix">
-					<li class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-157"><a href="http://localhost/kcpl/collection/">The Collection</a>
+					<li class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-157"><a href="<?php bloginfo('url'); ?>/collection/">The Collection</a>
 						<ul class="sub-menu">
-							<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-126 current_page_item menu-item-331"><a href="http://localhost/kcpl/collection/research/">Research</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-126 current_page_item menu-item-331"><a href="<?php bloginfo('url'); ?>/collection/research/">Research</a></li>
 						</ul>
 					</li>
 				</ul>
