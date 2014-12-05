@@ -137,10 +137,8 @@
                 </div>
               <?php }else{ ?>
                 <div id="header-login">
-                  <a href="<?php
-                    $settings = get_site_option('kcpl-oc');
-                    echo get_permalink($settings['dashboard']); ?>">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/login.png" alt="Log In" />
+                  <a href="http://kana.ent.sirsi.net/client/default/search/patronlogin/http:$002f$002fkana.ent.sirsi.net$002fclient$002fdefault$002fsearch$002faccount$003f">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/act-login.png" alt="Log In" />
                   </a>
                 </div>
               <?php } ?>

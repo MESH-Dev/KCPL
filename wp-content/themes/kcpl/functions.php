@@ -335,7 +335,7 @@ function customize_meta_boxes() {
   remove_meta_box('trackbacksdiv','page','normal'); // trackbacks metabox
   remove_meta_box('commentstatusdiv','page','normal'); // comment status metabox
   remove_meta_box('commentsdiv','page','normal'); // comments  metabox
-  remove_meta_box('authordiv','page','normal'); // author metabox
+  //remove_meta_box('authordiv','page','normal'); // author metabox
   //remove_meta_box('revisionsdiv','page','normal'); // revisions  metabox
   //remove_meta_box('postimagediv','page','side'); // featured image metabox
   //remove_meta_box('slugdiv','page','normal'); // slug metabox
@@ -374,5 +374,533 @@ add_filter('menu_order', 'custom_menu_order');
 //   }
 // }
 // add_filter( 'excerpt_more', 'new_excerpt_more' );
+
+function add_theme_caps() {
+    // gets the author role
+    $role = get_role( 'author' );
+    $bman = get_role('branch_manager');
+    $bedi = get_role('branch_editor');
+
+    // This only works, because it accesses the class instance.
+    // would allow the author to edit others' posts for current theme only
+    $role->add_cap( 'edit_pages' ); 
+    $role->add_cap( 'edit_published_pages' ); 
+    $bman->add_cap( 'edit_pages' ); 
+    $bman->add_cap( 'edit_published_pages' ); 
+    $bedi->add_cap( 'edit_pages' ); 
+    $bedi->add_cap( 'edit_published_pages' ); 
+}
+add_action( 'admin_init', 'add_theme_caps');
+ 
+
+if(function_exists("register_field_group"))
+{
+  register_field_group(array (
+    'id' => 'acf_calendar-entry-fields',
+    'title' => 'Calendar Entry Fields',
+    'fields' => array (
+      array (
+        'key' => 'field_53ece1c77f350',
+        'label' => 'Event Info',
+        'name' => '',
+        'type' => 'tab',
+      ),
+      array (
+        'key' => 'field_53ecdf0c7f339',
+        'label' => 'Description',
+        'name' => 'description',
+        'type' => 'textarea',
+        'required' => 1,
+        'default_value' => '',
+        'placeholder' => '',
+        'maxlength' => '',
+        'rows' => '',
+        'formatting' => 'br',
+      ),
+      array (
+        'key' => 'field_53ecdf147f33a',
+        'label' => 'Event or Class?',
+        'name' => 'event_or_class',
+        'type' => 'radio',
+        'required' => 1,
+        'choices' => array (
+          'event' => 'Event',
+          'class' => 'Class',
+        ),
+        'other_choice' => 0,
+        'save_other_choice' => 0,
+        'default_value' => '',
+        'layout' => 'horizontal',
+      ),
+      array (
+        'key' => 'field_53ece1727f348',
+        'label' => 'Location Details',
+        'name' => 'location_details',
+        'type' => 'textarea',
+        'default_value' => '',
+        'placeholder' => '',
+        'maxlength' => '',
+        'rows' => '',
+        'formatting' => 'br',
+      ),
+      array (
+        'key' => 'field_53ece1ea7f351',
+        'label' => 'Date',
+        'name' => '',
+        'type' => 'tab',
+      ),
+      array (
+        'key' => 'field_53ecdfe27f33c',
+        'label' => 'Multiple Dates?',
+        'name' => 'multiple_date',
+        'type' => 'radio',
+        'choices' => array (
+          1 => 'Yes',
+          0 => 'No',
+        ),
+        'other_choice' => 0,
+        'save_other_choice' => 0,
+        'default_value' => '0',
+        'layout' => 'horizontal',
+      ),
+      array (
+        'key' => 'field_53ecdf417f33b',
+        'label' => 'Date',
+        'name' => 'single_date',
+        'type' => 'date_picker',
+        'conditional_logic' => array (
+          'status' => 1,
+          'rules' => array (
+            array (
+              'field' => 'field_53ecdfe27f33c',
+              'operator' => '!=',
+              'value' => '1',
+            ),
+          ),
+          'allorany' => 'all',
+        ),
+        'date_format' => '@',
+        'display_format' => 'mm/dd/yy',
+        'first_day' => 0,
+      ),
+      array (
+        'key' => 'field_53ece0157f33d',
+        'label' => 'Recurring?',
+        'name' => 'recurring',
+        'type' => 'true_false',
+        'conditional_logic' => array (
+          'status' => 1,
+          'rules' => array (
+            array (
+              'field' => 'field_53ecdfe27f33c',
+              'operator' => '==',
+              'value' => '1',
+            ),
+          ),
+          'allorany' => 'all',
+        ),
+        'message' => '',
+        'default_value' => 0,
+      ),
+      array (
+        'key' => 'field_53ece04e7f33e',
+        'label' => 'Dates',
+        'name' => 'multiple_dates',
+        'type' => 'repeater',
+        'conditional_logic' => array (
+          'status' => 1,
+          'rules' => array (
+            array (
+              'field' => 'field_53ecdfe27f33c',
+              'operator' => '==',
+              'value' => '1',
+            ),
+            array (
+              'field' => 'field_53ece0157f33d',
+              'operator' => '!=',
+              'value' => '1',
+            ),
+          ),
+          'allorany' => 'all',
+        ),
+        'sub_fields' => array (
+          array (
+            'key' => 'field_53ece0677f33f',
+            'label' => 'Date',
+            'name' => 'date',
+            'type' => 'date_picker',
+            'column_width' => '',
+            'date_format' => '@',
+            'display_format' => 'mm/dd/yy',
+            'first_day' => 0,
+          ),
+        ),
+        'row_min' => 2,
+        'row_limit' => '',
+        'layout' => 'table',
+        'button_label' => 'Add Date',
+      ),
+      array (
+        'key' => 'field_53ece0ab7f341',
+        'label' => 'Recurring',
+        'name' => 'recurring_mode',
+        'type' => 'radio',
+        'conditional_logic' => array (
+          'status' => 1,
+          'rules' => array (
+            array (
+              'field' => 'field_53ecdfe27f33c',
+              'operator' => '==',
+              'value' => '1',
+            ),
+            array (
+              'field' => 'field_53ece0157f33d',
+              'operator' => '==',
+              'value' => '1',
+            ),
+          ),
+          'allorany' => 'all',
+        ),
+        'choices' => array (
+          'daily' => 'Daily',
+          'weekly' => 'Weekly',
+          'monthly' => 'Monthly',
+        ),
+        'other_choice' => 0,
+        'save_other_choice' => 0,
+        'default_value' => '',
+        'layout' => 'horizontal',
+      ),
+      array (
+        'key' => 'field_53ece1257f343',
+        'label' => 'Start Date',
+        'name' => 'start_date',
+        'type' => 'date_picker',
+        'conditional_logic' => array (
+          'status' => 1,
+          'rules' => array (
+            array (
+              'field' => 'field_53ecdfe27f33c',
+              'operator' => '==',
+              'value' => '1',
+            ),
+            array (
+              'field' => 'field_53ece0157f33d',
+              'operator' => '==',
+              'value' => '1',
+            ),
+          ),
+          'allorany' => 'all',
+        ),
+        'date_format' => '@',
+        'display_format' => 'mm/dd/yy',
+        'first_day' => 0,
+      ),
+      array (
+        'key' => 'field_53ece1427f345',
+        'label' => 'End Date',
+        'name' => 'end_date',
+        'type' => 'date_picker',
+        'conditional_logic' => array (
+          'status' => 1,
+          'rules' => array (
+            array (
+              'field' => 'field_53ecdfe27f33c',
+              'operator' => '==',
+              'value' => '1',
+            ),
+            array (
+              'field' => 'field_53ece0157f33d',
+              'operator' => '==',
+              'value' => '1',
+            ),
+          ),
+          'allorany' => 'all',
+        ),
+        'date_format' => '@',
+        'display_format' => 'mm/dd/yy',
+        'first_day' => 0,
+      ),
+      array (
+        'key' => 'field_53ece1637f347',
+        'label' => 'Time',
+        'name' => 'time',
+        'type' => 'text',
+        'instructions' => 'Enter the start time of the event. Enter "ALL DAY" for an all day event. Use the format in the placeholder text below.',
+        'default_value' => '',
+        'placeholder' => '11:00 AM',
+        'prepend' => '',
+        'append' => '',
+        'formatting' => 'html',
+        'maxlength' => '',
+      ),
+      array (
+        'key' => 'field_53ece2027f352',
+        'label' => 'Presenter/Contact',
+        'name' => '',
+        'type' => 'tab',
+      ),
+      array (
+        'key' => 'field_53ece1987f34a',
+        'label' => 'Presenter Name',
+        'name' => 'presenter_name',
+        'type' => 'text',
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'formatting' => 'html',
+        'maxlength' => '',
+      ),
+      array (
+        'key' => 'field_53ece1a47f34b',
+        'label' => 'Presenter Email',
+        'name' => 'presenter_email',
+        'type' => 'text',
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'formatting' => 'html',
+        'maxlength' => '',
+      ),
+      array (
+        'key' => 'field_53ece1ab7f34c',
+        'label' => 'Presenter Phone',
+        'name' => 'presenter_phone',
+        'type' => 'text',
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'formatting' => 'html',
+        'maxlength' => '',
+      ),
+      array (
+        'key' => 'field_53ece1b37f34d',
+        'label' => 'Contact Name',
+        'name' => 'contact_name',
+        'type' => 'text',
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'formatting' => 'html',
+        'maxlength' => '',
+      ),
+      array (
+        'key' => 'field_53ece1b97f34e',
+        'label' => 'Contact Email',
+        'name' => 'contact_email',
+        'type' => 'text',
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'formatting' => 'html',
+        'maxlength' => '',
+      ),
+      array (
+        'key' => 'field_53ece1bf7f34f',
+        'label' => 'Contact Phone',
+        'name' => 'contact_phone',
+        'type' => 'text',
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'formatting' => 'html',
+        'maxlength' => '',
+      ),
+      array (
+        'key' => 'field_53ecfacf9f5b2',
+        'label' => 'Additional',
+        'name' => '',
+        'type' => 'tab',
+      ),
+      array (
+        'key' => 'field_53ecfada9f5b3',
+        'label' => 'Register Online?',
+        'name' => 'register_online',
+        'type' => 'true_false',
+        'message' => '',
+         'conditional_logic' => array (
+          'status' => 1,
+          'rules' => array (
+            array (
+              'field' => 'field_53ecdfe27f33c',
+              'operator' => '==',
+              'value' => '0',
+            ),
+          ),
+          'allorany' => 'all',
+        ),
+        'default_value' => 0,
+      ),
+      array (
+        'key' => 'field_53ecfae69f5b4',
+        'label' => 'Registration Instructions',
+        'name' => 'registration_instructions',
+        'type' => 'textarea',
+        'conditional_logic' => array (
+          'status' => 1,
+          'rules' => array (
+            array (
+              'field' => 'field_53ecfada9f5b3',
+              'operator' => '==',
+              'value' => '1',
+            ),
+          ),
+          'allorany' => 'all',
+        ),
+        'default_value' => '',
+        'placeholder' => '',
+        'maxlength' => '',
+        'rows' => '',
+        'formatting' => 'br',
+      ),
+      array (
+        'key' => 'field_53ecfae69f577',
+        'label' => 'Registration Start Date',
+        'name' => 'registration_start',
+        'type' => 'date_picker',
+        'conditional_logic' => array (
+          'status' => 1,
+          'rules' => array (
+            array (
+              'field' => 'field_53ecfada9f5b3',
+              'operator' => '==',
+              'value' => '1',
+            ),
+          ),
+          'allorany' => 'all',
+        ),
+        'date_format' => '@',
+        'display_format' => 'mm/dd/yy',
+        'first_day' => 0,
+      ),
+      array (
+        'key' => 'field_53ecfae69f578',
+        'label' => 'Registration End Date',
+        'name' => 'registration_end',
+        'type' => 'date_picker',
+        'conditional_logic' => array (
+          'status' => 1,
+          'rules' => array (
+            array (
+              'field' => 'field_53ecfada9f5b3',
+              'operator' => '==',
+              'value' => '1',
+            ),
+          ),
+          'allorany' => 'all',
+        ),
+        'date_format' => '@',
+        'display_format' => 'mm/dd/yy',
+        'first_day' => 0,
+      ),
+      array (
+        'key' => 'field_53ecfafd9f5b5',
+        'label' => 'Payment Required?',
+        'name' => 'payment_required',
+        'type' => 'true_false',
+        'message' => '',
+        'default_value' => 0,
+      ),
+      array (
+        'key' => 'field_53ecfb249f5b6',
+        'label' => 'Paypal Link',
+        'name' => 'paypal_link',
+        'type' => 'text',
+        'conditional_logic' => array (
+          'status' => 1,
+          'rules' => array (
+            array (
+              'field' => 'field_53ecfafd9f5b5',
+              'operator' => '==',
+              'value' => '1',
+            ),
+          ),
+          'allorany' => 'all',
+        ),
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'formatting' => 'html',
+        'maxlength' => '',
+      ),
+      array (
+        'key' => 'field_53ecfb499f5b7',
+        'label' => 'Attendance Limit',
+        'name' => 'attendance_limit',
+        'type' => 'number',
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'min' => '',
+        'max' => '',
+        'step' => '',
+      ),
+      array (
+        'key' => 'field_53ecfb579f5b8',
+        'label' => 'Actual Attendance',
+        'name' => 'actual_attendance',
+        'type' => 'number',
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'min' => '',
+        'max' => '',
+        'step' => '',
+      ),
+      array (
+        'key' => 'field_53ecfb679f5b9',
+        'label' => 'Publicity Materials Needed',
+        'name' => 'publicity_materials_needed',
+        'type' => 'textarea',
+        'default_value' => '',
+        'placeholder' => '',
+        'maxlength' => '',
+        'rows' => '',
+        'formatting' => 'br',
+      ),
+    ),
+    'location' => array (
+      array (
+        array (
+          'param' => 'post_type',
+          'operator' => '==',
+          'value' => 'kcpl_calendar_entry',
+          'order_no' => 0,
+          'group_no' => 0,
+        ),
+      ),
+    ),
+    'options' => array (
+      'position' => 'acf_after_title',
+      'layout' => 'default',
+      'hide_on_screen' => array (
+        0 => 'the_content',
+        1 => 'excerpt',
+        2 => 'custom_fields',
+        3 => 'discussion',
+        4 => 'comments',
+        5 => 'revisions',
+        6 => 'slug',
+        7 => 'author',
+        8 => 'format',
+        9 => 'featured_image',
+        10 => 'categories',
+        11 => 'tags',
+        12 => 'send-trackbacks',
+      ),
+    ),
+    'menu_order' => 0,
+  ));
+}
+
 
 ?>
