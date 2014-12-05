@@ -213,7 +213,7 @@ $vbdayurl  = "$url?c_view=list&c_mode=day&c_day=$vbday&c_month=$vbmonth&c_year=$
           }
           $thisdate = join(', ',$dateArr);*/
 
-          $getDate = $r_month .'-'.$r_month.'-'.$r_year;
+          $getDate = $r_year .'-'.$r_month.'-'.$r_day;
           $thisdate = date("F j", strtotime($getDate));
 
         }else{
@@ -263,7 +263,7 @@ $vbdayurl  = "$url?c_view=list&c_mode=day&c_day=$vbday&c_month=$vbmonth&c_year=$
         if ($age != '') echo "<strong>Age: </strong>" . $age . "<br/>";
         if ($topic != '') echo "<strong>Topic: </strong>" . $topic . "<br/>";
         ?> <br>
- 
+
         <p><?php echo $desc; ?></p>
 
         <?php if ($location): ?>
@@ -287,9 +287,9 @@ $vbdayurl  = "$url?c_view=list&c_mode=day&c_day=$vbday&c_month=$vbmonth&c_year=$
         <?php endif; ?>
 
        <?php if($registration){
- 
+
               $wait = $meta['current_waitlist'][0];
- 
+
               if ($wait > 0){
                 echo '<div class-"success"><br><br><h4>All spots are filled!</h4> <p>The number of registration spots has been fulfilled, however if you register below you will be added to the wait list. If a spot opens, we will contact you.</p></div>';
 
@@ -298,7 +298,7 @@ $vbdayurl  = "$url?c_view=list&c_mode=day&c_day=$vbday&c_month=$vbmonth&c_year=$
               $reg_start = ($reg_start/1000) - 14400;  //reg date unix (-4 hours to set at 12:00am)
               $reg_end = ($reg_end/1000) - 14400; //reg date unix (-4 hours to set at 12:00am)
               $now = time() - 18000; //reg date unix (-5 hours to set EST)
-             
+
 
               if(($now > $reg_start && $now < $reg_end)||($reg_start < 1 && $reg_end < 1) ){
                    echo KCPL_calendar::newRegForm();

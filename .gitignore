@@ -5,14 +5,13 @@ wp-content/upgrade/
 wp-content/backup-db/
 wp-content/advanced-cache.php
 wp-content/wp-cache-config.php
-!/wp-content/plugins/KCPL_calendar/
-!/wp-content/plugins/KCPL_OC/
-wp-content/plugins/*
-wp-content/plugins/*/
 sitemap.xml
 *.log
 wp-content/cache/
 wp-content/backups/
+wp-content/plugins/*/
+!wp-content/plugins/KCPL_calendar/
+!wp-content/plugins/KCPL_OC/
 sitemap.xml.gz
 wp-config.php
 node_modules/
