@@ -383,15 +383,20 @@ function add_theme_caps() {
 
     // This only works, because it accesses the class instance.
     // would allow the author to edit others' posts for current theme only
-    $role->add_cap( 'edit_pages' ); 
-    $role->add_cap( 'edit_published_pages' ); 
-    $bman->add_cap( 'edit_pages' ); 
-    $bman->add_cap( 'edit_published_pages' ); 
-    $bedi->add_cap( 'edit_pages' ); 
-    $bedi->add_cap( 'edit_published_pages' ); 
+    $role->add_cap( 'edit_pages' );
+    $role->add_cap( 'edit_published_pages' );
+    $bman->add_cap( 'edit_pages' );
+    $bman->add_cap( 'edit_published_pages' );
+    $bedi->add_cap( 'edit_pages' );
+    $bedi->add_cap( 'edit_published_pages' );
+
+    $editor = get_role('editor');
+
+    $editor->add_cap('manage_options');
+
 }
 add_action( 'admin_init', 'add_theme_caps');
- 
+
 
 if(function_exists("register_field_group"))
 {
