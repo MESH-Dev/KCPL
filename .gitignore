@@ -6,8 +6,8 @@ wp-content/backup-db/
 wp-content/advanced-cache.php
 wp-content/wp-cache-config.php
 wp-content/plugins/*
-!wp-content/plugins/KCPL_calendar/*
-!wp-content/plugins/KCPL_OC/*
+!wp-content/plugins/KCPL_calendar/
+!wp-content/plugins/KCPL_OC/
 sitemap.xml
 *.log
 wp-content/cache/
