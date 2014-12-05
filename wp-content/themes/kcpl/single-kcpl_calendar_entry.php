@@ -181,14 +181,25 @@ $vbdayurl  = "$url?c_view=list&c_mode=day&c_day=$vbday&c_month=$vbmonth&c_year=$
         $contact_name    = $meta['contact_nam'][0];
         $contact_email   = $meta['contact_email'][0];
         $registration    = $meta['register_online'][0];
- 
+        $r_day           = $_GET['r_day'];
+        $r_month         = $_GET['r_month'];
+        $r_year          = $_GET['r_year'];
+        $reg_start       = $meta['registration_start'][0];
+        $reg_end         = $meta['registration_end'][0];
+
         //get the exact dates
         if( isset( $meta['recurring'] ) && $meta['recurring'][0] == 1 ){
           //recurring
-          $thisdate = date('F j',($meta['start_date'][0]/1000))." to ".date('F j',($meta['end_date'][0]/1000));
+          //$thisdate = date('F j',($meta['start_date'][0]/1000))." to ".date('F j',($meta['end_date'][0]/1000));
 
-        }elseif( isset( $meta['recurring'] ) && $meta['recurring'][0] == 1 ){
+
+          $getDate = $r_year .'-'.$r_month.'-'.$r_day;
+          $thisdate = date("F j", strtotime($getDate));
+
+
+        }elseif( isset( $meta['multiple_date'] ) && $meta['multiple_date'][0] == 1 ){
           //multiple
+          /*
           global $wpdb;
           $dates = $wpdb->get_results("SELECT `meta_value`
                                       FROM `wp_postmeta`
@@ -200,7 +211,11 @@ $vbdayurl  = "$url?c_view=list&c_mode=day&c_day=$vbday&c_month=$vbmonth&c_year=$
           foreach($dates as $date){
             array_push($dateArr,date('F j',($date/1000)));
           }
-          $thisdate = join(', ',$dateArr);
+          $thisdate = join(', ',$dateArr);*/
+
+          $getDate = $r_month .'-'.$r_month.'-'.$r_year;
+          $thisdate = date("F j", strtotime($getDate));
+
         }else{
           //single
           $thisdate = date('F j',($meta['single_date'][0]/1000));
@@ -242,10 +257,13 @@ $vbdayurl  = "$url?c_view=list&c_mode=day&c_day=$vbday&c_month=$vbmonth&c_year=$
           }?>
 
         <h3><?php the_title();?></h3>
-        <h4> <?php echo $thisdate; ?> <?php echo $time; ?> </h4>
-        <?php echo $loc; ?> <br>
-        <?php echo $type . ' ' .  $age . ' ' . $topic; ?>
-        <br><br>
+        <h4> <?php echo $thisdate; ?>, <?php echo $time; ?> </h4>
+        <?php echo $loc . "<br/><br/>";
+        if ($type != '') echo "<strong>Type: </strong>" . $type . "<br/>";
+        if ($age != '') echo "<strong>Age: </strong>" . $age . "<br/>";
+        if ($topic != '') echo "<strong>Topic: </strong>" . $topic . "<br/>";
+        ?> <br>
+ 
         <p><?php echo $desc; ?></p>
 
         <?php if ($location): ?>
@@ -267,10 +285,29 @@ $vbdayurl  = "$url?c_view=list&c_mode=day&c_day=$vbday&c_month=$vbmonth&c_year=$
         <?php if ($contact_email): ?>
           <p><strong> Contact Email: </strong> <a href="mailto:<?php echo $contact_email; ?>"><?php echo $contact_email; ?></a></p>
         <?php endif; ?>
+
+       <?php if($registration){
  
-       <?php if($registration)
-              echo KCPL_calendar::regForm(); ?>
+              $wait = $meta['current_waitlist'][0];
  
+              if ($wait > 0){
+                echo '<div class-"success"><br><br><h4>All spots are filled!</h4> <p>The number of registration spots has been fulfilled, however if you register below you will be added to the wait list. If a spot opens, we will contact you.</p></div>';
+
+              }
+
+              $reg_start = ($reg_start/1000) - 14400;  //reg date unix (-4 hours to set at 12:00am)
+              $reg_end = ($reg_end/1000) - 14400; //reg date unix (-4 hours to set at 12:00am)
+              $now = time() - 18000; //reg date unix (-5 hours to set EST)
+             
+
+              if(($now > $reg_start && $now < $reg_end)||($reg_start < 1 && $reg_end < 1) ){
+                   echo KCPL_calendar::newRegForm();
+              }
+              else{
+                echo "<h4>Registration is currently closed for this event</h4>";
+              }
+            } ?>
+
 
       </div>
     </div>

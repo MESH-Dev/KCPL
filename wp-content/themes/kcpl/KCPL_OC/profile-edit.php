@@ -54,6 +54,7 @@ $color = 'red';
           <?php
             if($pr = true){
               KCPL_OC_profile::editProfile();
+              KCPL_OC_profile::changePassword($uid);
             }else{
               echo "You must be logged in to view your profile";
             }
@@ -64,7 +65,7 @@ $color = 'red';
        <h2>Join Our Online Community</h2>
         <p>We are proud to announce we have a new online community you can join for free. Now you can connect with your library from home with ease. Participate in online discussions, create and share reading lists, recommend books to others and more!
          Login or create a free account below by providing a username, password and valid email address.</p><p style="font-style: italic"> <em>NOTE: This account is different from your library card account. You cannot use your library card PIN to access the Online Community. Please create a separate account through the Online Community.</em></p>
-      
+
 
         <br/>
 
@@ -73,7 +74,7 @@ $color = 'red';
             <div id="verification">
               <?php KCPL_OC_auth::processVerify(); ?>
             </div>
-         
+
               <div class='KCPL_listing4'>
                 <span class='title KCPL_background-red'>Log In</span>
                 <div class="gutter">
@@ -100,16 +101,16 @@ $color = 'red';
                   <p> Dont have an account? Register Below!</p>
                 </div>
               </div>
-          
 
-          
+
+
               <div class='KCPL_listing4'>
                 <span class='title KCPL_background-red'>Register</span>
                 <div class='gutter'>
                   <?php KCPL_OC_auth::registerForm(); ?>
                 </div>
               </div>
-       
+
 
 
         </div>
@@ -128,7 +129,7 @@ http://kana.ent.sirsi.net/client/default/search/patronlogin/http:$002f$002fkana.
           </div>
         </div></a>
       </div> <!-- end ent login -->
-      
+
       <?php } ?>
 
     </div>
