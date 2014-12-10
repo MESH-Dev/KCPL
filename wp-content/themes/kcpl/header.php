@@ -65,9 +65,7 @@
       <?php if(is_user_logged_in()){ ?>
         <a href="<?php echo wp_logout_url( home_url() ); ?>">Log Out</a>
       <?php }else{ ?>
-        <a href="<?php
-          $settings = get_site_option('kcpl-oc');
-          echo get_permalink($settings['dashboard']); ?>">Log In</a>
+        <a href="http://kana.ent.sirsi.net/client/default/search/patronlogin/http:$002f$002fkana.ent.sirsi.net$002fclient$002fdefault$002fsearch$002faccount$003f">Log In</a>
       <?php } ?>
 
     </div>
